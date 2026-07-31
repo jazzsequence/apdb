@@ -24,13 +24,34 @@ aliases:
     alias_type: birth
     active_to: '2020'
     note: >-
-      Birth name, documented on Wikipedia. Which specific early credits carried
-      this name on screen is not established by any source found so far — the
-      credits below that reference it are flagged needs_verification and should
-      be checked against the original episode credits or title cards.
+      Birth name, documented on Wikipedia. Her Carefree High credit is billed
+      under this name per maintainer report; the other credits attributed to it
+      are inferred from their dates rather than from a seen credit, and are
+      flagged needs_verification pending a check against the original title
+      cards.
 
 credits:
-  # --- The long-tail case: a one-off guest spot on a small indie show. ------
+  # --- The long tail. Neither of these appears in any structured index. -----
+
+  # Mid-season arrival on an indie Monsterhearts game, gone before the end.
+  # The show's own cast page lists regulars only, so she is absent from it —
+  # which is exactly how a credit like this disappears everywhere else.
+  - show: carefree-high
+    season: 1
+    role: player
+    alias: lipscomb
+    note: >-
+      Joined mid-season and departed before the campaign ended, so she is not
+      on the show's published cast list. Character name and the episode range
+      she appears in are still open.
+    source:
+      note: >-
+        Reported by the project maintainer from direct listening. Billed under
+        the Lipscomb name. No published cast list corroborates this — the
+        official Carefree High page names only the regular cast (GMs Mac and
+        Adam; players Tappy, Gina, Joey, Mac, Adam).
+      needs_verification: true
+
   - show: wildcards-east-texas-university
     season: 1
     episode: 'S1E?: The Seekers'
