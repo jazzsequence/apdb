@@ -1,0 +1,21 @@
+id: erika-ishii
+canonical_name: Erika Ishii
+sort_name: Ishii, Erika
+pronouns: they/them
+bio: >-
+  Actor and voice performer, co-founder of Worlds Beyond Number.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Erika_Ishii
+aliases:
+  - id: default
+    name: Erika Ishii
+    alias_type: legal
+credits:
+  - show: worlds-beyond-number
+    season: 1
+    role: player
+    character: Ame
+    alias: default
+    year: '2023'
+    source:
+      url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One

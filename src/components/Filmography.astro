@@ -1,0 +1,77 @@
+---
+import type { FilmographyGroup } from '../lib/derive';
+
+interface Props {
+  groups: FilmographyGroup[];
+}
+
+const { groups } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+function yearRange(group: FilmographyGroup): string {
+  const { earliestYear: from, latestYear: to } = group;
+  if (!from && !to) return '';
+  if (from && to && from.slice(0, 4) !== to.slice(0, 4)) {
+    return `${from.slice(0, 4)}–${to.slice(0, 4)}`;
+  }
+  return (to ?? from ?? '').slice(0, 4);
+}
+---
+
+{
+  groups.map((group) => (
+    <article class="film-show">
+      <header>
+        <h3>
+          <a href={`${base}shows/${group.show.id}/`}>{group.show.title}</a>
+        </h3>
+        <span class="years">{yearRange(group)}</span>
+        <span class="channel">
+          {group.channels.map((c) => `${c.name} · ${c.type}`).join(', ')} · {group.show.format}
+        </span>
+      </header>
+
+      {group.credits.map(({ credit, season, game, alias, creditedUnderFormerName }) => (
+        <div class="credit">
+          <div class="where">
+            {season && (
+              <span>
+                Season {season.ordinal}
+                {season.title ? ` — ${season.title}` : ''}
+              </span>
+            )}
+            {credit.episode && <span class="episode">{credit.episode}</span>}
+            {!season && !credit.episode && <span>Show-level credit</span>}
+          </div>
+
+          <div class="what">
+            <span class="role">{credit.role}</span>
+            {credit.character && <span class="character">as {credit.character}</span>}
+          </div>
+
+          <div class="meta">
+            {game && (
+              <span>
+                {game.name} · {game.edition}
+              </span>
+            )}
+            <span>
+              credited as {alias.name}{' '}
+              {creditedUnderFormerName && <span class="tag tag--former">former name</span>}
+            </span>
+            {credit.source.needs_verification && (
+              <span class="tag tag--flag">needs verification</span>
+            )}
+            {credit.source.url && (
+              <a href={credit.source.url} rel="nofollow noopener">
+                source
+              </a>
+            )}
+          </div>
+
+          {credit.note && <div class="note">{credit.note}</div>}
+        </div>
+      ))}
+    </article>
+  ))
+}

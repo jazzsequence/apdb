@@ -1,0 +1,20 @@
+id: worlds-beyond-number
+title: Worlds Beyond Number
+sort_title: Worlds Beyond Number
+channels:
+  - worlds-beyond-number
+format: podcast
+status: ongoing
+description: >-
+  Creator-owned narrative podcast set in the world of Umora.
+links:
+  website: https://www.worldsbeyondnumber.com
+  wikipedia: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+seasons:
+  - ordinal: 1
+    title: The Wizard, the Witch and the Wild One
+    game: dnd-5e
+    started: '2023-03-01'
+    description: >-
+      Three childhood friends — a wizard, a witch and a wild one — pulled back
+      together by the empire that raised and broke them.

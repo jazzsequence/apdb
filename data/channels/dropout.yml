@@ -1,0 +1,8 @@
+id: dropout
+name: Dropout
+type: network
+description: >-
+  Subscription comedy network, formerly CollegeHumor. Produces Dimension 20.
+links:
+  website: https://www.dropout.tv
+  wikipedia: https://en.wikipedia.org/wiki/Dropout_(streaming_service)

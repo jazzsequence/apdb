@@ -1,0 +1,29 @@
+id: wildcards-east-texas-university
+title: 'Wildcards: East Texas University'
+sort_title: 'Wildcards: East Texas University'
+channels:
+  - saving-throw
+format: stream
+status: completed
+description: >-
+  Second campaign of the Saving Throw show Wildcards, running the Degrees of
+  Horror plot point campaign in Savage Worlds' modern-day college horror
+  setting. A small indie show — precisely the kind of production whose one-off
+  guest appearances vanish from every other index.
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+seasons:
+  - ordinal: 1
+    game: savage-worlds-deluxe
+    started: '2019-01-18'
+    ended: '2019'
+  - ordinal: 2
+    game: savage-worlds-deluxe
+    started: '2019'
+  - ordinal: 3
+    game: savage-worlds-deluxe
+    started: '2019'
+  - ordinal: 4
+    game: savage-worlds-deluxe
+    started: '2020'
+    ended: '2020-05-08'

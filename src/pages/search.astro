@@ -1,0 +1,159 @@
+---
+import Base from '../layouts/Base.astro';
+import { getDb } from '../lib/db';
+
+const db = await getDb();
+const base = import.meta.env.BASE_URL;
+
+// A small name index, built at compile time. Alias strings point at the
+// canonical person route, so a former name resolves to one person.
+//
+// This is deliberately names-only and tiny — the full-text index is Pagefind's
+// job. We never ship the dataset to the client to render a page.
+const nameIndex = db.people.flatMap((person) =>
+  db.searchableNames(person).map((name) => ({
+    name,
+    canonical: person.canonical_name,
+    id: person.id,
+    isFormer: name !== person.canonical_name,
+    credits: person.credits.length,
+  })),
+);
+
+const showIndex = db.shows.map((show) => ({
+  title: show.title,
+  id: show.id,
+  meta: `${db.channelsFor(show).map((c) => c.name).join(', ')} · ${show.format}`,
+}));
+---
+
+<Base title="Search — Actual Play Database" description="Search people by any name they have been credited under, and shows by title.">
+  <h1>Search</h1>
+  <p class="lede">
+    Type any name a performer has been credited under — including one they no
+    longer use. Former names resolve to the same person.
+  </p>
+
+  <div class="facets">
+    <label style="flex:1">
+      Name or show
+      <input id="q" type="search" autocomplete="off" placeholder="e.g. Lipscomb" style="min-width:100%" />
+    </label>
+  </div>
+
+  <div id="results"></div>
+  <div id="fulltext"></div>
+
+  <script define:vars={{ nameIndex, showIndex, base }}>
+    const input = document.getElementById('q');
+    const results = document.getElementById('results');
+
+    const norm = (s) =>
+      s
+        .normalize('NFD')
+        .replace(/[̀-ͯ]/g, '')
+        .toLowerCase();
+
+    function render(query) {
+      const q = norm(query.trim());
+      if (!q) {
+        results.innerHTML = '';
+        return;
+      }
+
+      const people = nameIndex.filter((e) => norm(e.name).includes(q));
+      const shows = showIndex.filter((e) => norm(e.title).includes(q));
+
+      // Collapse aliases of the same person into one result.
+      const seen = new Set();
+      const peopleHtml = people
+        .filter((e) => !seen.has(e.id) && seen.add(e.id))
+        .map((e) => {
+          const via = e.isFormer
+            ? `<p>matched former name <strong>${e.name}</strong> · ${e.credits} credits</p>`
+            : `<p>${e.credits} credits</p>`;
+          return `<li><a href="${base}people/${e.id}/"><div class="card"><h3>${e.canonical}</h3>${via}</div></a></li>`;
+        })
+        .join('');
+
+      const showsHtml = shows
+        .map(
+          (e) =>
+            `<li><a href="${base}shows/${e.id}/"><div class="card"><h3>${e.title}</h3><p>${e.meta}</p></div></a></li>`,
+        )
+        .join('');
+
+      results.innerHTML =
+        (peopleHtml ? `<h2>People</h2><ul class="card-list">${peopleHtml}</ul>` : '') +
+        (showsHtml ? `<h2>Shows</h2><ul class="card-list">${showsHtml}</ul>` : '') ||
+        '<p class="lede">No matches.</p>';
+    }
+
+    // --- Full text, via Pagefind ------------------------------------------
+    // The name index above is exact and instant; Pagefind covers everything
+    // else on an entity page — bios, character names, show descriptions.
+    // It only exists after `npm run build`, so dev degrades to names-only.
+    const fulltext = document.getElementById('fulltext');
+    let pagefind = null;
+    let pagefindTried = false;
+
+    async function loadPagefind() {
+      if (pagefindTried) return pagefind;
+      pagefindTried = true;
+      try {
+        pagefind = await import(/* @vite-ignore */ `${base}pagefind/pagefind.js`);
+        await pagefind.options({ excerptLength: 20 });
+      } catch {
+        pagefind = null; // Not built yet — names-only is a fine fallback.
+      }
+      return pagefind;
+    }
+
+    let token = 0;
+    async function renderFulltext(query) {
+      const mine = ++token;
+      const q = query.trim();
+      if (!q) {
+        fulltext.innerHTML = '';
+        return;
+      }
+
+      const pf = await loadPagefind();
+      if (!pf || mine !== token) return;
+
+      const search = await pf.search(q);
+      if (mine !== token) return;
+
+      const hits = await Promise.all(search.results.slice(0, 8).map((r) => r.data()));
+      if (mine !== token) return;
+
+      if (hits.length === 0) {
+        fulltext.innerHTML = '';
+        return;
+      }
+
+      fulltext.innerHTML =
+        '<h2>Full text</h2><ul class="card-list">' +
+        hits
+          .map(
+            (hit) =>
+              `<li><a href="${hit.url}"><div class="card"><h3>${hit.meta?.title ?? hit.url}</h3><p>${hit.excerpt}</p></div></a></li>`,
+          )
+          .join('') +
+        '</ul>';
+    }
+
+    function runAll(value) {
+      render(value);
+      renderFulltext(value);
+    }
+
+    input.addEventListener('input', () => runAll(input.value));
+
+    const initial = new URLSearchParams(location.search).get('q');
+    if (initial) {
+      input.value = initial;
+      runAll(initial);
+    }
+  </script>
+</Base>

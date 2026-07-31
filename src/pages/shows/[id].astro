@@ -1,0 +1,108 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDb } from '../../lib/db';
+
+export async function getStaticPaths() {
+  const db = await getDb();
+  return db.shows.map((show) => ({
+    params: { id: show.id },
+    props: {
+      show,
+      channels: db.channelsFor(show),
+      cast: db.castFor(show),
+      games: db.gamesFor(show),
+    },
+  }));
+}
+
+const { show, channels, cast, games } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+// Cast is derived by inverting credits — never stored on the show.
+const bySeason = new Map<number | 'show', typeof cast>();
+for (const member of cast) {
+  const key = member.credit.season ?? ('show' as const);
+  bySeason.set(key, [...(bySeason.get(key) ?? []), member]);
+}
+const seasonKeys = [...bySeason.keys()].sort((a, b) => {
+  if (a === 'show') return 1;
+  if (b === 'show') return -1;
+  return a - b;
+});
+---
+
+<Base
+  indexable
+  title={`${show.title} — Actual Play Database`}
+  description={show.description ?? `Cast, seasons and systems for ${show.title}.`}
+>
+  <h1>{show.title}</h1>
+
+  <p class="billing">
+    {channels.map((c) => `${c.name} (${c.type})`).join(', ')} ·
+    <strong>{show.format}</strong> · {show.status} ·
+    {games.map((g) => `${g.name} ${g.edition}`).join(', ')}
+  </p>
+
+  {show.description && <p class="lede">{show.description}</p>}
+
+  <h2>Seasons</h2>
+  <ul class="card-list">
+    {
+      show.seasons.map((season) => {
+        const game = games.find((g) => g.id === season.game);
+        const dates = [season.started, season.ended].filter(Boolean).join(' – ');
+        return (
+          <li class="card">
+            <h3>
+              Season {season.ordinal}
+              {season.title ? ` — ${season.title}` : ''}
+            </h3>
+            <p>
+              {game ? `${game.name} · ${game.edition}` : season.game}
+              {dates ? ` · ${dates}` : ''}
+              {season.episode_count ? ` · ${season.episode_count} episodes` : ''}
+            </p>
+            {season.description && <p>{season.description}</p>}
+          </li>
+        );
+      })
+    }
+  </ul>
+
+  <h2>Cast &amp; crew</h2>
+  <p class="billing">Derived from credits recorded on each person's page.</p>
+
+  {
+    cast.length === 0 ? (
+      <p class="lede">No credits reference this show yet.</p>
+    ) : (
+      seasonKeys.map((key) => (
+        <article class="film-show">
+          <header>
+            <h3>
+              {key === 'show'
+                ? 'Show-level'
+                : `Season ${key}${show.seasons.find((s) => s.ordinal === key)?.title ? ` — ${show.seasons.find((s) => s.ordinal === key)!.title}` : ''}`}
+            </h3>
+          </header>
+          {bySeason.get(key)!.map(({ person, credit, alias }) => (
+            <div class="credit">
+              <div class="where">
+                <a href={`${base}people/${person.id}/`}>{alias.name}</a>
+                {alias.name !== person.canonical_name && (
+                  <span class="episode">now {person.canonical_name}</span>
+                )}
+              </div>
+              <div class="what">
+                <span class="role">{credit.role}</span>
+                {credit.character && <span class="character">as {credit.character}</span>}
+              </div>
+              {credit.episode && <div class="meta">{credit.episode}</div>}
+            </div>
+          ))}
+        </article>
+      ))
+    )
+  }
+</Base>

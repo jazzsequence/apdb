@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDb } from '../../lib/db';
+
+const db = await getDb();
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="People — Actual Play Database" description="Every indexed performer, GM and crew member.">
+  <h1>People</h1>
+  <p class="lede">Listed by sort name. Former names are searchable and resolve here.</p>
+
+  <ul class="card-list">
+    {
+      db.people.map((person) => {
+        const others = person.aliases.filter((a) => a.name !== person.canonical_name);
+        const shows = new Set(person.credits.map((c) => c.show));
+        return (
+          <li>
+            <a href={`${base}people/${person.id}/`}>
+              <div class="card">
+                <h3>{person.sort_name}</h3>
+                <p>
+                  {person.credits.length} credits across {shows.size} shows
+                  {others.length > 0 && (
+                    <> · formerly {others.map((a) => a.name).join(', ')}</>
+                  )}
+                </p>
+              </div>
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Base>

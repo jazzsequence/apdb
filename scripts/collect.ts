@@ -1,0 +1,217 @@
+#!/usr/bin/env tsx
+/**
+ * Import adapter runner.
+ *
+ * Pulls identity data from cleared external sources and emits person files for
+ * review. Nothing is merged automatically: output lands in data/_incoming/ and
+ * becomes a pull request like any other contribution, because an import is
+ * still an assertion about a real person.
+ *
+ *   npm run collect -- --search "Aabria Iyengar"     # find candidate QIDs
+ *   npm run collect -- --qid Q117600290              # stage one person
+ *   npm run collect -- --refresh                     # re-pull every person with a qid
+ *   npm run collect -- --qid Q117600290 --apply      # merge into data/people/ in place
+ *   npm run collect -- --sources                     # show licence/clearance table
+ *
+ * Merge policy when a person already exists: identity fields and NEW aliases
+ * are added; existing bio, links, credits and alias ids are never overwritten.
+ * Curated data always wins over imported data.
+ */
+import { mkdir, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { stringify } from 'yaml';
+import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
+import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
+import { fetchPerson, searchPeople, type WikidataPerson } from '../src/lib/sources/wikidata.js';
+import { Person } from '../src/lib/schema.js';
+
+const args = process.argv.slice(2);
+const flag = (name: string): string | undefined => {
+  const index = args.indexOf(`--${name}`);
+  return index >= 0 ? args[index + 1] : undefined;
+};
+const has = (name: string) => args.includes(`--${name}`);
+
+const STAGING = join(DATA_ROOT, '_incoming');
+
+function slugify(name: string): string {
+  return name
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/**
+ * Build the YAML record. `existing` is the curated file if one exists — its
+ * values take precedence, so re-running the collector is always safe.
+ */
+function toPersonRecord(imported: WikidataPerson, existing?: Person): Record<string, unknown> {
+  const id = existing?.id ?? slugify(imported.canonical_name);
+
+  // Merge aliases by name. Existing entries keep their id, type and notes.
+  const aliases = existing ? [...existing.aliases] : [];
+  const known = new Set(aliases.map((a) => a.name.toLowerCase()));
+  const added: string[] = [];
+
+  for (const alias of imported.aliases) {
+    if (known.has(alias.name.toLowerCase())) continue;
+    let uniqueId = alias.id;
+    while (aliases.some((a) => a.id === uniqueId)) uniqueId = `${uniqueId}-2`;
+    aliases.push({ ...alias, id: uniqueId });
+    known.add(alias.name.toLowerCase());
+    added.push(alias.name);
+  }
+
+  const record: Record<string, unknown> = {
+    id,
+    canonical_name: existing?.canonical_name ?? imported.canonical_name,
+    sort_name: existing?.sort_name ?? imported.sort_name,
+    ...(existing?.pronouns ? { pronouns: existing.pronouns } : {}),
+    ...(existing?.bio || imported.description
+      ? { bio: existing?.bio ?? imported.description }
+      : {}),
+    wikidata_qid: imported.qid,
+    links: {
+      ...(imported.wikipedia ? { wikipedia: imported.wikipedia } : {}),
+      ...(imported.website ? { website: imported.website } : {}),
+      ...(existing?.links ?? {}),
+    },
+    aliases,
+    credits: existing?.credits ?? [],
+  };
+
+  (record as any).__added = added;
+  return record;
+}
+
+function header(imported: WikidataPerson, added: string[], isNew: boolean): string {
+  const source = SOURCES.wikidata!;
+  return [
+    `# ${isNew ? 'Imported' : 'Refreshed'} from Wikidata ${imported.qid} on ${new Date().toISOString().slice(0, 10)}.`,
+    `# ${source.attribution} Licence: ${source.licence}`,
+    '#',
+    '# Identity only — Wikidata is not a source of actual-play credits, and the',
+    '# indie long tail this project exists to index is not in it. Credits must',
+    '# still be added by hand, with their own sources.',
+    '#',
+    ...imported.provenance.map((line) => `#   ${line}`),
+    ...(added.length > 0
+      ? ['#', `# New aliases this run: ${added.join(', ')} — confirm alias_type before merging.`]
+      : []),
+    '',
+  ].join('\n');
+}
+
+async function stage(imported: WikidataPerson, existing: Person | undefined, apply: boolean) {
+  const record = toPersonRecord(imported, existing);
+  const added = (record as any).__added as string[];
+  delete (record as any).__added;
+
+  // Fail fast: never emit a file the validator would reject.
+  const parsed = Person.safeParse(record);
+  if (!parsed.success) {
+    console.error(`  ✗ ${imported.qid} (${imported.canonical_name}) would not validate:`);
+    for (const issue of parsed.error.issues) {
+      console.error(`      ${issue.path.join('.')}: ${issue.message}`);
+    }
+    return false;
+  }
+
+  const id = record.id as string;
+  const dir = apply ? join(DATA_ROOT, 'people') : STAGING;
+  await mkdir(dir, { recursive: true });
+
+  const path = join(dir, `${id}.yml`);
+  await writeFile(path, header(imported, added, !existing) + stringify(record), 'utf8');
+
+  const where = apply ? `data/people/${id}.yml` : `data/_incoming/${id}.yml`;
+  const what = existing ? 'updated' : 'new';
+  console.log(`  ✓ ${imported.canonical_name} (${imported.qid}) -> ${where} [${what}]`);
+  if (added.length > 0) console.log(`      new aliases: ${added.join(', ')}`);
+  return true;
+}
+
+async function main(): Promise<void> {
+  if (has('sources')) {
+    console.log('\nImport sources:\n');
+    for (const source of Object.values(SOURCES)) {
+      const mark = source.clearance === 'cleared' ? '✓' : '✗';
+      console.log(`  ${mark} ${source.name} — ${source.clearance}`);
+      console.log(`      licence: ${source.licence}`);
+      console.log(`      ${source.notes}\n`);
+    }
+    return;
+  }
+
+  const source = assertCleared(flag('source') ?? 'wikidata');
+  const apply = has('apply');
+
+  const search = flag('search');
+  if (search) {
+    console.log(`\nCandidates for "${search}" on ${source.name}:\n`);
+    for (const hit of await searchPeople(search)) {
+      console.log(`  ${hit.id}  ${hit.label}${hit.description ? ` — ${hit.description}` : ''}`);
+    }
+    console.log('\nStage one with:  npm run collect -- --qid <QID>\n');
+    return;
+  }
+
+  const { dataset } = await loadDataset();
+  const byQid = new Map(
+    dataset.people.filter((p) => p.wikidata_qid).map((p) => [p.wikidata_qid!, p]),
+  );
+  const byId = new Map(dataset.people.map((p) => [p.id, p]));
+
+  /**
+   * Match an import to a curated person by QID first, then by the slug the
+   * import would land on. Without the slug fallback, importing someone who is
+   * already curated but has no qid yet would look "new" and --apply would
+   * overwrite their file — destroying hand-entered credits.
+   */
+  const findExisting = (imported: WikidataPerson): Person | undefined =>
+    byQid.get(imported.qid) ?? byId.get(slugify(imported.canonical_name));
+
+  let qids: string[];
+  if (has('refresh')) {
+    qids = [...byQid.keys()];
+    if (qids.length === 0) {
+      console.log('No existing people carry a wikidata_qid — nothing to refresh.');
+      return;
+    }
+  } else {
+    const qid = flag('qid');
+    if (!qid) {
+      console.error('Nothing to do. Try --search <name>, --qid <QID>, --refresh or --sources.');
+      process.exit(1);
+    }
+    qids = [qid];
+  }
+
+  console.log(`\nCollecting ${qids.length} record(s) from ${source.name}.`);
+  console.log(apply ? 'Writing into data/people/ (--apply).' : 'Staging to data/_incoming/.\n');
+
+  let ok = 0;
+  for (const qid of qids) {
+    try {
+      const imported = await fetchPerson(qid);
+      if (await stage(imported, findExisting(imported), apply)) ok += 1;
+    } catch (error) {
+      console.error(`  ✗ ${qid}: ${(error as Error).message}`);
+    }
+    // Be a good citizen of a free public API.
+    if (qids.length > 1) await new Promise((r) => setTimeout(r, 350));
+  }
+
+  console.log(`\n${ok}/${qids.length} record(s) written.`);
+  if (!apply && ok > 0) {
+    console.log('Review data/_incoming/, move what you want into data/people/, then run:');
+    console.log('  npm run validate\n');
+  }
+}
+
+main().catch((error: unknown) => {
+  console.error(`\n${(error as Error).message}\n`);
+  process.exit(1);
+});

@@ -1,0 +1,81 @@
+name: Add a credit
+description: Report an appearance we're missing — especially guest spots on small shows.
+title: '[credit] '
+labels: [credit, needs-transcription]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You don't need git or JSON to contribute. Fill this in and a maintainer
+        will turn it into a data file.
+
+        Obscure one-shots and indie guest spots are the whole point of this
+        project — those are the most valuable reports we get.
+
+  - type: input
+    id: person
+    attributes:
+      label: Who
+      description: The performer's name. If you know they've been credited under another name, say so.
+      placeholder: Aabria Iyengar (credited as Aabria Lipscomb on this one)
+    validations:
+      required: true
+
+  - type: input
+    id: show
+    attributes:
+      label: Show
+      placeholder: 'Wildcards: East Texas University'
+    validations:
+      required: true
+
+  - type: input
+    id: where
+    attributes:
+      label: Season / episode
+      description: Season number, and an episode locator if this was a one-off appearance.
+      placeholder: Season 1, episode "The Seekers"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: Role
+      options:
+        - GM/DM
+        - player
+        - guest GM
+        - guest player
+        - host
+        - producer
+        - editor
+        - composer
+        - writer
+    validations:
+      required: true
+
+  - type: input
+    id: character
+    attributes:
+      label: Character
+      placeholder: Renee Billings
+    validations:
+      required: false
+
+  - type: input
+    id: credited_as
+    attributes:
+      label: Credited as
+      description: The name shown on the episode itself, if it differs from the name above.
+      placeholder: Aabria Lipscomb
+    validations:
+      required: false
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A link to the episode, a wiki page, or anything else that backs this up. "I watched it" is a valid answer — say so and we'll mark it as needing verification.
+    validations:
+      required: true

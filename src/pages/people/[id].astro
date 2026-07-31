@@ -1,0 +1,88 @@
+---
+import Filmography from '../../components/Filmography.astro';
+import Base from '../../layouts/Base.astro';
+import { getDb } from '../../lib/db';
+
+export async function getStaticPaths() {
+  const db = await getDb();
+  return db.people.map((person) => ({
+    params: { id: person.id },
+    props: { person, groups: db.filmography(person), names: db.searchableNames(person) },
+  }));
+}
+
+const { person, groups, names } = Astro.props;
+const formerNames = person.aliases.filter((a) => a.name !== person.canonical_name);
+const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
+---
+
+<Base
+  indexable
+  title={`${person.canonical_name} — Actual Play Database`}
+  description={`Every actual play credit for ${names.join(', ')} — ${creditCount} credits across ${groups.length} shows.`}
+>
+  <h1>{person.canonical_name}</h1>
+
+  <p class="billing">
+    {person.pronouns && <span>{person.pronouns} · </span>}
+    <strong>{creditCount}</strong> credits across <strong>{groups.length}</strong> shows
+  </p>
+
+  {person.bio && <p class="lede">{person.bio}</p>}
+
+  {
+    formerNames.length > 0 && (
+      <div class="alias-callout">
+        <strong>Also credited as</strong>
+        {formerNames.map((alias) => (
+          <p>
+            <strong>{alias.name}</strong>{' '}
+            {`(${alias.alias_type}${alias.active_to ? `, until ${alias.active_to}` : ''})`}
+            {alias.note ? ` — ${alias.note}` : ''}
+          </p>
+        ))}
+        <p>
+          Searching any of these names reaches this page. Each credit below records
+          the name used at the time.
+        </p>
+      </div>
+    )
+  }
+
+  <h2>Filmography</h2>
+  {
+    creditCount === 0 ? (
+      <p class="lede">No credits recorded yet.</p>
+    ) : (
+      <Filmography groups={groups} />
+    )
+  }
+
+  {/*
+    Every name this person can be found by is rendered visibly above — the h1
+    for the canonical name, the callout for former ones — so Pagefind indexes
+    all of them against this one canonical route. That is the alias gap fixed
+    at the search layer, with no hidden keyword stuffing.
+  */}
+
+  {
+    (person.links.wikipedia || person.wikidata_qid) && (
+      <>
+        <h2>Elsewhere</h2>
+        <p class="billing">
+          {person.links.wikipedia && (
+            <a href={person.links.wikipedia} rel="nofollow noopener">
+              Wikipedia
+            </a>
+          )}
+          {person.links.wikipedia && person.wikidata_qid && ' · '}
+          {person.wikidata_qid && (
+            <a href={`https://www.wikidata.org/wiki/${person.wikidata_qid}`} rel="nofollow noopener">
+              Wikidata {person.wikidata_qid}
+            </a>
+          )}
+        </p>
+      </>
+    )
+  }
+</Base>

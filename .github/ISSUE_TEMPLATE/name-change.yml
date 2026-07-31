@@ -1,0 +1,60 @@
+name: Report a name change / duplicate person
+description: Two entries that are the same person, or a performer credited under a name we don't have.
+title: '[alias] '
+labels: [alias, needs-review]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the failure mode this project was built to fix. Other indexes
+        file a performer's pre-name-change work under a separate person, which
+        makes their early indie credits invisible. Reports here are high value.
+
+  - type: input
+    id: canonical
+    attributes:
+      label: Person as we currently list them
+      placeholder: Aabria Iyengar
+    validations:
+      required: true
+
+  - type: input
+    id: other_name
+    attributes:
+      label: The other name
+      placeholder: Aabria Lipscomb
+    validations:
+      required: true
+
+  - type: dropdown
+    id: alias_type
+    attributes:
+      label: What kind of name is it
+      options:
+        - birth name
+        - maiden name
+        - stage name
+        - handle / screen name
+        - legal name
+        - not sure
+    validations:
+      required: true
+
+  - type: input
+    id: when
+    attributes:
+      label: Roughly when did they use it
+      placeholder: up to about 2020
+    validations:
+      required: false
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: >-
+        How do we know? An episode title card is the strongest evidence. Please
+        don't speculate about anyone's personal life — we only record names as
+        they appeared in credits.
+    validations:
+      required: true

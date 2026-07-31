@@ -1,0 +1,26 @@
+id: critical-role
+title: Critical Role
+channels:
+  - critical-role
+format: hybrid
+status: ongoing
+description: >-
+  Weekly campaign that turned a home game into the flagship of the medium.
+links:
+  website: https://critrole.com
+  wikipedia: https://en.wikipedia.org/wiki/Critical_Role
+seasons:
+  - ordinal: 1
+    title: 'Campaign 1: Vox Machina'
+    game: dnd-5e
+    started: '2015-03'
+    ended: '2017-10'
+  - ordinal: 2
+    title: 'Campaign 2: The Mighty Nein'
+    game: dnd-5e
+    started: '2018-01'
+    ended: '2021-06'
+  - ordinal: 3
+    title: 'Campaign 3: Bells Hells'
+    game: dnd-5e
+    started: '2021-10'

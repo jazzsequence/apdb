@@ -1,0 +1,26 @@
+id: dimension-20
+title: Dimension 20
+channels:
+  - dropout
+format: video
+status: ongoing
+description: >-
+  Dropout's anthology actual-play series. Seasons rotate cast, setting and
+  system; ordinals here are this database's own ordering, not Dropout's.
+links:
+  website: https://www.dropout.tv/dimension-20
+  wikipedia: https://en.wikipedia.org/wiki/Dimension_20
+seasons:
+  - ordinal: 1
+    title: Fantasy High
+    game: dnd-5e
+    started: '2018'
+    ended: '2019'
+  - ordinal: 2
+    title: Misfits and Magic
+    game: kids-on-brooms
+    started: '2021'
+  - ordinal: 3
+    title: A Court of Fey & Flowers
+    game: good-society
+    started: '2022'

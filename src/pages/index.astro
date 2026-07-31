@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import { getDb } from '../lib/db';
+
+const db = await getDb();
+const base = import.meta.env.BASE_URL;
+
+const creditCount = db.people.reduce((sum, p) => sum + p.credits.length, 0);
+const withFormerNames = db.people.filter((p) => p.aliases.length > 1);
+---
+
+<Base
+  title="Actual Play Database"
+  description="An index of actual play TTRPG credits, by person. Every show, every season, every guest spot — including the indie long tail."
+>
+  <h1>Actual Play Database</h1>
+  <p class="lede">
+    Existing actual-play indexes are organised by show. This one is organised by
+    <strong>person</strong> — every credit across every show and season, including
+    the one-off guest spots on small indie campaigns that other aggregators drop.
+  </p>
+  <p class="lede">
+    Performers who changed their name are one person here, not two. Each credit
+    records the name they were billed under at the time.
+  </p>
+
+  <p class="billing">
+    Currently indexing <strong>{creditCount}</strong> credits ·
+    <strong>{db.people.length}</strong> people · <strong>{db.shows.length}</strong> shows
+    · <strong>{db.channels.length}</strong> channels
+  </p>
+
+  <h2>People</h2>
+  <ul class="card-list">
+    {
+      db.people.map((person) => {
+        const others = person.aliases.filter((a) => a.name !== person.canonical_name);
+        return (
+          <li>
+            <a href={`${base}people/${person.id}/`}>
+              <div class="card">
+                <h3>{person.canonical_name}</h3>
+                <p>
+                  {person.credits.length} credits
+                  {others.length > 0 && <> · also credited as {others.map((a) => a.name).join(', ')}</>}
+                </p>
+              </div>
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+
+  {
+    withFormerNames.length > 0 && (
+      <div class="alias-callout">
+        <strong>The alias gap, worked</strong>
+        <p>
+          {withFormerNames.map((p) => p.canonical_name).join(', ')} appear under more
+          than one name. Search either name — you land on one page with the whole
+          filmography, early indie credits included.
+        </p>
+      </div>
+    )
+  }
+
+  <h2>Shows</h2>
+  <ul class="card-list">
+    {
+      db.shows.map((show) => (
+        <li>
+          <a href={`${base}shows/${show.id}/`}>
+            <div class="card">
+              <h3>{show.title}</h3>
+              <p>
+                {db.channelsFor(show).map((c) => c.name).join(', ')} · {show.format} ·{' '}
+                {db.gamesFor(show).map((g) => `${g.name} ${g.edition}`).join(', ')}
+              </p>
+            </div>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

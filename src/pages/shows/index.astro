@@ -1,0 +1,116 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDb } from '../../lib/db';
+
+const db = await getDb();
+const base = import.meta.env.BASE_URL;
+
+// Facet values are baked into data attributes at build time, so filtering is a
+// few lines of DOM work with no index shipped to the client.
+const rows = db.shows.map((show) => {
+  const games = db.gamesFor(show);
+  return {
+    show,
+    channels: db.channelsFor(show),
+    games,
+    gameIds: games.map((g) => g.id),
+    editions: games.map((g) => `${g.name} ${g.edition}`),
+  };
+});
+
+const allGames = db.games;
+const allChannels = db.channels;
+const editions = [...new Set(rows.flatMap((r) => r.editions))].sort();
+const formats = [...new Set(db.shows.map((s) => s.format))].sort();
+---
+
+<Base title="Shows — Actual Play Database" description="Browse actual play shows by game, edition, channel and format.">
+  <h1>Shows</h1>
+  <p class="lede">Filter by system, edition, producer or format.</p>
+
+  <div class="facets">
+    <label>
+      Game
+      <select id="f-game">
+        <option value="">Any game</option>
+        {allGames.map((g) => <option value={g.id}>{g.name}</option>)}
+      </select>
+    </label>
+    <label>
+      Edition
+      <select id="f-edition">
+        <option value="">Any edition</option>
+        {editions.map((e) => <option value={e}>{e}</option>)}
+      </select>
+    </label>
+    <label>
+      Channel
+      <select id="f-channel">
+        <option value="">Any channel</option>
+        {allChannels.map((c) => <option value={c.id}>{c.name}</option>)}
+      </select>
+    </label>
+    <label>
+      Format
+      <select id="f-format">
+        <option value="">Any format</option>
+        {formats.map((f) => <option value={f}>{f}</option>)}
+      </select>
+    </label>
+  </div>
+
+  <p class="facet-count" id="count"></p>
+
+  <ul class="card-list" id="results">
+    {
+      rows.map(({ show, channels, games, gameIds, editions: showEditions }) => (
+        <li
+          data-show
+          data-games={gameIds.join('|')}
+          data-editions={showEditions.join('|')}
+          data-channels={show.channels.join('|')}
+          data-format={show.format}
+        >
+          <a href={`${base}shows/${show.id}/`}>
+            <div class="card">
+              <h3>{show.title}</h3>
+              <p>
+                {channels.map((c) => c.name).join(', ')} · {show.format} · {show.status} ·{' '}
+                {games.map((g) => `${g.name} ${g.edition}`).join(', ')}
+              </p>
+            </div>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>
+
+<script>
+  const items = [...document.querySelectorAll<HTMLElement>('[data-show]')];
+  const count = document.getElementById('count')!;
+  const selects = ['f-game', 'f-edition', 'f-channel', 'f-format'].map(
+    (id) => document.getElementById(id) as HTMLSelectElement,
+  );
+  const [game, edition, channel, format] = selects;
+
+  const has = (el: HTMLElement, attr: string, value: string) =>
+    !value || (el.dataset[attr] ?? '').split('|').includes(value);
+
+  function apply() {
+    let shown = 0;
+    for (const item of items) {
+      const visible =
+        has(item, 'games', game.value) &&
+        has(item, 'editions', edition.value) &&
+        has(item, 'channels', channel.value) &&
+        (!format.value || item.dataset.format === format.value);
+      item.hidden = !visible;
+      if (visible) shown += 1;
+    }
+    count.textContent = `${shown} of ${items.length} shows`;
+  }
+
+  for (const select of selects) select.addEventListener('change', apply);
+  apply();
+</script>

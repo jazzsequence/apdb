@@ -1,0 +1,45 @@
+id: matthew-mercer
+canonical_name: Matthew Mercer
+sort_name: Mercer, Matthew
+pronouns: he/him
+bio: >-
+  Voice actor and game master. Dungeon master of Critical Role since its first
+  campaign.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Matthew_Mercer
+aliases:
+  - id: default
+    name: Matthew Mercer
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 1
+    role: GM/DM
+    alias: default
+    year: '2015'
+    source:
+      url: https://en.wikipedia.org/wiki/Critical_Role
+  - show: critical-role
+    season: 2
+    role: GM/DM
+    alias: default
+    year: '2018'
+    source:
+      url: https://en.wikipedia.org/wiki/Critical_Role
+  - show: critical-role
+    season: 3
+    role: GM/DM
+    alias: default
+    year: '2021'
+    source:
+      url: https://en.wikipedia.org/wiki/Critical_Role
+  # Cross-show: the usual GM sitting on the player side of someone else's table.
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    character: Dariax Zaveon
+    alias: default
+    year: '2021'
+    source:
+      url: https://critrole.com
+      needs_verification: true

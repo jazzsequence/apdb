@@ -1,0 +1,49 @@
+id: brennan-lee-mulligan
+canonical_name: Brennan Lee Mulligan
+sort_name: Mulligan, Brennan Lee
+pronouns: he/him
+bio: >-
+  Game master, writer and performer. Principal GM of Dimension 20 and
+  co-founder of Worlds Beyond Number.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Brennan_Lee_Mulligan
+aliases:
+  - id: default
+    name: Brennan Lee Mulligan
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 1
+    role: GM/DM
+    alias: default
+    year: '2018'
+    note: Fantasy High.
+    source:
+      url: https://en.wikipedia.org/wiki/Dimension_20
+  - show: dimension-20
+    season: 3
+    role: player
+    alias: default
+    year: '2022'
+    note: >-
+      A Court of Fey & Flowers — played under Aabria Iyengar's GMing rather
+      than running the table. Character name to be confirmed.
+    source:
+      url: https://en.wikipedia.org/wiki/Dimension_20
+      needs_verification: true
+  - show: worlds-beyond-number
+    season: 1
+    role: GM/DM
+    alias: default
+    year: '2023'
+    source:
+      url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+  - show: exandria-unlimited
+    season: 3
+    role: guest GM
+    alias: default
+    year: '2022'
+    note: 'Exandria Unlimited: Calamity — guest GM for the full four-episode arc.'
+    source:
+      url: https://critrole.com
+      needs_verification: true

@@ -1,0 +1,33 @@
+name: Validate data
+
+# The merge gate. Flat files have no referential integrity of their own —
+# this workflow is the replacement for every constraint a database would
+# have enforced. A PR that does not pass this does not go in.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # Schema (types, required fields, enums) + referential integrity
+      # (every show/season/channel/game/alias id resolves) + id uniqueness
+      # and slug format + duplicate-person heuristic.
+      - name: Validate data files
+        run: npm run validate
+
+      # The build refuses to render from invalid data, so this doubles as a
+      # check that every person and show still produces a page.
+      - name: Build site
+        run: npm run build

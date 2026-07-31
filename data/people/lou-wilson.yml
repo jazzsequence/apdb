@@ -1,0 +1,29 @@
+id: lou-wilson
+canonical_name: Lou Wilson
+sort_name: Wilson, Lou
+pronouns: he/him
+bio: >-
+  Actor and comedian, co-founder of Worlds Beyond Number and a recurring
+  Dimension 20 player.
+aliases:
+  - id: default
+    name: Lou Wilson
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 1
+    role: player
+    character: Fabian Aramais Seacaster
+    alias: default
+    year: '2018'
+    note: Fantasy High.
+    source:
+      url: https://en.wikipedia.org/wiki/Dimension_20
+  - show: worlds-beyond-number
+    season: 1
+    role: player
+    character: Eursulon Toma
+    alias: default
+    year: '2023'
+    source:
+      url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
