@@ -1,0 +1,18 @@
+id: rhiannon-frost
+canonical_name: Rhiannon Frost
+sort_name: Frost, Rhiannon
+aliases:
+  - id: default
+    name: Rhiannon Frost
+    alias_type: legal
+credits:
+  - show: high-rollers-dnd
+    season: 3
+    role: player
+    character: Ophelia
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=Vrx5Tuu4xnM
+        note: "Cast per the production's own description of \"A World of Stories |
+          Altheya: The Dragon Empire #1\"."

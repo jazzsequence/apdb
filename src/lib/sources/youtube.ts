@@ -127,7 +127,52 @@ function splitPerson(chunk: string): { name: string; character?: string } | unde
   return { name: text };
 }
 
+/**
+ * Some productions write the cast character-first, one per line, with a link:
+ *
+ *   DM: Mark "Sherlock" Hulmes - https://twitter.com/sherlock_hulmes
+ *   Daisy: Katie Morrison - https://twitter.com/LittleNommer
+ *   Rowan: Chris Trott - https://twitter.com/trottimus
+ *
+ * That is the reverse of every other source here, and the trailing URL means a
+ * naive "skip lines with links" rule discards the entire cast. The DM line is
+ * the anchor: once seen, subsequent "Label: Name" lines are character: performer.
+ */
+function characterFirstBlock(description: string): YouTubeCredit[] {
+  const credits: YouTubeCredit[] = [];
+  let seenGm = false;
+
+  for (const rawLine of description.split(/\r?\n/)) {
+    // Drop a trailing link so the name is readable, but keep the line.
+    const line = rawLine.replace(/[\s\-–—]*https?:\/\/\S+\s*$/i, '').trim();
+    if (!line || line.length > 120) continue;
+
+    const gm = line.match(/^(?:DM|GM|Dungeon Master|Game Master)\s*[:\-]\s*(.+)$/i);
+    if (gm) {
+      const name = gm[1]!.trim();
+      if (name) { credits.push({ name, role: 'GM/DM', line: rawLine.trim() }); seenGm = true; }
+      continue;
+    }
+
+    if (!seenGm) continue;
+
+    const row = line.match(/^([^:]{2,40}):\s*(.+)$/);
+    if (!row) continue;
+    const character = row[1]!.trim();
+    const name = row[2]!.trim();
+    // A performer name, not a timestamp or a sentence.
+    if (!/^[\p{L}"'][\p{L}\s."'-]{2,45}$/u.test(name)) continue;
+    if (/^\d/.test(character)) continue;
+    credits.push({ name, role: 'player', character, line: rawLine.trim() });
+  }
+
+  return credits.length > 1 ? credits : [];
+}
+
 export function creditsFromDescription(description: string): YouTubeCredit[] {
+  const characterFirst = characterFirstBlock(description);
+  if (characterFirst.length > 0) return characterFirst;
+
   const credits: YouTubeCredit[] = [];
 
   for (const rawLine of description.split(/\r?\n/)) {

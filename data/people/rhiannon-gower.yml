@@ -1,0 +1,18 @@
+id: rhiannon-gower
+canonical_name: Rhiannon Gower
+sort_name: Gower, Rhiannon
+aliases:
+  - id: default
+    name: Rhiannon Gower
+    alias_type: legal
+credits:
+  - show: high-rollers-dnd
+    season: 1
+    role: player
+    character: Sentry
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=KE-8q08L11k
+        note: "Cast per the production's own description of \"High Rollers: Aerois #147
+          | The Best Defense\"."

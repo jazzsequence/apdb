@@ -1,24 +1,16 @@
-id: tom-hazell
-canonical_name: Tom Hazell
-sort_name: Hazell, Tom
+id: chris-trott
+canonical_name: Chris Trott
+sort_name: Trott, Chris
 links: {}
 aliases:
   - id: default
-    name: Tom Hazell
+    name: Chris Trott
     alias_type: legal
 credits:
   - show: high-rollers-dnd
-    season: 8
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Chaos_Twins
-        note: Chaos Twins cast, via the highrollers.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: high-rollers-dnd
     season: 3
     role: player
-    character: Xantheus
+    character: Rowan
     alias: default
     sources:
       - url: https://www.youtube.com/watch?v=Vrx5Tuu4xnM
@@ -28,7 +20,7 @@ credits:
   - show: high-rollers-dnd
     season: 1
     role: player
-    character: Quill
+    character: Lucius
     alias: default
     sources:
       - tier: official

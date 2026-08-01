@@ -488,7 +488,9 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
 
   // Roll every episode's credits up to the season: an index of who was in a
   // show does not need one credit per episode.
-  const found = new Map<string, { role: string; character?: string; url: string; title: string }>();
+  // Keep the name as written; the key is lowercased only for deduping, and
+  // reading the name back out of it produced "mark \"sherlock\" hulmes".
+  const found = new Map<string, { name: string; role: string; character?: string; url: string; title: string }>();
   let withCredits = 0;
   for (const video of videos) {
     const credits = creditsFromDescription(video.description);
@@ -497,6 +499,7 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
       const k = `${credit.name.toLowerCase()}|${credit.role}`;
       if (!found.has(k)) {
         found.set(k, {
+          name: credit.name,
           role: credit.role,
           character: credit.character,
           url: video.url,
@@ -508,9 +511,8 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
 
   console.log(`${withCredits}/${videos.length} descriptions carried a cast line.`);
   console.log(`\n  would import ${found.size} credit(s):\n`);
-  for (const [k, v] of found) {
-    const name = k.split('|')[0]!;
-    console.log(`    ${v.role.padEnd(13)} ${name}${v.character ? `  as ${v.character}` : ''}`);
+  for (const v of found.values()) {
+    console.log(`    ${v.role.padEnd(13)} ${v.name}${v.character ? `  as ${v.character}` : ''}`);
   }
 
   if (has('dry-run') || found.size === 0) {
@@ -524,8 +526,8 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   await mkdir(dir, { recursive: true });
 
   let written = 0;
-  for (const [k, v] of found) {
-    const name = k.split('|')[0]!;
+  for (const v of found.values()) {
+    const name = v.name;
     const proper = v.title && name;
     const id = slugify(name);
     const existing = byId.get(id);
