@@ -20,13 +20,14 @@ credits:
     alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_2
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
   - show: candela-obscura
     season: 5
     role: player
+    character: Marisha Ray
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen

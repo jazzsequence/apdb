@@ -1,0 +1,11 @@
+id: dinner-dragons
+title: Dinner & Dragons
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Dinner_%26_Dragons
+seasons:
+  - ordinal: 1
+    game: dnd-5e

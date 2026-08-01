@@ -54,7 +54,7 @@ credits:
   - show: legends-of-avantris
     season: 5
     role: player
-    character: "Pyke (Stardust Rhapsody: Overture)"
+    character: Pyke
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Overture
@@ -82,7 +82,7 @@ credits:
   - show: legends-of-avantris
     season: 8
     role: player
-    character: Booker (Vagabond's Heart)
+    character: Booker
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Vagabond's_Heart%3A_A_Dimwood_Tale
@@ -92,7 +92,7 @@ credits:
   - show: legends-of-avantris
     season: 9
     role: player
-    character: Booker (Uprooted)
+    character: Booker
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
@@ -130,7 +130,7 @@ credits:
   - show: legends-of-avantris
     season: 13
     role: player
-    character: Skrimm Stabbaskotch (The Mistchurch Horror)
+    character: Skrimm Stabbaskotch
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mistchurch_Horror
@@ -164,7 +164,7 @@ credits:
   - show: legends-of-avantris
     season: 20
     role: player
-    character: Shepherd Morgan (Of Heart and Harvest)
+    character: Shepherd Morgan
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
@@ -173,7 +173,7 @@ credits:
   - show: legends-of-avantris
     season: 22
     role: player
-    character: Kaiyo (Ghosts Of Saltmarsh)
+    character: Kaiyo
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
@@ -199,7 +199,7 @@ credits:
   - show: legends-of-avantris
     season: 25
     role: player
-    character: Andy (13 Beers at the Local Cheese)
+    character: Andy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
@@ -208,7 +208,7 @@ credits:
   - show: legends-of-avantris
     season: 26
     role: player
-    character: Pyke (Stardust Rhapsody Prelude)
+    character: Pyke
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody_Prelude
@@ -218,7 +218,7 @@ credits:
   - show: legends-of-avantris
     season: 27
     role: player
-    character: Pyke_(Stardust_Rhapsody:_Anthem)
+    character: Pyke Starfall
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Anthem
@@ -236,7 +236,7 @@ credits:
   - show: legends-of-avantris
     season: 29
     role: player
-    character: Babar B. Babar
+    character: Babar B. Babar / Wreegan Glittergem
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Cuttlefish_Sweepstakes
@@ -245,7 +245,7 @@ credits:
   - show: legends-of-avantris
     season: 30
     role: player
-    character: Torbek (Once Upon a Ghostlight)
+    character: Torbek
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_a_Ghostlight
@@ -254,7 +254,7 @@ credits:
   - show: legends-of-avantris
     season: 31
     role: player
-    character: Silas "Shepherd" Morgan (Dust to Damnation)
+    character: Silas "Shepherd" Morgan
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
@@ -272,7 +272,7 @@ credits:
   - show: legends-of-avantris
     season: 33
     role: player
-    character: Vandrys Truestrike (Into the Court of Candy)
+    character: Vandrys Truestrike
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Into_the_Court_of_Candy
@@ -281,7 +281,7 @@ credits:
   - show: legends-of-avantris
     season: 34
     role: player
-    character: Torbek (Once Upon A Starlight)
+    character: Torbek
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_A_Starlight
@@ -290,7 +290,7 @@ credits:
   - show: legends-of-avantris
     season: 35
     role: player
-    character: Booker (Uproot-a-rama)
+    character: Booker
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uproot-a-rama
@@ -299,7 +299,7 @@ credits:
   - show: legends-of-avantris
     season: 36
     role: player
-    character: Skrimm Stabbs (Voidbound)
+    character: Skrimm Stabbs
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Voidbound
@@ -317,7 +317,7 @@ credits:
   - show: legends-of-avantris
     season: 38
     role: player
-    character: Pyke (Neon Odyssey one-shot)
+    character: Pyke Starfall
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot

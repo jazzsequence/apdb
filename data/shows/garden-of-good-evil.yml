@@ -1,0 +1,11 @@
+id: garden-of-good-evil
+title: Garden of Good & Evil
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Garden_of_Good_%26_Evil
+seasons:
+  - ordinal: 1
+    game: dnd-5e

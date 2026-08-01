@@ -1,0 +1,11 @@
+id: salt-bay-court-of-thorns
+title: "Salt Bay: Court of Thorns"
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Salt_Bay%3A_Court_of_Thorns
+seasons:
+  - ordinal: 1
+    game: dnd-5e

@@ -1,3 +1,9 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Never_Stop_Blowing_Up (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: alex-song-xia
 canonical_name: Alex Song-Xia
 sort_name: Song-Xia, Alex
@@ -11,18 +17,18 @@ credits:
     season: 20
     role: player
     character: Conrad Schintz
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Mentopolis
         note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 23
     role: player
     character: Liv Skyler / Kingskin
+    alias: default
     sources:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Never_Stop_Blowing_Up
         note: Never Stop Blowing Up cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-    alias: default

@@ -1,0 +1,11 @@
+id: savage-60-seconds
+title: Savage 60 Seconds
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Savage_60_Seconds
+seasons:
+  - ordinal: 1
+    game: dnd-5e

@@ -52,18 +52,6 @@ const withFormerNames = db.people.filter((p) => p.aliases.length > 1);
     }
   </ul>
 
-  {
-    withFormerNames.length > 0 && (
-      <div class="alias-callout">
-        <strong>The alias gap, worked</strong>
-        <p>
-          {withFormerNames.map((p) => p.canonical_name).join(', ')} appear under more
-          than one name. Search either name — you land on one page with the whole
-          filmography, early indie credits included.
-        </p>
-      </div>
-    )
-  }
 
   <h2>Shows</h2>
   <ul class="card-list">

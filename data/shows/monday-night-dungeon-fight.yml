@@ -1,0 +1,11 @@
+id: monday-night-dungeon-fight
+title: Monday Night Dungeon Fight
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Monday_Night_Dungeon_Fight
+seasons:
+  - ordinal: 1
+    game: dnd-5e

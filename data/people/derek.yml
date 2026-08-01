@@ -82,7 +82,7 @@ credits:
   - show: legends-of-avantris
     season: 9
     role: player
-    character: Bitsy (Uprooted)
+    character: Bitsy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
@@ -101,7 +101,7 @@ credits:
   - show: legends-of-avantris
     season: 13
     role: player
-    character: Bisty (The Mistchurch Horror)
+    character: Bitsy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mistchurch_Horror
@@ -110,7 +110,7 @@ credits:
   - show: legends-of-avantris
     season: 14
     role: player
-    character: Morning Frost (Call of the Feywild)
+    character: Morning Frost
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Call_of_the_Feywild
@@ -144,7 +144,7 @@ credits:
   - show: legends-of-avantris
     season: 19
     role: player
-    character: Balto (Tainted Grail)
+    character: Balto, Son of Kaasen
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Tainted_Grail
@@ -153,7 +153,7 @@ credits:
   - show: legends-of-avantris
     season: 20
     role: player
-    character: Caprice DeSesto (Of Heart and Harvest)
+    character: Caprice DeSesto
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
@@ -170,7 +170,7 @@ credits:
   - show: legends-of-avantris
     season: 22
     role: player
-    character: Cordie (Ghosts Of Saltmarsh)
+    character: Cordie
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
@@ -213,7 +213,7 @@ credits:
   - show: legends-of-avantris
     season: 28
     role: player
-    character: Balto (Mud and Mercy)
+    character: Balto
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Mud_and_Mercy
@@ -230,7 +230,7 @@ credits:
   - show: legends-of-avantris
     season: 30
     role: player
-    character: Morning Frost (Once Upon a Ghostlight)
+    character: Morning Frost
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_a_Ghostlight
@@ -239,7 +239,7 @@ credits:
   - show: legends-of-avantris
     season: 31
     role: player
-    character: Quibly Gones (Dust to Damnation)
+    character: Quibly Gones
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
@@ -257,7 +257,7 @@ credits:
   - show: legends-of-avantris
     season: 33
     role: player
-    character: Morning Frost (Into the Court of Candy)
+    character: Morning Frost
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Into_the_Court_of_Candy
@@ -266,7 +266,7 @@ credits:
   - show: legends-of-avantris
     season: 34
     role: player
-    character: Frost (Once Upon A Starlight)
+    character: Frost
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_A_Starlight
@@ -275,7 +275,7 @@ credits:
   - show: legends-of-avantris
     season: 35
     role: player
-    character: Bitsy (Uproot-a-rama)
+    character: Bitsy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uproot-a-rama
@@ -300,7 +300,7 @@ credits:
   - show: legends-of-avantris
     season: 38
     role: player
-    character: Ziggy (Neon Odyssey one-shot)
+    character: Ziggy Woog
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot

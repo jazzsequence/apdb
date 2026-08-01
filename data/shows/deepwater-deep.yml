@@ -1,0 +1,11 @@
+id: deepwater-deep
+title: Deepwater Deep
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Deepwater_Deep
+seasons:
+  - ordinal: 1
+    game: dnd-5e

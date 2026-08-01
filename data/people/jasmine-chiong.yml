@@ -15,6 +15,7 @@ credits:
   - show: critical-role-specials
     season: 5
     role: player
+    character: Caroline Lux
     alias: default
     sources:
       - tier: community

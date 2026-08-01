@@ -1,5 +1,5 @@
 # Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year (CC-BY-SA).
+# Source: https://dimension20.fandom.com/wiki/City_Council_of_Darkness (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -140,16 +140,7 @@ credits:
     character: Zaeth Bondana
     alias: default
     sources:
-      - url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-        tier: community
-  - show: dimension-20
-    season: 22
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year
-        note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA."

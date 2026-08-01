@@ -1,0 +1,22 @@
+# Credits imported from highrollers.fandom.com on 2026-08-01.
+# Source: https://highrollers.fandom.com/wiki/Chaos_Twins (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: tom-hazell
+canonical_name: Tom Hazell
+sort_name: Hazell, Tom
+aliases:
+  - id: default
+    name: Tom Hazell
+    alias_type: legal
+credits:
+  - show: high-rollers-dnd
+    season: 8
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://highrollers.fandom.com/wiki/Chaos_Twins
+        note: Chaos Twins cast, via the highrollers.fandom.com infobox. CC-BY-SA.

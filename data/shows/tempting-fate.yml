@@ -1,0 +1,11 @@
+id: tempting-fate
+title: Tempting Fate
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Tempting_Fate
+seasons:
+  - ordinal: 1
+    game: dnd-5e

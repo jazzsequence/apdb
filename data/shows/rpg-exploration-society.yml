@@ -1,0 +1,11 @@
+id: rpg-exploration-society
+title: RPG Exploration Society
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/RPG_Exploration_Society
+seasons:
+  - ordinal: 1
+    game: dnd-5e

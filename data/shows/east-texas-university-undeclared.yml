@@ -1,0 +1,11 @@
+id: east-texas-university-undeclared
+title: "East Texas University: Undeclared"
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/East_Texas_University%3A_Undeclared
+seasons:
+  - ordinal: 1
+    game: dnd-5e

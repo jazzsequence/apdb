@@ -7,23 +7,11 @@
 id: nick-marini
 canonical_name: Nick Marini
 sort_name: Marini, Nick
-links: {}
 aliases:
   - id: default
     name: Nick Marini
     alias_type: legal
 credits:
-  - show: critical-role
-    season: 3
-    role: guest player
-    character: Pelor / Ayden
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_3
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
   - show: critical-role-specials
     season: 2
     role: player

@@ -44,7 +44,7 @@ credits:
   - show: legends-of-avantris
     season: 6
     role: guest player
-    character: Zellek
+    character: Zellek Sythragos
     alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
@@ -63,7 +63,7 @@ credits:
   - show: legends-of-avantris
     season: 9
     role: player
-    character: Jean Claude (Uprooted)
+    character: Jean Claude Chanticleer
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
@@ -91,7 +91,7 @@ credits:
   - show: legends-of-avantris
     season: 20
     role: player
-    character: Taishen Fireblossom (Of Heart and Harvest)
+    character: Taishen Fireblossom
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
@@ -108,7 +108,7 @@ credits:
   - show: legends-of-avantris
     season: 25
     role: player
-    character: Galileo (13 Beers at the Local Cheese)
+    character: Galileo
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
@@ -135,7 +135,7 @@ credits:
   - show: legends-of-avantris
     season: 29
     role: player
-    character: Jean Claude (Cuttlefish Sweepstakes)
+    character: Jean Claude / Breezy / Galileo / Queek / Wreegan Glittergem
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Cuttlefish_Sweepstakes
@@ -144,7 +144,7 @@ credits:
   - show: legends-of-avantris
     season: 30
     role: player
-    character: Gideon Coal (Once Upon a Ghostlight)
+    character: Gideon Coal
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_a_Ghostlight
@@ -153,7 +153,7 @@ credits:
   - show: legends-of-avantris
     season: 31
     role: player
-    character: Gideon Coal (Dust to Damnation)
+    character: Gideon Coal
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
@@ -162,7 +162,7 @@ credits:
   - show: legends-of-avantris
     season: 34
     role: player
-    character: Gideon (Once Upon A Starlight)
+    character: Gideon
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_A_Starlight
@@ -171,7 +171,7 @@ credits:
   - show: legends-of-avantris
     season: 35
     role: player
-    character: Jean Claude (Uproot-a-rama)
+    character: Jean Claude
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uproot-a-rama
@@ -180,7 +180,7 @@ credits:
   - show: legends-of-avantris
     season: 36
     role: player
-    character: Taishen Jadeshell (Voidbound)
+    character: Taishen Jadeshell
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Voidbound

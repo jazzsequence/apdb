@@ -1,0 +1,11 @@
+id: black-bag
+title: Black Bag
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Black_Bag
+seasons:
+  - ordinal: 1
+    game: dnd-5e

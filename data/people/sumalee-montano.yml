@@ -1,3 +1,9 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: sumalee-montano
 canonical_name: Sumalee Montano
 sort_name: Montano, Sumalee
@@ -11,9 +17,9 @@ credits:
     role: guest player
     character: Nila
     note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_2
+        url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
-    alias: default

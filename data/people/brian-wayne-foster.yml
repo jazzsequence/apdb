@@ -15,6 +15,7 @@ credits:
   - show: critical-role-specials
     season: 1
     role: host
+    character: Ivan Van Norman
     alias: default
     sources:
       - tier: community

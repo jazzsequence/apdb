@@ -1,0 +1,11 @@
+id: the-lost-brigade
+title: The Lost Brigade
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade
+seasons:
+  - ordinal: 1
+    game: dnd-5e

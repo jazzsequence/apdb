@@ -1,0 +1,367 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: brennan-lee-mulligan
+canonical_name: Brennan Lee Mulligan
+sort_name: Mulligan, Brennan Lee
+pronouns: he/him
+bio: Game master, writer and performer. Principal GM of Dimension 20 and
+  co-founder of Worlds Beyond Number.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Brennan_Lee_Mulligan
+aliases:
+  - id: default
+    name: Brennan Lee Mulligan
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2018"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dimension_20
+        tier: reference
+  - show: dimension-20
+    season: 3
+    role: player
+    alias: default
+    year: "2022"
+    note: Character name to be confirmed.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dimension_20
+        tier: reference
+  - show: worlds-beyond-number
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2023"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+        tier: reference
+  - show: exandria-unlimited
+    season: 3
+    role: guest GM
+    alias: default
+    year: "2022"
+    note: Guest GM for the full four-episode arc.
+    sources:
+      - url: https://critrole.com
+        tier: official
+  - show: dimension-20
+    season: 2
+    role: player
+    character: Evan Kelmp
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
+        note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 5
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City
+        note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 6
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Tiny_Heist
+        note: Tiny Heist cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 7
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/A_Crown_of_Candy
+        note: A Crown of Candy cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 8
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan
+        note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 9
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City%3A_Chapter_II
+        note: "The Unsleeping City: Chapter II cast, via the dimension20.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: dimension-20
+    season: 10
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Sophomore_Year
+        note: "Fantasy High: Sophomore Year cast, via the dimension20.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: dimension-20
+    season: 11
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Mice_%26_Murder
+        note: Mice & Murder cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 12
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Seven
+        note: The Seven cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 14
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/A_Starstruck_Odyssey
+        note: A Starstruck Odyssey cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 3
+    role: player
+    character: Captain K. P. Hob
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
+        note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 17
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Neverafter
+        note: Neverafter cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 18
+    role: player
+    character: Bishop Raphaniel Charlock
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Ravening_War
+        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 19
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Dungeons_and_Drag_Queens
+        note: Dungeons and Drag Queens cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 20
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Mentopolis
+        note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 21
+    role: player
+    character: Tula
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Burrow's_End
+        note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 22
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year
+        note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: dimension-20
+    season: 23
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Never_Stop_Blowing_Up
+        note: Never Stop Blowing Up cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 24
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Dungeons_and_Drag_Queens_Season_2
+        note: Dungeons and Drag Queens Season 2 cast, via the dimension20.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 25
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Time_Quangle
+        note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 26
+    role: player
+    character: Evan Kelmp
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
+        note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 27
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Titan_Takedown
+        note: Titan Takedown cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 28
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Cloudward%2C_Ho!
+        note: Cloudward, Ho! cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 30
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Gladlands
+        note: Gladlands cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 31
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
+        note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: dimension-20
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Escape_from_the_Bloodkeep
+        note: Escape From the Bloodkeep cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 29
+    role: player
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/On_a_Bus
+        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
+        note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: exandria-unlimited
+    season: 5
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Divergence
+        note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
+        note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 3
+    role: guest player
+    note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

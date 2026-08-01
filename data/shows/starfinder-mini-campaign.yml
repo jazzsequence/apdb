@@ -1,0 +1,11 @@
+id: starfinder-mini-campaign
+title: Starfinder - Mini Campaign
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Starfinder_-_Mini_Campaign
+seasons:
+  - ordinal: 1
+    game: dnd-5e

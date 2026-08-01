@@ -1,3 +1,9 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Misfits_and_Magic (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: markeia-mccarty
 canonical_name: Markeia McCarty
 sort_name: McCarty, Markeia
@@ -11,8 +17,8 @@ credits:
     role: guest player
     character: Premium Va-Casians
     note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
     sources:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
         note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-    alias: default

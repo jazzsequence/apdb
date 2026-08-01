@@ -53,7 +53,7 @@ credits:
   - show: legends-of-avantris
     season: 5
     role: player
-    character: "Rett (Stardust Rhapsody: Overture)"
+    character: Rett
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Overture
@@ -81,7 +81,7 @@ credits:
   - show: legends-of-avantris
     season: 8
     role: player
-    character: Grumley (Vagabond's Heart)
+    character: Grumley
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Vagabond's_Heart%3A_A_Dimwood_Tale
@@ -91,7 +91,7 @@ credits:
   - show: legends-of-avantris
     season: 9
     role: player
-    character: Grumley (Uprooted)
+    character: Grumley
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
@@ -129,7 +129,7 @@ credits:
   - show: legends-of-avantris
     season: 13
     role: player
-    character: Clayton Azran (The Mistchurch Horror)
+    character: Clayton Azran
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mistchurch_Horror
@@ -138,7 +138,7 @@ credits:
   - show: legends-of-avantris
     season: 14
     role: player
-    character: Kremy Lecroux (Call of the Feywild)
+    character: Kremy Lecroux
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Call_of_the_Feywild
@@ -156,7 +156,7 @@ credits:
   - show: legends-of-avantris
     season: 17
     role: player
-    character: Rett (On a Silver Strand)
+    character: Rett
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
@@ -182,7 +182,7 @@ credits:
   - show: legends-of-avantris
     season: 20
     role: player
-    character: Clayton Azran (Of Heart and Harvest)
+    character: Clayton Azran
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
@@ -200,7 +200,7 @@ credits:
   - show: legends-of-avantris
     season: 22
     role: player
-    character: Poros (Ghosts Of Saltmarsh)
+    character: Poros
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
@@ -225,7 +225,7 @@ credits:
   - show: legends-of-avantris
     season: 25
     role: player
-    character: Knuckles (13 Beers at the Local Cheese)
+    character: Knuckles
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
@@ -234,7 +234,7 @@ credits:
   - show: legends-of-avantris
     season: 26
     role: player
-    character: Rett (Stardust Rhapsody Prelude)
+    character: Rett
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody_Prelude
@@ -244,7 +244,7 @@ credits:
   - show: legends-of-avantris
     season: 27
     role: player
-    character: Rett_(Stardust_Rhapsody:_Anthem)
+    character: Rett Indigo
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Anthem
@@ -254,7 +254,7 @@ credits:
   - show: legends-of-avantris
     season: 28
     role: player
-    character: Kristoff (Mud and Mercy)
+    character: Kristoff
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Mud_and_Mercy
@@ -263,7 +263,7 @@ credits:
   - show: legends-of-avantris
     season: 29
     role: player
-    character: The Walrus / Bargrim (Cuttlefish Sweepstakes)
+    character: The Walrus / Bargrim
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Cuttlefish_Sweepstakes
@@ -272,7 +272,7 @@ credits:
   - show: legends-of-avantris
     season: 30
     role: player
-    character: Kremy Lecroux (Once Upon a Ghostlight)
+    character: Kremy Lecroux
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_a_Ghostlight
@@ -281,7 +281,7 @@ credits:
   - show: legends-of-avantris
     season: 31
     role: player
-    character: Rett Indigo (Dust to Damnation)
+    character: Rett Indigo
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
@@ -299,7 +299,7 @@ credits:
   - show: legends-of-avantris
     season: 33
     role: player
-    character: Kremy Lecroux (Into the Court of Candy)
+    character: Kremy Lecroux
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Into_the_Court_of_Candy
@@ -308,7 +308,7 @@ credits:
   - show: legends-of-avantris
     season: 34
     role: player
-    character: Kremy (Once Upon A Starlight)
+    character: Kremy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_A_Starlight
@@ -317,7 +317,7 @@ credits:
   - show: legends-of-avantris
     season: 35
     role: player
-    character: Grumley (Uproot-a-rama)
+    character: Grumley
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uproot-a-rama
@@ -326,7 +326,7 @@ credits:
   - show: legends-of-avantris
     season: 36
     role: player
-    character: Jornir (Voidbound)
+    character: Jornir
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Voidbound
@@ -344,7 +344,7 @@ credits:
   - show: legends-of-avantris
     season: 38
     role: player
-    character: Rett (Neon Odyssey one-shot)
+    character: Rett Indigo
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot

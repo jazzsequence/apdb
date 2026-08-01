@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { person, groups, names } = Astro.props;
+const REPO = 'your-org/actual-play-db';
 const formerNames = person.aliases.filter((a) => a.name !== person.canonical_name);
 const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
 ---
@@ -44,6 +45,17 @@ const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
       </div>
     )
   }
+
+  <p class="billing">
+    Something wrong here?{' '}
+    <a
+      href={`https://github.com/${REPO}/issues/new?template=correction.yml&title=${encodeURIComponent(`[correction] ${person.canonical_name}`)}&labels=correction`}
+      rel="nofollow noopener"
+    >
+      Suggest a correction
+    </a>{' '}
+    — much of this is imported from fan wikis and imports get things wrong.
+  </p>
 
   <h2>Credits</h2>
   {

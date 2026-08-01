@@ -1,3 +1,9 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Mentopolis (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: hank-green
 canonical_name: Hank Green
 sort_name: Green, Hank
@@ -10,8 +16,8 @@ credits:
     season: 20
     role: player
     character: The Fix
+    alias: default
     sources:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Mentopolis
         note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-    alias: default

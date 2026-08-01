@@ -81,10 +81,15 @@ export const FIELD_ROLES: Record<string, CreditRole> = {
   host: 'host',
   hostp: 'host',
   producer: 'producer',
+  produced_by: 'producer',
   editor: 'editor',
+  edited_by: 'editor',
+  intro_edited_by: 'editor',
   writer: 'writer',
+  written_by: 'writer',
   composer: 'composer',
-  theme: 'composer',
+  intro_music_by: 'composer',
+  hosted_by: 'host',
 };
 
 async function fetchWikitext(host: string, page: string): Promise<string> {
@@ -191,9 +196,29 @@ export function parseParams(template: string): Record<string, string> {
  *
  * Falls back to plain wikilinks for fields like `gm` that aren't bolded.
  */
-const LINK = String.raw`\[\[\s*([^\]|]+?)\s*(?:\|[^\]]*?)?\]\]`;
+// Captures target (1) and optional display label (2). The label is the human
+// name: the Adventure Zone wiki writes
+// [[w:c:mbmbam:Justin McElroy|Justin McElroy]], where only the label is usable.
+const LINK = String.raw`\[\[\s*([^\]|]+?)\s*(?:\|\s*([^\]]*?)\s*)?\]\]`;
 
-const GM_MARKERS = /\b(dm|gm|dungeon master|game master)\b/i;
+/**
+ * Some wikis put the GM in article prose rather than the infobox — High Rollers
+ * writes "DMed by [[Mara Holmes]]". That is still reliable to read: the name is
+ * a wikilink, so it can be category-checked like any other.
+ */
+const PROSE_GM = new RegExp(
+  String.raw`(?:DM(?:ed|'d)?|GM(?:ed|'d)?|Dungeon[- ]Master(?:ed)?|Game[- ]Master(?:ed)?|run|hosted)\s+by\s+` +
+    LINK,
+  'gi',
+);
+
+/** GM names mentioned in prose, outside any template. */
+export function proseGMs(wikitext: string): string[] {
+  const body = wikitext.replace(/\{\{[\s\S]*?\}\}/g, ' ');
+  return [...new Set([...body.matchAll(PROSE_GM)].map((m) => m[1]!.trim()))];
+}
+
+const GM_MARKERS = /^(dm|gm|dungeon master|game master|dungeon mistress|game mistress)$/i;
 
 // ---------------------------------------------------------------------------
 // Entity resolution.
@@ -341,11 +366,32 @@ export async function discoverCampaignPages(
   return { template: '', pages: [] };
 }
 
+/**
+ * Links that are not people-on-this-wiki: media, categories, and interwiki
+ * links. The last one matters — the Adventure Zone wiki writes
+ * `[[w:c:mbmbam:Clint McElroy]]` and `[[wikipedia:Sherlock (TV series)]]`, and
+ * taking those at face value produced a performer literally named
+ * "w:c:mbmbam:Clint McElroy" alongside the real one.
+ */
+const NOT_A_PERSON = /^(File|Image|Category|Template|Help|Special|wikipedia|wikt|commons|d|s):/i;
+
+/** Strip an interwiki prefix: "w:c:mbmbam:Clint McElroy" -> "Clint McElroy". */
+function stripInterwiki(title: string): string {
+  return title.replace(/^(?:w:)?(?:c:)?[a-z0-9-]+:/i, '').trim();
+}
+
 /** Every wikilink in a value, in document order, with its position. */
 function linksInOrder(value: string): { title: string; start: number; end: number }[] {
   return [...value.matchAll(new RegExp(LINK, 'g'))]
-    .map((m) => ({ title: m[1]!.trim(), start: m.index!, end: m.index! + m[0].length }))
-    .filter((l) => !/^(File|Image|Category):/i.test(l.title));
+    .filter((m) => !NOT_A_PERSON.test(m[1]!.trim()))
+    .map((m) => ({
+      // Label first; it is the readable name. Fall back to the target with any
+      // interwiki prefix removed.
+      title: (m[2]?.trim() || stripInterwiki(m[1]!.trim())),
+      start: m.index!,
+      end: m.index! + m[0].length,
+    }))
+    .filter((l) => l.title.length > 0);
 }
 
 /**
@@ -367,6 +413,67 @@ export function assemblePeople(
   const links = linksInOrder(value);
   const people: WikiPerson[] = [];
   const dropped: string[] = [];
+
+  // Alternating positional pairs are explicit structure too: the Critical Role
+  // wiki writes {{Starring | [[Laura Bailey]] | [[Vex'ahlia]] | ... }}. Without
+  // this, classification decides — and it gets it wrong, because a player
+  // character like Chetney Pock O'Pea has a page that looks person-ish.
+  const nested = extractTemplate(value, '[A-Za-z]');
+  if (nested) {
+    const body = nested.replace(/^\{\{[^|]*/, '').replace(/\}\}$/, '');
+    const args: string[] = [];
+    let depth = 0, cur = '';
+    for (let i = 0; i < body.length; i++) {
+      if (body.startsWith('{{', i) || body.startsWith('[[', i)) { depth++; cur += body.slice(i, i + 2); i++; continue; }
+      if (body.startsWith('}}', i) || body.startsWith(']]', i)) { depth--; cur += body.slice(i, i + 2); i++; continue; }
+      if (body[i] === '|' && depth === 0) { args.push(cur); cur = ''; continue; }
+      cur += body[i];
+    }
+    args.push(cur);
+    const slots = args.map((a) => a.trim()).filter((a) => a.length > 0 && !a.includes('='));
+    const paired: WikiPerson[] = [];
+    let ok = slots.length >= 2;
+    for (let i = 0; ok && i < slots.length; i += 2) {
+      const nameLinks = linksInOrder(slots[i]!);
+      if (nameLinks.length !== 1) { ok = false; break; }
+      const slot = slots[i + 1] ?? '';
+      const chars = linksInOrder(slot).map((l) => l.title);
+      const bare = slot.replace(/\[\[|\]\]/g, '').trim();
+      paired.push({
+        name: nameLinks[0]!.title,
+        ...(chars.length ? { character: chars.join(' / ') } : {}),
+        ...(GM_MARKERS.test(bare) ? { roleOverride: 'GM/DM' as CreditRole } : {}),
+      });
+    }
+    if (ok && paired.length > 0) return { people: paired, dropped: [] };
+  }
+
+  // Explicit structure beats inferred classification. When a field spells out
+  // "[[X]] as [[Y]]", the wiki is asserting that X is the performer and Y the
+  // character, and that assertion is stronger than a category lookup — on the
+  // Adventure Zone wiki the McElroys have character pages of their own, so
+  // categories say "character" for the actual players.
+  const SEPARATOR = /\bas\b|\s[-–—]\s/i;
+  if (SEPARATOR.test(value) && links.length > 1) {
+    const entries = value
+      .split(/<br\s*\/?>|\n/i)
+      .map((e) => e.trim())
+      .filter((e) => e.includes('[['));
+    const structural: WikiPerson[] = [];
+    for (const entry of entries) {
+      const entryLinks = linksInOrder(entry);
+      if (entryLinks.length === 0) continue;
+      const asAt = entry.search(SEPARATOR);
+      const before = entryLinks.filter((l) => asAt < 0 || l.start < asAt);
+      const after = entryLinks.filter((l) => asAt >= 0 && l.start > asAt);
+      if (before.length !== 1) { structural.length = 0; break; }
+      structural.push({
+        name: before[0]!.title,
+        ...(after.length ? { character: after.map((l) => l.title).join(' / ') } : {}),
+      });
+    }
+    if (structural.length > 0) return { people: structural, dropped };
+  }
 
   for (let i = 0; i < links.length; i++) {
     const link = links[i]!;
@@ -478,12 +585,17 @@ export async function fetchCampaign(host: string, page: string): Promise<WikiCam
 
   const creditFields = Object.entries(params).filter(([field]) => FIELD_ROLES[field]);
 
+  // Fall back to prose for the GM when the infobox has no such field. High
+  // Rollers and Saving Throw both name the GM only in the article text.
+  const hasInfoboxGM = creditFields.some(([field]) => FIELD_ROLES[field] === 'GM/DM');
+  const proseGmNames = hasInfoboxGM ? [] : proseGMs(wikitext);
+
   // Resolve every linked page against the wiki's own categories first, in one
   // batched call, so assembly is a lookup rather than a guess about formatting.
-  const kinds = await classifyTitles(
-    host,
-    creditFields.flatMap(([, value]) => linksInOrder(value).map((l) => l.title)),
-  );
+  const kinds = await classifyTitles(host, [
+    ...creditFields.flatMap(([, value]) => linksInOrder(value).map((l) => l.title)),
+    ...proseGmNames,
+  ]);
 
   const credits: WikiCreditGroup[] = [];
   const dropped: string[] = [];
@@ -500,6 +612,16 @@ export async function fetchCampaign(host: string, page: string): Promise<WikiCam
       const subset = assembled.people.filter((p) => p.roleOverride === override);
       credits.push({ field, role: override ?? role, people: subset });
     }
+  }
+
+  // Prose GMs only count if the wiki classifies them as people — that keeps a
+  // stray "run by [[Some Guild]]" out of the person index.
+  const proseGmPeople = proseGmNames
+    .filter((name) => (kinds.get(name) ?? 'unknown') !== 'character')
+    .filter((name) => (kinds.get(name) ?? 'unknown') !== 'organisation')
+    .map((name) => ({ name }));
+  if (proseGmPeople.length > 0) {
+    credits.push({ field: 'prose', role: 'GM/DM', people: proseGmPeople });
   }
 
   return {

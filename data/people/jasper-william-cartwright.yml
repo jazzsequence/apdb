@@ -23,17 +23,8 @@ credits:
         note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: critical-role-specials
-    season: 5
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
     season: 8
-    role: GM/DM
+    role: player
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Thresher

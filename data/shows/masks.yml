@@ -1,0 +1,11 @@
+id: masks
+title: Masks
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Masks
+seasons:
+  - ordinal: 1
+    game: dnd-5e

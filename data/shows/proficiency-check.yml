@@ -1,0 +1,11 @@
+id: proficiency-check
+title: Proficiency Check
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Proficiency_Check
+seasons:
+  - ordinal: 1
+    game: dnd-5e

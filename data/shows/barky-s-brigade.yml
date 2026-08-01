@@ -1,0 +1,11 @@
+id: barky-s-brigade
+title: Barky's Brigade
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Barky's_Brigade
+seasons:
+  - ordinal: 1
+    game: dnd-5e

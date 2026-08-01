@@ -43,6 +43,7 @@ credits:
   - show: candela-obscura
     season: 2
     role: player
+    character: Zehra Fazal
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread

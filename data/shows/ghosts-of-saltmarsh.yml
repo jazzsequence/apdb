@@ -1,0 +1,11 @@
+id: ghosts-of-saltmarsh
+title: Ghosts of Saltmarsh
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Ghosts_of_Saltmarsh
+seasons:
+  - ordinal: 1
+    game: dnd-5e

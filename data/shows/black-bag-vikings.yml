@@ -1,0 +1,11 @@
+id: black-bag-vikings
+title: "Black Bag: Vikings"
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Black_Bag%3A_Vikings
+seasons:
+  - ordinal: 1
+    game: dnd-5e

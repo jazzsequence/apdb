@@ -1,5 +1,5 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show) (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/Downfall (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -138,16 +138,6 @@ credits:
           CC-BY-SA.
         tier: community
   - show: dimension-20
-    season: 16
-    role: player
-    character: Captain K. P. Hob
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
-        note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: dimension-20
     season: 17
     role: GM/DM
     alias: default
@@ -269,34 +259,8 @@ credits:
           CC-BY-SA.
         tier: community
   - show: critical-role
-    season: 3
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_3
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: dimension-20
     season: 4
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Escape_from_the_Bloodkeep
-        note: Escape From the Bloodkeep cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: dimension-20
-    season: 29
     role: player
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/On_a_Bus
-        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role
-    season: 4
-    role: GM/DM
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
@@ -322,7 +286,7 @@ credits:
         tier: community
   - show: exandria-unlimited
     season: 5
-    role: GM/DM
+    role: player
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Divergence
@@ -332,6 +296,7 @@ credits:
   - show: candela-obscura
     season: 2
     role: player
+    character: Marisha Ray
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
@@ -342,16 +307,7 @@ credits:
     role: GM/DM
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Downfall
         note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 7
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
-        note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.

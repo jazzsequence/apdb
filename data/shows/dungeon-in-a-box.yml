@@ -1,0 +1,11 @@
+id: dungeon-in-a-box
+title: Dungeon in a Box
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Dungeon_in_a_Box
+seasons:
+  - ordinal: 1
+    game: dnd-5e

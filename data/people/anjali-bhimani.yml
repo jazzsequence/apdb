@@ -22,17 +22,6 @@ credits:
       - url: https://dimension20.fandom.com/wiki/The_Ravening_War
         note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role
-    season: 3
-    role: guest player
-    character: Fy'ra Rai
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_3
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
   - show: exandria-unlimited
     season: 1
     role: player
@@ -62,22 +51,6 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited_Prime
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
-        tier: community
-  - show: candela-obscura
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: critical-role-specials
     season: 11

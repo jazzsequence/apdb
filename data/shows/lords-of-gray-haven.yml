@@ -1,0 +1,11 @@
+id: lords-of-gray-haven
+title: Lords of Gray Haven
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Lords_of_Gray_Haven
+seasons:
+  - ordinal: 1
+    game: dnd-5e

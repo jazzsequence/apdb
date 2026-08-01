@@ -1,0 +1,11 @@
+id: champions-of-the-past
+title: Champions of the Past
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Champions_of_the_Past
+seasons:
+  - ordinal: 1
+    game: dnd-5e

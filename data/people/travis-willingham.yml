@@ -1,5 +1,5 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/Age_of_Umbra (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -14,42 +14,14 @@ aliases:
     alias_type: legal
 credits:
   - show: critical-role
-    season: 1
-    role: player
-    character: Grog Strongjaw
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_1
-        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role
     season: 2
-    role: composer
-    character: Colm McGuinness
+    role: player
+    character: Fjord
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_2
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role
-    season: 3
-    role: player
-    character: Bertrand Bell
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_3
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role
-    season: 2
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_(animated)
-        note: The Mighty Nein cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: critical-role
     season: 4
@@ -89,6 +61,7 @@ credits:
   - show: critical-role-specials
     season: 1
     role: player
+    character: Matthew Mercer
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/UnDeadwood
@@ -99,24 +72,6 @@ credits:
     role: player
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 11
-    role: player
-    alias: default
-    sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
+        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

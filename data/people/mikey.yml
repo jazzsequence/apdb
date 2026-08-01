@@ -43,7 +43,7 @@ credits:
   - show: legends-of-avantris
     season: 4
     role: player
-    character: Barnabos the Dreadwake
+    character: Barnabos
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Icebound
@@ -52,7 +52,7 @@ credits:
   - show: legends-of-avantris
     season: 5
     role: player
-    character: "Chuckles (Stardust Rhapsody: Overture)"
+    character: Chuckles
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Overture
@@ -123,7 +123,7 @@ credits:
   - show: legends-of-avantris
     season: 13
     role: player
-    character: Chuckles (The Mistchurch Horror)
+    character: Chuckles
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mistchurch_Horror
@@ -132,7 +132,7 @@ credits:
   - show: legends-of-avantris
     season: 14
     role: player
-    character: Gricko Grimgrin (Call of the Feywild)
+    character: Gricko Grimgrin
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Call_of_the_Feywild
@@ -158,7 +158,7 @@ credits:
   - show: legends-of-avantris
     season: 17
     role: player
-    character: Chuckles (On a Silver Strand)
+    character: Chuckles
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
@@ -184,7 +184,7 @@ credits:
   - show: legends-of-avantris
     season: 20
     role: player
-    character: Sarnax of the Edelwood (Of Heart and Harvest)
+    character: Sarnax of the Edelwood
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
@@ -202,7 +202,7 @@ credits:
   - show: legends-of-avantris
     season: 22
     role: player
-    character: Ol' Jericho Sticks (Ghosts Of Saltmarsh)
+    character: Ol' Jericho Sticks
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
@@ -228,7 +228,7 @@ credits:
   - show: legends-of-avantris
     season: 25
     role: player
-    character: Gary Goodberry (13 Beers at the Local Cheese)
+    character: Gary Goodberry
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
@@ -247,7 +247,7 @@ credits:
   - show: legends-of-avantris
     season: 28
     role: player
-    character: Jasper (Mud and Mercy)
+    character: Jasper
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Mud_and_Mercy
@@ -256,7 +256,7 @@ credits:
   - show: legends-of-avantris
     season: 29
     role: player
-    character: Felpip (Cuttlefish Sweepstakes)
+    character: Felpip / Dr. Poison / Jean-Luc / Glup Shitto / G.4.R.Y. 64
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Cuttlefish_Sweepstakes
@@ -265,7 +265,7 @@ credits:
   - show: legends-of-avantris
     season: 30
     role: player
-    character: Gricko Grimgrin (Once Upon a Ghostlight)
+    character: Gricko Grimgrin
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_a_Ghostlight
@@ -291,7 +291,7 @@ credits:
   - show: legends-of-avantris
     season: 33
     role: player
-    character: Gricko Grimgrin (Into the Court of Candy)
+    character: Gricko Grimgrin
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Into_the_Court_of_Candy
@@ -300,7 +300,7 @@ credits:
   - show: legends-of-avantris
     season: 34
     role: player
-    character: Gricko (Once Upon A Starlight)
+    character: Gricko
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_A_Starlight
@@ -317,7 +317,7 @@ credits:
   - show: legends-of-avantris
     season: 36
     role: player
-    character: Barnabos Dreadwake (Voidbound)
+    character: Barnabos Dreadwake
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Voidbound
@@ -335,7 +335,7 @@ credits:
   - show: legends-of-avantris
     season: 38
     role: player
-    character: Ko (Neon Odyssey one-shot)
+    character: Ko Tetsutora
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot

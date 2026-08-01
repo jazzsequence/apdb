@@ -1,3 +1,9 @@
+# Credits imported from theadventurezone.fandom.com on 2026-08-01.
+# Source: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: aabria-iyengar
 canonical_name: Aabria Iyengar
 sort_name: Iyengar, Aabria
@@ -38,38 +44,6 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
         tier: reference
-  - show: pirates-of-salt-bay
-    season: 1
-    role: GM/DM
-    year: "2019"
-    sources:
-      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-        note: Wikipedia says player; the show's own wiki says GM.
-        tier: community
-  - show: pirates-of-salt-bay
-    season: 2
-    role: GM/DM
-    alias: iyengar
-    year: "2020"
-    sources:
-      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-        tier: community
-  - show: pirates-of-salt-bay
-    season: 3
-    role: GM/DM
-    alias: iyengar
-    year: "2020"
-    sources:
-      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-        tier: community
-  - show: pirates-of-salt-bay
-    season: 4
-    role: GM/DM
-    alias: iyengar
-    year: "2020"
-    sources:
-      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-        tier: community
   - show: exandria-unlimited
     season: 1
     role: GM/DM
@@ -93,17 +67,6 @@ credits:
     year: "2022"
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-        tier: reference
-  - show: worlds-beyond-number
-    season: 1
-    role: player
-    character: Suvirin "Suvi" Kedberiket
-    alias: iyengar
-    year: "2023"
-    sources:
-      - url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
-        tier: community
-      - url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
         tier: reference
   - show: critical-role
     season: 3
@@ -133,16 +96,6 @@ credits:
       - url: https://dimension20.fandom.com/wiki/The_Seven
         note: The Seven cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: iyengar
-  - show: dimension-20
-    season: 16
-    role: GM/DM
-    sources:
-      - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
-        note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-    alias: iyengar
   - show: dimension-20
     season: 18
     role: player
@@ -151,7 +104,6 @@ credits:
       - url: https://dimension20.fandom.com/wiki/The_Ravening_War
         note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: iyengar
   - show: dimension-20
     season: 21
     role: GM/DM
@@ -159,7 +111,6 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Burrow's_End
         note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: iyengar
   - show: dimension-20
     season: 26
     role: GM/DM
@@ -168,16 +119,6 @@ credits:
         note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-    alias: iyengar
-  - show: dimension-20
-    season: 29
-    role: player
-    character: Maria
-    sources:
-      - url: https://dimension20.fandom.com/wiki/On_a_Bus
-        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-    alias: iyengar
   - show: critical-role
     season: 4
     role: player
@@ -193,7 +134,6 @@ credits:
         note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-    alias: iyengar
   - show: exandria-unlimited
     season: 2
     role: GM/DM
@@ -202,7 +142,6 @@ credits:
         note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-    alias: iyengar
   - show: exandria-unlimited
     season: 3
     role: player
@@ -212,7 +151,6 @@ credits:
         note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-    alias: iyengar
   - show: exandria-unlimited
     season: 4
     role: GM/DM
@@ -221,18 +159,19 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: candela-obscura
-    season: 3
-    role: host
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
   - show: critical-role-specials
     season: 11
     role: guest player
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
+      - url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 14
+    role: GM/DM
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure
+        note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."

@@ -1,5 +1,5 @@
 # Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/On_a_Bus (CC-BY-SA).
+# Source: https://dimension20.fandom.com/wiki/Mice_%26_Murder (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -7,7 +7,6 @@
 id: katie-marovitch
 canonical_name: Katie Marovitch
 sort_name: Marovitch, Katie
-links: {}
 aliases:
   - id: default
     name: Katie Marovitch
@@ -19,14 +18,6 @@ credits:
     character: Gangie Green
     alias: default
     sources:
-      - url: https://dimension20.fandom.com/wiki/Mice_%26_Murder
-        note: Mice & Murder cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: dimension-20
-    season: 29
-    role: GM/DM
-    alias: default
-    sources:
       - tier: community
-        url: https://dimension20.fandom.com/wiki/On_a_Bus
-        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        url: https://dimension20.fandom.com/wiki/Mice_%26_Murder
+        note: Mice & Murder cast, via the dimension20.fandom.com infobox. CC-BY-SA.

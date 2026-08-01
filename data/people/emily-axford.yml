@@ -1,3 +1,9 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/City_Council_of_Darkness (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: emily-axford
 canonical_name: Emily Axford
 sort_name: Axford, Emily
@@ -11,134 +17,113 @@ credits:
     season: 1
     role: player
     character: Fig Faeth
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High
         note: Fantasy High cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 3
     role: player
     character: Lady Chirp Featherfowl
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 5
     role: player
     character: Sofia Bicicleta
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City
         note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 7
     role: player
     character: Queen Saccharina of House Frostwhip
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Crown_of_Candy
         note: A Crown of Candy cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 9
     role: player
     character: Sofia Lee
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City%3A_Chapter_II
         note: "The Unsleeping City: Chapter II cast, via the dimension20.fandom.com
           infobox. CC-BY-SA."
         tier: community
-    alias: default
   - show: dimension-20
     season: 10
     role: player
-    character: Fig Faeth
+    character: Figueroth "Fig" Faeth
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Sophomore_Year
         note: "Fantasy High: Sophomore Year cast, via the dimension20.fandom.com
           infobox. CC-BY-SA."
         tier: community
-    alias: default
   - show: dimension-20
     season: 14
     role: player
     character: Sundry Sidney
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Starstruck_Odyssey
         note: A Starstruck Odyssey cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-    alias: default
-  - show: dimension-20
-    season: 16
-    role: player
-    character: Lady Chirp Featherfowl
-    sources:
-      - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
-        note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-    alias: default
   - show: dimension-20
     season: 17
     role: player
     character: Ylfa Snorgelsson
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Neverafter
         note: Neverafter cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 22
     role: player
     character: Fig Faeth
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year
         note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
           CC-BY-SA."
         tier: community
-    alias: default
   - show: dimension-20
     season: 25
     role: player
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Time_Quangle
         note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 28
     role: player
     character: Marya Junková
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Cloudward%2C_Ho!
         note: Cloudward, Ho! cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 31
     role: player
     character: Vesper Childers
-    sources:
-      - url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
-        note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
     alias: default
-  - show: critical-role
-    season: 3
-    role: guest player
-    character: Prism Grimpoppy
-    note: Listed as a guest player for this season; specific episodes not identified.
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_3
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-    alias: default
+        url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
+        note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.

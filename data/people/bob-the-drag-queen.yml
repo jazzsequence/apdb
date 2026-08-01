@@ -1,3 +1,9 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Dungeons_and_Drag_Queens_Season_2 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: bob-the-drag-queen
 canonical_name: Bob the Drag Queen
 sort_name: Queen, Bob the Drag
@@ -11,19 +17,19 @@ credits:
     season: 19
     role: player
     character: Gertrude
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Dungeons_and_Drag_Queens
         note: Dungeons and Drag Queens cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 24
     role: player
     character: Gertrude
+    alias: default
     sources:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Dungeons_and_Drag_Queens_Season_2
         note: Dungeons and Drag Queens Season 2 cast, via the dimension20.fandom.com
           infobox. CC-BY-SA.
-    alias: default

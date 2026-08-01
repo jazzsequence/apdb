@@ -1,0 +1,252 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: aabria-iyengar
+canonical_name: Aabria Iyengar
+sort_name: Iyengar, Aabria
+pronouns: she/her
+bio: Game master, player and performer. Came up through independent Twitch
+  productions on the Saving Throw channel before GMing Exandria Unlimited and
+  Dimension 20, and co-founding the creator-owned studio Worlds Beyond Number.
+wikidata_qid: Q117600290
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Aabria_Iyengar
+aliases:
+  - id: iyengar
+    name: Aabria Iyengar
+    alias_type: legal
+  - id: lipscomb
+    name: Aabria Lipscomb
+    alias_type: birth
+    active_to: "2020"
+    note: Birth name.
+credits:
+  - show: carefree-high
+    season: 1
+    role: player
+    alias: lipscomb
+    note: Joined mid-season, left before the campaign ended.
+    sources:
+      - note: Watched the stream; billed as Lipscomb. Not in the cast page, episode
+          notes, forum roster or episode threads — none track cast changes.
+        tier: firsthand
+        attested_by: Project maintainer
+  - show: wildcards-east-texas-university
+    season: 1
+    episode: "S1E?: The Seekers"
+    role: guest player
+    character: Renee Billings
+    year: "2019"
+    note: Episode number within season 1 not confirmed.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        tier: reference
+  - show: pirates-of-salt-bay
+    season: 1
+    role: GM/DM
+    year: "2019"
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Wikipedia says player; the show's own wiki says GM.
+        tier: community
+  - show: pirates-of-salt-bay
+    season: 2
+    role: GM/DM
+    alias: iyengar
+    year: "2020"
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        tier: community
+  - show: pirates-of-salt-bay
+    season: 3
+    role: GM/DM
+    alias: iyengar
+    year: "2020"
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        tier: community
+  - show: pirates-of-salt-bay
+    season: 4
+    role: GM/DM
+    alias: iyengar
+    year: "2020"
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: GM/DM
+    alias: iyengar
+    year: "2021"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        tier: reference
+  - show: dimension-20
+    season: 2
+    role: GM/DM
+    alias: iyengar
+    year: "2021"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        tier: reference
+  - show: dimension-20
+    season: 3
+    role: GM/DM
+    alias: iyengar
+    year: "2022"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        tier: reference
+  - show: worlds-beyond-number
+    season: 1
+    role: player
+    character: Suvirin "Suvi" Kedberiket
+    alias: iyengar
+    year: "2023"
+    sources:
+      - url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+        tier: community
+      - url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+        tier: reference
+  - show: critical-role
+    season: 3
+    episode: "C3E51: A Test of Worth"
+    role: guest player
+    character: Deanna Leimert
+    alias: iyengar
+    year: "2023"
+    note: Recurring guest; locator marks the first appearance.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        tier: reference
+  - show: dimension-20
+    season: 8
+    role: player
+    character: Myrtle
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan
+        note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 12
+    role: player
+    character: Antiope Jones
+    alias: iyengar
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Seven
+        note: The Seven cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 18
+    role: player
+    character: Karna Solara
+    alias: iyengar
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Ravening_War
+        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 21
+    role: GM/DM
+    alias: iyengar
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Burrow's_End
+        note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 26
+    role: GM/DM
+    alias: iyengar
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
+        note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 29
+    role: player
+    character: Maria
+    alias: iyengar
+    sources:
+      - url: https://dimension20.fandom.com/wiki/On_a_Bus
+        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 4
+    role: player
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: iyengar
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 2
+    role: GM/DM
+    alias: iyengar
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Kymal
+        note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: exandria-unlimited
+    season: 3
+    role: player
+    character: Laerryn Coramar-Seelie
+    alias: iyengar
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
+        note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: exandria-unlimited
+    season: 4
+    role: GM/DM
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited_Prime
+        note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: candela-obscura
+    season: 3
+    role: host
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 11
+    role: guest player
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 14
+    role: GM/DM
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure
+        note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 3
+    role: GM/DM
+    character: Deanna
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

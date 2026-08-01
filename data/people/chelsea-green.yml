@@ -1,3 +1,9 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Titan_Takedown (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: chelsea-green
 canonical_name: Chelsea Green
 sort_name: Green, Chelsea
@@ -10,8 +16,8 @@ credits:
     season: 27
     role: player
     character: Tabatha
+    alias: default
     sources:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Titan_Takedown
         note: Titan Takedown cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-    alias: default

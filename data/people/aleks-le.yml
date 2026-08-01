@@ -15,6 +15,7 @@ credits:
   - show: critical-role-specials
     season: 7
     role: player
+    character: Brennan Lee Mulligan
     alias: default
     sources:
       - tier: community

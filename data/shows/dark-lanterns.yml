@@ -1,0 +1,11 @@
+id: dark-lanterns
+title: Dark Lanterns
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Dark_Lanterns
+seasons:
+  - ordinal: 1
+    game: dnd-5e

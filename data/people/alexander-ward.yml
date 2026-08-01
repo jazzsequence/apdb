@@ -30,32 +30,14 @@ credits:
         note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: exandria-unlimited
-    season: 5
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Divergence
-        note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
   - show: candela-obscura
     season: 4
     role: player
+    character: Imari Williams
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
         tier: community
   - show: critical-role-specials
     season: 11

@@ -15,6 +15,7 @@ credits:
   - show: critical-role-specials
     season: 5
     role: host
+    character: Nick Williams
     alias: default
     sources:
       - tier: community

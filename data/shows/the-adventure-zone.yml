@@ -4,8 +4,8 @@ channels:
   - maximum-fun
 format: podcast
 status: ongoing
-description: Anthology actual-play podcast by the McElroy family, rotating
-  system and GM between campaigns.
+description: Anthology actual-play podcast by the McElroy family. Each campaign
+  is its own arc, with the GM chair rotating between them.
 links:
   website: https://maximumfun.org/podcasts/adventure-zone/
 seasons:
@@ -28,41 +28,35 @@ seasons:
     title: "MaxFunDrive Bonus Campaign: Elementary"
     game: dnd-5e
   - ordinal: 7
-    title: The Balance Arc Timeline
-    game: dnd-5e
-  - ordinal: 8
     title: "MaxFunDrive Bonus Campaign: Fur"
     game: dnd-5e
-  - ordinal: 9
-    title: The Adventure Zone
-    game: dnd-5e
-  - ordinal: 10
+  - ordinal: 8
     title: "Campaign 5: Graduation"
     game: dnd-5e
-  - ordinal: 11
+  - ordinal: 9
     title: "Live Campaign 2: Dadlands"
     game: dnd-5e
-  - ordinal: 12
+  - ordinal: 10
     title: "Live Campaign 3: Holiday Brawl in Chicago"
     game: dnd-5e
-  - ordinal: 13
+  - ordinal: 11
     title: "MaxFunDrive Bonus Campaign: Lords of Crunch"
     game: dnd-5e
-  - ordinal: 14
+  - ordinal: 12
     title: "The Adventure Zone: Just Us"
     game: dnd-5e
-  - ordinal: 15
+  - ordinal: 13
     title: "Campaign 6: Ethersea"
     game: dnd-5e
-  - ordinal: 16
+  - ordinal: 14
     title: "Mini-series: Zone of Adventure"
     game: dnd-5e
-  - ordinal: 17
+  - ordinal: 15
     title: "Campaign 7: Steeplechase"
     game: dnd-5e
-  - ordinal: 18
+  - ordinal: 16
     title: "Campaign 8: Outre Space"
     game: dnd-5e
-  - ordinal: 19
+  - ordinal: 17
     title: "Campaign 9: The Adventure Zone Versus Dracula"
     game: dnd-5e

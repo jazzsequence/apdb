@@ -1,0 +1,11 @@
+id: crit-juice
+title: Crit Juice
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Crit_Juice
+seasons:
+  - ordinal: 1
+    game: dnd-5e

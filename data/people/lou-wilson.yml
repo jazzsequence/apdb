@@ -25,18 +25,6 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Dimension_20
         tier: reference
-  - show: worlds-beyond-number
-    season: 1
-    role: player
-    character: Eursulon Toma
-    alias: default
-    year: "2023"
-    sources:
-      - url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
-        tier: community
-      - url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
-        note: Independently documents the same campaign cast.
-        tier: reference
   - show: dimension-20
     season: 2
     role: player
@@ -88,7 +76,7 @@ credits:
   - show: dimension-20
     season: 10
     role: player
-    character: Fabian Seacaster
+    character: Fabian Aramais Seacaster
     alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Sophomore_Year
@@ -103,16 +91,6 @@ credits:
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Starstruck_Odyssey
         note: A Starstruck Odyssey cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: dimension-20
-    season: 16
-    role: player
-    character: Lord Squak Airavis
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
-        note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
   - show: dimension-20

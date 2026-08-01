@@ -1,0 +1,11 @@
+id: black-bag-detectives
+title: "Black Bag: Detectives"
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Black_Bag%3A_Detectives
+seasons:
+  - ordinal: 1
+    game: dnd-5e

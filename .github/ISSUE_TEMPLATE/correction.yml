@@ -1,0 +1,54 @@
+name: Correct or amend an existing entry
+description: Something we already list is wrong, incomplete, or duplicated.
+title: '[correction] '
+labels: [correction]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections are as valuable as new credits. A lot of this data is
+        imported from fan wikis, and imports get things wrong — characters filed
+        as people, a GM listed as a player, the same season entered twice.
+
+  - type: input
+    id: where
+    attributes:
+      label: Which page
+      description: Paste the URL, or name the person / show.
+      placeholder: /people/aabria-iyengar/ — the Pirates of Salt Bay credit
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem
+      options:
+        - Wrong role (e.g. listed as player, actually GMed)
+        - Wrong or missing character
+        - Wrong season or episode
+        - Wrong name they were credited under
+        - This isn't a real person (a character or company got imported)
+        - Duplicate entry
+        - Two entries are the same person
+        - Credit doesn't belong to this person at all
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should it say instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: How do you know
+      description: >-
+        A link is ideal. "I watched it" is a valid answer — say so, and we'll
+        record it as a first-hand account.
+    validations:
+      required: true

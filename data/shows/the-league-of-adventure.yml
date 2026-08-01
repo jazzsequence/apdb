@@ -1,0 +1,11 @@
+id: the-league-of-adventure
+title: The League of Adventure
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/The_League_of_Adventure
+seasons:
+  - ordinal: 1
+    game: dnd-5e

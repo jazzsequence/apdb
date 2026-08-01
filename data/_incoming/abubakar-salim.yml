@@ -1,0 +1,63 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: abubakar-salim
+canonical_name: Abubakar Salim
+sort_name: Salim, Abubakar
+links: {}
+aliases:
+  - id: default
+    name: Abubakar Salim
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Corellon
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 2
+    role: player
+    character: S.I.L.A.H.A.
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
+        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 8
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Thresher
+        note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 3
+    role: GM/DM
+    character: Coru / SILAHA
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

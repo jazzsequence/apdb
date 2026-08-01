@@ -1,0 +1,11 @@
+id: gosh-darn-fiasco
+title: Gosh Darn Fiasco
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Gosh_Darn_Fiasco
+seasons:
+  - ordinal: 1
+    game: dnd-5e

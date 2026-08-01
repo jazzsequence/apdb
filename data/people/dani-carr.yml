@@ -7,22 +7,11 @@
 id: dani-carr
 canonical_name: Dani Carr
 sort_name: Carr, Dani
-links: {}
 aliases:
   - id: default
     name: Dani Carr
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: critical-role-specials
     season: 11
     role: guest player

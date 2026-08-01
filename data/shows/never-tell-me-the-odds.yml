@@ -1,0 +1,11 @@
+id: never-tell-me-the-odds
+title: Never Tell Me the Odds
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Never_Tell_Me_the_Odds
+seasons:
+  - ordinal: 1
+    game: dnd-5e

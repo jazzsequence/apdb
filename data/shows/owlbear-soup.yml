@@ -1,0 +1,11 @@
+id: owlbear-soup
+title: Owlbear Soup
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Owlbear_Soup
+seasons:
+  - ordinal: 1
+    game: dnd-5e

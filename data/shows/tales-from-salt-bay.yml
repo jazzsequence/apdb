@@ -1,0 +1,11 @@
+id: tales-from-salt-bay
+title: Tales from Salt Bay
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
+seasons:
+  - ordinal: 1
+    game: dnd-5e

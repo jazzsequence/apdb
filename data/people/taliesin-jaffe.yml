@@ -1,5 +1,5 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/Weird_Kids (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -14,33 +14,13 @@ aliases:
     alias_type: legal
 credits:
   - show: critical-role
-    season: 1
-    role: player
-    character: Percival de Rolo
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_1
-        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role
     season: 2
     role: player
     character: Mollymauk Tealeaf / Caduceus Clay / Kingsley Tealeaf
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_2
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role
-    season: 3
-    role: player
-    character: Ashton Greymoore
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_3
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
   - show: critical-role
@@ -54,6 +34,7 @@ credits:
   - show: candela-obscura
     season: 1
     role: host
+    character: Matthew Mercer
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
@@ -62,6 +43,7 @@ credits:
   - show: candela-obscura
     season: 2
     role: host
+    character: Spenser Starke
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
@@ -70,6 +52,7 @@ credits:
   - show: candela-obscura
     season: 3
     role: host
+    character: Aabria Iyengar
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
@@ -77,7 +60,8 @@ credits:
         tier: community
   - show: candela-obscura
     season: 4
-    role: player
+    role: host
+    character: Liam O'Brien
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
@@ -114,14 +98,6 @@ credits:
     role: player
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Weird_Kids
-        note: Weird Kids cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 11
-    role: player
-    alias: default
-    sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        url: https://criticalrole.fandom.com/wiki/Weird_Kids
+        note: Weird Kids cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

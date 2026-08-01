@@ -1,0 +1,11 @@
+id: deadlands-lawless
+title: "Deadlands: Lawless"
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless
+seasons:
+  - ordinal: 1
+    game: dnd-5e

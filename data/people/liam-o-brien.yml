@@ -14,33 +14,13 @@ aliases:
     alias_type: legal
 credits:
   - show: critical-role
-    season: 1
-    role: player
-    character: Vax'ildan
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_1
-        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role
     season: 2
     role: player
     character: Caleb Widogast
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_2
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role
-    season: 3
-    role: player
-    character: Orym / Caleb Widogast / Lieve'tel Toluse / Vax'ildan
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_3
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
   - show: critical-role
@@ -63,7 +43,7 @@ credits:
   - show: exandria-unlimited
     season: 4
     role: player
-    character: Orym
+    character: Orym of the Air Ashari
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited_Prime
@@ -73,27 +53,12 @@ credits:
   - show: exandria-unlimited
     season: 5
     role: player
+    character: Alex Ward
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Divergence
         note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 3
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 4
-    role: host
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: candela-obscura
     season: 5
@@ -115,6 +80,7 @@ credits:
   - show: critical-role-specials
     season: 5
     role: guest player
+    character: Laura Bailey
     alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
@@ -133,6 +99,7 @@ credits:
   - show: critical-role-specials
     season: 11
     role: player
+    character: Marisha Ray
     alias: default
     sources:
       - tier: community

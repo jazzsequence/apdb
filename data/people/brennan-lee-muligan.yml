@@ -1,0 +1,23 @@
+# Credits imported from theadventurezone.fandom.com on 2026-08-01.
+# Source: https://theadventurezone.fandom.com/wiki/Live_Campaign_2%3A_Dadlands (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: brennan-lee-muligan
+canonical_name: Brennan Lee Muligan
+sort_name: Muligan, Brennan Lee
+aliases:
+  - id: default
+    name: Brennan Lee Muligan
+    alias_type: legal
+credits:
+  - show: the-adventure-zone
+    season: 9
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Live_Campaign_2%3A_Dadlands
+        note: "Live Campaign 2: Dadlands cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."

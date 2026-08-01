@@ -15,6 +15,7 @@ credits:
   - show: candela-obscura
     season: 3
     role: player
+    character: Liam O'Brien
     alias: default
     sources:
       - tier: community

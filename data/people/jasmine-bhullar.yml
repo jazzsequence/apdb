@@ -21,18 +21,10 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Coffin_Run
         note: Coffin Run cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: dimension-20
-    season: 29
-    role: player
-    character: Army Man
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/On_a_Bus
-        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
   - show: critical-role-specials
     season: 5
     role: player
+    character: Jasper William Cartwright
     alias: default
     sources:
       - tier: community

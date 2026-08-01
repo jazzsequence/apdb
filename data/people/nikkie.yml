@@ -68,7 +68,7 @@ credits:
   - show: legends-of-avantris
     season: 8
     role: player
-    character: Peggy (Vagabond's Heart)
+    character: Peggy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Vagabond's_Heart%3A_A_Dimwood_Tale
@@ -78,7 +78,7 @@ credits:
   - show: legends-of-avantris
     season: 9
     role: player
-    character: Peggy (Uprooted)
+    character: Peggy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
@@ -130,7 +130,7 @@ credits:
   - show: legends-of-avantris
     season: 16
     role: player
-    character: Gina
+    character: Gina Bearenstain
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mighty_Trunks
@@ -180,7 +180,7 @@ credits:
   - show: legends-of-avantris
     season: 25
     role: player
-    character: Tiffany (13 Beers at the Local Cheese)
+    character: Tiffany
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
@@ -216,7 +216,7 @@ credits:
   - show: legends-of-avantris
     season: 31
     role: player
-    character: Portia Bella Gones (Dust to Damnation)
+    character: Portia Bella Gones
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
@@ -241,7 +241,7 @@ credits:
   - show: legends-of-avantris
     season: 35
     role: player
-    character: Peggy (Uproot-a-rama)
+    character: Peggy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uproot-a-rama
@@ -259,7 +259,7 @@ credits:
   - show: legends-of-avantris
     season: 38
     role: player
-    character: Pixel (Neon Odyssey one-shot)
+    character: Pixel Pop
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot

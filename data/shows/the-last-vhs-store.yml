@@ -1,0 +1,11 @@
+id: the-last-vhs-store
+title: The Last VHS Store
+channels:
+  - saving-throw
+format: stream
+status: unknown
+links:
+  website: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store
+seasons:
+  - ordinal: 1
+    game: dnd-5e

@@ -1,3 +1,9 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/City_Council_of_Darkness (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: siobhan-thompson
 canonical_name: Siobhan Thompson
 sort_name: Thompson, Siobhan
@@ -11,121 +17,121 @@ credits:
     season: 1
     role: player
     character: Adaine Abernant
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High
         note: Fantasy High cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 5
     role: player
-    character: Misty Moore
+    character: Misty Moore/Rowan Berry
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City
         note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 7
     role: player
     character: Princess Ruby Rocks
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Crown_of_Candy
         note: A Crown of Candy cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 9
     role: player
-    character: Iga Lisowski / Misty Moore
+    character: '"Anastasia" Iga Lisowski'
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City%3A_Chapter_II
         note: "The Unsleeping City: Chapter II cast, via the dimension20.fandom.com
           infobox. CC-BY-SA."
         tier: community
-    alias: default
   - show: dimension-20
     season: 10
     role: player
     character: Adaine Abernant
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Sophomore_Year
         note: "Fantasy High: Sophomore Year cast, via the dimension20.fandom.com
           infobox. CC-BY-SA."
         tier: community
-    alias: default
   - show: dimension-20
     season: 14
     role: player
     character: Riva
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Starstruck_Odyssey
         note: A Starstruck Odyssey cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 17
     role: player
     character: Princess Rosamund du Prix
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Neverafter
         note: Neverafter cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 20
     role: player
     character: Imelda Pulse
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Mentopolis
         note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 21
     role: player
     character: Jaysohn
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Burrow's_End
         note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 22
     role: player
     character: Adaine Abernant
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year
         note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
           CC-BY-SA."
         tier: community
-    alias: default
   - show: dimension-20
     season: 25
     role: player
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Time_Quangle
         note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 28
     role: player
     character: Vanellope Chapman
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Cloudward%2C_Ho!
         note: Cloudward, Ho! cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-    alias: default
   - show: dimension-20
     season: 31
     role: player
     character: Madelaine d'Artois
+    alias: default
     sources:
       - tier: community
         url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-    alias: default

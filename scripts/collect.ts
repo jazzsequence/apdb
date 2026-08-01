@@ -191,8 +191,13 @@ async function discoverShows(existingShows: Show[], apply: boolean): Promise<voi
       process.exit(1);
     }
 
+    // Normalise for dedup: the wiki writes "A Court of Fey and Flowers" where
+    // a curator wrote "A Court of Fey & Flowers", and an exact match let both
+    // in as separate seasons — which then double-credited the whole cast.
+    const norm = (s: string) =>
+      s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim();
     const haveTitles = new Set(
-      show.seasons.map((s) => (s.title ?? '').toLowerCase()).filter(Boolean),
+      show.seasons.map((s) => norm(s.title ?? '')).filter(Boolean),
     );
     let ordinal = Math.max(0, ...show.seasons.map((s) => s.ordinal));
     const seasons = [...show.seasons];
@@ -207,7 +212,7 @@ async function discoverShows(existingShows: Show[], apply: boolean): Promise<voi
         continue;
       }
       const title = campaign.title ?? page;
-      if (haveTitles.has(title.toLowerCase())) {
+      if (haveTitles.has(norm(title))) {
         console.log(`  – ${title} (already a season)`);
         continue;
       }
@@ -217,7 +222,7 @@ async function discoverShows(existingShows: Show[], apply: boolean): Promise<voi
         game: 'UNKNOWN-set-a-game-id' as any,
         ...(campaign.airDates ? { description: `Aired: ${campaign.airDates}` } : {}),
       } as any);
-      haveTitles.add(title.toLowerCase());
+      haveTitles.add(norm(title));
       console.log(`  ✓ ${title}${campaign.system ? ` — ${campaign.system.slice(0, 55)}` : ''}`);
       added += 1;
       await new Promise((r) => setTimeout(r, 200));

@@ -14,17 +14,6 @@ aliases:
     alias_type: legal
 credits:
   - show: critical-role
-    season: 3
-    role: guest player
-    character: Dorian Storm / Cerkonos
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_3
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role
     season: 4
     role: player
     alias: default
@@ -64,6 +53,7 @@ credits:
   - show: candela-obscura
     season: 1
     role: player
+    character: Ashley Johnson
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil

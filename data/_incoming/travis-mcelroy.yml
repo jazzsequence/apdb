@@ -1,0 +1,34 @@
+# Credits imported from theadventurezone.fandom.com on 2026-08-01.
+# Source: https://theadventurezone.fandom.com/wiki/Campaign_3%3A_Amnesty (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: travis-mcelroy
+canonical_name: Travis McElroy
+sort_name: McElroy, Travis
+links: {}
+aliases:
+  - id: default
+    name: Travis McElroy
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 6
+    role: player
+    character: Car-Go Jones
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Tiny_Heist
+        note: Tiny Heist cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: the-adventure-zone
+    season: 4
+    role: player
+    character: Aubrey Little
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Campaign_3%3A_Amnesty
+        note: "Campaign 3: Amnesty cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA."

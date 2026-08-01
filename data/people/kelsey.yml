@@ -52,7 +52,7 @@ credits:
   - show: legends-of-avantris
     season: 8
     role: player
-    character: Hazel (Vagabond's Heart)
+    character: Hazel
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Vagabond's_Heart%3A_A_Dimwood_Tale
@@ -62,7 +62,7 @@ credits:
   - show: legends-of-avantris
     season: 9
     role: player
-    character: Hazel (Uprooted)
+    character: Hazel
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
@@ -98,7 +98,7 @@ credits:
   - show: legends-of-avantris
     season: 20
     role: player
-    character: Victoria Isaacs (Of Heart and Harvest)
+    character: Victoria Isaac
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
@@ -126,7 +126,7 @@ credits:
   - show: legends-of-avantris
     season: 35
     role: player
-    character: Hazel (Uproot-a-rama)
+    character: Hazel
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uproot-a-rama
@@ -135,7 +135,7 @@ credits:
   - show: legends-of-avantris
     season: 38
     role: player
-    character: Ophelia (Neon Odyssey one-shot)
+    character: Ophelia Kalos
     alias: default
     sources:
       - tier: community

@@ -1,7 +1,12 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: surena-marie
 canonical_name: Surena Marie
 sort_name: Marie, Surena
-links: {}
 aliases:
   - id: default
     name: Surena Marie
@@ -11,19 +16,9 @@ credits:
     season: 3
     role: player
     character: Gwyndolin Thistle-hop / BINX Choppley
-    sources:
-      - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers
-        note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
     alias: default
-  - show: dimension-20
-    season: 16
-    role: player
-    character: Gwyndolin Thistle-hop / BINX Choppley
     sources:
       - tier: community
-        url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
+        url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-    alias: default
