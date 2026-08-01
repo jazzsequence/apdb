@@ -27,6 +27,10 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
   - show: critical-role
     season: 4
     role: player
@@ -54,46 +58,23 @@ credits:
         note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: critical-role-specials
+  - show: critical-role
     season: 1
     role: player
-    character: Anjali Bhimani
+    character: Keyleth
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
         tier: community
-  - show: critical-role-specials
+  - show: critical-role
     season: 3
     role: player
+    character: Laudna / Beau / Keyleth
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 6
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Weird_Kids
-        note: Weird Kids cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 7
-    role: player
-    character: Eden Riegel
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
-        note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 9
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Moonward
-        note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

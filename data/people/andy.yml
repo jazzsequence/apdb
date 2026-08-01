@@ -1,9 +1,3 @@
-# Credits imported from avantris.fandom.com on 2026-08-01.
-# Source: https://avantris.fandom.com/wiki/Survive_Until_Dawn (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: andy
 canonical_name: Andy
 sort_name: Andy
@@ -199,7 +193,6 @@ credits:
   - show: legends-of-avantris
     season: 25
     role: player
-    character: Andy
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese

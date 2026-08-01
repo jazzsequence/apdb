@@ -15,15 +15,6 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 11
-    role: guest player
-    note: Listed as a guest player for this season; specific episodes not identified.
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
 wikidata_qid: Q7996725
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Whitney_Moore_%28cropped%29.jpg

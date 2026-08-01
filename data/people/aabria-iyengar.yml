@@ -8,6 +8,11 @@ bio: Game master, player and performer. Came up through independent Twitch
 wikidata_qid: Q117600290
 links:
   wikipedia: https://en.wikipedia.org/wiki/Aabria_Iyengar
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Aabria_Iyengar.jpg
+  licence: CC-BY-3.0
+  attribution: Saving Throw
+  source: https://commons.wikimedia.org/wiki/File:Aabria_Iyengar.jpg
 aliases:
   - id: iyengar
     name: Aabria Iyengar
@@ -73,6 +78,10 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
         tier: reference
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
   - show: dimension-20
     season: 8
     role: player
@@ -153,24 +162,11 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 11
-    role: guest player
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
   - show: the-adventure-zone
     season: 14
     role: GM/DM
     sources:
-      - tier: community
-        url: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure
+      - url: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure
         note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Aabria_Iyengar.jpg
-  licence: CC-BY-3.0
-  attribution: Saving Throw
-  source: https://commons.wikimedia.org/wiki/File:Aabria_Iyengar.jpg
+        tier: community

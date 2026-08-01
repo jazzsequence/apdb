@@ -1,7 +1,13 @@
 id: robbie-daymond
 canonical_name: Robbie Daymond
 sort_name: Daymond, Robbie
+wikidata_qid: Q17581437
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Robbie_Daymond_Photo_Op_GalaxyCon_San_Jose_2025.jpg
+  licence: CC-BY-4.0
+  attribution: Super Festivals
+  source: https://commons.wikimedia.org/wiki/File:Robbie_Daymond_Photo_Op_GalaxyCon_San_Jose_2025.jpg
 aliases:
   - id: default
     name: Robbie Daymond
@@ -44,27 +50,14 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: candela-obscura
-    season: 1
-    role: player
-    character: Ashley Johnson
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 11
+  - show: critical-role
+    season: 3
     role: guest player
+    character: Dorian / Cerkonos
     note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-wikidata_qid: Q17581437
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Robbie_Daymond_Photo_Op_GalaxyCon_San_Jose_2025.jpg
-  licence: CC-BY-4.0
-  attribution: Super Festivals
-  source: https://commons.wikimedia.org/wiki/File:Robbie_Daymond_Photo_Op_GalaxyCon_San_Jose_2025.jpg
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

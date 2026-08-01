@@ -1,7 +1,19 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: erika-ishii
 canonical_name: Erika Ishii
 sort_name: Ishii, Erika
+wikidata_qid: Q107010763
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Erika_Ishii_2021_%28cropped%29.jpg
+  licence: CC-BY-3.0
+  attribution: Rivals of Waterdeep
+  source: https://commons.wikimedia.org/wiki/File:Erika_Ishii_2021_(cropped).jpg
 aliases:
   - id: default
     name: Erika Ishii
@@ -49,13 +61,18 @@ credits:
     character: K
     alias: default
     sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
+      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
         note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-wikidata_qid: Q107010763
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Erika_Ishii_2021_%28cropped%29.jpg
-  licence: CC-BY-3.0
-  attribution: Rivals of Waterdeep
-  source: https://commons.wikimedia.org/wiki/File:Erika_Ishii_2021_(cropped).jpg
+        tier: community
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Dusk/Yu Suffiad
+    note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

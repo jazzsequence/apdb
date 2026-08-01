@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Unend (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: maxwell-james
 canonical_name: Maxwell James
 sort_name: James, Maxwell
@@ -39,44 +33,3 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 3
-    role: producer
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 4
-    role: producer
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
-        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 6
-    role: producer
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Weird_Kids
-        note: Weird Kids cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 9
-    role: producer
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Moonward
-        note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 10
-    role: producer
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Unend
-        note: Unend cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

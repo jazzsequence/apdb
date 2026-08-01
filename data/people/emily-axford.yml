@@ -1,7 +1,19 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: emily-axford
 canonical_name: Emily Axford
 sort_name: Axford, Emily
+wikidata_qid: Q48699562
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Emily_Axford_in_A_Totally_Unreasonable_Will.jpg
+  licence: CC-BY-3.0
+  attribution: Isaac Leicht
+  source: https://commons.wikimedia.org/wiki/File:Emily_Axford_in_A_Totally_Unreasonable_Will.jpg
 aliases:
   - id: default
     name: Emily Axford
@@ -117,13 +129,18 @@ credits:
     character: Vesper Childers
     alias: default
     sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
+      - url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-wikidata_qid: Q48699562
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Emily_Axford_in_A_Totally_Unreasonable_Will.jpg
-  licence: CC-BY-3.0
-  attribution: Isaac Leicht
-  source: https://commons.wikimedia.org/wiki/File:Emily_Axford_in_A_Totally_Unreasonable_Will.jpg
+        tier: community
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Prism Grimpoppy
+    note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

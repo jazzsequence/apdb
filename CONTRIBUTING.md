@@ -19,7 +19,23 @@ A maintainer transcribes it into a data file. You do not need to know YAML.
 
 1. Edit the YAML under `data/`.
 2. Run `npm run validate`.
-3. Open a PR.
+3. **If you imported anything in bulk, run `npm run audit` and read it.**
+4. Open a PR.
+
+### Always spot-check an import
+
+Every data error this project has shipped came from trusting a bulk import
+and moving on — characters filed as performers, wiki markup as names, a
+campaign's whole cast silently lost, a game system invented for 67 shows at
+once. None of it was subtle. All of it was invisible because nobody looked at
+the output.
+
+`npm run audit` looks. It flags characters that look like people, "characters"
+that are actually another performer's name, seasons that came back empty or
+with a single credit, seasons with players but no GM, and shows that may have
+been defaulted to D&D 5e. It is heuristic — it raises things for a human
+glance, and exits non-zero on the high-severity ones, which are import bugs
+rather than curation gaps.
 
 CI runs the same validator. If it passes locally it will pass there.
 

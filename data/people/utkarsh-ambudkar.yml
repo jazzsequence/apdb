@@ -1,0 +1,25 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: utkarsh-ambudkar
+canonical_name: Utkarsh Ambudkar
+sort_name: Ambudkar, Utkarsh
+aliases:
+  - id: default
+    name: Utkarsh Ambudkar
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Bor'Dor Dog'Son
+    note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

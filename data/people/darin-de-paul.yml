@@ -1,23 +1,25 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
 # not evidence of that.
-id: dani-carr
-canonical_name: Dani Carr
-sort_name: Carr, Dani
+id: darin-de-paul
+canonical_name: Darin De Paul
+sort_name: Paul, Darin De
 aliases:
   - id: default
-    name: Dani Carr
+    name: Darin De Paul
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 11
+  - show: critical-role
+    season: 1
     role: guest player
+    character: Sprigg
     note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."

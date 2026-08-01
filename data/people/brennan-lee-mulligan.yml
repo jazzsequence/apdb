@@ -4,8 +4,14 @@ sort_name: Mulligan, Brennan Lee
 pronouns: he/him
 bio: Game master, writer and performer. Principal GM of Dimension 20 and
   co-founder of Worlds Beyond Number.
+wikidata_qid: Q66425479
 links:
   wikipedia: https://en.wikipedia.org/wiki/Brennan_Lee_Mulligan
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/c/c0/BrennanLeeMulligan-byPhilipRomano.jpg
+  licence: CC-BY-SA-4.0
+  attribution: PhilipRomano
+  source: https://commons.wikimedia.org/wiki/File:BrennanLeeMulligan-byPhilipRomano.jpg
 aliases:
   - id: default
     name: Brennan Lee Mulligan
@@ -287,27 +293,13 @@ credits:
         note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: candela-obscura
-    season: 2
-    role: player
-    character: Marisha Ray
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 2
-    role: GM/DM
+  - show: critical-role
+    season: 3
+    role: guest player
+    note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-wikidata_qid: Q66425479
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/c/c0/BrennanLeeMulligan-byPhilipRomano.jpg
-  licence: CC-BY-SA-4.0
-  attribution: PhilipRomano
-  source: https://commons.wikimedia.org/wiki/File:BrennanLeeMulligan-byPhilipRomano.jpg
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

@@ -1,7 +1,13 @@
 id: laura-bailey
 canonical_name: Laura Bailey
 sort_name: Bailey, Laura
+wikidata_qid: Q2364867
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Laura_Bailey_%28cropped%29.jpg
+  licence: CC-BY-SA-4.0
+  attribution: John Manard
+  source: https://commons.wikimedia.org/wiki/File:Laura_Bailey_(cropped).jpg
 aliases:
   - id: default
     name: Laura Bailey
@@ -17,6 +23,10 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
   - show: critical-role
     season: 4
     role: player
@@ -25,63 +35,23 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: candela-obscura
+  - show: critical-role
     season: 1
     role: player
-    character: Anjali Bhimani
+    character: Vex'ahlia
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 5
-    role: player
-    character: Matthew Mercer
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 2
-    role: player
-    character: Emhira
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: critical-role-specials
+  - show: critical-role
     season: 3
     role: player
+    character: Imogen / Nahal / Emhira / Jester / Vex
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
-        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 11
-    role: player
-    character: Taliesin Jaffe
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-wikidata_qid: Q2364867
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Laura_Bailey_%28cropped%29.jpg
-  licence: CC-BY-SA-4.0
-  attribution: John Manard
-  source: https://commons.wikimedia.org/wiki/File:Laura_Bailey_(cropped).jpg
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

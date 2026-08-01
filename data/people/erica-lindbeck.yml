@@ -1,7 +1,19 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: erica-lindbeck
 canonical_name: Erica Lindbeck
 sort_name: Lindbeck, Erica
+wikidata_qid: Q20974010
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/f/f5/Erica_Lindbeck_Animate%21_Columbus_06122026-2.jpg
+  licence: CC-BY-SA-4.0
+  attribution: John Manard
+  source: https://commons.wikimedia.org/wiki/File:Erica_Lindbeck_Animate!_Columbus_06122026-2.jpg
 aliases:
   - id: default
     name: Erica Lindbeck
@@ -22,13 +34,18 @@ credits:
     character: Morrighan Ferus
     alias: default
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Kymal
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Kymal
         note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
-wikidata_qid: Q20974010
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/f/f5/Erica_Lindbeck_Animate%21_Columbus_06122026-2.jpg
-  licence: CC-BY-SA-4.0
-  attribution: John Manard
-  source: https://commons.wikimedia.org/wiki/File:Erica_Lindbeck_Animate!_Columbus_06122026-2.jpg
+        tier: community
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Morrighan Ferus
+    note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

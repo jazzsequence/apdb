@@ -1,7 +1,13 @@
 id: anjali-bhimani
 canonical_name: Anjali Bhimani
 sort_name: Bhimani, Anjali
+wikidata_qid: Q42561139
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/5/5d/Anjali_Bhimani_%2835396848715%29_%28cropped_portrait%29.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Eva Rinaldi from Sydney Australia
+  source: https://commons.wikimedia.org/wiki/File:Anjali_Bhimani_(35396848715)_(cropped_portrait).jpg
 aliases:
   - id: default
     name: Anjali Bhimani
@@ -46,18 +52,14 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 11
+  - show: critical-role
+    season: 3
     role: guest player
+    character: Fy'ra Rai
     note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-wikidata_qid: Q42561139
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/5/5d/Anjali_Bhimani_%2835396848715%29_%28cropped_portrait%29.jpg
-  licence: CC-BY-SA-2.0
-  attribution: Eva Rinaldi from Sydney Australia
-  source: https://commons.wikimedia.org/wiki/File:Anjali_Bhimani_(35396848715)_(cropped_portrait).jpg
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

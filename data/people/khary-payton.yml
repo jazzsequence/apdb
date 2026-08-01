@@ -1,7 +1,13 @@
 id: khary-payton
 canonical_name: Khary Payton
 sort_name: Payton, Khary
+wikidata_qid: Q2507611
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/0/04/Khary_Payton_at_MultiCon_2025.jpg
+  licence: CC-BY-4.0
+  attribution: Kevin Paul
+  source: https://commons.wikimedia.org/wiki/File:Khary_Payton_at_MultiCon_2025.jpg
 aliases:
   - id: default
     name: Khary Payton
@@ -18,26 +24,7 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: candela-obscura
-    season: 5
-    role: player
-    character: Marisha Ray
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 1
-    role: player
-    alias: default
-    sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-wikidata_qid: Q2507611
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/0/04/Khary_Payton_at_MultiCon_2025.jpg
-  licence: CC-BY-4.0
-  attribution: Kevin Paul
-  source: https://commons.wikimedia.org/wiki/File:Khary_Payton_at_MultiCon_2025.jpg
+        url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

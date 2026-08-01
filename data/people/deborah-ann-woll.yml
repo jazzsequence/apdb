@@ -1,6 +1,19 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: deborah-ann-woll
 canonical_name: Deborah Ann Woll
 sort_name: Woll, Deborah Ann
+wikidata_qid: Q232990
+links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/8/87/Deborah_Ann_Woll_%2853981726502%29.jpg
+  licence: CC-BY-2.0
+  attribution: John Manard for Super Festivals from Ft. Lauderdale, USA
+  source: https://commons.wikimedia.org/wiki/File:Deborah_Ann_Woll_(53981726502).jpg
 aliases:
   - id: default
     name: Deborah Ann Woll
@@ -10,16 +23,14 @@ credits:
     season: 2
     role: guest player
     character: Twiggy
-    note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
-wikidata_qid: Q232990
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/8/87/Deborah_Ann_Woll_%2853981726502%29.jpg
-  licence: CC-BY-2.0
-  attribution: John Manard for Super Festivals from Ft. Lauderdale, USA
-  source: https://commons.wikimedia.org/wiki/File:Deborah_Ann_Woll_(53981726502).jpg
+        tier: community
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

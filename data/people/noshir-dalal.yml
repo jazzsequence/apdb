@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Thresher (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: noshir-dalal
 canonical_name: Noshir Dalal
 sort_name: Dalal, Noshir
@@ -13,21 +7,14 @@ aliases:
     name: Noshir Dalal
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 2
-    role: player
-    character: The Emissary
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 8
-    role: player
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Edam / The Emissary
+    note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Thresher
-        note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

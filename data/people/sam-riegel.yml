@@ -1,7 +1,13 @@
 id: sam-riegel
 canonical_name: Sam Riegel
 sort_name: Riegel, Sam
+wikidata_qid: Q2805297
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/0/01/Sam_Riegel_at_Galaxy_Con_Columbus.jpg
+  licence: CC-BY-SA-4.0
+  attribution: John Manard
+  source: https://commons.wikimedia.org/wiki/File:Sam_Riegel_at_Galaxy_Con_Columbus.jpg
 aliases:
   - id: default
     name: Sam Riegel
@@ -14,6 +20,10 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
@@ -44,63 +54,23 @@ credits:
         note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: candela-obscura
+  - show: critical-role
+    season: 1
+    role: player
+    character: Scanlan Shorthalt / Taryon Darrington
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role
     season: 3
     role: player
+    character: FCG / Braius / Veth / Scanlan
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 3
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    character: Travis Willingham
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 6
-    role: guest player
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Weird_Kids
-        note: Weird Kids cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 7
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
-        note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 11
-    role: player
-    character: Travis Willingham
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-wikidata_qid: Q2805297
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/0/01/Sam_Riegel_at_Galaxy_Con_Columbus.jpg
-  licence: CC-BY-SA-4.0
-  attribution: John Manard
-  source: https://commons.wikimedia.org/wiki/File:Sam_Riegel_at_Galaxy_Con_Columbus.jpg
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

@@ -1,7 +1,13 @@
 id: ashley-johnson
 canonical_name: Ashley Johnson
 sort_name: Johnson, Ashley
+wikidata_qid: Q267359
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/1/11/Ashley_Johnson_at_IGN_Live_2024.jpg
+  licence: CC-BY-4.0
+  attribution: Kevin Paul
+  source: https://commons.wikimedia.org/wiki/File:Ashley_Johnson_at_IGN_Live_2024.jpg
 aliases:
   - id: default
     name: Ashley Johnson
@@ -14,6 +20,10 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
@@ -44,44 +54,23 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 2
+  - show: critical-role
+    season: 1
     role: player
-    character: Trist
+    character: Pike Trickfoot
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: critical-role-specials
+  - show: critical-role
     season: 3
     role: player
+    character: Fearne / Luz / Trist / Yasha / Pike
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 6
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Weird_Kids
-        note: Weird Kids cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 11
-    role: player
-    character: Matthew Mercer
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-wikidata_qid: Q267359
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/1/11/Ashley_Johnson_at_IGN_Live_2024.jpg
-  licence: CC-BY-4.0
-  attribution: Kevin Paul
-  source: https://commons.wikimedia.org/wiki/File:Ashley_Johnson_at_IGN_Live_2024.jpg
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

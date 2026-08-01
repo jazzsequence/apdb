@@ -56,6 +56,7 @@ npm run validate                              # the CI gate
 npm run dev                                   # local site
 npm run build                                 # validate, build, index for search
 npm run filmography -- "Aabria Lipscomb"      # print a filmography to the terminal
+npm run audit                                 # spot-check imports for bad data
 npm run collect -- --sources                  # import sources + licence status
 ```
 

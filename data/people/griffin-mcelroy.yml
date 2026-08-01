@@ -155,7 +155,6 @@ credits:
   - show: the-adventure-zone
     season: 15
     role: player
-    character: Travis McElroy / Clint McElroy
     alias: default
     sources:
       - url: https://theadventurezone.fandom.com/wiki/Campaign_7%3A_Steeplechase
@@ -165,7 +164,6 @@ credits:
   - show: the-adventure-zone
     season: 16
     role: player
-    character: Travis McElroy / Justin McElroy
     alias: default
     sources:
       - url: https://theadventurezone.fandom.com/wiki/Campaign_8%3A_Outre_Space

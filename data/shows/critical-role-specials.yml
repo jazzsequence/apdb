@@ -25,22 +25,16 @@ seasons:
     title: The Re-Slayer's Take
     game: dnd-5e
   - ordinal: 6
-    title: Weird Kids
-    game: dnd-5e
-  - ordinal: 7
     title: Wildemount Wildlings (show)
     game: dnd-5e
-  - ordinal: 8
+  - ordinal: 7
     title: Thresher
     game: dnd-5e
-  - ordinal: 9
+  - ordinal: 8
     title: Moonward
     game: dnd-5e
-  - ordinal: 10
+  - ordinal: 9
     title: Unend
-    game: dnd-5e
-  - ordinal: 11
-    title: Narrative Telephone
     game: dnd-5e
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/d/d0/UnDeadwood.jpg/revision/latest/scale-to-width-down/400?cb=20191028110052

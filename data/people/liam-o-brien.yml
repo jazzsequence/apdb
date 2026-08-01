@@ -17,6 +17,10 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
   - show: critical-role
     season: 4
     role: player
@@ -54,48 +58,23 @@ credits:
         note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: candela-obscura
-    season: 5
-    role: guest player
+  - show: critical-role
+    season: 1
+    role: player
+    character: Vax'ildan
     alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
         tier: community
-  - show: critical-role-specials
+  - show: critical-role
     season: 3
     role: player
+    character: Orym / Caleb / Lieve'tel / Vax
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    character: Laura Bailey
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 9
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Moonward
-        note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 11
-    role: player
-    character: Marisha Ray
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

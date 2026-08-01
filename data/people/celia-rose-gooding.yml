@@ -25,15 +25,6 @@ credits:
         note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: critical-role-specials
-    season: 11
-    role: guest player
-    note: Listed as a guest player for this season; specific episodes not identified.
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
 wikidata_qid: Q100702045
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/c/cd/CeliaRoseGooding-byPhilipRomano.jpg

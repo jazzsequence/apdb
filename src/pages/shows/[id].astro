@@ -69,8 +69,10 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
         return (
           <li class="card">
             <h3>
-              Season {season.ordinal}
-              {season.title ? ` — ${season.title}` : ''}
+              <a href={`${base}shows/${show.id}/${season.ordinal}/`}>
+                Season {season.ordinal}
+                {season.title ? ` — ${season.title}` : ''}
+              </a>
             </h3>
             <p>
               {game ? `${game.name} · ${game.edition}` : season.game}
@@ -97,12 +99,23 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
             <h3>
               {key === 'show'
                 ? 'Show-level'
-                : `Season ${key}${show.seasons.find((s) => s.ordinal === key)?.title ? ` — ${show.seasons.find((s) => s.ordinal === key)!.title}` : ''}`}
+                : (
+                    <a href={`${base}shows/${show.id}/${key}/`}>
+                      {`Season ${key}${show.seasons.find((s) => s.ordinal === key)?.title ? ` — ${show.seasons.find((s) => s.ordinal === key)!.title}` : ''}`}
+                    </a>
+                  )}
             </h3>
           </header>
           {bySeason.get(key)!.map(({ person, credit, alias }) => (
             <div class="credit">
               <div class="where">
+                {person.image ? (
+                  <img class="cast-face cast-face--sm" src={person.image.url} alt="" loading="lazy" />
+                ) : (
+                  <span class="cast-face cast-face--sm cast-face--blank" aria-hidden="true">
+                    {person.canonical_name.slice(0, 1)}
+                  </span>
+                )}
                 <a href={`${base}people/${person.id}/`}>{alias?.name ?? person.canonical_name}</a>
                 {alias && alias.name !== person.canonical_name && (
                   <span class="episode">now {person.canonical_name}</span>

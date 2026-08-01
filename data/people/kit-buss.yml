@@ -1,25 +1,25 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
 # not evidence of that.
-id: xander-jeanneret
-canonical_name: Xander Jeanneret
-sort_name: Jeanneret, Xander
+id: kit-buss
+canonical_name: Kit Buss
+sort_name: Buss, Kit
 aliases:
   - id: default
-    name: Xander Jeanneret
+    name: Kit Buss
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 5
+  - show: critical-role
+    season: 1
     role: guest player
-    character: Dani Carr
+    character: Lillith Daturai
     note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
+        url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."

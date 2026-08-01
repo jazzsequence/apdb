@@ -4,8 +4,14 @@ sort_name: Mercer, Matthew
 pronouns: he/him
 bio: Voice actor and game master. Dungeon master of Critical Role since its
   first campaign.
+wikidata_qid: Q6790967
 links:
   wikipedia: https://en.wikipedia.org/wiki/Matthew_Mercer
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/2/20/Matthew_Mercer_-_IGN_Live_2024.jpg
+  licence: CC-BY-4.0
+  attribution: Kevin Paul
+  source: https://commons.wikimedia.org/wiki/File:Matthew_Mercer_-_IGN_Live_2024.jpg
 aliases:
   - id: default
     name: Matthew Mercer
@@ -19,6 +25,10 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Critical_Role
         tier: reference
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
   - show: critical-role
     season: 2
     role: GM/DM
@@ -27,6 +37,10 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Critical_Role
         tier: reference
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
   - show: critical-role
     season: 3
     role: GM/DM
@@ -99,37 +113,13 @@ credits:
         note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: critical-role-specials
+  - show: critical-role
     season: 3
     role: player
+    character: Dariax
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
-        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    character: Alexander Ward
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-wikidata_qid: Q6790967
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/2/20/Matthew_Mercer_-_IGN_Live_2024.jpg
-  licence: CC-BY-4.0
-  attribution: Kevin Paul
-  source: https://commons.wikimedia.org/wiki/File:Matthew_Mercer_-_IGN_Live_2024.jpg
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

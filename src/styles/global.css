@@ -372,3 +372,39 @@ footer.site {
   font-size: 0.68rem; color: var(--muted); max-width: 200px;
   margin-top: 0.35rem; line-height: 1.35;
 }
+
+/* --- cast with faces ----------------------------------------------------- */
+.cast-grid {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.cast-grid a {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  grid-template-rows: auto auto;
+  gap: 0 0.7rem;
+  align-items: center;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--ink);
+}
+.cast-grid a:hover { border-color: var(--accent); }
+.cast-grid .cast-face { grid-row: 1 / span 2; }
+.cast-name { font-weight: 600; font-size: 0.92rem; }
+.cast-name em { font-weight: 400; font-style: normal; color: var(--muted); font-size: 0.82rem; }
+.cast-role { color: var(--muted); font-size: 0.8rem; }
+
+.cast-face {
+  width: 44px; height: 44px; object-fit: cover; border-radius: 50%;
+  border: 1px solid var(--border); display: block; background: var(--bg);
+}
+.cast-face--sm { width: 26px; height: 26px; display: inline-block; vertical-align: middle; margin-right: 0.4rem; }
+.cast-face--blank {
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--muted); font-weight: 600; font-size: 0.9rem;
+}
+.cast-face--sm.cast-face--blank { font-size: 0.7rem; }

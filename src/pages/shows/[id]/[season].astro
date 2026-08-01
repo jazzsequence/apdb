@@ -1,0 +1,89 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getDb } from '../../../lib/db';
+
+export async function getStaticPaths() {
+  const db = await getDb();
+  return db.shows.flatMap((show) =>
+    show.seasons.map((season) => {
+      const cast = db.castFor(show).filter((c) => c.credit.season === season.ordinal);
+      return {
+        params: { id: show.id, season: String(season.ordinal) },
+        props: {
+          show,
+          season,
+          game: db.game(season.game),
+          channels: db.channelsFor(show),
+          cast,
+        },
+      };
+    }),
+  );
+}
+
+const { show, season, game, channels, cast } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const ROLE_ORDER = ['GM/DM', 'guest GM', 'player', 'guest player', 'host', 'producer', 'editor', 'composer', 'writer'];
+const ordered = [...cast].sort((a, b) => {
+  const r = ROLE_ORDER.indexOf(a.credit.role) - ROLE_ORDER.indexOf(b.credit.role);
+  return r !== 0 ? r : a.person.sort_name.localeCompare(b.person.sort_name);
+});
+const dates = [season.started, season.ended].filter(Boolean).join(' – ');
+---
+
+<Base
+  indexable
+  title={`${season.title ?? `Season ${season.ordinal}`} — ${show.title}`}
+  description={`Cast and credits for ${season.title ?? `season ${season.ordinal}`} of ${show.title}.`}
+>
+  <p class="billing">
+    <a href={`${base}shows/${show.id}/`}>{show.title}</a> · season {season.ordinal}
+  </p>
+  <h1>{season.title ?? `Season ${season.ordinal}`}</h1>
+
+  <p class="billing">
+    {channels.map((c) => c.name).join(', ')}
+    {game && <> · {game.name} {game.edition}</>}
+    {dates && <> · {dates}</>}
+    {season.episode_count && <> · {season.episode_count} episodes</>}
+  </p>
+
+  {season.description && <p class="lede">{season.description}</p>}
+
+  <h2>Cast &amp; crew</h2>
+  {
+    ordered.length === 0 ? (
+      <p class="lede">
+        No credits recorded for this season yet. If you know who was in it,
+        <a href={`${base}submit/`}> add them</a>.
+      </p>
+    ) : (
+      <ul class="cast-grid">
+        {ordered.map(({ person, credit, alias }) => (
+          <li>
+            <a href={`${base}people/${person.id}/`}>
+              {person.image ? (
+                <img class="cast-face" src={person.image.url} alt="" loading="lazy" />
+              ) : (
+                <span class="cast-face cast-face--blank" aria-hidden="true">
+                  {person.canonical_name.slice(0, 1)}
+                </span>
+              )}
+              <span class="cast-name">
+                {alias?.name ?? person.canonical_name}
+                {alias && alias.name !== person.canonical_name && (
+                  <em> — now {person.canonical_name}</em>
+                )}
+              </span>
+              <span class="cast-role">
+                {credit.role}
+                {credit.character && <> · {credit.character}</>}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Base>

@@ -1,7 +1,13 @@
 id: taliesin-jaffe
 canonical_name: Taliesin Jaffe
 sort_name: Jaffe, Taliesin
+wikidata_qid: Q5413181
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Taliesin_Jaffe_by_Gage_Skidmore.jpg
+  licence: CC-BY-SA-3.0
+  attribution: Gage Skidmore
+  source: https://commons.wikimedia.org/wiki/File:Taliesin_Jaffe_by_Gage_Skidmore.jpg
 aliases:
   - id: default
     name: Taliesin Jaffe
@@ -17,6 +23,10 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
   - show: critical-role
     season: 4
     role: player
@@ -25,79 +35,23 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: candela-obscura
+  - show: critical-role
     season: 1
-    role: host
-    character: Matthew Mercer
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 2
-    role: host
-    character: Spenser Starke
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 3
-    role: host
-    character: Aabria Iyengar
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 4
-    role: host
-    character: Liam O'Brien
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 5
     role: player
+    character: Percival de Rolo
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 2
-    role: player
-    character: Asha
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: critical-role-specials
+  - show: critical-role
     season: 3
     role: player
+    character: Ashton / Ash / Asha / Caduceus / Percy
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 6
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Weird_Kids
-        note: Weird Kids cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-wikidata_qid: Q5413181
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Taliesin_Jaffe_by_Gage_Skidmore.jpg
-  licence: CC-BY-SA-3.0
-  attribution: Gage Skidmore
-  source: https://commons.wikimedia.org/wiki/File:Taliesin_Jaffe_by_Gage_Skidmore.jpg
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

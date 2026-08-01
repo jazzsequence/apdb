@@ -10,7 +10,8 @@
     "build": "npm run validate && astro build && pagefind --site dist",
     "preview": "astro preview",
     "filmography": "tsx scripts/filmography.ts",
-    "collect": "tsx scripts/collect.ts"
+    "collect": "tsx scripts/collect.ts",
+    "audit": "tsx scripts/audit.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

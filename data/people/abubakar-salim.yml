@@ -1,42 +1,26 @@
 id: abubakar-salim
 canonical_name: Abubakar Salim
 sort_name: Salim, Abubakar
-links: {}
-aliases:
-  - id: default
-    name: Abubakar Salim
-    alias_type: legal
-credits:
-  - show: critical-role-specials
-    season: 2
-    role: player
-    character: S.I.L.A.H.A.
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
-        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
-    season: 8
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Thresher
-        note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
 wikidata_qid: Q99773366
+links: {}
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/b/b7/AbubakarSalim.jpg
   licence: CC-BY-SA-4.0
   attribution: Jon Holloway
   source: https://commons.wikimedia.org/wiki/File:AbubakarSalim.jpg
+aliases:
+  - id: default
+    name: Abubakar Salim
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Coru / SILAHA
+    note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

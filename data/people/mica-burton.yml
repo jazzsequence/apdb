@@ -1,7 +1,13 @@
 id: mica-burton
 canonical_name: Mica Burton
 sort_name: Burton, Mica
+wikidata_qid: Q109278629
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/b/b7/RTX_2016_-_Mica_Burton_%2828144027606%29_%28cropped%29.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Count3D from Vancouver, Canada
+  source: https://commons.wikimedia.org/wiki/File:RTX_2016_-_Mica_Burton_(28144027606)_(cropped).jpg
 aliases:
   - id: default
     name: Mica Burton
@@ -18,18 +24,7 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: critical-role-specials
-    season: 11
-    role: guest player
-    note: Listed as a guest player for this season; specific episodes not identified.
-    alias: default
-    sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-wikidata_qid: Q109278629
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/b/b7/RTX_2016_-_Mica_Burton_%2828144027606%29_%28cropped%29.jpg
-  licence: CC-BY-SA-2.0
-  attribution: Count3D from Vancouver, Canada
-  source: https://commons.wikimedia.org/wiki/File:RTX_2016_-_Mica_Burton_(28144027606)_(cropped).jpg
+        url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
