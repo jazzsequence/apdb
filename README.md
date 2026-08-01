@@ -81,10 +81,25 @@ an episode locator — that distinction is the long-tail feature.
 
 ## Provenance
 
-Every credit carries a `source`. Where a claim is asserted but not yet backed by
-a citation, it carries `needs_verification: true` and renders with a visible
-flag, so unsourced data is distinguishable from sourced data rather than
-silently blending in. Git history covers the rest.
+Every credit carries a `source` declaring its **tier** — how strong that class
+of evidence is, from `official` down through `reference` and `community` to
+`testimony` and `inferred`. The tier renders on the page next to the credit, and
+CI enforces the tiers that make claims about their own evidence: a `recording`
+citation must carry a locator, `testimony` must name who attested it, `inferred`
+must show its reasoning.
+
+`needs_verification` is a second, orthogonal axis: whether anything independent
+has confirmed this particular claim. The two come apart — a first-hand account
+can be entirely trustworthy and still uncorroborated.
+
+The sourcing model is adapted from Wikipedia's, with one deliberate divergence:
+**unpublished first-hand accounts are admissible here.** Wikipedia's No Original
+Research rule assumes published sources reliably exist, which is false for the
+indie long tail — applying it would delete exactly the data no other index has.
+Testimony is admitted, labelled and ranked, never disguised as something
+stronger. The full reasoning is in [POLICY.md](POLICY.md).
+
+Git history covers the rest.
 
 ## Importing
 

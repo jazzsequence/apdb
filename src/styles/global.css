@@ -128,10 +128,28 @@ h2 {
   background: var(--flag-soft);
   color: var(--flag);
 }
-/* Testimony is a legitimate source, not a warning — styled as a credential. */
-.tag--testimony {
+/*
+ * Source tiers. Deliberately not a red/green scale: a weak tier means the claim
+ * is hard to check independently, not that it is doubtful. Weak reads as quiet
+ * and neutral rather than alarming.
+ */
+.tier {
+  border: 1px solid transparent;
+}
+.tier--strong {
   background: var(--accent-soft);
   color: var(--accent);
+}
+.tier--medium {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--muted);
+}
+.tier--weak {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--muted);
+  font-style: italic;
 }
 
 /* --- filmography -------------------------------------------------------- */

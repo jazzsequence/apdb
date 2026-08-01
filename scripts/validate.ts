@@ -11,6 +11,7 @@
  */
 import { checkIntegrity, findPossibleDuplicatePeople } from '../src/lib/integrity.js';
 import { loadDataset, type Problem } from '../src/lib/load.js';
+import { SOURCE_TIERS } from '../src/lib/schema.js';
 
 const strict = process.argv.includes('--strict');
 
@@ -64,6 +65,24 @@ async function main(): Promise<void> {
 
   const creditCount = dataset.people.reduce((sum, person) => sum + person.credits.length, 0);
   console.log(`✓ Valid: ${counts}, ${creditCount} credits.`);
+
+  // Provenance health, so the sourcing profile is visible on every run rather
+  // than something you have to go looking for.
+  const byTier = new Map<string, number>();
+  let uncorroborated = 0;
+  for (const person of dataset.people) {
+    for (const credit of person.credits) {
+      byTier.set(credit.source.tier, (byTier.get(credit.source.tier) ?? 0) + 1);
+      if (credit.source.needs_verification) uncorroborated += 1;
+    }
+  }
+  const profile = SOURCE_TIERS.filter((tier) => byTier.has(tier))
+    .map((tier) => `${tier} ${byTier.get(tier)}`)
+    .join(' · ');
+  console.log(`  Sources: ${profile}`);
+  console.log(
+    `  ${uncorroborated}/${creditCount} uncorroborated (${Math.round((uncorroborated / creditCount) * 100)}%).`,
+  );
   if (duplicates.length > 0) {
     console.log(`  (${duplicates.length} duplicate-name warning(s) above — advisory, not blocking.)`);
   }

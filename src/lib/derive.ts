@@ -5,7 +5,61 @@
  * truth; show cast lists are derived by inverting credits here at build time.
  */
 import type { Dataset } from './load.js';
+import { SOURCE_TIERS, tierRank } from './schema.js';
 import type { Alias, Channel, Credit, Game, Person, Season, Show } from './schema.js';
+
+export type Tier = (typeof SOURCE_TIERS)[number];
+
+export interface TierInfo {
+  tier: Tier;
+  rank: number;
+  label: string;
+  description: string;
+  /** Drives presentation only. A weak tier is a statement about checkability, not truth. */
+  strength: 'strong' | 'medium' | 'weak';
+}
+
+const TIER_COPY: Record<Tier, { label: string; description: string }> = {
+  official: {
+    label: 'official',
+    description: "The production's own record — cast list, title card or announcement.",
+  },
+  recording: {
+    label: 'recording',
+    description: 'The episode itself, cited with a locator anyone can go and check.',
+  },
+  participant: {
+    label: 'participant',
+    description: 'A statement by someone who was at the table.',
+  },
+  reference: {
+    label: 'reference work',
+    description: 'An established reference: Wikipedia, Wikidata or a published database.',
+  },
+  community: {
+    label: 'community',
+    description: 'A fan wiki, forum thread or third-party post.',
+  },
+  testimony: {
+    label: 'first-hand account',
+    description:
+      'A named contributor who saw or heard it, with no citable locator. Often the only source that will ever exist for a small show.',
+  },
+  inferred: {
+    label: 'inferred',
+    description: 'Reasoned from other data rather than observed. Never sufficient on its own.',
+  },
+};
+
+export function tierInfo(tier: Tier): TierInfo {
+  const rank = tierRank(tier);
+  return {
+    tier,
+    rank,
+    ...TIER_COPY[tier],
+    strength: rank <= 3 ? 'strong' : rank <= 5 ? 'medium' : 'weak',
+  };
+}
 
 export interface ResolvedCredit {
   credit: Credit;
@@ -17,6 +71,8 @@ export interface ResolvedCredit {
   alias: Alias;
   /** True when the credited name differs from the person's canonical name. */
   creditedUnderFormerName: boolean;
+  /** How strong this credit's source class is, and how to present it. */
+  tier: TierInfo;
 }
 
 /** One show's worth of a person's credits — the unit the filmography renders. */
@@ -99,6 +155,7 @@ export class Db {
       channels: this.channelsFor(show),
       alias,
       creditedUnderFormerName: alias.name !== person.canonical_name,
+      tier: tierInfo(credit.source.tier),
     };
   }
 

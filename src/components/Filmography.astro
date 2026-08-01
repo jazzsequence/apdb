@@ -31,7 +31,7 @@ function yearRange(group: FilmographyGroup): string {
         </span>
       </header>
 
-      {group.credits.map(({ credit, season, game, alias, creditedUnderFormerName }) => (
+      {group.credits.map(({ credit, season, game, alias, creditedUnderFormerName, tier }) => (
         <div class="credit">
           <div class="where">
             {season && (
@@ -59,15 +59,12 @@ function yearRange(group: FilmographyGroup): string {
               credited as {alias.name}{' '}
               {creditedUnderFormerName && <span class="tag tag--former">former name</span>}
             </span>
-            {credit.source.type === 'testimony' && (
-              <span
-                class="tag tag--testimony"
-                title={credit.source.attested_by ? `Attested by ${credit.source.attested_by}` : undefined}
-              >
-                first-hand account
-              </span>
-            )}
-            {credit.source.type === 'inferred' && <span class="tag tag--flag">inferred</span>}
+            <span
+              class={`tag tier tier--${tier.strength}`}
+              title={`${tier.description}${credit.source.attested_by ? ` Attested by ${credit.source.attested_by}.` : ''}`}
+            >
+              {tier.label}
+            </span>
             {credit.source.needs_verification && (
               <span class="tag tag--flag">uncorroborated</span>
             )}

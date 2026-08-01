@@ -35,45 +35,83 @@ const Links = z
   .default({});
 
 /**
- * How a claim is known.
+ * Source reliability tiers, strongest first.
  *
- * The long tail this project exists to index frequently has no published
- * record at all — small shows don't keep cast lists, and boilerplate show
- * notes can't register a mid-season arrival. Someone who was listening is
- * often the only source that will ever exist, so `testimony` is a first-class
- * provenance type here, not a placeholder for a real one.
+ * Modelled on Wikipedia's source hierarchy, with one deliberate divergence:
+ * Wikipedia's No Original Research rule makes unpublished first-hand accounts
+ * inadmissible. That rule assumes published sources reliably exist. For the
+ * indie long tail they frequently do not — small shows keep no cast lists, and
+ * boilerplate show notes cannot register a mid-season cast change. Applying
+ * NOR here would delete precisely the data no other index has.
  *
- *   primary   — the recording itself: episode audio/video, on-screen credits
- *   secondary — a published third party: wiki, article, database
- *   testimony — a first-hand account from a named contributor
- *   inferred  — derived from other data rather than observed
+ * So `testimony` is admissible. It ranks low because it cannot be independently
+ * checked, not because it is likely to be wrong. See POLICY.md.
+ *
+ * A tier is a statement about checkability, never about truth.
  */
-export const SourceType = z.enum(['primary', 'secondary', 'testimony', 'inferred']);
+export const SOURCE_TIERS = [
+  /** The production's own record: cast list, title card, official announcement. */
+  'official',
+  /** The episode itself, cited with a locator someone else could go to. */
+  'recording',
+  /** A statement by someone who was at the table. */
+  'participant',
+  /** An established reference work: Wikipedia, Wikidata, a published database. */
+  'reference',
+  /** Fan wiki, forum thread, or third-party social post. */
+  'community',
+  /** First-hand account from a named contributor, with no citable locator. */
+  'testimony',
+  /** Reasoned from other data rather than observed. Weakest; never sufficient alone. */
+  'inferred',
+] as const;
+
+export const SourceTier = z.enum(SOURCE_TIERS);
+
+/** 1 = strongest. Used for ranking and for the derived confidence label. */
+export function tierRank(tier: (typeof SOURCE_TIERS)[number]): number {
+  return SOURCE_TIERS.indexOf(tier) + 1;
+}
 
 /**
  * Provenance. Every credit carries one, backed by git history for the rest.
  *
- * `needs_verification` means no independent corroboration exists yet. It is
- * deliberately orthogonal to `type`: a testimony credit can be entirely
- * trustworthy and still uncorroborated, and conflating the two would treat a
- * contributor who was in the room the same as a guess made from a date.
+ * `needs_verification` is the second, orthogonal axis: the tier says how
+ * strong this kind of source is, the flag says whether anything independent
+ * has confirmed it. A first-hand account can be entirely trustworthy and still
+ * uncorroborated, and collapsing the two would file a contributor who was in
+ * the room alongside a guess made from a date.
  */
 export const Source = z
   .object({
     url: z.string().url().optional(),
     note: z.string().min(1).optional(),
-    type: SourceType.default('secondary'),
-    /** Who gave the account, for testimony. */
+    tier: SourceTier.default('reference'),
+    /** Who gave the account. Required for testimony and participant tiers. */
     attested_by: z.string().min(1).optional(),
+    /** Where in the recording, e.g. "01:14:20". Required for the recording tier. */
+    locator: z.string().min(1).optional(),
     needs_verification: z.boolean().default(false),
   })
   .strict()
   .refine((s) => s.url || s.note, {
     message: 'a source needs at least a url or a note',
   })
-  .refine((s) => s.type !== 'testimony' || Boolean(s.attested_by), {
-    message: 'a testimony source must record who attested it (attested_by)',
+  .refine((s) => !['testimony', 'participant'].includes(s.tier) || Boolean(s.attested_by), {
+    message: 'a testimony or participant source must record who attested it (attested_by)',
     path: ['attested_by'],
+  })
+  // The whole point of the recording tier is that someone else can go and
+  // check. Without a locator it is testimony wearing a better hat.
+  .refine((s) => s.tier !== 'recording' || Boolean(s.locator ?? s.url), {
+    message:
+      'a recording source needs a locator (timestamp/episode position) or a url — otherwise it is testimony, not a citation',
+    path: ['locator'],
+  })
+  // Inference is reasoning, not evidence. It has to show its working.
+  .refine((s) => s.tier !== 'inferred' || Boolean(s.note), {
+    message: 'an inferred source must explain the reasoning in `note`',
+    path: ['note'],
   });
 
 // ---------------------------------------------------------------------------

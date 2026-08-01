@@ -18,4 +18,5 @@ credits:
     alias: default
     year: '2023'
     source:
+      tier: community
       url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One

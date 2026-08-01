@@ -45,7 +45,7 @@ credits:
       on the show's published cast list. Character name and the episode range
       she appears in are still open.
     source:
-      type: testimony
+      tier: testimony
       attested_by: Project maintainer, from direct listening
       note: >-
         First-hand account: she was at this table, billed under the Lipscomb
@@ -72,6 +72,7 @@ credits:
       Single-episode guest appearance on an independent Savage Worlds campaign.
       Episode number within season 1 not yet confirmed.
     source:
+      tier: reference
       url: https://en.wikipedia.org/wiki/Aabria_Iyengar
       note: >-
         Appearance and character sourced to Wikipedia. Attribution to the
@@ -84,6 +85,7 @@ credits:
     alias: lipscomb
     year: '2019'
     source:
+      tier: community
       url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
       note: >-
         Saving Throw wiki names her as the regular GM. Note Wikipedia's
@@ -97,6 +99,7 @@ credits:
     alias: iyengar
     year: '2020'
     source:
+      tier: community
       url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
       needs_verification: true
   - show: pirates-of-salt-bay
@@ -105,6 +108,7 @@ credits:
     alias: iyengar
     year: '2020'
     source:
+      tier: community
       url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
       needs_verification: true
   - show: pirates-of-salt-bay
@@ -113,6 +117,7 @@ credits:
     alias: iyengar
     year: '2020'
     source:
+      tier: community
       url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
       needs_verification: true
 
@@ -123,6 +128,7 @@ credits:
     alias: iyengar
     year: '2021'
     source:
+      tier: reference
       url: https://en.wikipedia.org/wiki/Aabria_Iyengar
 
   - show: dimension-20
@@ -132,6 +138,7 @@ credits:
     year: '2021'
     note: Misfits and Magic.
     source:
+      tier: reference
       url: https://en.wikipedia.org/wiki/Aabria_Iyengar
   - show: dimension-20
     season: 3
@@ -140,6 +147,7 @@ credits:
     year: '2022'
     note: A Court of Fey & Flowers.
     source:
+      tier: reference
       url: https://en.wikipedia.org/wiki/Aabria_Iyengar
 
   - show: worlds-beyond-number
@@ -149,6 +157,7 @@ credits:
     alias: iyengar
     year: '2023'
     source:
+      tier: community
       url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
 
   - show: critical-role
@@ -162,5 +171,6 @@ credits:
       Recurring guest across several Campaign 3 episodes; episode locator here
       marks the first appearance and needs confirming.
     source:
+      tier: reference
       url: https://en.wikipedia.org/wiki/Aabria_Iyengar
       needs_verification: true

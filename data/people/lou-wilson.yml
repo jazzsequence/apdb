@@ -18,6 +18,7 @@ credits:
     year: '2018'
     note: Fantasy High.
     source:
+      tier: reference
       url: https://en.wikipedia.org/wiki/Dimension_20
   - show: worlds-beyond-number
     season: 1
@@ -26,4 +27,5 @@ credits:
     alias: default
     year: '2023'
     source:
+      tier: community
       url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
