@@ -76,6 +76,20 @@ export const SOURCES: Record<string, SourceInfo> = {
       'so there is deliberately no keyless fallback. Only lines that name a role are ' +
       'read; an unmatched description yields nothing rather than a guess.',
   },
+  podcast: {
+    id: 'podcast',
+    name: 'Apple Podcasts lookup + show RSS',
+    licence: 'Public endpoints; feed content belongs to the producer',
+    clearance: 'cleared',
+    attribution: "Show metadata from the production's own podcast feed. {url}",
+    notes:
+      'The best-behaved source here: keyless, public, and it returns the RSS feed the ' +
+      'production itself publishes — so show metadata is `official` tier. Also the way ' +
+      'in for Spotify-only shows, whose identity can be read from og: tags and then ' +
+      'looked up on Apple. Feeds carry title, description and author reliably; they ' +
+      'rarely carry a structured cast, and per-episode casts are not guessed at. Hosts ' +
+      'are read only from an explicit "hosted by" phrase.',
+  },
   'actualplay-world': {
     id: 'actualplay-world',
     name: 'actualplay.world',

@@ -1,0 +1,19 @@
+id: bitten
+title: Bitten
+channels:
+  - talking-xp-and-crit-hit-chronicles
+format: podcast
+status: ongoing
+description: Death is inevitable. In a world filled with blighters, one bite is
+  all it takes to succumb to the curse that has already killed so many. One
+  group of survivors leaves the safety of their homes to investigate the nearest
+  town, learning more about the world and themselves along the way. Join us for
+  this dramatic Daggerheart actual play featuring Meadow (@HowdyLoveDarlin),
+  Kelly (@TheKellHop), Daniel
+links:
+  website: https://podcasts.apple.com/us/podcast/bitten-a-daggerheart-actual-play/id1838842844?uo=4
+  podcast: https://anchor.fm/s/109301a4c/podcast/rss
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 28

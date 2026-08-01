@@ -1,0 +1,16 @@
+id: scott-dorward
+canonical_name: Scott Dorward
+sort_name: Dorward, Scott
+aliases:
+  - id: default
+    name: Scott Dorward
+    alias_type: legal
+credits:
+  - show: ain-t-slayed-nobody
+    season: 1
+    role: host
+    alias: default
+    sources:
+      - tier: official
+        url: https://podcasts.apple.com/us/podcast/aint-slayed-nobody-call-of-cthulhu-actual-play/id1494530079?uo=4
+        note: Host credit from the show's own published description.

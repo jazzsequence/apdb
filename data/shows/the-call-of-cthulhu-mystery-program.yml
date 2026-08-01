@@ -1,0 +1,19 @@
+id: the-call-of-cthulhu-mystery-program
+title: The Call of Cthulhu Mystery Program
+channels:
+  - omniverse
+format: podcast
+status: ongoing
+description: "Cosmic horror and black comedy meld in this award-winning audio
+  drama that explores Lovecraftian lore in queer and uncanny ways. Each season
+  is a standalone tale where our cast lives the terror in an unholy fusion of
+  live tabletop roleplaying and cinematic audio fiction. Thrill as unlikely
+  heroes from all walks of life face down eldritch nightmares, unholy rituals,
+  kindly creatures, and monstrous "
+links:
+  website: https://podcasts.apple.com/us/podcast/the-call-of-cthulhu-mystery-program/id1047863144?uo=4
+  podcast: https://rss.art19.com/call-of-cthulhu-mystery-program
+seasons:
+  - ordinal: 1
+    game: call-of-cthulhu
+    episode_count: 66

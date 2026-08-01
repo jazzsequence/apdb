@@ -182,6 +182,16 @@ who was in a show doesn't need a row per episode.
 There is no keyless fallback: YouTube blocks unauthenticated access, and scraping
 around that would breach their terms.
 
+**Podcasts (`src/lib/sources/podcast.ts`)** — Apple's lookup/search endpoints
+are public and keyless, and hand back the show's real RSS feed. Show metadata
+from there is `official` tier, because it's the production's own feed. It's also
+the route in for Spotify-only shows: read the identity from the page's og: tags,
+then look the title up on Apple.
+
+Feeds carry title, description, author and episode count reliably. They rarely
+carry a structured cast, so hosts are read only from an explicit "hosted by"
+phrase and per-episode casts are not guessed at.
+
 **Wikidata (`--qid`, `--search`)** is the identity backbone: stable QIDs,
 canonical names and, usefully, birth names. It carries almost no AP credits, so
 it is not used for them.

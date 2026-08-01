@@ -1,0 +1,16 @@
+id: cuppycup
+canonical_name: cuppycup
+sort_name: cuppycup
+aliases:
+  - id: default
+    name: cuppycup
+    alias_type: handle
+credits:
+  - show: ain-t-slayed-nobody
+    season: 1
+    role: host
+    alias: default
+    sources:
+      - tier: official
+        url: https://podcasts.apple.com/us/podcast/aint-slayed-nobody-call-of-cthulhu-actual-play/id1494530079?uo=4
+        note: Host credit from the show's own published description.
