@@ -44,7 +44,11 @@ export const SOURCES: Record<string, SourceInfo> = {
       'not scraped: infoboxes are template-structured, and the Dimension 20 wiki ' +
       'even separates guest_players from players. Every emitted credit carries the ' +
       'source page URL, which satisfies attribution. Note the share-alike term ' +
-      'applies to derived content — relevant if this dataset is ever relicensed.',
+      'applies to derived content — relevant if this dataset is ever relicensed.\n' +
+      'CAUTION: some wikis are forks of each other (criticalrole.miraheze.org is a ' +
+      'fork of criticalrole.fandom.com). Importing both would inflate corroboration ' +
+      'counts without adding an independent source. Corroboration needs a source ' +
+      'that did its own observing.',
   },
   podchaser: {
     id: 'podchaser',

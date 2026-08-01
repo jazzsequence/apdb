@@ -345,6 +345,7 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
 
   let written = 0;
   let skipped = 0;
+  const corroborated: string[] = [];
 
   for (const { person: wikiPerson, role } of wanted) {
     const id = slugify(wikiPerson.name);
@@ -377,16 +378,31 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
       ],
     };
 
-    // Don't restate a credit that is already recorded.
-    const duplicate = existing?.credits.some(
+    // A credit we already hold isn't a duplicate to discard — it's a second
+    // source for the same fact. Merging it is exactly how corroboration
+    // accumulates: two independent wikis documenting the same appearance
+    // corroborate each other. Only skip when this source is already listed.
+    const match = existing?.credits.find(
       (c) => c.show === showId && c.season === season && c.role === role,
     );
-    if (duplicate) {
-      skipped += 1;
-      continue;
-    }
 
-    const record: Record<string, unknown> = existing
+    let record: Record<string, unknown>;
+    if (match) {
+      const newSource = (credit.sources as any[])[0];
+      const alreadyCited = match.sources.some((s) => s.url === newSource.url);
+      if (alreadyCited) {
+        skipped += 1;
+        continue;
+      }
+      record = {
+        ...existing,
+        credits: existing!.credits.map((c) =>
+          c === match ? { ...c, sources: [...c.sources, newSource] } : c,
+        ),
+      };
+      corroborated.push(`${wikiPerson.name} — ${showId} S${season ?? '-'}`);
+    } else {
+      record = existing
       ? { ...existing, credits: [...existing.credits, credit] }
       : {
           id,
@@ -395,6 +411,7 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
           aliases: [{ id: 'default', name: wikiPerson.name, alias_type: 'legal' }],
           credits: [credit],
         };
+    }
 
     const parsed = Person.safeParse(record);
     if (!parsed.success) {
@@ -422,7 +439,10 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
     written += 1;
   }
 
-  console.log(`\n${written} file(s) written${skipped > 0 ? `, ${skipped} already recorded` : ''}.`);
+  console.log(
+    `\n${written} file(s) written${skipped > 0 ? `, ${skipped} already cited` : ''}` +
+      (corroborated.length ? `, ${corroborated.length} corroborated by this source` : '') + '.',
+  );
   if (!apply && written > 0) {
     console.log('Review data/_incoming/, move what you want into data/people/, then:');
     console.log('  npm run validate\n');

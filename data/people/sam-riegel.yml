@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: sam-riegel
 canonical_name: Sam Riegel
 sort_name: Riegel, Sam
@@ -101,6 +95,6 @@ credits:
     character: Travis Willingham
     alias: default
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
+      - url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community

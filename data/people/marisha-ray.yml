@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Moonward (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: marisha-ray
 canonical_name: Marisha Ray
 sort_name: Ray, Marisha
@@ -100,6 +94,6 @@ credits:
     role: player
     alias: default
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Moonward
+      - url: https://criticalrole.fandom.com/wiki/Moonward
         note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
