@@ -138,10 +138,16 @@ tail, machine-readable. Field names differ per wiki (`players`/`guest_players`
 on Dimension 20, `starring`/`sguests` on Critical Role), so the field→role
 mapping is data in `src/lib/sources/mediawiki.ts`; add a row for a new wiki.
 
-Anything it can't read safely is reported and skipped, never guessed. Cast
-fields listing bare wikilinks are ambiguous — the links may be performers, or
-performers interleaved with characters — so those are left for a human rather
-than risk filing a character as a person.
+Cast fields interleave performers and characters, and every wiki formats that
+differently — so the parser doesn't read formatting at all. It resolves each
+linked page against **the wiki's own categories** (`Cast` / `Voice Actors` vs
+`Characters` vs `Companies`) in one batched API call, then walks the links in
+order: a person opens an entry, a character attaches to the entry before it, an
+organisation is dropped.
+
+That one rule handles every layout encountered without knowing anything about
+any of them, and it is what stops a character being filed as a performer or a
+production company being filed as a person.
 
 **Wikidata (`--qid`, `--search`)** is the identity backbone: stable QIDs,
 canonical names and, usefully, birth names. It carries almost no AP credits, so

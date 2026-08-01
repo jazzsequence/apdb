@@ -43,8 +43,8 @@ export interface WikiCampaign {
   airDates?: string;
   episodes?: string;
   credits: WikiCreditGroup[];
-  /** Recognised credit fields whose format we could not safely read. */
-  unparsed: string[];
+  /** Linked pages the wiki classifies as organisations, excluded from people. */
+  dropped: string[];
   /** Infobox params we found but did not map, so gaps are visible not silent. */
   unmapped: string[];
 }
@@ -184,113 +184,164 @@ export function parseParams(template: string): Record<string, string> {
  */
 const LINK = String.raw`\[\[\s*([^\]|]+?)\s*(?:\|[^\]]*?)?\]\]`;
 
-const GM_MARKERS = /^(dm|gm|dungeon master|game master)$/i;
+const GM_MARKERS = /\b(dm|gm|dungeon master|game master)\b/i;
 
-/** Split a template body into its positional (unnamed) arguments. */
-function positionalArgs(template: string): string[] {
-  const body = template.replace(/^\{\{[^|]*/, '').replace(/\}\}$/, '');
-  const parts: string[] = [];
-  let depth = 0;
-  let current = '';
-  for (let i = 0; i < body.length; i++) {
-    if (body.startsWith('{{', i) || body.startsWith('[[', i)) {
-      depth += 1;
-      current += body.slice(i, i + 2);
-      i += 1;
-      continue;
-    }
-    if (body.startsWith('}}', i) || body.startsWith(']]', i)) {
-      depth -= 1;
-      current += body.slice(i, i + 2);
-      i += 1;
-      continue;
-    }
-    if (body[i] === '|' && depth === 0) {
-      parts.push(current);
-      current = '';
-      continue;
-    }
-    current += body[i];
-  }
-  parts.push(current);
-  return parts.map((p) => p.trim()).filter((p) => p.length > 0 && !p.includes('='));
-}
+// ---------------------------------------------------------------------------
+// Entity resolution.
+//
+// Wiki cast fields interleave performers and their characters, and every wiki
+// formats that differently. Guessing from formatting is how you end up filing
+// a character as a performer.
+//
+// So don't guess: the wiki already classifies its own pages. Ask it. Categories
+// separate `Cast`/`Voice Actors` from `Characters` from `Companies` on every
+// wiki checked, which turns an ambiguous parse into a lookup.
+// ---------------------------------------------------------------------------
+
+export type EntityKind = 'person' | 'character' | 'organisation' | 'unknown';
+
+const CATEGORY_SIGNALS: { kind: EntityKind; pattern: RegExp }[] = [
+  { kind: 'character', pattern: /\b(characters?|npcs?|player characters?|creatures?|monsters?)\b/i },
+  {
+    kind: 'person',
+    pattern:
+      /\b(cast|crew|voice actors?|actors?|dungeon masters?|game masters?|guests?|players?|people|writers?|producers?|editors?|authors?|composers?|hosts?)\b/i,
+  },
+  { kind: 'organisation', pattern: /\b(compan(y|ies)|networks?|studios?|publishers?|organisations?|organizations?)\b/i },
+];
 
 /**
- * Some wikis pair performer and character as alternating positional arguments
- * of a nested template, e.g. the Critical Role wiki's
- * `{{Starring | [[Laura Bailey]] | [[Vex'ahlia]] | ... }}`.
- *
- * Reading those links flatly would file every character as a person, which is
- * how you end up with a database of real performers containing "Arkhan".
+ * Classify wiki pages by their categories, batched (the API takes 50 titles a
+ * call). Character categories are checked before person ones: a character page
+ * often sits in "Emily Axford Characters", which would otherwise read as a
+ * person signal.
  */
-function parsePairedTemplate(value: string): WikiPerson[] | undefined {
-  const nested = extractTemplate(value, '[A-Za-z]');
-  if (!nested) return undefined;
+export async function classifyTitles(
+  host: string,
+  titles: string[],
+): Promise<Map<string, EntityKind>> {
+  const result = new Map<string, EntityKind>();
+  const unique = [...new Set(titles)];
 
-  const args = positionalArgs(nested);
-  if (args.length < 2) return undefined;
-
-  // Only treat it as paired if the odd slots are consistently links (people).
-  const people: WikiPerson[] = [];
-  for (let i = 0; i < args.length; i += 2) {
-    const nameMatch = args[i]!.match(new RegExp(`^${LINK}$`));
-    if (!nameMatch) return undefined;
-
-    const slot = args[i + 1] ?? '';
-    const characters = [...slot.matchAll(new RegExp(LINK, 'g'))].map((m) => m[1]!.trim());
-    const bare = slot.replace(/\[\[|\]\]/g, '').trim();
-
-    people.push({
-      name: nameMatch[1]!.trim(),
-      ...(characters.length > 0 ? { character: characters.join(' / ') } : {}),
-      ...(GM_MARKERS.test(bare) ? { roleOverride: 'GM/DM' as CreditRole } : {}),
+  for (let i = 0; i < unique.length; i += 50) {
+    const batch = unique.slice(i, i + 50);
+    const params = new URLSearchParams({
+      action: 'query',
+      titles: batch.join('|'),
+      prop: 'categories',
+      cllimit: '500',
+      redirects: '1',
+      format: 'json',
+      formatversion: '2',
     });
+
+    let pages: any[] = [];
+    for (const path of ['/api.php', '/w/api.php']) {
+      try {
+        const response = await fetch(`https://${host}${path}?${params}`, {
+          headers: { 'User-Agent': USER_AGENT },
+        });
+        if (!response.ok) continue;
+        const data: any = await response.json();
+        if (data?.query?.pages) {
+          pages = data.query.pages;
+          break;
+        }
+      } catch {
+        // try the next path
+      }
+    }
+
+    for (const page of pages) {
+      const categories: string[] = (page.categories ?? []).map((c: any) =>
+        String(c.title).replace(/^Category:/, ''),
+      );
+      let kind: EntityKind = 'unknown';
+      for (const signal of CATEGORY_SIGNALS) {
+        if (categories.some((category) => signal.pattern.test(category))) {
+          kind = signal.kind;
+          break;
+        }
+      }
+      result.set(page.title, kind);
+    }
+
+    // Preserve the caller's spelling as well as the wiki's canonical title, so
+    // redirect targets still resolve.
+    for (const title of batch) if (!result.has(title)) result.set(title, result.get(title) ?? 'unknown');
   }
-  return people.length > 0 ? people : undefined;
+
+  return result;
+}
+
+/** Every wikilink in a value, in document order, with its position. */
+function linksInOrder(value: string): { title: string; start: number; end: number }[] {
+  return [...value.matchAll(new RegExp(LINK, 'g'))]
+    .map((m) => ({ title: m[1]!.trim(), start: m.index!, end: m.index! + m[0].length }))
+    .filter((l) => !/^(File|Image|Category):/i.test(l.title));
 }
 
 /**
- * Pull people out of an infobox field.
+ * Turn one infobox field into credited people, using the wiki's own
+ * classification of each linked page rather than the field's formatting.
  *
- * `expectCharacters` guards the dangerous case. For cast fields, a bare list of
- * wikilinks is ambiguous — the links could be performers, or performers
- * interleaved with their characters. Rather than guess and invent people, this
- * returns nothing and lets the caller report the field as unparsed.
+ * Walk the links in order: a person opens a new entry, a character attaches to
+ * the entry before it, an organisation is dropped. That single rule handles
+ * every layout encountered — Dimension 20's bolded "X as Y", the Critical Role
+ * wiki's alternating positional template, and plain lists — without knowing
+ * anything about any of them.
  */
-export function parsePeople(value: string | undefined, expectCharacters = false): WikiPerson[] {
-  if (!value) return [];
+export function assemblePeople(
+  value: string | undefined,
+  kinds: Map<string, EntityKind>,
+): { people: WikiPerson[]; dropped: string[] } {
+  if (!value) return { people: [], dropped: [] };
 
-  const paired = parsePairedTemplate(value);
-  if (paired) return paired;
+  const links = linksInOrder(value);
+  const people: WikiPerson[] = [];
+  const dropped: string[] = [];
 
-  const bolded = new RegExp(`'''\\s*${LINK}\\s*'''`, 'g');
-  const matches = [...value.matchAll(bolded)];
+  for (let i = 0; i < links.length; i++) {
+    const link = links[i]!;
+    let kind = kinds.get(link.title) ?? 'unknown';
 
-  if (matches.length > 0) {
-    const people: WikiPerson[] = [];
-    for (let i = 0; i < matches.length; i++) {
-      const from = matches[i]!.index! + matches[i]![0].length;
-      const to = i + 1 < matches.length ? matches[i + 1]!.index! : value.length;
-      const asMatch = value
-        .slice(from, to)
-        .match(new RegExp(`\\bas\\s+${LINK}`, 'i'));
-      people.push({
-        name: matches[i]![1]!.trim(),
-        ...(asMatch ? { character: asMatch[1]!.trim() } : {}),
-      });
+    // An unclassified link straight after a performer who has no character yet
+    // is, in every observed layout, that performer's character.
+    if (kind === 'unknown') {
+      const current = people[people.length - 1];
+      kind = current && !current.character ? 'character' : 'person';
     }
-    return people;
+
+    if (kind === 'organisation') {
+      dropped.push(link.title);
+      continue;
+    }
+
+    if (kind === 'character') {
+      const current = people[people.length - 1];
+      if (!current) continue;
+      current.character = current.character
+        ? `${current.character} / ${link.title}`
+        : link.title;
+      continue;
+    }
+
+    people.push({ name: link.title });
   }
 
-  const bare = [...value.matchAll(new RegExp(LINK, 'g'))]
-    .map((m) => m[1]!.trim())
-    .filter((name) => !name.startsWith('File:') && !name.startsWith('Image:'));
+  // A role marker in the text after a performer overrides the field's role —
+  // the Critical Role wiki writes "[[Matthew Mercer]] | DM" inside `starring`.
+  for (let i = 0; i < people.length; i++) {
+    const link = links.find((l) => l.title === people[i]!.name);
+    if (!link) continue;
+    const nextLink = links.find((l) => l.start > link.end);
+    const between = value.slice(link.end, nextLink ? nextLink.start : value.length);
+    if (GM_MARKERS.test(between.replace(/\[\[|\]\]/g, ''))) {
+      people[i]!.roleOverride = 'GM/DM' as CreditRole;
+    }
+  }
 
-  // A single link in a cast field is unambiguous; several are not.
-  if (expectCharacters && bare.length > 1) return [];
-
-  return bare.map((name) => ({ name }));
+  return { people, dropped };
 }
 
 /** Strip footnotes, markup and bare URLs out of a display value. */
@@ -341,25 +392,28 @@ export async function fetchCampaign(host: string, page: string): Promise<WikiCam
   const params = parseParams(template);
   const season = Number.parseInt(params.season ?? '', 10);
 
-  const CAST_ROLES = new Set<CreditRole>(['player', 'guest player', 'GM/DM', 'guest GM']);
+  const creditFields = Object.entries(params).filter(([field]) => FIELD_ROLES[field]);
+
+  // Resolve every linked page against the wiki's own categories first, in one
+  // batched call, so assembly is a lookup rather than a guess about formatting.
+  const kinds = await classifyTitles(
+    host,
+    creditFields.flatMap(([, value]) => linksInOrder(value).map((l) => l.title)),
+  );
 
   const credits: WikiCreditGroup[] = [];
-  const unparsed: string[] = [];
+  const dropped: string[] = [];
 
-  for (const [field, value] of Object.entries(params)) {
-    const role = FIELD_ROLES[field];
-    if (!role) continue;
-
-    const people = parsePeople(value, CAST_ROLES.has(role));
-    if (people.length === 0) {
-      if (value.includes('[[')) unparsed.push(field);
-      continue;
-    }
+  for (const [field, value] of creditFields) {
+    const role = FIELD_ROLES[field]!;
+    const assembled = assemblePeople(value, kinds);
+    dropped.push(...assembled.dropped);
+    if (assembled.people.length === 0) continue;
 
     // A field can carry its own role marker — the CR wiki hides the DM inside
     // the starring list — so split the group rather than mislabel anyone.
-    for (const override of new Set(people.map((p) => p.roleOverride))) {
-      const subset = people.filter((p) => p.roleOverride === override);
+    for (const override of new Set(assembled.people.map((p) => p.roleOverride))) {
+      const subset = assembled.people.filter((p) => p.roleOverride === override);
       credits.push({ field, role: override ?? role, people: subset });
     }
   }
@@ -374,7 +428,7 @@ export async function fetchCampaign(host: string, page: string): Promise<WikiCam
     airDates: cleanValue(params.air_dates ?? params.first_aired),
     episodes: cleanValue(params.episodes ?? params.num_episodes),
     credits,
-    unparsed,
+    dropped: [...new Set(dropped)],
     unmapped: Object.keys(params).filter(
       (key) => !FIELD_ROLES[key] && !METADATA_FIELDS.has(key),
     ),

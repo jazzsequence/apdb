@@ -169,10 +169,8 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
   for (const group of campaign.credits) {
     console.log(`  ${group.field} -> ${group.role}: ${group.people.length}`);
   }
-  if (campaign.unparsed.length > 0) {
-    console.log(
-      `  ⚠ could not safely read: ${campaign.unparsed.join(', ')} — ambiguous format, skipped rather than guessed`,
-    );
+  if (campaign.dropped.length > 0) {
+    console.log(`  not people (per wiki categories): ${campaign.dropped.join(', ')}`);
   }
   if (campaign.unmapped.length > 0) {
     console.log(`  unmapped infobox fields: ${campaign.unmapped.join(', ')}`);
