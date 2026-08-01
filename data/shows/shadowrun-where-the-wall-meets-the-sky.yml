@@ -8,4 +8,5 @@ links:
   website: https://savingthrowshow.fandom.com/wiki/Shadowrun_-_Where_the_Wall_Meets_the_Sky
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: shadowrun
+description: "System per source: Shadowrun."

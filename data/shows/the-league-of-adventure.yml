@@ -8,4 +8,5 @@ links:
   website: https://savingthrowshow.fandom.com/wiki/The_League_of_Adventure
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: genesys
+description: "System per source: Genesys."

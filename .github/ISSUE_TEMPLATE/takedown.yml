@@ -1,0 +1,40 @@
+name: Image takedown request
+description: You hold rights to an image used here and want it removed.
+title: '[takedown] '
+labels: [takedown, priority]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Show artwork here is used under a claim of fair use — low-resolution
+        thumbnails, attributed and linked back, solely to identify the show in
+        an index of its credits.
+
+        If you hold the rights and would rather it wasn't, that's the end of it.
+        No argument. Removal is a one-line change and will be done promptly.
+
+  - type: input
+    id: image
+    attributes:
+      label: Which image
+      description: The page it appears on, or the image URL.
+    validations:
+      required: true
+
+  - type: input
+    id: rights
+    attributes:
+      label: Who you are
+      description: The rights holder, or who you represent.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: >-
+        Optional. If you'd prefer we use a different image, or are happy for it
+        to stay with different credit, say so here.
+    validations:
+      required: false

@@ -8,4 +8,5 @@ links:
   website: https://savingthrowshow.fandom.com/wiki/Black_Bag%3A_Detectives
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: fate-core
+description: "System per source: Fate."

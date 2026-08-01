@@ -640,3 +640,70 @@ export async function fetchCampaign(host: string, page: string): Promise<WikiCam
     ),
   };
 }
+
+/**
+ * The key art a campaign page uses, as a thumbnail URL.
+ *
+ * This is the production's copyright — the wiki displays it under its own
+ * fair-use rationale and cannot sublicense it. Anything imported through here
+ * is stored as `licence: 'fair use'` with a rationale, never dressed up as
+ * free. Thumbnail width is requested deliberately: a low-resolution image used
+ * to identify the work is a far stronger claim than a full-size copy.
+ */
+export async function campaignImage(
+  host: string,
+  page: string,
+  width = 400,
+): Promise<{ url: string; file: string; descriptionUrl: string } | undefined> {
+  const wikitext = await fetchWikitext(host, page).catch(() => undefined);
+  if (!wikitext) return undefined;
+
+  const names = [...CAMPAIGN_TEMPLATES.map((t) => t.replace(/^Template:/, '')), 'Infobox'];
+  let template: string | undefined;
+  for (const name of names) {
+    template = extractTemplate(wikitext, name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    if (template) break;
+  }
+  if (!template) return undefined;
+
+  const params = parseParams(template);
+  const raw = params.image1 ?? params.image ?? params.imageone;
+  if (!raw) return undefined;
+
+  const file = raw
+    .replace(/\[\[|\]\]/g, '')
+    .replace(/^File:/i, '')
+    .split('|')[0]!
+    .trim();
+  if (!file || !/\.(png|jpe?g|webp|gif)$/i.test(file)) return undefined;
+
+  const query = new URLSearchParams({
+    action: 'query',
+    titles: `File:${file}`,
+    prop: 'imageinfo',
+    iiprop: 'url',
+    iiurlwidth: String(width),
+    format: 'json',
+    formatversion: '2',
+  });
+
+  for (const path of ['/api.php', '/w/api.php']) {
+    try {
+      const response = await fetch(`https://${host}${path}?${query}`, {
+        headers: { 'User-Agent': USER_AGENT },
+      });
+      if (!response.ok) continue;
+      const data: any = await response.json();
+      const info = data?.query?.pages?.[0]?.imageinfo?.[0];
+      if (!info) continue;
+      return {
+        url: info.thumburl ?? info.url,
+        file,
+        descriptionUrl: info.descriptionurl ?? `https://${host}/wiki/File:${encodeURIComponent(file)}`,
+      };
+    } catch {
+      // try the other path
+    }
+  }
+  return undefined;
+}

@@ -32,3 +32,13 @@ seasons:
   - ordinal: 5
     title: "Exandria Unlimited: Divergence"
     game: daggerheart
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/d/d1/ExuLogo.png/revision/latest/scale-to-width-down/400?cb=20210625202520
+  licence: fair use
+  attribution: Exandria Unlimited key art, © its producers. Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:ExuLogo.png
+  depicts: Key art for Exandria Unlimited
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

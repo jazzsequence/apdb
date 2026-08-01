@@ -8,4 +8,5 @@ links:
   website: https://savingthrowshow.fandom.com/wiki/Roll_for_Shoes_-_%22The_Imps_of_Hell%22
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: roll-for-shoes
+description: "System per source: Roll for Shoes."

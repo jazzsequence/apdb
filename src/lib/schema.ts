@@ -38,6 +38,18 @@ export const ImageLicence = z.enum([
   'CC-BY-SA-3.0',
   'CC-BY-SA-4.0',
   'public domain',
+  /**
+   * Not a free licence — a claim. Used for show/campaign key art, which is the
+   * production's copyright and which no wiki can sublicense however
+   * prominently it displays it.
+   *
+   * Everything about how these are stored is chosen to keep the claim
+   * defensible: thumbnail resolution only, never full size; always attributed;
+   * always linked back to the source; and used solely to identify the work it
+   * depicts, never decoratively. A `rationale` is required so the claim is
+   * stated per image rather than assumed. See POLICY.md.
+   */
+  'fair use',
 ]);
 
 export const Image = z
@@ -48,8 +60,16 @@ export const Image = z
     attribution: z.string().min(1),
     /** The page the image and its licensing were read from. */
     source: z.string().url(),
+    /** Why the use is fair. Required for, and only meaningful for, 'fair use'. */
+    rationale: z.string().min(1).optional(),
+    /** What the image depicts, so its use can be checked against the claim. */
+    depicts: z.string().min(1).optional(),
   })
-  .strict();
+  .strict()
+  .refine((i) => i.licence !== 'fair use' || Boolean(i.rationale), {
+    message: "a 'fair use' image must state its rationale — the claim is per-use, not blanket",
+    path: ['rationale'],
+  });
 
 const Links = z
   .object({

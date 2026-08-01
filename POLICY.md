@@ -164,3 +164,50 @@ disagreement is recorded in the source notes rather than silently resolved.
    take the better-sourced value and write the disagreement into the note.
 5. **Don't speculate about anyone's personal life.** Names are recorded as they
    appeared in credits, and for no other purpose.
+
+
+## Images
+
+Two different things, kept separate on purpose.
+
+### Portraits — freely licensed only
+
+Photographs of people come from **Wikimedia Commons**, which publishes a
+machine-readable licence per file. Only licences that actually permit reuse are
+accepted, and each image records its photographer and source. Anything whose
+licence string isn't recognised is skipped, because unrecognised means unknown
+terms.
+
+Fan wikis are *not* used for portraits. Their text is CC-BY-SA; their uploaded
+images are not, and a wiki cannot sublicense what it doesn't own.
+
+### Show key art — used under a claim of fair use
+
+Campaign and show artwork is the production's copyright. No wiki can license it
+to us, however prominently it displays it — a fan wiki's fair-use rationale
+covers that wiki's use, not ours.
+
+**This project makes its own fair-use claim for show key art**, deliberately and
+as a matter of policy. The claim is narrow, and how these images are stored and
+displayed is chosen to keep it that way:
+
+- **Thumbnail resolution only.** Images are requested at ~400px and displayed at
+  200px. A low-resolution copy used for identification is a materially different
+  use from redistributing the artwork.
+- **Identification, never decoration.** One image per show, next to that show's
+  title. No galleries, no hero banners, no use of artwork to illustrate anything
+  other than the work it depicts.
+- **Always attributed, always linked back** to the page it came from.
+- **No substitution.** A thumbnail in a credits index does not compete with the
+  original or reduce its market value; if anything it points people at the show.
+- **Non-commercial.** This is a free, community-run index.
+- **A rationale is recorded per image**, and CI rejects a `fair use` image that
+  doesn't state one. The claim is per-use, not blanket.
+
+Fair use is a claim, not a licence, and reasonable people can disagree about any
+particular instance. **Rights holders: open an issue titled `[takedown]` naming
+the image, and it will be removed — no argument, no delay.** Removal is a
+one-line edit to the show's data file.
+
+If you would rather not carry this risk, delete the `image` block from the show
+files and the `fair use` value from `ImageLicence`; nothing else depends on it.

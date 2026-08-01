@@ -360,3 +360,15 @@ footer.site {
   font-size: 0.68rem; color: var(--muted); max-width: 140px;
   margin-top: 0.35rem; line-height: 1.35;
 }
+
+/* Key art is used under a fair-use claim: thumbnail scale only, attributed,
+   linked back, and only ever to identify the work. Never full-bleed. */
+.keyart { margin: 0; flex: 0 0 auto; max-width: 200px; }
+.keyart img {
+  width: 200px; max-width: 100%; height: auto;
+  border-radius: var(--radius); border: 1px solid var(--border); display: block;
+}
+.keyart figcaption {
+  font-size: 0.68rem; color: var(--muted); max-width: 200px;
+  margin-top: 0.35rem; line-height: 1.35;
+}

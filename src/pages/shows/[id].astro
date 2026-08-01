@@ -36,13 +36,27 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
   title={`${show.title} — Actual Play Database`}
   description={show.description ?? `Cast, seasons and systems for ${show.title}.`}
 >
-  <h1>{show.title}</h1>
+  <div class="portrait-row">
+    {show.image && (
+      <figure class="keyart">
+        <img src={show.image.url} alt={show.image.depicts ?? show.title} loading="lazy" />
+        <figcaption>
+          {show.image.attribution}{' '}
+          <a href={show.image.source} rel="nofollow noopener">source</a>
+        </figcaption>
+      </figure>
+    )}
+    <div>
+      <h1>{show.title}</h1>
 
   <p class="billing">
     {channels.map((c, i) => (<>{i > 0 && ', '}<a href={`${base}channels/${c.id}/`}>{c.name}</a>{` (${c.type})`}</>))} ·
     <strong>{show.format}</strong> · {show.status} ·
     {games.map((g) => `${g.name} ${g.edition}`).join(', ')}
   </p>
+
+    </div>
+  </div>
 
   {show.description && <p class="lede">{show.description}</p>}
 

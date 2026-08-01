@@ -131,3 +131,13 @@ seasons:
   - ordinal: 41
     title: Blank Slate
     game: dnd-5e
+image:
+  url: https://static.wikia.nocookie.net/avantris/images/f/f3/Strahd_Wallpaper.png/revision/latest/scale-to-width-down/400?cb=20220321031416
+  licence: fair use
+  attribution: Legends of Avantris key art, © its producers. Via avantris.fandom.com.
+  source: https://avantris.fandom.com/wiki/File:Strahd_Wallpaper.png
+  depicts: Key art for Curse of Strahdanya
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.
