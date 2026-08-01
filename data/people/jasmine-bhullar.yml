@@ -1,9 +1,3 @@
-# Credits imported from acquisitionsincorporated.fandom.com on 2026-08-01.
-# Source: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Fourteen (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: jasmine-bhullar
 canonical_name: Jasmine Bhullar
 sort_name: Bhullar, Jasmine
@@ -46,7 +40,16 @@ credits:
     character: Certainty Dran
     alias: default
     sources:
-      - tier: community
-        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Fourteen
+      - url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Fourteen
         note: Acquisitions Inc. Season Fourteen cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dnd-dungeon-masters
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=mY9w7n84PmM
+        note: Cast per the production's own description of "Dungeon Masters | Official
+          D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".

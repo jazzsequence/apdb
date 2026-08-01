@@ -1,0 +1,18 @@
+id: matt-mercer
+canonical_name: Matt Mercer
+sort_name: Mercer, Matt
+aliases:
+  - id: default
+    name: Matt Mercer
+    alias_type: legal
+credits:
+  - show: into-the-mist
+    season: 1
+    role: player
+    character: Strahd von Zarovich
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=jealZAH1J4g
+        note: Cast per the production's own description of "Finale, Part 1 - Into the
+          Mist | The Devil Himself".

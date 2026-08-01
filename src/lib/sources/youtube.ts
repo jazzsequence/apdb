@@ -24,6 +24,22 @@ export interface YouTubeVideo {
   url: string;
 }
 
+/**
+ * A performer name, not a sentence that happens to contain one.
+ *
+ * "Reuben Bresler (@moxreuby) takes players Riley Silverman" matched an
+ * "X as Y" shape and produced three bogus GM credits. Handles, brackets and
+ * anything past four words mean the line is prose, not a credit.
+ */
+export function looksLikeName(value: string): boolean {
+  const v = value.trim();
+  if (!v || v.length > 45) return false;
+  if (/[@()\[\]|/\\]|https?:/i.test(v)) return false;
+  if (v.split(/\s+/).length > 4) return false;
+  if (/\b(takes|plays|joins|presents|with|and|the|for|from)\b/i.test(v)) return false;
+  return /^[\p{L}"'][\p{L}\s."'-]*$/u.test(v);
+}
+
 export interface YouTubeCredit {
   name: string;
   role: CreditRole;
@@ -150,7 +166,7 @@ function characterFirstBlock(description: string): YouTubeCredit[] {
     const gm = line.match(/^(?:DM|GM|Dungeon Master|Game Master)\s*[:\-]\s*(.+)$/i);
     if (gm) {
       const name = gm[1]!.trim();
-      if (name) { credits.push({ name, role: 'GM/DM', line: rawLine.trim() }); seenGm = true; }
+      if (looksLikeName(name)) { credits.push({ name, role: 'GM/DM', line: rawLine.trim() }); seenGm = true; }
       continue;
     }
 
@@ -161,7 +177,7 @@ function characterFirstBlock(description: string): YouTubeCredit[] {
     const character = row[1]!.trim();
     const name = row[2]!.trim();
     // A performer name, not a timestamp or a sentence.
-    if (!/^[\p{L}"'][\p{L}\s."'-]{2,45}$/u.test(name)) continue;
+    if (!looksLikeName(name)) continue;
     if (/^\d/.test(character)) continue;
     credits.push({ name, role: 'player', character, line: rawLine.trim() });
   }
@@ -169,9 +185,70 @@ function characterFirstBlock(description: string): YouTubeCredit[] {
   return credits.length > 1 ? credits : [];
 }
 
+/**
+ * A role header on its own line, with the cast on the lines beneath it:
+ *
+ *   Cast:
+ *   Jasmine Bhullar as The Dungeon Master
+ *   Christian Navarro as Eloin Emberleaf, a Winter Walker Ranger
+ *
+ * This is how the official D&D channel writes it. "as The Dungeon Master" is a
+ * role, not a character, so it is promoted; the trailing class descriptor
+ * ("a Winter Walker Ranger") is dropped from the character name.
+ */
+function headedBlock(description: string): YouTubeCredit[] {
+  const lines = description.split(/\r?\n/).map((l) => l.trim());
+  const credits: YouTubeCredit[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    if (!/^(cast|starring|players|featuring)\s*:?\s*$/i.test(lines[i]!)) continue;
+
+    for (let j = i + 1; j < lines.length; j++) {
+      const line = lines[j]!;
+      if (!line) break;
+      if (/https?:\/\//i.test(line)) break;
+      if (line.length > 140) break;
+
+      const m = line.match(/^(.+?)\s+as\s+(.+)$/i);
+      if (!m) break;
+
+      const name = m[1]!.replace(/^[\s\-–—*•]+/, '').trim();
+      let character = m[2]!.split(/,\s*(?:an?\b|the\b)/i)[0]!.trim();
+
+      const isGm = /^(the\s+)?(dungeon master|game master|dm|gm)$/i.test(character);
+      if (!looksLikeName(name)) break;
+
+      credits.push(
+        isGm
+          ? { name, role: 'GM/DM', line }
+          : { name, role: 'player', character, line },
+      );
+    }
+    if (credits.length > 1) return credits;
+  }
+  return [];
+}
+
+/**
+ * Final gate on everything emitted, whichever parser produced it. Applying the
+ * name check per-branch left holes — a prose sentence still came through as
+ * three GM credits. One filter at the exit is harder to get wrong.
+ */
+function keepOnlyNames(credits: YouTubeCredit[]): YouTubeCredit[] {
+  return credits
+    .filter((c) => looksLikeName(c.name))
+    // A social handle is not a character. "Ashlen Rose as @AshlenRose" is a
+    // credit line being read out of a promo sentence.
+    .filter((c) => !c.character || !/^@|^https?:/i.test(c.character.trim()))
+    .map((c) => (c.character && !looksLikeName(c.character) ? { ...c, character: undefined } : c));
+}
+
 export function creditsFromDescription(description: string): YouTubeCredit[] {
-  const characterFirst = characterFirstBlock(description);
-  if (characterFirst.length > 0) return characterFirst;
+  const headed = keepOnlyNames(headedBlock(description));
+  if (headed.length > 1) return headed;
+
+  const characterFirst = keepOnlyNames(characterFirstBlock(description));
+  if (characterFirst.length > 1) return characterFirst;
 
   const credits: YouTubeCredit[] = [];
 
@@ -195,7 +272,7 @@ export function creditsFromDescription(description: string): YouTubeCredit[] {
 
   // Same name twice in one description is one credit.
   const seen = new Set<string>();
-  return credits.filter((c) => {
+  return keepOnlyNames(credits).filter((c) => {
     const k = `${c.name.toLowerCase()}|${c.role}`;
     if (seen.has(k)) return false;
     seen.add(k);

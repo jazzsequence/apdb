@@ -1,0 +1,12 @@
+id: into-the-mist
+title: Into the Mist
+channels:
+  - dnd-official
+format: video
+status: completed
+description: Ravenloft actual play featured on the official Dungeons & Dragons channel.
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYoJYg_TFDFR0w7D1Wt7Xeaq
+seasons:
+  - ordinal: 1
+    game: dnd-5e

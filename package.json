@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "filmography": "tsx scripts/filmography.ts",
     "collect": "tsx scripts/collect.ts",
-    "audit": "tsx scripts/audit.ts"
+    "audit": "tsx scripts/audit.ts",
+    "discover:youtube": "tsx scripts/discover-youtube.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

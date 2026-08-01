@@ -1,0 +1,18 @@
+id: james-haeck
+canonical_name: James Haeck
+sort_name: Haeck, James
+aliases:
+  - id: default
+    name: James Haeck
+    alias_type: legal
+credits:
+  - show: into-the-mist
+    season: 1
+    role: player
+    character: Heidi
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=NdaftNeDtRU
+        note: Cast per the production's own description of "Prologue | Tides of
+          Wildemount".

@@ -1,0 +1,17 @@
+id: jason-azevedo
+canonical_name: Jason Azevedo
+sort_name: Azevedo, Jason
+aliases:
+  - id: default
+    name: Jason Azevedo
+    alias_type: legal
+credits:
+  - show: into-the-mist
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=nrO5IOORlaE
+        note: Cast per the production's own description of "Episode 1 - Into the Mist |
+          The Mists of Ravenloft".

@@ -1,0 +1,16 @@
+id: dnd-dungeon-masters
+title: Dungeon Masters
+channels:
+  - dnd-official
+format: video
+status: ongoing
+description: The official Dungeons & Dragons actual play series.
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYrKA20VrqRQL5Q8tGQCkZE8
+seasons:
+  - ordinal: 1
+    title: "Campaign 1: Ravenloft"
+    game: dnd-5e
+  - ordinal: 2
+    title: "Campaign 2: Arcana Unleashed"
+    game: dnd-5e

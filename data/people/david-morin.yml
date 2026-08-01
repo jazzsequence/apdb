@@ -1,0 +1,18 @@
+id: david-morin
+canonical_name: David Morin
+sort_name: Morin, David
+aliases:
+  - id: default
+    name: David Morin
+    alias_type: legal
+credits:
+  - show: into-the-mist
+    season: 1
+    role: player
+    character: Muskoka
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=fVh7KpXoJq4
+        note: Cast per the production's own description of "Season 2 Ep. 2 - Into the
+          Mist | Old Bonegrinder".

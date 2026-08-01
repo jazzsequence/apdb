@@ -1,0 +1,18 @@
+id: neil-newbon
+canonical_name: Neil Newbon
+sort_name: Newbon, Neil
+aliases:
+  - id: default
+    name: Neil Newbon
+    alias_type: legal
+credits:
+  - show: dnd-dungeon-masters
+    season: 1
+    role: player
+    character: Professor Crem
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=mY9w7n84PmM
+        note: Cast per the production's own description of "Dungeon Masters | Official
+          D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".

@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: christian-navarro
 canonical_name: Christian Navarro
 sort_name: Navarro, Christian
@@ -27,10 +21,20 @@ credits:
   - show: critical-role-specials
     season: 5
     role: guest player
-    note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
+      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+        tier: community
+  - show: dnd-dungeon-masters
+    season: 1
+    role: player
+    character: Eloin Emberleaf
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=mY9w7n84PmM
+        note: Cast per the production's own description of "Dungeon Masters | Official
+          D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".

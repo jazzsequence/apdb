@@ -1,0 +1,18 @@
+id: brandon-perkins
+canonical_name: Brandon Perkins
+sort_name: Perkins, Brandon
+aliases:
+  - id: default
+    name: Brandon Perkins
+    alias_type: legal
+credits:
+  - show: into-the-mist
+    season: 1
+    role: player
+    character: Sterling
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=nrO5IOORlaE
+        note: Cast per the production's own description of "Episode 1 - Into the Mist |
+          The Mists of Ravenloft".

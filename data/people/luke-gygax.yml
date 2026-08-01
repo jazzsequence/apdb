@@ -1,0 +1,18 @@
+id: luke-gygax
+canonical_name: Luke Gygax
+sort_name: Gygax, Luke
+aliases:
+  - id: default
+    name: Luke Gygax
+    alias_type: legal
+credits:
+  - show: into-the-mist
+    season: 1
+    role: player
+    character: Verleigh
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=NdaftNeDtRU
+        note: Cast per the production's own description of "Prologue | Tides of
+          Wildemount".

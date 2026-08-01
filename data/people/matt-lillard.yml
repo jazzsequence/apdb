@@ -1,0 +1,18 @@
+id: matt-lillard
+canonical_name: Matt Lillard
+sort_name: Lillard, Matt
+aliases:
+  - id: default
+    name: Matt Lillard
+    alias_type: legal
+credits:
+  - show: into-the-mist
+    season: 1
+    role: player
+    character: Rictavio
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=jealZAH1J4g
+        note: Cast per the production's own description of "Finale, Part 1 - Into the
+          Mist | The Devil Himself".

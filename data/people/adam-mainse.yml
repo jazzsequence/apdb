@@ -1,0 +1,18 @@
+id: adam-mainse
+canonical_name: Adam Mainse
+sort_name: Mainse, Adam
+aliases:
+  - id: default
+    name: Adam Mainse
+    alias_type: legal
+credits:
+  - show: into-the-mist
+    season: 1
+    role: player
+    character: Dmitri Maddock
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=nrO5IOORlaE
+        note: Cast per the production's own description of "Episode 1 - Into the Mist |
+          The Mists of Ravenloft".

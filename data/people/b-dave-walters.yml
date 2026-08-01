@@ -1,12 +1,7 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: b-dave-walters
 canonical_name: B. Dave Walters
 sort_name: Walters, B. Dave
+links: {}
 aliases:
   - id: default
     name: B. Dave Walters
@@ -18,7 +13,17 @@ credits:
     character: Marcid the Typhoon
     alias: default
     sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan
+      - url: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan
         note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+        tier: community
+  - show: into-the-mist
+    season: 1
+    role: player
+    character: Kori
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=NdaftNeDtRU
+        note: Cast per the production's own description of "Prologue | Tides of
+          Wildemount".
