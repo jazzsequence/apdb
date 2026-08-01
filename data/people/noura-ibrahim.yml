@@ -16,3 +16,11 @@ credits:
         url: https://www.youtube.com/watch?v=jealZAH1J4g
         note: Cast per the production's own description of "Finale, Part 1 - Into the
           Mist | The Devil Himself".
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Ib
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

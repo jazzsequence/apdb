@@ -1,0 +1,16 @@
+id: jessica-chobot
+canonical_name: Jessica Chobot
+sort_name: Chobot, Jessica
+aliases:
+  - id: default
+    name: Jessica Chobot
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Victoria Ash
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

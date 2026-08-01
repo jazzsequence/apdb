@@ -1,0 +1,16 @@
+id: bex-taylor-klaus
+canonical_name: Bex Taylor-Klaus
+sort_name: Taylor-Klaus, Bex
+aliases:
+  - id: default
+    name: Bex Taylor-Klaus
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Ramona
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

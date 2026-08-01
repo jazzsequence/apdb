@@ -1,0 +1,16 @@
+id: alex-frew
+canonical_name: Alex Frew
+sort_name: Frew, Alex
+aliases:
+  - id: default
+    name: Alex Frew
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Agent Handler
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

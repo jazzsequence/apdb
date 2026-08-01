@@ -1,0 +1,13 @@
+id: shattered-a-daggerheart-actual-play
+title: "Shattered: A Daggerheart Actual Play"
+channels:
+  - the-rpgeeks
+format: video
+status: unknown
+description: "System per source: Daggerheart 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLVjhzjoqaX2KMuxota7sLfoR-xuhoZZG_
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 4

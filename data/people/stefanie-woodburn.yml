@@ -1,0 +1,16 @@
+id: stefanie-woodburn
+canonical_name: Stefanie Woodburn
+sort_name: Woodburn, Stefanie
+aliases:
+  - id: default
+    name: Stefanie Woodburn
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Maggie
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

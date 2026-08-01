@@ -1,0 +1,16 @@
+id: bryan-dechart
+canonical_name: Bryan Dechart
+sort_name: Dechart, Bryan
+aliases:
+  - id: default
+    name: Bryan Dechart
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Vannevar Thomas
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

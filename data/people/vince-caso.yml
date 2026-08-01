@@ -1,0 +1,16 @@
+id: vince-caso
+canonical_name: Vince Caso
+sort_name: Caso, Vince
+aliases:
+  - id: default
+    name: Vince Caso
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Gregory Demetrios
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

@@ -1,0 +1,16 @@
+id: bryan-forrest
+canonical_name: Bryan Forrest
+sort_name: Forrest, Bryan
+aliases:
+  - id: default
+    name: Bryan Forrest
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Agent Stillwater
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

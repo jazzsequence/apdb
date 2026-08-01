@@ -1,0 +1,16 @@
+id: shayne-eastin
+canonical_name: Shayne Eastin
+sort_name: Eastin, Shayne
+aliases:
+  - id: default
+    name: Shayne Eastin
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Katya
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

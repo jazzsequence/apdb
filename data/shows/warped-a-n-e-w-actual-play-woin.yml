@@ -1,0 +1,14 @@
+id: warped-a-n-e-w-actual-play-woin
+title: "Warped: A N.E.W. Actual Play (WOIN)"
+channels:
+  - en-world-live
+format: video
+status: unknown
+description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLpbzuJtxfbQLVypm2PrNyE0cMLDN97GJE
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 16

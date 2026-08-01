@@ -1,0 +1,14 @@
+id: dungeon-masters
+title: Dungeon Masters
+channels:
+  - dungeons-dragons
+format: video
+status: unknown
+description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYrKA20VrqRQL5Q8tGQCkZE8
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 18

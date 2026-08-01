@@ -1,0 +1,13 @@
+id: vaesen-actual-play
+title: Vaesen Actual Play
+channels:
+  - third-floor-wars
+format: video
+status: unknown
+description: "System per source: Vaesen 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLYOGZIpC-07M9FGA6K-AUeBspnfuYXrQO
+seasons:
+  - ordinal: 1
+    game: vaesen
+    episode_count: 6

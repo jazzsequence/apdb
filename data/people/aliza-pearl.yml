@@ -1,0 +1,16 @@
+id: aliza-pearl
+canonical_name: Aliza Pearl
+sort_name: Pearl, Aliza
+aliases:
+  - id: default
+    name: Aliza Pearl
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Chelsea
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

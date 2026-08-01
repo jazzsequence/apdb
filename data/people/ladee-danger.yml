@@ -1,0 +1,16 @@
+id: ladee-danger
+canonical_name: Ladee Danger
+sort_name: Danger, Ladee
+aliases:
+  - id: default
+    name: Ladee Danger
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Sycorax
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

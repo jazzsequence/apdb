@@ -1,0 +1,16 @@
+id: cynthia-marie
+canonical_name: Cynthia Marie
+sort_name: Marie, Cynthia
+aliases:
+  - id: default
+    name: Cynthia Marie
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Nelli G.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

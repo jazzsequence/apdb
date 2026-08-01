@@ -1,0 +1,16 @@
+id: josephine-mcadam
+canonical_name: Josephine McAdam
+sort_name: McAdam, Josephine
+aliases:
+  - id: default
+    name: Josephine McAdam
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Eva
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

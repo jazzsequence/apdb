@@ -1,0 +1,13 @@
+id: solo-playthroughs-of-mork-borg
+title: Solo Playthroughs of MÖRK BORG
+channels:
+  - soloist-venture
+format: video
+status: unknown
+description: "System per source: MÖRK BORG 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLwaZ32mjMI4nBJmJ2SUNIjLAKoou1ErQu
+seasons:
+  - ordinal: 1
+    game: mork-borg
+    episode_count: 12

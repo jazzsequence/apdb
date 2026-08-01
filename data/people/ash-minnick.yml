@@ -1,0 +1,16 @@
+id: ash-minnick
+canonical_name: Ash Minnick
+sort_name: Minnick, Ash
+aliases:
+  - id: default
+    name: Ash Minnick
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Fiona
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

@@ -1,0 +1,16 @@
+id: jason-c-miller
+canonical_name: Jason C. Miller
+sort_name: Miller, Jason C.
+aliases:
+  - id: default
+    name: Jason C. Miller
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Strikes a Chord
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

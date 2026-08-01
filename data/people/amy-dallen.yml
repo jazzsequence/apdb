@@ -1,0 +1,16 @@
+id: amy-dallen
+canonical_name: Amy Dallen
+sort_name: Dallen, Amy
+aliases:
+  - id: default
+    name: Amy Dallen
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Sarah
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

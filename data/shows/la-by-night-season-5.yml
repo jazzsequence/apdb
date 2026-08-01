@@ -1,0 +1,13 @@
+id: la-by-night-season-5
+title: LA by Night Season 5
+channels:
+  - world-of-darkness
+format: video
+status: unknown
+description: "System per source: Chronicles of Darkness 2nd Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL4qzoETfmhLYjEWmLvGgxo5UWtG1Fu_fF
+seasons:
+  - ordinal: 1
+    game: chronicles-of-darkness
+    episode_count: 9

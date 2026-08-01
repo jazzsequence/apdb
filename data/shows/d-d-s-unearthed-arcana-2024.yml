@@ -1,0 +1,14 @@
+id: d-d-s-unearthed-arcana-2024
+title: D&D's Unearthed Arcana 2024
+channels:
+  - dungeons-dragons
+format: video
+status: unknown
+description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYp0xzoY2mtQkwxBgiHp_9h6
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 38

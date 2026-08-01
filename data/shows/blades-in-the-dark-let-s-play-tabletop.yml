@@ -1,0 +1,13 @@
+id: blades-in-the-dark-let-s-play-tabletop
+title: Blades in the Dark (Let's Play, Tabletop)
+channels:
+  - john-harper
+format: video
+status: unknown
+description: "System per source: Blades in the Dark 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLQQW3Ew6DKsN0-Iv7n7144RbqKKRneqHH
+seasons:
+  - ordinal: 1
+    game: blades-in-the-dark
+    episode_count: 47

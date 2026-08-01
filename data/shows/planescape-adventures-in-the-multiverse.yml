@@ -1,0 +1,14 @@
+id: planescape-adventures-in-the-multiverse
+title: "Planescape: Adventures in the Multiverse"
+channels:
+  - dungeons-dragons
+format: video
+status: unknown
+description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYr33drM5czPyKi9hts-yFoZ
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 26

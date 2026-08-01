@@ -1,0 +1,16 @@
+id: kendra-vaughan
+canonical_name: Kendra Vaughan
+sort_name: Vaughan, Kendra
+aliases:
+  - id: default
+    name: Kendra Vaughan
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Violet Luna
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

@@ -1,0 +1,13 @@
+id: coriolis-the-great-dark-roleplaying-game
+title: Coriolis The Great Dark Roleplaying Game
+channels:
+  - free-league-publishing
+format: video
+status: unknown
+description: "System per source: Coriolis The Third Horizon (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLYQ_VgGpQI5PO_x5Bvb52lfeSxIf13LJj
+seasons:
+  - ordinal: 1
+    game: coriolis
+    episode_count: 10

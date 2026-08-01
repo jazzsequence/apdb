@@ -1,0 +1,13 @@
+id: la-by-night
+title: L.A. by Night
+channels:
+  - world-of-darkness
+format: hybrid
+status: completed
+description: "Vampire: The Masquerade actual play set in Los Angeles, storytold
+  by Jason Carl."
+links:
+  website: https://en.wikipedia.org/wiki/L.A._by_Night
+seasons:
+  - ordinal: 1
+    game: vampire-the-masquerade-v5

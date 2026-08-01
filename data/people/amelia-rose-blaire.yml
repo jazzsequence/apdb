@@ -1,0 +1,16 @@
+id: amelia-rose-blaire
+canonical_name: Amelia Rose Blaire
+sort_name: Blaire, Amelia Rose
+aliases:
+  - id: default
+    name: Amelia Rose Blaire
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Suzanne Rochelle
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

@@ -1,0 +1,13 @@
+id: forbidden-lands-solo-campaign
+title: Forbidden Lands Solo Campaign
+channels:
+  - stef-kiryan
+format: video
+status: unknown
+description: "System per source: Forbidden Lands 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLRznwJk6YjyQlcNFJXmZ41slhS2eRk0sM
+seasons:
+  - ordinal: 1
+    game: forbidden-lands
+    episode_count: 7

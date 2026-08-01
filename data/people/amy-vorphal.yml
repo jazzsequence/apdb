@@ -1,0 +1,16 @@
+id: amy-vorphal
+canonical_name: Amy Vorphal
+sort_name: Vorphal, Amy
+aliases:
+  - id: default
+    name: Amy Vorphal
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Amethyst
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

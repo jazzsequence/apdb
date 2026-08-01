@@ -1,0 +1,16 @@
+id: kelly-lynne-d-angelo
+canonical_name: Kelly Lynne D'Angelo
+sort_name: D'Angelo, Kelly Lynne
+aliases:
+  - id: default
+    name: Kelly Lynne D'Angelo
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Diane
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

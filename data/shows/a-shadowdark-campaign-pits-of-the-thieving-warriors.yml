@@ -1,0 +1,13 @@
+id: a-shadowdark-campaign-pits-of-the-thieving-warriors
+title: A SHADOWDARK Campaign - Pits of the Thieving Warriors
+channels:
+  - soloist-venture
+format: video
+status: unknown
+description: "System per source: Shadowdark 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLwaZ32mjMI4leKvmWhkXdtlmDI8wpaIdc
+seasons:
+  - ordinal: 1
+    game: shadowdark
+    episode_count: 7

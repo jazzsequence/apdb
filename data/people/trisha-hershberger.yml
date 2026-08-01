@@ -1,0 +1,16 @@
+id: trisha-hershberger
+canonical_name: Trisha Hershberger
+sort_name: Hershberger, Trisha
+aliases:
+  - id: default
+    name: Trisha Hershberger
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Kasey
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

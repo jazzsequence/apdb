@@ -1,0 +1,13 @@
+id: the-absalom-files-a-starfinder-actual-play
+title: "The Absalom Files: A Starfinder Actual Play"
+channels:
+  - the-rpgeeks
+format: video
+status: unknown
+description: "System per source: Starfinder 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLVjhzjoqaX2LRAhKNtlKfEp1w7UC1HqAv
+seasons:
+  - ordinal: 1
+    game: starfinder
+    episode_count: 16

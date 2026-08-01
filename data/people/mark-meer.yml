@@ -1,0 +1,16 @@
+id: mark-meer
+canonical_name: Mark Meer
+sort_name: Meer, Mark
+aliases:
+  - id: default
+    name: Mark Meer
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Chaz Price
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

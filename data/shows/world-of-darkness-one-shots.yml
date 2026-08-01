@@ -1,0 +1,13 @@
+id: world-of-darkness-one-shots
+title: World of Darkness One-Shots
+channels:
+  - world-of-darkness
+format: video
+status: unknown
+description: "System per source: Chronicles of Darkness 2nd Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL4qzoETfmhLa6skA_230S6AJJQf9muwWH
+seasons:
+  - ordinal: 1
+    game: chronicles-of-darkness
+    episode_count: 7

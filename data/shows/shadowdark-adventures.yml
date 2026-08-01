@@ -1,0 +1,13 @@
+id: shadowdark-adventures
+title: ShadowDark Adventures
+channels:
+  - d20play
+format: video
+status: unknown
+description: "System per source: Shadowdark 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL3sFiRJEF28H8ZfmtLnmqhoLyRnma4clx
+seasons:
+  - ordinal: 1
+    game: shadowdark
+    episode_count: 23

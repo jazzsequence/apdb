@@ -1,0 +1,14 @@
+id: playing-with-diceself-season-1
+title: Playing With Diceself Season 1
+channels:
+  - lore-by-night
+format: video
+status: unknown
+description: "System per source: Vampire: The Masquerade 5th Edition (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLTDXW0PEYBq_8IkZrt0Iih3HYS0qhFS5c
+seasons:
+  - ordinal: 1
+    game: vampire-the-masquerade-v5
+    episode_count: 6

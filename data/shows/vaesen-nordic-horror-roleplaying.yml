@@ -1,0 +1,13 @@
+id: vaesen-nordic-horror-roleplaying
+title: Vaesen - Nordic Horror Roleplaying
+channels:
+  - free-league-publishing
+format: video
+status: unknown
+description: "System per source: Vaesen 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLYQ_VgGpQI5MCwtKzODqJTzb8_0wjbbYM
+seasons:
+  - ordinal: 1
+    game: vaesen
+    episode_count: 42

@@ -1,0 +1,13 @@
+id: la-by-night-season-4
+title: LA by Night Season 4
+channels:
+  - world-of-darkness
+format: video
+status: unknown
+description: "System per source: Chronicles of Darkness 2nd Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL4qzoETfmhLY9OQHWzCRKgwmQt50T153E
+seasons:
+  - ordinal: 1
+    game: chronicles-of-darkness
+    episode_count: 13

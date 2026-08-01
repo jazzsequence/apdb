@@ -184,3 +184,11 @@ credits:
         url: https://www.youtube.com/watch?v=g9XP5aluDPo
         note: Cast per the production's own description of "Season 2 Ep. 1 - Into the
           Mist | A Dark Invitation".
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Cuthbert Beckett
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

@@ -1,0 +1,13 @@
+id: solo-playthroughs-of-traveller-1e
+title: Solo Playthroughs of Traveller 1e
+channels:
+  - soloist-venture
+format: video
+status: unknown
+description: "System per source: Traveller Mongoose 2nd Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLwaZ32mjMI4lid_9DyH8JhYjUpSarKQeW
+seasons:
+  - ordinal: 1
+    game: traveller
+    episode_count: 5

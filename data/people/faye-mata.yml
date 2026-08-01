@@ -1,0 +1,16 @@
+id: faye-mata
+canonical_name: Faye Mata
+sort_name: Mata, Faye
+aliases:
+  - id: default
+    name: Faye Mata
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Kyoko
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

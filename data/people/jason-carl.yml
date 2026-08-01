@@ -1,0 +1,15 @@
+id: jason-carl
+canonical_name: Jason Carl
+sort_name: Carl, Jason
+aliases:
+  - id: default
+    name: Jason Carl
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

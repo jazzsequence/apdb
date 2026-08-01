@@ -27,3 +27,11 @@ credits:
         url: https://www.youtube.com/watch?v=NdaftNeDtRU
         note: Cast per the production's own description of "Prologue | Tides of
           Wildemount".
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Victor Temple
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

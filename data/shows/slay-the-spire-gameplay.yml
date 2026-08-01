@@ -1,0 +1,13 @@
+id: slay-the-spire-gameplay
+title: Slay the Spire Gameplay
+channels:
+  - baalorlord
+format: video
+status: unknown
+description: "System per source: Spire 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLP-OrXnAHBqM0WXtuVGuQpTbRq10J7_4h
+seasons:
+  - ordinal: 1
+    game: spire
+    episode_count: 1016

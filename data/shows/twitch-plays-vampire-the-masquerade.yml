@@ -1,0 +1,14 @@
+id: twitch-plays-vampire-the-masquerade
+title: "Twitch Plays Vampire: The Masquerade"
+channels:
+  - world-of-darkness
+format: video
+status: unknown
+description: "System per source: Vampire: The Masquerade 5th Edition (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL4qzoETfmhLa4j1wSAs45CcBAFMv_h0rA
+seasons:
+  - ordinal: 1
+    game: vampire-the-masquerade-v5
+    episode_count: 4

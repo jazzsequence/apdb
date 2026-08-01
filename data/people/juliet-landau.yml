@@ -1,0 +1,16 @@
+id: juliet-landau
+canonical_name: Juliet Landau
+sort_name: Landau, Juliet
+aliases:
+  - id: default
+    name: Juliet Landau
+    alias_type: legal
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Hester
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

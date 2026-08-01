@@ -1,0 +1,13 @@
+id: draw-steel-actual-play-the-fall-of-blackbottom
+title: Draw Steel Actual Play THE FALL OF BLACKBOTTOM
+channels:
+  - d20play
+format: video
+status: unknown
+description: "System per source: Draw Steel 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL3sFiRJEF28F1bNm1OVix1yXaDfjNv3wj
+seasons:
+  - ordinal: 1
+    game: draw-steel
+    episode_count: 6
