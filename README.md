@@ -164,12 +164,34 @@ wiki. Staged shows carry deliberately invalid placeholder ids for `channel` and
 `game`, so CI blocks a merge until a curator sets real ones — mapping a system
 string onto a game id needs a judgement about edition, which is required here.
 
+**YouTube (`--youtube`)** reads a production's own video descriptions, which
+for shows with no fan wiki is often the only place a cast is written down — and
+is a *better* source than a wiki, because it's the producer describing their own
+episode. Credits from here are `official` tier.
+
+```bash
+export YOUTUBE_API_KEY=...   # free: console.cloud.google.com, YouTube Data API v3
+npm run collect -- --youtube --playlist <PLAYLIST_ID> --show <show-id> --season 1 --dry-run
+```
+
+It reads only lines that name a role (`DM:`, `Starring`, `Cast:`, `Produced by`)
+and understands both `X as Y` and `X (Y)`. A description with no cast line yields
+nothing rather than a guess. Episode credits roll up to the season — an index of
+who was in a show doesn't need a row per episode.
+
+There is no keyless fallback: YouTube blocks unauthenticated access, and scraping
+around that would breach their terms.
+
 **Wikidata (`--qid`, `--search`)** is the identity backbone: stable QIDs,
 canonical names and, usefully, birth names. It carries almost no AP credits, so
 it is not used for them.
 
 ### Sources that don't work
 
+- **dungeonsanddragons.com** — serves an error page to non-browser clients;
+  fully client-rendered with no structured data.
+- **dndbeyond.com** — `robots.txt` disallows `/api/`, and the public pages carry
+  no ld+json or embedded state. Their actual-play posts are prose.
 - **actualplay.world** — no public API, and its sitemap lists only top-level
   pages, so there is no crawlable show index. Content renders client-side from
   React Server Component streams. Would need the operators' cooperation.

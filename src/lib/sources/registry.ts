@@ -62,6 +62,20 @@ export const SOURCES: Record<string, SourceInfo> = {
       'terms, so an adapter cannot be built or tested without one. Set PODCHASER_API_KEY ' +
       'and clear this entry once the redistribution terms are checked.',
   },
+  youtube: {
+    id: 'youtube',
+    name: 'YouTube Data API',
+    licence: 'YouTube API Services Terms of Service',
+    clearance: 'cleared',
+    attribution: 'Cast per the production\'s own video description. {url}',
+    notes:
+      "A production describing its own episode is the strongest cast source there is, " +
+      'which is why credits from here are `official` tier rather than `community`. ' +
+      'Requires YOUTUBE_API_KEY — the API is free (10k units/day) but the key must be ' +
+      'yours. Unauthenticated scraping is blocked by YouTube and breaches their terms, ' +
+      'so there is deliberately no keyless fallback. Only lines that name a role are ' +
+      'read; an unmatched description yields nothing rather than a guess.',
+  },
   'actualplay-world': {
     id: 'actualplay-world',
     name: 'actualplay.world',

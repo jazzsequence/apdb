@@ -28,6 +28,11 @@ import {
   type WikiPerson,
 } from '../src/lib/sources/mediawiki.js';
 import { fetchPerson, searchPeople, type WikidataPerson } from '../src/lib/sources/wikidata.js';
+import {
+  creditsFromDescription,
+  MissingKeyError,
+  playlistVideos,
+} from '../src/lib/sources/youtube.js';
 import { Person, type CreditRole, type Show } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
@@ -462,6 +467,105 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
   }
 }
 
+/**
+ * Read a production's own video descriptions for cast.
+ *
+ * These are `official` tier: the producer describing their own episode beats
+ * any wiki summarising it.
+ */
+async function collectFromYouTube(apply: boolean): Promise<void> {
+  const playlist = flag('playlist');
+  const showId = flag('show');
+  if (!playlist || !showId) {
+    console.error('--youtube needs --playlist <PLAYLIST_ID> and --show <show-slug>.');
+    process.exit(1);
+  }
+  const seasonFlag = flag('season');
+  const season = seasonFlag ? Number.parseInt(seasonFlag, 10) : undefined;
+
+  const videos = await playlistVideos(playlist, Number.parseInt(flag('limit') ?? '50', 10));
+  console.log(`\n${videos.length} video(s) in playlist ${playlist}.`);
+
+  // Roll every episode's credits up to the season: an index of who was in a
+  // show does not need one credit per episode.
+  const found = new Map<string, { role: string; character?: string; url: string; title: string }>();
+  let withCredits = 0;
+  for (const video of videos) {
+    const credits = creditsFromDescription(video.description);
+    if (credits.length > 0) withCredits += 1;
+    for (const credit of credits) {
+      const k = `${credit.name.toLowerCase()}|${credit.role}`;
+      if (!found.has(k)) {
+        found.set(k, {
+          role: credit.role,
+          character: credit.character,
+          url: video.url,
+          title: video.title,
+        });
+      }
+    }
+  }
+
+  console.log(`${withCredits}/${videos.length} descriptions carried a cast line.`);
+  console.log(`\n  would import ${found.size} credit(s):\n`);
+  for (const [k, v] of found) {
+    const name = k.split('|')[0]!;
+    console.log(`    ${v.role.padEnd(13)} ${name}${v.character ? `  as ${v.character}` : ''}`);
+  }
+
+  if (has('dry-run') || found.size === 0) {
+    console.log('\n  Re-run without --dry-run to write them.\n');
+    return;
+  }
+
+  const { dataset } = await loadDataset();
+  const byId = new Map(dataset.people.map((p) => [p.id, p]));
+  const dir = apply ? join(DATA_ROOT, 'people') : STAGING;
+  await mkdir(dir, { recursive: true });
+
+  let written = 0;
+  for (const [k, v] of found) {
+    const name = k.split('|')[0]!;
+    const proper = v.title && name;
+    const id = slugify(name);
+    const existing = byId.get(id);
+    const credit = {
+      show: showId,
+      ...(season !== undefined ? { season } : {}),
+      role: v.role as CreditRole,
+      ...(v.character ? { character: v.character } : {}),
+      ...(!existing || existing.aliases.length === 1
+        ? { alias: existing ? existing.aliases[0]!.id : 'default' }
+        : {}),
+      sources: [
+        {
+          tier: 'official' as const,
+          url: v.url,
+          note: `Cast per the production's own description of "${v.title}".`,
+        },
+      ],
+    };
+    if (existing?.credits.some((c) => c.show === showId && c.season === season && c.role === v.role)) {
+      continue;
+    }
+    const record = existing
+      ? { ...existing, credits: [...existing.credits, credit] }
+      : {
+          id,
+          canonical_name: name,
+          sort_name: sortName(name),
+          aliases: [{ id: 'default', name, alias_type: 'legal' }],
+          credits: [credit],
+        };
+    const parsed = Person.safeParse(record);
+    if (!parsed.success) continue;
+    await writeFile(join(dir, `${id}.yml`), stringify(record), 'utf8');
+    written += 1;
+    void proper;
+  }
+  console.log(`\n${written} file(s) written.\n`);
+}
+
 async function main(): Promise<void> {
   if (has('sources')) {
     console.log('\nImport sources:\n');
@@ -475,6 +579,20 @@ async function main(): Promise<void> {
   }
 
   const apply = has('apply');
+
+  if (has('youtube')) {
+    assertCleared('youtube');
+    try {
+      await collectFromYouTube(apply);
+    } catch (error) {
+      if (error instanceof MissingKeyError) {
+        console.error(`\n${error.message}\n`);
+        process.exit(1);
+      }
+      throw error;
+    }
+    return;
+  }
 
   if (has('wiki')) {
     assertCleared('mediawiki');
