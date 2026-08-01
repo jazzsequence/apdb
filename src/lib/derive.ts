@@ -32,6 +32,11 @@ const TIER_COPY: Record<Tier, { label: string; description: string }> = {
     label: 'participant',
     description: 'A statement by someone who was at the table.',
   },
+  firsthand: {
+    label: 'saw it firsthand',
+    description:
+      'A named contributor who watched or listened to the episode themselves. Direct observation of the primary record — it ranks above published summaries because it is closer to the fact, and simply lacks a citable locator.',
+  },
   reference: {
     label: 'reference work',
     description: 'An established reference: Wikipedia, Wikidata or a published database.',
@@ -40,14 +45,10 @@ const TIER_COPY: Record<Tier, { label: string; description: string }> = {
     label: 'community',
     description: 'A fan wiki, forum thread or third-party post.',
   },
-  testimony: {
-    label: 'first-hand account',
-    description:
-      'A named contributor who saw or heard it, with no citable locator. Often the only source that will ever exist for a small show.',
-  },
   inferred: {
     label: 'inferred',
-    description: 'Reasoned from other data rather than observed. Never sufficient on its own.',
+    description:
+      'Reasoned from other data — nobody observed this. The weakest tier, and never sufficient on its own.',
   },
 };
 
@@ -57,7 +58,9 @@ export function tierInfo(tier: Tier): TierInfo {
     tier,
     rank,
     ...TIER_COPY[tier],
-    strength: rank <= 3 ? 'strong' : rank <= 5 ? 'medium' : 'weak',
+    // Only `inferred` reads as weak — it is the one tier where nobody observed
+    // anything. Everything else rests on someone having actually been there.
+    strength: rank <= 3 ? 'strong' : rank <= 6 ? 'medium' : 'weak',
   };
 }
 

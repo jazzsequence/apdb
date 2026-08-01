@@ -44,10 +44,14 @@ const Links = z
  * boilerplate show notes cannot register a mid-season cast change. Applying
  * NOR here would delete precisely the data no other index has.
  *
- * So `testimony` is admissible. It ranks low because it cannot be independently
- * checked, not because it is likely to be wrong. See POLICY.md.
+ * The ladder ranks by PROXIMITY to the fact: who was closest to the thing
+ * happening. It deliberately does not rank by citability — whether a stranger
+ * can go and check is tracked separately, by `needs_verification`. Those two
+ * axes come apart constantly, and an earlier version of this list conflated
+ * them, which had the effect of ranking a contributor who watched the episode
+ * below a stranger's summary of it. That was wrong.
  *
- * A tier is a statement about checkability, never about truth.
+ * A tier is a statement about proximity, never about truth.
  */
 export const SOURCE_TIERS = [
   /** The production's own record: cast list, title card, official announcement. */
@@ -56,13 +60,24 @@ export const SOURCE_TIERS = [
   'recording',
   /** A statement by someone who was at the table. */
   'participant',
+  /**
+   * A named contributor who watched or listened to it themselves, with no
+   * citable locator.
+   *
+   * This ranks above the published tiers on purpose. Someone who saw the
+   * episode is observing the primary record directly; a reference work is
+   * summarising it at a distance, and summaries of small shows are routinely
+   * wrong or silent. Wikipedia's filmography table lists Aabria Iyengar as a
+   * player on Pirates of Salt Bay when she ran it — an error no viewer would
+   * have made. What firsthand lacks is citability, not proximity, and
+   * citability is tracked separately by `needs_verification`.
+   */
+  'firsthand',
   /** An established reference work: Wikipedia, Wikidata, a published database. */
   'reference',
   /** Fan wiki, forum thread, or third-party social post. */
   'community',
-  /** First-hand account from a named contributor, with no citable locator. */
-  'testimony',
-  /** Reasoned from other data rather than observed. Weakest; never sufficient alone. */
+  /** Reasoned from other data; nobody observed it. Never sufficient alone. */
   'inferred',
 ] as const;
 
@@ -97,15 +112,16 @@ export const Source = z
   .refine((s) => s.url || s.note, {
     message: 'a source needs at least a url or a note',
   })
-  .refine((s) => !['testimony', 'participant'].includes(s.tier) || Boolean(s.attested_by), {
-    message: 'a testimony or participant source must record who attested it (attested_by)',
+  .refine((s) => !['firsthand', 'participant'].includes(s.tier) || Boolean(s.attested_by), {
+    message: 'a firsthand or participant source must record who attested it (attested_by)',
     path: ['attested_by'],
   })
-  // The whole point of the recording tier is that someone else can go and
-  // check. Without a locator it is testimony wearing a better hat.
+  // `recording` and `firsthand` are the same observation; the locator is the
+  // only difference. Without one, say firsthand — it claims no less proximity,
+  // just no citation.
   .refine((s) => s.tier !== 'recording' || Boolean(s.locator ?? s.url), {
     message:
-      'a recording source needs a locator (timestamp/episode position) or a url — otherwise it is testimony, not a citation',
+      'a recording source needs a locator (timestamp/episode position) or a url — without one this is the `firsthand` tier, which claims the same proximity but no citation',
     path: ['locator'],
   })
   // Inference is reasoning, not evidence. It has to show its working.

@@ -66,24 +66,29 @@ saying what kind of evidence it is. Strongest first:
 | `official` | The production's own record — cast list, title card, announcement |
 | `recording` | The episode itself, cited with a locator |
 | `participant` | A statement by someone who was at the table |
+| `firsthand` | You watched or listened to it yourself, but there's nothing to link to |
 | `reference` | Wikipedia, Wikidata, a published database |
 | `community` | A fan wiki, forum thread, third-party post |
-| `testimony` | You saw or heard it, but there's nothing to link to |
-| `inferred` | Reasoned from other data rather than observed |
+| `inferred` | Reasoned from other data — nobody observed it |
 
 `tier` defaults to `reference`. CI enforces the tiers that make claims about
-their own evidence: `testimony` and `participant` need `attested_by`,
+their own evidence: `firsthand` and `participant` need `attested_by`,
 `recording` needs a `locator` or `url`, and `inferred` needs its reasoning in
 `note`.
 
-**Testimony is a real source here, not a fallback.** Unlike Wikipedia, this
-project admits unpublished first-hand accounts — small shows often keep no cast
-list at all, and boilerplate show notes can't register a mid-season arrival. For
-much of the long tail, someone who was listening is the only source that will
-ever exist. See [POLICY.md](POLICY.md) for the full reasoning.
+**If you saw it, say `firsthand` — and note that it outranks Wikipedia here.**
+The ladder ranks by how close the source was to the thing happening, and someone
+who watched the episode is closer to it than any summary. Wikipedia currently
+has Aabria Iyengar down as a player on Pirates of Salt Bay when she ran it;
+anyone who watched would have got that right.
 
-A low tier means a claim is hard to check independently, **not** that it's
-doubtful. Don't apologise for a testimony credit, and don't inflate one either.
+Unlike Wikipedia, this project admits unpublished firsthand accounts at all —
+small shows often keep no cast list, and boilerplate show notes can't register a
+mid-season arrival. See [POLICY.md](POLICY.md) for the reasoning.
+
+So: don't apologise for a firsthand credit, and don't inflate one either. If you
+can give a timestamp, it's `recording`; if you can't, `firsthand` claims the
+same proximity without pretending to a citation.
 
 Separately, set `needs_verification: true` when nothing independent corroborates
 the claim yet. That's orthogonal to tier — a first-hand account can be entirely

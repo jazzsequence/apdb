@@ -36,38 +36,67 @@ and nothing is asserted flatly when it is actually contested.
 
 ## Source tiers
 
-Every credit's source declares a tier. Strongest first:
+Every credit's source declares a tier. The ladder ranks by **proximity** — how
+close the source was to the thing actually happening:
 
 | Tier | What it is |
 | --- | --- |
 | `official` | The production's own record — cast list, title card, official announcement |
 | `recording` | The episode itself, cited with a locator someone else can go to |
 | `participant` | A statement by someone who was at the table |
+| `firsthand` | A named contributor who watched or listened to it themselves |
 | `reference` | An established reference work: Wikipedia, Wikidata, a published database |
 | `community` | A fan wiki, forum thread, or third-party social post |
-| `testimony` | A named contributor who saw or heard it, with no citable locator |
-| `inferred` | Reasoned from other data rather than observed |
+| `inferred` | Reasoned from other data — nobody observed it |
 
-**A tier is a statement about checkability, never about truth.** A first-hand
-account from someone who was in the room may well be more accurate than a fan
-wiki. It ranks lower because a stranger cannot independently confirm it, and the
-interface should not pretend otherwise in either direction. Tiers are therefore
-rendered as neutral labels, not as a warning scale.
+### Why firsthand outranks published sources
 
-CI enforces the tiers that make claims about their own evidence:
+Because it is closer to the fact. Someone who watched the episode is observing
+the primary record directly. A reference work is summarising it at a distance,
+and summaries of small shows are routinely thin, stale or simply absent.
 
-- `testimony` and `participant` must name who attested it (`attested_by`).
-- `recording` must carry a `locator` or `url` — the point of the tier is that
-  someone else can go and check. Without one it is testimony wearing a better
-  hat.
+This is not hypothetical. Wikipedia's filmography table lists Aabria Iyengar as
+a *player* on Pirates of Salt Bay; she ran it. That is an error no one who
+watched the show would have made, and under a ladder that ranked published
+sources above direct observation, the wrong answer would have outranked the
+right one.
+
+An earlier version of this policy ranked firsthand accounts second from bottom,
+below fan wikis. That was a mistake: it conflated *proximity* with
+*citability*, and the effect was to rank a contributor who watched the episode
+below a stranger's summary of it. Those are separate axes and this project
+tracks them separately — see below.
+
+**A tier is a statement about proximity, never about truth.** Tiers render as
+neutral labels rather than a warning scale.
+
+### What `inferred` actually means
+
+`inferred` is the only tier where **nobody observed anything**. It is reasoning
+from other data: deducing that a credit must have used a performer's earlier
+name because of its date, rather than because anyone saw the title card.
+
+It sits at the bottom because inference cannot discover facts, only propose
+them. Everything above it rests on somebody having actually been there.
+
+### What CI enforces
+
+Tiers that make claims about their own evidence have to back them:
+
+- `firsthand` and `participant` must name who attested it (`attested_by`).
+- `recording` must carry a `locator` or `url`. `recording` and `firsthand` are
+  the same observation — the locator is the only difference. Without one, use
+  `firsthand`: it claims exactly as much proximity, just no citation.
 - `inferred` must show its reasoning in `note`. Inference is reasoning, not
-  evidence.
+  evidence, so it has to show its working.
 
 ## The second axis: corroboration
 
-`needs_verification` is orthogonal to tier. Tier says how strong this *class* of
-source is; the flag says whether anything independent has confirmed this
-particular claim.
+`needs_verification` is orthogonal to tier. Tier says how *close* the source was
+to the fact; the flag says whether anything independent has confirmed this
+particular claim. Proximity and citability are different properties, and the
+whole point of separating them is that a source can be excellent on one and poor
+on the other — someone who watched the stream being the obvious case.
 
 The two genuinely come apart. A first-hand account can be completely trustworthy
 and still uncorroborated. A reference-work citation can be corroborated and

@@ -81,16 +81,21 @@ an episode locator — that distinction is the long-tail feature.
 
 ## Provenance
 
-Every credit carries a `source` declaring its **tier** — how strong that class
-of evidence is, from `official` down through `reference` and `community` to
-`testimony` and `inferred`. The tier renders on the page next to the credit, and
-CI enforces the tiers that make claims about their own evidence: a `recording`
-citation must carry a locator, `testimony` must name who attested it, `inferred`
-must show its reasoning.
+Every credit carries a `source` declaring its **tier**, ranked by how close the
+source was to the thing happening: `official` → `recording` → `participant` →
+`firsthand` → `reference` → `community` → `inferred`. The tier renders next to
+the credit, and CI enforces the tiers that make claims about their own evidence:
+`recording` must carry a locator, `firsthand` must name who attested it,
+`inferred` must show its reasoning.
+
+Note that `firsthand` — someone who watched the episode — outranks published
+reference works. It is closer to the fact. Wikipedia's filmography table lists
+Aabria Iyengar as a player on Pirates of Salt Bay when she ran it; anyone who
+watched would have got that right.
 
 `needs_verification` is a second, orthogonal axis: whether anything independent
-has confirmed this particular claim. The two come apart — a first-hand account
-can be entirely trustworthy and still uncorroborated.
+has confirmed this particular claim. The two come apart constantly — a firsthand
+account can be entirely trustworthy and still uncorroborated.
 
 The sourcing model is adapted from Wikipedia's, with one deliberate divergence:
 **unpublished first-hand accounts are admissible here.** Wikipedia's No Original
