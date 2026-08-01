@@ -1,0 +1,12 @@
+id: tabletop-season-4
+title: "TableTop: Season 4"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT955LMr27MkQzrV2adQtU3o5U
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 21

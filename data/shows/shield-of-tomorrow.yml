@@ -1,0 +1,16 @@
+id: shield-of-tomorrow
+title: Shield of Tomorrow
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: The Federation is on the brink of war with the Dominion. In the
+  shadow of this cold war, the crew of the USS Sally Ride must work together to
+  not only protect the Federation, but its soul as well. This licensed, live RPG
+  is an epic return to the Star Trek universe that you know and love.
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT955aQO-G-3LR6kgX4EU2qrHg
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 54

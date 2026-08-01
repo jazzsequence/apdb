@@ -1,0 +1,24 @@
+id: mike
+canonical_name: Mike
+sort_name: Mike
+aliases:
+  - id: default
+    name: Mike
+    alias_type: handle
+credits:
+  - show: interpol-x
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/interpolx/
+        note: Cast per the network's own show page.
+  - show: wild-wild-talents
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/wildwildtalents/
+        note: Cast per the network's own show page.

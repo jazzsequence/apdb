@@ -1,0 +1,16 @@
+id: sagas-of-sundry-dread
+title: "Sagas of Sundry: DREAD"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Gather around our campfire as Ivan Van Norman leads Matthew Mercer,
+  Satine Phoenix, Amy Vorpahl, Taliesin Jaffe, and Amy Dallen in a tale of
+  terror where the only hope for survival is to make a pull from a tower of
+  blocks without it collapsing.
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954X1GShT_jOY98YgS04FA3B
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 7

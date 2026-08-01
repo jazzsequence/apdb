@@ -1,0 +1,24 @@
+id: elspeth
+canonical_name: Elspeth
+sort_name: Elspeth
+aliases:
+  - id: default
+    name: Elspeth
+    alias_type: handle
+credits:
+  - show: the-darknet
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thedarknet/
+        note: Cast per the network's own show page.
+  - show: the-imperial-march
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/theimperialmarch/
+        note: Cast per the network's own show page.

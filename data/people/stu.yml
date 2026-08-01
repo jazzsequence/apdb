@@ -1,0 +1,136 @@
+id: stu
+canonical_name: Stu
+sort_name: Stu
+aliases:
+  - id: default
+    name: Stu
+    alias_type: handle
+credits:
+  - show: dead-reign
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/deadreign/
+        note: Cast per the network's own show page.
+  - show: vast-dominions
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/vastdominions/
+        note: Cast per the network's own show page.
+  - show: saga-of-the-inukai
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/sagaoftheinukai/
+        note: Cast per the network's own show page.
+  - show: dissension
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/dissension/
+        note: Cast per the network's own show page.
+  - show: eldemy
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/eldemy/
+        note: Cast per the network's own show page.
+  - show: tomorrow-legion
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/tomorrowlegion/
+        note: Cast per the network's own show page.
+  - show: the-imperial-march
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/theimperialmarch/
+        note: Cast per the network's own show page.
+  - show: the-mote-of-sin
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/moteofsin/
+        note: Cast per the network's own show page.
+  - show: kindred-one
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/kindredone/
+        note: Cast per the network's own show page.
+  - show: hollowed-plains
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/hollowedplains/
+        note: Cast per the network's own show page.
+  - show: the-kintsugi-chronicles
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thekintsugichronicles/
+        note: Cast per the network's own show page.
+  - show: border-lands
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/borderlands/
+        note: Cast per the network's own show page.
+  - show: exodus
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/exodus/
+        note: Cast per the network's own show page.
+  - show: murmurs-at-the-abyss
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/murmursattheabyss/
+        note: Cast per the network's own show page.
+  - show: the-glittering-night
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/glitteringnight/
+        note: Cast per the network's own show page.
+  - show: slouching-towards-eldemy
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/slouchingtowardseldemy/
+        note: Cast per the network's own show page.

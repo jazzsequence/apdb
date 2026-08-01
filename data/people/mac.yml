@@ -17,3 +17,67 @@ credits:
       - tier: community
         url: https://happyjacks.proboards.com/thread/7118/cafefree-high-setting-character-info
         note: Cast roster posted by the show's host, May 2018.
+  - show: the-mote-of-sin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/moteofsin/
+        note: Cast per the network's own show page.
+  - show: kindred-one
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/kindredone/
+        note: Cast per the network's own show page.
+  - show: razor-ridge
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/razorridge/
+        note: Cast per the network's own show page.
+  - show: second-star
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/secondstar/
+        note: Cast per the network's own show page.
+  - show: the-seventh-vale
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/seventhvale/
+        note: Cast per the network's own show page.
+  - show: dragon-heist
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/dragonheist/
+        note: Cast per the network's own show page.
+  - show: insert-coin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/insertcoin/
+        note: Cast per the network's own show page.
+  - show: stonetop
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/stonetop/
+        note: Cast per the network's own show page.

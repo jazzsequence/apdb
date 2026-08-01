@@ -1,0 +1,12 @@
+id: worthy-opponents-hearthstone
+title: "Worthy Opponents: Hearthstone"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954Pe1EHJg0xquiFBI3BeP6R
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 7

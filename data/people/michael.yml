@@ -1,0 +1,16 @@
+id: michael
+canonical_name: Michael
+sort_name: Michael
+aliases:
+  - id: default
+    name: Michael
+    alias_type: handle
+credits:
+  - show: gene-x
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/genex/
+        note: Cast per the network's own show page.

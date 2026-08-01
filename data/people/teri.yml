@@ -1,0 +1,24 @@
+id: teri
+canonical_name: Teri
+sort_name: Teri
+aliases:
+  - id: default
+    name: Teri
+    alias_type: handle
+credits:
+  - show: second-star
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/secondstar/
+        note: Cast per the network's own show page.
+  - show: dragon-heist
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/dragonheist/
+        note: Cast per the network's own show page.

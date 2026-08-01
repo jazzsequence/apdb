@@ -1,0 +1,16 @@
+id: eli-kintsugi-chronicles
+canonical_name: Eli Kintsugi Chronicles
+sort_name: Eli Kintsugi Chronicles
+aliases:
+  - id: default
+    name: Eli Kintsugi Chronicles
+    alias_type: legal
+credits:
+  - show: the-kintsugi-chronicles
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thekintsugichronicles/
+        note: Cast per the network's own show page.

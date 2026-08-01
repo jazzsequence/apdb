@@ -1,0 +1,15 @@
+id: a-war-of-fang-fur
+title: A War of Fang & Fur
+channels:
+  - arcanarama
+format: video
+status: unknown
+description: The Nettlewood Grove teeters on the edge of peace and violence as a
+  series of premeditated events lead to war on the horizon. A war of fang and
+  fur!
+links:
+  website: https://www.youtube.com/playlist?list=PLxbQBeapUkotgFeoyjve23PRxmJAJ9Ia2
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 26

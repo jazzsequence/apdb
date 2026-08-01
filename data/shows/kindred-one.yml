@@ -1,0 +1,12 @@
+id: kindred-one
+title: Kindred One
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+description: "System per source: Vampire – The Masquerade 20th Anniversary Edition."
+links:
+  website: https://happyjacks.org/kindredone/
+seasons:
+  - ordinal: 1
+    game: vampire-the-masquerade-v5

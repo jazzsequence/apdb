@@ -1,0 +1,11 @@
+id: second-star
+title: "Second Star: Star Trek Adventures"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/secondstar/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

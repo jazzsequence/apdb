@@ -1,0 +1,15 @@
+id: escape-with-janet-varney
+title: Escape! With Janet Varney
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Janet Varney hosts Escape! As the clock is ticking, teams of
+  celebrities work together to solve complex puzzles and enigmatic riddles. Can
+  they get out in time?
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957_N4O2Jp3bMXmq_Y7J-mK-
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 9

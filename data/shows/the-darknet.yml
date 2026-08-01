@@ -1,0 +1,12 @@
+id: the-darknet
+title: The Darknet
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+description: "System per source: GURPS."
+links:
+  website: https://happyjacks.org/thedarknet/
+seasons:
+  - ordinal: 1
+    game: gurps

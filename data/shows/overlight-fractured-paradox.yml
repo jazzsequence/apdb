@@ -1,0 +1,16 @@
+id: overlight-fractured-paradox
+title: "Overlight: Fractured Paradox"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: A motley crew of Skyborn explorers encounter strange occurrences in
+  their fractured, floating world. Using the Overlight RPG system, this
+  kaleidoscopic fantasy crosses through colorful landscapes, with our heroes
+  channeling the mythical Overlight to perform astonishing feats!
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT955U2g4kVh-NmlyBjc2Zm-Vi
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 7

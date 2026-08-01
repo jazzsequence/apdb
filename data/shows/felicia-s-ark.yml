@@ -1,0 +1,14 @@
+id: felicia-s-ark
+title: Felicia's Ark
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: There's a digital apocalypse coming and it's up to Felicia to save
+  animals from your favorite video games, but who will she pick?
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957ndtR5U6Cc8q80WlrBJRjR
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 7

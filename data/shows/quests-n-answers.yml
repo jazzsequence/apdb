@@ -1,0 +1,12 @@
+id: quests-n-answers
+title: Quests N' Answers
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957o0T2iojkKdRmXBuMX7pSS
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 12

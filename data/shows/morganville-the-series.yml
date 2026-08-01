@@ -1,0 +1,12 @@
+id: morganville-the-series
+title: "Morganville: The Series"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954TvdqgzNfYdQ-btKcAKvWU
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 7

@@ -1,0 +1,12 @@
+id: eldemy
+title: "Eldemy: Dungeons & Dragons 5e"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+description: "System per source: Dungeons and Dragons 5th Edition."
+links:
+  website: https://happyjacks.org/eldemy/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

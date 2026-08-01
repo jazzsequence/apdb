@@ -1,0 +1,11 @@
+id: the-autumn-people
+title: The Autumn People
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/autumnpeople/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

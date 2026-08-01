@@ -1,0 +1,11 @@
+id: saint-elco-s-fire
+title: "Saint Elco's Fire: Lighthearted"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/saintelcosfire/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

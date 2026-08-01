@@ -1,0 +1,11 @@
+id: yuma-station
+title: "Yuma Station: Traveller"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/yumastation/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

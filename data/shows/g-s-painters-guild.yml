@@ -1,0 +1,16 @@
+id: g-s-painters-guild
+title: G&S Painters Guild
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Miniature figures can help a tabletop gaming session come to life,
+  but painting those miniature figures is an acquired skill. Welcome to the Geek
+  & Sundry Painters Guild! Host Will Friedle is joined by professional guests
+  like Matthew Mercer and Elizabeth Beckley-Bradford to teach you the intricacie
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT955o2dShsr4403qxeE7y2d-t
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 27

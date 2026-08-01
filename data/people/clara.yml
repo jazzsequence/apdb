@@ -1,0 +1,24 @@
+id: clara
+canonical_name: Clara
+sort_name: Clara
+aliases:
+  - id: default
+    name: Clara
+    alias_type: handle
+credits:
+  - show: the-clockwise-court
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/clockwisecourt/
+        note: Cast per the network's own show page.
+  - show: yuma-station
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/yumastation/
+        note: Cast per the network's own show page.

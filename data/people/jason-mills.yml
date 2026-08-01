@@ -1,0 +1,16 @@
+id: jason-mills
+canonical_name: Jason Mills
+sort_name: Jason Mills
+aliases:
+  - id: default
+    name: Jason Mills
+    alias_type: legal
+credits:
+  - show: revelations
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/revelations/
+        note: Cast per the network's own show page.

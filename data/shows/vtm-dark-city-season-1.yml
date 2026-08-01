@@ -1,0 +1,12 @@
+id: vtm-dark-city-season-1
+title: "VtM: Dark City Season 1"
+channels:
+  - osrpg
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLk4WDQKwZJHHXHeqK4b0_1CTQQhFF4Rml
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 18

@@ -1,0 +1,24 @@
+id: steven
+canonical_name: Steven
+sort_name: Steven
+aliases:
+  - id: default
+    name: Steven
+    alias_type: handle
+credits:
+  - show: razor-ridge
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/razorridge/
+        note: Cast per the network's own show page.
+  - show: dead-reign
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/deadreign/
+        note: Cast per the network's own show page.

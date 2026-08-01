@@ -1,0 +1,12 @@
+id: guardians-of-the-galaxy
+title: Guardians of the Galaxy
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954CBmgwgQPAf-rH2uU3Aiti
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 9

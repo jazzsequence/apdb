@@ -1,0 +1,16 @@
+id: jim-clockwise-court
+canonical_name: Jim Clockwise Court
+sort_name: Jim Clockwise Court
+aliases:
+  - id: default
+    name: Jim Clockwise Court
+    alias_type: legal
+credits:
+  - show: the-clockwise-court
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/clockwisecourt/
+        note: Cast per the network's own show page.

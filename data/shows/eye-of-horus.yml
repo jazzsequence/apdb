@@ -1,0 +1,11 @@
+id: eye-of-horus
+title: "Eye of Horus: Temples & Tombs"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/eyeofhorus/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

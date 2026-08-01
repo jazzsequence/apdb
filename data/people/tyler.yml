@@ -1,0 +1,24 @@
+id: tyler
+canonical_name: Tyler
+sort_name: Tyler
+aliases:
+  - id: default
+    name: Tyler
+    alias_type: handle
+credits:
+  - show: saga-of-the-inukai
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/sagaoftheinukai/
+        note: Cast per the network's own show page.
+  - show: eldemy
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/eldemy/
+        note: Cast per the network's own show page.

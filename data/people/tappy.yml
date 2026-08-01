@@ -17,3 +17,19 @@ credits:
       - tier: community
         url: https://happyjacks.proboards.com/thread/7118/cafefree-high-setting-character-info
         note: Cast roster posted by the show's host, May 2018.
+  - show: the-autumn-people
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/autumnpeople/
+        note: Cast per the network's own show page.
+  - show: vault-818
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/vault818/
+        note: Cast per the network's own show page.

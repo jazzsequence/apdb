@@ -1,0 +1,48 @@
+id: jib
+canonical_name: JiB
+sort_name: JiB
+aliases:
+  - id: default
+    name: JiB
+    alias_type: handle
+credits:
+  - show: just-us-heroes
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/justusheroes/
+        note: Cast per the network's own show page.
+  - show: desert-of-despair
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/desertofdespair/
+        note: Cast per the network's own show page.
+  - show: hollowed-plains
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/hollowedplains/
+        note: Cast per the network's own show page.
+  - show: the-spaniard-s-ghost
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thespaniardsghost/
+        note: Cast per the network's own show page.
+  - show: gene-x
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/genex/
+        note: Cast per the network's own show page.

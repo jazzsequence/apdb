@@ -1,0 +1,11 @@
+id: monsoon
+title: "Monsoon: Demigods PBTA"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/monsoon/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

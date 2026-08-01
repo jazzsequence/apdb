@@ -1,0 +1,12 @@
+id: tabletop-bonus-videos
+title: TableTop Bonus Videos
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT956RY4N7dMdKsPQSGPXs3_4x
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 51

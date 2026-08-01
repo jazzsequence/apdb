@@ -1,0 +1,14 @@
+id: co-optitude
+title: Co-Optitude
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Felicia Day and Ryon Day play through old school Genesis, Super
+  Nintendo and Nintendo 64 games - so you don't have to!
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT956QzFpiCWAQT0uAOUU2iNcr
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 153

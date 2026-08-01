@@ -1,0 +1,16 @@
+id: we-re-alive-frontier
+title: "We're Alive: Frontier"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: In this post-apocalyptic adventure based on the hit We’re Alive
+  podcast, a band of human survivors must trek through the infected American
+  Midwest in the hope of establishing a new trade route. But the journey won’t
+  be easy, and not everyone will make it out alive.
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT955KaWfrHi2wZqpSNqlOxxD-
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 12

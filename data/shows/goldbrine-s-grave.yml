@@ -1,0 +1,12 @@
+id: goldbrine-s-grave
+title: Goldbrine's Grave
+channels:
+  - arcanarama
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLxbQBeapUkovTw0c1N4PXibm_-APP5iIa
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 10

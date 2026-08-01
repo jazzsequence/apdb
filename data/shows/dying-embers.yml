@@ -1,0 +1,11 @@
+id: dying-embers
+title: "Dying Embers: D&D 5e"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/dyingembers/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

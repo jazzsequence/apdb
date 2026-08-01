@@ -1,0 +1,40 @@
+id: jim
+canonical_name: Jim
+sort_name: Jim
+aliases:
+  - id: default
+    name: Jim
+    alias_type: handle
+credits:
+  - show: the-kintsugi-chronicles
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thekintsugichronicles/
+        note: Cast per the network's own show page.
+  - show: gene-x
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/genex/
+        note: Cast per the network's own show page.
+  - show: the-glittering-night
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/glitteringnight/
+        note: Cast per the network's own show page.
+  - show: wild-wild-talents
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/wildwildtalents/
+        note: Cast per the network's own show page.

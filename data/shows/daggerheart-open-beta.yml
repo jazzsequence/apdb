@@ -1,0 +1,13 @@
+id: daggerheart-open-beta
+title: Daggerheart Open Beta
+channels:
+  - the-faint-divinities
+format: video
+status: unknown
+description: The Faint Divinities group get together to discuss the Daggerheart TTRPG System
+links:
+  website: https://www.youtube.com/playlist?list=PLaQLjcd26y6h6obwMQNjCLK32PQUUOAJz
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 11

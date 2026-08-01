@@ -1,0 +1,12 @@
+id: arcade-arms-hosted-by-nika-harper
+title: Arcade Arms - Hosted by Nika Harper
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT956UDizukeL9TLpOZGFQBTf-
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 7

@@ -17,3 +17,27 @@ credits:
       - tier: community
         url: https://happyjacks.proboards.com/thread/7118/cafefree-high-setting-character-info
         note: Cast roster posted by the show's host, May 2018.
+  - show: the-spaniard-s-ghost
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thespaniardsghost/
+        note: Cast per the network's own show page.
+  - show: wild-wild-talents
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/wildwildtalents/
+        note: Cast per the network's own show page.
+  - show: the-glittering-night
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/glitteringnight/
+        note: Cast per the network's own show page.

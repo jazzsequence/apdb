@@ -1,0 +1,13 @@
+id: written-by-a-kid
+title: Written by a Kid
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Original Stories By Kids Directed By Adults! Comedy for everyone!
+links:
+  website: https://www.youtube.com/playlist?list=PL46BCD70F1C029AD1
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 14

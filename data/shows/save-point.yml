@@ -1,0 +1,12 @@
+id: save-point
+title: Save Point
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957dr5zf1WANXXRI8vpqSHHK
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 36

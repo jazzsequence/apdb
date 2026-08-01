@@ -1,0 +1,24 @@
+id: jessie
+canonical_name: Jessie
+sort_name: Jessie
+aliases:
+  - id: default
+    name: Jessie
+    alias_type: handle
+credits:
+  - show: razor-ridge
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/razorridge/
+        note: Cast per the network's own show page.
+  - show: second-star
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/secondstar/
+        note: Cast per the network's own show page.

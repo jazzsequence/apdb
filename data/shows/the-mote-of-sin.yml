@@ -1,0 +1,11 @@
+id: the-mote-of-sin
+title: The Mote of Sin
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/moteofsin/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

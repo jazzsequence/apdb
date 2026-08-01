@@ -1,0 +1,11 @@
+id: insert-coin
+title: "Insert Coin: Tales from the Loop Actual Play"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/insertcoin/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

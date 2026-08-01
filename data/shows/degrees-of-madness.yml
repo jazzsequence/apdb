@@ -1,0 +1,17 @@
+id: degrees-of-madness
+title: Degrees of Madness
+channels:
+  - looking-for-more
+format: video
+status: unknown
+description: DEGREES OF MADNESS is an original Call of Cthulhu comedy-horror
+  campaign set in the 1980s, featuring comedians LaughLoveLindy, Noir Enigma,
+  and our hilarious felted friends from Perception Studio, and regular guests
+  stars from the streaming community! Everything at Rainier University North is
+  radica
+links:
+  website: https://www.youtube.com/playlist?list=PLQEFidMHP9SADCjcnacihOVRmQ7gfyadR
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 13

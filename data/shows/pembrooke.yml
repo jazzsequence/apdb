@@ -1,0 +1,11 @@
+id: pembrooke
+title: "Pembrooke: Savage Worlds"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/pembrooke/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

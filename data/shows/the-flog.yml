@@ -1,0 +1,13 @@
+id: the-flog
+title: The Flog
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Felicia Day's weekly vlog!
+links:
+  website: https://www.youtube.com/playlist?list=PL8D3EFFBB747B9769
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 60

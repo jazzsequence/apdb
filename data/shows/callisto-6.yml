@@ -1,0 +1,16 @@
+id: callisto-6
+title: Callisto 6
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Callisto 6 takes place in Los Angeles in the year 2119, where a
+  world of cyberpunk is about to be broken by the emergence of superheroes.
+  Powered by the Cypher System, this original RPG is crafted by Eric Campbell
+  and Sam de Leve.
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957wz-a95ESEGW7de6SgR9is
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 24

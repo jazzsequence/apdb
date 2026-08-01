@@ -1,0 +1,16 @@
+id: pathfinder-knights-of-everflame
+title: "Pathfinder: Knights of Everflame"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Game Master Jason Bulmahn leads a group of five strangers (Gina
+  DeVivo, Jeremy Steven Walker, Aki, Erika Fermina, and Rachel Seeley) who board
+  a caravan heading to Lastwall, an ancient kingdom watching over the grave of a
+  long-dead menace. Conscripted into the army, they face years of training and s
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT955DeqMXXbcg2l67Z-hNQrwS
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 28

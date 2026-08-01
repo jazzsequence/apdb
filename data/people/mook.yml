@@ -1,0 +1,16 @@
+id: mook
+canonical_name: Mook
+sort_name: Mook
+aliases:
+  - id: default
+    name: Mook
+    alias_type: handle
+credits:
+  - show: the-darknet
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thedarknet/
+        note: Cast per the network's own show page.

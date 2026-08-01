@@ -1,0 +1,13 @@
+id: spellslingers-gag-reel
+title: Spellslingers Gag Reel
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Hilarious Gag Reels from Season 1 of Spellslingers!
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957DPrlUHmkzTSRQpoA09tKU
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 13

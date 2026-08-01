@@ -1,0 +1,12 @@
+id: desert-of-despair
+title: "Desert of Despair: D&D 5E Actual Play"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+description: "System per source: Dungeons and Dragons 5th Edition."
+links:
+  website: https://happyjacks.org/desertofdespair/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

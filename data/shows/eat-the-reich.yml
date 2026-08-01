@@ -1,0 +1,12 @@
+id: eat-the-reich
+title: Eat The Reich
+channels:
+  - dicey-encounters
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLEUU6UScKQRsWr0TyZrKTPaBE4n47F6wm
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 5

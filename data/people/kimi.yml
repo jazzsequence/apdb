@@ -1,0 +1,144 @@
+id: kimi
+canonical_name: Kimi
+sort_name: Kimi
+aliases:
+  - id: default
+    name: Kimi
+    alias_type: handle
+credits:
+  - show: the-darknet
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thedarknet/
+        note: Cast per the network's own show page.
+  - show: interpol-x
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/interpolx/
+        note: Cast per the network's own show page.
+  - show: dead-reign
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/deadreign/
+        note: Cast per the network's own show page.
+  - show: eldemy
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/eldemy/
+        note: Cast per the network's own show page.
+  - show: tomorrow-legion
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/tomorrowlegion/
+        note: Cast per the network's own show page.
+  - show: the-mote-of-sin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/moteofsin/
+        note: Cast per the network's own show page.
+  - show: kindred-one
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/kindredone/
+        note: Cast per the network's own show page.
+  - show: revelations
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/revelations/
+        note: Cast per the network's own show page.
+  - show: the-kintsugi-chronicles
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thekintsugichronicles/
+        note: Cast per the network's own show page.
+  - show: gene-x
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/genex/
+        note: Cast per the network's own show page.
+  - show: vault-818
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/vault818/
+        note: Cast per the network's own show page.
+  - show: wild-wild-talents
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/wildwildtalents/
+        note: Cast per the network's own show page.
+  - show: idolon-academy
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/idolonacademy/
+        note: Cast per the network's own show page.
+  - show: desert-of-despair
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/desertofdespair/
+        note: Cast per the network's own show page.
+  - show: dissension
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/dissension/
+        note: Cast per the network's own show page.
+  - show: just-us-heroes
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/justusheroes/
+        note: Cast per the network's own show page.
+  - show: saga-of-the-inukai
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/sagaoftheinukai/
+        note: Cast per the network's own show page.

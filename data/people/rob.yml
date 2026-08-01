@@ -1,0 +1,32 @@
+id: rob
+canonical_name: Rob
+sort_name: Rob
+aliases:
+  - id: default
+    name: Rob
+    alias_type: handle
+credits:
+  - show: dead-reign
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/deadreign/
+        note: Cast per the network's own show page.
+  - show: desert-of-despair
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/desertofdespair/
+        note: Cast per the network's own show page.
+  - show: the-clockwise-court
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/clockwisecourt/
+        note: Cast per the network's own show page.

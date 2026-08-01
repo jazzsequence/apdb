@@ -1,0 +1,12 @@
+id: the-imperial-march
+title: "The Imperial March: Mongoose Traveller"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+description: "System per source: Star Wars Mongoose Traveller The first."
+links:
+  website: https://happyjacks.org/theimperialmarch/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

@@ -1,0 +1,17 @@
+id: vast
+title: Vast
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: What happens when esteemed comic book creator Jackson Lanzing plays
+  Game Master to an intrepid space exploration crew in a completely original
+  science fiction role-playing game? Vast! Lanzing guides two crews through the
+  sprawling universe of Vast, navigating this space opera with countless unique
+  s
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT956Z8tNqlrZRhXH-i_oMfMWV
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 4

@@ -1,0 +1,11 @@
+id: city-of-towers
+title: "City of Towers: D&D 5e"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/cityoftowers/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

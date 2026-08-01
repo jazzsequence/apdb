@@ -1,0 +1,12 @@
+id: space-janitors-season-2
+title: Space Janitors Season 2
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT955ckM9ZOdQpe6oIHvdV8R48
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 9

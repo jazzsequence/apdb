@@ -1,0 +1,12 @@
+id: titansgrave
+title: Titansgrave
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954UvydqNVClXAH3GRT0pAp2
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 16

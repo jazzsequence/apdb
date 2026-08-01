@@ -1,0 +1,12 @@
+id: space-janitors-bonus-videos
+title: Space Janitors Bonus Videos
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT9576PaN99KqtPJ1rLLmoXcSv
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 25

@@ -1,0 +1,15 @@
+id: the-chaos-hours
+title: The Chaos Hours
+channels:
+  - arcanarama
+format: video
+status: unknown
+description: Want to see the podcast after the show and get our thoughts on the
+  campaign, and a peek behind the DM screen? Check out our Patreon for access
+  for just $3 a month!
+links:
+  website: https://www.youtube.com/playlist?list=PLxbQBeapUkoul0gq3nD3bw6yjzpCXwaTR
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 26

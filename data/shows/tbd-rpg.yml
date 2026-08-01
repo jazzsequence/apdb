@@ -1,0 +1,16 @@
+id: tbd-rpg
+title: TBD RPG
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Allow Geek & Sundry to take you by the hand and guide you from game
+  to game in our new programming block, TBD RPG! Whether it’s playing Weave,
+  adventuring through dungeons, fighting Eldritch horrors from the other side of
+  the cosmos, creating a prehistoric society, or pinning your opponent on a wres
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957l40YxsV6bVo33_As7Ls1Q
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 6

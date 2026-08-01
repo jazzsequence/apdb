@@ -1,0 +1,16 @@
+id: arcanarama
+title: Arcanarama
+channels:
+  - arcanarama
+format: video
+status: unknown
+description: "The first actual play campaign from Arcanarama! Beginning in a
+  modified Waterdeep : Dragon Heist module like you've never seen before, and
+  expanding into a homebrew world. Join us as we explore Kavorah and try to
+  restore the balance from those who would do its people harm!"
+links:
+  website: https://www.youtube.com/playlist?list=PLxbQBeapUkovrQUsRDj_6tY7RlVz9Q_BN
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 79

@@ -1,0 +1,12 @@
+id: starter-kit-7th-sea-edition
+title: "Starter Kit: 7th Sea Edition"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954EqboZ4VQjlo5kYNVoJ9Vi
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 6

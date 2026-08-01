@@ -1,0 +1,32 @@
+id: j
+canonical_name: J.
+sort_name: J.
+aliases:
+  - id: default
+    name: J.
+    alias_type: handle
+credits:
+  - show: second-star
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/secondstar/
+        note: Cast per the network's own show page.
+  - show: vault-818
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/vault818/
+        note: Cast per the network's own show page.
+  - show: yuma-station
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/yumastation/
+        note: Cast per the network's own show page.

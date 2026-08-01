@@ -1,0 +1,11 @@
+id: exodus
+title: "Exodus: Traveller"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/exodus/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

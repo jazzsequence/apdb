@@ -1,0 +1,12 @@
+id: written-by-a-kid-bonus-videos
+title: Written By A Kid Bonus Videos
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954vc4c-kS6QjCdz4Bs-RbY5
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 25

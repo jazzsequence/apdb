@@ -1,0 +1,11 @@
+id: dragon-heist
+title: "Dragon Heist: Dungeons & Dragons 5e"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/dragonheist/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

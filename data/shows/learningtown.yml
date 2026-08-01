@@ -1,0 +1,15 @@
+id: learningtown
+title: LearningTown
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: LearningTown the webseries in which comedy duo Paul and Storm take
+  over a legendary kids' TV show, and with the help of timid producer Cookie and
+  super fan Teddy, try to keep from completely screwing everything up.
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957CmcVYWWkiAUUnAl8h4BnJ
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 10

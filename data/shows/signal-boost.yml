@@ -1,0 +1,12 @@
+id: signal-boost
+title: Signal Boost
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954xvKazv4eg4ZiWvAo0HAbS
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 72

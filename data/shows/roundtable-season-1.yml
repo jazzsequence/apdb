@@ -1,0 +1,16 @@
+id: roundtable-season-1
+title: Roundtable Season 1
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: A quality Game Master can transform a simple tabletop session into
+  an immersive adventure. We gathered some of the most notable GMs to share
+  their perspectives on world building, story creation, and all the twist and
+  turns that come with a game.
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954Zy7fl6_1zGVz9gOHfh58s
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 6

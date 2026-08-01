@@ -1,0 +1,96 @@
+id: samantha
+canonical_name: Samantha
+sort_name: Samantha
+aliases:
+  - id: default
+    name: Samantha
+    alias_type: handle
+credits:
+  - show: tomorrow-legion
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/tomorrowlegion/
+        note: Cast per the network's own show page.
+  - show: the-mote-of-sin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/moteofsin/
+        note: Cast per the network's own show page.
+  - show: kindred-one
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/kindredone/
+        note: Cast per the network's own show page.
+  - show: razor-ridge
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/razorridge/
+        note: Cast per the network's own show page.
+  - show: insert-coin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/insertcoin/
+        note: Cast per the network's own show page.
+  - show: border-lands
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/borderlands/
+        note: Cast per the network's own show page.
+  - show: vault-818
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/vault818/
+        note: Cast per the network's own show page.
+  - show: wild-wild-talents
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/wildwildtalents/
+        note: Cast per the network's own show page.
+  - show: the-glittering-night
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/glitteringnight/
+        note: Cast per the network's own show page.
+  - show: yuma-station
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/yumastation/
+        note: Cast per the network's own show page.
+  - show: revelations
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/revelations/
+        note: Cast per the network's own show page.

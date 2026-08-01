@@ -1,0 +1,11 @@
+id: the-drop
+title: "The Drop: System Playtest"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/thedrop/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

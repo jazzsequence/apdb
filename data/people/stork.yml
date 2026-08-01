@@ -1,0 +1,64 @@
+id: stork
+canonical_name: Stork
+sort_name: Stork
+aliases:
+  - id: default
+    name: Stork
+    alias_type: handle
+credits:
+  - show: saga-of-the-inukai
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/sagaoftheinukai/
+        note: Cast per the network's own show page.
+  - show: dissension
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/dissension/
+        note: Cast per the network's own show page.
+  - show: the-imperial-march
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/theimperialmarch/
+        note: Cast per the network's own show page.
+  - show: the-mote-of-sin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/moteofsin/
+        note: Cast per the network's own show page.
+  - show: the-kintsugi-chronicles
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thekintsugichronicles/
+        note: Cast per the network's own show page.
+  - show: border-lands
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/borderlands/
+        note: Cast per the network's own show page.
+  - show: the-glittering-night
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/glitteringnight/
+        note: Cast per the network's own show page.

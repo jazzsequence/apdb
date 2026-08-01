@@ -1,0 +1,12 @@
+id: international-tabletop-day-2017
+title: International Tabletop Day 2017
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957_P7cUJIZKI4mo2ghyK8MA
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 7

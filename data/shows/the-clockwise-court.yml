@@ -1,0 +1,11 @@
+id: the-clockwise-court
+title: "The Clockwise Court: Changeling the Dreaming"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/clockwisecourt/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

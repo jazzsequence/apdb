@@ -1,0 +1,24 @@
+id: joe
+canonical_name: Joe
+sort_name: Joe
+aliases:
+  - id: default
+    name: Joe
+    alias_type: handle
+credits:
+  - show: saint-elco-s-fire
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/saintelcosfire/
+        note: Cast per the network's own show page.
+  - show: eye-of-horus
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/eyeofhorus/
+        note: Cast per the network's own show page.

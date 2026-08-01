@@ -1,0 +1,48 @@
+id: bill
+canonical_name: Bill
+sort_name: Bill
+aliases:
+  - id: default
+    name: Bill
+    alias_type: handle
+credits:
+  - show: the-darknet
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thedarknet/
+        note: Cast per the network's own show page.
+  - show: eldemy
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/eldemy/
+        note: Cast per the network's own show page.
+  - show: tomorrow-legion
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/tomorrowlegion/
+        note: Cast per the network's own show page.
+  - show: the-imperial-march
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/theimperialmarch/
+        note: Cast per the network's own show page.
+  - show: yuma-station
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/yumastation/
+        note: Cast per the network's own show page.

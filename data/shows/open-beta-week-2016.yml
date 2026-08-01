@@ -1,0 +1,14 @@
+id: open-beta-week-2016
+title: Open Beta Week 2016
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: We ran some new shows on Twitch, and YOU have a hand in deciding
+  what'll turn into a real show, and what will never return!
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954eOJ_3XrVxnJEdql8ygsAO
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 6

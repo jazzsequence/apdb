@@ -1,0 +1,16 @@
+id: roundtable-season-2
+title: Roundtable Season 2
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: "Comic books have the power to put you in the shoes of any hero
+  imaginable. Roundtable season 2 invites various comic book creators in to
+  discuss the ever-changing, ever-expanding world of one of the most popular
+  forms of media: comic books."
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957VFLHVhg3bv40_xbBpNEXB
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 8

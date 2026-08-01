@@ -1,0 +1,16 @@
+id: hosier-rob
+canonical_name: Hosier Rob
+sort_name: Hosier Rob
+aliases:
+  - id: default
+    name: Hosier Rob
+    alias_type: legal
+credits:
+  - show: the-imperial-march
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/theimperialmarch/
+        note: Cast per the network's own show page.

@@ -1,0 +1,12 @@
+id: just-us-heroes
+title: "Just Us Heroes: Masks PBTA Actual Play"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+description: "System per source: Masks – A New Generation."
+links:
+  website: https://happyjacks.org/justusheroes/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

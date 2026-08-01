@@ -1,0 +1,16 @@
+id: christopher-grey
+canonical_name: Christopher Grey
+sort_name: Christopher Grey
+aliases:
+  - id: default
+    name: Christopher Grey
+    alias_type: legal
+credits:
+  - show: eye-of-horus
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/eyeofhorus/
+        note: Cast per the network's own show page.

@@ -1,0 +1,12 @@
+id: vtm-5th-edition-dark-city
+title: VtM 5th edition Dark City
+channels:
+  - osrpg
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLk4WDQKwZJHFzcgIFhL_aIQ2otlKcUjps
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 18

@@ -1,0 +1,12 @@
+id: altiora
+title: Altiora
+channels:
+  - looking-for-more
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLQEFidMHP9SCRRC1DyMGDcWONteTTKNTk
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 4

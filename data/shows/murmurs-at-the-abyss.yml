@@ -1,0 +1,11 @@
+id: murmurs-at-the-abyss
+title: "Murmurs at the Abyss: Call of Cthulhu 7th Edition"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/murmursattheabyss/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

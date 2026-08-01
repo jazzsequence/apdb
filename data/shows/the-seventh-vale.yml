@@ -1,0 +1,11 @@
+id: the-seventh-vale
+title: "The Seventh Vale: City of Mist"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/seventhvale/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

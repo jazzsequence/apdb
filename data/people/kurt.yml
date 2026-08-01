@@ -1,0 +1,32 @@
+id: kurt
+canonical_name: Kurt
+sort_name: Kurt
+aliases:
+  - id: default
+    name: Kurt
+    alias_type: handle
+credits:
+  - show: hollowed-plains
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/hollowedplains/
+        note: Cast per the network's own show page.
+  - show: the-spaniard-s-ghost
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thespaniardsghost/
+        note: Cast per the network's own show page.
+  - show: saint-elco-s-fire
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/saintelcosfire/
+        note: Cast per the network's own show page.

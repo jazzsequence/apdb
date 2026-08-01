@@ -1,0 +1,11 @@
+id: gene-x
+title: "Gene X: Cortex Prime"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+links:
+  website: https://happyjacks.org/genex/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

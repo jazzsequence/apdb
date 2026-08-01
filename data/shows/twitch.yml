@@ -1,0 +1,12 @@
+id: twitch
+title: Twitch
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957x3Bxh0vT22TyK1Eo5RBo9
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 10

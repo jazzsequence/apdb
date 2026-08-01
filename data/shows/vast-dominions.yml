@@ -1,0 +1,12 @@
+id: vast-dominions
+title: "Vast Dominions: Moment of Truth Actual Play"
+channels:
+  - happy-jacks
+format: podcast
+status: unknown
+description: "System per source: Moment of Truth Beta."
+links:
+  website: https://happyjacks.org/vastdominions/
+seasons:
+  - ordinal: 1
+    game: dnd-5e

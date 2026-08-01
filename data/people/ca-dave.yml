@@ -1,0 +1,16 @@
+id: ca-dave
+canonical_name: CA Dave
+sort_name: CA Dave
+aliases:
+  - id: default
+    name: CA Dave
+    alias_type: legal
+credits:
+  - show: the-kintsugi-chronicles
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thekintsugichronicles/
+        note: Cast per the network's own show page.

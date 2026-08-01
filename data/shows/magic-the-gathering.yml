@@ -1,0 +1,16 @@
+id: magic-the-gathering
+title: "Magic: The Gathering"
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: "Welcome to Spellslingers, a show based on the phenomenally popular
+  card game Magic: The Gathering. Presented by Sean Plott of Day9TV, prepare to
+  experience fun-filled, fast-talking and adrenaline-paced battles that
+  highlight the latest MTG cards."
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT954tuse5BmPzrVwPDogUKaxi
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 65

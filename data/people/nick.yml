@@ -1,0 +1,40 @@
+id: nick
+canonical_name: Nick
+sort_name: Nick
+aliases:
+  - id: default
+    name: Nick
+    alias_type: handle
+credits:
+  - show: razor-ridge
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/razorridge/
+        note: Cast per the network's own show page.
+  - show: insert-coin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/insertcoin/
+        note: Cast per the network's own show page.
+  - show: pembrooke
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/pembrooke/
+        note: Cast per the network's own show page.
+  - show: stonetop
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/stonetop/
+        note: Cast per the network's own show page.

@@ -1,0 +1,16 @@
+id: bruce
+canonical_name: Bruce
+sort_name: Bruce
+aliases:
+  - id: default
+    name: Bruce
+    alias_type: handle
+credits:
+  - show: eldemy
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/eldemy/
+        note: Cast per the network's own show page.

@@ -1,0 +1,16 @@
+id: thrashtopia
+title: Thrashtopia
+channels:
+  - geek-and-sundry
+format: video
+status: unknown
+description: Whitney Moore and her A.I. pal Bunker Bot bring you the loudest
+  talk show in the post-apocalyptic wasteland! With special guest survivors and
+  highly educational segments about apocalypse survival, you’ll be more than
+  ready for the end of the world.
+links:
+  website: https://www.youtube.com/playlist?list=PL7atuZxmT957ojvvfqR_DJnXPCeioA6gE
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 7

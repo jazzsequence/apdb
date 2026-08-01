@@ -1,0 +1,12 @@
+id: blades-in-the-dark
+title: Blades in the Dark
+channels:
+  - osrpg
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLk4WDQKwZJHHkBwo2qpG6MDMSimBr9ngh
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 22

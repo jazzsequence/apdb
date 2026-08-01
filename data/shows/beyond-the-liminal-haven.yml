@@ -1,0 +1,12 @@
+id: beyond-the-liminal-haven
+title: Beyond the Liminal Haven
+channels:
+  - arcanarama
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLxbQBeapUkovzuhnnikgM26ofRZos-AyN
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 12
