@@ -41,15 +41,11 @@ const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
             {alias.note ? ` — ${alias.note}` : ''}
           </p>
         ))}
-        <p>
-          Searching any of these names reaches this page. Each credit below records
-          the name used at the time.
-        </p>
       </div>
     )
   }
 
-  <h2>Filmography</h2>
+  <h2>Credits</h2>
   {
     creditCount === 0 ? (
       <p class="lede">No credits recorded yet.</p>

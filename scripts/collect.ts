@@ -22,8 +22,9 @@ import { join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
 import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
+import { fetchCampaign, type WikiPerson } from '../src/lib/sources/mediawiki.js';
 import { fetchPerson, searchPeople, type WikidataPerson } from '../src/lib/sources/wikidata.js';
-import { Person } from '../src/lib/schema.js';
+import { Person, type CreditRole } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
 const flag = (name: string): string | undefined => {
@@ -33,6 +34,14 @@ const flag = (name: string): string | undefined => {
 const has = (name: string) => args.includes(`--${name}`);
 
 const STAGING = join(DATA_ROOT, '_incoming');
+
+/** "Emily Axford" -> "Axford, Emily". Best-effort; a curator can correct it. */
+function sortName(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  if (parts.length < 2) return name;
+  const last = parts.pop()!;
+  return `${last}, ${parts.join(' ')}`;
+}
 
 function slugify(name: string): string {
   return name
@@ -133,6 +142,133 @@ async function stage(imported: WikidataPerson, existing: Person | undefined, app
   return true;
 }
 
+/**
+ * Pull a whole campaign's cast off a fan wiki and stage credits for everyone on
+ * it. This is the mode that actually populates the database — Wikidata gives
+ * identities, the wikis give credits.
+ */
+async function collectFromWiki(existingPeople: Person[], apply: boolean): Promise<void> {
+  const host = flag('wiki');
+  const page = flag('page');
+  const showId = flag('show');
+  if (!host || !page || !showId) {
+    console.error('--wiki needs --page "<Wiki Page>" and --show <show-slug>.');
+    console.error(
+      'e.g. npm run collect -- --wiki dimension20.fandom.com --page "Fantasy High" --show dimension-20 --season 1',
+    );
+    process.exit(1);
+  }
+
+  const seasonFlag = flag('season');
+  const season = seasonFlag ? Number.parseInt(seasonFlag, 10) : undefined;
+
+  const campaign = await fetchCampaign(host, page);
+  console.log(`\n${campaign.title ?? page} — ${campaign.url}`);
+  if (campaign.system) console.log(`  system: ${campaign.system}`);
+  if (campaign.airDates) console.log(`  aired: ${campaign.airDates}`);
+  for (const group of campaign.credits) {
+    console.log(`  ${group.field} -> ${group.role}: ${group.people.length}`);
+  }
+  if (campaign.unparsed.length > 0) {
+    console.log(
+      `  ⚠ could not safely read: ${campaign.unparsed.join(', ')} — ambiguous format, skipped rather than guessed`,
+    );
+  }
+  if (campaign.unmapped.length > 0) {
+    console.log(`  unmapped infobox fields: ${campaign.unmapped.join(', ')}`);
+  }
+
+  // Guest groups arrive already distinguished from main cast by the wiki, which
+  // is the long-tail case this adapter exists for.
+  const wanted: { person: WikiPerson; role: CreditRole }[] = campaign.credits.flatMap((group) =>
+    group.people.map((person) => ({ person, role: group.role })),
+  );
+
+  const byId = new Map(existingPeople.map((p) => [p.id, p]));
+  const dir = apply ? join(DATA_ROOT, 'people') : STAGING;
+  await mkdir(dir, { recursive: true });
+
+  let written = 0;
+  let skipped = 0;
+
+  for (const { person: wikiPerson, role } of wanted) {
+    const id = slugify(wikiPerson.name);
+    const existing = byId.get(id);
+
+    const credit: Record<string, unknown> = {
+      show: showId,
+      ...(season !== undefined ? { season } : {}),
+      role,
+      ...(wikiPerson.character ? { character: wikiPerson.character } : {}),
+      // The infobox marks guests at season level without naming episodes. The
+      // schema wants a locator or an explanation; this is the explanation, and
+      // narrowing it to specific episodes is a job for a contributor.
+      ...(role === 'guest player'
+        ? { note: 'Listed as a guest player for this season; specific episodes not identified.' }
+        : {}),
+      // No `alias`: the wiki's naming is its own convention, not evidence of
+      // what the billing said. See POLICY.md.
+      sources: [
+        {
+          tier: 'community',
+          url: campaign.url,
+          note: `${campaign.title ?? page} cast, via the ${host} infobox. CC-BY-SA.`,
+        },
+      ],
+    };
+
+    // Don't restate a credit that is already recorded.
+    const duplicate = existing?.credits.some(
+      (c) => c.show === showId && c.season === season && c.role === role,
+    );
+    if (duplicate) {
+      skipped += 1;
+      continue;
+    }
+
+    const record: Record<string, unknown> = existing
+      ? { ...existing, credits: [...existing.credits, credit] }
+      : {
+          id,
+          canonical_name: wikiPerson.name,
+          sort_name: sortName(wikiPerson.name),
+          aliases: [{ id: 'default', name: wikiPerson.name, alias_type: 'legal' }],
+          credits: [credit],
+        };
+
+    const parsed = Person.safeParse(record);
+    if (!parsed.success) {
+      console.error(`  ✗ ${wikiPerson.name}:`);
+      for (const issue of parsed.error.issues) {
+        console.error(`      ${issue.path.join('.')}: ${issue.message}`);
+      }
+      continue;
+    }
+
+    const header = [
+      `# Credits imported from ${host} on ${new Date().toISOString().slice(0, 10)}.`,
+      `# Source: ${campaign.url} (CC-BY-SA).`,
+      '#',
+      '# Verify the role and character before merging, and add an `alias` only if',
+      "# you know which name was actually on the billing — the wiki's naming is",
+      '# not evidence of that.',
+      '',
+    ].join('\n');
+
+    await writeFile(join(dir, `${id}.yml`), header + stringify(record), 'utf8');
+    const label = existing ? 'updated' : 'new';
+    const as = wikiPerson.character ? ` as ${wikiPerson.character}` : '';
+    console.log(`  ✓ ${wikiPerson.name} — ${role}${as} [${label}]`);
+    written += 1;
+  }
+
+  console.log(`\n${written} file(s) written${skipped > 0 ? `, ${skipped} already recorded` : ''}.`);
+  if (!apply && written > 0) {
+    console.log('Review data/_incoming/, move what you want into data/people/, then:');
+    console.log('  npm run validate\n');
+  }
+}
+
 async function main(): Promise<void> {
   if (has('sources')) {
     console.log('\nImport sources:\n');
@@ -145,8 +281,16 @@ async function main(): Promise<void> {
     return;
   }
 
-  const source = assertCleared(flag('source') ?? 'wikidata');
   const apply = has('apply');
+
+  if (has('wiki')) {
+    assertCleared('mediawiki');
+    const { dataset } = await loadDataset();
+    await collectFromWiki(dataset.people, apply);
+    return;
+  }
+
+  const source = assertCleared(flag('source') ?? 'wikidata');
 
   const search = flag('search');
   if (search) {

@@ -18,20 +18,11 @@ aliases:
   - id: iyengar
     name: Aabria Iyengar
     alias_type: legal
-    note: >-
-      The name every reference work and wiki uses for her. Note that those
-      sources apply current names retroactively, so a credit attributed here on
-      their authority reflects the source's naming, not a verified title card.
   - id: lipscomb
     name: Aabria Lipscomb
     alias_type: birth
     active_to: '2020'
-    note: >-
-      Birth name, documented on Wikipedia. Exactly one credit is attributed to
-      it — Carefree High, from someone who watched the stream and saw the
-      billing. Earlier revisions also attached it to the 2019 Saving Throw
-      credits by reasoning from dates; those attributions have been removed,
-      because no source establishes which name was on those billings.
+    note: Birth name.
 
 credits:
   # --- The long tail. Neither of these appears in any structured index. -----
@@ -43,25 +34,14 @@ credits:
     season: 1
     role: player
     alias: lipscomb
-    note: >-
-      Joined mid-season and departed before the campaign ended, so she is not
-      on the show's published cast list. Character name and the episode range
-      she appears in are still open.
+    note: Joined mid-season, left before the campaign ended.
     sources:
       - tier: firsthand
-        attested_by: Project maintainer, from direct listening
+        attested_by: Project maintainer
         note: >-
-          First-hand account: she was at this table, billed under the Lipscomb
-          name. No published record contradicts this, and none could confirm it
-          either — this show does not document cast changes anywhere. Already
-          checked, so nobody repeats the work: the series page and the
-          per-episode show notes (identical boilerplate on all 11 episodes, "GMs:
-          Mac & Adam. Players: Tappy, Gina, Joey, Mac, Adam"); the forum's
-          character-roster thread, which covers only the five starting players
-          and was last edited 10 May 2018, a week into the run; the episode 11
-          discussion thread, which references only those original characters; and
-          a site-wide forum search. Corroboration would have to come from the
-          episode audio or from another listener.
+          Watched the stream; billed as Lipscomb. Not in the show's cast page,
+          per-episode notes, forum roster or episode threads — all checked, none
+          of them track cast changes.
 
   - show: wildcards-east-texas-university
     season: 1
@@ -69,32 +49,21 @@ credits:
     role: guest player
     character: Renee Billings
     year: '2019'
-    note: >-
-      Single-episode guest appearance on an independent Savage Worlds campaign.
-      Episode number within season 1 not yet confirmed. No `alias` recorded: the
-      appearance is sourced but nobody has established which name was on the
-      billing, and Wikipedia names her Iyengar throughout regardless of period.
+    note: Episode number within season 1 not confirmed.
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-        note: Appearance and character sourced to Wikipedia.
 
   - show: pirates-of-salt-bay
     season: 1
     role: GM/DM
     year: '2019'
-    note: >-
-      No `alias` recorded. An earlier revision put this under the Lipscomb name,
-      reasoned from the 2019 date — but no source says which name was on the
-      billing, and the wiki that documents this show names her Iyengar. That was
-      a guess in a field that used to be mandatory, and it is not knowledge.
     sources:
       - tier: community
         url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         note: >-
-          Saving Throw wiki names her as the regular GM. Note Wikipedia's
-          filmography table instead lists her as a player on this show; the
-          show-specific wiki is taken as the better source.
+          Wikipedia lists her as a player on this show; the show's own wiki says
+          GM, and is taken as the better source.
   - show: pirates-of-salt-bay
     season: 2
     role: GM/DM

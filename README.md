@@ -121,13 +121,31 @@ Git history covers the rest.
 
 ## Importing
 
-`npm run collect` pulls identity data from external sources. Wikidata (CC0) is
-the only cleared source: it already models person↔work with stable QIDs and is
-the right anchor for canonical names and alternate names.
+`npm run collect` has two modes.
 
-It is deliberately **not** used for credits — its actual-play coverage is thin,
-and the indie long tail this project exists to index simply is not in it. Those
-come from contributors.
+**Fan wikis (`--wiki`)** are where the credits actually are. Fandom and Miraheze
+expose a real MediaWiki API with template-structured infoboxes, so this reads
+data rather than scraping prose:
+
+```bash
+npm run collect -- --wiki dimension20.fandom.com --page "Fantasy High" --show dimension-20 --season 1
+npm run collect -- --wiki criticalrole.fandom.com --page "Campaign 1" --show critical-role --season 1
+```
+
+Crucially, these wikis mark guest players as their own infobox field, so
+**one-off guest spots arrive already distinguished from main cast** — the long
+tail, machine-readable. Field names differ per wiki (`players`/`guest_players`
+on Dimension 20, `starring`/`sguests` on Critical Role), so the field→role
+mapping is data in `src/lib/sources/mediawiki.ts`; add a row for a new wiki.
+
+Anything it can't read safely is reported and skipped, never guessed. Cast
+fields listing bare wikilinks are ambiguous — the links may be performers, or
+performers interleaved with characters — so those are left for a human rather
+than risk filing a character as a person.
+
+**Wikidata (`--qid`, `--search`)** is the identity backbone: stable QIDs,
+canonical names and, usefully, birth names. It carries almost no AP credits, so
+it is not used for them.
 
 Imports land in `data/_incoming/` for review and become a PR like any other
 contribution. Curated data always wins: an import never overwrites an existing

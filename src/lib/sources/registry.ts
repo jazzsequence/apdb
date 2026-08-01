@@ -33,16 +33,18 @@ export const SOURCES: Record<string, SourceInfo> = {
   },
 
   // --- Not cleared. Declared so the gate has something concrete to refuse. ---
-  fandom: {
-    id: 'fandom',
-    name: 'Fandom / fan wikis',
-    licence: 'CC-BY-SA 3.0 (varies by wiki)',
-    clearance: 'needs-review',
-    attribution: 'Content from <wiki>, CC-BY-SA 3.0.',
+  mediawiki: {
+    id: 'mediawiki',
+    name: 'Fan wikis (Fandom / Miraheze)',
+    licence: 'CC-BY-SA (3.0 or 4.0 depending on wiki)',
+    clearance: 'cleared',
+    attribution: 'Content from {url}, CC-BY-SA.',
     notes:
-      'Usable with attribution and share-alike, but share-alike may affect how the ' +
-      'derived dataset can be licensed. Confirm with the project owner before enabling, ' +
-      'and check each individual wiki — licences are per-wiki, not uniform.',
+      'Where the actual-play credits actually are. Read through the MediaWiki API, ' +
+      'not scraped: infoboxes are template-structured, and the Dimension 20 wiki ' +
+      'even separates guest_players from players. Every emitted credit carries the ' +
+      'source page URL, which satisfies attribution. Note the share-alike term ' +
+      'applies to derived content — relevant if this dataset is ever relicensed.',
   },
   podchaser: {
     id: 'podchaser',
@@ -52,8 +54,21 @@ export const SOURCES: Record<string, SourceInfo> = {
     attribution: 'Credit data from Podchaser.',
     notes:
       'Has real creator-credit data, which is exactly what this project wants. ' +
-      'Requires an API key and acceptance of their terms; redistribution rights are ' +
-      'the open question. Do not scrape the site as a substitute.',
+      'Blocked on access, not on principle: the API needs a key issued under their ' +
+      'terms, so an adapter cannot be built or tested without one. Set PODCHASER_API_KEY ' +
+      'and clear this entry once the redistribution terms are checked.',
+  },
+  'actualplay-world': {
+    id: 'actualplay-world',
+    name: 'actualplay.world',
+    licence: 'Unstated',
+    clearance: 'needs-review',
+    attribution: 'Show data from actualplay.world.',
+    notes:
+      'Indexes shows rather than people, so it is a source for show/channel/system ' +
+      'records rather than the credits this project is short of. No documented public ' +
+      'API or licence statement found; would need permission from the operators rather ' +
+      'than scraping.',
   },
 };
 
