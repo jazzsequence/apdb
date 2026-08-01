@@ -22,9 +22,13 @@ import { join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
 import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
-import { fetchCampaign, type WikiPerson } from '../src/lib/sources/mediawiki.js';
+import {
+  discoverCampaignPages,
+  fetchCampaign,
+  type WikiPerson,
+} from '../src/lib/sources/mediawiki.js';
 import { fetchPerson, searchPeople, type WikidataPerson } from '../src/lib/sources/wikidata.js';
-import { Person, type CreditRole } from '../src/lib/schema.js';
+import { Person, type CreditRole, type Show } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
 const flag = (name: string): string | undefined => {
@@ -140,6 +144,101 @@ async function stage(imported: WikidataPerson, existing: Person | undefined, app
   console.log(`  ✓ ${imported.canonical_name} (${imported.qid}) -> ${where} [${what}]`);
   if (added.length > 0) console.log(`      new aliases: ${added.join(', ')}`);
   return true;
+}
+
+/**
+ * Enumerate a wiki's campaigns and stage them as shows/seasons.
+ *
+ * Shows are the spine credits hang off, so a broad show catalogue is worth
+ * building on its own — and the wiki already knows which of its pages are
+ * campaigns, so this needs no page names typed by hand.
+ */
+async function discoverShows(existingShows: Show[], apply: boolean): Promise<void> {
+  const host = flag('wiki');
+  if (!host) {
+    console.error('--discover needs --wiki <host>.');
+    process.exit(1);
+  }
+
+  const channelId = flag('channel');
+  const { template, pages } = await discoverCampaignPages(host);
+  if (pages.length === 0) {
+    console.error(
+      `No campaign pages found on ${host}. It may use a template name this adapter doesn't know — ` +
+        `add it to CAMPAIGN_TEMPLATES in src/lib/sources/mediawiki.ts.`,
+    );
+    process.exit(1);
+  }
+
+  console.log(`\n${pages.length} campaign page(s) on ${host} (via ${template}).`);
+  const limit = Number.parseInt(flag('limit') ?? '', 10);
+  const selected = Number.isFinite(limit) ? pages.slice(0, limit) : pages;
+
+  if (has('dry-run')) {
+    for (const page of selected) console.log(`  ${page}`);
+    console.log('\nRe-run without --dry-run to stage these as shows.\n');
+    return;
+  }
+
+  const known = new Set(existingShows.map((s) => s.id));
+  const dir = apply ? join(DATA_ROOT, 'shows') : STAGING;
+  await mkdir(dir, { recursive: true });
+
+  let written = 0;
+  for (const page of selected) {
+    let campaign;
+    try {
+      campaign = await fetchCampaign(host, page);
+    } catch (error) {
+      console.error(`  ✗ ${page}: ${(error as Error).message}`);
+      continue;
+    }
+
+    const id = slugify(campaign.title ?? page);
+    if (known.has(id)) {
+      console.log(`  – ${page} (already have ${id})`);
+      continue;
+    }
+
+    // Season/game are left for a curator: mapping a system string onto a game
+    // id needs judgement about edition, which is a required field here.
+    const record = {
+      id,
+      title: campaign.title ?? page,
+      channels: channelId ? [channelId] : ['UNKNOWN-set-a-channel-id'],
+      format: 'video',
+      status: 'unknown',
+      ...(campaign.system ? { description: `System per source: ${campaign.system}.` } : {}),
+      links: { website: campaign.url },
+      seasons: [
+        {
+          ordinal: campaign.season ?? 1,
+          game: 'UNKNOWN-set-a-game-id',
+          ...(campaign.airDates ? { description: `Aired: ${campaign.airDates}` } : {}),
+        },
+      ],
+    };
+
+    const header = [
+      `# Discovered on ${host} (${campaign.url}), CC-BY-SA.`,
+      '#',
+      '# Before merging: set `channels` and `seasons[].game` to real ids, confirm',
+      '# `format` and `status`, and split into seasons if the wiki page covers more',
+      '# than one. Placeholder ids are deliberately invalid so CI blocks a careless',
+      '# merge.',
+      '',
+    ].join('\n');
+
+    await writeFile(join(dir, `show-${id}.yml`), header + stringify(record), 'utf8');
+    console.log(
+      `  ✓ ${campaign.title ?? page}${campaign.system ? ` — ${campaign.system.slice(0, 60)}` : ''}`,
+    );
+    written += 1;
+    await new Promise((r) => setTimeout(r, 250));
+  }
+
+  console.log(`\n${written} show(s) staged to ${apply ? 'data/shows/' : 'data/_incoming/'}.`);
+  console.log('Placeholder channel/game ids must be replaced — CI rejects them as written.\n');
 }
 
 /**
@@ -284,7 +383,11 @@ async function main(): Promise<void> {
   if (has('wiki')) {
     assertCleared('mediawiki');
     const { dataset } = await loadDataset();
-    await collectFromWiki(dataset.people, apply);
+    if (has('discover')) {
+      await discoverShows(dataset.shows, apply);
+    } else {
+      await collectFromWiki(dataset.people, apply);
+    }
     return;
   }
 

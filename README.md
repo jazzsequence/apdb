@@ -149,9 +149,33 @@ That one rule handles every layout encountered without knowing anything about
 any of them, and it is what stops a character being filed as a performer or a
 production company being filed as a person.
 
+**Show discovery (`--discover`)** builds the show catalogue. A wiki already
+knows which of its pages are campaigns, so ask it — this enumerates pages
+transcluding the campaign infobox, no page names typed by hand:
+
+```bash
+npm run collect -- --wiki dimension20.fandom.com --discover --dry-run
+npm run collect -- --wiki dimension20.fandom.com --discover --channel dropout
+```
+
+That finds 30 campaigns on the Dimension 20 wiki and 61 on the Critical Role
+wiki. Staged shows carry deliberately invalid placeholder ids for `channel` and
+`game`, so CI blocks a merge until a curator sets real ones — mapping a system
+string onto a game id needs a judgement about edition, which is required here.
+
 **Wikidata (`--qid`, `--search`)** is the identity backbone: stable QIDs,
 canonical names and, usefully, birth names. It carries almost no AP credits, so
 it is not used for them.
+
+### Sources that don't work
+
+- **actualplay.world** — no public API, and its sitemap lists only top-level
+  pages, so there is no crawlable show index. Content renders client-side from
+  React Server Component streams. Would need the operators' cooperation.
+- **Podchaser** — has real creator credits, but the API needs a key issued
+  under its terms; an adapter can't be built or tested without one.
+- **Fandom's cross-wiki search API** — returns 403; wiki hosts have to be named
+  explicitly rather than discovered.
 
 Imports land in `data/_incoming/` for review and become a PR like any other
 contribution. Curated data always wins: an import never overwrites an existing

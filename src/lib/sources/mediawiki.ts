@@ -274,6 +274,55 @@ export async function classifyTitles(
   return result;
 }
 
+/**
+ * Templates that mark a page as a show or campaign, in the order worth trying.
+ * Wikis name these differently; discovery tries each until one returns pages.
+ */
+export const CAMPAIGN_TEMPLATES = [
+  'Template:InfoboxCampaign',
+  'Template:Infobox campaign',
+  'Template:Infobox show',
+  'Template:Infobox season',
+  'Template:Infobox series',
+];
+
+/**
+ * Enumerate a wiki's shows by asking which pages transclude its campaign
+ * infobox. This is how the show catalogue gets built without anyone typing
+ * page names: the wiki already knows which of its pages are campaigns.
+ */
+export async function discoverCampaignPages(
+  host: string,
+  templates: string[] = CAMPAIGN_TEMPLATES,
+): Promise<{ template: string; pages: string[] }> {
+  for (const template of templates) {
+    const params = new URLSearchParams({
+      action: 'query',
+      list: 'embeddedin',
+      eititle: template,
+      einamespace: '0',
+      eilimit: '500',
+      format: 'json',
+      formatversion: '2',
+    });
+
+    for (const path of ['/api.php', '/w/api.php']) {
+      try {
+        const response = await fetch(`https://${host}${path}?${params}`, {
+          headers: { 'User-Agent': USER_AGENT },
+        });
+        if (!response.ok) continue;
+        const data: any = await response.json();
+        const pages: string[] = (data?.query?.embeddedin ?? []).map((p: any) => p.title);
+        if (pages.length > 0) return { template, pages };
+      } catch {
+        // try the next path / template
+      }
+    }
+  }
+  return { template: '', pages: [] };
+}
+
 /** Every wikilink in a value, in document order, with its position. */
 function linksInOrder(value: string): { title: string; start: number; end: number }[] {
   return [...value.matchAll(new RegExp(LINK, 'g'))]
@@ -381,6 +430,8 @@ export async function fetchCampaign(host: string, page: string): Promise<WikiCam
   const template =
     extractTemplate(wikitext, 'InfoboxCampaign') ??
     extractTemplate(wikitext, 'Infobox campaign') ??
+    extractTemplate(wikitext, 'Infobox show') ??
+    extractTemplate(wikitext, 'Infobox season') ??
     extractTemplate(wikitext, 'Infobox');
 
   if (!template) {
