@@ -1,0 +1,22 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: imari-williams
+canonical_name: Imari Williams
+sort_name: Williams, Imari
+aliases:
+  - id: default
+    name: Imari Williams
+    alias_type: legal
+credits:
+  - show: candela-obscura
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

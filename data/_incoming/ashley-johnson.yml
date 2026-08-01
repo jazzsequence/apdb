@@ -1,0 +1,90 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: ashley-johnson
+canonical_name: Ashley Johnson
+sort_name: Johnson, Ashley
+wikidata_qid: Q267359
+links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/1/11/Ashley_Johnson_at_IGN_Live_2024.jpg
+  licence: CC-BY-4.0
+  attribution: Kevin Paul
+  source: https://commons.wikimedia.org/wiki/File:Ashley_Johnson_at_IGN_Live_2024.jpg
+aliases:
+  - id: default
+    name: Ashley Johnson
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 2
+    role: player
+    character: Yasha Nydoorin
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 4
+    role: player
+    character: Fearne Calloway
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited_Prime
+        note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 1
+    role: player
+    character: Pike Trickfoot
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 3
+    role: player
+    character: Fearne / Luz / Trist / Yasha / Pike
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

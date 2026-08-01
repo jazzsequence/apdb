@@ -1,0 +1,22 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Unend (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: sarah-wile
+canonical_name: Sarah Wile
+sort_name: Wile, Sarah
+aliases:
+  - id: default
+    name: Sarah Wile
+    alias_type: legal
+credits:
+  - show: critical-role-specials
+    season: 9
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Unend
+        note: Unend cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

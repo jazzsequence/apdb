@@ -1,3 +1,9 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Downfall (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: nick-marini
 canonical_name: Nick Marini
 sort_name: Marini, Nick
@@ -11,10 +17,20 @@ credits:
     season: 3
     role: guest player
     character: Aru / Ayden
+    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 2
+    role: player
+    character: Ayden
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
+        url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."

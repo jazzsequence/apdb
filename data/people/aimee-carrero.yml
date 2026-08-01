@@ -1,3 +1,9 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: aimee-carrero
 canonical_name: Aimee Carrero
 sort_name: Carrero, Aimee
@@ -46,10 +52,18 @@ credits:
     season: 3
     role: guest player
     character: Deni$e / Opal
+    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 4
+    role: player
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
+        url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

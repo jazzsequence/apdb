@@ -1,0 +1,23 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: zachery-renauldo
+canonical_name: Zachery Renauldo
+sort_name: Renauldo, Zachery
+aliases:
+  - id: default
+    name: Zachery Renauldo
+    alias_type: legal
+credits:
+  - show: critical-role-specials
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
+        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."

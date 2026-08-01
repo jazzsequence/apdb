@@ -1,0 +1,79 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/UnDeadwood (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: anjali-bhimani
+canonical_name: Anjali Bhimani
+sort_name: Bhimani, Anjali
+wikidata_qid: Q42561139
+links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/5/5d/Anjali_Bhimani_%2835396848715%29_%28cropped_portrait%29.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Eva Rinaldi from Sydney Australia
+  source: https://commons.wikimedia.org/wiki/File:Anjali_Bhimani_(35396848715)_(cropped_portrait).jpg
+aliases:
+  - id: default
+    name: Anjali Bhimani
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 18
+    role: player
+    character: Queen Amangeaux Epicée du Peche
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Ravening_War
+        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 2
+    role: player
+    character: Fy'ra Rai
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Kymal
+        note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: exandria-unlimited
+    season: 4
+    role: guest player
+    character: Fy'ra Rai
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited_Prime
+        note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Fy'ra Rai
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/UnDeadwood
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

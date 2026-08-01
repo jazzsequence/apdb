@@ -414,29 +414,61 @@ export function assemblePeople(
   const people: WikiPerson[] = [];
   const dropped: string[] = [];
 
-  // Alternating positional pairs are explicit structure too: the Critical Role
-  // wiki writes {{Starring | [[Laura Bailey]] | [[Vex'ahlia]] | ... }}. Without
-  // this, classification decides — and it gets it wrong, because a player
-  // character like Chetney Pock O'Pea has a page that looks person-ish.
+  // {{Starring}} has two incompatible usages and the difference is load-bearing:
+  //
+  //   paired:  | [[Laura Bailey]] | [[Vex'ahlia]]      <- person, character
+  //   flat:    | [[Laura Bailey]] |                    <- person, nothing
+  //
+  // Reading a flat list as pairs marries each performer to the next one, which
+  // is how "Laura Bailey as Matthew Mercer" got into this database. The tell is
+  // whether the even slots carry content, so check before deciding.
   const nested = extractTemplate(value, '[A-Za-z]');
   if (nested) {
     const body = nested.replace(/^\{\{[^|]*/, '').replace(/\}\}$/, '');
-    const args: string[] = [];
+    const slots: string[] = [];
     let depth = 0, cur = '';
     for (let i = 0; i < body.length; i++) {
       if (body.startsWith('{{', i) || body.startsWith('[[', i)) { depth++; cur += body.slice(i, i + 2); i++; continue; }
       if (body.startsWith('}}', i) || body.startsWith(']]', i)) { depth--; cur += body.slice(i, i + 2); i++; continue; }
-      if (body[i] === '|' && depth === 0) { args.push(cur); cur = ''; continue; }
+      if (body[i] === '|' && depth === 0) { slots.push(cur); cur = ''; continue; }
       cur += body[i];
     }
-    args.push(cur);
-    const slots = args.map((a) => a.trim()).filter((a) => a.length > 0 && !a.includes('='));
+    slots.push(cur);
+
+    // Drop rule separators ("--------") used to divide groups.
+    const cleaned = slots
+      .map((s) => s.trim())
+      .filter((s) => !/^-{2,}$/.test(s))
+      .filter((s) => !s.includes('='));
+
+    // The text before the first pipe is the template name's tail, not a slot.
+    // Leaving it in shifts every pair by one and silently breaks pairing.
+    while (cleaned.length > 0 && cleaned[0] === '') cleaned.shift();
+
+    const nonEmpty = cleaned.filter((s) => s.length > 0);
+    const evens = cleaned.filter((_, i) => i % 2 === 1);
+    const evensHaveContent = evens.filter((s) => s.length > 0).length;
+
+    // Flat list: the second slot of each row is consistently empty.
+    if (nonEmpty.length > 0 && evensHaveContent <= nonEmpty.length / 4) {
+      const flat: WikiPerson[] = [];
+      for (const slot of nonEmpty) {
+        const ls = linksInOrder(slot);
+        if (ls.length === 1) flat.push({ name: ls[0]!.title });
+        else if (ls.length === 0 && /^[A-Z][\w.'-]*(?:\s+[A-Z][\w.'-]*){1,3}$/.test(slot)) {
+          flat.push({ name: slot });   // plain-text names, as the producer field uses
+        }
+      }
+      if (flat.length > 0) return { people: flat, dropped: [] };
+    }
+
+    // Paired: odd slots are single links, even slots carry the characters.
     const paired: WikiPerson[] = [];
-    let ok = slots.length >= 2;
-    for (let i = 0; ok && i < slots.length; i += 2) {
-      const nameLinks = linksInOrder(slots[i]!);
+    let ok = cleaned.length >= 2 && evensHaveContent > 0;
+    for (let i = 0; ok && i < cleaned.length; i += 2) {
+      const nameLinks = linksInOrder(cleaned[i] ?? '');
       if (nameLinks.length !== 1) { ok = false; break; }
-      const slot = slots[i + 1] ?? '';
+      const slot = cleaned[i + 1] ?? '';
       const chars = linksInOrder(slot).map((l) => l.title);
       const bare = slot.replace(/\[\[|\]\]/g, '').trim();
       paired.push({

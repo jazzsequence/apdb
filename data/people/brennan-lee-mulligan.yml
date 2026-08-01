@@ -1,3 +1,9 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show) (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: brennan-lee-mulligan
 canonical_name: Brennan Lee Mulligan
 sort_name: Mulligan, Brennan Lee
@@ -296,10 +302,36 @@ credits:
   - show: critical-role
     season: 3
     role: guest player
+    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 6
+    role: player
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
+        url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
+        note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

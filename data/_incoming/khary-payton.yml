@@ -1,0 +1,44 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/UnDeadwood (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: khary-payton
+canonical_name: Khary Payton
+sort_name: Payton, Khary
+wikidata_qid: Q2507611
+links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/0/04/Khary_Payton_at_MultiCon_2025.jpg
+  licence: CC-BY-4.0
+  attribution: Kevin Paul
+  source: https://commons.wikimedia.org/wiki/File:Khary_Payton_at_MultiCon_2025.jpg
+aliases:
+  - id: default
+    name: Khary Payton
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 2
+    role: guest player
+    character: Shakäste
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/UnDeadwood
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

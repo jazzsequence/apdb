@@ -1,3 +1,9 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/UnDeadwood (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: anjali-bhimani
 canonical_name: Anjali Bhimani
 sort_name: Bhimani, Anjali
@@ -56,10 +62,26 @@ credits:
     season: 3
     role: guest player
     character: Fy'ra Rai
+    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 1
+    role: player
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
-        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
+        url: https://criticalrole.fandom.com/wiki/UnDeadwood
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

@@ -1,0 +1,22 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Thresher (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: jacqueline-emerson
+canonical_name: Jacqueline Emerson
+sort_name: Emerson, Jacqueline
+aliases:
+  - id: default
+    name: Jacqueline Emerson
+    alias_type: legal
+credits:
+  - show: critical-role-specials
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Thresher
+        note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

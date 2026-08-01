@@ -1,3 +1,9 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: jasmine-bhullar
 canonical_name: Jasmine Bhullar
 sort_name: Bhullar, Jasmine
@@ -15,3 +21,12 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Coffin_Run
         note: Coffin Run cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+  - show: critical-role-specials
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
+        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

@@ -339,6 +339,19 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
     group.people.map((person) => ({ person, role: group.role })),
   );
 
+  // Preview before writing. The single most useful check on this whole
+  // pipeline is a human reading what it is about to claim, next to the page it
+  // read it from — every bad import here would have been caught by that.
+  if (has('dry-run')) {
+    console.log(`\n  would import ${wanted.length} credit(s) — check these against ${campaign.url}\n`);
+    for (const { person, role } of wanted) {
+      const as = person.character ? `  as ${person.character}` : '';
+      console.log(`    ${role.padEnd(13)} ${person.name}${as}`);
+    }
+    console.log('\n  Re-run without --dry-run to write them.\n');
+    return;
+  }
+
   const byId = new Map(existingPeople.map((p) => [p.id, p]));
   const dir = apply ? join(DATA_ROOT, 'people') : STAGING;
   await mkdir(dir, { recursive: true });

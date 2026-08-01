@@ -1,3 +1,9 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: aabria-iyengar
 canonical_name: Aabria Iyengar
 sort_name: Iyengar, Aabria
@@ -78,10 +84,10 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
         tier: reference
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
   - show: dimension-20
     season: 8
     role: player
@@ -170,3 +176,10 @@ credits:
         note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
         tier: community
+  - show: candela-obscura
+    season: 3
+    role: host
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

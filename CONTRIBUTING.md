@@ -22,6 +22,30 @@ A maintainer transcribes it into a data file. You do not need to know YAML.
 3. **If you imported anything in bulk, run `npm run audit` and read it.**
 4. Open a PR.
 
+### The import workflow
+
+Automated collection is unreliable on wikis whose templates it hasn't seen — it
+has misread flat cast lists as performer/character pairs, characters as people,
+and wiki markup as names. Treat every import as a proposal, not a result:
+
+```bash
+# 1. See what it would claim, and read it against the page it came from.
+npm run collect -- --wiki <host> --page "<Page>" --show <id> --season <n> --dry-run
+
+# 2. Only if that looks right:
+npm run collect -- --wiki <host> --page "<Page>" --show <id> --season <n> --apply
+
+# 3. After any bulk run:
+npm run audit
+```
+
+Step 1 is the one that matters. Every wrong claim this database has published
+would have been caught by one person reading seven lines next to a wiki page.
+
+If a page can't be read correctly, **enter it by hand** — the data is plain YAML
+and a credit is six lines. Hand-entered beats confidently wrong, and the `/submit`
+page will write the YAML for you if you'd rather not type it.
+
 ### Always spot-check an import
 
 Every data error this project has shipped came from trusting a bulk import
