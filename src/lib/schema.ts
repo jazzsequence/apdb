@@ -25,6 +25,8 @@ const Links = z
     wikipedia: z.string().url().optional(),
     youtube: z.string().url().optional(),
     podcast: z.string().url().optional(),
+    /** Community forum or wiki. Often the only place an indie show's cast is documented. */
+    forum: z.string().url().optional(),
     bluesky: z.string().url().optional(),
     mastodon: z.string().url().optional(),
     twitch: z.string().url().optional(),

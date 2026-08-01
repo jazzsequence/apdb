@@ -6,15 +6,20 @@ format: podcast
 status: cancelled
 description: >-
   Monsterhearts 2 campaign about monstrous teenagers in Carefree, Arizona, 1992.
-  Ended without a conclusion when cast scheduling fell apart. GMed by Mac and
-  Adam, with players credited as Tappy, Gina, Joey, Mac and Adam — first names
-  and handles only, which is why credits on this show are hard to attribute to
-  a person.
+  Ran 11 episodes and ended without a conclusion — the group chose to stop,
+  citing the emotional weight of the game and the wellbeing of the people at the
+  table. GMed by Mac and Adam, with players credited as Tappy, Gina, Joey, Mac
+  and Adam — handles and first names only, which is why credits on this show are
+  hard to attribute to a person.
 links:
   website: https://happyjacks.org/carefreehigh/
+  forum: https://happyjacks.proboards.com/board/71/carefree-high-monsterhearts
 seasons:
   - ordinal: 1
     game: monsterhearts-2
+    started: '2018-05'
+    ended: '2018-10'
+    episode_count: 11
     description: >-
-      Run dates not established from public sources; the network's actual-play
-      output around this show sits roughly 2018–2020.
+      Start date inferred from the character-roster thread posted 2 May 2018;
+      end date from the cast's announcement thread of 6 October 2018.
