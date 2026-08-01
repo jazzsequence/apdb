@@ -152,6 +152,19 @@ h2 {
   font-style: italic;
 }
 
+/*
+ * Per-field inference. Attaches to the specific value that was reasoned out
+ * rather than observed, so a derived alias cannot inherit the credibility of
+ * the citation sitting next to it.
+ */
+.tag--inferred {
+  background: transparent;
+  border: 1px dashed var(--flag);
+  color: var(--flag);
+  font-style: italic;
+  cursor: help;
+}
+
 /* --- filmography -------------------------------------------------------- */
 .film-show {
   border: 1px solid var(--border);

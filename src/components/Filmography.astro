@@ -57,7 +57,12 @@ function yearRange(group: FilmographyGroup): string {
             )}
             <span>
               credited as {alias.name}{' '}
-              {creditedUnderFormerName && <span class="tag tag--former">former name</span>}
+              {creditedUnderFormerName && <span class="tag tag--former">former name</span>}{' '}
+              {credit.inferred_fields?.alias && (
+                <span class="tag tag--inferred" title={credit.inferred_fields.alias}>
+                  name inferred
+                </span>
+              )}
             </span>
             <span
               class={`tag tier tier--${tier.strength}`}
@@ -68,6 +73,13 @@ function yearRange(group: FilmographyGroup): string {
             {credit.source.needs_verification && (
               <span class="tag tag--flag">uncorroborated</span>
             )}
+            {Object.entries(credit.inferred_fields ?? {})
+              .filter(([field]) => field !== 'alias')
+              .map(([field, reasoning]) => (
+                <span class="tag tag--inferred" title={reasoning}>
+                  {field} inferred
+                </span>
+              ))}
             {credit.source.url && (
               <a href={credit.source.url} rel="nofollow noopener">
                 source

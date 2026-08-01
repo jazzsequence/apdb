@@ -71,12 +71,15 @@ credits:
     note: >-
       Single-episode guest appearance on an independent Savage Worlds campaign.
       Episode number within season 1 not yet confirmed.
+    inferred_fields:
+      alias: >-
+        Derived from the 2019 date against the Lipscomb alias's active_to of
+        2020 — not from a seen title card. The appearance itself is sourced;
+        only which name was on screen is reasoning.
     source:
       tier: reference
       url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-      note: >-
-        Appearance and character sourced to Wikipedia. Attribution to the
-        Lipscomb alias is inferred from the date, not from a seen credit.
+      note: Appearance and character sourced to Wikipedia.
       needs_verification: true
 
   - show: pirates-of-salt-bay
@@ -84,14 +87,17 @@ credits:
     role: GM/DM
     alias: lipscomb
     year: '2019'
+    inferred_fields:
+      alias: >-
+        Derived from the 2019 date against the Lipscomb alias's active_to of
+        2020 — not from a seen title card.
     source:
       tier: community
       url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
       note: >-
         Saving Throw wiki names her as the regular GM. Note Wikipedia's
         filmography table instead lists her as a player on this show; the
-        show-specific wiki is taken as the better source. Alias attribution
-        inferred from date.
+        show-specific wiki is taken as the better source.
       needs_verification: true
   - show: pirates-of-salt-bay
     season: 2

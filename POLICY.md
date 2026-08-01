@@ -47,7 +47,6 @@ close the source was to the thing actually happening:
 | `firsthand` | A named contributor who watched or listened to it themselves |
 | `reference` | An established reference work: Wikipedia, Wikidata, a published database |
 | `community` | A fan wiki, forum thread, or third-party social post |
-| `inferred` | Reasoned from other data — nobody observed it |
 
 ### Why firsthand outranks published sources
 
@@ -70,14 +69,47 @@ tracks them separately — see below.
 **A tier is a statement about proximity, never about truth.** Tiers render as
 neutral labels rather than a warning scale.
 
-### What `inferred` actually means
+### Inference is not a source
 
-`inferred` is the only tier where **nobody observed anything**. It is reasoning
-from other data: deducing that a credit must have used a performer's earlier
-name because of its date, rather than because anyone saw the title card.
+There is deliberately no `inferred` tier. An earlier version of this policy had
+one, and it was a category error.
 
-It sits at the bottom because inference cannot discover facts, only propose
-them. Everything above it rests on somebody having actually been there.
+Nobody submits a credit without having seen something. Streams are watched;
+episodes are listened to. If a contributor files an appearance, they observed it
+somewhere — otherwise there would be nothing to file. So inference never
+explains how a credit came to *exist*, and a tier is exactly a claim about how
+the credit came to exist.
+
+What inference actually describes is a **field**. A credit is not one claim:
+
+> *Aabria GMed Pirates of Salt Bay season 1* — from a wiki someone read.
+> *She was billed as Lipscomb at the time* — derived from the date.
+
+Those have different provenance. One tier on the credit shows only the stronger
+of the two and quietly launders the weaker one under it.
+
+So derived values are recorded per field, in `inferred_fields`, each with its
+reasoning:
+
+```yaml
+- show: pirates-of-salt-bay
+  season: 1
+  role: GM/DM
+  alias: lipscomb
+  inferred_fields:
+    alias: >-
+      Derived from the 2019 date against the Lipscomb alias's active_to of
+      2020 — not from a seen title card.
+  source:
+    tier: community
+    url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+```
+
+The source stays `community` — a real person read a real wiki. The alias carries
+its own mark, and renders next to the name rather than at the credit level, so a
+reasoned-out name cannot inherit the credibility of the citation beside it.
+
+CI rejects marking a field inferred that the credit does not actually have.
 
 ### What CI enforces
 
@@ -87,8 +119,9 @@ Tiers that make claims about their own evidence have to back them:
 - `recording` must carry a `locator` or `url`. `recording` and `firsthand` are
   the same observation — the locator is the only difference. Without one, use
   `firsthand`: it claims exactly as much proximity, just no citation.
-- `inferred` must show its reasoning in `note`. Inference is reasoning, not
-  evidence, so it has to show its working.
+- any entry in `inferred_fields` must name a field the credit actually has, and
+  must show its reasoning. Inference is reasoning, not evidence, so it has to
+  show its working.
 
 ## The second axis: corroboration
 

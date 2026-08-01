@@ -69,12 +69,13 @@ saying what kind of evidence it is. Strongest first:
 | `firsthand` | You watched or listened to it yourself, but there's nothing to link to |
 | `reference` | Wikipedia, Wikidata, a published database |
 | `community` | A fan wiki, forum thread, third-party post |
-| `inferred` | Reasoned from other data — nobody observed it |
 
 `tier` defaults to `reference`. CI enforces the tiers that make claims about
-their own evidence: `firsthand` and `participant` need `attested_by`,
-`recording` needs a `locator` or `url`, and `inferred` needs its reasoning in
-`note`.
+their own evidence: `firsthand` and `participant` need `attested_by`, and
+`recording` needs a `locator` or `url`.
+
+There is no `inferred` tier — you saw *something*, or you wouldn't be filing the
+credit. See below for values you reasoned out.
 
 **If you saw it, say `firsthand` — and note that it outranks Wikipedia here.**
 The ladder ranks by how close the source was to the thing happening, and someone
@@ -98,6 +99,33 @@ If you've already searched for corroboration and come up empty, say where you
 looked in `note` — it stops the next person repeating the work, and it
 distinguishes "nobody checked" from "checked, nothing there". There's a worked
 example on the Carefree High credit in `data/people/aabria-iyengar.yml`.
+
+### Values you worked out rather than saw
+
+A credit isn't one claim. You might know from the episode that someone was at
+the table, but be guessing which name they were billed under. Mark those fields
+individually:
+
+```yaml
+  - show: pirates-of-salt-bay
+    season: 1
+    role: GM/DM
+    alias: lipscomb
+    inferred_fields:
+      alias: >-
+        Derived from the 2019 date against the alias's active_to of 2020 —
+        not from a seen title card.
+    source:
+      tier: community
+      url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+```
+
+The `source` still describes what someone actually observed. The `alias` carries
+its own mark and renders right next to the name, so a value you reasoned out
+doesn't borrow credibility from the citation beside it.
+
+Inferrable fields: `role`, `character`, `alias`, `season`, `episode`, `year`.
+CI rejects marking a field the credit doesn't have.
 
 ## Adding a person
 

@@ -83,10 +83,16 @@ an episode locator — that distinction is the long-tail feature.
 
 Every credit carries a `source` declaring its **tier**, ranked by how close the
 source was to the thing happening: `official` → `recording` → `participant` →
-`firsthand` → `reference` → `community` → `inferred`. The tier renders next to
-the credit, and CI enforces the tiers that make claims about their own evidence:
-`recording` must carry a locator, `firsthand` must name who attested it,
-`inferred` must show its reasoning.
+`firsthand` → `reference` → `community`. The tier renders next to the credit,
+and CI enforces the tiers that make claims about their own evidence:
+`recording` must carry a locator, `firsthand` must name who attested it.
+
+There is deliberately no `inferred` tier. Nobody files a credit without having
+observed something — streams are watched — so inference never explains how a
+credit came to exist. It only ever describes a *field* that was reasoned out
+afterwards, which is recorded per field in `inferred_fields` with its reasoning
+and rendered next to that value. A derived alias should not inherit the
+credibility of the citation sitting beside it.
 
 Note that `firsthand` — someone who watched the episode — outranks published
 reference works. It is closer to the fact. Wikipedia's filmography table lists

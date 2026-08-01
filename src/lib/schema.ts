@@ -51,6 +51,13 @@ const Links = z
  * them, which had the effect of ranking a contributor who watched the episode
  * below a stranger's summary of it. That was wrong.
  *
+ * Every tier here names something a person observed. An earlier version also
+ * carried an `inferred` tier, which was a category error: nobody submits a
+ * credit without having seen something, so inference never explains how a
+ * credit came to exist. It only ever describes a FIELD that was derived after
+ * the fact — see `Credit.inferred_fields`. Inference is an operation performed
+ * on data, not a source of it.
+ *
  * A tier is a statement about proximity, never about truth.
  */
 export const SOURCE_TIERS = [
@@ -77,8 +84,6 @@ export const SOURCE_TIERS = [
   'reference',
   /** Fan wiki, forum thread, or third-party social post. */
   'community',
-  /** Reasoned from other data; nobody observed it. Never sufficient alone. */
-  'inferred',
 ] as const;
 
 export const SourceTier = z.enum(SOURCE_TIERS);
@@ -123,11 +128,6 @@ export const Source = z
     message:
       'a recording source needs a locator (timestamp/episode position) or a url — without one this is the `firsthand` tier, which claims the same proximity but no citation',
     path: ['locator'],
-  })
-  // Inference is reasoning, not evidence. It has to show its working.
-  .refine((s) => s.tier !== 'inferred' || Boolean(s.note), {
-    message: 'an inferred source must explain the reasoning in `note`',
-    path: ['note'],
   });
 
 // ---------------------------------------------------------------------------
@@ -238,6 +238,16 @@ export const CreditRole = z.enum([
   'writer',
 ]);
 
+/** Credit fields that can be filled in by reasoning rather than observation. */
+export const InferrableField = z.enum([
+  'role',
+  'character',
+  'alias',
+  'season',
+  'episode',
+  'year',
+]);
+
 /**
  * The polymorphic join, and the reason this project exists.
  *
@@ -261,9 +271,31 @@ export const Credit = z
     year: PartialDate.optional(),
     note: z.string().optional(),
     source: Source,
+    /**
+     * Fields on this credit that were reasoned out rather than observed, each
+     * mapped to its reasoning.
+     *
+     * This exists because a credit is not one claim. "Aabria GMed Pirates of
+     * Salt Bay season 1" and "she was billed as Lipscomb at the time" have
+     * different provenance: the first came from a wiki someone read, the second
+     * was derived from the date. A single tier on the credit shows only the
+     * stronger of the two and quietly launders the weaker one.
+     */
+    inferred_fields: z.record(InferrableField, z.string().min(15)).optional(),
   })
   .strict()
   .superRefine((credit, ctx) => {
+    // Don't claim to have inferred a field that isn't there.
+    for (const field of Object.keys(credit.inferred_fields ?? {})) {
+      if (credit[field as keyof typeof credit] === undefined) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ['inferred_fields', field],
+          message: `marks "${field}" as inferred, but this credit has no ${field} value`,
+        });
+      }
+    }
+
     if (credit.episode && credit.season === undefined) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,

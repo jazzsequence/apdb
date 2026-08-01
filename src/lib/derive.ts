@@ -45,11 +45,6 @@ const TIER_COPY: Record<Tier, { label: string; description: string }> = {
     label: 'community',
     description: 'A fan wiki, forum thread or third-party post.',
   },
-  inferred: {
-    label: 'inferred',
-    description:
-      'Reasoned from other data — nobody observed this. The weakest tier, and never sufficient on its own.',
-  },
 };
 
 export function tierInfo(tier: Tier): TierInfo {
@@ -58,9 +53,9 @@ export function tierInfo(tier: Tier): TierInfo {
     tier,
     rank,
     ...TIER_COPY[tier],
-    // Only `inferred` reads as weak — it is the one tier where nobody observed
-    // anything. Everything else rests on someone having actually been there.
-    strength: rank <= 3 ? 'strong' : rank <= 6 ? 'medium' : 'weak',
+    // Every tier now names something a person observed, so none of them read as
+    // weak. Derived values are marked per field instead — see inferred_fields.
+    strength: rank <= 3 ? 'strong' : 'medium',
   };
 }
 
