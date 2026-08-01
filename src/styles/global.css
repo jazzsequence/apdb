@@ -152,15 +152,15 @@ h2 {
   font-style: italic;
 }
 
-/*
- * Per-field inference. Attaches to the specific value that was reasoned out
- * rather than observed, so a derived alias cannot inherit the credibility of
- * the citation sitting next to it.
- */
-.tag--inferred {
-  background: transparent;
-  border: 1px dashed var(--flag);
-  color: var(--flag);
+/* Two independent sources agree — the thing a second contributor can create. */
+.tag--corroborated {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* An honest gap: we know they appeared, not what the billing said. */
+.unbilled {
+  color: var(--muted);
   font-style: italic;
   cursor: help;
 }

@@ -18,9 +18,9 @@ credits:
     alias: default
     year: '2018'
     note: Fantasy High.
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Dimension_20
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Dimension_20
   - show: dimension-20
     season: 3
     role: player
@@ -29,25 +29,23 @@ credits:
     note: >-
       A Court of Fey & Flowers — played under Aabria Iyengar's GMing rather
       than running the table. Character name to be confirmed.
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Dimension_20
-      needs_verification: true
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Dimension_20
   - show: worlds-beyond-number
     season: 1
     role: GM/DM
     alias: default
     year: '2023'
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
   - show: exandria-unlimited
     season: 3
     role: guest GM
     alias: default
     year: '2022'
     note: 'Exandria Unlimited: Calamity — guest GM for the full four-episode arc.'
-    source:
-      tier: official
-      url: https://critrole.com
-      needs_verification: true
+    sources:
+      - tier: official
+        url: https://critrole.com

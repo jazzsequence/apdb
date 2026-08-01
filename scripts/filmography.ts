@@ -76,7 +76,15 @@ async function main(): Promise<void> {
     console.log(`  ${group.show.title}  (${years})`);
     console.log(`    ${channels}`);
 
-    for (const { credit, season, game, alias, creditedUnderFormerName, tier } of group.credits) {
+    for (const {
+      credit,
+      season,
+      game,
+      alias,
+      creditedUnderFormerName,
+      tier,
+      corroboration,
+    } of group.credits) {
       const where = [
         season ? `S${season.ordinal}${season.title ? ` — ${season.title}` : ''}` : null,
         credit.episode,
@@ -93,12 +101,19 @@ async function main(): Promise<void> {
       console.log(`      ${where || 'show-level'}`);
       console.log(`        ${bits.join('  ')}`);
       console.log(
-        `        credited as: ${alias.name}${creditedUnderFormerName ? '  <- former name' : ''}`,
+        alias
+          ? `        credited as: ${alias.name}${creditedUnderFormerName ? '  <- former name' : ''}`
+          : `        credited as: (billed name not established)`,
       );
+      const attesters = credit.sources
+        .map((s) => s.attested_by)
+        .filter(Boolean)
+        .join(', ');
       console.log(
-        `        source: ${tier.label} [tier ${tier.rank}/7]` +
-          (credit.source.attested_by ? ` — ${credit.source.attested_by}` : '') +
-          (credit.source.needs_verification ? '   · uncorroborated' : ''),
+        `        best source: ${tier.label} [tier ${tier.rank}/6]` +
+          (attesters ? ` — ${attesters}` : '') +
+          `   · ${corroboration.status}` +
+          (corroboration.independent > 1 ? ` (×${corroboration.independent})` : ''),
       );
     }
     console.log('');

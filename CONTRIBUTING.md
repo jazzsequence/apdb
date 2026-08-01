@@ -37,8 +37,9 @@ credits:
     role: GM/DM
     alias: iyengar
     year: '2020'
-    source:
-      url: https://example.com/episode
+    sources:
+      - tier: community
+        url: https://example.com/episode
 
   # A one-off guest spot adds an episode locator. This is the case that makes
   # long-tail appearances show up on a performer's page.
@@ -47,19 +48,20 @@ credits:
     episode: 'S1E4: The Seekers'
     role: guest player
     character: Renee Billings
-    alias: lipscomb
-    year: '2019'
-    source:
-      url: https://example.com/episode
-      needs_verification: true
+    year: '2019'   # `alias` omitted — nobody established the billed name
+    sources:
+      - tier: firsthand
+        attested_by: Your name or handle
+        note: Watched the episode.
 ```
 
-Every id (`show`, `alias`) must resolve to something that exists, or CI fails.
+Every id (`show`, and `alias` if you give one) must resolve to something that
+exists, or CI fails.
 
 ### Sources
 
-Every credit needs a `source` with at least a `url` or a `note`, plus a `tier`
-saying what kind of evidence it is. Strongest first:
+Every credit needs a `sources` list. Each source needs at least a `url` or a
+`note`, plus a `tier` saying what kind of evidence it is. Strongest first:
 
 | `tier` | What it is |
 | --- | --- |
@@ -75,7 +77,7 @@ their own evidence: `firsthand` and `participant` need `attested_by`, and
 `recording` needs a `locator` or `url`.
 
 There is no `inferred` tier — you saw *something*, or you wouldn't be filing the
-credit. See below for values you reasoned out.
+credit.
 
 **If you saw it, say `firsthand` — and note that it outranks Wikipedia here.**
 The ladder ranks by how close the source was to the thing happening, and someone
@@ -91,41 +93,42 @@ So: don't apologise for a firsthand credit, and don't inflate one either. If you
 can give a timestamp, it's `recording`; if you can't, `firsthand` claims the
 same proximity without pretending to a citation.
 
-Separately, set `needs_verification: true` when nothing independent corroborates
-the claim yet. That's orthogonal to tier — a first-hand account can be entirely
-trustworthy and still uncorroborated.
-
 If you've already searched for corroboration and come up empty, say where you
 looked in `note` — it stops the next person repeating the work, and it
 distinguishes "nobody checked" from "checked, nothing there". There's a worked
 example on the Carefree High credit in `data/people/aabria-iyengar.yml`.
 
-### Values you worked out rather than saw
+### Corroborating something already listed
 
-A credit isn't one claim. You might know from the episode that someone was at
-the table, but be guessing which name they were billed under. Mark those fields
-individually:
+**You don't need a new credit to be useful.** If a credit shows *single source*
+and you also watched that episode, add your own account to its `sources` list.
+Two independent sources make it `corroborated`:
 
 ```yaml
-  - show: pirates-of-salt-bay
-    season: 1
-    role: GM/DM
-    alias: lipscomb
-    inferred_fields:
-      alias: >-
-        Derived from the 2019 date against the alias's active_to of 2020 —
-        not from a seen title card.
-    source:
-      tier: community
-      url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+    sources:
+      - tier: firsthand
+        attested_by: Original contributor
+        note: Watched the stream live.
+      - tier: firsthand
+        attested_by: You
+        note: Also watched it; confirming the same appearance.
 ```
 
-The `source` still describes what someone actually observed. The `alias` carries
-its own mark and renders right next to the name, so a value you reasoned out
-doesn't borrow credibility from the citation beside it.
+The status is computed, never typed in. Independence is checked by who attested
+a source or which page it cites, so one person filing twice doesn't count.
 
-Inferrable fields: `role`, `character`, `alias`, `season`, `episode`, `year`.
-CI rejects marking a field the credit doesn't have.
+This is how verification works here — no publisher required.
+
+### Don't guess to fill a field
+
+If you know someone appeared but not which name was on the billing, **leave
+`alias` out**. It is optional precisely so you don't have to invent one, and the
+page will say "billed name not established" — which is honest and correct.
+
+Be especially wary of reasoning a name from a date. Wikis and reference works
+rename people retroactively, so their naming tells you the source's convention,
+not what the title card said. An earlier version of this database got that
+wrong, in a field that used to be mandatory.
 
 ## Adding a person
 

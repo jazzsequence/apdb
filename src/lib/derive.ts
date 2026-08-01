@@ -6,7 +6,7 @@
  */
 import type { Dataset } from './load.js';
 import { SOURCE_TIERS, tierRank } from './schema.js';
-import type { Alias, Channel, Credit, Game, Person, Season, Show } from './schema.js';
+import type { Alias, Channel, Credit, Game, Person, Season, Show, Source } from './schema.js';
 
 export type Tier = (typeof SOURCE_TIERS)[number];
 
@@ -47,6 +47,58 @@ const TIER_COPY: Record<Tier, { label: string; description: string }> = {
   },
 };
 
+/**
+ * Two sources only corroborate each other if they are actually independent.
+ * The same person posting twice, or two citations of one wiki page, is one
+ * source wearing two hats.
+ */
+function originKey(source: Source): string {
+  if (source.attested_by) return `who:${source.attested_by.trim().toLowerCase()}`;
+  if (source.url) {
+    try {
+      const url = new URL(source.url);
+      return `where:${url.host}${url.pathname}`.toLowerCase();
+    } catch {
+      return `where:${source.url.toLowerCase()}`;
+    }
+  }
+  return `note:${(source.note ?? '').trim().toLowerCase()}`;
+}
+
+export interface Corroboration {
+  status: 'corroborated' | 'single-source';
+  /** How many independent origins back this credit. */
+  independent: number;
+  /** Total sources listed, including ones that share an origin. */
+  total: number;
+}
+
+/**
+ * Corroboration is derived, never stored.
+ *
+ * This is the point of keeping a list: a credit that only one person can attest
+ * is single-source until somebody else independently says the same thing, at
+ * which point it becomes corroborated — with no publisher involved anywhere.
+ * A second viewer who watched the same stream is exactly as good as a citation
+ * for this purpose, which is the whole argument of POLICY.md.
+ */
+export function corroboration(sources: Source[]): Corroboration {
+  const origins = new Set(sources.map(originKey));
+  return {
+    status: origins.size >= 2 ? 'corroborated' : 'single-source',
+    independent: origins.size,
+    total: sources.length,
+  };
+}
+
+/** The strongest tier among a credit's sources — what the credit leads with. */
+export function bestTier(sources: Source[]): TierInfo {
+  const best = sources
+    .map((s) => s.tier)
+    .reduce((a, b) => (tierRank(a) <= tierRank(b) ? a : b));
+  return tierInfo(best);
+}
+
 export function tierInfo(tier: Tier): TierInfo {
   const rank = tierRank(tier);
   return {
@@ -65,12 +117,17 @@ export interface ResolvedCredit {
   season?: Season;
   game?: Game;
   channels: Channel[];
-  /** The name this person was credited under at the time. */
-  alias: Alias;
-  /** True when the credited name differs from the person's canonical name. */
+  /**
+   * The name this person was credited under at the time. Undefined when nobody
+   * has established which name was on the billing — a real and common state.
+   */
+  alias?: Alias;
+  /** True when the credited name is known and differs from the canonical name. */
   creditedUnderFormerName: boolean;
-  /** How strong this credit's source class is, and how to present it. */
+  /** The strongest tier among this credit's sources. */
   tier: TierInfo;
+  /** Derived from the source list, never stored. */
+  corroboration: Corroboration;
 }
 
 /** One show's worth of a person's credits — the unit the filmography renders. */
@@ -86,7 +143,8 @@ export interface FilmographyGroup {
 export interface CastMember {
   person: Person;
   credit: Credit;
-  alias: Alias;
+  /** Undefined when the billed name was never established. */
+  alias?: Alias;
   season?: Season;
 }
 
@@ -135,10 +193,13 @@ export class Db {
 
   resolveCredit(person: Person, credit: Credit): ResolvedCredit | undefined {
     const show = this.#showsById.get(credit.show);
-    const alias = person.aliases.find((a) => a.id === credit.alias);
-    // Integrity validation guarantees both exist; guard so a rendering bug can
-    // never be caused by data the validator already rejects.
-    if (!show || !alias) return undefined;
+    // Integrity validation guarantees the show exists; guard so a rendering bug
+    // can never be caused by data the validator already rejects.
+    if (!show) return undefined;
+    // An absent alias is legitimate — it means nobody established the billing.
+    const alias = credit.alias
+      ? person.aliases.find((a) => a.id === credit.alias)
+      : undefined;
 
     const season =
       credit.season === undefined
@@ -152,8 +213,9 @@ export class Db {
       game: season ? this.#gamesById.get(season.game) : undefined,
       channels: this.channelsFor(show),
       alias,
-      creditedUnderFormerName: alias.name !== person.canonical_name,
-      tier: tierInfo(credit.source.tier),
+      creditedUnderFormerName: Boolean(alias && alias.name !== person.canonical_name),
+      tier: bestTier(credit.sources),
+      corroboration: corroboration(credit.sources),
     };
   }
 
@@ -208,8 +270,9 @@ export class Db {
     for (const person of this.people) {
       for (const credit of person.credits) {
         if (credit.show !== show.id) continue;
-        const alias = person.aliases.find((a) => a.id === credit.alias);
-        if (!alias) continue;
+        const alias = credit.alias
+          ? person.aliases.find((a) => a.id === credit.alias)
+          : undefined;
         cast.push({
           person,
           credit,

@@ -98,7 +98,9 @@ export function checkIntegrity(dataset: Dataset): Problem[] {
         }
       }
 
-      if (!aliasIds.has(credit.alias)) {
+      // An absent alias means the billing was never established — legitimate.
+      // A present one still has to resolve.
+      if (credit.alias !== undefined && !aliasIds.has(credit.alias)) {
         const available = [...aliasIds].join(', ');
         problems.push({
           file,

@@ -18,17 +18,20 @@ aliases:
   - id: iyengar
     name: Aabria Iyengar
     alias_type: legal
-    note: Name used on all credits documented in secondary sources.
+    note: >-
+      The name every reference work and wiki uses for her. Note that those
+      sources apply current names retroactively, so a credit attributed here on
+      their authority reflects the source's naming, not a verified title card.
   - id: lipscomb
     name: Aabria Lipscomb
     alias_type: birth
     active_to: '2020'
     note: >-
-      Birth name, documented on Wikipedia. Her Carefree High credit is billed
-      under this name per maintainer report; the other credits attributed to it
-      are inferred from their dates rather than from a seen credit, and are
-      flagged needs_verification pending a check against the original title
-      cards.
+      Birth name, documented on Wikipedia. Exactly one credit is attributed to
+      it — Carefree High, from someone who watched the stream and saw the
+      billing. Earlier revisions also attached it to the 2019 Saving Throw
+      credits by reasoning from dates; those attributions have been removed,
+      because no source establishes which name was on those billings.
 
 credits:
   # --- The long tail. Neither of these appears in any structured index. -----
@@ -44,88 +47,78 @@ credits:
       Joined mid-season and departed before the campaign ended, so she is not
       on the show's published cast list. Character name and the episode range
       she appears in are still open.
-    source:
-      tier: firsthand
-      attested_by: Project maintainer, from direct listening
-      note: >-
-        First-hand account: she was at this table, billed under the Lipscomb
-        name. No published record contradicts this, and none could confirm it
-        either — this show does not document cast changes anywhere. Already
-        checked, so nobody repeats the work: the series page and the
-        per-episode show notes (identical boilerplate on all 11 episodes, "GMs:
-        Mac & Adam. Players: Tappy, Gina, Joey, Mac, Adam"); the forum's
-        character-roster thread, which covers only the five starting players
-        and was last edited 10 May 2018, a week into the run; the episode 11
-        discussion thread, which references only those original characters; and
-        a site-wide forum search. Corroboration would have to come from the
-        episode audio or from another listener.
-      needs_verification: true
+    sources:
+      - tier: firsthand
+        attested_by: Project maintainer, from direct listening
+        note: >-
+          First-hand account: she was at this table, billed under the Lipscomb
+          name. No published record contradicts this, and none could confirm it
+          either — this show does not document cast changes anywhere. Already
+          checked, so nobody repeats the work: the series page and the
+          per-episode show notes (identical boilerplate on all 11 episodes, "GMs:
+          Mac & Adam. Players: Tappy, Gina, Joey, Mac, Adam"); the forum's
+          character-roster thread, which covers only the five starting players
+          and was last edited 10 May 2018, a week into the run; the episode 11
+          discussion thread, which references only those original characters; and
+          a site-wide forum search. Corroboration would have to come from the
+          episode audio or from another listener.
 
   - show: wildcards-east-texas-university
     season: 1
     episode: 'S1E?: The Seekers'
     role: guest player
     character: Renee Billings
-    alias: lipscomb
     year: '2019'
     note: >-
       Single-episode guest appearance on an independent Savage Worlds campaign.
-      Episode number within season 1 not yet confirmed.
-    inferred_fields:
-      alias: >-
-        Derived from the 2019 date against the Lipscomb alias's active_to of
-        2020 — not from a seen title card. The appearance itself is sourced;
-        only which name was on screen is reasoning.
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-      note: Appearance and character sourced to Wikipedia.
-      needs_verification: true
+      Episode number within season 1 not yet confirmed. No `alias` recorded: the
+      appearance is sourced but nobody has established which name was on the
+      billing, and Wikipedia names her Iyengar throughout regardless of period.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: Appearance and character sourced to Wikipedia.
 
   - show: pirates-of-salt-bay
     season: 1
     role: GM/DM
-    alias: lipscomb
     year: '2019'
-    inferred_fields:
-      alias: >-
-        Derived from the 2019 date against the Lipscomb alias's active_to of
-        2020 — not from a seen title card.
-    source:
-      tier: community
-      url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-      note: >-
-        Saving Throw wiki names her as the regular GM. Note Wikipedia's
-        filmography table instead lists her as a player on this show; the
-        show-specific wiki is taken as the better source.
-      needs_verification: true
+    note: >-
+      No `alias` recorded. An earlier revision put this under the Lipscomb name,
+      reasoned from the 2019 date — but no source says which name was on the
+      billing, and the wiki that documents this show names her Iyengar. That was
+      a guess in a field that used to be mandatory, and it is not knowledge.
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: >-
+          Saving Throw wiki names her as the regular GM. Note Wikipedia's
+          filmography table instead lists her as a player on this show; the
+          show-specific wiki is taken as the better source.
   - show: pirates-of-salt-bay
     season: 2
     role: GM/DM
     alias: iyengar
     year: '2020'
-    source:
-      tier: community
-      url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-      needs_verification: true
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
   - show: pirates-of-salt-bay
     season: 3
     role: GM/DM
     alias: iyengar
     year: '2020'
-    source:
-      tier: community
-      url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-      needs_verification: true
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
   - show: pirates-of-salt-bay
     season: 4
     role: GM/DM
     alias: iyengar
     year: '2020'
-    source:
-      tier: community
-      url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-      needs_verification: true
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
 
   # --- Headline work ------------------------------------------------------
   - show: exandria-unlimited
@@ -133,9 +126,9 @@ credits:
     role: GM/DM
     alias: iyengar
     year: '2021'
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
 
   - show: dimension-20
     season: 2
@@ -143,18 +136,18 @@ credits:
     alias: iyengar
     year: '2021'
     note: Misfits and Magic.
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
   - show: dimension-20
     season: 3
     role: GM/DM
     alias: iyengar
     year: '2022'
     note: A Court of Fey & Flowers.
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
 
   - show: worlds-beyond-number
     season: 1
@@ -162,9 +155,12 @@ credits:
     character: Suvirin "Suvi" Kedberiket
     alias: iyengar
     year: '2023'
-    source:
-      tier: community
-      url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+    sources:
+      - tier: community
+        url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+        note: Independently documents the same campaign cast.
 
   - show: critical-role
     season: 3
@@ -176,7 +172,6 @@ credits:
     note: >-
       Recurring guest across several Campaign 3 episodes; episode locator here
       marks the first appearance and needs confirming.
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-      needs_verification: true
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar

@@ -17,6 +17,9 @@ credits:
     character: Ame
     alias: default
     year: '2023'
-    source:
-      tier: community
-      url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+    sources:
+      - tier: community
+        url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+        note: Independently documents the same campaign cast.

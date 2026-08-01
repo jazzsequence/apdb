@@ -17,25 +17,25 @@ credits:
     role: GM/DM
     alias: default
     year: '2015'
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Critical_Role
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Critical_Role
   - show: critical-role
     season: 2
     role: GM/DM
     alias: default
     year: '2018'
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Critical_Role
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Critical_Role
   - show: critical-role
     season: 3
     role: GM/DM
     alias: default
     year: '2021'
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Critical_Role
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Critical_Role
   # Cross-show: the usual GM sitting on the player side of someone else's table.
   - show: exandria-unlimited
     season: 1
@@ -43,7 +43,6 @@ credits:
     character: Dariax Zaveon
     alias: default
     year: '2021'
-    source:
-      tier: official
-      url: https://critrole.com
-      needs_verification: true
+    sources:
+      - tier: official
+        url: https://critrole.com

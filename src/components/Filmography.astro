@@ -31,7 +31,7 @@ function yearRange(group: FilmographyGroup): string {
         </span>
       </header>
 
-      {group.credits.map(({ credit, season, game, alias, creditedUnderFormerName, tier }) => (
+      {group.credits.map(({ credit, season, game, alias, creditedUnderFormerName, tier, corroboration }) => (
         <div class="credit">
           <div class="where">
             {season && (
@@ -55,35 +55,45 @@ function yearRange(group: FilmographyGroup): string {
                 {game.name} · {game.edition}
               </span>
             )}
-            <span>
-              credited as {alias.name}{' '}
-              {creditedUnderFormerName && <span class="tag tag--former">former name</span>}{' '}
-              {credit.inferred_fields?.alias && (
-                <span class="tag tag--inferred" title={credit.inferred_fields.alias}>
-                  name inferred
-                </span>
-              )}
-            </span>
+            {alias ? (
+              <span>
+                credited as {alias.name}{' '}
+                {creditedUnderFormerName && <span class="tag tag--former">former name</span>}
+              </span>
+            ) : (
+              <span class="unbilled" title="Nobody has established which name was on the billing for this credit.">
+                billed name not established
+              </span>
+            )}
             <span
               class={`tag tier tier--${tier.strength}`}
-              title={`${tier.description}${credit.source.attested_by ? ` Attested by ${credit.source.attested_by}.` : ''}`}
+              title={[
+                tier.description,
+                ...credit.sources
+                  .filter((s) => s.attested_by)
+                  .map((s) => `Attested by ${s.attested_by}.`),
+              ].join(' ')}
             >
               {tier.label}
             </span>
-            {credit.source.needs_verification && (
-              <span class="tag tag--flag">uncorroborated</span>
+            {corroboration.status === 'corroborated' ? (
+              <span
+                class="tag tag--corroborated"
+                title={`${corroboration.independent} independent sources agree.`}
+              >
+                corroborated ×{corroboration.independent}
+              </span>
+            ) : (
+              <span class="tag tag--flag" title="One source so far. A second independent account would corroborate it.">
+                single source
+              </span>
             )}
-            {Object.entries(credit.inferred_fields ?? {})
-              .filter(([field]) => field !== 'alias')
-              .map(([field, reasoning]) => (
-                <span class="tag tag--inferred" title={reasoning}>
-                  {field} inferred
-                </span>
-              ))}
-            {credit.source.url && (
-              <a href={credit.source.url} rel="nofollow noopener">
-                source
-              </a>
+            {credit.sources.map((source) =>
+              source.url ? (
+                <a href={source.url} rel="nofollow noopener">
+                  source
+                </a>
+              ) : null,
             )}
           </div>
 

@@ -94,24 +94,23 @@ export function tierRank(tier: (typeof SOURCE_TIERS)[number]): number {
 }
 
 /**
- * Provenance. Every credit carries one, backed by git history for the rest.
+ * One thing a claim rests on. Credits carry a list of these; git history covers
+ * the rest.
  *
- * `needs_verification` is the second, orthogonal axis: the tier says how
- * strong this kind of source is, the flag says whether anything independent
- * has confirmed it. A first-hand account can be entirely trustworthy and still
- * uncorroborated, and collapsing the two would file a contributor who was in
- * the room alongside a guess made from a date.
+ * There is no `needs_verification` flag. Corroboration is not a property of a
+ * source — it is what you get when two independent sources agree, so it is
+ * derived from the list rather than asserted by whoever happened to file first.
+ * See `corroboration()` in derive.ts.
  */
 export const Source = z
   .object({
     url: z.string().url().optional(),
     note: z.string().min(1).optional(),
     tier: SourceTier.default('reference'),
-    /** Who gave the account. Required for testimony and participant tiers. */
+    /** Who gave the account. Required for firsthand and participant tiers. */
     attested_by: z.string().min(1).optional(),
     /** Where in the recording, e.g. "01:14:20". Required for the recording tier. */
     locator: z.string().min(1).optional(),
-    needs_verification: z.boolean().default(false),
   })
   .strict()
   .refine((s) => s.url || s.note, {
@@ -238,16 +237,6 @@ export const CreditRole = z.enum([
   'writer',
 ]);
 
-/** Credit fields that can be filled in by reasoning rather than observation. */
-export const InferrableField = z.enum([
-  'role',
-  'character',
-  'alias',
-  'season',
-  'episode',
-  'year',
-]);
-
 /**
  * The polymorphic join, and the reason this project exists.
  *
@@ -266,36 +255,29 @@ export const Credit = z
     episode: z.string().min(1).optional(),
     role: CreditRole,
     character: z.string().min(1).optional(),
-    /** Foreign key -> Alias.id within this same person. The name credited at the time. */
-    alias: Slug,
+    /**
+     * Foreign key -> Alias.id within this same person: the name credited at the
+     * time.
+     *
+     * Optional on purpose. Knowing someone appeared and not knowing which name
+     * was on the title card is an extremely common state, and a required field
+     * here does not produce knowledge — it produces guesses. An earlier version
+     * made this mandatory, and the result was exactly that: attributions
+     * derived from dates and recorded as if they were observed. Leave it out
+     * when nobody saw the billing.
+     */
+    alias: Slug.optional(),
     year: PartialDate.optional(),
     note: z.string().optional(),
-    source: Source,
     /**
-     * Fields on this credit that were reasoned out rather than observed, each
-     * mapped to its reasoning.
-     *
-     * This exists because a credit is not one claim. "Aabria GMed Pirates of
-     * Salt Bay season 1" and "she was billed as Lipscomb at the time" have
-     * different provenance: the first came from a wiki someone read, the second
-     * was derived from the date. A single tier on the credit shows only the
-     * stronger of the two and quietly launders the weaker one.
+     * Everything this credit rests on. A claim gains strength as independent
+     * sources accumulate, so this is a list — two people who each watched the
+     * episode corroborate each other without any publisher being involved.
      */
-    inferred_fields: z.record(InferrableField, z.string().min(15)).optional(),
+    sources: z.array(Source).min(1, 'a credit needs at least one source'),
   })
   .strict()
   .superRefine((credit, ctx) => {
-    // Don't claim to have inferred a field that isn't there.
-    for (const field of Object.keys(credit.inferred_fields ?? {})) {
-      if (credit[field as keyof typeof credit] === undefined) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          path: ['inferred_fields', field],
-          message: `marks "${field}" as inferred, but this credit has no ${field} value`,
-        });
-      }
-    }
-
     if (credit.episode && credit.season === undefined) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,

@@ -17,15 +17,18 @@ credits:
     alias: default
     year: '2018'
     note: Fantasy High.
-    source:
-      tier: reference
-      url: https://en.wikipedia.org/wiki/Dimension_20
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Dimension_20
   - show: worlds-beyond-number
     season: 1
     role: player
     character: Eursulon Toma
     alias: default
     year: '2023'
-    source:
-      tier: community
-      url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+    sources:
+      - tier: community
+        url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+        note: Independently documents the same campaign cast.

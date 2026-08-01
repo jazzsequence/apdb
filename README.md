@@ -87,21 +87,28 @@ source was to the thing happening: `official` → `recording` → `participant` 
 and CI enforces the tiers that make claims about their own evidence:
 `recording` must carry a locator, `firsthand` must name who attested it.
 
-There is deliberately no `inferred` tier. Nobody files a credit without having
-observed something — streams are watched — so inference never explains how a
-credit came to exist. It only ever describes a *field* that was reasoned out
-afterwards, which is recorded per field in `inferred_fields` with its reasoning
-and rendered next to that value. A derived alias should not inherit the
-credibility of the citation sitting beside it.
+There is deliberately no `inferred` tier, and no inference status anywhere.
+Nobody files a credit without having observed something — streams are watched —
+so inference never explains how a credit came to exist. And if a value was
+derived from sources, those sources *are* the account, so cite them; if it was
+derived from nothing, it isn't knowledge and shouldn't be a value. Fields nobody
+established are simply omitted: `alias` is optional, and such credits render as
+"billed name not established" rather than carrying a guess.
 
 Note that `firsthand` — someone who watched the episode — outranks published
 reference works. It is closer to the fact. Wikipedia's filmography table lists
 Aabria Iyengar as a player on Pirates of Salt Bay when she ran it; anyone who
 watched would have got that right.
 
-`needs_verification` is a second, orthogonal axis: whether anything independent
-has confirmed this particular claim. The two come apart constantly — a firsthand
-account can be entirely trustworthy and still uncorroborated.
+**Corroboration is derived, never asserted.** Each credit carries a *list* of
+sources and its status falls out of them: `corroborated` when two or more
+independent sources agree, `single-source` otherwise. Independence is checked by
+who attested a source or which page it cites, so one person filing twice does
+not count.
+
+That list is what makes community verification work. A second listener who
+watched the same stream and files their own account moves a credit from
+single-source to corroborated — with no publisher involved anywhere.
 
 The sourcing model is adapted from Wikipedia's, with one deliberate divergence:
 **unpublished first-hand accounts are admissible here.** Wikipedia's No Original

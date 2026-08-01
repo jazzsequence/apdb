@@ -69,7 +69,7 @@ tracks them separately — see below.
 **A tier is a statement about proximity, never about truth.** Tiers render as
 neutral labels rather than a warning scale.
 
-### Inference is not a source
+### Inference is not a status either
 
 There is deliberately no `inferred` tier. An earlier version of this policy had
 one, and it was a category error.
@@ -80,36 +80,31 @@ somewhere — otherwise there would be nothing to file. So inference never
 explains how a credit came to *exist*, and a tier is exactly a claim about how
 the credit came to exist.
 
-What inference actually describes is a **field**. A credit is not one claim:
+A briefly-lived second version recorded inference per *field*, on the theory
+that a credit makes several claims with different provenance. That was also
+wrong, for a simpler reason: **if you inferred something from something, you got
+it from a source, and that source is the account.**
 
-> *Aabria GMed Pirates of Salt Bay season 1* — from a wiki someone read.
-> *She was billed as Lipscomb at the time* — derived from the date.
+Only two cases exist:
 
-Those have different provenance. One tier on the credit shows only the stronger
-of the two and quietly launders the weaker one under it.
+1. **The value follows from sources.** Then cite the sources. It isn't inferred,
+   it's sourced, and a special status only obscures that.
+2. **The value doesn't follow.** Then it isn't knowledge, and it should not be a
+   value at all.
 
-So derived values are recorded per field, in `inferred_fields`, each with its
-reasoning:
+The project's own data was case 2. An earlier revision recorded Aabria Iyengar's
+2019 Saving Throw credits under the Lipscomb name, reasoned from the date. But
+"born Lipscomb" plus "the show ran in 2019" does not entail "the title card said
+Lipscomb" — no source establishes when her on-screen credit changed, and the
+wiki documenting the show calls her Iyengar. That was a guess.
 
-```yaml
-- show: pirates-of-salt-bay
-  season: 1
-  role: GM/DM
-  alias: lipscomb
-  inferred_fields:
-    alias: >-
-      Derived from the 2019 date against the Lipscomb alias's active_to of
-      2020 — not from a seen title card.
-  source:
-    tier: community
-    url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-```
+It happened because `alias` used to be a **required** field. A mandatory field
+does not produce knowledge when knowledge is absent; it produces invention. So
+`alias` is now optional, and those attributions are gone. Credits where nobody
+established the billing render as *billed name not established*, which is the
+true state.
 
-The source stays `community` — a real person read a real wiki. The alias carries
-its own mark, and renders next to the name rather than at the credit level, so a
-reasoned-out name cannot inherit the credibility of the citation beside it.
-
-CI rejects marking a field inferred that the credit does not actually have.
+If a field is unknown, leave it out. That is what the gap is for.
 
 ### What CI enforces
 
@@ -119,26 +114,40 @@ Tiers that make claims about their own evidence have to back them:
 - `recording` must carry a `locator` or `url`. `recording` and `firsthand` are
   the same observation — the locator is the only difference. Without one, use
   `firsthand`: it claims exactly as much proximity, just no citation.
-- any entry in `inferred_fields` must name a field the credit actually has, and
-  must show its reasoning. Inference is reasoning, not evidence, so it has to
-  show its working.
+- every credit must carry at least one source.
 
 ## The second axis: corroboration
 
-`needs_verification` is orthogonal to tier. Tier says how *close* the source was
-to the fact; the flag says whether anything independent has confirmed this
-particular claim. Proximity and citability are different properties, and the
-whole point of separating them is that a source can be excellent on one and poor
-on the other — someone who watched the stream being the obvious case.
+Tier says how *close* a source was to the fact. Corroboration says how many
+independent sources agree. Proximity and confirmation are different properties —
+a source can be excellent on one and alone on the other, someone who watched the
+stream being the obvious case.
 
-The two genuinely come apart. A first-hand account can be completely trustworthy
-and still uncorroborated. A reference-work citation can be corroborated and
-still wrong — Wikipedia and the Saving Throw wiki disagree about whether Aabria
-played or GMed Pirates of Salt Bay, and that disagreement is recorded rather
-than silently resolved.
+**Corroboration is derived, never asserted.** Every credit carries a *list* of
+sources, and the status falls out of it:
 
-Collapsing the two axes would file a contributor who was in the room alongside a
-guess made from a date. They are not the same thing.
+- `corroborated` — two or more independent sources agree
+- `single-source` — one so far
+
+Independence is checked, not assumed: sources are keyed by who attested them, or
+by the page they cite. The same person filing twice, or two citations of one
+wiki page, is one source wearing two hats.
+
+This is the mechanism that lets the community actually verify things. A second
+listener who watched the same stream and files their own firsthand account moves
+a credit from single-source to corroborated — **with no publisher involved
+anywhere**. That is the point of admitting testimony at all: not merely to store
+otherwise-unrecordable claims, but to let them accumulate confirmation on their
+own terms.
+
+An earlier version had a hand-set `needs_verification` flag instead. That was
+backwards: it made corroboration a property of a source, asserted by whoever
+filed first, when corroboration is by definition something that happens *between*
+sources.
+
+Note that agreement is not correctness. Wikipedia and the Saving Throw wiki
+disagree about whether Aabria played or GMed Pirates of Salt Bay; that
+disagreement is recorded in the source notes rather than silently resolved.
 
 ## Practical rules
 
@@ -147,9 +156,10 @@ guess made from a date. They are not the same thing.
 2. **Record failed searches.** If you looked for corroboration and found none,
    say where you looked in `note`. It stops the next contributor repeating the
    work, and it distinguishes "nobody has checked" from "checked, nothing there".
-3. **Attribute names as they were credited.** Where a source establishes an
-   appearance but not which name was on screen, say so — don't let an inference
-   inherit the strength of the citation it sits next to.
+3. **Attribute names as they were credited, or not at all.** Where a source
+   establishes an appearance but not which name was on screen, leave `alias`
+   out. Note that reference works and wikis apply current names retroactively,
+   so their naming is evidence of the source's convention, not of the billing.
 4. **Conflicts get recorded, not resolved by fiat.** Where sources disagree,
    take the better-sourced value and write the disagreement into the note.
 5. **Don't speculate about anyone's personal life.** Names are recorded as they

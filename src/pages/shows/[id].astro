@@ -89,10 +89,11 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
           {bySeason.get(key)!.map(({ person, credit, alias }) => (
             <div class="credit">
               <div class="where">
-                <a href={`${base}people/${person.id}/`}>{alias.name}</a>
-                {alias.name !== person.canonical_name && (
+                <a href={`${base}people/${person.id}/`}>{alias?.name ?? person.canonical_name}</a>
+                {alias && alias.name !== person.canonical_name && (
                   <span class="episode">now {person.canonical_name}</span>
                 )}
+                {!alias && <span class="unbilled">billed name not established</span>}
               </div>
               <div class="what">
                 <span class="role">{credit.role}</span>
