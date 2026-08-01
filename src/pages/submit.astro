@@ -1,0 +1,250 @@
+---
+import Base from '../layouts/Base.astro';
+import { getDb } from '../lib/db';
+
+const db = await getDb();
+const base = import.meta.env.BASE_URL;
+
+// Set this to the repo once it has a home; the form deep-links into it.
+const REPO = 'your-org/actual-play-db';
+
+const shows = db.shows.map((show) => ({
+  id: show.id,
+  title: show.title,
+  seasons: show.seasons.map((s) => ({ ordinal: s.ordinal, title: s.title ?? `Season ${s.ordinal}` })),
+}));
+
+const people = db.people.map((p) => ({ id: p.id, name: p.canonical_name }));
+
+const ROLES = [
+  'player',
+  'guest player',
+  'GM/DM',
+  'guest GM',
+  'host',
+  'producer',
+  'editor',
+  'composer',
+  'writer',
+];
+
+const TIERS = [
+  ['firsthand', 'I watched or listened to it myself'],
+  ['recording', 'The episode itself, and I can give a timestamp'],
+  ['official', "The production's own cast list or credits"],
+  ['participant', 'Someone who was at the table said so'],
+  ['reference', 'Wikipedia, Wikidata or a published database'],
+  ['community', 'A fan wiki, forum thread or social post'],
+];
+---
+
+<Base
+  title="Submit a credit — Actual Play Database"
+  description="Add a missing actual play credit. Fills in the YAML for you and opens a pre-filled pull request."
+>
+  <h1>Submit a credit</h1>
+  <p class="lede">
+    The most valuable thing you can add is an obscure one — a guest spot on a
+    small show, or an appearance under a name someone no longer uses. Fill this
+    in and it will write the data file for you.
+  </p>
+  <p class="lede">
+    You don't need to know YAML. You do need a GitHub account for the last step.
+  </p>
+
+  <div class="facets" style="flex-direction: column; align-items: stretch;">
+    <label>
+      Who
+      <input id="person" list="people-list" placeholder="Aabria Iyengar" autocomplete="off" />
+      <datalist id="people-list">
+        {people.map((p) => <option value={p.name}></option>)}
+      </datalist>
+    </label>
+
+    <label>
+      Show
+      <select id="show">
+        <option value="">— pick a show —</option>
+        {shows.map((s) => <option value={s.id}>{s.title}</option>)}
+      </select>
+    </label>
+
+    <label>
+      Season
+      <select id="season"><option value="">— pick a show first —</option></select>
+    </label>
+
+    <label>
+      Episode <span style="font-weight:400;text-transform:none">— only for a one-off guest spot</span>
+      <input id="episode" placeholder="S1E4: The Seekers" autocomplete="off" />
+    </label>
+
+    <label>
+      Role
+      <select id="role">{ROLES.map((r) => <option value={r}>{r}</option>)}</select>
+    </label>
+
+    <label>
+      Character <span style="font-weight:400;text-transform:none">— if they played one</span>
+      <input id="character" placeholder="Renee Billings" autocomplete="off" />
+    </label>
+
+    <label>
+      Credited as <span style="font-weight:400;text-transform:none">— only if you saw a different name on screen</span>
+      <input id="billed" placeholder="Aabria Lipscomb" autocomplete="off" />
+    </label>
+
+    <label>
+      How do you know?
+      <select id="tier">
+        {TIERS.map(([value, label]) => <option value={value}>{label}</option>)}
+      </select>
+    </label>
+
+    <label>
+      Link <span style="font-weight:400;text-transform:none">— if you have one</span>
+      <input id="url" placeholder="https://…" autocomplete="off" />
+    </label>
+
+    <label>
+      Anything else worth recording
+      <textarea id="note" rows="2" placeholder="Joined mid-season, left before the end."></textarea>
+    </label>
+  </div>
+
+  <h2>The data file</h2>
+  <p class="billing">Generated as you type. This is exactly what gets committed.</p>
+  <pre id="preview" class="yaml-preview"></pre>
+
+  <p>
+    <a id="pr-link" class="button" href="#" target="_blank" rel="noopener">
+      Open a pre-filled issue on GitHub →
+    </a>
+  </p>
+  <p class="billing">
+    A maintainer will turn it into a pull request. If you'd rather do that
+    yourself, copy the YAML above into the person's file under
+    <code>data/people/</code> and run <code>npm run validate</code>.
+  </p>
+</Base>
+
+<style>
+  .yaml-preview {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.9rem 1rem;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    white-space: pre;
+  }
+  .facets textarea {
+    font: inherit;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.4rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--ink);
+    resize: vertical;
+  }
+  .button {
+    display: inline-block;
+    padding: 0.55rem 1rem;
+    border-radius: var(--radius);
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .button[aria-disabled='true'] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+</style>
+
+<script define:vars={{ shows, REPO }}>
+  const $ = (id) => document.getElementById(id);
+  const fields = ['person', 'show', 'season', 'episode', 'role', 'character', 'billed', 'tier', 'url', 'note'];
+
+  // Season options depend on the chosen show.
+  $('show').addEventListener('change', () => {
+    const show = shows.find((s) => s.id === $('show').value);
+    $('season').innerHTML = show
+      ? '<option value="">— whole show —</option>' +
+        show.seasons.map((s) => `<option value="${s.ordinal}">${s.ordinal}. ${s.title}</option>`).join('')
+      : '<option value="">— pick a show first —</option>';
+    render();
+  });
+
+  const quote = (s) => (/[:#'"\[\]{}|>]/.test(s) ? JSON.stringify(s) : s);
+
+  function buildYaml() {
+    const v = Object.fromEntries(fields.map((f) => [f, ($(f)?.value ?? '').trim()]));
+    if (!v.person || !v.show) return null;
+
+    const lines = [`  - show: ${v.show}`];
+    if (v.season) lines.push(`    season: ${v.season}`);
+    if (v.episode) lines.push(`    episode: ${quote(v.episode)}`);
+    lines.push(`    role: ${quote(v.role)}`);
+    if (v.character) lines.push(`    character: ${quote(v.character)}`);
+    if (v.note) lines.push(`    note: ${quote(v.note)}`);
+
+    lines.push('    sources:');
+    lines.push(`      - tier: ${v.tier}`);
+    if (v.tier === 'firsthand' || v.tier === 'participant') {
+      lines.push('        attested_by: YOUR NAME OR HANDLE');
+    }
+    if (v.url) lines.push(`        url: ${v.url}`);
+    if (!v.url) lines.push(`        note: ${quote(v.note || 'Reported by a contributor.')}`);
+
+    let yaml = `# Add to data/people/<slug>.yml for ${v.person}, under credits:\n` + lines.join('\n');
+    if (v.billed) {
+      yaml +=
+        `\n\n# ${v.person} was billed as "${v.billed}" here. Add this to their aliases:\n` +
+        `#   - id: <short-slug>\n#     name: ${v.billed}\n#     alias_type: birth | maiden | stage | handle | legal\n` +
+        `# then set  alias: <short-slug>  on the credit above.`;
+    }
+    return { yaml, v };
+  }
+
+  function render() {
+    const built = buildYaml();
+    const link = $('pr-link');
+    if (!built) {
+      $('preview').textContent = 'Fill in at least a person and a show.';
+      link.setAttribute('aria-disabled', 'true');
+      return;
+    }
+    $('preview').textContent = built.yaml;
+    link.removeAttribute('aria-disabled');
+
+    const { v, yaml } = built;
+    const title = `[credit] ${v.person} — ${shows.find((s) => s.id === v.show)?.title ?? v.show}`;
+    const body = [
+      `**Person:** ${v.person}`,
+      `**Show:** ${v.show}${v.season ? ` (season ${v.season})` : ''}`,
+      v.episode ? `**Episode:** ${v.episode}` : '',
+      `**Role:** ${v.role}`,
+      v.character ? `**Character:** ${v.character}` : '',
+      v.billed ? `**Credited on screen as:** ${v.billed}` : '',
+      `**Source:** ${v.tier}${v.url ? ` — ${v.url}` : ''}`,
+      v.note ? `**Note:** ${v.note}` : '',
+      '',
+      '```yaml',
+      yaml,
+      '```',
+    ]
+      .filter(Boolean)
+      .join('\n');
+
+    link.href =
+      `https://github.com/${REPO}/issues/new` +
+      `?labels=credit&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  }
+
+  for (const f of fields) $(f)?.addEventListener('input', render);
+  for (const f of fields) $(f)?.addEventListener('change', render);
+  render();
+</script>

@@ -186,10 +186,13 @@ deliberately clears them in `src/lib/sources/registry.ts`.
 
 ## Contributing
 
-You do not need git. Open an issue with the
-[add a credit](.github/ISSUE_TEMPLATE/add-credit.yml) or
-[name change](.github/ISSUE_TEMPLATE/name-change.yml) form and a maintainer will
-transcribe it.
+You do not need git, or YAML. The site has a **/submit** page: pick the person,
+show and season from what's already indexed, say how you know, and it writes the
+data file for you and deep-links a pre-filled GitHub issue. If you saw a
+different name on screen, it also writes the alias stanza.
+
+Failing that, the [add a credit](.github/ISSUE_TEMPLATE/add-credit.yml) and
+[name change](.github/ISSUE_TEMPLATE/name-change.yml) issue forms work too.
 
 If you do use git, edit the YAML directly, run `npm run validate`, and open a PR.
 See [CONTRIBUTING.md](CONTRIBUTING.md).
