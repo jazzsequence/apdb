@@ -1,54 +1,30 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/City_Council_of_Darkness (CC-BY-SA).
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
 # not evidence of that.
-id: lou-wilson
-canonical_name: Lou Wilson
-sort_name: Wilson, Lou
-pronouns: he/him
-bio: Actor and comedian, co-founder of Worlds Beyond Number and a recurring
-  Dimension 20 player.
+id: emily-axford
+canonical_name: Emily Axford
+sort_name: Axford, Emily
 links: {}
 aliases:
   - id: default
-    name: Lou Wilson
+    name: Emily Axford
     alias_type: legal
 credits:
   - show: dimension-20
     season: 1
     role: player
-    character: Fabian Aramais Seacaster
-    alias: default
-    year: "2018"
+    character: Fig Faeth
     sources:
-      - url: https://en.wikipedia.org/wiki/Dimension_20
-        tier: reference
-  - show: worlds-beyond-number
-    season: 1
-    role: player
-    character: Eursulon Toma
-    alias: default
-    year: "2023"
-    sources:
-      - url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
-        tier: community
-      - url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
-        note: Independently documents the same campaign cast.
-        tier: reference
-  - show: dimension-20
-    season: 2
-    role: player
-    character: Whitney Jammer
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
-        note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+      - url: https://dimension20.fandom.com/wiki/Fantasy_High
+        note: Fantasy High cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: dimension-20
     season: 3
     role: player
-    character: Lord Squak Airavis
+    character: Lady Chirp Featherfowl
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
@@ -57,7 +33,7 @@ credits:
   - show: dimension-20
     season: 5
     role: player
-    character: Kingston Brown
+    character: Sofia Bicicleta
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City
         note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
@@ -66,7 +42,7 @@ credits:
   - show: dimension-20
     season: 7
     role: player
-    character: King Amethar of House Rocks
+    character: Queen Saccharina of House Frostwhip
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Crown_of_Candy
         note: A Crown of Candy cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -74,7 +50,7 @@ credits:
   - show: dimension-20
     season: 9
     role: player
-    character: Kingston Brown
+    character: Sofia Lee
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City%3A_Chapter_II
         note: "The Unsleeping City: Chapter II cast, via the dimension20.fandom.com
@@ -83,7 +59,7 @@ credits:
   - show: dimension-20
     season: 10
     role: player
-    character: Fabian Seacaster
+    character: Fig Faeth
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Sophomore_Year
         note: "Fantasy High: Sophomore Year cast, via the dimension20.fandom.com
@@ -92,7 +68,7 @@ credits:
   - show: dimension-20
     season: 14
     role: player
-    character: Gunthrie Miggles-Rashbax
+    character: Sundry Sidney
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Starstruck_Odyssey
         note: A Starstruck Odyssey cast, via the dimension20.fandom.com infobox.
@@ -101,7 +77,7 @@ credits:
   - show: dimension-20
     season: 16
     role: player
-    character: Lord Squak Airavis
+    character: Lady Chirp Featherfowl
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
@@ -110,23 +86,15 @@ credits:
   - show: dimension-20
     season: 17
     role: player
-    character: Pinocchio
+    character: Ylfa Snorgelsson
     sources:
       - url: https://dimension20.fandom.com/wiki/Neverafter
         note: Neverafter cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: dimension-20
-    season: 18
-    role: player
-    character: Thane Delissandro Katzon
-    sources:
-      - url: https://dimension20.fandom.com/wiki/The_Ravening_War
-        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: dimension-20
     season: 22
     role: player
-    character: Fabian Seacaster
+    character: Fig Faeth
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year
         note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
@@ -140,18 +108,9 @@ credits:
         note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: dimension-20
-    season: 26
-    role: player
-    character: Whitney Jammer
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
-        note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: dimension-20
     season: 28
     role: player
-    character: Montgomery  LaMontgommery
+    character: Marya Junková
     sources:
       - url: https://dimension20.fandom.com/wiki/Cloudward%2C_Ho!
         note: Cloudward, Ho! cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -159,9 +118,19 @@ credits:
   - show: dimension-20
     season: 31
     role: player
-    character: LaVonte Worthy
+    character: Vesper Childers
     sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
+      - url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Prism Grimpoppy
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

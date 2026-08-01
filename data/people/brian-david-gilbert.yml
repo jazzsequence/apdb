@@ -1,0 +1,23 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Fantasy_High (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: brian-david-gilbert
+canonical_name: Brian David Gilbert
+sort_name: Gilbert, Brian David
+aliases:
+  - id: default
+    name: Brian David Gilbert
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 1
+    role: guest player
+    character: Hargis
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Fantasy_High
+        note: Fantasy High cast, via the dimension20.fandom.com infobox. CC-BY-SA.

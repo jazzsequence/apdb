@@ -1,0 +1,24 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: christian-navarro
+canonical_name: Christian Navarro
+sort_name: Navarro, Christian
+aliases:
+  - id: default
+    name: Christian Navarro
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: F.R.I.D.A.
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

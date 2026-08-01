@@ -1,0 +1,22 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Titan_Takedown (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: bayley
+canonical_name: Bayley
+sort_name: Bayley
+aliases:
+  - id: default
+    name: Bayley
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 27
+    role: player
+    character: Thea Kitterloo
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Titan_Takedown
+        note: Titan Takedown cast, via the dimension20.fandom.com infobox. CC-BY-SA.

@@ -1,0 +1,48 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Never_Stop_Blowing_Up (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: isabella-roland
+canonical_name: Isabella Roland
+sort_name: Roland, Isabella
+links: {}
+aliases:
+  - id: default
+    name: Isabella Roland
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 12
+    role: player
+    character: Ostentatia Wallace
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Seven
+        note: The Seven cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 15
+    role: player
+    character: Dr. Aleksandr Astrovsky
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Coffin_Run
+        note: Coffin Run cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 21
+    role: player
+    character: Lila
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Burrow's_End
+        note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 23
+    role: player
+    character: Paula Donvalson / Jack Manhattan
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Never_Stop_Blowing_Up
+        note: Never Stop Blowing Up cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.

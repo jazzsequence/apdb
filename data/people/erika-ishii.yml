@@ -1,9 +1,14 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: erika-ishii
 canonical_name: Erika Ishii
 sort_name: Ishii, Erika
 pronouns: they/them
-bio: >-
-  Actor and voice performer, co-founder of Worlds Beyond Number.
+bio: Actor and voice performer, co-founder of Worlds Beyond Number.
 links:
   wikipedia: https://en.wikipedia.org/wiki/Erika_Ishii
 aliases:
@@ -16,10 +21,60 @@ credits:
     role: player
     character: Ame
     alias: default
-    year: '2023'
+    year: "2023"
+    sources:
+      - url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+        tier: community
+      - url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+        tier: reference
+  - show: dimension-20
+    season: 2
+    role: player
+    character: Dream
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
+        note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 12
+    role: player
+    character: Danielle Barkstock
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Seven
+        note: The Seven cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 15
+    role: player
+    character: May Wong
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Coffin_Run
+        note: Coffin Run cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 21
+    role: player
+    character: Ava
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Burrow's_End
+        note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 26
+    role: player
+    character: Dream
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
+        note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Dusk
+    note: Listed as a guest player for this season; specific episodes not identified.
     sources:
       - tier: community
-        url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
-        note: Independently documents the same campaign cast.
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

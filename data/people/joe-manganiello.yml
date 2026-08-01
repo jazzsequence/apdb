@@ -1,0 +1,24 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_1 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: joe-manganiello
+canonical_name: Joe Manganiello
+sort_name: Manganiello, Joe
+aliases:
+  - id: default
+    name: Joe Manganiello
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 1
+    role: guest player
+    character: Arkhan
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_1
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."

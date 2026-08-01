@@ -1,0 +1,22 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Tiny_Heist (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: jessica-ross
+canonical_name: Jessica Ross
+sort_name: Ross, Jessica
+aliases:
+  - id: default
+    name: Jessica Ross
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 6
+    role: player
+    character: Agnes
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Tiny_Heist
+        note: Tiny Heist cast, via the dimension20.fandom.com infobox. CC-BY-SA.

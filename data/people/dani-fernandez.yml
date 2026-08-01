@@ -1,0 +1,22 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/Shriek_Week (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: dani-fernandez
+canonical_name: Dani Fernandez
+sort_name: Fernandez, Dani
+aliases:
+  - id: default
+    name: Dani Fernandez
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 13
+    role: player
+    character: Seven (Shriek Week)
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Shriek_Week
+        note: Shriek Week cast, via the dimension20.fandom.com infobox. CC-BY-SA.

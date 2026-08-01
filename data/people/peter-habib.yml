@@ -1,0 +1,23 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: peter-habib
+canonical_name: Peter Habib
+sort_name: Habib, Peter
+aliases:
+  - id: default
+    name: Peter Habib
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 3
+    role: composer
+    character: Colm McGuinness
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

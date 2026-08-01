@@ -1,0 +1,42 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: travis-willingham
+canonical_name: Travis Willingham
+sort_name: Willingham, Travis
+links: {}
+aliases:
+  - id: default
+    name: Travis Willingham
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 1
+    role: player
+    character: Grog Strongjaw
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_1
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 2
+    role: composer
+    character: Colm McGuinness
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 3
+    role: player
+    character: Bertrand Bell
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

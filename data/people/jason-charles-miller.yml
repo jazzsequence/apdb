@@ -1,0 +1,33 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_2 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: jason-charles-miller
+canonical_name: Jason Charles Miller
+sort_name: Miller, Jason Charles
+links: {}
+aliases:
+  - id: default
+    name: Jason Charles Miller
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 1
+    role: guest player
+    character: Garthok
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_1
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 2
+    role: composer
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_2
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

@@ -4,9 +4,9 @@ channels:
   - dropout
 format: video
 status: ongoing
-description: >-
-  Dropout's anthology actual-play series. Seasons rotate cast, setting and
-  system; ordinals here are this database's own ordering, not Dropout's.
+description: Dropout's anthology actual-play series. Seasons rotate cast,
+  setting and system; ordinals here are this database's own ordering, not
+  Dropout's.
 links:
   website: https://www.dropout.tv/dimension-20
   wikipedia: https://en.wikipedia.org/wiki/Dimension_20
@@ -14,13 +14,126 @@ seasons:
   - ordinal: 1
     title: Fantasy High
     game: dnd-5e
-    started: '2018'
-    ended: '2019'
+    started: "2018"
+    ended: "2019"
   - ordinal: 2
     title: Misfits and Magic
     game: kids-on-brooms
-    started: '2021'
+    started: "2021"
   - ordinal: 3
     title: A Court of Fey & Flowers
     game: good-society
-    started: '2022'
+    started: "2022"
+  - ordinal: 4
+    title: Escape From the Bloodkeep
+    game: dnd-5e
+    description: "Aired: 30 Apr 2019 - 4 Jun 2019"
+  - ordinal: 5
+    title: The Unsleeping City
+    game: dnd-5e
+    description: "Aired: 9 July 2019 - 29 Oct 2019"
+  - ordinal: 6
+    title: Tiny Heist
+    game: dnd-5e
+    description: "Aired: 9 Jan 2020 - 13 Feb 2020"
+  - ordinal: 7
+    title: A Crown of Candy
+    game: dnd-5e
+    description: "Aired: 8 Apr 2020 - 5 Aug 2020"
+  - ordinal: 8
+    title: Pirates of Leviathan
+    game: dnd-5e
+    description: "Aired: 16 Sept 2020 - 21 Oct 2020"
+  - ordinal: 9
+    title: "The Unsleeping City: Chapter II"
+    game: dnd-5e
+    description: "Aired: 11 Nov 2020 - 10 Mar 2021"
+  - ordinal: 10
+    title: "Fantasy High: Sophomore Year"
+    game: dnd-5e
+    description: "Aired: 16 Oct 2019 - 3 Apr 2020"
+  - ordinal: 11
+    title: Mice & Murder
+    game: dnd-5e
+    description: "Aired: 7 April 2021 - 9 June 2021"
+  - ordinal: 12
+    title: The Seven
+    game: dnd-5e
+    description: "Aired: 18 Aug 2021 - 20 Oct 2021"
+  - ordinal: 13
+    title: Shriek Week
+    game: the-mythic-system
+    description: "Aired: 10 Nov 2021 - 1 Dec 2021"
+  - ordinal: 14
+    title: A Starstruck Odyssey
+    game: star-wars-5th-edition
+    description: "Aired: 12 Jan 2022 - 11 May 2022"
+  - ordinal: 15
+    title: Coffin Run
+    game: dnd-5e
+    description: "Aired: 8 June 2022 - 13 July 2022"
+  - ordinal: 16
+    title: A Court of Fey and Flowers
+    game: good-society
+    description: "Aired: 3 Aug 2022 - 5 Oct 2022"
+  - ordinal: 17
+    title: Neverafter
+    game: dnd-5e
+    description: "Aired: 30 Nov 2022 - 12 Apr 2023"
+  - ordinal: 18
+    title: The Ravening War
+    game: dnd-5e
+    description: "Aired: 10 May 2023 - 14 June 2023"
+  - ordinal: 19
+    title: Dungeons and Drag Queens
+    game: dnd-5e
+    description: "Aired: 28 June 2023 - 19 July 2023"
+  - ordinal: 20
+    title: Mentopolis
+    game: kids-on-bikes
+    description: "Aired: 9 Aug 2023 - 13 Sep 2023"
+  - ordinal: 21
+    title: Burrow's End
+    game: dnd-5e
+    description: "Aired: 4 Oct 2023 - 8 Dec 2023 (Dropout)"
+  - ordinal: 22
+    title: "Fantasy High: Junior Year"
+    game: dnd-5e
+    description: "Aired: Jan 10, 2024 - May 22, 2024"
+  - ordinal: 23
+    title: Never Stop Blowing Up
+    game: kids-on-bikes
+    description: "Aired: June 26, 2024 - August 28, 2024"
+  - ordinal: 24
+    title: Dungeons and Drag Queens Season 2
+    game: dnd-5e
+    description: "Aired: January 8, 2025 - February 12, 2025"
+  - ordinal: 25
+    title: Time Quangle
+    game: dnd-5e
+    description: "Aired: April 17 - 24, 2024 (live taping) Sep 12, 2024 - Dec 26,
+      2024 (Dropout)"
+  - ordinal: 26
+    title: Misfits and Magic Season 2
+    game: kids-on-bikes
+    description: "Aired: 25 September, 2024 - 5 November, 2024"
+  - ordinal: 27
+    title: Titan Takedown
+    game: dnd-5e
+    description: "Aired: 2 Apr 2025 - 23 Apr 2025"
+  - ordinal: 28
+    title: Cloudward, Ho!
+    game: dnd-5e
+    description: "Aired: June 4, 2025 - October 22, 2025"
+  - ordinal: 29
+    title: On A Bus
+    game: the-six-system
+    description: "Aired: S1: 14 Jul 2025 S2: 1 Apr 2026"
+  - ordinal: 30
+    title: Gladlands
+    game: homebrewed-system
+    description: "Aired: Jan 7, 2026 - Feb 11, 2026"
+  - ordinal: 31
+    title: City Council of Darkness
+    game: vampire-the-masquerade-v5
+    description: "Aired: 8 Apr 2026 - 15 Jul 2026"

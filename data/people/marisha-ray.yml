@@ -1,0 +1,51 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: marisha-ray
+canonical_name: Marisha Ray
+sort_name: Ray, Marisha
+links: {}
+aliases:
+  - id: default
+    name: Marisha Ray
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 8
+    role: player
+    character: Sunny Biscotto
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan
+        note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 1
+    role: player
+    character: Keyleth
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_1
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 2
+    role: player
+    character: Beauregard Lionett
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2
+        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 3
+    role: player
+    character: Laudna / Beauregard Lionett / Keyleth
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

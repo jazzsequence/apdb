@@ -1,10 +1,15 @@
+# Credits imported from dimension20.fandom.com on 2026-08-01.
+# Source: https://dimension20.fandom.com/wiki/The_Ravening_War (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: matthew-mercer
 canonical_name: Matthew Mercer
 sort_name: Mercer, Matthew
 pronouns: he/him
-bio: >-
-  Voice actor and game master. Dungeon master of Critical Role since its first
-  campaign.
+bio: Voice actor and game master. Dungeon master of Critical Role since its
+  first campaign.
 links:
   wikipedia: https://en.wikipedia.org/wiki/Matthew_Mercer
 aliases:
@@ -16,33 +21,48 @@ credits:
     season: 1
     role: GM/DM
     alias: default
-    year: '2015'
+    year: "2015"
     sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/Critical_Role
+      - url: https://en.wikipedia.org/wiki/Critical_Role
+        tier: reference
   - show: critical-role
     season: 2
     role: GM/DM
     alias: default
-    year: '2018'
+    year: "2018"
     sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/Critical_Role
+      - url: https://en.wikipedia.org/wiki/Critical_Role
+        tier: reference
   - show: critical-role
     season: 3
     role: GM/DM
     alias: default
-    year: '2021'
+    year: "2021"
     sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/Critical_Role
-  # Cross-show: the usual GM sitting on the player side of someone else's table.
+      - url: https://en.wikipedia.org/wiki/Critical_Role
+        tier: reference
   - show: exandria-unlimited
     season: 1
     role: player
     character: Dariax Zaveon
     alias: default
-    year: '2021'
+    year: "2021"
     sources:
-      - tier: official
-        url: https://critrole.com
+      - url: https://critrole.com
+        tier: official
+  - show: dimension-20
+    season: 8
+    role: player
+    character: Jack Brakkow
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan
+        note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 18
+    role: GM/DM
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/The_Ravening_War
+        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.

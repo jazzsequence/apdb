@@ -1,0 +1,33 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: anjali-bhimani
+canonical_name: Anjali Bhimani
+sort_name: Bhimani, Anjali
+links: {}
+aliases:
+  - id: default
+    name: Anjali Bhimani
+    alias_type: legal
+credits:
+  - show: dimension-20
+    season: 18
+    role: player
+    character: Queen Amangeaux Epicée du Peche
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Ravening_War
+        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 3
+    role: guest player
+    character: Fy'ra Rai
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

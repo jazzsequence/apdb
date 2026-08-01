@@ -18,7 +18,7 @@
  * Curated data always wins over imported data.
  */
 import { mkdir, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
 import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
@@ -177,6 +177,59 @@ async function discoverShows(existingShows: Show[], apply: boolean): Promise<voi
   if (has('dry-run')) {
     for (const page of selected) console.log(`  ${page}`);
     console.log('\nRe-run without --dry-run to stage these as shows.\n');
+    return;
+  }
+
+  // A wiki's "campaigns" are usually seasons of one show, not separate shows —
+  // Dimension 20's 30 campaigns are one series. --seasons-of appends them to an
+  // existing show rather than exploding the catalogue.
+  const seasonsOf = flag('seasons-of');
+  if (seasonsOf) {
+    const show = existingShows.find((s) => s.id === seasonsOf);
+    if (!show) {
+      console.error(`No show "${seasonsOf}" in data/shows/.`);
+      process.exit(1);
+    }
+
+    const haveTitles = new Set(
+      show.seasons.map((s) => (s.title ?? '').toLowerCase()).filter(Boolean),
+    );
+    let ordinal = Math.max(0, ...show.seasons.map((s) => s.ordinal));
+    const seasons = [...show.seasons];
+    let added = 0;
+
+    for (const page of selected) {
+      let campaign;
+      try {
+        campaign = await fetchCampaign(host, page);
+      } catch (error) {
+        console.error(`  ✗ ${page}: ${(error as Error).message}`);
+        continue;
+      }
+      const title = campaign.title ?? page;
+      if (haveTitles.has(title.toLowerCase())) {
+        console.log(`  – ${title} (already a season)`);
+        continue;
+      }
+      seasons.push({
+        ordinal: ++ordinal,
+        title,
+        game: 'UNKNOWN-set-a-game-id' as any,
+        ...(campaign.airDates ? { description: `Aired: ${campaign.airDates}` } : {}),
+      } as any);
+      haveTitles.add(title.toLowerCase());
+      console.log(`  ✓ ${title}${campaign.system ? ` — ${campaign.system.slice(0, 55)}` : ''}`);
+      added += 1;
+      await new Promise((r) => setTimeout(r, 200));
+    }
+
+    const updated = { ...show, seasons };
+    const target = apply
+      ? join(DATA_ROOT, 'shows', `${show.id}.yml`)
+      : join(STAGING, `${show.id}.yml`);
+    await mkdir(dirname(target), { recursive: true });
+    await writeFile(target, stringify(updated), 'utf8');
+    console.log(`\n${added} season(s) added to ${show.id}. Set each game id before CI will pass.\n`);
     return;
   }
 
