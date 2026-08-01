@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: dnd-5e
 description: "System per source: Shadowrun 5e."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/a/ab/Hoi_Chummer_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210506200942
+  licence: fair use
+  attribution: Hoi Chummer! series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Hoi_Chummer_Logo.jpg
+  depicts: Series art for Hoi Chummer!
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

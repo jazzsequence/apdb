@@ -4,24 +4,33 @@ channels:
   - saving-throw
 format: stream
 status: completed
-description: >-
-  Long-form D&D 5e campaign following the crew known as the Salt Baes, carrying
-  on the characters created in the Ghosts of Saltmarsh prelude. Broadcast live
-  on Twitch and archived to YouTube.
+description: Long-form D&D 5e campaign following the crew known as the Salt
+  Baes, carrying on the characters created in the Ghosts of Saltmarsh prelude.
+  Broadcast live on Twitch and archived to YouTube.
 links:
   website: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
 seasons:
   - ordinal: 1
     game: dnd-5e
-    started: '2019-09-24'
-    ended: '2020'
+    started: 2019-09-24
+    ended: "2020"
   - ordinal: 2
     game: dnd-5e
-    started: '2020'
+    started: "2020"
   - ordinal: 3
     game: dnd-5e
-    started: '2020'
+    started: "2020"
   - ordinal: 4
     game: dnd-5e
-    started: '2020'
-    ended: '2020-09-29'
+    started: "2020"
+    ended: 2020-09-29
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/5/52/Pirates_of_Salt_Bay_Logo.png/revision/latest?cb=20200229005100
+  licence: fair use
+  attribution: Pirates of Salt Bay series art, © its producers. Via
+    savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Pirates_of_Salt_Bay_Logo.png
+  depicts: Series art for Pirates of Salt Bay
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: shadowrun
 description: "System per source: Shadowrun."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/4/4a/Wallmeetssky.jpg/revision/latest/scale-to-width-down/400?cb=20201013082109
+  licence: fair use
+  attribution: Shadowrun - Where the Wall Meets the Sky series art, © its
+    producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Wallmeetssky.jpg
+  depicts: Series art for Shadowrun - Where the Wall Meets the Sky
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

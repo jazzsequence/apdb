@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: powered-by-the-apocalypse
 description: "System per source: Powered by the Apocalypse."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/8/87/Dark_Sun_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210419142838
+  licence: fair use
+  attribution: Dark Sun series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Dark_Sun_Logo.jpg
+  depicts: Series art for Dark Sun
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

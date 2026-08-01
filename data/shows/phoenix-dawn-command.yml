@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: phoenix-dawn-command-rpg
 description: "System per source: Phoenix Dawn Command RPG."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/5/5f/Phoenix_Dawn_Command_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210710175120
+  licence: fair use
+  attribution: Phoenix Dawn Command series art, © its producers. Via
+    savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Phoenix_Dawn_Command_Logo.jpg
+  depicts: Series art for Phoenix Dawn Command
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

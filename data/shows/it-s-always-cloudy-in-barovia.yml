@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
 description: "System per source: Dungeons & Dragons 5e."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/d/dd/It%27s_Always_Cloudy_in_Barovia_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210519171135
+  licence: fair use
+  attribution: It's Always Cloudy in Barovia series art, © its producers. Via
+    savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:It%27s_Always_Cloudy_in_Barovia_Logo.jpg
+  depicts: Series art for It's Always Cloudy in Barovia
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

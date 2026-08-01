@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: caroline-lux
 canonical_name: Caroline Lux
 sort_name: Lux, Caroline
@@ -21,3 +15,8 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+image:
+  url: https://live.staticflickr.com/65535/53111008154_bf50358240_b.jpg
+  licence: CC-BY-2.0
+  attribution: Tampereen Teatterikesä
+  source: https://www.flickr.com/photos/49668424@N05/53111008154

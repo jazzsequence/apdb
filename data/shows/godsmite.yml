@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: dnd-5e
 description: "System per source: Dungeons & Dragons 5e."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/3/32/Godsmite.jpg/revision/latest/scale-to-width-down/400?cb=20210506194213
+  licence: fair use
+  attribution: Godsmite series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Godsmite.jpg
+  depicts: Series art for Godsmite
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

@@ -14,3 +14,8 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/f/f8/Vincent_%22Vince%22_Caso_in_July_2012.jpg
+  licence: CC-BY-2.0
+  attribution: Genevieve
+  source: https://commons.wikimedia.org/w/index.php?curid=20353783

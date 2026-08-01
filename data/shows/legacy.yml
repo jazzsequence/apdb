@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: city-of-mist
 description: "System per source: City of Mist."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/4/42/Legacy_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210526200424
+  licence: fair use
+  attribution: Legacy series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Legacy_Logo.jpg
+  depicts: Series art for Legacy
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

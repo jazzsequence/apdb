@@ -14,3 +14,8 @@ credits:
       - tier: official
         url: https://happyjacks.org/thedarknet/
         note: Cast per the network's own show page.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/4/42/Van_Mook.png
+  licence: CC-BY-SA-3.0
+  attribution: User:Davidelit
+  source: https://commons.wikimedia.org/w/index.php?curid=3989297

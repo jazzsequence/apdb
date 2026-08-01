@@ -14,3 +14,12 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 109
+image:
+  url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/d0/ef/0b/d0ef0b76-87ce-271d-3d40-e4d55eeda53f/mza_7624748550638738400.jpeg/600x600bb.jpg
+  licence: fair use
+  attribution: Dark Dice series art, © its producers. Via Apple Podcasts.
+  source: https://podcasts.apple.com/us/podcast/dark-dice/id1437360249?uo=4
+  depicts: Series art for Dark Dice
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

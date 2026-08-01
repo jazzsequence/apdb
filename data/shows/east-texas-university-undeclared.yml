@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: savage-worlds-deluxe
 description: "System per source: Savage Worlds."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/d/df/ETU_Undeclared_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210502122128
+  licence: fair use
+  attribution: "East Texas University: Undeclared series art, © its producers. Via
+    savingthrowshow.fandom.com."
+  source: https://savingthrowshow.fandom.com/wiki/File:ETU_Undeclared_Logo.jpg
+  depicts: "Series art for East Texas University: Undeclared"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

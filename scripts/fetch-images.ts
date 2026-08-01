@@ -7,9 +7,13 @@
  *
  *   npm run fetch:images
  */
-import { fetchPortraits, fetchSeriesArt } from '../src/lib/images.js';
+import { fetchOtherSeriesArt, fetchPortraits, fetchSeriesArt } from '../src/lib/images.js';
 
-const art = await fetchSeriesArt();
-console.log(`${art} series image(s) added (YouTube thumbnails, fair use).`);
+const yt = await fetchSeriesArt();
+console.log(`${yt} series image(s) from YouTube thumbnails (fair use).`);
+
+const other = await fetchOtherSeriesArt();
+console.log(`${other} series image(s) from wikis and podcast feeds (fair use).`);
+
 const portraits = await fetchPortraits();
-console.log(`${portraits} portrait(s) added (Commons, free licences only).`);
+console.log(`${portraits} portrait(s) from Commons and Openverse (free licences only).`);

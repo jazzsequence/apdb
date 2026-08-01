@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: dune-roleplaying-game
 description: "System per source: Dune Roleplaying Game."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/5/59/Dune_Mini-Series_Cover_Image.jpg/revision/latest/scale-to-width-down/400?cb=20210706013439
+  licence: fair use
+  attribution: Dune Mini-Series series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Dune_Mini-Series_Cover_Image.jpg
+  depicts: Series art for Dune Mini-Series
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

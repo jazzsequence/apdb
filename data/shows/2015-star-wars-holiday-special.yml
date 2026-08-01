@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: ffg-star-wars
 description: "System per source: FFG Star Wars."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/b/b4/2015_Star_Wars_Holiday_Special.jpg/revision/latest/scale-to-width-down/400?cb=20210506193353
+  licence: fair use
+  attribution: 2015 Star Wars Holiday Special series art, © its producers. Via
+    savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:2015_Star_Wars_Holiday_Special.jpg
+  depicts: Series art for 2015 Star Wars Holiday Special
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

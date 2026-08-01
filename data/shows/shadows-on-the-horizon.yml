@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: shadowrun
 description: "System per source: Shadowrun."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/6/67/Shadows_onthe_Horizon_logo.png/revision/latest/scale-to-width-down/400?cb=20200310050505
+  licence: fair use
+  attribution: Shadows on the Horizon series art, © its producers. Via
+    savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Shadows_onthe_Horizon_logo.png
+  depicts: Series art for Shadows on the Horizon
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

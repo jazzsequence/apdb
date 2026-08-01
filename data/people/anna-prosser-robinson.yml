@@ -1,9 +1,3 @@
-# Credits imported from dicecameraaction.fandom.com on 2026-08-01.
-# Source: https://dicecameraaction.fandom.com/wiki/Dice%2C_Camera%2C_Action (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: anna-prosser-robinson
 canonical_name: Anna Prosser Robinson
 sort_name: Robinson, Anna Prosser
@@ -22,3 +16,8 @@ credits:
         url: https://dicecameraaction.fandom.com/wiki/Dice%2C_Camera%2C_Action
         note: Dice, Camera, Action cast, via the dicecameraaction.fandom.com infobox.
           CC-BY-SA.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/2/21/Anna_Prosser_Robinson_at_2013_MLG_Winter_Championship.jpg
+  licence: CC-BY-SA-4.0
+  attribution: Kevin Chang for Team Liquid
+  source: https://commons.wikimedia.org/w/index.php?curid=129002302

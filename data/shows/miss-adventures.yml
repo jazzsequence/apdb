@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: pathfinder-1e
 description: "System per source: Homebrewed Harry Potter RPG using Pathfinder."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/b/bd/Miss_Adventures_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210608152917
+  licence: fair use
+  attribution: Miss Adventures series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Miss_Adventures_Logo.jpg
+  depicts: Series art for Miss Adventures
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

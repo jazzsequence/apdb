@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: dnd-5e
 description: "System per source: Dungeons & Dragons 5e."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/5/5e/Dice_Ex_Machina_Cover_Image.jpg/revision/latest/scale-to-width-down/400?cb=20201109003835
+  licence: fair use
+  attribution: Dice Ex Machina series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Dice_Ex_Machina_Cover_Image.jpg
+  depicts: Series art for Dice Ex Machina
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

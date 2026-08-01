@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: mutants-masterminds
 description: "System per source: Mutants & Masterminds."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/6/66/Shadows_of_the_Mirror-Men.png/revision/latest/scale-to-width-down/400?cb=20200310050547
+  licence: fair use
+  attribution: Shadows of the Mirror-Men series art, © its producers. Via
+    savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Shadows_of_the_Mirror-Men.png
+  depicts: Series art for Shadows of the Mirror-Men
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

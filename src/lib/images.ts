@@ -19,6 +19,58 @@ import { parse, stringify } from 'yaml';
 import { DATA_ROOT } from './load.js';
 import { searchPeople, wikidataImage } from './sources/wikidata.js';
 
+/**
+ * Openverse indexes freely-licensed images across Flickr, Commons and others,
+ * keyless. It is the fallback for the many indie performers who have no
+ * Wikidata entry at all — Commons alone covers about a quarter of them.
+ *
+ * The licence comes back machine-readable, so only genuinely reusable ones are
+ * taken, and the title must actually contain the person's name: a search for a
+ * name returns *something* regardless, and an unrelated photo of a stranger is
+ * worse than no photo.
+ */
+const OPENVERSE_LICENCES: Record<string, string> = {
+  'cc0-1.0': 'CC0',
+  'pdm-1.0': 'public domain',
+  'by-2.0': 'CC-BY-2.0',
+  'by-3.0': 'CC-BY-3.0',
+  'by-4.0': 'CC-BY-4.0',
+  'by-sa-2.0': 'CC-BY-SA-2.0',
+  'by-sa-3.0': 'CC-BY-SA-3.0',
+  'by-sa-4.0': 'CC-BY-SA-4.0',
+};
+
+async function openverseImage(name: string) {
+  const q = new URLSearchParams({
+    q: name,
+    license: 'cc0,pdm,by,by-sa',
+    page_size: '5',
+    mature: 'false',
+  });
+  const r = await fetch(`https://api.openverse.org/v1/images/?${q}`, {
+    headers: { 'User-Agent': 'ActualPlayDatabase/0.1 (community actual-play credit index)' },
+  });
+  if (!r.ok) return undefined;
+  const data: any = await r.json();
+
+  const surname = name.split(/\s+/).slice(-1)[0]!.toLowerCase();
+  for (const hit of data.results ?? []) {
+    const licence = OPENVERSE_LICENCES[`${hit.license}-${hit.license_version}`];
+    if (!licence) continue;
+    // Must plausibly depict this person, not merely match a search.
+    const title = String(hit.title ?? '').toLowerCase();
+    if (!title.includes(name.toLowerCase()) && !title.includes(surname)) continue;
+    if (!hit.url) continue;
+    return {
+      url: hit.url as string,
+      licence,
+      attribution: String(hit.creator ?? 'Unknown').slice(0, 80),
+      source: String(hit.foreign_landing_url ?? hit.url),
+    };
+  }
+  return undefined;
+}
+
 /** Portraits for every person that has none. Safe to re-run. */
 export async function fetchPortraits(quiet = false): Promise<number> {
   let added = 0;
@@ -37,12 +89,10 @@ export async function fetchPortraits(quiet = false): Promise<number> {
           qid = hits[0].id;
         }
       }
-      if (!qid) continue;
-
-      const image = await wikidataImage(qid);
+      const image = qid ? await wikidataImage(qid) : await openverseImage(person.canonical_name);
       if (!image) continue;
+      if (qid) person.wikidata_qid = qid;
 
-      person.wikidata_qid = qid;
       person.image = image;
       await writeFile(path, stringify(person), 'utf8');
       added += 1;
@@ -105,9 +155,74 @@ export async function fetchSeriesArt(): Promise<number> {
   return added;
 }
 
+/**
+ * Series art for shows that came from a fan wiki or a podcast feed rather than
+ * YouTube. Same fair-use claim as the YouTube thumbnails — thumbnail scale,
+ * one per show, attributed, linked back, identification only.
+ */
+export async function fetchOtherSeriesArt(): Promise<number> {
+  let added = 0;
+
+  for (const file of (await readdir(join(DATA_ROOT, 'shows'))).filter((f) => f.endsWith('.yml'))) {
+    const path = join(DATA_ROOT, 'shows', file);
+    const show = parse(await readFile(path, 'utf8'));
+    if (show.image) continue;
+
+    const website = String(show.links?.website ?? '');
+    let found: { url: string; source: string; via: string } | undefined;
+
+    // Fan wiki: the campaign infobox names an image file.
+    const wiki = website.match(/^https:\/\/([\w.-]+(?:fandom\.com|miraheze\.org))\/wiki\/(.+)$/);
+    if (wiki) {
+      try {
+        const { campaignImage } = await import('./sources/mediawiki.js');
+        const img = await campaignImage(wiki[1]!, decodeURIComponent(wiki[2]!).replace(/_/g, ' '));
+        if (img) found = { url: img.url, source: img.descriptionUrl, via: wiki[1]! };
+      } catch {
+        // page gone or no infobox image
+      }
+    }
+
+    // Podcast: Apple carries the show's own cover art.
+    if (!found && /podcasts\.apple\.com/.test(website)) {
+      const id = website.match(/id(\d+)/)?.[1];
+      if (id) {
+        try {
+          const r = await fetch(`https://itunes.apple.com/lookup?id=${id}&entity=podcast`, {
+            headers: { 'User-Agent': 'ActualPlayDatabase/0.1' },
+          });
+          const data: any = await r.json();
+          const art = data?.results?.[0]?.artworkUrl600 ?? data?.results?.[0]?.artworkUrl100;
+          if (art) found = { url: art, source: website, via: 'Apple Podcasts' };
+        } catch {
+          // fall through
+        }
+      }
+    }
+
+    if (!found) continue;
+
+    show.image = {
+      url: found.url,
+      licence: 'fair use',
+      attribution: `${show.title} series art, \u00a9 its producers. Via ${found.via}.`,
+      source: found.source,
+      depicts: `Series art for ${show.title}`,
+      rationale:
+        'Low-resolution image used solely to identify the show in an index of its credits. ' +
+        'Non-commercial, does not substitute for the original, and links back to the source. ' +
+        'Removed on request by the rights holder \u2014 see POLICY.md.',
+    };
+    await writeFile(path, stringify(show), 'utf8');
+    added += 1;
+    await new Promise((r) => setTimeout(r, 120));
+  }
+  return added;
+}
+
 /** Both passes. Called at the end of every import. */
 export async function fetchAllImages(): Promise<void> {
-  const art = await fetchSeriesArt();
+  const art = (await fetchSeriesArt()) + (await fetchOtherSeriesArt());
   const portraits = await fetchPortraits(true);
   if (art || portraits) {
     console.log(`  images: ${art} series, ${portraits} portrait(s).`);

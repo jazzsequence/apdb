@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: savage-worlds-deluxe
 description: "System per source: Risus (Series 1) Savage Worlds (Series 2)."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/7/77/Mysterium_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210628164957
+  licence: fair use
+  attribution: Mysterium series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Mysterium_Logo.jpg
+  depicts: Series art for Mysterium
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

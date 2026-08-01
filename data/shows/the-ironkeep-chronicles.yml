@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
 description: "System per source: Dungeons & Dragons 5e."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/1/1a/Ironkeep_Chronicles_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210512160613
+  licence: fair use
+  attribution: The Ironkeep Chronicles series art, © its producers. Via
+    savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Ironkeep_Chronicles_Logo.jpg
+  depicts: Series art for The Ironkeep Chronicles
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

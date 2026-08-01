@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: pugmire
 description: "System per source: Pugmire."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/0/01/Pugmire_HomewardBound2.png/revision/latest?cb=20200305070352
+  licence: fair use
+  attribution: "Pugmire: Homeward Bound series art, © its producers. Via
+    savingthrowshow.fandom.com."
+  source: https://savingthrowshow.fandom.com/wiki/File:Pugmire_HomewardBound2.png
+  depicts: "Series art for Pugmire: Homeward Bound"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

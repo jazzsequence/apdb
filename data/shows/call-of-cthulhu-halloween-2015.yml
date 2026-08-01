@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: call-of-cthulhu
 description: "System per source: Call of Cthulhu 7e."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/4/45/Cthulu.jpg/revision/latest?cb=20201007235050
+  licence: fair use
+  attribution: Call of Cthulhu - Halloween 2015 series art, © its producers. Via
+    savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:Cthulu.jpg
+  depicts: Series art for Call of Cthulhu - Halloween 2015
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

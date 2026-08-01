@@ -10,3 +10,12 @@ seasons:
   - ordinal: 1
     game: fate-core
 description: "System per source: Fate (S1) Lasers & Feelings (S2 - current)."
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/d/d6/TemptingFate_logo_300x200.png/revision/latest?cb=20200305064146
+  licence: fair use
+  attribution: Tempting Fate series art, © its producers. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/File:TemptingFate_logo_300x200.png
+  depicts: Series art for Tempting Fate
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.
