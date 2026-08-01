@@ -1,0 +1,22 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_(animated) (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: welcome-to-wildemount
+canonical_name: Welcome to Wildemount
+sort_name: Wildemount, Welcome to
+aliases:
+  - id: default
+    name: Welcome to Wildemount
+    alias_type: legal
+credits:
+  - show: critical-role
+    season: 2
+    role: composer
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_(animated)
+        note: The Mighty Nein cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

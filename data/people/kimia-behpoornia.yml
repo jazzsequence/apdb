@@ -1,9 +1,3 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/Gladlands (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: kimia-behpoornia
 canonical_name: Kimia Behpoornia
 sort_name: Behpoornia, Kimia
@@ -20,3 +14,4 @@ credits:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Gladlands
         note: Gladlands cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+    alias: default

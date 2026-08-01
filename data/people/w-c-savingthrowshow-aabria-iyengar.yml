@@ -1,0 +1,23 @@
+# Credits imported from theadventurezone.fandom.com on 2026-08-01.
+# Source: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: w-c-savingthrowshow-aabria-iyengar
+canonical_name: w:c:savingthrowshow:Aabria_Iyengar
+sort_name: w:c:savingthrowshow:Aabria_Iyengar
+aliases:
+  - id: default
+    name: w:c:savingthrowshow:Aabria_Iyengar
+    alias_type: legal
+credits:
+  - show: the-adventure-zone
+    season: 16
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure
+        note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."

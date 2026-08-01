@@ -1,0 +1,161 @@
+# Credits imported from theadventurezone.fandom.com on 2026-08-01.
+# Source: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: w-c-mbmbam-griffin-mcelroy
+canonical_name: w:c:mbmbam:Griffin_McElroy
+sort_name: w:c:mbmbam:Griffin_McElroy
+links: {}
+aliases:
+  - id: default
+    name: w:c:mbmbam:Griffin_McElroy
+    alias_type: legal
+credits:
+  - show: the-adventure-zone
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Campaign_1%3A_The_Balance_Arc
+        note: "Campaign 1: The Balance Arc cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 2
+    role: player
+    character: Chris Rembrandt
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Campaign_2%3A_Commitment
+        note: "Campaign 2: Commitment cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 3
+    role: player
+    character: Tom Collins
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_(K)nights
+        note: "MaxFunDrive Bonus Campaign: (K)nights cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Campaign_3%3A_Amnesty
+        note: "Campaign 3: Amnesty cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 5
+    role: player
+    character: Errol Ryehouse
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Campaign_4%3A_Dust
+        note: "Campaign 4: Dust cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 6
+    role: player
+    character: wikipedia:Sherlock (TV_series)
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Elementary
+        note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 8
+    role: player
+    character: The Thomas Crown Affair
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Fur
+        note: "MaxFunDrive Bonus Campaign: Fur cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 9
+    role: GM/DM
+    character: Balance
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/The_Adventure_Zone
+        note: The Adventure Zone cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: the-adventure-zone
+    season: 10
+    role: player
+    character: Sir Fitzroy Maplecourt
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Campaign_5%3A_Graduation
+        note: "Campaign 5: Graduation cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 11
+    role: player
+    character: Briquette Hoggins
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Live_Campaign_2%3A_Dadlands
+        note: "Live Campaign 2: Dadlands cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 13
+    role: player
+    character: Sylvester Stud
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Lords_of_Crunch
+        note: "MaxFunDrive Bonus Campaign: Lords of Crunch cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 14
+    role: player
+    character: Hell Raven
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/The_Adventure_Zone%3A_Just_Us
+        note: "The Adventure Zone: Just Us cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 15
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Campaign_6%3A_Ethersea
+        note: "Campaign 6: Ethersea cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 16
+    role: player
+    character: Davenport
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure
+        note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 19
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula
+        note: "Campaign 9: The Adventure Zone Versus Dracula cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."

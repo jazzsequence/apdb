@@ -1,9 +1,3 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2 (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: danielle-radford
 canonical_name: Danielle Radford
 sort_name: Radford, Danielle
@@ -21,6 +15,7 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
         note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+    alias: default
   - show: dimension-20
     season: 20
     role: player
@@ -29,6 +24,7 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Mentopolis
         note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+    alias: default
   - show: dimension-20
     season: 26
     role: player
@@ -38,3 +34,4 @@ credits:
         url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
         note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+    alias: default

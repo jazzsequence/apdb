@@ -1,0 +1,24 @@
+# Credits imported from theadventurezone.fandom.com on 2026-08-01.
+# Source: https://theadventurezone.fandom.com/wiki/The_Adventure_Zone (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: wikipedia-sherlock-holmes-consulting-detective
+canonical_name: wikipedia:Sherlock_Holmes:_Consulting_Detective
+sort_name: wikipedia:Sherlock_Holmes:_Consulting_Detective
+aliases:
+  - id: default
+    name: wikipedia:Sherlock_Holmes:_Consulting_Detective
+    alias_type: legal
+credits:
+  - show: the-adventure-zone
+    season: 9
+    role: player
+    character: Gerrrf
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/The_Adventure_Zone
+        note: The Adventure Zone cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA.

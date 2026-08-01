@@ -1,5 +1,5 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Campaign_2 (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/UnDeadwood (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -7,6 +7,7 @@
 id: khary-payton
 canonical_name: Khary Payton
 sort_name: Payton, Khary
+links: {}
 aliases:
   - id: default
     name: Khary Payton
@@ -16,9 +17,26 @@ credits:
     season: 2
     role: guest player
     character: Shakäste
+    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_2
+      - url: https://criticalrole.fandom.com/wiki/Campaign_2
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/UnDeadwood
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

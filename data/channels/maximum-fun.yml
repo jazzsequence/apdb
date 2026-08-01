@@ -1,0 +1,6 @@
+id: maximum-fun
+name: Maximum Fun
+type: network
+description: Listener-supported podcast network.
+links:
+  website: https://maximumfun.org

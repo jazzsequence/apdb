@@ -1,5 +1,5 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -17,6 +17,7 @@ credits:
     season: 8
     role: player
     character: Sunny Biscotto
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan
         note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
@@ -26,6 +27,7 @@ credits:
     season: 1
     role: player
     character: Keyleth
+    alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Campaign_1
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
@@ -35,6 +37,7 @@ credits:
     season: 2
     role: player
     character: Beauregard Lionett
+    alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Campaign_2
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
@@ -44,8 +47,93 @@ credits:
     season: 3
     role: player
     character: Laudna / Beauregard Lionett / Keyleth
+    alias: default
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_3
+      - url: https://criticalrole.fandom.com/wiki/Campaign_3
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 3
+    role: player
+    character: Patia Por'co
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
+        note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/UnDeadwood
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
+        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role-specials
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
+        note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role-specials
+    season: 9
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Moonward
+        note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role-specials
+    season: 11
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

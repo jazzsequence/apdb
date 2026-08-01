@@ -1,5 +1,5 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Kymal (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -7,6 +7,7 @@
 id: erica-lindbeck
 canonical_name: Erica Lindbeck
 sort_name: Lindbeck, Erica
+links: {}
 aliases:
   - id: default
     name: Erica Lindbeck
@@ -16,9 +17,29 @@ credits:
     season: 3
     role: guest player
     character: Morrighan Ferus
+    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_3
+      - url: https://criticalrole.fandom.com/wiki/Campaign_3
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 2
+    role: player
+    character: Morrighan Ferus
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Kymal
+        note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."

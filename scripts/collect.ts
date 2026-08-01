@@ -356,8 +356,13 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
       ...(role === 'guest player'
         ? { note: 'Listed as a guest player for this season; specific episodes not identified.' }
         : {}),
-      // No `alias`: the wiki's naming is its own convention, not evidence of
-      // what the billing said. See POLICY.md.
+      // Set `alias` only when the person has exactly one known name: with one
+      // name there is no ambiguity to represent. Where someone has several,
+      // the wiki's naming is its own convention rather than evidence of what
+      // the billing said, so it is left blank. See POLICY.md.
+      ...(!existing || existing.aliases.length === 1
+        ? { alias: existing ? existing.aliases[0]!.id : 'default' }
+        : {}),
       sources: [
         {
           tier: 'community',

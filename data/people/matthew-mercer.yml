@@ -1,5 +1,5 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/The_Ravening_War (CC-BY-SA).
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -54,6 +54,7 @@ credits:
     season: 8
     role: player
     character: Jack Brakkow
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Pirates_of_Leviathan
         note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
@@ -62,7 +63,131 @@ credits:
   - show: dimension-20
     season: 18
     role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Ravening_War
+        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 4
+    role: player
+    character: Leiland
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Escape_from_the_Bloodkeep
+        note: Escape From the Bloodkeep cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 29
+    role: player
+    character: Lint Lintil
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/On_a_Bus
+        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_(animated)
+        note: The Mighty Nein cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 2
+    role: player
+    character: Dariax Zaveon
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Kymal
+        note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: exandria-unlimited
+    season: 4
+    role: player
+    character: Dariax Zaveon
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited_Prime
+        note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Divergence
+        note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 1
+    role: host
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/UnDeadwood
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
+        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role-specials
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
+        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 5
+    role: guest player
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
+        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role-specials
+    season: 11
+    role: player
+    alias: default
     sources:
       - tier: community
-        url: https://dimension20.fandom.com/wiki/The_Ravening_War
-        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

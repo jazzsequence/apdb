@@ -1,5 +1,5 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/City_Council_of_Darkness (CC-BY-SA).
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -41,6 +41,7 @@ credits:
     season: 2
     role: player
     character: Whitney Jammer
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
         note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -49,6 +50,7 @@ credits:
     season: 3
     role: player
     character: Lord Squak Airavis
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
@@ -58,6 +60,7 @@ credits:
     season: 5
     role: player
     character: Kingston Brown
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City
         note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
@@ -67,6 +70,7 @@ credits:
     season: 7
     role: player
     character: King Amethar of House Rocks
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Crown_of_Candy
         note: A Crown of Candy cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -75,6 +79,7 @@ credits:
     season: 9
     role: player
     character: Kingston Brown
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City%3A_Chapter_II
         note: "The Unsleeping City: Chapter II cast, via the dimension20.fandom.com
@@ -84,6 +89,7 @@ credits:
     season: 10
     role: player
     character: Fabian Seacaster
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Sophomore_Year
         note: "Fantasy High: Sophomore Year cast, via the dimension20.fandom.com
@@ -93,6 +99,7 @@ credits:
     season: 14
     role: player
     character: Gunthrie Miggles-Rashbax
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Starstruck_Odyssey
         note: A Starstruck Odyssey cast, via the dimension20.fandom.com infobox.
@@ -102,6 +109,7 @@ credits:
     season: 16
     role: player
     character: Lord Squak Airavis
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
@@ -111,6 +119,7 @@ credits:
     season: 17
     role: player
     character: Pinocchio
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Neverafter
         note: Neverafter cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -119,6 +128,7 @@ credits:
     season: 18
     role: player
     character: Thane Delissandro Katzon
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Ravening_War
         note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -127,6 +137,7 @@ credits:
     season: 22
     role: player
     character: Fabian Seacaster
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year
         note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
@@ -135,6 +146,7 @@ credits:
   - show: dimension-20
     season: 25
     role: player
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Time_Quangle
         note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -143,6 +155,7 @@ credits:
     season: 26
     role: player
     character: Whitney Jammer
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
         note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
@@ -152,6 +165,7 @@ credits:
     season: 28
     role: player
     character: Montgomery  LaMontgommery
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Cloudward%2C_Ho!
         note: Cloudward, Ho! cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -160,8 +174,28 @@ credits:
     season: 31
     role: player
     character: LaVonte Worthy
+    alias: default
     sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
+      - url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 3
+    role: player
+    character: Nydas Okiro
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
+        note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

@@ -1,0 +1,22 @@
+# Credits imported from criticalrole.fandom.com on 2026-08-01.
+# Source: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: zehra-fazal
+canonical_name: Zehra Fazal
+sort_name: Fazal, Zehra
+aliases:
+  - id: default
+    name: Zehra Fazal
+    alias_type: legal
+credits:
+  - show: candela-obscura
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

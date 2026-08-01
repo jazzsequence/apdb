@@ -4,26 +4,31 @@ channels:
   - critical-role
 format: hybrid
 status: hiatus
-description: >-
-  Anthology series set in Exandria, handing the GM screen to guests rather than
-  to Critical Role's usual dungeon master.
+description: Anthology series set in Exandria, handing the GM screen to guests
+  rather than to Critical Role's usual dungeon master.
 links:
   website: https://critrole.com
 seasons:
   - ordinal: 1
     title: Exandria Unlimited
     game: dnd-5e
-    started: '2021-06'
-    ended: '2021-08'
+    started: 2021-06
+    ended: 2021-08
     episode_count: 8
   - ordinal: 2
-    title: 'Exandria Unlimited: Kymal'
+    title: "Exandria Unlimited: Kymal"
     game: dnd-5e
-    started: '2022'
+    started: "2022"
     episode_count: 2
   - ordinal: 3
-    title: 'Exandria Unlimited: Calamity'
+    title: "Exandria Unlimited: Calamity"
     game: dnd-5e
-    started: '2022-05'
-    ended: '2022-06'
+    started: 2022-05
+    ended: 2022-06
     episode_count: 4
+  - ordinal: 4
+    title: Exandria Unlimited Prime
+    game: dnd-5e
+  - ordinal: 5
+    title: "Exandria Unlimited: Divergence"
+    game: daggerheart

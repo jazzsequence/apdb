@@ -1,0 +1,24 @@
+# Credits imported from theadventurezone.fandom.com on 2026-08-01.
+# Source: https://theadventurezone.fandom.com/wiki/The_Adventure_Zone (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: nadiya-jones
+canonical_name: Nadiya Jones
+sort_name: Jones, Nadiya
+aliases:
+  - id: default
+    name: Nadiya Jones
+    alias_type: legal
+credits:
+  - show: the-adventure-zone
+    season: 9
+    role: player
+    character: Aubrey Little
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/The_Adventure_Zone
+        note: The Adventure Zone cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA.

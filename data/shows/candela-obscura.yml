@@ -1,0 +1,25 @@
+id: candela-obscura
+title: Candela Obscura
+channels:
+  - critical-role
+format: hybrid
+status: ongoing
+description: Darrington Press horror-investigation series set in the Fairelands.
+links:
+  website: https://critrole.com
+seasons:
+  - ordinal: 1
+    title: Circle of the Vassal and the Veil
+    game: illuminated-worlds
+  - ordinal: 2
+    title: Circle of Needle and Thread
+    game: illuminated-worlds
+  - ordinal: 3
+    title: Circle of Tide and Bone
+    game: illuminated-worlds
+  - ordinal: 4
+    title: Circle of the Crimson Mirror
+    game: illuminated-worlds
+  - ordinal: 5
+    title: Circle of the Silver Screen
+    game: illuminated-worlds

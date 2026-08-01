@@ -1,5 +1,5 @@
 # Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Campaign_3 (CC-BY-SA).
+# Source: https://criticalrole.fandom.com/wiki/Thresher (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -7,6 +7,7 @@
 id: noshir-dalal
 canonical_name: Noshir Dalal
 sort_name: Dalal, Noshir
+links: {}
 aliases:
   - id: default
     name: Noshir Dalal
@@ -16,9 +17,36 @@ credits:
     season: 3
     role: guest player
     character: Erathis / The Emissary
+    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_3
+      - url: https://criticalrole.fandom.com/wiki/Campaign_3
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 2
+    role: player
+    character: The Emissary
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 8
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Thresher
+        note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

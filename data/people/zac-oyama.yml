@@ -1,5 +1,5 @@
 # Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/City_Council_of_Darkness (CC-BY-SA).
+# Source: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -17,6 +17,7 @@ credits:
     season: 1
     role: player
     character: Gorgug Thistlespring
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High
         note: Fantasy High cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -25,6 +26,7 @@ credits:
     season: 5
     role: player
     character: Ricky Matsui
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City
         note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
@@ -34,6 +36,7 @@ credits:
     season: 7
     role: player
     character: Cumulous Rocks
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Crown_of_Candy
         note: A Crown of Candy cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -42,6 +45,7 @@ credits:
     season: 9
     role: player
     character: Ricky Matsui
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Unsleeping_City%3A_Chapter_II
         note: "The Unsleeping City: Chapter II cast, via the dimension20.fandom.com
@@ -51,6 +55,7 @@ credits:
     season: 10
     role: player
     character: Gorgug Thistlespring
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Sophomore_Year
         note: "Fantasy High: Sophomore Year cast, via the dimension20.fandom.com
@@ -60,6 +65,7 @@ credits:
     season: 14
     role: player
     character: Norman Takamori / Skip
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/A_Starstruck_Odyssey
         note: A Starstruck Odyssey cast, via the dimension20.fandom.com infobox.
@@ -69,6 +75,7 @@ credits:
     season: 15
     role: player
     character: Squing
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Coffin_Run
         note: Coffin Run cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -77,6 +84,7 @@ credits:
     season: 17
     role: player
     character: Puss in Boots
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Neverafter
         note: Neverafter cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -85,6 +93,7 @@ credits:
     season: 18
     role: player
     character: Colin Provolone
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/The_Ravening_War
         note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -93,6 +102,7 @@ credits:
     season: 22
     role: player
     character: Gorgug Thistlespring
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year
         note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
@@ -101,6 +111,7 @@ credits:
   - show: dimension-20
     season: 25
     role: player
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Time_Quangle
         note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -109,6 +120,7 @@ credits:
     season: 28
     role: player
     character: Daisuke Bucklesby
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Cloudward%2C_Ho!
         note: Cloudward, Ho! cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -117,6 +129,7 @@ credits:
     season: 30
     role: player
     character: Connor Kawasaki
+    alias: default
     sources:
       - url: https://dimension20.fandom.com/wiki/Gladlands
         note: Gladlands cast, via the dimension20.fandom.com infobox. CC-BY-SA.
@@ -125,8 +138,18 @@ credits:
     season: 31
     role: player
     character: Zaeth Bondana
+    alias: default
     sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
+      - url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 22
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Fantasy_High%3A_Junior_Year
+        note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA."

@@ -1,0 +1,68 @@
+id: the-adventure-zone
+title: The Adventure Zone
+channels:
+  - maximum-fun
+format: podcast
+status: ongoing
+description: Anthology actual-play podcast by the McElroy family, rotating
+  system and GM between campaigns.
+links:
+  website: https://maximumfun.org/podcasts/adventure-zone/
+seasons:
+  - ordinal: 1
+    title: "Campaign 1: The Balance Arc"
+    game: dnd-5e
+  - ordinal: 2
+    title: "Campaign 2: Commitment"
+    game: dnd-5e
+  - ordinal: 3
+    title: "MaxFunDrive Bonus Campaign: (K)nights"
+    game: dnd-5e
+  - ordinal: 4
+    title: "Campaign 3: Amnesty"
+    game: dnd-5e
+  - ordinal: 5
+    title: "Campaign 4: Dust"
+    game: dnd-5e
+  - ordinal: 6
+    title: "MaxFunDrive Bonus Campaign: Elementary"
+    game: dnd-5e
+  - ordinal: 7
+    title: The Balance Arc Timeline
+    game: dnd-5e
+  - ordinal: 8
+    title: "MaxFunDrive Bonus Campaign: Fur"
+    game: dnd-5e
+  - ordinal: 9
+    title: The Adventure Zone
+    game: dnd-5e
+  - ordinal: 10
+    title: "Campaign 5: Graduation"
+    game: dnd-5e
+  - ordinal: 11
+    title: "Live Campaign 2: Dadlands"
+    game: dnd-5e
+  - ordinal: 12
+    title: "Live Campaign 3: Holiday Brawl in Chicago"
+    game: dnd-5e
+  - ordinal: 13
+    title: "MaxFunDrive Bonus Campaign: Lords of Crunch"
+    game: dnd-5e
+  - ordinal: 14
+    title: "The Adventure Zone: Just Us"
+    game: dnd-5e
+  - ordinal: 15
+    title: "Campaign 6: Ethersea"
+    game: dnd-5e
+  - ordinal: 16
+    title: "Mini-series: Zone of Adventure"
+    game: dnd-5e
+  - ordinal: 17
+    title: "Campaign 7: Steeplechase"
+    game: dnd-5e
+  - ordinal: 18
+    title: "Campaign 8: Outre Space"
+    game: dnd-5e
+  - ordinal: 19
+    title: "Campaign 9: The Adventure Zone Versus Dracula"
+    game: dnd-5e
