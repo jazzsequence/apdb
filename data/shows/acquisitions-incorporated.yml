@@ -1,0 +1,58 @@
+id: acquisitions-incorporated
+title: Acquisitions Incorporated
+channels:
+  - penny-arcade
+format: hybrid
+status: ongoing
+description: Penny Arcade's long-running official D&D actual play, DMed by Chris Perkins.
+links:
+  website: https://www.acq-inc.com
+seasons:
+  - ordinal: 1
+    title: "Acquisitions Incorporated: Season One"
+    game: dnd-5e
+  - ordinal: 2
+    title: "Acquisitions Incorporated: Season Two"
+    game: dnd-5e
+  - ordinal: 3
+    title: "Acquisitions Incorporated: Season Three"
+    game: dnd-5e
+  - ordinal: 4
+    title: "Interlude: Dark Sun"
+    game: dnd-5e
+  - ordinal: 5
+    title: Keep on the Shadowfell
+    game: dnd-5e
+  - ordinal: 6
+    title: "Acquisitions Incorporated: Season Four"
+    game: dnd-5e
+  - ordinal: 7
+    title: "Acquisitions Incorporated: Season Five"
+    game: dnd-5e
+  - ordinal: 8
+    title: "Acquisitions Incorporated: Season Six"
+    game: dnd-5e
+  - ordinal: 9
+    title: "Acquisitions Incorporated: Season Seven"
+    game: dnd-5e
+  - ordinal: 10
+    title: "Acquisitions Incorporated: Season Eight"
+    game: dnd-5e
+  - ordinal: 11
+    title: "Acquisitions Incorporated: Season Nine"
+    game: dnd-5e
+  - ordinal: 12
+    title: "Acquisitions Incorporated: Season Ten"
+    game: dnd-5e
+  - ordinal: 13
+    title: "Acquisitions Incorporated: Season Eleven"
+    game: dnd-5e
+  - ordinal: 14
+    title: "Acquisitions Incorporated: Season Twelve"
+    game: dnd-5e
+  - ordinal: 15
+    title: "Acquisitions Incorporated: Season Thirteen"
+    game: dnd-5e
+  - ordinal: 16
+    title: "Acquisitions Incorporated: Season Fourteen"
+    game: dnd-5e

@@ -1,0 +1,21 @@
+id: not-another-dnd-podcast
+title: Not Another D&D Podcast
+channels:
+  - naddpod
+format: podcast
+status: ongoing
+description: "Comedy actual-play podcast. Hand-entered: the wiki has no
+  cast-bearing campaign pages."
+links:
+  website: https://naddpod.com
+  forum: https://notanotherdndpodcast.fandom.com
+seasons:
+  - ordinal: 1
+    title: "Campaign 1: Bahumia"
+    game: dnd-5e
+  - ordinal: 2
+    title: "Campaign 2: Eldermourne"
+    game: dnd-5e
+  - ordinal: 3
+    title: "Campaign 3: Bahumia"
+    game: dnd-5e

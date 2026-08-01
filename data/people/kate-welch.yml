@@ -1,0 +1,23 @@
+# Credits imported from acquisitionsincorporated.fandom.com on 2026-08-01.
+# Source: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Thirteen (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: kate-welch
+canonical_name: Kate Welch
+sort_name: Welch, Kate
+aliases:
+  - id: default
+    name: Kate Welch
+    alias_type: legal
+credits:
+  - show: acquisitions-incorporated
+    season: 15
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Thirteen
+        note: Acquisitions Inc. Season Thirteen cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.

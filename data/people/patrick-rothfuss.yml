@@ -1,5 +1,5 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina (CC-BY-SA).
+# Credits imported from acquisitionsincorporated.fandom.com on 2026-08-01.
+# Source: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Twelve (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -7,6 +7,7 @@
 id: patrick-rothfuss
 canonical_name: Patrick Rothfuss
 sort_name: Rothfuss, Patrick
+links: {}
 aliases:
   - id: default
     name: Patrick Rothfuss
@@ -16,10 +17,70 @@ credits:
     season: 1
     role: guest player
     character: Kerrek
+    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: acquisitions-incorporated
+    season: 9
+    role: player
+    character: Viari
+    alias: default
+    sources:
+      - url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Seven
+        note: Acquisitions Inc. Season Seven cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: acquisitions-incorporated
+    season: 10
+    role: player
+    character: Viari
+    alias: default
+    sources:
+      - url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Eight
+        note: Acquisitions Inc. Season Eight cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: acquisitions-incorporated
+    season: 11
+    role: player
+    character: Viari
+    alias: default
+    sources:
+      - url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Nine
+        note: Acquisitions Inc. Season Nine cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: acquisitions-incorporated
+    season: 12
+    role: player
+    character: Viari
+    alias: default
+    sources:
+      - url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Ten
+        note: Acquisitions Inc. Season Ten cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: acquisitions-incorporated
+    season: 13
+    role: player
+    character: Viari
+    alias: default
+    sources:
+      - url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Eleven
+        note: Acquisitions Inc. Season Eleven cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: acquisitions-incorporated
+    season: 14
+    role: player
+    character: Viari
     alias: default
     sources:
       - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
-        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Twelve
+        note: Acquisitions Inc. Season Twelve cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.

@@ -1,0 +1,12 @@
+id: dice-camera-action
+title: Dice, Camera, Action
+channels:
+  - dnd-official
+format: stream
+status: completed
+description: Weekly official D&D livestream, DMed by Chris Perkins.
+links:
+  website: https://dicecameraaction.fandom.com
+seasons:
+  - ordinal: 1
+    game: dnd-5e

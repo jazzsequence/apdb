@@ -1,0 +1,31 @@
+id: caldwell-tanner
+canonical_name: Caldwell Tanner
+sort_name: Tanner, Caldwell
+aliases:
+  - id: default
+    name: Caldwell Tanner
+    alias_type: legal
+credits:
+  - show: not-another-dnd-podcast
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - &a1
+        tier: community
+        url: https://notanotherdndpodcast.fandom.com/wiki/Brian_Murphy
+        note: Hand-entered. The wiki has person pages but no campaign page listing cast,
+          so this was read from the performers' own pages rather than imported.
+          Characters deliberately left blank — not verified per campaign.
+  - show: not-another-dnd-podcast
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - *a1
+  - show: not-another-dnd-podcast
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - *a1

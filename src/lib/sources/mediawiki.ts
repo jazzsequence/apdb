@@ -212,6 +212,20 @@ const PROSE_GM = new RegExp(
   'gi',
 );
 
+/**
+ * Cast listed in a prose section rather than an infobox.
+ *
+ * Dice, Camera, Action has no campaign infobox at all — its cast lives under
+ * "== Cast ==" as "* [[Chris Perkins]] as the Dungeon Master". That is the same
+ * explicit structure the infobox fields use, just in a different place, so it
+ * is worth reading rather than declaring the page unparseable.
+ */
+export function proseCastSection(wikitext: string): string | undefined {
+  const match = wikitext.match(/==+\s*(?:Cast|Players|Cast\s*&\s*Crew|Main cast)[^=]*==+([\s\S]*?)(?=\n==|$)/i);
+  const body = match?.[1]?.trim();
+  return body && body.includes('[[') ? body : undefined;
+}
+
 /** GM names mentioned in prose, outside any template. */
 export function proseGMs(wikitext: string): string[] {
   const body = wikitext.replace(/\{\{[\s\S]*?\}\}/g, ' ');
@@ -327,6 +341,7 @@ export const CAMPAIGN_TEMPLATES = [
   'Template:Campaign',              // High Rollers
   'Template:Seasoninfo',            // Dungeons and Daddies
   'Template:Infobox Twitch show',   // Geek & Sundry
+  'Template:Infobox Season',        // Acquisitions Incorporated
 ];
 
 /**
@@ -566,6 +581,45 @@ function cleanValue(value: string | undefined): string | undefined {
   );
 }
 
+/**
+ * Fields listing CHARACTERS rather than performers.
+ *
+ * Some wikis put only the party in the campaign infobox — Acquisitions
+ * Incorporated lists "Omin Dran, Binwin Bronzebottom, Jim Darkmagic". Importing
+ * those as people would invent three performers. But each character's own page
+ * carries a `played_by` field, so the performer is one lookup away: follow the
+ * link rather than either guessing or giving up.
+ */
+const CHARACTER_FIELDS = ['player_characters', 'characters', 'pcs', 'party'];
+
+const PLAYED_BY = /\|\s*(?:played_by|player|portrayed_by|played by)\s*=([^|\n}]{1,120})/i;
+
+/** Resolve character pages to the performers who play them. */
+export async function playersOfCharacters(
+  host: string,
+  characters: string[],
+): Promise<WikiPerson[]> {
+  const people: WikiPerson[] = [];
+  for (const character of characters) {
+    try {
+      const wikitext = await fetchWikitext(host, character);
+      const match = wikitext.match(PLAYED_BY);
+      if (!match) continue;
+      const name = match[1]!
+        .replace(/\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/g, '$1')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+of\s+\w+$/i, '')   // "Scott Kurtz of PvP"
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (name) people.push({ name, character });
+    } catch {
+      // character page missing — skip rather than guess
+    }
+    await new Promise((r) => setTimeout(r, 120));
+  }
+  return people;
+}
+
 /** Non-credit fields we read deliberately, so they aren't reported as gaps. */
 const METADATA_FIELDS = new Set([
   'system',
@@ -587,6 +641,7 @@ const METADATA_FIELDS = new Set([
   'title1',
   'name',
   'campaign',
+  ...CHARACTER_FIELDS,
 ]);
 
 /** Read one campaign/season page and pull out everyone credited on it. */
@@ -606,13 +661,15 @@ export async function fetchCampaign(host: string, page: string): Promise<WikiCam
     if (template) break;
   }
 
-  if (!template) {
+  // An absent infobox is not fatal — some pages carry their cast only in a
+  // prose section, which is read below. Only bail if there is nothing at all.
+  if (!template && !proseCastSection(wikitext)) {
     throw new Error(
-      `no campaign infobox found on ${host}/wiki/${page} — this adapter reads template-structured pages, not prose`,
+      `no campaign infobox and no cast section on ${host}/wiki/${page} — nothing here this adapter can read`,
     );
   }
 
-  const params = parseParams(template);
+  const params = template ? parseParams(template) : {};
   const season = Number.parseInt(params.season ?? '', 10);
 
   const creditFields = Object.entries(params).filter(([field]) => FIELD_ROLES[field]);
@@ -644,6 +701,37 @@ export async function fetchCampaign(host: string, page: string): Promise<WikiCam
       const subset = assembled.people.filter((p) => p.roleOverride === override);
       credits.push({ field, role: override ?? role, people: subset });
     }
+  }
+
+  // Nothing in the infobox? Try a prose cast section before giving up.
+  if (credits.length === 0) {
+    const section = proseCastSection(wikitext);
+    if (section) {
+      const kinds2 = await classifyTitles(host, linksInOrder(section).map((l) => l.title));
+      for (const line of section.split(/\n/)) {
+        if (!line.includes('[[')) continue;
+        const assembled = assemblePeople(line, kinds2);
+        for (const person of assembled.people) {
+          const isGm = /dungeon master|game master|\bDM\b|\bGM\b/i.test(line);
+          credits.push({
+            field: 'cast section',
+            role: isGm ? 'GM/DM' : 'player',
+            people: [isGm ? { name: person.name } : person],
+          });
+        }
+      }
+    }
+  }
+
+  // Characters listed in the infobox: follow each to its own page for the
+  // performer, rather than importing the character as a person.
+  for (const field of CHARACTER_FIELDS) {
+    const value = params[field];
+    if (!value) continue;
+    const characters = linksInOrder(value).map((l) => l.title);
+    if (characters.length === 0) continue;
+    const resolved = await playersOfCharacters(host, characters);
+    if (resolved.length > 0) credits.push({ field, role: 'player', people: resolved });
   }
 
   // Prose GMs only count if the wiki classifies them as people — that keeps a
