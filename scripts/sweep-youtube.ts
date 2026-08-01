@@ -183,7 +183,9 @@ function slugify(s: string): string {
     .replace(/\|.*$/, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
-    .slice(0, 55);
+    .slice(0, 55)
+    // Truncating can leave a trailing hyphen, which is not a valid slug.
+    .replace(/-+$/, '');
 }
 
 async function api(path: string, params: Record<string, string>): Promise<any> {
