@@ -1,0 +1,13 @@
+id: build-an-epic-cyberpunk-red-campaign
+title: Build An Epic Cyberpunk Red Campaign
+channels:
+  - jonjonthewise
+format: video
+status: unknown
+description: "System per source: Cyberpunk Red (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLunJWS5ymOLniWvwr3461w-bvAXx_5WdR
+seasons:
+  - ordinal: 1
+    game: cyberpunk-red
+    episode_count: 4

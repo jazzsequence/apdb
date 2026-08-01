@@ -1,0 +1,13 @@
+id: the-pathfinder-playtest-doomsday-dawn
+title: "The Pathfinder Playtest: Doomsday Dawn"
+channels:
+  - the-glass-cannon-network
+format: video
+status: unknown
+description: "System per source: Pathfinder 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLz3Be--ot61NBeeto8pmgQDBad34I1tzb
+seasons:
+  - ordinal: 1
+    game: pathfinder-1e
+    episode_count: 9

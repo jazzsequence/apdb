@@ -1,0 +1,13 @@
+id: glass-cannon-live
+title: Glass Cannon Live!
+channels:
+  - the-glass-cannon-network
+format: video
+status: unknown
+description: "System per source: Pathfinder 2nd Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLz3Be--ot61NuA-PaoFDt-GlKOSbxQIfq
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e
+    episode_count: 100

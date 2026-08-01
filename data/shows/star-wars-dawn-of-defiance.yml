@@ -1,0 +1,13 @@
+id: star-wars-dawn-of-defiance
+title: "Star Wars: Dawn of Defiance"
+channels:
+  - moonskull
+format: video
+status: unknown
+description: "System per source: Star Wars Roleplaying FFG Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL0H8BdffG56-MIOVSmKZMOZLfpXFeHava
+seasons:
+  - ordinal: 1
+    game: star-wars-ffg
+    episode_count: 62

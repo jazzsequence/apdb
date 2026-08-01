@@ -1,0 +1,14 @@
+id: warhammer-fantasy-roleplay
+title: Warhammer Fantasy Roleplay
+channels:
+  - high-rollers-dnd
+format: video
+status: unknown
+description: "System per source: Warhammer Fantasy Roleplay 4th Edition (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLHv5CBoZYv4V75RnvV335J6pXGJl2fhrm
+seasons:
+  - ordinal: 1
+    game: warhammer-frp
+    episode_count: 7

@@ -1,0 +1,14 @@
+id: campaign-1-lightfall-5e-d-d
+title: "Campaign 1: LIGHTFALL (5e D&D)"
+channels:
+  - high-rollers-dnd
+format: video
+status: unknown
+description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLHv5CBoZYv4VqKtO6RegWRXG0iAeIZSw3
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 100

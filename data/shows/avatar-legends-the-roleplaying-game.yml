@@ -1,0 +1,13 @@
+id: avatar-legends-the-roleplaying-game
+title: "Avatar Legends: The Roleplaying Game"
+channels:
+  - dice-times
+format: video
+status: unknown
+description: "System per source: Avatar Legends 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLiB-PjNj4hdGjjreLnMQ2vinHHDYCXjjl
+seasons:
+  - ordinal: 1
+    game: avatar-legends
+    episode_count: 10

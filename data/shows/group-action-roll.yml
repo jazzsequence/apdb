@@ -1,0 +1,13 @@
+id: group-action-roll
+title: Group Action Roll
+channels:
+  - ghost-light
+format: video
+status: unknown
+description: "System per source: Daggerheart 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLFNtSHn0vcgNxnuWKgexjm-lsQN7HOIxO
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 9

@@ -1,0 +1,14 @@
+id: inherit-the-sand
+title: Inherit the Sand
+channels:
+  - the-glass-cannon-network
+format: video
+status: unknown
+description: "System per source: Dune: Adventures in the Imperium 1st Edition
+  (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLz3Be--ot61MW-_fihytDayXQ45cD4Bdz
+seasons:
+  - ordinal: 1
+    game: dune-rpg
+    episode_count: 11

@@ -1,0 +1,14 @@
+id: the-kingdom-sleeps
+title: The Kingdom Sleeps
+channels:
+  - the-kingdom-sleeps
+format: video
+status: unknown
+description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
+  series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLIKsqE5rYuvsfQSQW2JVxlh5pBzV-rmPz
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 39

@@ -1,0 +1,13 @@
+id: deathrattle
+title: Deathrattle
+channels:
+  - moonskull
+format: video
+status: unknown
+description: "System per source: Deadlands Reloaded (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL0H8BdffG56-JDypIG24OuA-Dvm7KDr-9
+seasons:
+  - ordinal: 1
+    game: deadlands
+    episode_count: 13

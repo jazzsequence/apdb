@@ -1,0 +1,13 @@
+id: actual-play-sessions-of-cyberpunk-2020-red
+title: Actual Play Sessions Of Cyberpunk 2020/Red
+channels:
+  - jonjonthewise
+format: video
+status: unknown
+description: "System per source: Cyberpunk 2020 (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLunJWS5ymOLnDGI6Oc-Of7bYMTS6B8MdQ
+seasons:
+  - ordinal: 1
+    game: cyberpunk-2020
+    episode_count: 35

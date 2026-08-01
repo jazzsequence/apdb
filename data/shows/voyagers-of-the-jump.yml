@@ -1,0 +1,13 @@
+id: voyagers-of-the-jump
+title: Voyagers of the Jump
+channels:
+  - the-glass-cannon-network
+format: video
+status: unknown
+description: "System per source: Traveller Mongoose 2nd Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLz3Be--ot61P_-ge1l71k7ps4y8U12H4A
+seasons:
+  - ordinal: 1
+    game: traveller
+    episode_count: 20

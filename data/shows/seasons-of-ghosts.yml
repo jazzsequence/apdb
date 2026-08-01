@@ -1,0 +1,13 @@
+id: seasons-of-ghosts
+title: Seasons of Ghosts
+channels:
+  - moonskull
+format: video
+status: unknown
+description: "System per source: Pathfinder 2nd Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PL0H8BdffG56_yJc5CMGQA5oUD8Ivbiqjf
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e
+    episode_count: 54

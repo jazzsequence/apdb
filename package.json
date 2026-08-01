@@ -13,7 +13,8 @@
     "collect": "tsx scripts/collect.ts",
     "audit": "tsx scripts/audit.ts",
     "discover:youtube": "tsx scripts/discover-youtube.ts",
-    "import:yt-shows": "tsx scripts/import-yt-shows.ts"
+    "import:yt-shows": "tsx scripts/import-yt-shows.ts",
+    "sweep:youtube": "tsx scripts/sweep-youtube.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

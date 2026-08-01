@@ -1,0 +1,13 @@
+id: androids-aliens
+title: Androids & Aliens
+channels:
+  - the-glass-cannon-network
+format: video
+status: unknown
+description: "System per source: Starfinder 1st Edition (per the series title)."
+links:
+  website: https://www.youtube.com/playlist?list=PLz3Be--ot61My-dF7Yobmp1ET92R48hVS
+seasons:
+  - ordinal: 1
+    game: starfinder
+    episode_count: 60
