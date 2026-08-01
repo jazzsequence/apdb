@@ -39,7 +39,7 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
   <h1>{show.title}</h1>
 
   <p class="billing">
-    {channels.map((c) => `${c.name} (${c.type})`).join(', ')} ·
+    {channels.map((c, i) => (<>{i > 0 && ', '}<a href={`${base}channels/${c.id}/`}>{c.name}</a>{` (${c.type})`}</>))} ·
     <strong>{show.format}</strong> · {show.status} ·
     {games.map((g) => `${g.name} ${g.edition}`).join(', ')}
   </p>

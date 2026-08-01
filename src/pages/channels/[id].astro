@@ -1,0 +1,73 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDb } from '../../lib/db';
+
+export async function getStaticPaths() {
+  const db = await getDb();
+  return db.channels.map((channel) => {
+    const shows = db.shows.filter((s) => s.channels.includes(channel.id));
+    return {
+      params: { id: channel.id },
+      props: {
+        channel,
+        shows: shows.map((show) => ({
+          show,
+          games: db.gamesFor(show),
+          castCount: new Set(db.castFor(show).map((c) => c.person.id)).size,
+        })),
+      },
+    };
+  });
+}
+
+const { channel, shows } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const totalSeasons = shows.reduce((n, s) => n + s.show.seasons.length, 0);
+---
+
+<Base
+  indexable
+  title={`${channel.name} — Actual Play Database`}
+  description={`Every show produced by ${channel.name} — ${shows.length} shows, ${totalSeasons} seasons.`}
+>
+  <h1>{channel.name}</h1>
+  <p class="billing">
+    <strong>{channel.type}</strong> · {shows.length} shows · {totalSeasons} seasons
+  </p>
+  {channel.description && <p class="lede">{channel.description}</p>}
+
+  <h2>Shows</h2>
+  {
+    shows.length === 0 ? (
+      <p class="lede">No shows recorded for this channel yet.</p>
+    ) : (
+      <ul class="card-list">
+        {shows.map(({ show, games, castCount }) => (
+          <li>
+            <a href={`${base}shows/${show.id}/`}>
+              <div class="card">
+                <h3>{show.title}</h3>
+                <p>
+                  {show.format} · {show.status} · {show.seasons.length} season
+                  {show.seasons.length === 1 ? '' : 's'}
+                  {castCount > 0 && <> · {castCount} credited</>}
+                  {games.length > 0 && <> · {games.map((g) => g.name).join(', ')}</>}
+                </p>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  {
+    channel.links.website && (
+      <p class="billing">
+        <a href={channel.links.website} rel="nofollow noopener">
+          {channel.links.website}
+        </a>
+      </p>
+    )
+  }
+</Base>

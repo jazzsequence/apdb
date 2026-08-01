@@ -1,0 +1,19 @@
+id: mac
+canonical_name: Mac
+sort_name: Mac
+bio: Happy Jacks RPG Network cast member, credited by first name or handle.
+aliases:
+  - id: default
+    name: Mac
+    alias_type: handle
+credits:
+  - show: carefree-high
+    season: 1
+    role: GM/DM
+    character: Delilah "Lila" Driscoll
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://happyjacks.proboards.com/thread/7118/cafefree-high-setting-character-info
+        note: Cast roster posted by the show's host, May 2018.

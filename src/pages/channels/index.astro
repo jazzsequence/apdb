@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDb } from '../../lib/db';
+
+const db = await getDb();
+const base = import.meta.env.BASE_URL;
+
+const rows = db.channels
+  .map((channel) => ({
+    channel,
+    shows: db.shows.filter((s) => s.channels.includes(channel.id)),
+  }))
+  .sort((a, b) => b.shows.length - a.shows.length || a.channel.name.localeCompare(b.channel.name));
+---
+
+<Base
+  title="Channels — Actual Play Database"
+  description="Every producing entity indexed: networks, indie studios and solo creators."
+>
+  <h1>Channels</h1>
+  <p class="lede">
+    Who makes the shows. Networks, independent studios and solo creators are all
+    first-class here — the small ones are where the long tail lives.
+  </p>
+
+  <ul class="card-list">
+    {
+      rows.map(({ channel, shows }) => (
+        <li>
+          <a href={`${base}channels/${channel.id}/`}>
+            <div class="card">
+              <h3>{channel.name}</h3>
+              <p>
+                {channel.type} · {shows.length} show{shows.length === 1 ? '' : 's'}
+              </p>
+            </div>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>
