@@ -12,3 +12,14 @@ seasons:
   - ordinal: 1
     game: vampire-the-masquerade-v5
     episode_count: 4
+image:
+  url: https://i.ytimg.com/vi/ZA48M6LeNm4/hqdefault.jpg
+  licence: fair use
+  attribution: "Twitch Plays Vampire: The Masquerade series art, © its producers.
+    Via YouTube."
+  source: https://www.youtube.com/playlist?list=PL4qzoETfmhLa4j1wSAs45CcBAFMv_h0rA
+  depicts: "Series art for Twitch Plays Vampire: The Masquerade"
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

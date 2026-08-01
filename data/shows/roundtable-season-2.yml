@@ -14,3 +14,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 8
+image:
+  url: https://i.ytimg.com/vi/FrImtb3TLo8/hqdefault.jpg
+  licence: fair use
+  attribution: Roundtable Season 2 series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PL7atuZxmT957VFLHVhg3bv40_xbBpNEXB
+  depicts: Series art for Roundtable Season 2
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

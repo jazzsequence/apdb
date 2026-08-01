@@ -1,0 +1,22 @@
+id: sentinels-of-the-storm
+title: Sentinels of the Storm
+channels:
+  - realmsmith
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLcVoov2ilOfLx_WrcApE4pzj2aUF92FiQ
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 26
+image:
+  url: https://i.ytimg.com/vi/rW8LZavWE4g/hqdefault.jpg
+  licence: fair use
+  attribution: Sentinels of the Storm series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLcVoov2ilOfLx_WrcApE4pzj2aUF92FiQ
+  depicts: Series art for Sentinels of the Storm
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

@@ -1,0 +1,18 @@
+id: jake-bartolone
+canonical_name: Jake Bartolone
+sort_name: Bartolone, Jake
+aliases:
+  - id: default
+    name: Jake Bartolone
+    alias_type: legal
+credits:
+  - show: beyond-the-mist-all
+    season: 1
+    role: player
+    character: Curtiss'
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=BgLFAUEUaBs
+        note: "Cast per the production's own description of \"Prologue I: Rescue from
+          Neverdeath Pt.1 | Beyond the Mist | RealmSmith\"."

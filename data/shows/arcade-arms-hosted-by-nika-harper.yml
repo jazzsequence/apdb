@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 7
+image:
+  url: https://i.ytimg.com/vi/Wf18JhgYOas/hqdefault.jpg
+  licence: fair use
+  attribution: Arcade Arms - Hosted by Nika Harper series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PL7atuZxmT956UDizukeL9TLpOZGFQBTf-
+  depicts: Series art for Arcade Arms - Hosted by Nika Harper
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

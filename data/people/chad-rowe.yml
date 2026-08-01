@@ -1,0 +1,17 @@
+id: chad-rowe
+canonical_name: Chad Rowe
+sort_name: Rowe, Chad
+aliases:
+  - id: default
+    name: Chad Rowe
+    alias_type: legal
+credits:
+  - show: ink-u-bus
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YMXTMrZuG-I
+        note: "Cast per the production's own description of \"Ep1: All Aboard |
+          Ink-U-Bus | D&D 5e Liveplay in Eberron | RealmSmith\"."

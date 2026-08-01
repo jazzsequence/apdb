@@ -11,3 +11,13 @@ seasons:
   - ordinal: 1
     game: blades-in-the-dark
     episode_count: 45
+image:
+  url: https://i.ytimg.com/vi/VT04k7d74yg/hqdefault.jpg
+  licence: fair use
+  attribution: Haunted City series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLz3Be--ot61Nip0tbIMHcVnZWz3LOE_rb
+  depicts: Series art for Haunted City
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

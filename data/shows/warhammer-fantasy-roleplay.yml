@@ -12,3 +12,13 @@ seasons:
   - ordinal: 1
     game: warhammer-frp
     episode_count: 7
+image:
+  url: https://i.ytimg.com/vi/LvYX0smpz2c/hqdefault.jpg
+  licence: fair use
+  attribution: Warhammer Fantasy Roleplay series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLHv5CBoZYv4V75RnvV335J6pXGJl2fhrm
+  depicts: Series art for Warhammer Fantasy Roleplay
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

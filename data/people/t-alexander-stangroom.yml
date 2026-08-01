@@ -1,0 +1,18 @@
+id: t-alexander-stangroom
+canonical_name: T. Alexander Stangroom
+sort_name: Stangroom, T. Alexander
+aliases:
+  - id: default
+    name: T. Alexander Stangroom
+    alias_type: legal
+credits:
+  - show: tales-of-the-wasted-west
+    season: 1
+    role: player
+    character: Mr. Smith
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YHCw9IXZkJk
+        note: "Cast per the production's own description of \"Ep1: You Meet in a Saloon
+          | Tales of the Wasted West | D&D 5e Western Liveplay | RealmSmith\"."

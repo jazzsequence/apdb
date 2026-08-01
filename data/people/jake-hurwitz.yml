@@ -29,3 +29,9 @@ credits:
     alias: default
     sources:
       - *a1
+wikidata_qid: Q6124752
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/5/52/Jakehurwitz2014.png
+  licence: CC-BY-SA-4.0
+  attribution: ButYouCanCallMeJosh
+  source: https://commons.wikimedia.org/wiki/File:Jakehurwitz2014.png

@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 6
+image:
+  url: https://i.ytimg.com/vi/YDBhgO31i4g/hqdefault.jpg
+  licence: fair use
+  attribution: Hunting Heresy series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLEUU6UScKQRtCnAQV2S26SoiNJpYP1xDi
+  depicts: Series art for Hunting Heresy
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

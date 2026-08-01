@@ -34,7 +34,18 @@ credits:
     character: Eloin Emberleaf
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=mY9w7n84PmM
+      - url: https://www.youtube.com/watch?v=mY9w7n84PmM
         note: Cast per the production's own description of "Dungeon Masters | Official
           D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".
+        tier: official
+  - show: shadowrun-excommunication
+    season: 1
+    role: player
+    character: Rio
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=blF6ZWD3h5s
+        note: "Cast per the production's own description of \"Session Zero LIVE from
+          SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
+          RealmSmith\"."

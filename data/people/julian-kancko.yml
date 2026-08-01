@@ -1,0 +1,29 @@
+id: julian-kancko
+canonical_name: Julian Kancko
+sort_name: Kancko, Julian
+links: {}
+aliases:
+  - id: default
+    name: Julian Kancko
+    alias_type: legal
+credits:
+  - show: realmsmith-s-aftermath
+    season: 1
+    role: player
+    character: Baba Lysaga
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=ogEVkNTtdvY
+        note: Cast per the production's own description of "Aftermath - Discussing Up To
+          "Into The Mist" S3E5 ft. David & Jason".
+        tier: official
+  - show: the-tides-of-wildemount
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=EVf7EKHhEoc
+        note: "Cast per the production's own description of \"DnD Tide of Retribution
+          Playthrough - Ep. 2: Waves of Retribution - The Tides of
+          Wildemount\"."

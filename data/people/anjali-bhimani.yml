@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/UnDeadwood (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: anjali-bhimani
 canonical_name: Anjali Bhimani
 sort_name: Bhimani, Anjali
@@ -82,6 +76,17 @@ credits:
     role: player
     alias: default
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/UnDeadwood
+      - url: https://criticalrole.fandom.com/wiki/UnDeadwood
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: shadowrun-excommunication
+    season: 1
+    role: player
+    character: Trigger
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=blF6ZWD3h5s
+        note: "Cast per the production's own description of \"Session Zero LIVE from
+          SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
+          RealmSmith\"."

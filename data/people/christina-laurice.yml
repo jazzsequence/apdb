@@ -1,0 +1,19 @@
+id: christina-laurice
+canonical_name: Christina Laurice
+sort_name: Laurice, Christina
+aliases:
+  - id: default
+    name: Christina Laurice
+    alias_type: legal
+credits:
+  - show: the-tides-of-wildemount
+    season: 1
+    role: player
+    character: Gaziel
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=osGJdS7myeQ
+        note: "Cast per the production's own description of \"DnD Tide of Retribution
+          Playthrough - Ep. 1: Welcome to the Coast - The Tides of
+          Wildemount\"."

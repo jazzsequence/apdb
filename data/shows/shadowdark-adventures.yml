@@ -11,3 +11,13 @@ seasons:
   - ordinal: 1
     game: shadowdark
     episode_count: 23
+image:
+  url: https://i.ytimg.com/vi/0wU7lDGfvm8/hqdefault.jpg
+  licence: fair use
+  attribution: ShadowDark Adventures series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PL3sFiRJEF28H8ZfmtLnmqhoLyRnma4clx
+  depicts: Series art for ShadowDark Adventures
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

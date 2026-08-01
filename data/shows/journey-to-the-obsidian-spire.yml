@@ -17,3 +17,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 18
+image:
+  url: https://i.ytimg.com/vi/uxc0g-qvVXY/hqdefault.jpg
+  licence: fair use
+  attribution: Journey to the Obsidian Spire series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLQEFidMHP9SCk4gK_-i_Ztw1z0nhtwXzw
+  depicts: Series art for Journey to the Obsidian Spire
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

@@ -14,7 +14,8 @@
     "audit": "tsx scripts/audit.ts",
     "discover:youtube": "tsx scripts/discover-youtube.ts",
     "import:yt-shows": "tsx scripts/import-yt-shows.ts",
-    "sweep:youtube": "tsx scripts/sweep-youtube.ts"
+    "sweep:youtube": "tsx scripts/sweep-youtube.ts",
+    "fetch:images": "tsx scripts/fetch-images.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

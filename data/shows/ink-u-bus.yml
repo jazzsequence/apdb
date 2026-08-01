@@ -1,0 +1,22 @@
+id: ink-u-bus
+title: Ink-U-Bus
+channels:
+  - realmsmith
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLcVoov2ilOfIoKvDlKpj2XJoPfn97LAJu
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 20
+image:
+  url: https://i.ytimg.com/vi/YMXTMrZuG-I/hqdefault.jpg
+  licence: fair use
+  attribution: Ink-U-Bus series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLcVoov2ilOfIoKvDlKpj2XJoPfn97LAJu
+  depicts: Series art for Ink-U-Bus
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

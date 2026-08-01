@@ -1,6 +1,7 @@
 id: james-haeck
 canonical_name: James Haeck
 sort_name: Haeck, James
+links: {}
 aliases:
   - id: default
     name: James Haeck
@@ -12,7 +13,17 @@ credits:
     character: Heidi
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=NdaftNeDtRU
+      - url: https://www.youtube.com/watch?v=NdaftNeDtRU
         note: Cast per the production's own description of "Prologue | Tides of
           Wildemount".
+        tier: official
+  - show: the-tides-of-wildemount
+    season: 1
+    role: player
+    character: Heidi
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=2k8p62-DpS0
+        note: Cast per the production's own description of "Prologue - The Tides of
+          Wildemount | LIVE D&D with RealmSmith".

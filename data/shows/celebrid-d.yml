@@ -14,3 +14,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 6
+image:
+  url: https://i.ytimg.com/vi/yLEMb_RIZ3o/hqdefault.jpg
+  licence: fair use
+  attribution: CelebriD&D series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PL7atuZxmT955LFP-Lw16OkRgkM6P0Gk_r
+  depicts: Series art for CelebriD&D
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

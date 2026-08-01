@@ -1,0 +1,18 @@
+id: tim-morrison
+canonical_name: Tim Morrison
+sort_name: Morrison, Tim
+aliases:
+  - id: default
+    name: Tim Morrison
+    alias_type: legal
+credits:
+  - show: the-tides-of-wildemount
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=EVf7EKHhEoc
+        note: "Cast per the production's own description of \"DnD Tide of Retribution
+          Playthrough - Ep. 2: Waves of Retribution - The Tides of
+          Wildemount\"."

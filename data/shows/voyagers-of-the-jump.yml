@@ -11,3 +11,13 @@ seasons:
   - ordinal: 1
     game: traveller
     episode_count: 20
+image:
+  url: https://i.ytimg.com/vi/_5ESEkFoOdE/hqdefault.jpg
+  licence: fair use
+  attribution: Voyagers of the Jump series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLz3Be--ot61P_-ge1l71k7ps4y8U12H4A
+  depicts: Series art for Voyagers of the Jump
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

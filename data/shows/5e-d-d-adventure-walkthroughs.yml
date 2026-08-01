@@ -12,3 +12,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 22
+image:
+  url: https://i.ytimg.com/vi/2i_LyBITCLM/hqdefault.jpg
+  licence: fair use
+  attribution: 5E D&D Adventure Walkthroughs series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLsIJw22Nm-cvUJj1MUoYUCMkSirflbMXH
+  depicts: Series art for 5E D&D Adventure Walkthroughs
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

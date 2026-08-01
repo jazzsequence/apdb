@@ -1,6 +1,7 @@
 id: noura-ibrahim
 canonical_name: Noura Ibrahim
 sort_name: Ibrahim, Noura
+links: {}
 aliases:
   - id: default
     name: Noura Ibrahim
@@ -12,15 +13,77 @@ credits:
     character: Ezmerelda
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=jealZAH1J4g
+      - url: https://www.youtube.com/watch?v=jealZAH1J4g
         note: Cast per the production's own description of "Finale, Part 1 - Into the
           Mist | The Devil Himself".
+        tier: official
   - show: la-by-night
     season: 1
     role: player
     character: Ib
     alias: default
     sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
+      - url: https://en.wikipedia.org/wiki/L.A._by_Night
+        tier: reference
+  - show: cyberpunk-red
+    season: 1
+    role: player
+    character: Nox Arya
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=88ovuIVx3W0
+        note: Cast per the production's own description of "Cyberpunk Red Live Show at
+          PAX East Teaser | RealmSmith".
+        tier: official
+  - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
+    season: 1
+    role: player
+    character: Ezmerelda
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=YmE88oSZmKM
+        note: "Cast per the production's own description of \"Curse of Strahd
+          Playthrough (2020) - S1, Ep12: The Devil Himself - Pt. 1 | Into the
+          Mist\"."
+        tier: official
+  - show: realmsmith-learns-cyberpunk
+    season: 1
+    role: player
+    character: Nox Arya
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=88ovuIVx3W0
+        note: Cast per the production's own description of "Cyberpunk Red Live Show at
+          PAX East Teaser | RealmSmith".
+        tier: official
+  - show: realmsmith-s-aftermath
+    season: 1
+    role: player
+    character: Ezmerelda
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=zJ4Q_-gIxhg
+        note: Cast per the production's own description of "Aftermath - Discussing Up To
+          "Into the Mist" S3E2 ft. Adam, David, Jason & Noura".
+        tier: official
+  - show: shadowrun-excommunication
+    season: 1
+    role: player
+    character: Liv
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=blF6ZWD3h5s
+        note: "Cast per the production's own description of \"Session Zero LIVE from
+          SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
+          RealmSmith\"."
+        tier: official
+  - show: the-tides-of-wildemount
+    season: 1
+    role: player
+    character: Dajarkal
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=2k8p62-DpS0
+        note: Cast per the production's own description of "Prologue - The Tides of
+          Wildemount | LIVE D&D with RealmSmith".

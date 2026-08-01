@@ -14,3 +14,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 18
+image:
+  url: https://i.ytimg.com/vi/9DTaddI9nio/hqdefault.jpg
+  licence: fair use
+  attribution: Relics and Rarities series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PL7atuZxmT954B-AtfJsw_YbULHL_L7J8z
+  depicts: Series art for Relics and Rarities
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

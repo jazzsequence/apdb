@@ -39,14 +39,25 @@ credits:
     role: player
     alias: default
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
   - show: la-by-night
     season: 1
     role: player
     character: Nines Rodriguez
     alias: default
     sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
+      - url: https://en.wikipedia.org/wiki/L.A._by_Night
+        tier: reference
+  - show: shadowrun-excommunication
+    season: 1
+    role: player
+    character: Frayne
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=blF6ZWD3h5s
+        note: "Cast per the production's own description of \"Session Zero LIVE from
+          SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
+          RealmSmith\"."

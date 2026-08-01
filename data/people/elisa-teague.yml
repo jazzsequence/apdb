@@ -1,0 +1,18 @@
+id: elisa-teague
+canonical_name: Elisa Teague
+sort_name: Teague, Elisa
+aliases:
+  - id: default
+    name: Elisa Teague
+    alias_type: legal
+credits:
+  - show: gamehole-con-viii-2021
+    season: 1
+    role: player
+    character: Seydra Shadowgrave
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=8b-mM94BOJY
+        note: "Cast per the production's own description of \"Into the Mist: Assault on
+          Garanary 13 One-Shot | LIVE from Gamehole Con VIII | RealmSmith\"."

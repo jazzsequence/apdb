@@ -1,0 +1,29 @@
+id: chelsea-dot-steverson
+canonical_name: Chelsea 'Dot' Steverson
+sort_name: Steverson, Chelsea 'Dot'
+links: {}
+aliases:
+  - id: default
+    name: Chelsea 'Dot' Steverson
+    alias_type: legal
+credits:
+  - show: cyberpunk-red
+    season: 1
+    role: player
+    character: Ixtal
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=hWXH8Z0bBno
+        note: Cast per the production's own description of "RealmSmith Learns Cyberpunk
+          Red Intro | RealmSmith".
+        tier: official
+  - show: realmsmith-learns-cyberpunk
+    season: 1
+    role: player
+    character: Ixtal
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=hWXH8Z0bBno
+        note: Cast per the production's own description of "RealmSmith Learns Cyberpunk
+          Red Intro | RealmSmith".

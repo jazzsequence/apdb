@@ -1,0 +1,18 @@
+id: dot-steverson
+canonical_name: Dot Steverson
+sort_name: Steverson, Dot
+aliases:
+  - id: default
+    name: Dot Steverson
+    alias_type: legal
+credits:
+  - show: tales-of-the-wasted-west
+    season: 1
+    role: player
+    character: Wedler
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YHCw9IXZkJk
+        note: "Cast per the production's own description of \"Ep1: You Meet in a Saloon
+          | Tales of the Wasted West | D&D 5e Western Liveplay | RealmSmith\"."

@@ -12,3 +12,14 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 6
+image:
+  url: https://i.ytimg.com/vi/5GAyzVmG64A/hqdefault.jpg
+  licence: fair use
+  attribution: To Save a Kingdom Level Up Advanced 5th Edition Actual Play series
+    art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLpbzuJtxfbQJx5wjos2Bfw7GKh0rClxd7
+  depicts: Series art for To Save a Kingdom Level Up Advanced 5th Edition Actual Play
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

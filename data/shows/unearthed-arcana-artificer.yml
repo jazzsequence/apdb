@@ -12,3 +12,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 9
+image:
+  url: https://i.ytimg.com/vi/WhYeq50NoYA/hqdefault.jpg
+  licence: fair use
+  attribution: "Unearthed Arcana: Artificer series art, © its producers. Via YouTube."
+  source: https://www.youtube.com/playlist?list=PLfS8QgUdeGYqgQMwMKYN5b_AdO2wVcvXB
+  depicts: "Series art for Unearthed Arcana: Artificer"
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

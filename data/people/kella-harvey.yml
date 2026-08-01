@@ -1,0 +1,18 @@
+id: kella-harvey
+canonical_name: Kella Harvey
+sort_name: Harvey, Kella
+aliases:
+  - id: default
+    name: Kella Harvey
+    alias_type: legal
+credits:
+  - show: beyond-the-mist-all
+    season: 1
+    role: player
+    character: Alondra Vann Gale
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=BgLFAUEUaBs
+        note: "Cast per the production's own description of \"Prologue I: Rescue from
+          Neverdeath Pt.1 | Beyond the Mist | RealmSmith\"."

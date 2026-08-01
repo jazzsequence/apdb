@@ -1,0 +1,18 @@
+id: jesse-jerdak
+canonical_name: Jesse Jerdak
+sort_name: Jerdak, Jesse
+aliases:
+  - id: default
+    name: Jesse Jerdak
+    alias_type: legal
+credits:
+  - show: tales-of-the-wasted-west
+    season: 1
+    role: player
+    character: Archie
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YHCw9IXZkJk
+        note: "Cast per the production's own description of \"Ep1: You Meet in a Saloon
+          | Tales of the Wasted West | D&D 5e Western Liveplay | RealmSmith\"."

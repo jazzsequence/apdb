@@ -11,3 +11,14 @@ seasons:
   - ordinal: 1
     game: starfinder
     episode_count: 16
+image:
+  url: https://i.ytimg.com/vi/BSMATreVTXg/hqdefault.jpg
+  licence: fair use
+  attribution: "The Absalom Files: A Starfinder Actual Play series art, © its
+    producers. Via YouTube."
+  source: https://www.youtube.com/playlist?list=PLVjhzjoqaX2LRAhKNtlKfEp1w7UC1HqAv
+  depicts: "Series art for The Absalom Files: A Starfinder Actual Play"
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

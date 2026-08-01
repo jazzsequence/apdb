@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: felicia-day
 canonical_name: Felicia Day
 sort_name: Day, Felicia
@@ -23,3 +17,9 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
+wikidata_qid: Q234314
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/6/64/Felicia_Day_%2842917965544%29_%28cropped%29.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Gage Skidmore from Peoria, AZ, United States of America
+  source: https://commons.wikimedia.org/wiki/File:Felicia_Day_(42917965544)_(cropped).jpg

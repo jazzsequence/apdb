@@ -1,0 +1,39 @@
+id: chad-brinkley
+canonical_name: Chad Brinkley
+sort_name: Brinkley, Chad
+links: {}
+aliases:
+  - id: default
+    name: Chad Brinkley
+    alias_type: legal
+credits:
+  - show: beyond-the-mist-all
+    season: 1
+    role: player
+    character: Dannika Dobrescu
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=odl1PadrvzY
+        note: "Cast per the production's own description of \"Prologue II: Search for
+          the Betrayer Pt.1 | Beyond the Mist | RealmSmith\"."
+        tier: official
+  - show: beyond-the-mist-prologue-i-rescue-at-neverdeath
+    season: 1
+    role: player
+    character: Dannika Dobrescu
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=KDSyaqVT-eU
+        note: "Cast per the production's own description of \"Prologue II: Search for
+          the Betrayer Pt.3 | Beyond the Mist | RealmSmith\"."
+        tier: official
+  - show: beyond-the-mist-prologue-ii-search-for-the-betrayer
+    season: 1
+    role: player
+    character: Dannika Dobrescu
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=KDSyaqVT-eU
+        note: "Cast per the production's own description of \"Prologue II: Search for
+          the Betrayer Pt.3 | Beyond the Mist | RealmSmith\"."

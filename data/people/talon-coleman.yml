@@ -1,0 +1,19 @@
+id: talon-coleman
+canonical_name: Talon Coleman
+sort_name: Coleman, Talon
+aliases:
+  - id: default
+    name: Talon Coleman
+    alias_type: legal
+credits:
+  - show: shadowrun-excommunication
+    season: 1
+    role: player
+    character: Blaze
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=blF6ZWD3h5s
+        note: "Cast per the production's own description of \"Session Zero LIVE from
+          SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
+          RealmSmith\"."

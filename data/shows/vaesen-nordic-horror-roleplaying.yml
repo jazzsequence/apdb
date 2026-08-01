@@ -11,3 +11,13 @@ seasons:
   - ordinal: 1
     game: vaesen
     episode_count: 42
+image:
+  url: https://i.ytimg.com/vi/Ytku0we1XhE/hqdefault.jpg
+  licence: fair use
+  attribution: Vaesen - Nordic Horror Roleplaying series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLYQ_VgGpQI5MCwtKzODqJTzb8_0wjbbYM
+  depicts: Series art for Vaesen - Nordic Horror Roleplaying
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

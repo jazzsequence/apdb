@@ -1,6 +1,7 @@
 id: adam-mainse
 canonical_name: Adam Mainse
 sort_name: Mainse, Adam
+links: {}
 aliases:
   - id: default
     name: Adam Mainse
@@ -12,7 +13,39 @@ credits:
     character: Dmitri Maddock
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=nrO5IOORlaE
+      - url: https://www.youtube.com/watch?v=nrO5IOORlaE
         note: Cast per the production's own description of "Episode 1 - Into the Mist |
           The Mists of Ravenloft".
+        tier: official
+  - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
+    season: 1
+    role: player
+    character: Dmitri Maddock
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=soKqxb9nCuM
+        note: "Cast per the production's own description of \"Curse of Strahd
+          Playthrough (2020) - S1, Ep1: The Mists of Ravenloft | Into the
+          Mist\"."
+        tier: official
+  - show: realmsmith-s-aftermath
+    season: 1
+    role: player
+    character: Dimitri
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=zJ4Q_-gIxhg
+        note: Cast per the production's own description of "Aftermath - Discussing Up To
+          "Into the Mist" S3E2 ft. Adam, David, Jason & Noura".
+        tier: official
+  - show: the-tides-of-wildemount
+    season: 1
+    role: player
+    character: Bolt
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=osGJdS7myeQ
+        note: "Cast per the production's own description of \"DnD Tide of Retribution
+          Playthrough - Ep. 1: Welcome to the Coast - The Tides of
+          Wildemount\"."

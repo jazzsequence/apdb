@@ -12,3 +12,15 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 48
+image:
+  url: https://i.ytimg.com/vi/pJoIQnfIdQc/hqdefault.jpg
+  licence: fair use
+  attribution: "An Astarion and Karlach Adventure: Love is a Legendary Action
+    series art, © its producers. Via YouTube."
+  source: https://www.youtube.com/playlist?list=PLfS8QgUdeGYr4vhX-bnhBdfr05VD2j9yw
+  depicts: "Series art for An Astarion and Karlach Adventure: Love is a Legendary
+    Action"
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

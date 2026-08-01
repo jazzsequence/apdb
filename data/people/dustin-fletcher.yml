@@ -1,0 +1,24 @@
+id: dustin-fletcher
+canonical_name: Dustin Fletcher
+sort_name: Fletcher, Dustin
+aliases:
+  - id: default
+    name: Dustin Fletcher
+    alias_type: legal
+credits:
+  - show: gamehole-con-viii-2021
+    season: 1
+    role: player
+    character: Rynn
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=8b-mM94BOJY
+        note: "Cast per the production's own description of \"Into the Mist: Assault on
+          Garanary 13 One-Shot | LIVE from Gamehole Con VIII | RealmSmith\"."
+wikidata_qid: Q5317095
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/b/bc/Lance_Franklin_accompanied_by_Paddy_Ryder_%28cropped%29.jpg
+  licence: CC-BY-2.0
+  attribution: Tom Reynolds from Melbourne, Australia
+  source: https://commons.wikimedia.org/wiki/File:Lance_Franklin_accompanied_by_Paddy_Ryder_(cropped).jpg

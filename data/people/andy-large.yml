@@ -1,0 +1,18 @@
+id: andy-large
+canonical_name: Andy Large
+sort_name: Large, Andy
+aliases:
+  - id: default
+    name: Andy Large
+    alias_type: legal
+credits:
+  - show: ink-u-bus
+    season: 1
+    role: player
+    character: Mickey
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YMXTMrZuG-I
+        note: "Cast per the production's own description of \"Ep1: All Aboard |
+          Ink-U-Bus | D&D 5e Liveplay in Eberron | RealmSmith\"."

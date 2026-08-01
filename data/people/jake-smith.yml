@@ -1,0 +1,18 @@
+id: jake-smith
+canonical_name: Jake Smith
+sort_name: Smith, Jake
+aliases:
+  - id: default
+    name: Jake Smith
+    alias_type: legal
+credits:
+  - show: beyond-the-mist-all
+    season: 1
+    role: player
+    character: Archaval Goldsheaf
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=BgLFAUEUaBs
+        note: "Cast per the production's own description of \"Prologue I: Rescue from
+          Neverdeath Pt.1 | Beyond the Mist | RealmSmith\"."

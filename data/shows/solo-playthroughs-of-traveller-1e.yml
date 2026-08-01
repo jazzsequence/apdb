@@ -11,3 +11,13 @@ seasons:
   - ordinal: 1
     game: traveller
     episode_count: 5
+image:
+  url: https://i.ytimg.com/vi/vT6YJNpk3QA/hqdefault.jpg
+  licence: fair use
+  attribution: Solo Playthroughs of Traveller 1e series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLwaZ32mjMI4lid_9DyH8JhYjUpSarKQeW
+  depicts: Series art for Solo Playthroughs of Traveller 1e
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

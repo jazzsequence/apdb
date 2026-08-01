@@ -1,6 +1,7 @@
 id: brandon-perkins
 canonical_name: Brandon Perkins
 sort_name: Perkins, Brandon
+links: {}
 aliases:
   - id: default
     name: Brandon Perkins
@@ -12,7 +13,38 @@ credits:
     character: Sterling
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=nrO5IOORlaE
+      - url: https://www.youtube.com/watch?v=nrO5IOORlaE
         note: Cast per the production's own description of "Episode 1 - Into the Mist |
           The Mists of Ravenloft".
+        tier: official
+  - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
+    season: 1
+    role: player
+    character: Sterling
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=soKqxb9nCuM
+        note: "Cast per the production's own description of \"Curse of Strahd
+          Playthrough (2020) - S1, Ep1: The Mists of Ravenloft | Into the
+          Mist\"."
+        tier: official
+  - show: realmsmith-s-aftermath
+    season: 1
+    role: player
+    character: Sterling
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=8dfngflu6_Y
+        note: Cast per the production's own description of "Aftermath - Discussing Up To
+          "Into the Mist" S3E4 ft. Adam & Omega".
+        tier: official
+  - show: the-tides-of-wildemount
+    season: 1
+    role: player
+    character: Snow
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=2k8p62-DpS0
+        note: Cast per the production's own description of "Prologue - The Tides of
+          Wildemount | LIVE D&D with RealmSmith".

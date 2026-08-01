@@ -180,15 +180,26 @@ credits:
     character: Strahd von Zarovich
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=g9XP5aluDPo
+      - url: https://www.youtube.com/watch?v=g9XP5aluDPo
         note: Cast per the production's own description of "Season 2 Ep. 1 - Into the
           Mist | A Dark Invitation".
+        tier: official
   - show: la-by-night
     season: 1
     role: player
     character: Cuthbert Beckett
     alias: default
     sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
+      - url: https://en.wikipedia.org/wiki/L.A._by_Night
+        tier: reference
+  - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
+    season: 1
+    role: player
+    character: Strahd von Zarovich
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=S5lhHMTpHWU
+        note: "Cast per the production's own description of \"Curse of Strahd
+          Playthrough (2020) - S2, Ep1: A Dark Invitation (With Matt Mercer) |
+          Into the Mist\"."

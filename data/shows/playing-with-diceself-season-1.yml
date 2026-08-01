@@ -12,3 +12,13 @@ seasons:
   - ordinal: 1
     game: vampire-the-masquerade-v5
     episode_count: 6
+image:
+  url: https://i.ytimg.com/vi/SR6vHt2CtHs/hqdefault.jpg
+  licence: fair use
+  attribution: Playing With Diceself Season 1 series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLTDXW0PEYBq_8IkZrt0Iih3HYS0qhFS5c
+  depicts: Series art for Playing With Diceself Season 1
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

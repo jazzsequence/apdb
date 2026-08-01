@@ -10,3 +10,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 9
+image:
+  url: https://i.ytimg.com/vi/Hku2X-mNW40/hqdefault.jpg
+  licence: fair use
+  attribution: Guardians of the Galaxy series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PL7atuZxmT954CBmgwgQPAf-rH2uU3Aiti
+  depicts: Series art for Guardians of the Galaxy
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

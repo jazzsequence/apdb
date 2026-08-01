@@ -24,3 +24,14 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 24
+image:
+  url: https://i.ytimg.com/vi/7qhBkIE2lAg/hqdefault.jpg
+  licence: fair use
+  attribution: "Dagger in the Heart - Heart: The City Beneath series art, © its
+    producers. Via YouTube."
+  source: https://www.youtube.com/playlist?list=PLEUU6UScKQRvGQi4L5tOjZA24c5iJ6LRm
+  depicts: "Series art for Dagger in the Heart - Heart: The City Beneath"
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

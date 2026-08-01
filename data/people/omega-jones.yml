@@ -1,0 +1,39 @@
+id: omega-jones
+canonical_name: Omega Jones
+sort_name: Jones, Omega
+links: {}
+aliases:
+  - id: default
+    name: Omega Jones
+    alias_type: legal
+credits:
+  - show: cyberpunk-red
+    season: 1
+    role: player
+    character: Kijani 'Chiron' Adebayo
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=hWXH8Z0bBno
+        note: Cast per the production's own description of "RealmSmith Learns Cyberpunk
+          Red Intro | RealmSmith".
+        tier: official
+  - show: realmsmith-learns-cyberpunk
+    season: 1
+    role: player
+    character: Kijani 'Chiron' Adebayo
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=hWXH8Z0bBno
+        note: Cast per the production's own description of "RealmSmith Learns Cyberpunk
+          Red Intro | RealmSmith".
+        tier: official
+  - show: tales-of-the-wasted-west
+    season: 1
+    role: player
+    character: Sully
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YHCw9IXZkJk
+        note: "Cast per the production's own description of \"Ep1: You Meet in a Saloon
+          | Tales of the Wasted West | D&D 5e Western Liveplay | RealmSmith\"."

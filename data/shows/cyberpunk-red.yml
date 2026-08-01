@@ -1,0 +1,22 @@
+id: cyberpunk-red
+title: Cyberpunk Red
+channels:
+  - realmsmith
+format: video
+status: unknown
+links:
+  website: https://www.youtube.com/playlist?list=PLcVoov2ilOfJVb3KxT0yjzryN40fysTsg
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 11
+image:
+  url: https://i.ytimg.com/vi/ruIl56IKRFo/hqdefault.jpg
+  licence: fair use
+  attribution: Cyberpunk Red series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLcVoov2ilOfJVb3KxT0yjzryN40fysTsg
+  depicts: Series art for Cyberpunk Red
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

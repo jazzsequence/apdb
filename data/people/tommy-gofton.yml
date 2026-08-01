@@ -1,0 +1,18 @@
+id: tommy-gofton
+canonical_name: Tommy Gofton
+sort_name: Gofton, Tommy
+aliases:
+  - id: default
+    name: Tommy Gofton
+    alias_type: legal
+credits:
+  - show: gamehole-con-viii-2021
+    season: 1
+    role: player
+    character: Loholt Lynnvander
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=8b-mM94BOJY
+        note: "Cast per the production's own description of \"Into the Mist: Assault on
+          Garanary 13 One-Shot | LIVE from Gamehole Con VIII | RealmSmith\"."

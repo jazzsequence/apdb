@@ -1,0 +1,18 @@
+id: kassidy-norman
+canonical_name: Kassidy Norman
+sort_name: Norman, Kassidy
+aliases:
+  - id: default
+    name: Kassidy Norman
+    alias_type: legal
+credits:
+  - show: ink-u-bus
+    season: 1
+    role: player
+    character: Dara
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YMXTMrZuG-I
+        note: "Cast per the production's own description of \"Ep1: All Aboard |
+          Ink-U-Bus | D&D 5e Liveplay in Eberron | RealmSmith\"."

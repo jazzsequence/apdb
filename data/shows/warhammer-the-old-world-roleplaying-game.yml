@@ -12,3 +12,14 @@ seasons:
   - ordinal: 1
     game: warhammer-frp
     episode_count: 4
+image:
+  url: https://i.ytimg.com/vi/52spivQpOBQ/hqdefault.jpg
+  licence: fair use
+  attribution: "Warhammer: The Old World Roleplaying Game series art, © its
+    producers. Via YouTube."
+  source: https://www.youtube.com/playlist?list=PL1dc382O8j8SYLjIrwWs_SBDWFG1_f7bo
+  depicts: "Series art for Warhammer: The Old World Roleplaying Game"
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

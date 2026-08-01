@@ -13,3 +13,13 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 10
+image:
+  url: https://i.ytimg.com/vi/ftNG15GpnTU/hqdefault.jpg
+  licence: fair use
+  attribution: LearningTown series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PL7atuZxmT957CmcVYWWkiAUUnAl8h4BnJ
+  depicts: Series art for LearningTown
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

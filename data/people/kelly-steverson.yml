@@ -1,0 +1,18 @@
+id: kelly-steverson
+canonical_name: Kelly Steverson
+sort_name: Steverson, Kelly
+aliases:
+  - id: default
+    name: Kelly Steverson
+    alias_type: legal
+credits:
+  - show: ink-u-bus
+    season: 1
+    role: player
+    character: Magvar
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YMXTMrZuG-I
+        note: "Cast per the production's own description of \"Ep1: All Aboard |
+          Ink-U-Bus | D&D 5e Liveplay in Eberron | RealmSmith\"."

@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: joe-manganiello
 canonical_name: Joe Manganiello
 sort_name: Manganiello, Joe
@@ -23,3 +17,9 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
+wikidata_qid: Q470005
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Joe_Manganiello_July_2015.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Eva Rinaldi
+  source: https://commons.wikimedia.org/wiki/File:Joe_Manganiello_July_2015.jpg

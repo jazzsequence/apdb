@@ -20,6 +20,7 @@ import { join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { creditsFromDescription, playlistVideos } from '../src/lib/sources/youtube.js';
+import { fetchAllImages } from '../src/lib/images.js';
 
 const API = 'https://www.googleapis.com/youtube/v3';
 const args = process.argv.slice(2);
@@ -332,6 +333,7 @@ async function main() {
   }
 
   if (!dryRun) {
+    await fetchAllImages();
     console.log(`\n${newChannels} channels, ${newShows} shows added.`);
     if (castable.length) {
       console.log(`\n${castable.length} have a readable cast — import with --youtube --playlist:`);

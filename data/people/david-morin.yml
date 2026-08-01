@@ -1,6 +1,7 @@
 id: david-morin
 canonical_name: David Morin
 sort_name: Morin, David
+links: {}
 aliases:
   - id: default
     name: David Morin
@@ -12,7 +13,28 @@ credits:
     character: Muskoka
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=fVh7KpXoJq4
+      - url: https://www.youtube.com/watch?v=fVh7KpXoJq4
         note: Cast per the production's own description of "Season 2 Ep. 2 - Into the
           Mist | Old Bonegrinder".
+        tier: official
+  - show: realmsmith-s-aftermath
+    season: 1
+    role: player
+    character: Muskoka
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=zJ4Q_-gIxhg
+        note: Cast per the production's own description of "Aftermath - Discussing Up To
+          "Into the Mist" S3E2 ft. Adam, David, Jason & Noura".
+        tier: official
+  - show: the-tides-of-wildemount
+    season: 1
+    role: player
+    character: Bacalhau
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=osGJdS7myeQ
+        note: "Cast per the production's own description of \"DnD Tide of Retribution
+          Playthrough - Ep. 1: Welcome to the Coast - The Tides of
+          Wildemount\"."

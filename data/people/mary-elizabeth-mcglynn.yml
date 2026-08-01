@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: mary-elizabeth-mcglynn
 canonical_name: Mary Elizabeth McGlynn
 sort_name: McGlynn, Mary Elizabeth
@@ -23,3 +17,10 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
+wikidata_qid: Q1189385
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/3/33/Mary_Elizabeth_McGlynn.jpg
+  licence: CC-BY-SA-3.0
+  attribution: KSweeley created the original source file. I (Rockfang) cropped the
+    photo for infobox usage
+  source: https://commons.wikimedia.org/wiki/File:Mary_Elizabeth_McGlynn.jpg

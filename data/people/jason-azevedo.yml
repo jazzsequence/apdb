@@ -1,6 +1,7 @@
 id: jason-azevedo
 canonical_name: Jason Azevedo
 sort_name: Azevedo, Jason
+links: {}
 aliases:
   - id: default
     name: Jason Azevedo
@@ -11,7 +12,108 @@ credits:
     role: GM/DM
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=nrO5IOORlaE
+      - url: https://www.youtube.com/watch?v=nrO5IOORlaE
         note: Cast per the production's own description of "Episode 1 - Into the Mist |
           The Mists of Ravenloft".
+        tier: official
+  - show: beyond-the-mist-all
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=BgLFAUEUaBs
+        note: "Cast per the production's own description of \"Prologue I: Rescue from
+          Neverdeath Pt.1 | Beyond the Mist | RealmSmith\"."
+        tier: official
+  - show: beyond-the-mist-prologue-i-rescue-at-neverdeath
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=KDSyaqVT-eU
+        note: "Cast per the production's own description of \"Prologue II: Search for
+          the Betrayer Pt.3 | Beyond the Mist | RealmSmith\"."
+        tier: official
+  - show: beyond-the-mist-prologue-ii-search-for-the-betrayer
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=KDSyaqVT-eU
+        note: "Cast per the production's own description of \"Prologue II: Search for
+          the Betrayer Pt.3 | Beyond the Mist | RealmSmith\"."
+        tier: official
+  - show: cyberpunk-red
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=88ovuIVx3W0
+        note: Cast per the production's own description of "Cyberpunk Red Live Show at
+          PAX East Teaser | RealmSmith".
+        tier: official
+  - show: gamehole-con-viii-2021
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=8b-mM94BOJY
+        note: "Cast per the production's own description of \"Into the Mist: Assault on
+          Garanary 13 One-Shot | LIVE from Gamehole Con VIII | RealmSmith\"."
+        tier: official
+  - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=soKqxb9nCuM
+        note: "Cast per the production's own description of \"Curse of Strahd
+          Playthrough (2020) - S1, Ep1: The Mists of Ravenloft | Into the
+          Mist\"."
+        tier: official
+  - show: realmsmith-learns-cyberpunk
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=88ovuIVx3W0
+        note: Cast per the production's own description of "Cyberpunk Red Live Show at
+          PAX East Teaser | RealmSmith".
+        tier: official
+  - show: realmsmith-s-aftermath
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=zJ4Q_-gIxhg
+        note: Cast per the production's own description of "Aftermath - Discussing Up To
+          "Into the Mist" S3E2 ft. Adam, David, Jason & Noura".
+        tier: official
+  - show: shadowrun-excommunication
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=blF6ZWD3h5s
+        note: "Cast per the production's own description of \"Session Zero LIVE from
+          SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
+          RealmSmith\"."
+        tier: official
+  - show: tales-of-the-wasted-west
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=YHCw9IXZkJk
+        note: "Cast per the production's own description of \"Ep1: You Meet in a Saloon
+          | Tales of the Wasted West | D&D 5e Western Liveplay | RealmSmith\"."
+        tier: official
+  - show: the-tides-of-wildemount
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=2k8p62-DpS0
+        note: Cast per the production's own description of "Prologue - The Tides of
+          Wildemount | LIVE D&D with RealmSmith".

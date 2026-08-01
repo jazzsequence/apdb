@@ -1,6 +1,7 @@
 id: melanie-hepburn
 canonical_name: Melanie Hepburn
 sort_name: Hepburn, Melanie
+links: {}
 aliases:
   - id: default
     name: Melanie Hepburn
@@ -12,7 +13,29 @@ credits:
     character: Callie Lahwey
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=nrO5IOORlaE
+      - url: https://www.youtube.com/watch?v=nrO5IOORlaE
         note: Cast per the production's own description of "Episode 1 - Into the Mist |
           The Mists of Ravenloft".
+        tier: official
+  - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
+    season: 1
+    role: player
+    character: Callie Lahwey
+    alias: default
+    sources:
+      - url: https://www.youtube.com/watch?v=soKqxb9nCuM
+        note: "Cast per the production's own description of \"Curse of Strahd
+          Playthrough (2020) - S1, Ep1: The Mists of Ravenloft | Into the
+          Mist\"."
+        tier: official
+  - show: the-tides-of-wildemount
+    season: 1
+    role: player
+    character: Aella
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=osGJdS7myeQ
+        note: "Cast per the production's own description of \"DnD Tide of Retribution
+          Playthrough - Ep. 1: Welcome to the Coast - The Tides of
+          Wildemount\"."

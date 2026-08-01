@@ -16,6 +16,7 @@ import { join } from 'node:path';
 import { stringify, parse } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { creditsFromDescription, playlistVideos } from '../src/lib/sources/youtube.js';
+import { fetchAllImages } from '../src/lib/images.js';
 
 const API = 'https://www.googleapis.com/youtube/v3';
 const args = process.argv.slice(2);
@@ -49,15 +50,37 @@ async function api(path: string, params: Record<string, string>): Promise<any> {
   return r.json();
 }
 
-/** Resolve @handle or channel id. */
+/**
+ * Resolve a channel id, an @handle, or a channel URL.
+ *
+ * `forHandle` costs 1 unit; falling back to search costs 100 and draws on a
+ * separate daily cap that a broad sweep exhausts quickly. Always try the cheap
+ * exact lookup first — it is also more accurate, since search guesses.
+ */
 async function resolveChannel(input: string): Promise<{ id: string; title: string } | undefined> {
-  if (/^UC[\w-]{20,}$/.test(input)) {
-    const d = await api('channels', { part: 'snippet', id: input });
+  const fromUrl = input.match(/youtube\.com\/(?:@([\w.-]+)|channel\/(UC[\w-]+))/i);
+  const id = fromUrl?.[2] ?? (/^UC[\w-]{20,}$/.test(input) ? input : undefined);
+  const handle = fromUrl?.[1] ?? (input.startsWith('@') ? input.slice(1) : undefined);
+
+  if (id) {
+    const d = await api('channels', { part: 'snippet', id });
     const c = d.items?.[0];
-    return c ? { id: input, title: c.snippet.title } : undefined;
+    if (c) return { id, title: c.snippet.title };
   }
-  const handle = input.replace(/^@/, '');
-  const d = await api('search', { part: 'snippet', q: handle, type: 'channel', maxResults: '3' });
+
+  if (handle) {
+    const d = await api('channels', { part: 'snippet', forHandle: handle });
+    const c = d.items?.[0];
+    if (c) return { id: c.id, title: c.snippet.title };
+  }
+
+  // Last resort only — expensive, and subject to its own daily quota.
+  const d = await api('search', {
+    part: 'snippet',
+    q: input.replace(/^@/, ''),
+    type: 'channel',
+    maxResults: '3',
+  });
   const c = d.items?.[0];
   return c ? { id: c.snippet.channelId, title: c.snippet.channelTitle } : undefined;
 }
@@ -153,6 +176,8 @@ async function main() {
   }
 
   if (!has('dry-run')) {
+    // Images are part of the import, not a pass to remember later.
+    await fetchAllImages();
     console.log(`\n${made} show(s) added; ${withCast} have a readable cast to import next.`);
     console.log('Import a cast with: npm run collect -- --youtube --playlist <ID> --show <id> --season 1 --dry-run\n');
   }

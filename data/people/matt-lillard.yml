@@ -1,6 +1,7 @@
 id: matt-lillard
 canonical_name: Matt Lillard
 sort_name: Lillard, Matt
+links: {}
 aliases:
   - id: default
     name: Matt Lillard
@@ -12,7 +13,18 @@ credits:
     character: Rictavio
     alias: default
     sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=jealZAH1J4g
+      - url: https://www.youtube.com/watch?v=jealZAH1J4g
         note: Cast per the production's own description of "Finale, Part 1 - Into the
           Mist | The Devil Himself".
+        tier: official
+  - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
+    season: 1
+    role: player
+    character: Rictavio
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YmE88oSZmKM
+        note: "Cast per the production's own description of \"Curse of Strahd
+          Playthrough (2020) - S1, Ep12: The Devil Himself - Pt. 1 | Into the
+          Mist\"."
