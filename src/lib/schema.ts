@@ -19,6 +19,38 @@ export const PartialDate = z
   .string()
   .regex(/^\d{4}(-\d{2}(-\d{2})?)?$/, 'must be YYYY, YYYY-MM or YYYY-MM-DD');
 
+/**
+ * A picture, with its licence attached.
+ *
+ * Deliberately restrictive. Fan wikis serve show artwork under fair-use
+ * claims, not under the CC-BY-SA that covers their text, so those images
+ * cannot be copied here. Only licences that actually permit reuse are
+ * accepted, and attribution is required because every one of them requires it
+ * (CC0 does not, but recording the source costs nothing and keeps provenance
+ * uniform). CI rejects anything else.
+ */
+export const ImageLicence = z.enum([
+  'CC0',
+  'CC-BY-2.0',
+  'CC-BY-3.0',
+  'CC-BY-4.0',
+  'CC-BY-SA-2.0',
+  'CC-BY-SA-3.0',
+  'CC-BY-SA-4.0',
+  'public domain',
+]);
+
+export const Image = z
+  .object({
+    url: z.string().url(),
+    licence: ImageLicence,
+    /** Who made it — required by every licence above that isn't CC0. */
+    attribution: z.string().min(1),
+    /** The page the image and its licensing were read from. */
+    source: z.string().url(),
+  })
+  .strict();
+
 const Links = z
   .object({
     website: z.string().url().optional(),
@@ -190,6 +222,7 @@ export const Show = z
     status: ShowStatus,
     description: z.string().optional(),
     links: Links,
+    image: Image.optional(),
     seasons: z.array(Season).min(1),
   })
   .strict()
@@ -309,6 +342,7 @@ export const Person = z
       .regex(/^Q\d+$/, 'must be a Wikidata QID like Q117600290')
       .optional(),
     links: Links,
+    image: Image.optional(),
     aliases: z.array(Alias).min(1, 'every person needs at least one alias — the name they are credited under'),
     credits: z.array(Credit).default([]),
   })

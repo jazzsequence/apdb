@@ -152,3 +152,74 @@ export async function fetchPerson(qid: string): Promise<WikidataPerson> {
     provenance,
   };
 }
+
+// ---------------------------------------------------------------------------
+// Images.
+//
+// Only Wikimedia Commons. Fan wikis host show artwork under fair-use claims,
+// not under the CC-BY-SA that covers their text, so those files cannot be
+// copied into this dataset however convenient they are. Commons files carry a
+// machine-readable licence, which is checked here rather than assumed.
+// ---------------------------------------------------------------------------
+
+const FREE_LICENCES: Record<string, string> = {
+  cc0: 'CC0',
+  'cc0 1.0': 'CC0',
+  'cc by 2.0': 'CC-BY-2.0',
+  'cc by 3.0': 'CC-BY-3.0',
+  'cc by 4.0': 'CC-BY-4.0',
+  'cc by-sa 2.0': 'CC-BY-SA-2.0',
+  'cc by-sa 3.0': 'CC-BY-SA-3.0',
+  'cc by-sa 4.0': 'CC-BY-SA-4.0',
+  'public domain': 'public domain',
+  pd: 'public domain',
+};
+
+export interface FreeImage {
+  url: string;
+  licence: string;
+  attribution: string;
+  source: string;
+}
+
+/** Resolve a Commons filename to a URL plus its verified licence. */
+export async function commonsImage(filename: string): Promise<FreeImage | undefined> {
+  const params = new URLSearchParams({
+    action: 'query',
+    titles: `File:${filename}`,
+    prop: 'imageinfo',
+    iiprop: 'url|extmetadata',
+    format: 'json',
+    formatversion: '2',
+  });
+  const data = await getJson(`https://commons.wikimedia.org/w/api.php?${params}`);
+  const page = data?.query?.pages?.[0];
+  const info = page?.imageinfo?.[0];
+  if (!info) return undefined;
+
+  const raw = String(info.extmetadata?.LicenseShortName?.value ?? '').toLowerCase().trim();
+  const licence = FREE_LICENCES[raw];
+  // Unrecognised licence means unknown terms, which means don't use it.
+  if (!licence) return undefined;
+
+  const artist = String(info.extmetadata?.Artist?.value ?? '')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  return {
+    url: info.url,
+    licence,
+    attribution: artist || 'Wikimedia Commons contributor',
+    source: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(filename.replace(/ /g, '_'))}`,
+  };
+}
+
+/** The Commons filename Wikidata records for a person (P18), if any. */
+export async function wikidataImage(qid: string): Promise<FreeImage | undefined> {
+  const data = await getJson(`${ENTITY_DATA}/${encodeURIComponent(qid)}.json`);
+  const claims = data.entities?.[qid]?.claims;
+  const filename = claims?.P18?.[0]?.mainsnak?.datavalue?.value;
+  if (typeof filename !== 'string') return undefined;
+  return commonsImage(filename);
+}

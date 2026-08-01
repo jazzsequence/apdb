@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: mica-burton
 canonical_name: Mica Burton
 sort_name: Burton, Mica
@@ -33,3 +27,9 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+wikidata_qid: Q109278629
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/b/b7/RTX_2016_-_Mica_Burton_%2828144027606%29_%28cropped%29.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Count3D from Vancouver, Canada
+  source: https://commons.wikimedia.org/wiki/File:RTX_2016_-_Mica_Burton_(28144027606)_(cropped).jpg

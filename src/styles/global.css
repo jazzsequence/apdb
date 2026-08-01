@@ -347,3 +347,16 @@ footer.site {
   color: var(--muted);
   font-size: 0.85rem;
 }
+
+/* Portraits carry their attribution inline — every licence we accept requires it. */
+.portrait-row { display: flex; gap: 1.25rem; align-items: flex-start; flex-wrap: wrap; }
+.portrait-row > div { flex: 1 1 18rem; }
+.portrait { margin: 0; flex: 0 0 auto; }
+.portrait img {
+  width: 140px; height: 140px; object-fit: cover;
+  border-radius: var(--radius); border: 1px solid var(--border); display: block;
+}
+.portrait figcaption {
+  font-size: 0.68rem; color: var(--muted); max-width: 140px;
+  margin-top: 0.35rem; line-height: 1.35;
+}

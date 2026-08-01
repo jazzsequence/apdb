@@ -1,9 +1,3 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/Gladlands (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: jacob-wysocki
 canonical_name: Jacob Wysocki
 sort_name: Wysocki, Jacob
@@ -32,3 +26,9 @@ credits:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Gladlands
         note: Gladlands cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+wikidata_qid: Q19832737
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/3/3c/Jacob_Wysocki_2015_%2816436801784%29_%28cropped%29.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Gage Skidmore from Peoria, AZ, United States of America
+  source: https://commons.wikimedia.org/wiki/File:Jacob_Wysocki_2015_(16436801784)_(cropped).jpg

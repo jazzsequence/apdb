@@ -1,9 +1,3 @@
-# Credits imported from theadventurezone.fandom.com on 2026-08-01.
-# Source: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: aabria-iyengar
 canonical_name: Aabria Iyengar
 sort_name: Iyengar, Aabria
@@ -175,3 +169,8 @@ credits:
         url: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure
         note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Aabria_Iyengar.jpg
+  licence: CC-BY-3.0
+  attribution: Saving Throw
+  source: https://commons.wikimedia.org/wiki/File:Aabria_Iyengar.jpg

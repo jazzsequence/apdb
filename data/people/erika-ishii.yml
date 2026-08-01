@@ -1,9 +1,3 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2 (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: erika-ishii
 canonical_name: Erika Ishii
 sort_name: Ishii, Erika
@@ -59,3 +53,9 @@ credits:
         url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
         note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+wikidata_qid: Q107010763
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Erika_Ishii_2021_%28cropped%29.jpg
+  licence: CC-BY-3.0
+  attribution: Rivals of Waterdeep
+  source: https://commons.wikimedia.org/wiki/File:Erika_Ishii_2021_(cropped).jpg

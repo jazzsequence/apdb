@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: anjali-bhimani
 canonical_name: Anjali Bhimani
 sort_name: Bhimani, Anjali
@@ -61,3 +55,9 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Narrative_Telephone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+wikidata_qid: Q42561139
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/5/5d/Anjali_Bhimani_%2835396848715%29_%28cropped_portrait%29.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Eva Rinaldi from Sydney Australia
+  source: https://commons.wikimedia.org/wiki/File:Anjali_Bhimani_(35396848715)_(cropped_portrait).jpg

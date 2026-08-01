@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: lou-wilson
 canonical_name: Lou Wilson
 sort_name: Wilson, Lou
@@ -177,3 +171,9 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
         note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+wikidata_qid: Q116033476
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Lou_Wilson_2019_%28cropped%29.png
+  licence: CC-BY-3.0
+  attribution: ADHD w/Travis Mills
+  source: https://commons.wikimedia.org/wiki/File:Lou_Wilson_2019_(cropped).png

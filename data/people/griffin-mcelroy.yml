@@ -1,9 +1,3 @@
-# Credits imported from theadventurezone.fandom.com on 2026-08-01.
-# Source: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: griffin-mcelroy
 canonical_name: Griffin McElroy
 sort_name: McElroy, Griffin
@@ -187,3 +181,9 @@ credits:
         url: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula
         note: "Campaign 9: The Adventure Zone Versus Dracula cast, via the
           theadventurezone.fandom.com infobox. CC-BY-SA."
+wikidata_qid: Q50384562
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Griffin_McElroy_%28PAX_Prime_2011%29.jpg
+  licence: CC-BY-3.0
+  attribution: Bob Ball
+  source: https://commons.wikimedia.org/wiki/File:Griffin_McElroy_(PAX_Prime_2011).jpg

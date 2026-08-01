@@ -22,12 +22,25 @@ const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
   title={`${person.canonical_name} — Actual Play Database`}
   description={`Every actual play credit for ${names.join(', ')} — ${creditCount} credits across ${groups.length} shows.`}
 >
-  <h1>{person.canonical_name}</h1>
+  <div class="portrait-row">
+    {person.image && (
+      <figure class="portrait">
+        <img src={person.image.url} alt={person.canonical_name} loading="lazy" width="140" />
+        <figcaption>
+          {person.image.attribution}, <a href={person.image.source} rel="nofollow noopener">{person.image.licence}</a>
+        </figcaption>
+      </figure>
+    )}
+    <div>
+      <h1>{person.canonical_name}</h1>
 
   <p class="billing">
     {person.pronouns && <span>{person.pronouns} · </span>}
     <strong>{creditCount}</strong> credits across <strong>{groups.length}</strong> shows
   </p>
+
+    </div>
+  </div>
 
   {person.bio && <p class="lede">{person.bio}</p>}
 

@@ -1,9 +1,3 @@
-# Credits imported from theadventurezone.fandom.com on 2026-08-01.
-# Source: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: travis-mcelroy
 canonical_name: Travis McElroy
 sort_name: McElroy, Travis
@@ -156,3 +150,9 @@ credits:
         url: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula
         note: "Campaign 9: The Adventure Zone Versus Dracula cast, via the
           theadventurezone.fandom.com infobox. CC-BY-SA."
+wikidata_qid: Q50384572
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Travis_McElroy_GalaxyCon_Louisville_2019.jpg
+  licence: CC-BY-2.0
+  attribution: Super Festivals from Ft. Lauderdale, USA
+  source: https://commons.wikimedia.org/wiki/File:Travis_McElroy_GalaxyCon_Louisville_2019.jpg

@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show) (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: aleks-le
 canonical_name: Aleks Le
 sort_name: Le, Aleks
@@ -22,3 +16,9 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
         note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+wikidata_qid: Q106948921
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/a/af/Aleks_Le%2C_2025.jpg
+  licence: CC-BY-SA-4.0
+  attribution: Gage Skidmore
+  source: https://commons.wikimedia.org/wiki/File:Aleks_Le%2C_2025.jpg
