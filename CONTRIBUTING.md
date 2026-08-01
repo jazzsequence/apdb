@@ -58,11 +58,33 @@ Every id (`show`, `alias`) must resolve to something that exists, or CI fails.
 
 ### Sources
 
-Every credit needs a `source` with at least a `url` or a `note`.
+Every credit needs a `source` with at least a `url` or a `note`, plus a `type`:
 
-If you're going from memory, that's fine — say so in `note` and set
-`needs_verification: true`. It renders with a visible flag. An honest unsourced
-claim is useful; a claim that looks sourced and isn't is not.
+| `type` | Means | Example |
+| --- | --- | --- |
+| `primary` | The recording itself — audio, video, on-screen credits | You watched the title card |
+| `secondary` | A published third party | A wiki, an article, another database |
+| `testimony` | A first-hand account from a named person | You were listening when it aired |
+| `inferred` | Derived from other data rather than observed | Attributing a name from a date |
+
+`type` defaults to `secondary`. A `testimony` source must also set `attested_by`
+naming who gave the account — CI enforces this.
+
+**Testimony is a real source here, not a fallback.** Small shows often keep no
+cast list at all, and boilerplate show notes can't register a mid-season
+arrival. For a large part of the long tail, someone who was listening is the
+only source that will ever exist. Recording that properly is the job.
+
+Separately, set `needs_verification: true` when no independent corroboration
+exists yet. That's deliberately orthogonal to `type`: a first-hand account can
+be completely trustworthy and still uncorroborated, and collapsing the two
+would file a contributor who was in the room alongside a guess made from a
+date. Testimony renders as "first-hand account"; only the corroboration flag
+renders as "uncorroborated".
+
+If you've already searched for corroboration and come up empty, say where you
+looked in `note` — it stops the next person repeating the work. There's a
+worked example on the Carefree High credit in `data/people/aabria-iyengar.yml`.
 
 ## Adding a person
 

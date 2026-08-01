@@ -128,6 +128,11 @@ h2 {
   background: var(--flag-soft);
   color: var(--flag);
 }
+/* Testimony is a legitimate source, not a warning — styled as a credential. */
+.tag--testimony {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
 
 /* --- filmography -------------------------------------------------------- */
 .film-show {

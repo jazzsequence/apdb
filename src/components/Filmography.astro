@@ -59,8 +59,17 @@ function yearRange(group: FilmographyGroup): string {
               credited as {alias.name}{' '}
               {creditedUnderFormerName && <span class="tag tag--former">former name</span>}
             </span>
+            {credit.source.type === 'testimony' && (
+              <span
+                class="tag tag--testimony"
+                title={credit.source.attested_by ? `Attested by ${credit.source.attested_by}` : undefined}
+              >
+                first-hand account
+              </span>
+            )}
+            {credit.source.type === 'inferred' && <span class="tag tag--flag">inferred</span>}
             {credit.source.needs_verification && (
-              <span class="tag tag--flag">needs verification</span>
+              <span class="tag tag--flag">uncorroborated</span>
             )}
             {credit.source.url && (
               <a href={credit.source.url} rel="nofollow noopener">

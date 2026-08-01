@@ -35,20 +35,45 @@ const Links = z
   .default({});
 
 /**
+ * How a claim is known.
+ *
+ * The long tail this project exists to index frequently has no published
+ * record at all — small shows don't keep cast lists, and boilerplate show
+ * notes can't register a mid-season arrival. Someone who was listening is
+ * often the only source that will ever exist, so `testimony` is a first-class
+ * provenance type here, not a placeholder for a real one.
+ *
+ *   primary   — the recording itself: episode audio/video, on-screen credits
+ *   secondary — a published third party: wiki, article, database
+ *   testimony — a first-hand account from a named contributor
+ *   inferred  — derived from other data rather than observed
+ */
+export const SourceType = z.enum(['primary', 'secondary', 'testimony', 'inferred']);
+
+/**
  * Provenance. Every credit carries one, backed by git history for the rest.
- * `needs_verification` marks a claim a maintainer asserted but could not cite,
- * so unsourced data is visible rather than silently indistinguishable from
- * sourced data.
+ *
+ * `needs_verification` means no independent corroboration exists yet. It is
+ * deliberately orthogonal to `type`: a testimony credit can be entirely
+ * trustworthy and still uncorroborated, and conflating the two would treat a
+ * contributor who was in the room the same as a guess made from a date.
  */
 export const Source = z
   .object({
     url: z.string().url().optional(),
     note: z.string().min(1).optional(),
+    type: SourceType.default('secondary'),
+    /** Who gave the account, for testimony. */
+    attested_by: z.string().min(1).optional(),
     needs_verification: z.boolean().default(false),
   })
   .strict()
   .refine((s) => s.url || s.note, {
     message: 'a source needs at least a url or a note',
+  })
+  .refine((s) => s.type !== 'testimony' || Boolean(s.attested_by), {
+    message: 'a testimony source must record who attested it (attested_by)',
+    path: ['attested_by'],
   });
 
 // ---------------------------------------------------------------------------
