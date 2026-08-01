@@ -1,0 +1,24 @@
+# Credits imported from avantris.fandom.com on 2026-08-01.
+# Source: https://avantris.fandom.com/wiki/Shadow_Over_Gauntsmouth (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: hazard
+canonical_name: Hazard
+sort_name: Hazard
+aliases:
+  - id: default
+    name: Hazard
+    alias_type: legal
+credits:
+  - show: legends-of-avantris
+    season: 11
+    role: player
+    character: Vaz
+    alias: default
+    sources:
+      - tier: community
+        url: https://avantris.fandom.com/wiki/Shadow_Over_Gauntsmouth
+        note: Shadow Over Gauntsmouth cast, via the avantris.fandom.com infobox.
+          CC-BY-SA.

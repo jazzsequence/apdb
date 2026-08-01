@@ -1,0 +1,76 @@
+# Credits imported from avantris.fandom.com on 2026-08-01.
+# Source: https://avantris.fandom.com/wiki/Blank_Slate (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: maja
+canonical_name: Maja
+sort_name: Maja
+links: {}
+aliases:
+  - id: default
+    name: Maja
+    alias_type: legal
+credits:
+  - show: legends-of-avantris
+    season: 1
+    role: player
+    character: Kana Soyokaze
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Curse_of_Strahdanya
+        note: Curse of Strahdanya cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 6
+    role: player
+    character: Hyrja Anvilheart
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
+        note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 14
+    role: player
+    character: Renée Joubert
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Call_of_the_Feywild
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 16
+    role: player
+    character: Louise
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/The_Mighty_Trunks
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 23
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
+        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 39
+    role: player
+    character: Phil Nudisc
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/An_Island_Hidden
+        note: An Island Hidden cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 41
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://avantris.fandom.com/wiki/Blank_Slate
+        note: Blank Slate cast, via the avantris.fandom.com infobox. CC-BY-SA.

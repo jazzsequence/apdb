@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Narrative_Telephone (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: aabria-iyengar
 canonical_name: Aabria Iyengar
 sort_name: Iyengar, Aabria
@@ -139,6 +133,7 @@ credits:
       - url: https://dimension20.fandom.com/wiki/The_Seven
         note: The Seven cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+    alias: iyengar
   - show: dimension-20
     season: 16
     role: GM/DM
@@ -147,6 +142,7 @@ credits:
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+    alias: iyengar
   - show: dimension-20
     season: 18
     role: player
@@ -155,6 +151,7 @@ credits:
       - url: https://dimension20.fandom.com/wiki/The_Ravening_War
         note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+    alias: iyengar
   - show: dimension-20
     season: 21
     role: GM/DM
@@ -162,6 +159,7 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Burrow's_End
         note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+    alias: iyengar
   - show: dimension-20
     season: 26
     role: GM/DM
@@ -170,6 +168,7 @@ credits:
         note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+    alias: iyengar
   - show: dimension-20
     season: 29
     role: player
@@ -178,6 +177,7 @@ credits:
       - url: https://dimension20.fandom.com/wiki/On_a_Bus
         note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+    alias: iyengar
   - show: critical-role
     season: 4
     role: player
@@ -193,6 +193,7 @@ credits:
         note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+    alias: iyengar
   - show: exandria-unlimited
     season: 2
     role: GM/DM
@@ -201,6 +202,7 @@ credits:
         note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+    alias: iyengar
   - show: exandria-unlimited
     season: 3
     role: player
@@ -210,6 +212,7 @@ credits:
         note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+    alias: iyengar
   - show: exandria-unlimited
     season: 4
     role: GM/DM

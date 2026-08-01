@@ -63,6 +63,9 @@ export const FIELD_ROLES: Record<string, CreditRole> = {
   dm: 'GM/DM',
   game_master: 'GM/DM',
   dungeon_master: 'GM/DM',
+  dungeon_mistress: 'GM/DM',
+  game_mistress: 'GM/DM',
+  gamemaster: 'GM/DM',
   guest_gm: 'guest GM',
   guest_dm: 'guest GM',
   players: 'player',
@@ -72,6 +75,9 @@ export const FIELD_ROLES: Record<string, CreditRole> = {
   guests: 'guest player',
   sguests: 'guest player',
   special_guests: 'guest player',
+  'special_guest(s)': 'guest player',
+  'guest(s)': 'guest player',
+  guest_player: 'guest player',
   host: 'host',
   hostp: 'host',
   producer: 'producer',
@@ -114,7 +120,10 @@ async function fetchWikitext(host: string, page: string): Promise<string> {
 
 /** Pull one `{{Template ...}}` out of wikitext, brace-matched so nesting works. */
 export function extractTemplate(wikitext: string, namePrefix: string): string | undefined {
-  const start = wikitext.search(new RegExp(`\\{\\{\\s*${namePrefix}`, 'i'));
+  // MediaWiki treats spaces and underscores in template names as equivalent
+  // ({{LoA Campaign}} == {{LoA_Campaign}}), so the match has to as well.
+  const flexible = namePrefix.replace(/[ _]/g, '[ _]');
+  const start = wikitext.search(new RegExp(`\\{\\{\\s*${flexible}`, 'i'));
   if (start < 0) return undefined;
 
   let depth = 0;
@@ -284,6 +293,15 @@ export const CAMPAIGN_TEMPLATES = [
   'Template:Infobox show',
   'Template:Infobox season',
   'Template:Infobox series',
+  // Wiki-specific names, found by surveying each wiki's most-transcluded
+  // campaign-ish infobox rather than guessing. See survey output in the repo
+  // history; add a row when a new wiki turns up.
+  'Template:LoA Campaign',          // Legends of Avantris
+  'Template:Show Page Infobox',     // Saving Throw
+  'Template:Season Page Infobox',   // Saving Throw
+  'Template:Campaign',              // High Rollers
+  'Template:Seasoninfo',            // Dungeons and Daddies
+  'Template:Infobox Twitch show',   // Geek & Sundry
 ];
 
 /**
@@ -417,6 +435,14 @@ const METADATA_FIELDS = new Set([
   'air_dates',
   'first_aired',
   'last_aired',
+  'start_date',
+  'end_date',
+  'setting',
+  'status',
+  'hosted_on',
+  'running_time',
+  'no_of_episodes',
+  'player_level',
   'episodes',
   'num_episodes',
   'title1',
@@ -427,12 +453,19 @@ const METADATA_FIELDS = new Set([
 /** Read one campaign/season page and pull out everyone credited on it. */
 export async function fetchCampaign(host: string, page: string): Promise<WikiCampaign> {
   const wikitext = await fetchWikitext(host, page);
-  const template =
-    extractTemplate(wikitext, 'InfoboxCampaign') ??
-    extractTemplate(wikitext, 'Infobox campaign') ??
-    extractTemplate(wikitext, 'Infobox show') ??
-    extractTemplate(wikitext, 'Infobox season') ??
-    extractTemplate(wikitext, 'Infobox');
+  // Derived from CAMPAIGN_TEMPLATES rather than a second hardcoded list —
+  // keeping the two in sync by hand meant a wiki could be discovered and then
+  // yield nothing, which is exactly what happened when Avantris was added.
+  const names = [
+    ...CAMPAIGN_TEMPLATES.map((t) => t.replace(/^Template:/, '')),
+    'Infobox',
+  ];
+  let template: string | undefined;
+  for (const name of names) {
+    // Escape regex metacharacters; template names contain spaces and parens.
+    template = extractTemplate(wikitext, name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    if (template) break;
+  }
 
   if (!template) {
     throw new Error(

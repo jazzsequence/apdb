@@ -1,0 +1,285 @@
+# Credits imported from avantris.fandom.com on 2026-08-01.
+# Source: https://avantris.fandom.com/wiki/Blank_Slate (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: nikkie
+canonical_name: Nikkie
+sort_name: Nikkie
+links: {}
+aliases:
+  - id: default
+    name: Nikkie
+    alias_type: legal
+credits:
+  - show: legends-of-avantris
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Curse_of_Strahdanya
+        note: Curse of Strahdanya cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 2
+    role: player
+    character: Sylvie Flickerwickett
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Prime
+        note: Prime cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Once_Upon_a_Witchlight
+        note: Once Upon a Witchlight cast, via the avantris.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 4
+    role: player
+    character: Queenie March
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Icebound
+        note: Icebound cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 6
+    role: player
+    character: Iris of the Sands
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
+        note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 7
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Edge_of_Midnight
+        note: Edge of Midnight cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 8
+    role: player
+    character: Peggy (Vagabond's Heart)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Vagabond's_Heart%3A_A_Dimwood_Tale
+        note: "Vagabond's Heart: A Dimwood Tale cast, via the avantris.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 9
+    role: player
+    character: Peggy (Uprooted)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
+        note: "Uprooted: Dimwits of the Dimwood cast, via the avantris.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 11
+    role: player
+    character: Willow Harvestmoon
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Shadow_Over_Gauntsmouth
+        note: Shadow Over Gauntsmouth cast, via the avantris.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 12
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Honey_Heist
+        note: Honey Heist cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 13
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/The_Mistchurch_Horror
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 14
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Call_of_the_Feywild
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 15
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Tactical_Waifu
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 16
+    role: player
+    character: Gina
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/The_Mighty_Trunks
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 18
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Kobold_Storm
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 20
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 21
+    role: player
+    character: Glitzy
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/For_What_It's_Worth
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 22
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 23
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
+        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 25
+    role: player
+    character: Tiffany (13 Beers at the Local Cheese)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 27
+    role: player
+    character: Pixel Pop
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Anthem
+        note: "Stardust Rhapsody: Anthem cast, via the avantris.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 29
+    role: player
+    character: Glitzy / Queek
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Cuttlefish_Sweepstakes
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 30
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Once_Upon_a_Ghostlight
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 31
+    role: player
+    character: Portia Bella Gones (Dust to Damnation)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 32
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Midnight_Carnival
+        note: Midnight Carnival cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 34
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Once_Upon_A_Starlight
+        note: Once Upon A Starlight cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 35
+    role: player
+    character: Peggy (Uproot-a-rama)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Uproot-a-rama
+        note: Uproot-a-rama cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 36
+    role: player
+    character: Delphina Voss
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Voidbound
+        note: Voidbound cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 38
+    role: player
+    character: Pixel (Neon Odyssey one-shot)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 40
+    role: player
+    character: Razzlyn Durgle
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Survive_Until_Dawn
+        note: Survive Until Dawn cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 41
+    role: player
+    character: Mudge
+    alias: default
+    sources:
+      - tier: community
+        url: https://avantris.fandom.com/wiki/Blank_Slate
+        note: Blank Slate cast, via the avantris.fandom.com infobox. CC-BY-SA.

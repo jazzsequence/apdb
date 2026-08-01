@@ -1,0 +1,143 @@
+# Credits imported from avantris.fandom.com on 2026-08-01.
+# Source: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: kelsey
+canonical_name: Kelsey
+sort_name: Kelsey
+links: {}
+aliases:
+  - id: default
+    name: Kelsey
+    alias_type: legal
+credits:
+  - show: legends-of-avantris
+    season: 1
+    role: player
+    character: Victoria Isaacs
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Curse_of_Strahdanya
+        note: Curse of Strahdanya cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 2
+    role: player
+    character: Anulin Mossgrove
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Prime
+        note: Prime cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 6
+    role: player
+    character: Lufti
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
+        note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 7
+    role: player
+    character: Farryn of the Hartsblight
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Edge_of_Midnight
+        note: Edge of Midnight cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 8
+    role: player
+    character: Hazel (Vagabond's Heart)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Vagabond's_Heart%3A_A_Dimwood_Tale
+        note: "Vagabond's Heart: A Dimwood Tale cast, via the avantris.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 9
+    role: player
+    character: Hazel (Uprooted)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
+        note: "Uprooted: Dimwits of the Dimwood cast, via the avantris.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 12
+    role: player
+    character: Rhonda
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Honey_Heist
+        note: Honey Heist cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 15
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Tactical_Waifu
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 16
+    role: player
+    character: Tootles
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/The_Mighty_Trunks
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 20
+    role: player
+    character: Victoria Isaacs (Of Heart and Harvest)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 24
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Ring_of_Chaos
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 27
+    role: guest player
+    character: Ophelia Kalos
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Anthem
+        note: "Stardust Rhapsody: Anthem cast, via the avantris.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 35
+    role: player
+    character: Hazel (Uproot-a-rama)
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Uproot-a-rama
+        note: Uproot-a-rama cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 38
+    role: player
+    character: Ophelia (Neon Odyssey one-shot)
+    alias: default
+    sources:
+      - tier: community
+        url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."

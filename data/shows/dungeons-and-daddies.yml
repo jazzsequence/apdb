@@ -1,0 +1,32 @@
+id: dungeons-and-daddies
+title: Dungeons and Daddies
+format: podcast
+status: ongoing
+description: Comedy actual-play podcast about four dads from our world lost in
+  the Forgotten Realms.
+channels:
+  - dungeons-and-daddies
+links:
+  website: https://dungeonsanddaddies.fandom.com
+seasons:
+  - ordinal: 1
+    title: "Season 2: Legacy"
+    game: dnd-5e
+  - ordinal: 2
+    title: "Season 1: Odyssey"
+    game: dnd-5e
+  - ordinal: 3
+    title: At The Mountains of Dadness
+    game: dnd-5e
+  - ordinal: 4
+    title: Sons and Sonsability
+    game: dnd-5e
+  - ordinal: 5
+    title: "Season 3: The Peachyville Horror"
+    game: dnd-5e
+  - ordinal: 6
+    title: Kingdom Dad Monster
+    game: dnd-5e
+  - ordinal: 7
+    title: "Season 4: Grandpas and Galaxies"
+    game: dnd-5e

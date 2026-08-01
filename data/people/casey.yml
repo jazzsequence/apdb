@@ -1,0 +1,34 @@
+# Credits imported from avantris.fandom.com on 2026-08-01.
+# Source: https://avantris.fandom.com/wiki/On_a_Silver_Strand (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: casey
+canonical_name: Casey
+sort_name: Casey
+links: {}
+aliases:
+  - id: default
+    name: Casey
+    alias_type: legal
+credits:
+  - show: legends-of-avantris
+    season: 5
+    role: player
+    character: Dandy
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Overture
+        note: "Stardust Rhapsody: Overture cast, via the avantris.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 17
+    role: player
+    character: D4ND1  (Dandi)
+    alias: default
+    sources:
+      - tier: community
+        url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."

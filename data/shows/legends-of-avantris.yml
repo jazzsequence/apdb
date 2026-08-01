@@ -1,0 +1,133 @@
+id: legends-of-avantris
+title: Legends of Avantris
+format: video
+status: ongoing
+description: Long-running independent actual-play series.
+channels:
+  - avantris
+links:
+  website: https://avantris.fandom.com
+seasons:
+  - ordinal: 1
+    title: Curse of Strahdanya
+    game: dnd-5e
+  - ordinal: 2
+    title: Prime
+    game: dnd-5e
+  - ordinal: 3
+    title: Once Upon a Witchlight
+    game: dnd-5e
+  - ordinal: 4
+    title: Icebound
+    game: dnd-5e
+  - ordinal: 5
+    title: "Stardust Rhapsody: Overture"
+    game: dnd-5e
+  - ordinal: 6
+    title: Beneath Dark Wings
+    game: dnd-5e
+  - ordinal: 7
+    title: Edge of Midnight
+    game: dnd-5e
+  - ordinal: 8
+    title: "Vagabond's Heart: A Dimwood Tale"
+    game: dnd-5e
+  - ordinal: 9
+    title: "Uprooted: Dimwits of the Dimwood"
+    game: dnd-5e
+  - ordinal: 10
+    title: Shroud Over Saltmarsh
+    game: dnd-5e
+  - ordinal: 11
+    title: Shadow Over Gauntsmouth
+    game: dnd-5e
+  - ordinal: 12
+    title: Honey Heist
+    game: dnd-5e
+  - ordinal: 13
+    title: The Mistchurch Horror
+    game: dnd-5e
+  - ordinal: 14
+    title: Call of the Feywild
+    game: dnd-5e
+  - ordinal: 15
+    title: Tactical Waifu
+    game: dnd-5e
+  - ordinal: 16
+    title: The Mighty Trunks
+    game: dnd-5e
+  - ordinal: 17
+    title: On a Silver Strand
+    game: dnd-5e
+  - ordinal: 18
+    title: Kobold Storm
+    game: dnd-5e
+  - ordinal: 19
+    title: Tainted Grail
+    game: dnd-5e
+  - ordinal: 20
+    title: Of Heart and Harvest
+    game: dnd-5e
+  - ordinal: 21
+    title: For What It's Worth
+    game: dnd-5e
+  - ordinal: 22
+    title: Ghosts of Saltmarsh
+    game: dnd-5e
+  - ordinal: 23
+    title: You Will Be Witness
+    game: dnd-5e
+  - ordinal: 24
+    title: Ring of Chaos
+    game: dnd-5e
+  - ordinal: 25
+    title: 13 Beers at the Local Cheese
+    game: dnd-5e
+  - ordinal: 26
+    title: Stardust Rhapsody Prelude
+    game: dnd-5e
+  - ordinal: 27
+    title: "Stardust Rhapsody: Anthem"
+    game: dnd-5e
+  - ordinal: 28
+    title: Mud and Mercy
+    game: dnd-5e
+  - ordinal: 29
+    title: Cuttlefish Sweepstakes
+    game: dnd-5e
+  - ordinal: 30
+    title: Once Upon a Ghostlight
+    game: dnd-5e
+  - ordinal: 31
+    title: "Dust to Damnation: A Daggerheart Ballad"
+    game: dnd-5e
+  - ordinal: 32
+    title: Midnight Carnival
+    game: dnd-5e
+  - ordinal: 33
+    title: Into the Court of Candy
+    game: dnd-5e
+  - ordinal: 34
+    title: Once Upon A Starlight
+    game: dnd-5e
+  - ordinal: 35
+    title: Uproot-a-rama
+    game: dnd-5e
+  - ordinal: 36
+    title: Voidbound
+    game: dnd-5e
+  - ordinal: 37
+    title: Waltz for Eternity
+    game: dnd-5e
+  - ordinal: 38
+    title: Neon Odyssey One-Shot
+    game: dnd-5e
+  - ordinal: 39
+    title: An Island Hidden
+    game: dnd-5e
+  - ordinal: 40
+    title: Survive Until Dawn
+    game: dnd-5e
+  - ordinal: 41
+    title: Blank Slate
+    game: dnd-5e

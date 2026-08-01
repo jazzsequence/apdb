@@ -1,0 +1,46 @@
+id: high-rollers-dnd
+title: High Rollers DnD
+format: stream
+status: ongoing
+description: Long-form D&D campaigns GMed by Mark Hulmes.
+channels:
+  - yogscast
+links:
+  website: https://highrollers.fandom.com
+seasons:
+  - ordinal: 1
+    title: Aerois (Campaign)
+    game: dnd-5e
+  - ordinal: 2
+    title: Lightfall (Campaign)
+    game: dnd-5e
+  - ordinal: 3
+    title: Uncharted Territory
+    game: dnd-5e
+  - ordinal: 4
+    title: Dead Reckoning
+    game: dnd-5e
+  - ordinal: 5
+    title: A Rogue's Gambit
+    game: dnd-5e
+  - ordinal: 6
+    title: Lightfall's Descent
+    game: dnd-5e
+  - ordinal: 7
+    title: Curse of Strahd
+    game: dnd-5e
+  - ordinal: 8
+    title: Chaos Twins
+    game: dnd-5e
+  - ordinal: 9
+    title: Rhicap
+    game: dnd-5e
+  - ordinal: 10
+    title: Tales of Xadia
+    game: dnd-5e
+  - ordinal: 11
+    title: "Altheya: The Dragon Empire"
+    game: dnd-5e
+  - ordinal: 12
+    title: Warhammer Fantasy Roleplay
+    game: dnd-5e
