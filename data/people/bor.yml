@@ -1,0 +1,16 @@
+id: bor
+canonical_name: boR
+sort_name: boR
+aliases:
+  - id: default
+    name: boR
+    alias_type: handle
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/series-2-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.

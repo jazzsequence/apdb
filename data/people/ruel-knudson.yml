@@ -1,0 +1,16 @@
+id: ruel-knudson
+canonical_name: Ruel Knudson
+sort_name: Knudson, Ruel
+aliases:
+  - id: default
+    name: Ruel Knudson
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/series-1-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.

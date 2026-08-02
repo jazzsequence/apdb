@@ -1,0 +1,17 @@
+id: jeff
+canonical_name: Jeff
+sort_name: Jeff
+aliases:
+  - id: default
+    name: Jeff
+    alias_type: handle
+credits:
+  - show: bone-throwers-theater
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://bonethrowerstheater.com/
+        note: Cast per the show's own site. Credited by first name; GM rotates by
+          campaign.

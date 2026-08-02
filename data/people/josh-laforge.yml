@@ -1,0 +1,16 @@
+id: josh-laforge
+canonical_name: Josh LaForge
+sort_name: LaForge, Josh
+aliases:
+  - id: default
+    name: Josh LaForge
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/series-2-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.

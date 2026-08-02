@@ -1,0 +1,24 @@
+id: luke-stram
+canonical_name: Luke Stram
+sort_name: Stram, Luke
+aliases:
+  - id: default
+    name: Luke Stram
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/series-1-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.
+  - show: the-call-of-cthulhu-mystery-program
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/series-2-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.

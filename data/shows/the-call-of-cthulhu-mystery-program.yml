@@ -15,8 +15,11 @@ links:
   podcast: https://rss.art19.com/call-of-cthulhu-mystery-program
 seasons:
   - ordinal: 1
+    title: The Black Birth
     game: call-of-cthulhu
-    episode_count: 66
+  - ordinal: 2
+    title: The Terrible Secret of Lot X
+    game: call-of-cthulhu
 image:
   url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/4b/2d/dd/4b2ddd52-3b52-a56f-2913-8c4b96cff3c0/mza_5670512131698460547.jpeg/600x600bb.jpg
   licence: fair use

@@ -1,0 +1,16 @@
+id: brandon-gerson
+canonical_name: Brandon Gerson
+sort_name: Gerson, Brandon
+aliases:
+  - id: default
+    name: Brandon Gerson
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/series-1-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.
