@@ -3,12 +3,6 @@
 Each row is a show whose title matched an IMDb entry that could not be verified.
 Some are genuine mismatches; others are likely correct and just need a human eye.
 
-## Black Bag
-- IMDb: [Black Bag (2016)](https://www.imdb.com/title/tt8236012/)
-- Declined because: only 1 of its cast appear anywhere in this database
-- We already hold 1 credit(s) for this show
-- IMDb cast: benjamin dunn, jordan callarman, meghan caves, wes otis, michelle otis, wes otis
-
 ## Omnibus
 - IMDb: [Omnibus (1952)](https://www.imdb.com/title/tt0044284/)
 - Declined because: dated 1952, before actual play existed as a published format; 1091 principals — far larger than any actual play cast; only 1 of its cast appear anywhere in this database

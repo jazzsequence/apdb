@@ -25,6 +25,17 @@ credits:
         url: https://geekandsundry.fandom.com/wiki/Titansgrave
         note: Cast per Geek & Sundry and contemporary coverage. The playlist description
           is a credits roll, not a cast list.
+  - show: dimension-20
+    role: player
+    character: The Fix
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
 wikidata_qid: Q550996
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/5/57/Hank_Green_Headshot.jpg

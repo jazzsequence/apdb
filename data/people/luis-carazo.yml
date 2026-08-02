@@ -61,3 +61,36 @@ credits:
         note: "Cast per the production's own description of \"Session Zero LIVE from
           SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
           RealmSmith\"."
+  - show: exandria-unlimited
+    role: player
+    character: Zerxus Ilerez
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+  - show: candela-obscura
+    role: player
+    character: Marion Collodi
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+  - show: critical-role
+    role: player
+    character: Azune Nayar
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.

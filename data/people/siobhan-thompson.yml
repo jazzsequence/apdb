@@ -1,9 +1,3 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/City_Council_of_Darkness (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: siobhan-thompson
 canonical_name: Siobhan Thompson
 sort_name: Thompson, Siobhan
@@ -135,3 +129,14 @@ credits:
         url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+  - show: dimension-20
+    role: player
+    character: Misty Moore
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.

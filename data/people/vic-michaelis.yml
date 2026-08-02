@@ -15,6 +15,17 @@ credits:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Gladlands
         note: Gladlands cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+  - show: dimension-20
+    role: player
+    character: Hugi
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
 wikidata_qid: Q122828657
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/b/b0/Vic_Michaelis_at_SXSW_2024_%28cropped%29.jpg

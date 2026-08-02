@@ -14,3 +14,8 @@ credits:
       - tier: reference
         url: https://pathfinderwiki.com/wiki/Knights_of_Everflame_(campaign)
         note: Cast per PathfinderWiki and Paizo.
+      - tier: reference
+        url: https://www.imdb.com/title/tt11427152/fullcredits/
+        note: 'IMDb full cast and crew for "Pathfinder: Knights of Everflame" (2019),
+          via the official datasets.'
+    character: Tariel Windhaven

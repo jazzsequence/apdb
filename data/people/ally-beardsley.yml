@@ -148,6 +148,17 @@ credits:
         url: https://dimension20.fandom.com/wiki/City_Council_of_Darkness
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+  - show: dimension-20
+    role: player
+    character: Peter 'Pete the Plug' Conlan
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
 wikidata_qid: Q115121354
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/9/97/Ally_Beardsley%2C_2024.jpg

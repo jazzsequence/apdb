@@ -37,3 +37,12 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+  - show: celebrid-d
+    role: director
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: IMDb full cast and crew for "CelebriD&D" (2015), via the official
+          datasets.

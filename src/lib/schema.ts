@@ -423,6 +423,8 @@ export const Person = z
     }
   });
 
+export type Source = z.infer<typeof Source>;
+export type Image = z.infer<typeof Image>;
 export type Channel = z.infer<typeof Channel>;
 export type Game = z.infer<typeof Game>;
 export type Season = z.infer<typeof Season>;

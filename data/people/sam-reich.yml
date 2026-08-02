@@ -15,6 +15,17 @@ credits:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Mice_%26_Murder
         note: Mice & Murder cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+  - show: dimension-20
+    role: player
+    character: Buckster $ Boyd
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
 wikidata_qid: Q28924893
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/5/51/Sam_Reich_2009_%28cropped%29.jpg

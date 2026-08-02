@@ -19,6 +19,7 @@ import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { rows, val, titleKey, SERIES_TYPES, creditFrom, type ImdbCredit } from '../src/lib/sources/imdb.js';
+import { upsertCredit } from '../src/lib/credits.js';
 
 const CACHE = '.cache/imdb';
 const args = process.argv.slice(2);
@@ -146,7 +147,7 @@ console.log(`Pass 4: ${nameOf.size} name(s) resolved.\n`);
 // Verify, then write
 // ---------------------------------------------------------------------------
 const limit = Number.parseInt(flag('limit') ?? '9999', 10);
-let written = 0, createdPeople = 0, confirmed = 0, unverifiable = 0, rejected = 0;
+let written = 0, createdPeople = 0, confirmed = 0, unverifiable = 0, rejected = 0, corroboratedCount = 0;
 const review: { show: string; tconst: string; imdbTitle: string; year?: string;
                 reason: string; had: number; cast: string[] }[] = [];
 
@@ -231,7 +232,7 @@ for (const [showId, cands] of [...candsForShow].slice(0, limit)) {
         aliases: [{ id: 'default', name, alias_type: name.includes(' ') ? 'legal' : 'handle' }], credits: [] };
       createdPeople++;
     }
-    if ((person.credits ??= []).some((x: any) => x.show === showId && x.role === c.role)) continue;
+    person.credits ??= [];
 
     // Only claim a season when there is only one it could be. IMDb's season
     // numbers are its own and do not track ours — Acquisitions Incorporated's
@@ -259,9 +260,15 @@ for (const [showId, cands] of [...candsForShow].slice(0, limit)) {
       url,
       note: `IMDb full cast and crew for "${cand.title}"${cand.year ? ` (${cand.year})` : ''}, via the official datasets.`,
     }];
-    person.credits.push(credit);
+    // A credit we already hold is not a duplicate to drop — it is IMDb
+    // independently confirming what a wiki told us, which is the single most
+    // valuable thing a second source can do.
+    const result = upsertCredit(person.credits, credit);
+    if (result.outcome === 'already-cited') continue;
+    person.credits = result.credits;
     await writeFile(path, stringify(person), 'utf8');
-    written++;
+    if (result.outcome === 'corroborated') corroboratedCount++;
+    else written++;
     personByName.set(name.toLowerCase(), id);
   }
 }
@@ -286,4 +293,4 @@ if (review.length) {
 }
 
 console.log(`\n${confirmed} show(s) confirmed by cast overlap, ${unverifiable} matched on title only, ${rejected} declined.`);
-console.log(DRY ? 'Dry run — nothing written.' : `${written} credit(s) written, ${createdPeople} new people.\n`);
+console.log(DRY ? 'Dry run — nothing written.' : `${written} new credit(s), ${corroboratedCount} existing credit(s) corroborated, ${createdPeople} new people.\n`);

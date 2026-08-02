@@ -17,6 +17,10 @@ credits:
         note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196764/fullcredits/
+        note: IMDb full cast and crew for "The Lost Brigade" (2016), via the official
+          datasets.
   - show: tales-from-salt-bay
     season: 1
     role: GM/DM

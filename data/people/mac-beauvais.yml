@@ -16,6 +16,10 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Phoenix_Dawn_Command
         note: Phoenix Dawn Command cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196714/fullcredits/
+        note: IMDb full cast and crew for "Phoenix Dawn Command" (2016), via the
+          official datasets.
   - show: miss-adventures
     role: player
     season: 1

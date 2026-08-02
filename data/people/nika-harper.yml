@@ -16,6 +16,10 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store
         note: The Last VHS Store cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196862/fullcredits/
+        note: IMDb full cast and crew for "The Last VHS Store" (2018), via the official
+          datasets.
   - show: deepwater-deep
     role: player
     season: 1

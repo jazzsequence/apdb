@@ -16,6 +16,10 @@ credits:
         note: Never Tell Me the Odds cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196574/fullcredits/
+        note: IMDb full cast and crew for "Never Tell Me The Odds" (2016), via the
+          official datasets.
   - show: crit-juice
     season: 1
     role: GM/DM

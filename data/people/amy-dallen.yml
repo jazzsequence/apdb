@@ -22,6 +22,11 @@ credits:
       - tier: reference
         url: https://stexpanded.fandom.com/wiki/Shield_of_Tomorrow
         note: Cast per Star Trek Expanded Universe and Geek & Sundry.
+      - tier: reference
+        url: https://www.imdb.com/title/tt7142196/fullcredits/
+        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
+          datasets.
+    character: Lt. Throlo Sh'shirros
   - show: tempting-fate
     role: player
     season: 1

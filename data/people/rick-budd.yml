@@ -14,6 +14,10 @@ credits:
       - tier: community
         url: https://savingthrowshow.fandom.com/wiki/Tempting_Fate
         note: Tempting Fate cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
   - show: legacy
     role: player
     season: 1

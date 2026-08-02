@@ -16,6 +16,10 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade
         note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196764/fullcredits/
+        note: IMDb full cast and crew for "The Lost Brigade" (2016), via the official
+          datasets.
   - show: garden-of-good-evil
     role: player
     season: 1

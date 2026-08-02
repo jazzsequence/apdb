@@ -26,6 +26,10 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store
         note: The Last VHS Store cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196862/fullcredits/
+        note: IMDb full cast and crew for "The Last VHS Store" (2018), via the official
+          datasets.
   - show: tempting-fate
     role: player
     season: 1
@@ -58,3 +62,14 @@ credits:
         url: https://www.imdb.com/title/tt9184362/fullcredits/
         note: 'IMDb full cast and crew for "Pugmire: Homeward Bound" (2018), via the
           official datasets.'
+  - show: dimension-20
+    role: player
+    character: Prince Andhera
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.

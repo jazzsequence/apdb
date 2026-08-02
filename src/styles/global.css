@@ -1,26 +1,37 @@
 /*
- * The visual brief is "reference work", not "streaming service": this is an
- * index, and it should read like one. Warm paper ground, a serif for names and
- * titles, and a tight sans for the data itself — so a credit row scans like a
- * table and a person's name reads like an entry heading.
+ * Styled after IMDb, at the project owner's direction — the amber #F5C518,
+ * near-black ground, and Roboto set tight and dense.
+ *
+ * Two consequences worth knowing. There is no light theme, because IMDb has
+ * none; the dark palette is unconditional rather than sitting behind a
+ * prefers-color-scheme query. And amber carries brand and emphasis only, never
+ * link affordance — IMDb uses a light blue for links, and yellow-on-black text
+ * links at body size are hard to read and easy to mistake for buttons.
  */
 :root {
-  --bg: #faf8f4;
-  --surface: #ffffff;
-  --sunk: #f4f1ea;
-  --border: #e2dcd1;
-  --border-strong: #cfc6b6;
-  --ink: #17150f;
-  --muted: #6d6558;
-  --accent: #8a3520;
-  --accent-soft: #f6ece7;
-  --flag: #7d6416;
-  --flag-soft: #f9f1d8;
-  --radius: 5px;
+  color-scheme: dark;
+
+  --bg: #121212;
+  --surface: #1a1a1a;
+  --sunk: #0d0d0d;
+  --border: #2c2c2c;
+  --border-strong: #3f3f3f;
+  --ink: #ffffff;
+  --muted: #b9b9b9;
+
+  --accent: #f5c518;          /* IMDb amber: brand, tags, emphasis */
+  --accent-ink: #121212;      /* text that sits on the amber */
+  --accent-soft: rgba(245, 197, 24, 0.14);
+  --link: #5799ef;            /* IMDb's link blue */
+  --flag: #c9a227;
+  --flag-soft: rgba(245, 197, 24, 0.08);
+
+  --radius: 4px;
   --measure: 68ch;
 
-  --display: ui-serif, 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
-  --body: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Roboto if the reader has it, otherwise the nearest grotesque available. */
+  --body: Roboto, 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  --display: var(--body);
   --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   /* One ratio, used everywhere, so headings relate to each other. */
@@ -29,23 +40,7 @@
   --step-1: 1.2rem;
   --step-2: 1.44rem;
   --step-3: clamp(1.6rem, 3.4vw, 2.05rem);
-  --step-4: clamp(2rem, 5vw, 2.9rem);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #14120f;
-    --surface: #1d1a16;
-    --sunk: #100e0c;
-    --border: #322c25;
-    --border-strong: #4a4238;
-    --ink: #efe9df;
-    --muted: #a89d8c;
-    --accent: #e8967c;
-    --accent-soft: #2d1f19;
-    --flag: #d9bb6a;
-    --flag-soft: #2a2214;
-  }
+  --step-4: clamp(1.9rem, 4.6vw, 2.6rem);
 }
 
 *,
@@ -63,7 +58,7 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--link);
   text-underline-offset: 2px;
 }
 a:hover {
@@ -78,9 +73,9 @@ a:hover {
 
 /* --- masthead ----------------------------------------------------------- */
 .masthead {
-  border-bottom: 1px solid var(--border-strong);
+  border-bottom: 1px solid var(--border);
   margin-bottom: 2.5rem;
-  background: var(--surface);
+  background: var(--bg);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -96,48 +91,59 @@ a:hover {
   text-decoration: none;
   color: var(--muted);
   font-size: var(--step--1);
+  font-weight: 500;
   letter-spacing: 0.01em;
 }
 .masthead a:hover {
-  color: var(--accent);
-}
-/* The wordmark carries the identity, so it gets the serif and the ampersand-ish
- * detail: a hairline rule under the initials, like a catalogue heading. */
-.masthead .brand {
-  font-family: var(--display);
-  font-weight: 600;
   color: var(--ink);
-  font-size: var(--step-1);
-  letter-spacing: -0.015em;
+}
+/* Amber chip with near-black text, the way IMDb sets its own wordmark. */
+.masthead .brand {
+  font-weight: 800;
+  color: var(--accent-ink);
+  background: var(--accent);
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
   margin-right: auto;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius);
 }
 .masthead .brand:hover {
-  color: var(--ink);
+  color: var(--accent-ink);
+  filter: brightness(1.08);
 }
 
 h1 {
   font-family: var(--display);
   font-size: var(--step-4);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.08;
   margin: 0 0 0.4rem;
   letter-spacing: -0.022em;
 }
+/* IMDb marks a section with a short amber bar to the left of the title. */
 h2 {
   font-family: var(--display);
   font-size: var(--step-2);
-  font-weight: 600;
-  margin: 2.75rem 0 0.85rem;
-  letter-spacing: -0.015em;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+  margin: 2.5rem 0 0.9rem;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+h2::before {
+  content: '';
+  width: 4px;
+  align-self: stretch;
+  min-height: 1.4em;
+  background: var(--accent);
+  border-radius: 2px;
 }
 h3 {
   font-family: var(--display);
-  font-weight: 600;
-  letter-spacing: -0.012em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 .lede {
   color: var(--muted);
@@ -185,6 +191,7 @@ h3 {
 .tier--strong {
   background: var(--accent-soft);
   color: var(--accent);
+  border-color: rgba(245, 197, 24, 0.35);
 }
 .tier--medium {
   background: transparent;
@@ -200,8 +207,9 @@ h3 {
 
 /* Two independent sources agree — the thing a second contributor can create. */
 .tag--corroborated {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
 }
 
 /* An honest gap: we know they appeared, not what the billing said. */
@@ -242,6 +250,7 @@ h3 {
   border: 1px solid var(--border);
   background: var(--border);
 }
+/* h3 inside a card header — no amber bar, that is an h2 device. */
 .film-show > header h3 {
   margin: 0;
   font-size: var(--step-1);
@@ -575,6 +584,10 @@ footer.site {
 }
 .poster-grid a:hover h3 {
   color: var(--accent);
+}
+.poster-grid a:hover .art {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
 }
 .poster-grid p {
   margin: 0;

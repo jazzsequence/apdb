@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/Masks (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: nicole-villela
 canonical_name: Nicole Villela
 sort_name: Villela, Nicole
@@ -21,3 +15,6 @@ credits:
       - tier: community
         url: https://savingthrowshow.fandom.com/wiki/Masks
         note: Masks cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196702/fullcredits/
+        note: IMDb full cast and crew for "Masks" (2016), via the official datasets.

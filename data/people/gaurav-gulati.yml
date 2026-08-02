@@ -17,6 +17,10 @@ credits:
         note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196764/fullcredits/
+        note: IMDb full cast and crew for "The Lost Brigade" (2016), via the official
+          datasets.
   - show: prickly-tallstag-and-the-danger-seekers-pears
     season: 1
     role: player
@@ -27,6 +31,10 @@ credits:
         note: Prickly Tallstag and the Danger Seekers, Pears cast, via the
           savingthrowshow.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt8102874/fullcredits/
+        note: IMDb full cast and crew for "Prickly Tallstag and the Danger Seekers,
+          Pears" (2017), via the official datasets.
   - show: east-texas-university-undeclared
     season: 1
     role: editor
@@ -36,6 +44,10 @@ credits:
         note: "East Texas University: Undeclared cast, via the
           savingthrowshow.fandom.com infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9187582/fullcredits/
+        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
+          via the official datasets.'
   - show: dark-lanterns
     season: 1
     role: producer
@@ -44,6 +56,10 @@ credits:
       - url: https://savingthrowshow.fandom.com/wiki/Dark_Lanterns
         note: Dark Lanterns cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt11236310/fullcredits/
+        note: IMDb full cast and crew for "Dark Lanterns" (2019), via the official
+          datasets.
   - show: mysterium
     season: 1
     role: editor
@@ -79,6 +95,10 @@ credits:
         note: It's Always Cloudy in Barovia cast, via the savingthrowshow.fandom.com
           infobox. CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359254/fullcredits/
+        note: IMDb full cast and crew for "It's Always Cloudy in Barovia" (2018), via
+          the official datasets.
   - show: dice-ex-machina
     season: 1
     role: producer

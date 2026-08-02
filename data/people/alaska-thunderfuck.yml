@@ -27,6 +27,17 @@ credits:
         url: https://dimension20.fandom.com/wiki/Dungeons_and_Drag_Queens_Season_2
         note: Dungeons and Drag Queens Season 2 cast, via the dimension20.fandom.com
           infobox. CC-BY-SA.
+  - show: dimension-20
+    role: player
+    character: Princess
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/a/a5/Alaska_Thunderfuck.jpg
   licence: CC-BY-SA-3.0

@@ -17,6 +17,10 @@ credits:
         note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196764/fullcredits/
+        note: IMDb full cast and crew for "The Lost Brigade" (2016), via the official
+          datasets.
   - show: 2015-star-wars-holiday-special
     season: 1
     role: player

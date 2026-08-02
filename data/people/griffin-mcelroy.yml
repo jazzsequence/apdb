@@ -179,6 +179,17 @@ credits:
         url: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula
         note: "Campaign 9: The Adventure Zone Versus Dracula cast, via the
           theadventurezone.fandom.com infobox. CC-BY-SA."
+  - show: dimension-20
+    role: player
+    character: Bean
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
 wikidata_qid: Q50384562
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Griffin_McElroy_%28PAX_Prime_2011%29.jpg

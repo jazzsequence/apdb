@@ -14,6 +14,7 @@ import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { castFromWebsite, isOwnWebsite } from '../src/lib/sources/website.js';
+import { upsertCredit } from '../src/lib/credits.js';
 
 const args = process.argv.slice(2);
 const flag = (n: string) => {
@@ -119,19 +120,20 @@ for (const t of targets.slice(0, limit)) {
       };
     }
 
-    if ((person.credits ?? []).some((x: any) => x.show === t.id && x.role === c.role)) continue;
-    (person.credits ??= []).push({
+    const credit: any = {
       show: t.id,
       season: 1,
       role: c.role,
       ...(c.character ? { character: c.character } : {}),
-      alias: person.aliases.length === 1 ? person.aliases[0].id : undefined,
       sources: [source],
-    });
-    // Drop an undefined alias rather than writing a null.
-    const last = person.credits[person.credits.length - 1];
-    if (!last.alias) delete last.alias;
+    };
+    if (person.aliases.length === 1) credit.alias = person.aliases[0].id;
 
+    // An existing credit is the show's own site confirming what another
+    // source already said — corroboration, not a duplicate.
+    const result = upsertCredit(person.credits ??= [], credit);
+    if (result.outcome === 'already-cited') continue;
+    person.credits = result.credits;
     await writeFile(path, stringify(person), 'utf8');
     imported += 1;
   }
