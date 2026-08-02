@@ -1,0 +1,17 @@
+id: leland-cox
+canonical_name: Leland Cox
+sort_name: Cox, Leland
+aliases:
+  - id: default
+    name: Leland Cox
+    alias_type: legal
+credits:
+  - show: shield-of-tomorrow
+    role: composer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7142196/fullcredits/
+        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
+          datasets.

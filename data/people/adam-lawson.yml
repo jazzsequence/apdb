@@ -1,0 +1,19 @@
+id: adam-lawson
+canonical_name: Adam Lawson
+sort_name: Lawson, Adam
+aliases:
+  - id: default
+    name: Adam Lawson
+    alias_type: legal
+credits:
+  - show: sagas-of-sundry
+    role: director
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7553424/fullcredits/
+        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
+          datasets.

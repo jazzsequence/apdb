@@ -1,0 +1,19 @@
+id: ray-utarnachitt
+canonical_name: Ray Utarnachitt
+sort_name: Utarnachitt, Ray
+aliases:
+  - id: default
+    name: Ray Utarnachitt
+    alias_type: legal
+credits:
+  - show: vast
+    role: player
+    season: 1
+    character: Nydar
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7289544/fullcredits/
+        note: IMDb full cast and crew for "Vast" (2016), via the official datasets.

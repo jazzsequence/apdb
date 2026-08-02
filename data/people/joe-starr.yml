@@ -1,0 +1,18 @@
+id: joe-starr
+canonical_name: Joe Starr
+sort_name: Starr, Joe
+aliases:
+  - id: default
+    name: Joe Starr
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Buddy Book
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.

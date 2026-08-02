@@ -1,0 +1,38 @@
+id: dylan-dovale
+canonical_name: Dylan Dovale
+sort_name: Dovale, Dylan
+aliases:
+  - id: default
+    name: Dylan Dovale
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Speed Racer
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: vast
+    role: player
+    season: 1
+    character: Noble Defender
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7289544/fullcredits/
+        note: IMDb full cast and crew for "Vast" (2016), via the official datasets.
+  - show: shield-of-tomorrow
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7142196/fullcredits/
+        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
+          datasets.

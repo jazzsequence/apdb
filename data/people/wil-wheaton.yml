@@ -67,6 +67,17 @@ credits:
         url: https://geekandsundry.fandom.com/wiki/Titansgrave
         note: Cast per Geek & Sundry and contemporary coverage. The playlist description
           is a credits roll, not a cast list.
+  - show: critical-role
+    role: player
+    character: Thorbir Falbek
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
 wikidata_qid: Q264699
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/8/88/Wil_Wheaton_-_LATFOB_2026-02.jpg

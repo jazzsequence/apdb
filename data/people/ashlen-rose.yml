@@ -1,0 +1,40 @@
+id: ashlen-rose
+canonical_name: Ashlen Rose
+sort_name: Rose, Ashlen
+aliases:
+  - id: default
+    name: Ashlen Rose
+    alias_type: legal
+credits:
+  - show: dark-lanterns
+    role: player
+    season: 1
+    character: Ghost
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt11236310/fullcredits/
+        note: IMDb full cast and crew for "Dark Lanterns" (2019), via the official
+          datasets.
+  - show: dice-ex-machina
+    role: player
+    season: 1
+    character: Callie
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22487604/fullcredits/
+        note: IMDb full cast and crew for "Dice Ex Machina" (2020), via the official
+          datasets.
+  - show: the-broken-pact
+    role: player
+    season: 1
+    character: Tutturu
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9660096/fullcredits/
+        note: IMDb full cast and crew for "The Broken Pact" (2018), via the official
+          datasets.

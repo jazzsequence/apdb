@@ -1,0 +1,19 @@
+id: steve-blum
+canonical_name: Steve Blum
+sort_name: Blum, Steve
+aliases:
+  - id: default
+    name: Steve Blum
+    alias_type: legal
+credits:
+  - show: critical-role
+    role: player
+    character: Self - Guest
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.

@@ -1,0 +1,20 @@
+id: nick-levy
+canonical_name: Nick Levy
+sort_name: Levy, Nick
+aliases:
+  - id: default
+    name: Nick Levy
+    alias_type: legal
+credits:
+  - show: hoi-chummer
+    role: player
+    season: 1
+    character: Moonbiter
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196742/fullcredits/
+        note: IMDb full cast and crew for "Hoi Chummer" (2016), via the official
+          datasets.

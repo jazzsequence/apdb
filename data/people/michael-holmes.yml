@@ -26,6 +26,61 @@ credits:
       - tier: community
         url: https://savingthrowshow.fandom.com/wiki/Masks
         note: Masks cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+  - show: legacy
+    role: player
+    season: 1
+    character: Pete Burns
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359834/fullcredits/
+        note: IMDb full cast and crew for "Legacy" (2018), via the official datasets.
+  - show: garden-of-good-evil
+    role: player
+    season: 1
+    character: Billy Ruin
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196904/fullcredits/
+        note: IMDb full cast and crew for "Garden of Good and Evil" (2018), via the
+          official datasets.
+  - show: it-s-always-cloudy-in-barovia
+    role: player
+    season: 1
+    character: Reverend Doctor Verhoven
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359254/fullcredits/
+        note: IMDb full cast and crew for "It's Always Cloudy in Barovia" (2018), via
+          the official datasets.
+  - show: monday-night-dungeon-fight
+    role: player
+    season: 1
+    character: Dokrum Nine-Skulls
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196562/fullcredits/
+        note: IMDb full cast and crew for "Monday Night Dungeon Fight" (2016), via the
+          official datasets.
+  - show: black-bag-detectives
+    role: player
+    season: 1
+    character: Christopher O'Rourke
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196796/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Detectives" (2017), via the
+          official datasets.'
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/6/66/Melinda_Webber%2C_Michael_Holmes_Royal_Society_Auckland_2023_%28cropped%29.jpg
   licence: CC-BY-4.0

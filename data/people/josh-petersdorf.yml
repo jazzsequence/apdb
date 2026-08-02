@@ -1,0 +1,20 @@
+id: josh-petersdorf
+canonical_name: Josh Petersdorf
+sort_name: Petersdorf, Josh
+aliases:
+  - id: default
+    name: Josh Petersdorf
+    alias_type: legal
+credits:
+  - show: we-re-alive-frontier
+    role: player
+    season: 1
+    character: Kent
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8510552/fullcredits/
+        note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
+          official datasets."

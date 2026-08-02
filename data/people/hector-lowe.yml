@@ -1,0 +1,18 @@
+id: hector-lowe
+canonical_name: Hector Lowe
+sort_name: Lowe, Hector
+aliases:
+  - id: default
+    name: Hector Lowe
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Johnny P. Bacon
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.

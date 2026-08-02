@@ -1,0 +1,40 @@
+id: vincent-caso
+canonical_name: Vincent Caso
+sort_name: Caso, Vincent
+aliases:
+  - id: default
+    name: Vincent Caso
+    alias_type: legal
+  - id: vince-caso
+    name: Vince Caso
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `vince-caso`.
+credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Gregory Demetrios
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Dorian Brindletuft
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: we-re-alive-frontier
+    role: player
+    season: 1
+    character: Nathan Emerson Stern
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8510552/fullcredits/
+        note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
+          official datasets."

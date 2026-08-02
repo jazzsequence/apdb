@@ -1,0 +1,18 @@
+id: matthew-pitner
+canonical_name: Matthew Pitner
+sort_name: Pitner, Matthew
+aliases:
+  - id: default
+    name: Matthew Pitner
+    alias_type: legal
+credits:
+  - show: the-ironkeep-chronicles
+    role: player
+    season: 1
+    character: Meldraxis
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8080866/fullcredits/
+        note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
+          official datasets.

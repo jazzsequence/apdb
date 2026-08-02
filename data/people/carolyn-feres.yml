@@ -1,0 +1,18 @@
+id: carolyn-feres
+canonical_name: Carolyn Feres
+sort_name: Feres, Carolyn
+aliases:
+  - id: default
+    name: Carolyn Feres
+    alias_type: legal
+credits:
+  - show: player-piano
+    role: player
+    season: 1
+    character: Store Patron
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4677382/fullcredits/
+        note: IMDb full cast and crew for "Player Piano" (2014), via the official
+          datasets.

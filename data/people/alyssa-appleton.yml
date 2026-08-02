@@ -1,0 +1,30 @@
+id: alyssa-appleton
+canonical_name: Alyssa Appleton
+sort_name: Appleton, Alyssa
+aliases:
+  - id: default
+    name: Alyssa Appleton
+    alias_type: legal
+credits:
+  - show: legacy
+    role: player
+    season: 1
+    character: Bryn
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359834/fullcredits/
+        note: IMDb full cast and crew for "Legacy" (2018), via the official datasets.
+  - show: dark-sun
+    role: player
+    season: 1
+    character: Embyr Duskgrove
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196646/fullcredits/
+        note: IMDb full cast and crew for "Dark Sun" (2016), via the official datasets.

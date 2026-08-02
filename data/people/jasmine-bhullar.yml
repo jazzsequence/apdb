@@ -53,3 +53,26 @@ credits:
         url: https://www.youtube.com/watch?v=mY9w7n84PmM
         note: Cast per the production's own description of "Dungeon Masters | Official
           D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".
+  - show: dimension-20
+    role: player
+    character: Little Army Man
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+  - show: relics-and-rarities
+    role: player
+    season: 1
+    character: Beryl The Brutal
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9776292/fullcredits/
+        note: IMDb full cast and crew for "Relics and Rarities" (2019), via the official
+          datasets.

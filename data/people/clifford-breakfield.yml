@@ -1,0 +1,19 @@
+id: clifford-breakfield
+canonical_name: Clifford Breakfield
+sort_name: Breakfield, Clifford
+aliases:
+  - id: default
+    name: Clifford Breakfield
+    alias_type: legal
+credits:
+  - show: callisto-6
+    role: producer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8861702/fullcredits/
+        note: IMDb full cast and crew for "Callisto 6" (2018), via the official
+          datasets.

@@ -1,0 +1,18 @@
+id: hudson-shock
+canonical_name: Hudson Shock
+sort_name: Shock, Hudson
+aliases:
+  - id: default
+    name: Hudson Shock
+    alias_type: legal
+credits:
+  - show: the-league-of-adventure
+    role: player
+    season: 1
+    character: Dr. Unexpected
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196898/fullcredits/
+        note: IMDb full cast and crew for "The League of Adventure" (2018), via the
+          official datasets.

@@ -1,9 +1,3 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Downfall (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: nick-marini
 canonical_name: Nick Marini
 sort_name: Marini, Nick
@@ -34,3 +28,14 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Downfall
         note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
+  - show: critical-role
+    role: player
+    character: Ayden
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.

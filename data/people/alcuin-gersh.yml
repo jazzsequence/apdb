@@ -1,0 +1,41 @@
+id: alcuin-gersh
+canonical_name: Alcuin Gersh
+sort_name: Gersh, Alcuin
+aliases:
+  - id: default
+    name: Alcuin Gersh
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Vampire Bat
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: we-re-alive-frontier
+    role: player
+    season: 1
+    character: Wraith
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8510552/fullcredits/
+        note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
+          official datasets."
+  - show: shadows-on-the-horizon
+    role: player
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196944/fullcredits/
+        note: IMDb full cast and crew for "Shadows on the Horizon" (2018), via the
+          official datasets.

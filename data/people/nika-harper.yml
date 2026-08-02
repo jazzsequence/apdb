@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: nika-harper
 canonical_name: Nika Harper
 sort_name: Harper, Nika
@@ -22,3 +16,15 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store
         note: The Last VHS Store cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+  - show: deepwater-deep
+    role: player
+    season: 1
+    character: Xylitol
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196822/fullcredits/
+        note: IMDb full cast and crew for "Deepwater Deep" (2018), via the official
+          datasets.

@@ -1,0 +1,18 @@
+id: mia-resella
+canonical_name: Mia Resella
+sort_name: Resella, Mia
+aliases:
+  - id: default
+    name: Mia Resella
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Maggie 'Mags' Yablanski
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.

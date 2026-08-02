@@ -1,0 +1,19 @@
+id: justin-baker
+canonical_name: Justin Baker
+sort_name: Baker, Justin
+aliases:
+  - id: default
+    name: Justin Baker
+    alias_type: legal
+credits:
+  - show: dark-sun
+    role: player
+    season: 1
+    character: Sizzlak the Great III
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196646/fullcredits/
+        note: IMDb full cast and crew for "Dark Sun" (2016), via the official datasets.

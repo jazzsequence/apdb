@@ -161,3 +161,14 @@ credits:
     alias: default
     sources:
       - *a1
+  - show: critical-role
+    role: player
+    character: Prism Grimpoppy
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.

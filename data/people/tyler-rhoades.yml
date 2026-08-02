@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: tyler-rhoades
 canonical_name: Tyler Rhoades
 sort_name: Rhoades, Tyler
@@ -22,3 +16,55 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade
         note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+  - show: dark-lanterns
+    role: player
+    season: 1
+    character: Pulver
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt11236310/fullcredits/
+        note: IMDb full cast and crew for "Dark Lanterns" (2019), via the official
+          datasets.
+  - show: it-s-always-cloudy-in-barovia
+    role: player
+    season: 1
+    character: Mirko Bolgausch
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359254/fullcredits/
+        note: IMDb full cast and crew for "It's Always Cloudy in Barovia" (2018), via
+          the official datasets.
+  - show: barky-s-brigade
+    role: player
+    season: 1
+    character: Jopper Grow
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9193494/fullcredits/
+        note: IMDb full cast and crew for "Barky's Brigade" (2015), via the official
+          datasets.
+  - show: hoi-chummer
+    role: GM/DM
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196742/fullcredits/
+        note: IMDb full cast and crew for "Hoi Chummer" (2016), via the official
+          datasets.
+  - show: deepwater-deep
+    role: GM/DM
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196822/fullcredits/
+        note: IMDb full cast and crew for "Deepwater Deep" (2018), via the official
+          datasets.

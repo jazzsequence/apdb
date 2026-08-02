@@ -1,0 +1,28 @@
+id: edward-doty
+canonical_name: Edward Doty
+sort_name: Doty, Edward
+aliases:
+  - id: default
+    name: Edward Doty
+    alias_type: legal
+credits:
+  - show: vast
+    role: producer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7289544/fullcredits/
+        note: IMDb full cast and crew for "Vast" (2016), via the official datasets.
+  - show: critical-role
+    role: producer
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.

@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: traycee-king
 canonical_name: Traycee King
 sort_name: King, Traycee
@@ -22,3 +16,36 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade
         note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+  - show: garden-of-good-evil
+    role: player
+    season: 1
+    character: Libra
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196904/fullcredits/
+        note: IMDb full cast and crew for "Garden of Good and Evil" (2018), via the
+          official datasets.
+  - show: sagas-of-sundry
+    role: producer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7553424/fullcredits/
+        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
+          datasets.
+  - show: barky-s-brigade
+    role: player
+    season: 1
+    character: Dayl Clawthorne (2016)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9193494/fullcredits/
+        note: IMDb full cast and crew for "Barky's Brigade" (2015), via the official
+          datasets.

@@ -1,0 +1,32 @@
+id: makayla-lynn
+canonical_name: Makayla Lynn
+sort_name: Lynn, Makayla
+aliases:
+  - id: default
+    name: Makayla Lynn
+    alias_type: legal
+credits:
+  - show: dinner-dragons
+    role: player
+    season: 1
+    character: Umpass Stay
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.
+  - show: hoi-chummer
+    role: player
+    season: 1
+    character: Ketu
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196742/fullcredits/
+        note: IMDb full cast and crew for "Hoi Chummer" (2016), via the official
+          datasets.

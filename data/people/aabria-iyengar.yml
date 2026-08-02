@@ -222,3 +222,42 @@ credits:
       - tier: official
         url: https://happyjacks.org/genex/
         note: Cast per the network's own show page.
+  - show: pirates-of-salt-bay
+    role: GM/DM
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: pirates-of-salt-bay
+    role: player
+    character: Fleabag
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: candela-obscura
+    role: GM/DM
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+  - show: critical-role
+    role: GM/DM
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.

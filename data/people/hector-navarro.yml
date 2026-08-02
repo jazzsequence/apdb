@@ -22,3 +22,36 @@ credits:
       - tier: reference
         url: https://stexpanded.fandom.com/wiki/Shield_of_Tomorrow
         note: Cast per Star Trek Expanded Universe and Geek & Sundry.
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Mark Grayson
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: thrashtopia
+    role: player
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7588390/fullcredits/
+        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
+          datasets.
+  - show: callisto-6
+    role: player
+    season: 1
+    character: Anton Andazola
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8861702/fullcredits/
+        note: IMDb full cast and crew for "Callisto 6" (2018), via the official
+          datasets.

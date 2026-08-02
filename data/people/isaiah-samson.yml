@@ -1,0 +1,18 @@
+id: isaiah-samson
+canonical_name: Isaiah Samson
+sort_name: Samson, Isaiah
+aliases:
+  - id: default
+    name: Isaiah Samson
+    alias_type: legal
+credits:
+  - show: vast
+    role: writer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7289544/fullcredits/
+        note: IMDb full cast and crew for "Vast" (2016), via the official datasets.

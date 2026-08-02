@@ -1,0 +1,18 @@
+id: heather-wood
+canonical_name: Heather Wood
+sort_name: Wood, Heather
+aliases:
+  - id: default
+    name: Heather Wood
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Emma Madison Bailey
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.

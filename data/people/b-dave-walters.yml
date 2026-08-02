@@ -45,3 +45,35 @@ credits:
         url: https://www.youtube.com/watch?v=2k8p62-DpS0
         note: Cast per the production's own description of "Prologue - The Tides of
           Wildemount | LIVE D&D with RealmSmith".
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Brian Johnson
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: shield-of-tomorrow
+    role: player
+    season: 1
+    character: Lt. Commander Forkin Kunert
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7142196/fullcredits/
+        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
+          datasets.
+  - show: we-re-alive-frontier
+    role: player
+    season: 1
+    character: Chato
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8510552/fullcredits/
+        note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
+          official datasets."

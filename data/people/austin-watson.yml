@@ -1,0 +1,30 @@
+id: austin-watson
+canonical_name: Austin Watson
+sort_name: Watson, Austin
+aliases:
+  - id: default
+    name: Austin Watson
+    alias_type: legal
+credits:
+  - show: acquisitions-incorporated
+    role: player
+    character: Bobbie Zimmeruski
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt29338249/fullcredits/
+        note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
+          official datasets.
+  - show: dimension-20
+    role: player
+    character: Julius Mortem
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.

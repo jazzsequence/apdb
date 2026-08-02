@@ -1,0 +1,20 @@
+id: dan-peck
+canonical_name: Dan Peck
+sort_name: Peck, Dan
+aliases:
+  - id: default
+    name: Dan Peck
+    alias_type: legal
+credits:
+  - show: deepwater-deep
+    role: player
+    season: 1
+    character: Twill
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196822/fullcredits/
+        note: IMDb full cast and crew for "Deepwater Deep" (2018), via the official
+          datasets.

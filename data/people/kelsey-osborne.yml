@@ -1,0 +1,56 @@
+id: kelsey-osborne
+canonical_name: Kelsey Osborne
+sort_name: Osborne, Kelsey
+aliases:
+  - id: default
+    name: Kelsey Osborne
+    alias_type: legal
+credits:
+  - show: miss-adventures
+    role: player
+    season: 1
+    character: Poppy Mulder
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281086/fullcredits/
+        note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
+          datasets.
+  - show: dinner-dragons
+    role: player
+    season: 1
+    character: Gabriela 'Vendetta' Vasquez
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.
+  - show: hoi-chummer
+    role: player
+    season: 1
+    character: Gidget
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196742/fullcredits/
+        note: IMDb full cast and crew for "Hoi Chummer" (2016), via the official
+          datasets.
+  - show: black-bag-detectives
+    role: player
+    season: 1
+    character: Shauna Hunter
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196796/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Detectives" (2017), via the
+          official datasets.'

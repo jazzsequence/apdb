@@ -23,6 +23,29 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: thrashtopia
+    role: player
+    season: 1
+    character: Evil Whitney
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7588390/fullcredits/
+        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
+          datasets.
+  - show: thrashtopia
+    role: producer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7588390/fullcredits/
+        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
+          datasets.
 wikidata_qid: Q7996725
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Whitney_Moore_%28cropped%29.jpg

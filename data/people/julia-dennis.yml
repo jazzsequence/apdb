@@ -1,0 +1,20 @@
+id: julia-dennis
+canonical_name: Julia Dennis
+sort_name: Dennis, Julia
+aliases:
+  - id: default
+    name: Julia Dennis
+    alias_type: legal
+credits:
+  - show: relics-and-rarities
+    role: player
+    season: 1
+    character: Annabella
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9776292/fullcredits/
+        note: IMDb full cast and crew for "Relics and Rarities" (2019), via the official
+          datasets.

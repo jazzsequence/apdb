@@ -1,0 +1,30 @@
+id: jake-michels
+canonical_name: Jake Michels
+sort_name: Michels, Jake
+aliases:
+  - id: default
+    name: Jake Michels
+    alias_type: legal
+credits:
+  - show: we-re-alive-frontier
+    role: director
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8510552/fullcredits/
+        note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
+          official datasets."
+  - show: relics-and-rarities
+    role: director
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9776292/fullcredits/
+        note: IMDb full cast and crew for "Relics and Rarities" (2019), via the official
+          datasets.

@@ -6,6 +6,10 @@ aliases:
   - id: default
     name: Sydney Gayle Amanuel
     alias_type: legal
+  - id: sydney-amanuel
+    name: Sydney Amanuel
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `sydney-amanuel`.
 credits:
   - show: glass-cannon-podcast
     season: 1

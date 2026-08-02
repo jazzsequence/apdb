@@ -1,0 +1,19 @@
+id: tim-herrold
+canonical_name: Tim Herrold
+sort_name: Herrold, Tim
+aliases:
+  - id: default
+    name: Tim Herrold
+    alias_type: legal
+credits:
+  - show: thrashtopia
+    role: editor
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7588390/fullcredits/
+        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
+          datasets.

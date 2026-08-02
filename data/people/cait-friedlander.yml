@@ -1,0 +1,42 @@
+id: cait-friedlander
+canonical_name: Cait Friedlander
+sort_name: Friedlander, Cait
+aliases:
+  - id: default
+    name: Cait Friedlander
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Baroness Katya
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: uncanny-valley
+    role: player
+    season: 1
+    character: Clementine
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196784/fullcredits/
+        note: IMDb full cast and crew for "Uncanny Valley" (2017), via the official
+          datasets.
+  - show: garden-of-good-evil
+    role: player
+    season: 1
+    character: September Sharp
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196904/fullcredits/
+        note: IMDb full cast and crew for "Garden of Good and Evil" (2018), via the
+          official datasets.

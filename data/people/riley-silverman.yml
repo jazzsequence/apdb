@@ -17,3 +17,33 @@ credits:
         url: https://www.imdb.com/title/tt7537668/fullcredits/
         note: CelebriD&D full cast and crew on IMDb, which lists Riley Silverman's role
           and episode count.
+  - show: celebrid-d
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: IMDb full cast and crew for "CelebriD&D" (2015), via the official
+          datasets.
+  - show: dice-ex-machina
+    role: GM/DM
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22487604/fullcredits/
+        note: IMDb full cast and crew for "Dice Ex Machina" (2020), via the official
+          datasets.
+  - show: the-broken-pact
+    role: player
+    season: 1
+    character: Velma
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9660096/fullcredits/
+        note: IMDb full cast and crew for "The Broken Pact" (2018), via the official
+          datasets.

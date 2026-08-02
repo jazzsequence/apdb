@@ -35,6 +35,28 @@ credits:
         url: https://www.youtube.com/watch?v=hWXH8Z0bBno
         note: Cast per the production's own description of "RealmSmith Learns Cyberpunk
           Red Intro | RealmSmith".
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Dr. Von Chaos
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: callisto-6
+    role: player
+    season: 1
+    character: Kostchie
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8861702/fullcredits/
+        note: IMDb full cast and crew for "Callisto 6" (2018), via the official
+          datasets.
 wikidata_qid: Q6768853
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/5/58/Mark_Meer_%28cropped%29.jpg

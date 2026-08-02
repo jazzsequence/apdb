@@ -5,6 +5,10 @@ aliases:
   - id: default
     name: Brian Wayne Foster
     alias_type: legal
+  - id: brian-w-foster
+    name: Brian W. Foster
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `brian-w-foster`.
 credits:
   - show: critical-role-specials
     season: 1
@@ -22,3 +26,13 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/UnDeadwood
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role
+    role: player
+    character: Self - Host
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.

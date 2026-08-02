@@ -16,3 +16,14 @@ credits:
         url: https://www.imdb.com/title/tt7537668/fullcredits/
         note: CelebriD&D full cast and crew on IMDb, which lists Ben Mekler's role and
           episode count.
+  - show: thrashtopia
+    role: writer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7588390/fullcredits/
+        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
+          datasets.

@@ -128,3 +128,49 @@ credits:
         url: https://www.imdb.com/title/tt7537668/fullcredits/
         note: CelebriD&D full cast and crew on IMDb, which lists Taliesin Jaffe's role
           and episode count.
+  - show: candela-obscura
+    role: writer
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+  - show: sagas-of-sundry
+    role: player
+    season: 1
+    character: Kayden
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7553424/fullcredits/
+        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
+          datasets.
+  - show: thrashtopia
+    role: player
+    season: 1
+    character: Taliesin
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7588390/fullcredits/
+        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
+          datasets.
+  - show: callisto-6
+    role: player
+    season: 1
+    character: Synapse
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8861702/fullcredits/
+        note: IMDb full cast and crew for "Callisto 6" (2018), via the official
+          datasets.

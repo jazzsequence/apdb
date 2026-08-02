@@ -1,0 +1,42 @@
+id: emme-montgomery
+canonical_name: Emme Montgomery
+sort_name: Montgomery, Emme
+aliases:
+  - id: default
+    name: Emme Montgomery
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Winnie Webster
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: pirates-of-salt-bay
+    role: player
+    character: Trislynn Orana
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: pugmire-homeward-bound
+    role: player
+    season: 1
+    character: Sylvie
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9184362/fullcredits/
+        note: 'IMDb full cast and crew for "Pugmire: Homeward Bound" (2018), via the
+          official datasets.'

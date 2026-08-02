@@ -15,6 +15,16 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Gosh_Darn_Fiasco
         note: Gosh Darn Fiasco cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Thelma Thunderstruck
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
 image:
   url: https://live.staticflickr.com/1733/41798302614_4807cf44ae_b.jpg
   licence: CC-BY-2.0

@@ -42,3 +42,13 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Haunted_City
         note: Haunted City cast, via the the-glass-cannon-network.fandom.com infobox.
           CC-BY-SA.
+  - show: shield-of-tomorrow
+    role: player
+    season: 1
+    character: Lt Lassie LeClerc
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7142196/fullcredits/
+        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
+          datasets.

@@ -1,0 +1,26 @@
+id: chris-fishel
+canonical_name: Chris Fishel
+sort_name: Fishel, Chris
+aliases:
+  - id: default
+    name: Chris Fishel
+    alias_type: legal
+credits:
+  - show: pathfinder-knights-of-everflame
+    role: director
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt11427152/fullcredits/
+        note: 'IMDb full cast and crew for "Pathfinder: Knights of Everflame" (2019),
+          via the official datasets.'
+  - show: pathfinder-knights-of-everflame
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt11427152/fullcredits/
+        note: 'IMDb full cast and crew for "Pathfinder: Knights of Everflame" (2019),
+          via the official datasets.'

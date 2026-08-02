@@ -1,0 +1,19 @@
+id: lenore-riegel
+canonical_name: Lenore Riegel
+sort_name: Riegel, Lenore
+aliases:
+  - id: default
+    name: Lenore Riegel
+    alias_type: legal
+credits:
+  - show: critical-role
+    role: player
+    character: Self - Momlan
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.

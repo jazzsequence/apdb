@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: david-crennen
 canonical_name: David Crennen
 sort_name: Crennen, David
@@ -39,3 +33,26 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
         note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
           infobox. CC-BY-SA.
+  - show: dinner-dragons
+    role: GM/DM
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.
+  - show: dinner-dragons
+    role: player
+    season: 1
+    character: Rooff Wooff
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.

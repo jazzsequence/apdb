@@ -19,7 +19,10 @@
     "import:archive": "tsx scripts/import-archive.ts",
     "find:wikis": "tsx scripts/find-wikis.ts",
     "close:gaps": "tsx scripts/close-gaps.ts",
-    "import:websites": "tsx scripts/import-websites.ts"
+    "import:websites": "tsx scripts/import-websites.ts",
+    "fetch:imdb": "mkdir -p .cache/imdb && for f in title.basics title.episode title.principals name.basics; do curl -sS -o .cache/imdb/$f.tsv.gz https://datasets.imdbws.com/$f.tsv.gz; done",
+    "import:imdb": "tsx scripts/import-imdb.ts",
+    "merge": "tsx scripts/merge-people.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

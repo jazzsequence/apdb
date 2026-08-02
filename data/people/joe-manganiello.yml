@@ -31,6 +31,27 @@ credits:
       - tier: reference
         url: https://nerdist.com/article/joe-manganiello-celebridd-arkhan-the-cruel/
         note: Nerdist's own write-up of the episode names the table.
+  - show: celebrid-d
+    role: player
+    season: 1
+    character: Arkhan
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: IMDb full cast and crew for "CelebriD&D" (2015), via the official
+          datasets.
+  - show: critical-role
+    role: player
+    character: Arkhan
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
 wikidata_qid: Q470005
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Joe_Manganiello_July_2015.jpg

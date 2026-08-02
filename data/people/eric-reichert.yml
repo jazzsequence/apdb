@@ -25,6 +25,97 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
         note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+  - show: dark-sun
+    role: player
+    season: 1
+    character: Yenin Markorvich
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196646/fullcredits/
+        note: IMDb full cast and crew for "Dark Sun" (2016), via the official datasets.
+  - show: pirates-of-salt-bay
+    role: player
+    character: Dirty Hank
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: pirates-of-salt-bay
+    role: GM/DM
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: pirates-of-salt-bay
+    role: producer
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: garden-of-good-evil
+    role: player
+    season: 1
+    character: Musab Anderson Gladstone
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196904/fullcredits/
+        note: IMDb full cast and crew for "Garden of Good and Evil" (2018), via the
+          official datasets.
+  - show: the-ironkeep-chronicles
+    role: player
+    season: 1
+    character: Greyson Hail
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8080866/fullcredits/
+        note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
+          official datasets.
+  - show: dinner-dragons
+    role: player
+    season: 1
+    character: "'Shady' Doug Liveaux"
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.
+  - show: twilight-protocol
+    role: player
+    season: 1
+    character: Sgt. Elijah Clay
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9886618/fullcredits/
+        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
+          datasets.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/b/be/Tom_Reichert%2C_Parker_Middleton_and_Charles_N._Davis%2C_May_2016.jpg
   licence: CC-BY-2.0

@@ -1,0 +1,18 @@
+id: anne-mortensen-agnew
+canonical_name: Anne Mortensen-Agnew
+sort_name: Mortensen-Agnew, Anne
+aliases:
+  - id: default
+    name: Anne Mortensen-Agnew
+    alias_type: legal
+credits:
+  - show: vast
+    role: writer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7289544/fullcredits/
+        note: IMDb full cast and crew for "Vast" (2016), via the official datasets.

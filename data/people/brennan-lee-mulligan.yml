@@ -357,3 +357,23 @@ credits:
         url: https://theadventurezone.fandom.com/wiki/Live_Campaign_2%3A_Dadlands
         note: "Live Campaign 2: Dadlands cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
+  - show: critical-role
+    role: GM/DM
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+  - show: dimension-20
+    role: writer
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.

@@ -1,0 +1,19 @@
+id: glitch-wilder
+canonical_name: Glitch Wilder
+sort_name: Wilder, Glitch
+aliases:
+  - id: default
+    name: Glitch Wilder
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    role: player
+    character: The Foreman
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt10584444/fullcredits/
+        note: IMDb full cast and crew for "The Call of Cthulhu Mystery Program" (2015),
+          via the official datasets.

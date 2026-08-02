@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/Masks (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: jordan-pridgen
 canonical_name: Jordan Pridgen
 sort_name: Pridgen, Jordan
@@ -32,3 +26,130 @@ credits:
       - tier: community
         url: https://savingthrowshow.fandom.com/wiki/Masks
         note: Masks cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+  - show: legacy
+    role: player
+    season: 1
+    character: Mander
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359834/fullcredits/
+        note: IMDb full cast and crew for "Legacy" (2018), via the official datasets.
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Dr. Alfalfa Sprouts
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: miss-adventures
+    role: player
+    season: 1
+    character: C. Remington Quillwick
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281086/fullcredits/
+        note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
+          datasets.
+  - show: deadlands-lawless
+    role: player
+    season: 1
+    character: Elden Fallon
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt12286336/fullcredits/
+        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
+          datasets.'
+  - show: dice-ex-machina
+    role: player
+    season: 1
+    character: Lysandros
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22487604/fullcredits/
+        note: IMDb full cast and crew for "Dice Ex Machina" (2020), via the official
+          datasets.
+  - show: the-ironkeep-chronicles
+    role: player
+    season: 1
+    character: Meepo
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8080866/fullcredits/
+        note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
+          official datasets.
+  - show: east-texas-university-undeclared
+    role: player
+    season: 1
+    character: Kip Springfield
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9187582/fullcredits/
+        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
+          via the official datasets.'
+  - show: rpg-exploration-society
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196806/fullcredits/
+        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
+          official datasets.
+  - show: rpg-exploration-society
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196806/fullcredits/
+        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
+          official datasets.
+  - show: deepwater-deep
+    role: player
+    season: 1
+    character: Nolbavbek
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196822/fullcredits/
+        note: IMDb full cast and crew for "Deepwater Deep" (2018), via the official
+          datasets.
+  - show: the-broken-pact
+    role: player
+    season: 1
+    character: Astorok
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9660096/fullcredits/
+        note: IMDb full cast and crew for "The Broken Pact" (2018), via the official
+          datasets.
+  - show: twilight-protocol
+    role: player
+    season: 1
+    character: Padre Ernesto De Diaz
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9886618/fullcredits/
+        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
+          datasets.

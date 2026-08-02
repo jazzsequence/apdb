@@ -1,0 +1,30 @@
+id: bastian-blythe
+canonical_name: Bastian Blythe
+sort_name: Blythe, Bastian
+aliases:
+  - id: default
+    name: Bastian Blythe
+    alias_type: legal
+credits:
+  - show: miss-adventures
+    role: player
+    season: 1
+    character: Amelia Breckenridge
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281086/fullcredits/
+        note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
+          datasets.
+  - show: the-lost-brigade
+    role: player
+    season: 1
+    character: Alaris (2016-2017)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196764/fullcredits/
+        note: IMDb full cast and crew for "The Lost Brigade" (2016), via the official
+          datasets.

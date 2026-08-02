@@ -1,0 +1,20 @@
+id: rachel-kimsey
+canonical_name: Rachel Kimsey
+sort_name: Kimsey, Rachel
+aliases:
+  - id: default
+    name: Rachel Kimsey
+    alias_type: legal
+credits:
+  - show: we-re-alive-frontier
+    role: player
+    season: 1
+    character: Pony
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8510552/fullcredits/
+        note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
+          official datasets."

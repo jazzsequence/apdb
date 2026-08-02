@@ -11,6 +11,10 @@ aliases:
   - id: default
     name: Jason Charles Miller
     alias_type: legal
+  - id: jason-miller
+    name: Jason Miller
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `jason-miller`.
 credits:
   - show: critical-role
     season: 1
@@ -40,3 +44,52 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Count Dalca
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: critical-role
+    role: player
+    character: Garthok
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+  - show: shield-of-tomorrow
+    role: player
+    season: 1
+    character: K'Dok
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7142196/fullcredits/
+        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
+          datasets.
+  - show: sagas-of-sundry
+    role: composer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7553424/fullcredits/
+        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
+          datasets.
+  - show: thrashtopia
+    role: player
+    season: 1
+    character: Bunker Bot
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7588390/fullcredits/
+        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
+          datasets.

@@ -1,0 +1,20 @@
+id: eliot-roach
+canonical_name: Eliot Roach
+sort_name: Roach, Eliot
+aliases:
+  - id: default
+    name: Eliot Roach
+    alias_type: legal
+credits:
+  - show: sagas-of-sundry
+    role: player
+    season: 1
+    character: "Ski Masked Person #2"
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7553424/fullcredits/
+        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
+          datasets.

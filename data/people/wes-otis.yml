@@ -1,0 +1,52 @@
+id: wes-otis
+canonical_name: Wes Otis
+sort_name: Otis, Wes
+aliases:
+  - id: default
+    name: Wes Otis
+    alias_type: legal
+credits:
+  - show: black-bag-vikings
+    role: GM/DM
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281076/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Vikings" (2017), via the official
+          datasets.'
+  - show: black-bag-vikings
+    role: producer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281076/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Vikings" (2017), via the official
+          datasets.'
+  - show: dinner-dragons
+    role: GM/DM
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.
+  - show: black-bag-detectives
+    role: GM/DM
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196796/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Detectives" (2017), via the
+          official datasets.'

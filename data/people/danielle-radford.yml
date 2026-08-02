@@ -1,9 +1,3 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2 (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: danielle-radford
 canonical_name: Danielle Radford
 sort_name: Radford, Danielle
@@ -41,3 +35,15 @@ credits:
         url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
         note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
+  - show: dice-ex-machina
+    role: player
+    season: 1
+    character: Dee
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22487604/fullcredits/
+        note: IMDb full cast and crew for "Dice Ex Machina" (2020), via the official
+          datasets.

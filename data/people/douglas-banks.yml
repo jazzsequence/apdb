@@ -1,0 +1,20 @@
+id: douglas-banks
+canonical_name: Douglas Banks
+sort_name: Banks, Douglas
+aliases:
+  - id: default
+    name: Douglas Banks
+    alias_type: legal
+  - id: doug-banks
+    name: Doug Banks
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `doug-banks`.
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/series-1-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.

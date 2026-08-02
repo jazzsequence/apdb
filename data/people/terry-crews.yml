@@ -17,3 +17,13 @@ credits:
         url: https://www.imdb.com/title/tt7537668/fullcredits/
         note: CelebriD&D full cast and crew on IMDb, which lists Terry Crews's role and
           episode count.
+  - show: celebrid-d
+    role: player
+    season: 1
+    character: Thodak the Blacksmith
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: IMDb full cast and crew for "CelebriD&D" (2015), via the official
+          datasets.

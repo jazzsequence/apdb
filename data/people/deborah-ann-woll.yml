@@ -24,3 +24,36 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+  - show: critical-role
+    role: player
+    character: Twiggy
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+  - show: relics-and-rarities
+    role: GM/DM
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9776292/fullcredits/
+        note: IMDb full cast and crew for "Relics and Rarities" (2019), via the official
+          datasets.
+  - show: relics-and-rarities
+    role: writer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9776292/fullcredits/
+        note: IMDb full cast and crew for "Relics and Rarities" (2019), via the official
+          datasets.

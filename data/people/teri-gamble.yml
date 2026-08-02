@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: teri-gamble
 canonical_name: Teri Gamble
 sort_name: Gamble, Teri
@@ -21,3 +15,60 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
         note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Starks McHutch
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: miss-adventures
+    role: player
+    season: 1
+    character: Terra Bella Zonks
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281086/fullcredits/
+        note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
+          datasets.
+  - show: pirates-of-salt-bay
+    role: player
+    character: Eoj Reymurts
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: pirates-of-salt-bay
+    role: GM/DM
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: black-bag-detectives
+    role: player
+    season: 1
+    character: Nefertiti Jones
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196796/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Detectives" (2017), via the
+          official datasets.'

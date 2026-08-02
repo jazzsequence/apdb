@@ -1,0 +1,32 @@
+id: jesse-durant
+canonical_name: Jesse Durant
+sort_name: Durant, Jesse
+aliases:
+  - id: default
+    name: Jesse Durant
+    alias_type: legal
+credits:
+  - show: hoi-chummer
+    role: player
+    season: 1
+    character: Elf Face
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196742/fullcredits/
+        note: IMDb full cast and crew for "Hoi Chummer" (2016), via the official
+          datasets.
+  - show: deepwater-deep
+    role: player
+    season: 1
+    character: William
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196822/fullcredits/
+        note: IMDb full cast and crew for "Deepwater Deep" (2018), via the official
+          datasets.

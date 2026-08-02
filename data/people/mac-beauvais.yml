@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/Phoenix_Dawn_Command (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: mac-beauvais
 canonical_name: Mac Beauvais
 sort_name: Beauvais, Mac
@@ -22,3 +16,25 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Phoenix_Dawn_Command
         note: Phoenix Dawn Command cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+  - show: miss-adventures
+    role: player
+    season: 1
+    character: Jana Quiqby
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281086/fullcredits/
+        note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
+          datasets.
+  - show: monday-night-dungeon-fight
+    role: player
+    season: 1
+    character: Sithliikiiar
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196562/fullcredits/
+        note: IMDb full cast and crew for "Monday Night Dungeon Fight" (2016), via the
+          official datasets.

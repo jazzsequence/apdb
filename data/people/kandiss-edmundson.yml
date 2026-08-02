@@ -1,0 +1,19 @@
+id: kandiss-edmundson
+canonical_name: Kandiss Edmundson
+sort_name: Edmundson, Kandiss
+aliases:
+  - id: default
+    name: Kandiss Edmundson
+    alias_type: legal
+credits:
+  - show: legacy
+    role: player
+    season: 1
+    character: Detective Althea Coleman
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359834/fullcredits/
+        note: IMDb full cast and crew for "Legacy" (2018), via the official datasets.

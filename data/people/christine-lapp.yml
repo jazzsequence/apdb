@@ -1,0 +1,20 @@
+id: christine-lapp
+canonical_name: Christine Lapp
+sort_name: Lapp, Christine
+aliases:
+  - id: default
+    name: Christine Lapp
+    alias_type: legal
+credits:
+  - show: twilight-protocol
+    role: player
+    season: 1
+    character: Agent Byron Decker
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9886618/fullcredits/
+        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
+          datasets.

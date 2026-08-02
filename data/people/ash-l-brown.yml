@@ -1,0 +1,18 @@
+id: ash-l-brown
+canonical_name: Ash L. Brown
+sort_name: Brown, Ash L.
+aliases:
+  - id: default
+    name: Ash L. Brown
+    alias_type: legal
+credits:
+  - show: dimension-20
+    role: editor
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.

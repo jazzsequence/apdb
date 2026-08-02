@@ -1,0 +1,18 @@
+id: laser-webber
+canonical_name: Laser Webber
+sort_name: Webber, Laser
+aliases:
+  - id: default
+    name: Laser Webber
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Buck Bigtime
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.

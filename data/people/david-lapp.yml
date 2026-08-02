@@ -1,0 +1,19 @@
+id: david-lapp
+canonical_name: David Lapp
+sort_name: Lapp, David
+aliases:
+  - id: default
+    name: David Lapp
+    alias_type: legal
+credits:
+  - show: twilight-protocol
+    role: producer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9886618/fullcredits/
+        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
+          datasets.

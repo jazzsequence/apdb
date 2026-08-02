@@ -1,0 +1,31 @@
+id: sydney-stechmann
+canonical_name: Sydney Stechmann
+sort_name: Stechmann, Sydney
+aliases:
+  - id: default
+    name: Sydney Stechmann
+    alias_type: legal
+credits:
+  - show: legacy
+    role: player
+    season: 1
+    character: Lorelei
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359834/fullcredits/
+        note: IMDb full cast and crew for "Legacy" (2018), via the official datasets.
+  - show: uncanny-valley
+    role: player
+    season: 1
+    character: Mary
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196784/fullcredits/
+        note: IMDb full cast and crew for "Uncanny Valley" (2017), via the official
+          datasets.

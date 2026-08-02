@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: virva-aryan
 canonical_name: Virva Aryan
 sort_name: Aryan, Virva
@@ -21,3 +15,13 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
         note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
           infobox. CC-BY-SA.
+  - show: barky-s-brigade
+    role: player
+    season: 1
+    character: Aatuska Nakine (2015-2016)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9193494/fullcredits/
+        note: IMDb full cast and crew for "Barky's Brigade" (2015), via the official
+          datasets.

@@ -1,9 +1,3 @@
-# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
-# Source: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: meghan-caves
 canonical_name: Meghan Caves
 sort_name: Caves, Meghan
@@ -58,3 +52,153 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless
         note: "Deadlands: Lawless cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA."
+  - show: legacy
+    role: player
+    season: 1
+    character: Dusty
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359834/fullcredits/
+        note: IMDb full cast and crew for "Legacy" (2018), via the official datasets.
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Dollie Maynard
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: miss-adventures
+    role: player
+    season: 1
+    character: Morgana Helstrom
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281086/fullcredits/
+        note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
+          datasets.
+  - show: dark-lanterns
+    role: player
+    season: 1
+    character: Gadget
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt11236310/fullcredits/
+        note: IMDb full cast and crew for "Dark Lanterns" (2019), via the official
+          datasets.
+  - show: deadlands-lawless
+    role: player
+    season: 1
+    character: Cherry
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt12286336/fullcredits/
+        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
+          datasets.'
+  - show: deadlands-lawless
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt12286336/fullcredits/
+        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
+          datasets.'
+  - show: the-ironkeep-chronicles
+    role: player
+    season: 1
+    character: AVA
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8080866/fullcredits/
+        note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
+          official datasets.
+  - show: black-bag-vikings
+    role: player
+    season: 1
+    character: Birna Sklarssdottir
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281076/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Vikings" (2017), via the official
+          datasets.'
+  - show: dinner-dragons
+    role: player
+    season: 1
+    character: Doc Lightning
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.
+  - show: it-s-always-cloudy-in-barovia
+    role: player
+    season: 1
+    character: Hella 'Gadget' Twidgit Voltwocket Turen
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359254/fullcredits/
+        note: IMDb full cast and crew for "It's Always Cloudy in Barovia" (2018), via
+          the official datasets.
+  - show: pugmire-homeward-bound
+    role: player
+    season: 1
+    character: Reynolds
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9184362/fullcredits/
+        note: 'IMDb full cast and crew for "Pugmire: Homeward Bound" (2018), via the
+          official datasets.'
+  - show: east-texas-university-undeclared
+    role: player
+    season: 1
+    character: Debbie Winger
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9187582/fullcredits/
+        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
+          via the official datasets.'
+  - show: monday-night-dungeon-fight
+    role: player
+    season: 1
+    character: Narraz Frostfingers
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196562/fullcredits/
+        note: IMDb full cast and crew for "Monday Night Dungeon Fight" (2016), via the
+          official datasets.
+  - show: twilight-protocol
+    role: player
+    season: 1
+    character: Valeria Batten
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9886618/fullcredits/
+        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
+          datasets.

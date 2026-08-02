@@ -20,3 +20,13 @@ credits:
       - tier: reference
         url: https://nerdist.com/article/the-suicide-squad-dungeons-dragons-celebridd-nathan-fillion-flula-borg-michael-rooker-riley-silverman/
         note: Nerdist's own write-up of the finale names the table.
+  - show: celebrid-d
+    role: player
+    season: 1
+    character: Jolene Glaplok
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: IMDb full cast and crew for "CelebriD&D" (2015), via the official
+          datasets.

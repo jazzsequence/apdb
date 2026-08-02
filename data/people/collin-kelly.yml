@@ -1,0 +1,29 @@
+id: collin-kelly
+canonical_name: Collin Kelly
+sort_name: Kelly, Collin
+aliases:
+  - id: default
+    name: Collin Kelly
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Gael Powers
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: vast
+    role: player
+    season: 1
+    character: This Might Be A Good Idea
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7289544/fullcredits/
+        note: IMDb full cast and crew for "Vast" (2016), via the official datasets.

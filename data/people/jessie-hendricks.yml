@@ -1,0 +1,18 @@
+id: jessie-hendricks
+canonical_name: Jessie Hendricks
+sort_name: Hendricks, Jessie
+aliases:
+  - id: default
+    name: Jessie Hendricks
+    alias_type: legal
+credits:
+  - show: it-s-always-cloudy-in-barovia
+    role: player
+    season: 1
+    character: Griz Cragholder
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359254/fullcredits/
+        note: IMDb full cast and crew for "It's Always Cloudy in Barovia" (2018), via
+          the official datasets.

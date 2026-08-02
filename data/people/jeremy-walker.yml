@@ -22,3 +22,25 @@ credits:
       - tier: reference
         url: https://pathfinderwiki.com/wiki/Knights_of_Everflame_(campaign)
         note: Cast per PathfinderWiki and Paizo.
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Captain Trips
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: sagas-of-sundry
+    role: player
+    season: 1
+    character: Jude
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7553424/fullcredits/
+        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
+          datasets.

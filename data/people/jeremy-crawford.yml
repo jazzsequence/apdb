@@ -1,9 +1,3 @@
-# Credits imported from acquisitionsincorporated.fandom.com on 2026-08-01.
-# Source: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Fourteen (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: jeremy-crawford
 canonical_name: Jeremy Crawford
 sort_name: Crawford, Jeremy
@@ -40,3 +34,13 @@ credits:
         url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Fourteen
         note: Acquisitions Inc. Season Fourteen cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+  - show: acquisitions-incorporated
+    role: player
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt29338249/fullcredits/
+        note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
+          official datasets.

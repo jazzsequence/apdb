@@ -1,0 +1,28 @@
+id: revati-dhomse
+canonical_name: Revati Dhomse
+sort_name: Dhomse, Revati
+aliases:
+  - id: default
+    name: Revati Dhomse
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Trash Panda
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: the-league-of-adventure
+    role: player
+    season: 1
+    character: Penny Hawthorn
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196898/fullcredits/
+        note: IMDb full cast and crew for "The League of Adventure" (2018), via the
+          official datasets.

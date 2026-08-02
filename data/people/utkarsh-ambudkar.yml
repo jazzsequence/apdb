@@ -17,6 +17,17 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+  - show: critical-role
+    role: player
+    character: Bor'Dor Dog'Son
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
 wikidata_qid: Q7902890
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Utkarsh_Ambudkar_Photo_Op_GalaxyCon_Columbus_2024.jpg

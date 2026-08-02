@@ -1,0 +1,17 @@
+id: david-palmeri
+canonical_name: David Palmeri
+sort_name: Palmeri, David
+aliases:
+  - id: default
+    name: David Palmeri
+    alias_type: legal
+credits:
+  - show: pathfinder-knights-of-everflame
+    role: editor
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt11427152/fullcredits/
+        note: 'IMDb full cast and crew for "Pathfinder: Knights of Everflame" (2019),
+          via the official datasets.'
