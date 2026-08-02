@@ -1,0 +1,32 @@
+id: cameron-holt
+canonical_name: Cameron Holt
+sort_name: Holt, Cameron
+aliases:
+  - id: default
+    name: Cameron Holt
+    alias_type: legal
+credits:
+  - show: arcanarama
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCZypxipNmn_8WzTwy_2lXqQ
+        note: GM per the channel's own description. Player names not published.
+  - show: overdark
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCZypxipNmn_8WzTwy_2lXqQ
+        note: GM per the channel's own description. Player names not published.
+  - show: the-sparkwind-chronicles
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCZypxipNmn_8WzTwy_2lXqQ
+        note: GM per the channel's own description. Player names not published.

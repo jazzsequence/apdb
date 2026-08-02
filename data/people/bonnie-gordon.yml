@@ -1,19 +1,11 @@
-id: hector-navarro
-canonical_name: Hector Navarro
-sort_name: Navarro, Hector
+id: bonnie-gordon
+canonical_name: Bonnie Gordon
+sort_name: Gordon, Bonnie
 aliases:
   - id: default
-    name: Hector Navarro
+    name: Bonnie Gordon
     alias_type: legal
 credits:
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Juan
-    alias: default
-    sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
   - show: shield-of-tomorrow
     season: 1
     role: player

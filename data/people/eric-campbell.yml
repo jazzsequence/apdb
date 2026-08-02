@@ -1,0 +1,16 @@
+id: eric-campbell
+canonical_name: Eric Campbell
+sort_name: Campbell, Eric
+aliases:
+  - id: default
+    name: Eric Campbell
+    alias_type: legal
+credits:
+  - show: shield-of-tomorrow
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://stexpanded.fandom.com/wiki/Shield_of_Tomorrow
+        note: Cast per Star Trek Expanded Universe and Geek & Sundry.

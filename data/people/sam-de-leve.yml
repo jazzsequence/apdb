@@ -1,19 +1,11 @@
-id: hector-navarro
-canonical_name: Hector Navarro
-sort_name: Navarro, Hector
+id: sam-de-leve
+canonical_name: Sam de Leve
+sort_name: Leve, Sam de
 aliases:
   - id: default
-    name: Hector Navarro
+    name: Sam de Leve
     alias_type: legal
 credits:
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Juan
-    alias: default
-    sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
   - show: shield-of-tomorrow
     season: 1
     role: player

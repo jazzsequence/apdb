@@ -11,9 +11,11 @@ seasons:
   - ordinal: 1
     title: Aerois (Campaign)
     game: dnd-5e
+    episode_count: 195
   - ordinal: 2
     title: Lightfall (Campaign)
     game: dnd-5e
+    episode_count: 100
   - ordinal: 3
     title: Uncharted Territory
     game: dnd-5e
@@ -41,6 +43,7 @@ seasons:
   - ordinal: 11
     title: "Altheya: The Dragon Empire"
     game: dnd-5e
+    episode_count: 117
   - ordinal: 12
     title: Warhammer Fantasy Roleplay
     game: dnd-5e

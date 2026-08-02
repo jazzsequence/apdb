@@ -14,6 +14,14 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: shield-of-tomorrow
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://stexpanded.fandom.com/wiki/Shield_of_Tomorrow
+        note: Cast per Star Trek Expanded Universe and Geek & Sundry.
 image:
   url: https://live.staticflickr.com/5546/9436260162_4e9eb2320d_b.jpg
   licence: CC-BY-2.0
