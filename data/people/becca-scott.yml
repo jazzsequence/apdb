@@ -86,3 +86,12 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/game-masters-hall
         note: Cast for "Game Masters Hall" per TheTVDB.
+  - show: tbd-rpg
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=FRRHwhVQhKY
+        note: Cast stated in the show's own description for "Dungeon in a Box | TBD
+          RPG".
+    season: 1
+    alias: default

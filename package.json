@@ -24,7 +24,8 @@
     "import:imdb": "tsx scripts/import-imdb.ts",
     "merge": "tsx scripts/merge-people.ts",
     "import:catalogues": "tsx scripts/import-catalogues.ts",
-    "dedupe": "tsx scripts/dedupe-credits.ts"
+    "dedupe": "tsx scripts/dedupe-credits.ts",
+    "fill:youtube": "tsx scripts/fill-youtube-casts.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

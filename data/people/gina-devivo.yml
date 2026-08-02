@@ -77,3 +77,12 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/callisto-6
         note: Cast for "Callisto 6" per TheTVDB.
+  - show: tbd-rpg
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=FRRHwhVQhKY
+        note: Cast stated in the show's own description for "Dungeon in a Box | TBD
+          RPG".
+    season: 1
+    alias: default

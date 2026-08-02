@@ -234,13 +234,47 @@ function headedBlock(description: string): YouTubeCredit[] {
  * name check per-branch left holes — a prose sentence still came through as
  * three GM credits. One filter at the exit is harder to get wrong.
  */
+/**
+ * The name a credit should be filed under, ignoring billing decoration.
+ * `Mark "Sherlock" Hulmes` and `Mark Hulmes` are one person, and descriptions
+ * routinely use both forms within a single block.
+ */
+function nameKey(name: string): string {
+  return name
+    .replace(/["'“”‘’(][^"'“”‘’)]*["'“”‘’)]/g, ' ')   // drop a quoted or bracketed nickname
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function keepOnlyNames(credits: YouTubeCredit[]): YouTubeCredit[] {
-  return credits
+  const cleaned = credits
     .filter((c) => looksLikeName(c.name))
-    // A social handle is not a character. "Ashlen Rose as @AshlenRose" is a
-    // credit line being read out of a promo sentence.
-    .filter((c) => !c.character || !/^@|^https?:/i.test(c.character.trim()))
+    // A social handle or a URL is not a character. "Ashlen Rose as @AshlenRose"
+    // is a credit line being read out of a promo sentence, and "Kevin MacLeod
+    // as incompetech.com" is a music attribution.
+    .filter(
+      (c) =>
+        !c.character ||
+        !/^@|^https?:|^www\.|\.(com|net|org|io|tv|co\.uk)\b/i.test(c.character.trim()),
+    )
     .map((c) => (c.character && !looksLikeName(c.character) ? { ...c, character: undefined } : c));
+
+  // One credit per person per role. Prefer the plainest spelling of the name,
+  // and keep a character if any spelling supplied one.
+  const best = new Map<string, YouTubeCredit>();
+  for (const c of cleaned) {
+    const key = `${nameKey(c.name)}|${c.role}`;
+    const held = best.get(key);
+    if (!held) { best.set(key, c); continue; }
+    best.set(key, {
+      ...held,
+      name: c.name.length < held.name.length ? c.name : held.name,
+      character: held.character ?? c.character,
+    });
+  }
+  return [...best.values()];
 }
 
 export function creditsFromDescription(description: string): YouTubeCredit[] {

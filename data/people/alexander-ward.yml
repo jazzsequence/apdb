@@ -89,3 +89,16 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
         note: Cast for "Dungeon Masters" per TMDB.
+  - show: la-by-night
+    season: 4
+    role: player
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+        note: Cast and roles per Wikipedia.
+      - tier: community
+        url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
+        note: Cast page on the show's own wiki, which records when each player-actor
+          joined.
+    character: Jasper
+    alias: default

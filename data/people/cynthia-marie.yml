@@ -17,6 +17,19 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
         note: Cast for "L.A. by Night" per TMDB.
+  - show: la-by-night
+    season: 4
+    role: player
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+        note: Cast and roles per Wikipedia.
+      - tier: community
+        url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
+        note: Cast page on the show's own wiki, which records when each player-actor
+          joined.
+    character: Nelli G.
+    alias: default
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Cynthia_Marie_Hoffman5187988.jpg
   licence: CC-BY-SA-4.0

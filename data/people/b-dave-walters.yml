@@ -98,3 +98,16 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/game-masters-hall
         note: Cast for "Game Masters Hall" per TheTVDB.
+  - show: la-by-night
+    season: 4
+    role: player
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+        note: Cast and roles per Wikipedia.
+      - tier: community
+        url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
+        note: Cast page on the show's own wiki, which records when each player-actor
+          joined.
+    character: Victor Temple
+    alias: default

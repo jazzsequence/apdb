@@ -5,13 +5,22 @@ channels:
 format: hybrid
 status: completed
 description: "Vampire: The Masquerade actual play set in Los Angeles, storytold
-  by Jason Carl."
+  by Jason Carl. Season 1 here covers the show's first three broadcast seasons,
+  which were imported as a single run."
 links:
   website: https://en.wikipedia.org/wiki/L.A._by_Night
 seasons:
   - ordinal: 1
     game: vampire-the-masquerade-v5
     episode_count: 41
+  - ordinal: 4
+    title: Season 4
+    game: vampire-the-masquerade-v5
+    episode_count: 13
+  - ordinal: 5
+    title: Season 5
+    game: vampire-the-masquerade-v5
+    episode_count: 9
 image:
   url: https://i.ytimg.com/vi/3YGyhSppu2Q/hqdefault.jpg
   licence: fair use

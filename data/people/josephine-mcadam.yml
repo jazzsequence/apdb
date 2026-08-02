@@ -55,3 +55,26 @@ credits:
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
+  - show: la-by-night
+    season: 4
+    role: player
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+        note: Cast and roles per Wikipedia.
+      - tier: community
+        url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
+        note: Cast page on the show's own wiki, which records when each player-actor
+          joined.
+    character: Eva
+    note: Recurring player-actor from season four onwards.
+    alias: default
+  - show: tbd-rpg
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=FRRHwhVQhKY
+        note: Cast stated in the show's own description for "Dungeon in a Box | TBD
+          RPG".
+    season: 1
+    alias: default
