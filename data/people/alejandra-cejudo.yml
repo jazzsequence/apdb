@@ -18,3 +18,6 @@ credits:
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
+        note: Cast for "SAGAS OF SUNDRY" per TMDB.

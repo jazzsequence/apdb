@@ -15,6 +15,9 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/L.A._by_Night
         tier: reference
+      - tier: reference
+        url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
+        note: Cast for "L.A. by Night" per TMDB.
   - show: glass-cannon-network-presents
     season: 2
     role: player

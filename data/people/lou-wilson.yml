@@ -182,6 +182,12 @@ credits:
         url: https://www.imdb.com/title/tt14829636/fullcredits/
         note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: dimension-20
     role: player
     character: Kingston Brown
@@ -193,6 +199,21 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/dimension-20
+        note: Cast for "Dimension 20" per TheTVDB.
+  - show: worlds-beyond-number
+    role: player
+    season: 1
+    character: Actor
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/worlds-beyond-number
+        note: Cast for "Worlds Beyond Number" per TheTVDB.
 wikidata_qid: Q116033476
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Lou_Wilson_2019_%28cropped%29.png

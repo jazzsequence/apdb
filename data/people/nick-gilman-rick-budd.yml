@@ -1,0 +1,16 @@
+id: nick-gilman-rick-budd
+canonical_name: Nick Gilman, Rick Budd
+sort_name: Budd, Nick Gilman, Rick
+aliases:
+  - id: default
+    name: Nick Gilman, Rick Budd
+    alias_type: legal
+credits:
+  - show: shield-of-tomorrow
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/shield-of-tomorrow
+        note: Cast for "Shield of Tomorrow" per TheTVDB.

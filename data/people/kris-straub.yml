@@ -15,6 +15,16 @@ credits:
         url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Thirteen
         note: Acquisitions Inc. Season Thirteen cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+  - show: acquisitions-incorporated
+    role: player
+    character: K'thriss Drow'b
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.
 wikidata_qid: Q6437288
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/f/ff/Kris_Straub_by_Gage_Skidmore.jpg

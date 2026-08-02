@@ -27,6 +27,16 @@ credits:
         url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
         note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
           show.
+  - show: dnd-dungeon-masters
+    role: player
+    character: Professor Crem  , Sailor (4 Episodes)
+    note: TMDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
+        note: Cast for "Dungeon Masters" per TMDB.
 wikidata_qid: Q5673372
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/23/Neil_Newbon_by_Gage_Skidmore.jpg

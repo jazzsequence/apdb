@@ -148,6 +148,9 @@ credits:
         url: https://www.imdb.com/title/tt29338249/fullcredits/
         note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
           official datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.
 wikidata_qid: Q15077926
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/6/60/Jerryholkins20090209.jpg

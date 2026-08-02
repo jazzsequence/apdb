@@ -5,6 +5,10 @@ aliases:
   - id: default
     name: Zachary K. Eubank
     alias_type: legal
+  - id: zac-eubank
+    name: Zac Eubank
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `zac-eubank`.
 credits:
   - show: celebrid-d
     season: 1

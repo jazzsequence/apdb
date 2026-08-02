@@ -1,0 +1,17 @@
+id: seth-green
+canonical_name: Seth Green
+sort_name: Green, Seth
+aliases:
+  - id: default
+    name: Seth Green
+    alias_type: legal
+credits:
+  - show: guardians-of-the-galaxy
+    role: player
+    season: 1
+    character: Howard the Duck (voice)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
+        note: Cast for "Guardians of the Galaxy" per TMDB.

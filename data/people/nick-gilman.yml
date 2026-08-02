@@ -1,0 +1,16 @@
+id: nick-gilman
+canonical_name: Nick Gilman
+sort_name: Gilman, Nick
+aliases:
+  - id: default
+    name: Nick Gilman
+    alias_type: legal
+credits:
+  - show: shield-of-tomorrow
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/shield-of-tomorrow
+        note: Cast for "Shield of Tomorrow" per TheTVDB.

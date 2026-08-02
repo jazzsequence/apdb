@@ -60,3 +60,16 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+  - show: dnd-dungeon-masters
+    role: player
+    character: Eloin Emberleaf  , Cadmus Pennypetal (4 Episodes)
+    note: TMDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
+        note: Cast for "Dungeon Masters" per TMDB.

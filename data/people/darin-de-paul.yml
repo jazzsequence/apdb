@@ -37,6 +37,9 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
   - show: sagas-of-sundry
     role: player
     season: 1
@@ -49,3 +52,9 @@ credits:
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
+        note: Cast for "SAGAS OF SUNDRY" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/sagas-of-sundry
+        note: Cast for "SAGAS OF SUNDRY" per TheTVDB.

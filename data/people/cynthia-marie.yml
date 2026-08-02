@@ -14,6 +14,9 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+      - tier: reference
+        url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
+        note: Cast for "L.A. by Night" per TMDB.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Cynthia_Marie_Hoffman5187988.jpg
   licence: CC-BY-SA-4.0

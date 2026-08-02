@@ -44,6 +44,9 @@ credits:
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/shield-of-tomorrow
+        note: Cast for "Shield of Tomorrow" per TheTVDB.
   - show: the-ironkeep-chronicles
     role: player
     season: 1
@@ -66,3 +69,6 @@ credits:
         url: https://www.imdb.com/title/tt8861702/fullcredits/
         note: IMDb full cast and crew for "Callisto 6" (2018), via the official
           datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/callisto-6
+        note: Cast for "Callisto 6" per TheTVDB.

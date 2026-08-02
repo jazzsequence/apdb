@@ -1,0 +1,18 @@
+id: matthew-arnold
+canonical_name: Matthew Arnold
+sort_name: Arnold, Matthew
+aliases:
+  - id: default
+    name: Matthew Arnold
+    alias_type: legal
+credits:
+  - show: dungeons-and-daddies
+    role: player
+    character: Darryl Wilson
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/dungeons-and-daddies
+        note: Cast for "Dungeons and Daddies" per TheTVDB.

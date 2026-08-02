@@ -37,6 +37,9 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
 wikidata_qid: Q19832737
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/3/3c/Jacob_Wysocki_2015_%2816436801784%29_%28cropped%29.jpg

@@ -28,6 +28,9 @@ credits:
         url: https://www.imdb.com/title/tt8510552/fullcredits/
         note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
           official datasets."
+      - tier: reference
+        url: https://www.themoviedb.org/tv/133643-we-re-alive-frontier/cast
+        note: "Cast for \"We're Alive: Frontier\" per TMDB."
   - show: shadows-on-the-horizon
     role: player
     season: 1

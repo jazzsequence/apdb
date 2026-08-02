@@ -114,6 +114,9 @@ credits:
         url: https://geekandsundry.fandom.com/wiki/Titansgrave
         note: Cast per Geek & Sundry and contemporary coverage. The playlist description
           is a credits roll, not a cast list.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63242-titansgrave-the-ashes-of-valkana/cast
+        note: Cast for "Titansgrave" per TMDB.
   - show: celebrid-d
     season: 1
     role: player
@@ -125,6 +128,9 @@ credits:
         url: https://www.imdb.com/title/tt7537668/fullcredits/
         note: CelebriD&D full cast and crew on IMDb, which lists Laura Bailey's role and
           episode count.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
+        note: Cast for "CelebriD&D" per TMDB.
   - show: candela-obscura
     role: player
     character: Arlo Black
@@ -136,6 +142,12 @@ credits:
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/candela-obscura
+        note: Cast for "Candela Obscura" per TheTVDB.
   - show: critical-role
     role: player
     character: Jester Lavorre
@@ -147,3 +159,9 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.

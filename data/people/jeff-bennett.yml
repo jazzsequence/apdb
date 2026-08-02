@@ -1,0 +1,17 @@
+id: jeff-bennett
+canonical_name: Jeff Bennett
+sort_name: Bennett, Jeff
+aliases:
+  - id: default
+    name: Jeff Bennett
+    alias_type: legal
+credits:
+  - show: guardians-of-the-galaxy
+    role: player
+    season: 1
+    character: Rhomann Dey (voice)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
+        note: Cast for "Guardians of the Galaxy" per TMDB.

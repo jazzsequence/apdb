@@ -107,6 +107,9 @@ credits:
         url: https://dicecameraaction.fandom.com/wiki/Dice%2C_Camera%2C_Action
         note: Dice, Camera, Action cast, via the dicecameraaction.fandom.com infobox.
           CC-BY-SA.
+      - tier: reference
+        url: https://thetvdb.com/series/dice-camera-action
+        note: Cast for "Dice, Camera, Action" per TheTVDB.
   - show: critical-role
     role: player
     character: Self - Guest
@@ -118,6 +121,9 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
   - show: acquisitions-incorporated
     role: GM/DM
     note: IMDb credits this at series level; which of this show's seasons it covers
@@ -128,3 +134,14 @@ credits:
         url: https://www.imdb.com/title/tt29338249/fullcredits/
         note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
           official datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.
+  - show: dice-camera-action
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/dice-camera-action
+        note: Cast for "Dice, Camera, Action" per TheTVDB.

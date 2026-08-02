@@ -22,7 +22,8 @@
     "import:websites": "tsx scripts/import-websites.ts",
     "fetch:imdb": "mkdir -p .cache/imdb && for f in title.basics title.episode title.principals name.basics; do curl -sS -o .cache/imdb/$f.tsv.gz https://datasets.imdbws.com/$f.tsv.gz; done",
     "import:imdb": "tsx scripts/import-imdb.ts",
-    "merge": "tsx scripts/merge-people.ts"
+    "merge": "tsx scripts/merge-people.ts",
+    "import:catalogues": "tsx scripts/import-catalogues.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

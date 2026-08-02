@@ -60,6 +60,12 @@ credits:
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
+        note: Cast for "SAGAS OF SUNDRY" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/sagas-of-sundry
+        note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
   - show: sagas-of-sundry
     role: player
     season: 1
@@ -105,6 +111,9 @@ credits:
         url: https://www.imdb.com/title/tt8510552/fullcredits/
         note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
           official datasets."
+      - tier: reference
+        url: https://www.themoviedb.org/tv/133643-we-re-alive-frontier/cast
+        note: "Cast for \"We're Alive: Frontier\" per TMDB."
   - show: we-re-alive-frontier
     role: writer
     season: 1
@@ -127,3 +136,11 @@ credits:
         url: https://www.imdb.com/title/tt8510552/fullcredits/
         note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
           official datasets."
+  - show: game-masters-hall
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/game-masters-hall
+        note: Cast for "Game Masters Hall" per TheTVDB.

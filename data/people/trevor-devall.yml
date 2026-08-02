@@ -1,0 +1,17 @@
+id: trevor-devall
+canonical_name: Trevor Devall
+sort_name: Devall, Trevor
+aliases:
+  - id: default
+    name: Trevor Devall
+    alias_type: legal
+credits:
+  - show: guardians-of-the-galaxy
+    role: player
+    season: 1
+    character: Rocket Raccoon (voice)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
+        note: Cast for "Guardians of the Galaxy" per TMDB.

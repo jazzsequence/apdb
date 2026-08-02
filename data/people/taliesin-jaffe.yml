@@ -128,6 +128,9 @@ credits:
         url: https://www.imdb.com/title/tt7537668/fullcredits/
         note: CelebriD&D full cast and crew on IMDb, which lists Taliesin Jaffe's role
           and episode count.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
+        note: Cast for "CelebriD&D" per TMDB.
   - show: candela-obscura
     role: writer
     note: IMDb credits this at series level; which of this show's seasons it covers
@@ -150,6 +153,12 @@ credits:
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
+        note: Cast for "SAGAS OF SUNDRY" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/sagas-of-sundry
+        note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
   - show: thrashtopia
     role: player
     season: 1
@@ -185,6 +194,12 @@ credits:
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/candela-obscura
+        note: Cast for "Candela Obscura" per TheTVDB.
   - show: critical-role
     role: player
     character: Caduceus Clay
@@ -196,3 +211,9 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.

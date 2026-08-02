@@ -161,6 +161,27 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+  - show: the-adventure-zone
+    role: GM/DM
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/the-adventure-zone
+        note: Cast for "The Adventure Zone" per TheTVDB.
+  - show: the-adventure-zone
+    role: player
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/the-adventure-zone
+        note: Cast for "The Adventure Zone" per TheTVDB.
 wikidata_qid: Q50384572
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Travis_McElroy_GalaxyCon_Louisville_2019.jpg

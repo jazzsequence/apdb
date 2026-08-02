@@ -57,6 +57,12 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
 wikidata_qid: Q7996725
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Whitney_Moore_%28cropped%29.jpg

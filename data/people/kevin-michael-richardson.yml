@@ -1,0 +1,17 @@
+id: kevin-michael-richardson
+canonical_name: Kevin Michael Richardson
+sort_name: Richardson, Kevin Michael
+aliases:
+  - id: default
+    name: Kevin Michael Richardson
+    alias_type: legal
+credits:
+  - show: guardians-of-the-galaxy
+    role: player
+    season: 1
+    character: Groot (voice)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
+        note: Cast for "Guardians of the Galaxy" per TMDB.

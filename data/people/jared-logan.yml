@@ -142,3 +142,13 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Blood_of_the_Wild
         note: Blood of the Wild cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
+  - show: glass-cannon-live
+    role: player
+    character: Bigpee Luna
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/glass-cannon-live
+        note: Cast for "Glass Cannon Live!" per TheTVDB.

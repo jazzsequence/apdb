@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: seth-skorkowsky
 canonical_name: Seth Skorkowsky
 sort_name: Skorkowsky, Seth
@@ -31,3 +25,13 @@ credits:
         url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
+  - show: voyagers-of-the-jump
+    role: player
+    character: Wes "Puffer" Demar
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/voyagers-of-the-jump
+        note: Cast for "Voyagers of the Jump" per TheTVDB.

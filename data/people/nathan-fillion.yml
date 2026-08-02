@@ -30,3 +30,6 @@ credits:
         url: https://www.imdb.com/title/tt7537668/fullcredits/
         note: IMDb full cast and crew for "CelebriD&D" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
+        note: Cast for "CelebriD&D" per TMDB.

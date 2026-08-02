@@ -28,6 +28,9 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
 wikidata_qid: Q392370
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Jon_Heder_by_Gage_Skidmore.jpg

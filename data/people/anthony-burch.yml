@@ -1,0 +1,17 @@
+id: anthony-burch
+canonical_name: Anthony Burch
+sort_name: Burch, Anthony
+aliases:
+  - id: default
+    name: Anthony Burch
+    alias_type: legal
+credits:
+  - show: dungeons-and-daddies
+    role: player
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/dungeons-and-daddies
+        note: Cast for "Dungeons and Daddies" per TheTVDB.

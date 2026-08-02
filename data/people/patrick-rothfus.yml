@@ -1,0 +1,18 @@
+id: patrick-rothfus
+canonical_name: Patrick Rothfus
+sort_name: Rothfus, Patrick
+aliases:
+  - id: default
+    name: Patrick Rothfus
+    alias_type: legal
+credits:
+  - show: acquisitions-incorporated
+    role: player
+    character: Viari
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.

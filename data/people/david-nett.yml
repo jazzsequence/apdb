@@ -1,0 +1,16 @@
+id: david-nett
+canonical_name: David Nett
+sort_name: Nett, David
+aliases:
+  - id: default
+    name: David Nett
+    alias_type: legal
+credits:
+  - show: game-masters-hall
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/game-masters-hall
+        note: Cast for "Game Masters Hall" per TheTVDB.

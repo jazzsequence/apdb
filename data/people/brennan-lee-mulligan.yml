@@ -367,6 +367,12 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
   - show: dimension-20
     role: writer
     note: IMDb credits this at series level; which of this show's seasons it covers
@@ -387,6 +393,12 @@ credits:
         url: https://www.imdb.com/title/tt14829636/fullcredits/
         note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: exandria-unlimited
     role: player
     note: IMDb credits this at series level; which of this show's seasons it covers
@@ -397,6 +409,9 @@ credits:
         url: https://www.imdb.com/title/tt14829636/fullcredits/
         note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
           datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: candela-obscura
     role: player
     character: Sean Finnerty
@@ -408,6 +423,9 @@ credits:
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
   - show: critical-role
     role: player
     character: Self - Master of Ceremonies
@@ -429,6 +447,9 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
   - show: dimension-20
     role: player
     character: Evan Kelmp
@@ -440,3 +461,12 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+  - show: worlds-beyond-number
+    role: player
+    season: 1
+    character: Actor
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/worlds-beyond-number
+        note: Cast for "Worlds Beyond Number" per TheTVDB.

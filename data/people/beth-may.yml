@@ -1,0 +1,18 @@
+id: beth-may
+canonical_name: Beth May
+sort_name: May, Beth
+aliases:
+  - id: default
+    name: Beth May
+    alias_type: legal
+credits:
+  - show: dungeons-and-daddies
+    role: player
+    character: Ron Stampler
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/dungeons-and-daddies
+        note: Cast for "Dungeons and Daddies" per TheTVDB.

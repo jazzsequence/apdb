@@ -1,0 +1,17 @@
+id: fred-tatasciore
+canonical_name: Fred Tatasciore
+sort_name: Tatasciore, Fred
+aliases:
+  - id: default
+    name: Fred Tatasciore
+    alias_type: legal
+credits:
+  - show: guardians-of-the-galaxy
+    role: player
+    season: 1
+    character: Hulk (voice)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
+        note: Cast for "Guardians of the Galaxy" per TMDB.

@@ -48,3 +48,12 @@ credits:
         url: https://www.imdb.com/title/tt29338249/fullcredits/
         note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
           official datasets.
+  - show: dice-camera-action
+    role: player
+    season: 1
+    character: Evelyn Marthain
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/dice-camera-action
+        note: Cast for "Dice, Camera, Action" per TheTVDB.

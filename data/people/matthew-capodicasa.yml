@@ -284,3 +284,32 @@ credits:
         url: https://www.imdb.com/title/tt14735282/fullcredits/
         note: IMDb full cast and crew for "Androids & Aliens" (2020), via the official
           datasets.
+  - show: voyagers-of-the-jump
+    role: GM/DM
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/voyagers-of-the-jump
+        note: Cast for "Voyagers of the Jump" per TheTVDB.
+  - show: glass-cannon-live
+    role: player
+    character: Ser Norville Mundt
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/glass-cannon-live
+        note: Cast for "Glass Cannon Live!" per TheTVDB.
+  - show: get-in-the-trunk
+    role: player
+    character: Lyra Westover
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/get-in-the-trunk
+        note: Cast for "Get In The Trunk" per TheTVDB.

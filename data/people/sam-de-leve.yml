@@ -18,6 +18,9 @@ credits:
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/shield-of-tomorrow
+        note: Cast for "Shield of Tomorrow" per TheTVDB.
     character: Commander Junil Rue
   - show: tempting-fate
     role: player
@@ -61,6 +64,9 @@ credits:
         url: https://www.imdb.com/title/tt8861702/fullcredits/
         note: IMDb full cast and crew for "Callisto 6" (2018), via the official
           datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/callisto-6
+        note: Cast for "Callisto 6" per TheTVDB.
   - show: shadows-on-the-horizon
     role: player
     season: 1
@@ -82,3 +88,11 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+  - show: game-masters-hall
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/game-masters-hall
+        note: Cast for "Game Masters Hall" per TheTVDB.

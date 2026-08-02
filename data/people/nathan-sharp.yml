@@ -1,9 +1,3 @@
-# Credits imported from dicecameraaction.fandom.com on 2026-08-01.
-# Source: https://dicecameraaction.fandom.com/wiki/Dice%2C_Camera%2C_Action (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: nathan-sharp
 canonical_name: Nathan Sharp
 sort_name: Sharp, Nathan
@@ -22,3 +16,6 @@ credits:
         url: https://dicecameraaction.fandom.com/wiki/Dice%2C_Camera%2C_Action
         note: Dice, Camera, Action cast, via the dicecameraaction.fandom.com infobox.
           CC-BY-SA.
+      - tier: reference
+        url: https://thetvdb.com/series/dice-camera-action
+        note: Cast for "Dice, Camera, Action" per TheTVDB.

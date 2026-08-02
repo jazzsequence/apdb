@@ -1,0 +1,17 @@
+id: david-sobolov
+canonical_name: David Sobolov
+sort_name: Sobolov, David
+aliases:
+  - id: default
+    name: David Sobolov
+    alias_type: legal
+credits:
+  - show: guardians-of-the-galaxy
+    role: player
+    season: 1
+    character: Drax the Destroyer (voice)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
+        note: Cast for "Guardians of the Galaxy" per TMDB.

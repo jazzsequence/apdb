@@ -57,6 +57,27 @@ The consequence is that some real appearances will have no credit here. Chris
 Perkins and Jeremy Crawford have both appeared on Critical Role's Fireside Chat;
 only Perkins has Critical Role credits, because only Perkins sat at the table.
 
+## Two jobs a source can do, and which sources may do which
+
+**Discovery** — establishing that a show exists and belongs in this index.
+**Cast-filling** — listing who was in a show already known to belong here.
+
+They are not interchangeable, and the general film and TV catalogues may only
+do the second.
+
+IMDb, TMDB and TheTVDB index everything ever released. A title match inside one
+of them therefore carries almost no evidence that the thing found is an actual
+play: matching on title alone paired our "Legacy" with a 1902 title carrying
+1,902 credits, and "Guardians of the Galaxy" with the Marvel series. 193
+separate IMDb titles are called "Legacy"; 45 are called "Masks".
+
+So shows are discovered from sources that only cover this medium — channels,
+podcast feeds, actual play wikis, the productions' own sites — and the
+catalogues are then used to fill in and corroborate the casts of shows already
+present. Every catalogue importer additionally requires that the entry either
+overlap the cast already recorded, or name at least two people who appear
+somewhere in this database.
+
 ## Source tiers
 
 Every credit's source declares a tier. The ladder ranks by **proximity** — how

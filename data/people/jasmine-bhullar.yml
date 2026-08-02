@@ -76,6 +76,12 @@ credits:
         url: https://www.imdb.com/title/tt9776292/fullcredits/
         note: IMDb full cast and crew for "Relics and Rarities" (2019), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/96805-relics-and-rarities/cast
+        note: Cast for "Relics and Rarities" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/relics-and-rarities
+        note: Cast for "Relics and Rarities" per TheTVDB.
   - show: acquisitions-incorporated
     role: player
     character: Certainty Dran
@@ -97,3 +103,23 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+  - show: game-masters-hall
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/game-masters-hall
+        note: Cast for "Game Masters Hall" per TheTVDB.
+  - show: dnd-dungeon-masters
+    role: GM/DM
+    note: TMDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
+        note: Cast for "Dungeon Masters" per TMDB.

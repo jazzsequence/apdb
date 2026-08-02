@@ -6,6 +6,10 @@ aliases:
   - id: default
     name: Brian Murphy
     alias_type: legal
+  - id: brian-k-murphy
+    name: Brian K. Murphy
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `brian-k-murphy`.
 credits:
   - show: dimension-20
     season: 1
@@ -145,3 +149,6 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.

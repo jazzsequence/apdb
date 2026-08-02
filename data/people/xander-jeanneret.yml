@@ -24,6 +24,9 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+      - tier: reference
+        url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
+        note: Cast for "L.A. by Night" per TMDB.
   - show: sagas-of-sundry-goblin-mode
     season: 1
     role: player
@@ -74,6 +77,12 @@ credits:
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
+        note: Cast for "SAGAS OF SUNDRY" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/sagas-of-sundry
+        note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
   - show: we-re-alive-frontier
     role: player
     season: 1
@@ -86,6 +95,9 @@ credits:
         url: https://www.imdb.com/title/tt8510552/fullcredits/
         note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
           official datasets."
+      - tier: reference
+        url: https://www.themoviedb.org/tv/133643-we-re-alive-frontier/cast
+        note: "Cast for \"We're Alive: Frontier\" per TMDB."
   - show: callisto-6
     role: player
     season: 1
@@ -110,3 +122,9 @@ credits:
         url: https://www.imdb.com/title/tt9776292/fullcredits/
         note: IMDb full cast and crew for "Relics and Rarities" (2019), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/96805-relics-and-rarities/cast
+        note: Cast for "Relics and Rarities" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/relics-and-rarities
+        note: Cast for "Relics and Rarities" per TheTVDB.

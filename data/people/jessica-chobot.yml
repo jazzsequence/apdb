@@ -25,6 +25,9 @@ credits:
         url: https://www.imdb.com/title/tt7537668/fullcredits/
         note: CelebriD&D full cast and crew on IMDb, which lists Jessica Chobot's role
           and episode count.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
+        note: Cast for "CelebriD&D" per TMDB.
 wikidata_qid: Q6187134
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/1/14/RTX_2014_-_Jessica_Chobot_%2814387683959%29_%28cropped%29.jpg

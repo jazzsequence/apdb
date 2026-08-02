@@ -1,0 +1,18 @@
+id: chelsea-cardona
+canonical_name: Chelsea Cardona
+sort_name: Cardona, Chelsea
+aliases:
+  - id: default
+    name: Chelsea Cardona
+    alias_type: legal
+credits:
+  - show: dimension-20
+    role: player
+    character: Tabatha
+    note: TMDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.

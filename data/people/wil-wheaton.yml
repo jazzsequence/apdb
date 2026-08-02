@@ -67,6 +67,9 @@ credits:
         url: https://geekandsundry.fandom.com/wiki/Titansgrave
         note: Cast per Geek & Sundry and contemporary coverage. The playlist description
           is a credits roll, not a cast list.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63242-titansgrave-the-ashes-of-valkana/cast
+        note: Cast for "Titansgrave" per TMDB.
   - show: critical-role
     role: player
     character: Thorbir Falbek
@@ -78,6 +81,19 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+  - show: acquisitions-incorporated
+    role: player
+    character: Aeofel Elromaine
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.
 wikidata_qid: Q264699
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/8/88/Wil_Wheaton_-_LATFOB_2026-02.jpg

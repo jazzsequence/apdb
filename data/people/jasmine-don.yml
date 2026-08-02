@@ -36,3 +36,6 @@ credits:
         url: https://www.imdb.com/title/tt14829636/fullcredits/
         note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.

@@ -5,6 +5,10 @@ aliases:
   - id: default
     name: Jeremy Walker
     alias_type: legal
+  - id: jeremy-s-walker
+    name: Jeremy S. Walker
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `jeremy-s-walker`.
 credits:
   - show: sagas-of-sundry-goblin-mode
     season: 1
@@ -49,3 +53,6 @@ credits:
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
+        note: Cast for "SAGAS OF SUNDRY" per TMDB.

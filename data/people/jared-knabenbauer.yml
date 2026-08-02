@@ -1,0 +1,17 @@
+id: jared-knabenbauer
+canonical_name: Jared Knabenbauer
+sort_name: Knabenbauer, Jared
+aliases:
+  - id: default
+    name: Jared Knabenbauer
+    alias_type: legal
+credits:
+  - show: dice-camera-action
+    role: player
+    season: 1
+    character: Diath Woodrow
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/dice-camera-action
+        note: Cast for "Dice, Camera, Action" per TheTVDB.

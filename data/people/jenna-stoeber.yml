@@ -1,0 +1,18 @@
+id: jenna-stoeber
+canonical_name: Jenna Stoeber
+sort_name: Stoeber, Jenna
+aliases:
+  - id: default
+    name: Jenna Stoeber
+    alias_type: legal
+credits:
+  - show: dungeons-and-daddies
+    role: player
+    character: Ratticus Finch
+    note: TheTVDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/dungeons-and-daddies
+        note: Cast for "Dungeons and Daddies" per TheTVDB.
