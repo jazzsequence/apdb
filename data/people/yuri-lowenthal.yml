@@ -1,0 +1,18 @@
+id: yuri-lowenthal
+canonical_name: Yuri Lowenthal
+sort_name: Lowenthal, Yuri
+aliases:
+  - id: default
+    name: Yuri Lowenthal
+    alias_type: legal
+credits:
+  - show: titansgrave
+    season: 1
+    role: player
+    character: S'Lethkk
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.fandom.com/wiki/Titansgrave
+        note: Cast per Geek & Sundry and contemporary coverage. The playlist description
+          is a credits roll, not a cast list.

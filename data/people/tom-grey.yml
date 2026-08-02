@@ -1,0 +1,17 @@
+id: tom-grey
+canonical_name: Tom Grey
+sort_name: Grey, Tom
+aliases:
+  - id: default
+    name: Tom Grey
+    alias_type: legal
+credits:
+  - show: player-piano
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=q8rcTvAoRzk
+        note: Cast per the production's own description of "Tetris Theme (Korobeiniki) -
+          Sonya Belousova".

@@ -1,0 +1,17 @@
+id: lauren-selman
+canonical_name: Lauren Selman
+sort_name: Selman, Lauren
+aliases:
+  - id: default
+    name: Lauren Selman
+    alias_type: legal
+credits:
+  - show: player-piano
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=q8rcTvAoRzk
+        note: Cast per the production's own description of "Tetris Theme (Korobeiniki) -
+          Sonya Belousova".

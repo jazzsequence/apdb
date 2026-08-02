@@ -1,0 +1,18 @@
+id: alison-haislip
+canonical_name: Alison Haislip
+sort_name: Haislip, Alison
+aliases:
+  - id: default
+    name: Alison Haislip
+    alias_type: legal
+credits:
+  - show: titansgrave
+    season: 1
+    role: player
+    character: Kiliel
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.fandom.com/wiki/Titansgrave
+        note: Cast per Geek & Sundry and contemporary coverage. The playlist description
+          is a credits roll, not a cast list.

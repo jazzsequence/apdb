@@ -1,0 +1,40 @@
+id: erudi
+canonical_name: Erudi
+sort_name: Erudi
+aliases:
+  - id: default
+    name: Erudi
+    alias_type: handle
+credits:
+  - show: deathrattle
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCxPLpLUzyAwopR0cLXEBnrA
+        note: GM per the channel's own description. Player names not published.
+  - show: seasons-of-ghosts
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCxPLpLUzyAwopR0cLXEBnrA
+        note: GM per the channel's own description. Player names not published.
+  - show: star-wars-dawn-of-defiance
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCxPLpLUzyAwopR0cLXEBnrA
+        note: GM per the channel's own description. Player names not published.
+  - show: strange-aeons
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCxPLpLUzyAwopR0cLXEBnrA
+        note: GM per the channel's own description. Player names not published.

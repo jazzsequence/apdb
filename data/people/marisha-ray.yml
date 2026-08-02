@@ -135,3 +135,11 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: sagas-of-sundry-goblin-mode
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
+        note: Cast per Geek & Sundry.

@@ -1,0 +1,17 @@
+id: magnus-stinnerbom
+canonical_name: Magnus Stinnerbom
+sort_name: Stinnerbom, Magnus
+aliases:
+  - id: default
+    name: Magnus Stinnerbom
+    alias_type: legal
+credits:
+  - show: vaesen-nordic-horror-roleplaying
+    season: 1
+    role: composer
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=Ytku0we1XhE
+        note: Cast per the production's own description of "Man of River, EPISODE 1 -
+          VAESEN Nordic Horror Roleplaying".

@@ -1,0 +1,17 @@
+id: mark-walentiny
+canonical_name: Mark Walentiny
+sort_name: Walentiny, Mark
+aliases:
+  - id: default
+    name: Mark Walentiny
+    alias_type: legal
+credits:
+  - show: stillhearth-d-d5e-actual-play-series
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=bYarNkIbXco
+        note: Cast per the production's own description of "About STILLHEARTH - our
+          upcoming long-form campaign! (Dungeons and Dragons)".

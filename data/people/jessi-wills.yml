@@ -1,0 +1,17 @@
+id: jessi-wills
+canonical_name: Jessi Wills
+sort_name: Wills, Jessi
+aliases:
+  - id: default
+    name: Jessi Wills
+    alias_type: legal
+credits:
+  - show: stillhearth-d-d5e-actual-play-series
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=bYarNkIbXco
+        note: Cast per the production's own description of "About STILLHEARTH - our
+          upcoming long-form campaign! (Dungeons and Dragons)".

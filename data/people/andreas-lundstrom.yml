@@ -1,0 +1,17 @@
+id: andreas-lundstrom
+canonical_name: Andreas Lundström
+sort_name: Lundström, Andreas
+aliases:
+  - id: default
+    name: Andreas Lundström
+    alias_type: legal
+credits:
+  - show: vaesen-nordic-horror-roleplaying
+    season: 1
+    role: composer
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=Ytku0we1XhE
+        note: Cast per the production's own description of "Man of River, EPISODE 1 -
+          VAESEN Nordic Horror Roleplaying".

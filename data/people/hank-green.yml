@@ -15,6 +15,16 @@ credits:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Mentopolis
         note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+  - show: titansgrave
+    season: 1
+    role: player
+    character: Aankia
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.fandom.com/wiki/Titansgrave
+        note: Cast per Geek & Sundry and contemporary coverage. The playlist description
+          is a credits roll, not a cast list.
 wikidata_qid: Q550996
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/5/57/Hank_Green_Headshot.jpg

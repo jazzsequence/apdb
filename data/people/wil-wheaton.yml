@@ -58,6 +58,15 @@ credits:
         url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Six
         note: Acquisitions Inc. Season Six cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+  - show: titansgrave
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.fandom.com/wiki/Titansgrave
+        note: Cast per Geek & Sundry and contemporary coverage. The playlist description
+          is a credits roll, not a cast list.
 wikidata_qid: Q264699
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/8/88/Wil_Wheaton_-_LATFOB_2026-02.jpg
