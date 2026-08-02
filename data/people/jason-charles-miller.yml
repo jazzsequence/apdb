@@ -27,6 +27,13 @@ credits:
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
   - show: friends-of-the-pod
     season: 1
     role: player
@@ -53,19 +60,6 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
-  - show: critical-role
-    role: player
-    character: Garthok
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
   - show: shield-of-tomorrow
     role: player
     season: 1

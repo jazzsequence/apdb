@@ -16,6 +16,10 @@ credits:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
         note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
   - show: tempting-fate
     role: player
     season: 1
@@ -25,15 +29,4 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
-          datasets.
-  - show: dimension-20
-    role: player
-    character: Chip n Rip
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.

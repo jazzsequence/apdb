@@ -29,6 +29,19 @@ credits:
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - &a3
+        tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
   - show: critical-role
     season: 2
     role: GM/DM
@@ -41,6 +54,9 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
+      - *a2
+      - *a3
   - show: critical-role
     season: 3
     role: GM/DM
@@ -49,6 +65,9 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Critical_Role
         tier: reference
+      - *a1
+      - *a2
+      - *a3
   - show: exandria-unlimited
     season: 1
     role: player
@@ -58,6 +77,19 @@ credits:
     sources:
       - url: https://critrole.com
         tier: official
+      - &a4
+        tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - &a5
+        tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
+      - &a6
+        tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: dimension-20
     season: 8
     role: player
@@ -76,6 +108,13 @@ credits:
       - url: https://dimension20.fandom.com/wiki/The_Ravening_War
         note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
   - show: critical-role
     season: 4
     role: player
@@ -94,6 +133,9 @@ credits:
         note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - *a4
+      - *a5
+      - *a6
   - show: exandria-unlimited
     season: 4
     role: player
@@ -104,6 +146,9 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a4
+      - *a5
+      - *a6
   - show: exandria-unlimited
     season: 5
     role: player
@@ -271,23 +316,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/sagas-of-sundry
         note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
-  - show: exandria-unlimited
-    role: player
-    character: Dariax Zaveon
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
-        note: Cast for "Exandria Unlimited" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/exandria-unlimited
-        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: candela-obscura
     role: player
     character: Lester Shaw
@@ -299,22 +327,6 @@ credits:
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
-  - show: critical-role
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/critical-role
-        note: Cast for "Critical Role" per TheTVDB.
   - show: critical-role
     role: player
     character: Dariax Zaveon
@@ -343,16 +355,3 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/dimension-20
         note: Cast for "Dimension 20" per TheTVDB.
-  - show: dimension-20
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.

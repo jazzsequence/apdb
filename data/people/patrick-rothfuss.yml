@@ -18,6 +18,13 @@ credits:
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
   - show: acquisitions-incorporated
     season: 9
     role: player
@@ -78,20 +85,6 @@ credits:
         url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Twelve
         note: Acquisitions Inc. Season Twelve cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
-  - show: critical-role
-    role: player
-    character: Kerrek
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
 wikidata_qid: Q514546
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Patrick-rothfuss-2014-kyle-cassidy.jpg

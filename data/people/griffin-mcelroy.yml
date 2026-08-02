@@ -26,6 +26,13 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Tiny_Heist
         note: Tiny Heist cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
   - show: the-adventure-zone
     season: 1
     role: GM/DM
@@ -35,6 +42,10 @@ credits:
         note: "Campaign 1: The Balance Arc cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/the-adventure-zone
+        note: Cast for "The Adventure Zone" per TheTVDB.
   - show: the-adventure-zone
     season: 2
     role: player
@@ -64,6 +75,7 @@ credits:
         note: "Campaign 3: Amnesty cast, via the theadventurezone.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 5
     role: player
@@ -142,6 +154,7 @@ credits:
         note: "Campaign 6: Ethersea cast, via the theadventurezone.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 14
     role: player
@@ -179,29 +192,7 @@ credits:
         url: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula
         note: "Campaign 9: The Adventure Zone Versus Dracula cast, via the
           theadventurezone.fandom.com infobox. CC-BY-SA."
-  - show: dimension-20
-    role: player
-    character: Bean
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
-  - show: the-adventure-zone
-    role: GM/DM
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/the-adventure-zone
-        note: Cast for "The Adventure Zone" per TheTVDB.
+      - *a1
 wikidata_qid: Q50384562
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Griffin_McElroy_%28PAX_Prime_2011%29.jpg

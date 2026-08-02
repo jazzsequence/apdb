@@ -48,6 +48,19 @@ credits:
         note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+      - &a3
+        tier: reference
+        url: https://thetvdb.com/series/dimension-20
+        note: Cast for "Dimension 20" per TheTVDB.
   - show: dimension-20
     season: 7
     role: player
@@ -67,6 +80,9 @@ credits:
         note: "The Unsleeping City: Chapter II cast, via the dimension20.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
+      - *a2
+      - *a3
   - show: dimension-20
     season: 10
     role: player
@@ -171,13 +187,6 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
         note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
-  - show: exandria-unlimited
-    role: player
-    character: Nydas Okiro
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
       - tier: reference
         url: https://www.imdb.com/title/tt14829636/fullcredits/
         note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
@@ -188,23 +197,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/exandria-unlimited
         note: Cast for "Exandria Unlimited" per TheTVDB.
-  - show: dimension-20
-    role: player
-    character: Kingston Brown
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/dimension-20
-        note: Cast for "Dimension 20" per TheTVDB.
   - show: worlds-beyond-number
     role: player
     season: 1

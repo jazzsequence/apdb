@@ -40,6 +40,19 @@ credits:
         note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
+      - &a3
+        tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: exandria-unlimited
     season: 4
     role: player
@@ -50,6 +63,9 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
+      - *a3
   - show: critical-role
     season: 3
     role: guest player
@@ -69,23 +85,6 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-  - show: exandria-unlimited
-    role: player
-    character: Dorian Storm
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
-        note: Cast for "Exandria Unlimited" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/exandria-unlimited
-        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: candela-obscura
     role: player
     character: Howard Margrove

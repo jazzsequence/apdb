@@ -51,6 +51,19 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
         tier: reference
+      - &a3
+        tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - &a4
+        tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
+      - &a5
+        tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: dimension-20
     season: 2
     role: GM/DM
@@ -59,6 +72,15 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
         tier: reference
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
   - show: dimension-20
     season: 3
     role: GM/DM
@@ -67,6 +89,8 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
         tier: reference
+      - *a1
+      - *a2
   - show: critical-role
     season: 3
     episode: "C3E51: A Test of Worth"
@@ -82,6 +106,13 @@ credits:
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
   - show: dimension-20
     season: 8
     role: player
@@ -91,6 +122,13 @@ credits:
         note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/dimension-20
+        note: Cast for "Dimension 20" per TheTVDB.
   - show: dimension-20
     season: 12
     role: player
@@ -114,6 +152,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Burrow's_End
         note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
   - show: dimension-20
     season: 26
     role: GM/DM
@@ -122,6 +162,8 @@ credits:
         note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
   - show: critical-role
     season: 4
     role: player
@@ -145,6 +187,9 @@ credits:
         note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - *a3
+      - *a4
+      - *a5
   - show: exandria-unlimited
     season: 3
     role: player
@@ -154,6 +199,13 @@ credits:
         note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: exandria-unlimited
     season: 4
     role: GM/DM
@@ -162,6 +214,9 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a3
+      - *a4
+      - *a5
   - show: the-adventure-zone
     season: 14
     role: GM/DM
@@ -267,72 +322,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
-  - show: exandria-unlimited
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
-        note: Cast for "Exandria Unlimited" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/exandria-unlimited
-        note: Cast for "Exandria Unlimited" per TheTVDB.
-  - show: exandria-unlimited
-    role: player
-    character: Laerryn Coramar-Seelie
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - tier: reference
-        url: https://thetvdb.com/series/exandria-unlimited
-        note: Cast for "Exandria Unlimited" per TheTVDB.
-  - show: critical-role
-    role: player
-    character: Deanna Leimert
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://thetvdb.com/series/critical-role
-        note: Cast for "Critical Role" per TheTVDB.
-  - show: dimension-20
-    role: player
-    character: Myrtle
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://thetvdb.com/series/dimension-20
-        note: Cast for "Dimension 20" per TheTVDB.
-  - show: dimension-20
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
   - show: worlds-beyond-number
     role: player
     season: 1

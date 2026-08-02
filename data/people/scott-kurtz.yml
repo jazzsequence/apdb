@@ -17,6 +17,10 @@ credits:
         note: Season One cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.
   - show: acquisitions-incorporated
     season: 2
     role: player
@@ -27,6 +31,7 @@ credits:
         note: Season Two cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a1
   - show: acquisitions-incorporated
     season: 3
     role: player
@@ -37,6 +42,7 @@ credits:
         note: Acquisitions Inc. Season Three cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
   - show: acquisitions-incorporated
     season: 7
     role: player
@@ -47,6 +53,7 @@ credits:
         note: PAX D&D 2011 cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a1
   - show: acquisitions-incorporated
     season: 8
     role: player
@@ -57,6 +64,7 @@ credits:
         note: Acquisitions Inc. Season Six cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
   - show: acquisitions-incorporated
     season: 9
     role: player
@@ -67,6 +75,7 @@ credits:
         note: Acquisitions Inc. Season Seven cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
   - show: acquisitions-incorporated
     season: 10
     role: player
@@ -77,6 +86,7 @@ credits:
         note: Acquisitions Inc. Season Eight cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
   - show: acquisitions-incorporated
     season: 11
     role: player
@@ -87,6 +97,7 @@ credits:
         note: Acquisitions Inc. Season Nine cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
   - show: acquisitions-incorporated
     season: 12
     role: player
@@ -97,16 +108,7 @@ credits:
         url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Ten
         note: Acquisitions Inc. Season Ten cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
-  - show: acquisitions-incorporated
-    role: player
-    character: Binwin Bronzebottom
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/acquisitions-incorporated
-        note: Cast for "Acquisitions Incorporated" per TheTVDB.
+      - *a1
 wikidata_qid: Q7436647
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Scott_Kurtz.jpg

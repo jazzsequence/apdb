@@ -33,6 +33,39 @@ function sameFact(a: Partial<Credit>, b: Partial<Credit>): boolean {
   );
 }
 
+/**
+ * Roles that describe the same activity at different confidence. Sources
+ * routinely disagree about whether an appearance was a regular or a guest
+ * slot, and that disagreement should not fork one appearance into two credits.
+ */
+function sameKindOfRole(a: string, b: string): boolean {
+  if (a === b) return true;
+  const kind = (r: string) => (r.includes('GM') || r.includes('DM') ? 'gm' : r.includes('player') ? 'player' : r);
+  return kind(a) === kind(b);
+}
+
+/**
+ * Does a show-level credit describe an appearance already recorded against a
+ * specific season?
+ *
+ * Catalogues credit at series level; wikis credit per season. Left alone, both
+ * get stored and the person's page shows the same appearance twice — Deborah
+ * Ann Woll's Critical Role credit as Twiggy appeared once from IMDb with no
+ * season and once from the wiki against Campaign 2. The season-level record is
+ * strictly more informative, so the vaguer one is folded into it rather than
+ * kept alongside.
+ */
+export function subsumedBy(vague: Partial<Credit>, specific: Partial<Credit>): boolean {
+  return (
+    vague.show === specific.show &&
+    vague.season === undefined &&
+    vague.episode === undefined &&
+    specific.season !== undefined &&
+    (vague.character ?? '').toLowerCase() === (specific.character ?? '').toLowerCase() &&
+    sameKindOfRole(vague.role ?? '', specific.role ?? '')
+  );
+}
+
 /** Is this source already on the credit? Same url, or same person attesting. */
 function alreadyCited(credit: Credit, source: Source): boolean {
   return credit.sources.some((s) => {
@@ -51,6 +84,26 @@ function alreadyCited(credit: Credit, source: Source): boolean {
  * importer to record something specific keeps it.
  */
 export function upsertCredit(existing: Credit[], incoming: Credit): UpsertResult {
+  // A vague incoming credit that an existing specific one already covers is
+  // corroboration for that one, not a new row.
+  if (incoming.season === undefined) {
+    const covered = existing.filter((c) => subsumedBy(incoming, c));
+    if (covered.length > 0) {
+      let credits = existing;
+      let changed = false;
+      for (const target of covered) {
+        const fresh = incoming.sources.filter((s) => !alreadyCited(target, s));
+        if (fresh.length === 0) continue;
+        changed = true;
+        const merged = { ...target, sources: [...target.sources, ...fresh] };
+        credits = credits.map((c) => (c === target ? merged : c));
+      }
+      return changed
+        ? { outcome: 'corroborated', credits }
+        : { outcome: 'already-cited', credits: existing };
+    }
+  }
+
   const match = existing.find((c) => sameFact(c, incoming));
   if (!match) {
     return { outcome: 'added', credits: [...existing, incoming] };

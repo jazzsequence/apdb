@@ -15,6 +15,10 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
   - show: exandria-unlimited
     season: 2
     role: producer
@@ -24,6 +28,11 @@ credits:
         note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
   - show: exandria-unlimited
     season: 4
     role: producer
@@ -33,6 +42,7 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a1
   - show: critical-role-specials
     season: 3
     role: producer
@@ -88,26 +98,6 @@ credits:
           datasets.
   - show: critical-role
     role: director
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-  - show: exandria-unlimited
-    role: producer
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-  - show: critical-role
-    role: producer
     note: IMDb credits this at series level; which of this show's seasons it covers
       is not established.
     alias: default

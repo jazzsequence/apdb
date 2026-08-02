@@ -18,6 +18,13 @@ credits:
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
   - show: acquisitions-incorporated
     season: 2
     role: player
@@ -70,20 +77,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/63242-titansgrave-the-ashes-of-valkana/cast
         note: Cast for "Titansgrave" per TMDB.
-  - show: critical-role
-    role: player
-    character: Thorbir Falbek
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
   - show: acquisitions-incorporated
     role: player
     character: Aeofel Elromaine

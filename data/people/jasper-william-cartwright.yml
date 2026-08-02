@@ -16,6 +16,13 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Burrow's_End
         note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
   - show: critical-role-specials
     season: 5
     role: player
@@ -33,17 +40,3 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Thresher
         note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-  - show: dimension-20
-    role: player
-    character: Thorn Vale
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.

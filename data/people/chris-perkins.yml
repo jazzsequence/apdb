@@ -44,6 +44,15 @@ credits:
         note: Season One cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt29338249/fullcredits/
+        note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
+          official datasets.
+      - &a2
+        tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.
   - show: acquisitions-incorporated
     season: 2
     role: GM/DM
@@ -53,6 +62,8 @@ credits:
         note: Season Two cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
   - show: acquisitions-incorporated
     season: 7
     role: GM/DM
@@ -62,6 +73,8 @@ credits:
         note: PAX D&D 2011 cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
   - show: acquisitions-incorporated
     season: 8
     role: GM/DM
@@ -71,6 +84,8 @@ credits:
         note: Acquisitions Inc. Season Six cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
   - show: acquisitions-incorporated
     season: 12
     role: GM/DM
@@ -80,6 +95,8 @@ credits:
         note: Acquisitions Inc. Season Ten cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
   - show: acquisitions-incorporated
     season: 14
     role: GM/DM
@@ -89,6 +106,8 @@ credits:
         note: Acquisitions Inc. Season Twelve cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
   - show: acquisitions-incorporated
     season: 16
     role: GM/DM
@@ -98,6 +117,8 @@ credits:
         note: Acquisitions Inc. Season Fourteen cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
   - show: dice-camera-action
     season: 1
     role: GM/DM
@@ -124,19 +145,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
-  - show: acquisitions-incorporated
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt29338249/fullcredits/
-        note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
-          official datasets.
-      - tier: reference
-        url: https://thetvdb.com/series/acquisitions-incorporated
-        note: Cast for "Acquisitions Incorporated" per TheTVDB.
   - show: dice-camera-action
     role: player
     season: 1
