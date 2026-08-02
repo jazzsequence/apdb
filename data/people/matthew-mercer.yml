@@ -123,6 +123,15 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
+      - &a7
+        tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - &a8
+        tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
   - show: exandria-unlimited
     season: 2
     role: player
@@ -168,6 +177,8 @@ credits:
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a7
+      - *a8
   - show: candela-obscura
     season: 1
     role: host
@@ -184,6 +195,10 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
   - show: critical-role-specials
     season: 1
     role: player
@@ -272,6 +287,24 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
         note: Cast for "CelebriD&D" per TMDB.
+  - show: sagas-of-sundry
+    role: player
+    season: 1
+    character: Tanner
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7553424/fullcredits/
+        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
+        note: Cast for "SAGAS OF SUNDRY" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/sagas-of-sundry
+        note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
   - show: candela-obscura
     role: GM/DM
     note: IMDb credits this at series level; which of this show's seasons it covers
@@ -298,49 +331,6 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
-  - show: sagas-of-sundry
-    role: player
-    season: 1
-    character: Tanner
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7553424/fullcredits/
-        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
-        note: Cast for "SAGAS OF SUNDRY" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/sagas-of-sundry
-        note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
-  - show: candela-obscura
-    role: player
-    character: Lester Shaw
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-  - show: critical-role
-    role: player
-    character: Dariax Zaveon
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://thetvdb.com/series/critical-role
-        note: Cast for "Critical Role" per TheTVDB.
   - show: dimension-20
     role: player
     character: Leiland, AKA Kraz-Thun

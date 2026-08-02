@@ -30,6 +30,10 @@ credits:
         note: "Get In The Trunk: Season 3 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/get-in-the-trunk
+        note: Cast for "Get In The Trunk" per TheTVDB.
   - show: disorganized-play
     season: 1
     role: player
@@ -48,13 +52,4 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
         note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
-  - show: get-in-the-trunk
-    role: player
-    character: Lance Tripper
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/get-in-the-trunk
-        note: Cast for "Get In The Trunk" per TheTVDB.
+      - *a1

@@ -7,6 +7,17 @@ aliases:
     name: Liam O'Brien
     alias_type: legal
 credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E3: CelebriD&D with Game of Thrones' John Bradley (3 August 2017)"
+    role: guest player
+    character: Vax'ildan
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Liam O'Brien's role and
+          episode count.
   - show: critical-role
     season: 2
     role: player
@@ -44,6 +55,19 @@ credits:
         note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
+      - &a3
+        tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: exandria-unlimited
     season: 4
     role: player
@@ -54,6 +78,9 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
+      - *a3
   - show: exandria-unlimited
     season: 5
     role: player
@@ -92,6 +119,11 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - &a4
+        tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
   - show: candela-obscura
     season: 4
     role: host
@@ -109,6 +141,7 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - *a4
   - show: critical-role-specials
     season: 3
     role: player
@@ -144,17 +177,6 @@ credits:
         url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
         note: Cast per Geek & Sundry.
   - show: celebrid-d
-    season: 1
-    episode: "S1E3: CelebriD&D with Game of Thrones' John Bradley (3 August 2017)"
-    role: guest player
-    character: Vax'ildan
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7537668/fullcredits/
-        note: CelebriD&D full cast and crew on IMDb, which lists Liam O'Brien's role and
-          episode count.
-  - show: celebrid-d
     role: player
     season: 1
     character: Vax'ildan
@@ -167,19 +189,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
         note: Cast for "CelebriD&D" per TMDB.
-  - show: candela-obscura
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
-        note: Cast for "Candela Obscura" per TMDB.
   - show: sagas-of-sundry
     role: player
     season: 1
@@ -210,26 +219,8 @@ credits:
         url: https://www.imdb.com/title/tt7588390/fullcredits/
         note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
           datasets.
-  - show: exandria-unlimited
-    role: player
-    character: Orym
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
-        note: Cast for "Exandria Unlimited" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/exandria-unlimited
-        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: candela-obscura
-    role: player
-    character: Cosmo Grimm
+    role: GM/DM
     note: IMDb credits this at series level; which of this show's seasons it covers
       is not established.
     alias: default
@@ -238,3 +229,6 @@ credits:
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.

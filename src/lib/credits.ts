@@ -23,13 +23,19 @@ export interface UpsertResult {
   credits: Credit[];
 }
 
-/** Two credits describe the same fact when show, season, role and episode match. */
+/**
+ * Two credits describe the same fact when show, season and episode match and
+ * the roles are the same kind of job. Requiring the role *label* to match
+ * exactly forked appearances where one source said "player" and another said
+ * "guest player" — a disagreement about billing, not two appearances.
+ */
 function sameFact(a: Partial<Credit>, b: Partial<Credit>): boolean {
   return (
     a.show === b.show &&
     (a.season ?? null) === (b.season ?? null) &&
-    a.role === b.role &&
-    (a.episode ?? null) === (b.episode ?? null)
+    sameKindOfRole(a.role ?? '', b.role ?? '') &&
+    (a.episode ?? null) === (b.episode ?? null) &&
+    compatibleCharacter(a.character, b.character)
   );
 }
 
@@ -61,9 +67,43 @@ export function subsumedBy(vague: Partial<Credit>, specific: Partial<Credit>): b
     vague.season === undefined &&
     vague.episode === undefined &&
     specific.season !== undefined &&
-    (vague.character ?? '').toLowerCase() === (specific.character ?? '').toLowerCase() &&
-    sameKindOfRole(vague.role ?? '', specific.role ?? '')
+    sameKindOfRole(vague.role ?? '', specific.role ?? '') &&
+    compatibleCharacter(vague.character, specific.character)
   );
+}
+
+/**
+ * Do two character fields describe the same casting?
+ *
+ * Requiring them to be equal was too strict and cost 220 merges. Sources
+ * disagree about character names in three ordinary ways, none of which means
+ * two different appearances:
+ *
+ *   - One simply does not record a character. Wikis often list a season's cast
+ *     without characters while a catalogue names them, or the reverse.
+ *   - One names a subset. "Deni$e / Opal" against "Deni$e Bembachula, Opal".
+ *   - Spelling, punctuation and honorifics drift.
+ *
+ * Genuinely different characters — Abubakar Salim as Coru in campaign three
+ * and as The Arch Heart elsewhere — share no name part, so they stay separate.
+ */
+function compatibleCharacter(a: string | undefined, b: string | undefined): boolean {
+  const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9 /]/g, '').replace(/\s+/g, ' ').trim();
+  const x = norm(a ?? '');
+  const y = norm(b ?? '');
+  if (!x || !y) return true;                       // one side is silent
+  if (x === y) return true;
+  if (x.includes(y) || y.includes(x)) return true; // one names a subset
+
+  // Any shared character name across the "/" separated list counts.
+  const parts = (s: string) => new Set(s.split(/\s*\/\s*/).map((p) => p.trim()).filter(Boolean));
+  const [px, py] = [parts(x), parts(y)];
+  for (const p of px) {
+    if (py.has(p)) return true;
+    // "opal" against "opal bembachula"
+    for (const q of py) if (p.includes(q) || q.includes(p)) return true;
+  }
+  return false;
 }
 
 /** Is this source already on the credit? Same url, or same person attesting. */

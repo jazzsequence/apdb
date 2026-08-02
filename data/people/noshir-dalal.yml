@@ -18,6 +18,13 @@ credits:
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
   - show: candela-obscura
     season: 3
     role: player
@@ -26,6 +33,13 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
   - show: critical-role-specials
     season: 2
     role: player
@@ -44,31 +58,3 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Thresher
         note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-  - show: critical-role
-    role: player
-    character: The Emissary
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-  - show: candela-obscura
-    role: player
-    character: Dr. Rajan Savarimuthu
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
-        note: Cast for "Candela Obscura" per TMDB.

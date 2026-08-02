@@ -16,13 +16,6 @@ credits:
         url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-  - show: dimension-20
-    role: player
-    character: Gwyndolin Thistle-hop
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
       - tier: reference
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official

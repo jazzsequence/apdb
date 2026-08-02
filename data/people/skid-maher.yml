@@ -25,6 +25,10 @@ credits:
         note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt14735282/fullcredits/
+        note: IMDb full cast and crew for "Androids & Aliens" (2020), via the official
+          datasets.
   - show: glass-cannon-podcast
     season: 4
     role: player
@@ -114,6 +118,10 @@ credits:
         note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/get-in-the-trunk
+        note: Cast for "Get In The Trunk" per TheTVDB.
   - show: new-game-who-dis
     season: 2
     role: player
@@ -165,6 +173,7 @@ credits:
         note: "Get In The Trunk: Season 3 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: new-game-who-dis
     season: 20
     role: player
@@ -227,6 +236,7 @@ credits:
         note: "Get In The Trunk: Season 4 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: glass-cannon-podcast
     season: 6
     role: player
@@ -245,6 +255,9 @@ credits:
         note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://thetvdb.com/series/glass-cannon-live
+        note: Cast for "Glass Cannon Live!" per TheTVDB.
   - show: voyagers-of-the-jump
     season: 1
     role: player
@@ -254,6 +267,9 @@ credits:
         note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://thetvdb.com/series/voyagers-of-the-jump
+        note: Cast for "Voyagers of the Jump" per TheTVDB.
   - show: glass-cannon-podcast
     season: 5
     role: player
@@ -281,6 +297,7 @@ credits:
         note: "Get In The Trunk: Season 5 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: get-in-the-trunk
     season: 6
     role: player
@@ -290,6 +307,7 @@ credits:
         note: "Get In The Trunk: Season 6 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: glass-cannon-podcast
     season: 3
     role: player
@@ -362,6 +380,7 @@ credits:
         note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
         tier: community
+      - *a1
   - show: inherit-the-sand
     season: 1
     role: player
@@ -380,44 +399,3 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Blood_of_the_Wild
         note: Blood of the Wild cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
-  - show: androids-aliens
-    role: player
-    character: Dr. Kundatu Friss
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14735282/fullcredits/
-        note: IMDb full cast and crew for "Androids & Aliens" (2020), via the official
-          datasets.
-  - show: voyagers-of-the-jump
-    role: player
-    character: Filo Speaker
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/voyagers-of-the-jump
-        note: Cast for "Voyagers of the Jump" per TheTVDB.
-  - show: glass-cannon-live
-    role: player
-    character: Oswine
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/glass-cannon-live
-        note: Cast for "Glass Cannon Live!" per TheTVDB.
-  - show: get-in-the-trunk
-    role: player
-    character: Jordan Arsenault
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/get-in-the-trunk
-        note: Cast for "Get In The Trunk" per TheTVDB.

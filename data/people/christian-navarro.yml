@@ -45,6 +45,9 @@ credits:
         note: Cast per the production's own description of "Dungeon Masters | Official
           D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".
         tier: official
+      - tier: reference
+        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
+        note: Cast for "Dungeon Masters" per TMDB.
   - show: shadowrun-excommunication
     season: 1
     role: player
@@ -56,13 +59,3 @@ credits:
         note: "Cast per the production's own description of \"Session Zero LIVE from
           SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
           RealmSmith\"."
-  - show: dnd-dungeon-masters
-    role: player
-    character: Eloin Emberleaf  , Cadmus Pennypetal (4 Episodes)
-    note: TMDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
-        note: Cast for "Dungeon Masters" per TMDB.

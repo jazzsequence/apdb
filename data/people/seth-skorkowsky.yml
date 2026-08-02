@@ -16,6 +16,9 @@ credits:
         note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://thetvdb.com/series/voyagers-of-the-jump
+        note: Cast for "Voyagers of the Jump" per TheTVDB.
   - show: friends-of-the-pod
     season: 1
     role: player
@@ -25,13 +28,3 @@ credits:
         url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
-  - show: voyagers-of-the-jump
-    role: player
-    character: Wes "Puffer" Demar
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/voyagers-of-the-jump
-        note: Cast for "Voyagers of the Jump" per TheTVDB.

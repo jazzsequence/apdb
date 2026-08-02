@@ -70,6 +70,13 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
   - show: la-by-night
     season: 1
     role: player
@@ -100,20 +107,6 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt7289544/fullcredits/
         note: IMDb full cast and crew for "Vast" (2016), via the official datasets.
-  - show: critical-role
-    role: player
-    character: Dusk
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
   - show: sagas-of-sundry
     role: player
     season: 1
@@ -143,6 +136,15 @@ credits:
         url: https://www.imdb.com/title/tt7588390/fullcredits/
         note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
           datasets.
+  - show: worlds-beyond-number
+    role: player
+    season: 1
+    character: Actor
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/worlds-beyond-number
+        note: Cast for "Worlds Beyond Number" per TheTVDB.
   - show: dimension-20
     role: player
     character: Lilith
@@ -160,12 +162,3 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/dimension-20
         note: Cast for "Dimension 20" per TheTVDB.
-  - show: worlds-beyond-number
-    role: player
-    season: 1
-    character: Actor
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/worlds-beyond-number
-        note: Cast for "Worlds Beyond Number" per TheTVDB.

@@ -17,6 +17,10 @@ credits:
         note: Acquisitions Inc. Season Eleven cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.
   - show: acquisitions-incorporated
     season: 14
     role: player
@@ -27,6 +31,7 @@ credits:
         note: Acquisitions Inc. Season Twelve cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
   - show: acquisitions-incorporated
     season: 15
     role: player
@@ -37,6 +42,7 @@ credits:
         url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Thirteen
         note: Acquisitions Inc. Season Thirteen cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+      - *a1
   - show: dice-camera-action
     role: player
     season: 1
@@ -46,16 +52,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/dice-camera-action
         note: Cast for "Dice, Camera, Action" per TheTVDB.
-  - show: acquisitions-incorporated
-    role: player
-    character: Strix
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/acquisitions-incorporated
-        note: Cast for "Acquisitions Incorporated" per TheTVDB.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/a/a1/WonderCon_2012_-_Holly_Conrad_as_fem_Shepard_-_Mass_Effect_%287019460619%29.jpg
   licence: CC-BY-2.0

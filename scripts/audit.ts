@@ -139,6 +139,22 @@ for (const p of db.people) {
   }
 }
 
+// --- A "show" that is really an uploader ------------------------------------
+// The Archive.org importer takes the item's creator field as a show title, so
+// a personal upload of someone's home game becomes a show named after them:
+// Bill White, Edward DuBois, Liam Gallagher, Mel White. They have no cast and
+// never will, because they are not productions.
+const PERSON_SHAPED = /^[\p{Lu}][\p{Ll}'’-]+(?:\s+[\p{Lu}]\.)?\s+[\p{Lu}][\p{Ll}'’-]+$/u;
+for (const show of db.shows) {
+  if (db.castFor(show).length > 0) continue;
+  if (!PERSON_SHAPED.test(show.title)) continue;
+  findings.push({
+    severity: 'medium',
+    what: 'show title looks like a person, not a production',
+    detail: `${show.title} — no credits, and the title is a personal name. Probably an uploader taken as a show title; check before keeping.`,
+  });
+}
+
 // --- Suspiciously thin casts ----------------------------------------------
 for (const show of db.shows) {
   const cast = db.castFor(show);

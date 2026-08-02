@@ -69,6 +69,19 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
+      - &a3
+        tier: reference
+        url: https://thetvdb.com/series/candela-obscura
+        note: Cast for "Candela Obscura" per TheTVDB.
   - show: candela-obscura
     season: 5
     role: player
@@ -77,6 +90,9 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - *a1
+      - *a2
+      - *a3
   - show: critical-role-specials
     season: 2
     role: player
@@ -141,20 +157,3 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
         note: Cast for "CelebriD&D" per TMDB.
-  - show: candela-obscura
-    role: player
-    character: Arlo Black
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
-        note: Cast for "Candela Obscura" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/candela-obscura
-        note: Cast for "Candela Obscura" per TheTVDB.

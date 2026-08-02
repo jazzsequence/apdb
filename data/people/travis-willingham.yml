@@ -13,6 +13,17 @@ aliases:
     name: Travis Willingham
     alias_type: legal
 credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E1: D&Diesel (25 October 2015)"
+    role: guest player
+    character: Grog
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Travis Willingham's
+          role and episode count.
   - show: critical-role
     season: 2
     role: player
@@ -98,6 +109,13 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
   - show: critical-role-specials
     season: 1
     role: player
@@ -125,17 +143,6 @@ credits:
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
   - show: celebrid-d
-    season: 1
-    episode: "S1E1: D&Diesel (25 October 2015)"
-    role: guest player
-    character: Grog
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7537668/fullcredits/
-        note: CelebriD&D full cast and crew on IMDb, which lists Travis Willingham's
-          role and episode count.
-  - show: celebrid-d
     role: player
     season: 1
     character: Grog
@@ -148,17 +155,3 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
         note: Cast for "CelebriD&D" per TMDB.
-  - show: candela-obscura
-    role: player
-    character: Nathaniel Trapp
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
-        note: Cast for "Candela Obscura" per TMDB.

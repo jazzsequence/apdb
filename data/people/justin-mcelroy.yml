@@ -33,6 +33,10 @@ credits:
         note: "Campaign 1: The Balance Arc cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/the-adventure-zone
+        note: Cast for "The Adventure Zone" per TheTVDB.
   - show: the-adventure-zone
     season: 2
     role: player
@@ -43,6 +47,7 @@ credits:
         note: "Campaign 2: Commitment cast, via the theadventurezone.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 3
     role: player
@@ -53,6 +58,7 @@ credits:
         note: "MaxFunDrive Bonus Campaign: (K)nights cast, via the
           theadventurezone.fandom.com infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 4
     role: player
@@ -63,6 +69,7 @@ credits:
         note: "Campaign 3: Amnesty cast, via the theadventurezone.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 5
     role: player
@@ -73,6 +80,7 @@ credits:
         note: "Campaign 4: Dust cast, via the theadventurezone.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 6
     role: player
@@ -82,6 +90,7 @@ credits:
         note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
           theadventurezone.fandom.com infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 7
     role: player
@@ -92,6 +101,7 @@ credits:
         note: "MaxFunDrive Bonus Campaign: Fur cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 8
     role: player
@@ -152,6 +162,7 @@ credits:
         note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: the-adventure-zone
     season: 17
     role: player
@@ -161,13 +172,4 @@ credits:
         url: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula
         note: "Campaign 9: The Adventure Zone Versus Dracula cast, via the
           theadventurezone.fandom.com infobox. CC-BY-SA."
-  - show: the-adventure-zone
-    role: player
-    character: Taako Taako, Troth, Irene Baker, Augustus Parsons, Duck Newton, Gerrrf
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/the-adventure-zone
-        note: Cast for "The Adventure Zone" per TheTVDB.
+      - *a1

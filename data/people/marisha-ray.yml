@@ -109,6 +109,15 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
   - show: candela-obscura
     season: 5
     role: player
@@ -117,6 +126,8 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
+      - *a1
+      - *a2
   - show: critical-role-specials
     season: 1
     role: player
@@ -209,17 +220,3 @@ credits:
         url: https://www.imdb.com/title/tt7588390/fullcredits/
         note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
           datasets.
-  - show: candela-obscura
-    role: player
-    character: Beatrix Monroe
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
-        note: Cast for "Candela Obscura" per TMDB.

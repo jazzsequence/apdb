@@ -87,7 +87,20 @@ export async function tmdbCast(path: string): Promise<CatalogueResult | undefine
   for (const m of html.matchAll(re)) {
     const name = strip(m[1]!);
     if (!looksLikeName(name)) continue;
-    const character = strip(m[2] ?? '').replace(/\(\s*\d+\s*Episodes?\s*\)/i, '').trim();
+    // TMDB concatenates every credited role for one person into a single
+    // string, each with its own episode count: "Deni$e Bembachula , Opal
+    // (2 Episodes) , Opal / Deni$e Bembachula (1 Episode)". Stripping only the
+    // first count (no /g) left that mess intact, and a character that verbose
+    // never matches the same character recorded anywhere else.
+    const character = [
+      ...new Set(
+        strip(m[2] ?? '')
+          .replace(/\(\s*\d+\s*Episodes?\s*\)/gi, '')
+          .split(/\s*,\s*|\s+\/\s+/)
+          .map((part) => part.trim())
+          .filter(Boolean),
+      ),
+    ].join(' / ');
     credits.push({ name, ...readCharacter(character) });
   }
   return credits.length ? { url, credits } : undefined;

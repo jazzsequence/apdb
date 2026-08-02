@@ -42,6 +42,19 @@ credits:
         note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+      - &a3
+        tier: reference
+        url: https://thetvdb.com/series/dimension-20
+        note: Cast for "Dimension 20" per TheTVDB.
   - show: dimension-20
     season: 7
     role: player
@@ -108,6 +121,9 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Time_Quangle
         note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+      - *a1
+      - *a2
+      - *a3
   - show: dimension-20
     season: 28
     role: player
@@ -150,7 +166,7 @@ credits:
     role: player
     alias: default
     sources:
-      - &a1
+      - &a4
         tier: community
         url: https://notanotherdndpodcast.fandom.com/wiki/Brian_Murphy
         note: Hand-entered. The wiki has person pages but no campaign page listing cast,
@@ -161,27 +177,10 @@ credits:
     role: player
     alias: default
     sources:
-      - *a1
+      - *a4
   - show: not-another-dnd-podcast
     season: 3
     role: player
     alias: default
     sources:
-      - *a1
-  - show: dimension-20
-    role: player
-    character: Sofia Bicicleta Lee
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/dimension-20
-        note: Cast for "Dimension 20" per TheTVDB.
+      - *a4

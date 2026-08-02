@@ -21,6 +21,19 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
+      - &a4
+        tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - &a5
+        tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - &a6
+        tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
   - show: exandria-unlimited
     season: 1
     role: player
@@ -77,6 +90,9 @@ credits:
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a4
+      - *a5
+      - *a6
   - show: candela-obscura
     season: 1
     role: player
@@ -85,13 +101,6 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-  - show: candela-obscura
-    role: player
-    character: Howard Margrove
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
       - tier: reference
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
@@ -102,20 +111,3 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/candela-obscura
         note: Cast for "Candela Obscura" per TheTVDB.
-  - show: critical-role
-    role: player
-    character: Dorian Storm
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/critical-role
-        note: Cast for "Critical Role" per TheTVDB.

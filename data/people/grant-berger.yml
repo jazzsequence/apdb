@@ -25,6 +25,10 @@ credits:
         note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt14735282/fullcredits/
+        note: IMDb full cast and crew for "Androids & Aliens" (2020), via the official
+          datasets.
   - show: glass-cannon-podcast
     season: 4
     role: player
@@ -105,6 +109,10 @@ credits:
         note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/get-in-the-trunk
+        note: Cast for "Get In The Trunk" per TheTVDB.
   - show: new-game-who-dis
     season: 2
     role: player
@@ -192,6 +200,9 @@ credits:
         note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://thetvdb.com/series/glass-cannon-live
+        note: Cast for "Glass Cannon Live!" per TheTVDB.
   - show: new-game-who-dis
     season: 1
     role: player
@@ -228,34 +239,4 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
         note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
-  - show: androids-aliens
-    role: player
-    character: Meisyun Vanya
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14735282/fullcredits/
-        note: IMDb full cast and crew for "Androids & Aliens" (2020), via the official
-          datasets.
-  - show: glass-cannon-live
-    role: player
-    character: Halstor Price
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/glass-cannon-live
-        note: Cast for "Glass Cannon Live!" per TheTVDB.
-  - show: get-in-the-trunk
-    role: player
-    character: Ryker Solace
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/get-in-the-trunk
-        note: Cast for "Get In The Trunk" per TheTVDB.
+      - *a1

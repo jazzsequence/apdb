@@ -136,6 +136,10 @@ credits:
         note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/get-in-the-trunk
+        note: Cast for "Get In The Trunk" per TheTVDB.
   - show: new-game-who-dis
     season: 2
     role: player
@@ -205,6 +209,7 @@ credits:
         note: "Get In The Trunk: Season 4 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: glass-cannon-network-presents
     season: 3
     role: GM/DM
@@ -263,6 +268,7 @@ credits:
         note: "Get In The Trunk: Season 5 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: get-in-the-trunk
     season: 6
     role: player
@@ -272,6 +278,7 @@ credits:
         note: "Get In The Trunk: Season 6 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - *a1
   - show: glass-cannon-podcast
     season: 3
     role: GM/DM
@@ -344,6 +351,7 @@ credits:
         note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
         tier: community
+      - *a1
   - show: blood-blades
     season: 1
     role: player
@@ -362,13 +370,3 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Inherit_The_Sand
         note: Inherit The Sand cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
-  - show: get-in-the-trunk
-    role: player
-    character: Roger Cumstone
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/get-in-the-trunk
-        note: Cast for "Get In The Trunk" per TheTVDB.

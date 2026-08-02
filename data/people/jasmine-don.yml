@@ -16,6 +16,15 @@ credits:
         note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
   - show: exandria-unlimited
     season: 5
     role: player
@@ -25,17 +34,5 @@ credits:
         note: "Exandria Unlimited: Divergence cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: exandria-unlimited
-    role: player
-    character: Fiedra Marrow
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
-        note: Cast for "Exandria Unlimited" per TMDB.
+      - *a1
+      - *a2
