@@ -131,3 +131,13 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/game-masters-hall
         note: Cast for "Game Masters Hall" per TheTVDB.
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/c/ce/Ivan_Van_Norman_by_meg.jpg/revision/latest/scale-to-width-down/400?cb=20220114150833
+  licence: fair use
+  attribution: Portrait of Ivan Van Norman, © its owner. Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/Ivan_Van_Norman
+  depicts: Ivan Van Norman
+  rationale: Low-resolution thumbnail used solely to identify this person in an
+    index of their credits. Non-commercial, does not substitute for the
+    original, and links back to the source. Removed on request by the rights
+    holder — see POLICY.md.

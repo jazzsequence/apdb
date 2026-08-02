@@ -2,6 +2,7 @@
 import Filmography from '../../components/Filmography.astro';
 import Base from '../../layouts/Base.astro';
 import { getDb } from '../../lib/db';
+import EntityActions from '../../components/EntityActions.astro';
 
 export async function getStaticPaths() {
   const db = await getDb();
@@ -59,16 +60,13 @@ const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
     )
   }
 
-  <p class="billing">
-    Something wrong here?{' '}
-    <a
-      href={`https://github.com/${REPO}/issues/new?template=correction.yml&title=${encodeURIComponent(`[correction] ${person.canonical_name}`)}&labels=correction`}
-      rel="nofollow noopener"
-    >
-      Suggest a correction
-    </a>{' '}
-    — much of this is imported from fan wikis and imports get things wrong.
-  </p>
+  <EntityActions
+    kind="person"
+    name={person.canonical_name}
+    path={`/people/${person.id}/`}
+    hasImage={Boolean(person.image)}
+    caveat="much of this is imported from fan wikis, and imports get things wrong"
+  />
 
   <h2>Credits</h2>
   {

@@ -1,0 +1,66 @@
+---
+/**
+ * The "this is wrong" / "this is missing" affordances, for any entity.
+ *
+ * Corrections used to exist only on person pages, which quietly said that
+ * shows, channels and games could not be wrong. They can, and most of the
+ * errors found in this project so far have been on shows — a system defaulted
+ * to D&D, a campaign entered three times, a scripted comedy filed as an actual
+ * play. Every entity page carries these now.
+ *
+ * The image prompt only appears where there is no image, because that is
+ * exactly where a reader can help and where the gap is most visible.
+ */
+export const REPO = 'jazzsequence/apdb';
+
+interface Props {
+  /** What kind of thing this page is, in words a contributor would use. */
+  kind: 'person' | 'show' | 'channel' | 'game' | 'season';
+  /** Its display name, for the issue title. */
+  name: string;
+  /** Site-relative path of this page, so the issue says which one. */
+  path: string;
+  /** Whether this entity already has a picture. */
+  hasImage?: boolean;
+  /** Optional extra sentence explaining what tends to be wrong here. */
+  caveat?: string;
+}
+
+const { kind, name, path, hasImage = true, caveat } = Astro.props;
+const site = 'https://actualplaydb.com';
+
+const correctionUrl =
+  `https://github.com/${REPO}/issues/new?template=correction.yml` +
+  `&labels=correction&title=${encodeURIComponent(`[correction] ${name}`)}` +
+  `&where=${encodeURIComponent(`${site}${path}`)}`;
+
+const imageUrl =
+  `https://github.com/${REPO}/issues/new?template=add-image.yml` +
+  `&labels=image&title=${encodeURIComponent(`[image] ${name}`)}` +
+  `&where=${encodeURIComponent(`${site}${path}`)}`;
+
+const KIND_WORD: Record<Props['kind'], string> = {
+  person: 'person',
+  show: 'show',
+  channel: 'channel',
+  game: 'game',
+  season: 'season',
+};
+---
+
+<p class="billing entity-actions">
+  Something wrong with this {KIND_WORD[kind]}?{' '}
+  <a href={correctionUrl} rel="nofollow noopener">Suggest a correction</a>
+  {caveat ? ` — ${caveat}` : ' — much of this is imported, and imports get things wrong.'}
+  {
+    !hasImage && (
+      <>
+        {' '}
+        <br />
+        No picture here yet.{' '}
+        <a href={imageUrl} rel="nofollow noopener">Suggest one</a> — freely licensed
+        images are preferred, but tell us what you know either way.
+      </>
+    )
+  }
+</p>

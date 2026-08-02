@@ -301,8 +301,124 @@ export async function fetchArchiveArt(): Promise<number> {
 export async function fetchAllImages(): Promise<void> {
   const art =
     (await fetchSeriesArt()) + (await fetchOtherSeriesArt()) + (await fetchArchiveArt());
-  const portraits = await fetchPortraits(true);
+  // Free licences first — a stated licence is stronger provenance than a
+  // fair-use claim — then the wikis for everyone they do not cover.
+  const portraits = (await fetchPortraits(true)) + (await fetchWikiPortraits(true));
   if (art || portraits) {
     console.log(`  images: ${art} series, ${portraits} portrait(s).`);
   }
+}
+
+/**
+ * Portraits from the fan wikis that already document these people.
+ *
+ * The free-licence sources — Wikidata and Openverse — cover about a fifth of
+ * this database, and essentially none of the indie long tail that is the whole
+ * point of the project. Skid Maher has 42 credits and no Wikidata entry; nor
+ * do most of the Glass Cannon, Avantris and Saving Throw casts.
+ *
+ * Those people do have portraits, on the wikis their credits already cite. Wiki
+ * *text* is CC-BY-SA but the images usually are not, so these are taken under
+ * the same fair-use claim POLICY.md already makes for show art, and under the
+ * same constraints: thumbnail scale, one per person, attributed, linked back,
+ * used solely to identify the subject, removed on request.
+ *
+ * A person is only looked up on a wiki their own credits cite, so a name is
+ * never resolved against a wiki that has nothing to do with them.
+ */
+const UA_WIKI =
+  'ActualPlayDatabase/0.1 (community actual-play credit index; contact via repository issues)';
+
+/** The lead image of a wiki page, at thumbnail scale. */
+async function wikiPageImage(
+  host: string,
+  title: string,
+): Promise<{ url: string; page: string; title: string } | undefined> {
+  const q = new URLSearchParams({
+    action: 'query',
+    prop: 'pageimages|info',
+    inprop: 'url',
+    piprop: 'thumbnail',
+    pithumbsize: '400',
+    titles: title,
+    redirects: '1',
+    format: 'json',
+    formatversion: '2',
+  });
+  try {
+    const r = await fetch(`https://${host}/api.php?${q}`, {
+      headers: { 'User-Agent': UA_WIKI },
+      signal: AbortSignal.timeout(12000),
+    });
+    if (!r.ok) return undefined;
+    const data = await r.json();
+    const page = data?.query?.pages?.[0];
+    if (!page || page.missing || !page.thumbnail?.source) return undefined;
+    return { url: page.thumbnail.source, page: page.fullurl, title: page.title };
+  } catch {
+    return undefined;
+  }
+}
+
+/** Wikis this person's own credits cite, most-cited first. */
+function wikisFor(person: any): string[] {
+  const counts = new Map<string, number>();
+  for (const credit of person.credits ?? []) {
+    for (const source of credit.sources ?? []) {
+      const url = String(source.url ?? '');
+      const host = url.match(/^https?:\/\/([^/]+)/)?.[1];
+      if (!host || !/fandom\.com|miraheze\.org|wikia\./i.test(host)) continue;
+      counts.set(host, (counts.get(host) ?? 0) + 1);
+    }
+  }
+  return [...counts].sort((a, b) => b[1] - a[1]).map(([host]) => host);
+}
+
+export async function fetchWikiPortraits(quiet = false): Promise<number> {
+  let added = 0;
+  for (const file of (await readdir(join(DATA_ROOT, 'people'))).filter((f) => f.endsWith('.yml'))) {
+    const path = join(DATA_ROOT, 'people', file);
+    const person = parse(await readFile(path, 'utf8'));
+    if (person.image) continue;
+
+    // A one-word name is normally too ambiguous to resolve against a page
+    // title — but not when every credit this person has points at a single
+    // wiki. Legends of Avantris bills its whole cast by first name, and those
+    // six are among the most credited people here.
+    const wikis = wikisFor(person);
+    const allNames: string[] = [
+      person.canonical_name,
+      ...(person.aliases ?? []).map((a: any) => a.name),
+    ].filter(Boolean);
+    const names =
+      wikis.length === 1 ? allNames : allNames.filter((n: string) => n.trim().includes(' '));
+    if (names.length === 0) continue;
+
+    let found: Awaited<ReturnType<typeof wikiPageImage>>;
+    let host = '';
+    outer: for (const h of wikis) {
+      for (const name of [...new Set(names)]) {
+        found = await wikiPageImage(h, name);
+        await new Promise((r) => setTimeout(r, 120));
+        if (found) { host = h; break outer; }
+      }
+    }
+    if (!found) continue;
+
+    person.image = {
+      url: found.url,
+      licence: 'fair use',
+      attribution: `Portrait of ${person.canonical_name}, © its owner. Via ${host}.`,
+      source: found.page,
+      depicts: person.canonical_name,
+      rationale:
+        'Low-resolution thumbnail used solely to identify this person in an index of ' +
+        'their credits. Non-commercial, does not substitute for the original, and links ' +
+        'back to the source. Removed on request by the rights holder — see POLICY.md.',
+    };
+    await writeFile(path, stringify(person), 'utf8');
+    added += 1;
+    if (!quiet) console.log(`     portrait: ${person.canonical_name} (via ${host})`);
+  }
+  return added;
 }

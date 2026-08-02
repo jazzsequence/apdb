@@ -19,3 +19,8 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/89180-dimension-20/cast
         note: Cast for "Dimension 20" per TMDB.
+image:
+  url: https://live.staticflickr.com/5255/5435293138_0085665b05_b.jpg
+  licence: CC-BY-2.0
+  attribution: Baltimore Heritage
+  source: https://www.flickr.com/photos/44034762@N04/5435293138

@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { getDb } from '../../../lib/db';
+import EntityActions from '../../../components/EntityActions.astro';
 
 export async function getStaticPaths() {
   const db = await getDb();
@@ -86,4 +87,10 @@ const dates = [season.started, season.ended].filter(Boolean).join(' – ');
       </ul>
     )
   }
+  <EntityActions
+    kind="season"
+    name={`${show.title} — ${season.title ?? `Season ${season.ordinal}`}`}
+    path={`/shows/${show.id}/${season.ordinal}/`}
+    hasImage={true}
+  />
 </Base>

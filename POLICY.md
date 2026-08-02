@@ -226,7 +226,36 @@ disagreement is recorded in the source notes rather than silently resolved.
 
 Two different things, kept separate on purpose.
 
-### Portraits — freely licensed only
+### Portraits — freely licensed where possible, fair use where not
+
+Free-licence sources cover about a fifth of the people here and essentially
+none of the indie long tail this project exists for. Skid Maher has 42 credits
+and no Wikidata entry; neither do most of the Glass Cannon, Avantris or Saving
+Throw casts. Leaving them blank made the index look emptier than it is and
+answered a question nobody asked — whether a photo is *conveniently* licensed
+is not what a reader wants to know.
+
+So portraits are taken in this order:
+
+1. **Wikidata and Wikimedia Commons**, under a licence that genuinely permits
+   reuse. A stated licence is stronger provenance than a claim, so this is
+   always tried first.
+2. **Openverse**, same test.
+3. **The fan wiki that person's own credits already cite**, under the same
+   fair-use claim this policy already makes for show art, and under the same
+   constraints: thumbnail scale, one image per person, attributed, linked back,
+   used solely to identify the subject, removed on request.
+
+A person is only ever looked up on a wiki their own credits cite, so a name is
+never resolved against a wiki with nothing to do with them. A one-word name is
+only looked up when every credit points at a single wiki — otherwise "Mikey"
+would match on any wiki that happens to have a page by that name.
+
+Where no image exists, the page says so and invites one, with the licence
+question asked up front. That is deliberate: an unlicensed image someone
+uploads in good faith is a liability, and asking afterwards never works.
+
+### Portraits — the free-licence sources
 
 Photographs of people come from **Wikimedia Commons**, which publishes a
 machine-readable licence per file. Only licences that actually permit reuse are

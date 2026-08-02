@@ -1,0 +1,73 @@
+name: Add a missing image
+description: A person, show or channel here has no picture, and you know where one is.
+title: '[image] '
+labels: [image]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most of the people in this index have no portrait, because the free-licence
+        image sources barely cover indie actual play. If you know where a picture
+        lives, this is the fastest way to fix one.
+
+        **Please link to where the image lives rather than attaching a file.** We
+        need to record where it came from and under what terms, and an attachment
+        loses both.
+
+  - type: input
+    id: where
+    attributes:
+      label: Which page needs it
+      description: Paste the URL from actualplaydb.com.
+      placeholder: https://actualplaydb.com/people/skid-maher/
+    validations:
+      required: true
+
+  - type: input
+    id: image
+    attributes:
+      label: Link to the image
+      description: A direct link to the image file, or to the page it sits on.
+      placeholder: https://commons.wikimedia.org/wiki/File:Example.jpg
+    validations:
+      required: true
+
+  - type: dropdown
+    id: licence
+    attributes:
+      label: Do you know how it is licensed?
+      description: |
+        This decides whether we can use it, so a guess is worse than "not sure".
+        Freely licensed images are always preferred. Anything else is used only
+        where a fair-use claim holds — thumbnail scale, one per subject,
+        attributed and linked back. See POLICY.md.
+      options:
+        - Not sure
+        - Creative Commons (CC0, CC-BY, CC-BY-SA)
+        - Public domain
+        - Wikimedia Commons (licence shown on the file page)
+        - The subject's own photo, posted by them
+        - Copyrighted — a publicity still, wiki image or screenshot
+    validations:
+      required: true
+
+  - type: input
+    id: credit
+    attributes:
+      label: Who took it, if you know
+      description: Every licence we accept except CC0 requires attribution.
+      placeholder: Kevin Paul
+
+  - type: checkboxes
+    id: subject
+    attributes:
+      label: One check, please
+      options:
+        - label: This picture actually shows the person or show named above.
+          required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      placeholder: Taken at Gen Con 2019; they use this as their own profile picture.

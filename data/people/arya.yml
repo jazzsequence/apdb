@@ -26,3 +26,13 @@ credits:
       - tier: community
         url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+image:
+  url: https://static.wikia.nocookie.net/avantris/images/5/52/Arya_%282%29.png/revision/latest?cb=20250601024633
+  licence: fair use
+  attribution: Portrait of Arya, © its owner. Via avantris.fandom.com.
+  source: https://avantris.fandom.com/wiki/Arya
+  depicts: Arya
+  rationale: Low-resolution thumbnail used solely to identify this person in an
+    index of their credits. Non-commercial, does not substitute for the
+    original, and links back to the source. Removed on request by the rights
+    holder — see POLICY.md.

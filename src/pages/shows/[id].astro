@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getDb } from '../../lib/db';
+import EntityActions from '../../components/EntityActions.astro';
 
 export async function getStaticPaths() {
   const db = await getDb();
@@ -149,4 +150,11 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
       ))
     )
   }
+  <EntityActions
+    kind="show"
+    name={show.title}
+    path={`/shows/${show.id}/`}
+    hasImage={Boolean(show.image)}
+    caveat="systems, seasons and whether it belongs here at all have all been wrong before"
+  />
 </Base>

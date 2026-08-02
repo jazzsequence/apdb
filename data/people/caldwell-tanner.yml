@@ -29,3 +29,14 @@ credits:
     alias: default
     sources:
       - *a1
+image:
+  url: https://static.wikia.nocookie.net/notanotherdndpodcast/images/d/df/Caldwell_Tanner.jpg/revision/latest/scale-to-width-down/378?cb=20180902200935
+  licence: fair use
+  attribution: Portrait of Caldwell Tanner, © its owner. Via
+    notanotherdndpodcast.fandom.com.
+  source: https://notanotherdndpodcast.fandom.com/wiki/Caldwell_Tanner
+  depicts: Caldwell Tanner
+  rationale: Low-resolution thumbnail used solely to identify this person in an
+    index of their credits. Non-commercial, does not substitute for the
+    original, and links back to the source. Removed on request by the rights
+    holder — see POLICY.md.

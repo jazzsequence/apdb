@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getDb } from '../../lib/db';
+import EntityActions from '../../components/EntityActions.astro';
 
 export async function getStaticPaths() {
   const db = await getDb();
@@ -70,4 +71,10 @@ const totalSeasons = shows.reduce((n, s) => n + s.show.seasons.length, 0);
       </p>
     )
   }
+  <EntityActions
+    kind="channel"
+    name={channel.name}
+    path={`/channels/${channel.id}/`}
+    hasImage={true}
+  />
 </Base>

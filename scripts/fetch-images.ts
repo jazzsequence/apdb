@@ -12,6 +12,7 @@ import {
   fetchOtherSeriesArt,
   fetchPortraits,
   fetchSeriesArt,
+  fetchWikiPortraits,
 } from '../src/lib/images.js';
 
 const yt = await fetchSeriesArt();
@@ -25,3 +26,8 @@ console.log(`${archive} cover image(s) from the Internet Archive.`);
 
 const portraits = await fetchPortraits();
 console.log(`${portraits} portrait(s) from Commons and Openverse (free licences only).`);
+
+// Free licences are tried first above; the wikis cover the indie long tail
+// that Wikidata and Openverse do not, under the fair-use claim in POLICY.md.
+const wiki = await fetchWikiPortraits();
+console.log(`${wiki} portrait(s) from fan wikis (fair use).`);

@@ -24,3 +24,13 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/0/0c/KitBuss.jpg/revision/latest?cb=20201231191146
+  licence: fair use
+  attribution: Portrait of Kit Buss, © its owner. Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/Kit_Buss
+  depicts: Kit Buss
+  rationale: Low-resolution thumbnail used solely to identify this person in an
+    index of their credits. Non-commercial, does not substitute for the
+    original, and links back to the source. Removed on request by the rights
+    holder — see POLICY.md.
