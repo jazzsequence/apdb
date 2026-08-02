@@ -1,0 +1,16 @@
+id: the-lifecast
+title: The Lifecast
+channels:
+  - the-lifecast
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Shadowrun."
+links:
+  website: https://archive.org/details/Episode7_20180528
+seasons:
+  - ordinal: 1
+    game: shadowrun
+    episode_count: 4
+    started: 2016-10-18
+    ended: 2018-05-27

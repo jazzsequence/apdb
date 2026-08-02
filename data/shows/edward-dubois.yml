@@ -1,0 +1,15 @@
+id: edward-dubois
+title: Edward DuBois
+channels:
+  - edward-dubois
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: 13th Age. Uploader licence:
+  http://creativecommons.org/licenses/by-nc-nd/3.0/."
+links:
+  website: https://archive.org/details/RedSkies018PlanningAPinchOfPiracyInPort
+seasons:
+  - ordinal: 1
+    game: 13th-age
+    episode_count: 29

@@ -1,0 +1,16 @@
+id: bill-white
+title: Bill White
+channels:
+  - bill-white
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Fate. Uploader licence: http://creativecommons.org/licenses/by-nc/3.0/."
+links:
+  website: https://archive.org/details/NightWitchesInSCSession3
+seasons:
+  - ordinal: 1
+    game: fate-core
+    episode_count: 4
+    started: 2013-07-04
+    ended: 2018-07-13

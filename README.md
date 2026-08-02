@@ -196,6 +196,16 @@ phrase and per-episode casts are not guessed at.
 canonical names and, usefully, birth names. It carries almost no AP credits, so
 it is not used for them.
 
+**Internet Archive (`npm run import:archive`)** is where shows go when they
+stop — productions whose sites are gone and whose feeds are dead. No other
+index has them, because there is no live source left to find. The search and
+metadata APIs are keyless.
+
+Items are per-episode uploads rather than show records, so the work is
+grouping: `creator` is the producer, and a common title prefix across their
+uploads is a series. Systems come from the uploader's own subject tags; a
+series whose tags name no system is reported, not assigned one.
+
 ### Sources that don't work
 
 - **dungeonsanddragons.com** — serves an error page to non-browser clients;

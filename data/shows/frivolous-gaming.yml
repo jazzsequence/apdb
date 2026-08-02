@@ -1,0 +1,17 @@
+id: frivolous-gaming
+title: Frivolous Gaming
+channels:
+  - frivolous-gaming
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Red Markets. Uploader licence:
+  http://creativecommons.org/licenses/by-nc-nd/3.0/."
+links:
+  website: https://archive.org/details/Damnation01b
+seasons:
+  - ordinal: 1
+    game: red-markets
+    episode_count: 22
+    started: 2015-01-01
+    ended: 2017-05-28

@@ -1,0 +1,13 @@
+id: sunday-skypers
+title: Sunday-Skypers
+channels:
+  - sunday-skypers
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own tags: Fate."
+links:
+  website: https://archive.org/details/sunday-skypers-sns-FATE-Vol3
+seasons:
+  - ordinal: 1
+    game: fate-core
+    episode_count: 12

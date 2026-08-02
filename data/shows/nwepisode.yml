@@ -1,0 +1,14 @@
+id: nwepisode
+title: NWEpisode
+channels:
+  - team-nexuswatch
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Savage Worlds."
+links:
+  website: https://archive.org/details/nwepisode7
+seasons:
+  - ordinal: 1
+    game: savage-worlds-deluxe
+    episode_count: 6

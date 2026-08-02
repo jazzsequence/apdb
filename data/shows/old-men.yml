@@ -1,0 +1,17 @@
+id: old-men
+title: Old Men
+channels:
+  - richard-thomas-george
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Savage Worlds. Uploader licence:
+  https://creativecommons.org/licenses/by-nc-nd/4.0/."
+links:
+  website: https://archive.org/details/omgsep03
+seasons:
+  - ordinal: 1
+    game: savage-worlds-deluxe
+    episode_count: 11
+    started: 2018-01-01
+    ended: 2020-07-17

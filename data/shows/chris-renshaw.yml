@@ -1,0 +1,15 @@
+id: chris-renshaw
+title: Chris Renshaw
+channels:
+  - chris-renshaw
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Fate. Uploader licence:
+  https://creativecommons.org/licenses/by-nc-nd/4.0/."
+links:
+  website: https://archive.org/details/descent-into-avernus-outtakes-vol.-1-the-dirtbags-of-holding-159
+seasons:
+  - ordinal: 1
+    game: fate-core
+    episode_count: 21

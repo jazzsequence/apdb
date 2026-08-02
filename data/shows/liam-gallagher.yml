@@ -1,0 +1,15 @@
+id: liam-gallagher
+title: Liam Gallagher
+channels:
+  - liam-gallagher
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Dungeons & Dragons. Uploader licence:
+  http://creativecommons.org/licenses/by-nc-sa/3.0/."
+links:
+  website: https://archive.org/details/Shatteredsea0005-weFoundOurselvesInTheCrucible
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 4

@@ -1,0 +1,15 @@
+id: doc-and-oldschoolchris
+title: Doc and OldSchoolChris
+channels:
+  - doc-and-oldschoolchris
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Dungeons & Dragons. Uploader licence:
+  http://creativecommons.org/licenses/by-nc-nd/3.0/."
+links:
+  website: https://archive.org/details/N4Session4
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 4

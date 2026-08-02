@@ -1,0 +1,16 @@
+id: bone-throwers-theater
+title: Bone Throwers Theater
+channels:
+  - bone-throwers-theater
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Shadowrun. Uploader licence:
+  http://creativecommons.org/licenses/by-nc-nd/4.0/."
+links:
+  website: https://archive.org/details/btt-elements-of-war-s-1-e-24-boiling-point
+seasons:
+  - ordinal: 1
+    game: shadowrun
+    episode_count: 87
+    started: 2018-04-22

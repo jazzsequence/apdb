@@ -1,0 +1,16 @@
+id: tgif-arcade
+title: TGIF Arcade
+channels:
+  - tgif-arcade
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Powered by the Apocalypse."
+links:
+  website: https://archive.org/details/ASuicideBoothKindaShapedLikeAHorseAndroidDreamsEpisode26
+seasons:
+  - ordinal: 1
+    game: powered-by-the-apocalypse
+    episode_count: 18
+    started: 2018-05-03
+    ended: 2021-04-08

@@ -1,0 +1,15 @@
+id: mel-white
+title: Mel White
+channels:
+  - mel-white
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Savage Worlds. Uploader licence:
+  http://creativecommons.org/licenses/publicdomain/."
+links:
+  website: https://archive.org/details/ShockPhilcon
+seasons:
+  - ordinal: 1
+    game: savage-worlds-deluxe
+    episode_count: 22
