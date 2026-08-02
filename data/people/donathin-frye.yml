@@ -1,0 +1,18 @@
+id: donathin-frye
+canonical_name: Donathin Frye
+sort_name: Frye, Donathin
+aliases:
+  - id: default
+    name: Donathin Frye
+    alias_type: legal
+credits:
+  - show: tales-from-the-silt-expanse
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLQEFidMHP9SDFdobNPx330OLhRyfLzc_c
+        note: Cast listed in the show's own episode descriptions, each with the player's
+          own social link.
+    character: Gulag
+    alias: default

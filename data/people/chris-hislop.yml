@@ -1,0 +1,17 @@
+id: chris-hislop
+canonical_name: Chris Hislop
+sort_name: Hislop, Chris
+aliases:
+  - id: default
+    name: Chris Hislop
+    alias_type: legal
+credits:
+  - show: tales-from-the-silt-expanse
+    season: 1
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLQEFidMHP9SDFdobNPx330OLhRyfLzc_c
+        note: Cast listed in the show's own episode descriptions, each with the player's
+          own social link.
+    alias: default

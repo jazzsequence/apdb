@@ -1,0 +1,18 @@
+id: zcotticus
+canonical_name: Zcotticus
+sort_name: Zcotticus
+aliases:
+  - id: default
+    name: Zcotticus
+    alias_type: handle
+credits:
+  - show: sector-49-a-judge-dredd-the-worlds-of-2000-ad-actual-pl
+    season: 1
+    role: player
+    sources:
+      - tier: community
+        url: https://tablestory.fandom.com/wiki/Sector_49
+        note: Tablestory's own wiki page for Sector 49, listing the GM and each player's
+          characters.
+    character: Archie / Billy the Chimp / Tucker Morley
+    alias: default

@@ -1,0 +1,17 @@
+id: wacksteven
+canonical_name: Wacksteven
+sort_name: Wacksteven
+aliases:
+  - id: default
+    name: Wacksteven
+    alias_type: handle
+credits:
+  - show: sector-49-a-judge-dredd-the-worlds-of-2000-ad-actual-pl
+    season: 1
+    role: GM/DM
+    sources:
+      - tier: community
+        url: https://tablestory.fandom.com/wiki/Sector_49
+        note: Tablestory's own wiki page for Sector 49, listing the GM and each player's
+          characters.
+    alias: default

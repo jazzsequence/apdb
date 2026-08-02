@@ -1,0 +1,40 @@
+id: stephen
+canonical_name: Stephen
+sort_name: Stephen
+aliases:
+  - id: default
+    name: Stephen
+    alias_type: handle
+credits:
+  - show: daggerheart-one-shots
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@TheFaintDivinities
+        note: Cast stated in the show's own description for "Daggerheart Halloween One
+          Shot".
+    character: Tedeos the Simiah Ranger
+    note: The Faint Divinities credit their cast by first name only.
+    alias: default
+  - show: daggerheart-campaign-1-fireflies
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@TheFaintDivinities
+        note: Cast stated in the show's own description for "Daggerheart Halloween One
+          Shot".
+    character: Tedeos the Simiah Ranger
+    note: The Faint Divinities credit their cast by first name only.
+    alias: default
+  - show: daggerheart-open-beta
+    season: 1
+    role: host
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@TheFaintDivinities
+        note: "Cast stated in the show's own description for \"DAGGERHEART NEWS: 2 Weeks
+          Until LAUNCH | GM Talks\"."
+    note: Channel co-host and cast member.
+    alias: default

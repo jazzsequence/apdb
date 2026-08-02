@@ -1,0 +1,18 @@
+id: cord
+canonical_name: Cord
+sort_name: Cord
+aliases:
+  - id: default
+    name: Cord
+    alias_type: handle
+credits:
+  - show: tales-from-the-silt-expanse
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLQEFidMHP9SDFdobNPx330OLhRyfLzc_c
+        note: Cast listed in the show's own episode descriptions, each with the player's
+          own social link.
+    character: Kronqual
+    alias: default

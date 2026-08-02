@@ -1,0 +1,30 @@
+id: chris
+canonical_name: Chris
+sort_name: Chris
+aliases:
+  - id: default
+    name: Chris
+    alias_type: handle
+credits:
+  - show: daggerheart-one-shots
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@TheFaintDivinities
+        note: Cast stated in the show's own description for "Daggerheart Halloween One
+          Shot".
+    character: Tank Molarson the Faerie Warrior
+    note: The Faint Divinities credit their cast by first name only.
+    alias: default
+  - show: daggerheart-campaign-1-fireflies
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@TheFaintDivinities
+        note: Cast stated in the show's own description for "Daggerheart Halloween One
+          Shot".
+    character: Tank Molarson the Faerie Warrior
+    note: The Faint Divinities credit their cast by first name only.
+    alias: default

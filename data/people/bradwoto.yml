@@ -1,0 +1,18 @@
+id: bradwoto
+canonical_name: BradWOTO
+sort_name: BradWOTO
+aliases:
+  - id: default
+    name: BradWOTO
+    alias_type: handle
+credits:
+  - show: sector-49-a-judge-dredd-the-worlds-of-2000-ad-actual-pl
+    season: 1
+    role: player
+    sources:
+      - tier: community
+        url: https://tablestory.fandom.com/wiki/Sector_49
+        note: Tablestory's own wiki page for Sector 49, listing the GM and each player's
+          characters.
+    character: Ketchup / Irish
+    alias: default
