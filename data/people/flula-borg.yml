@@ -1,0 +1,19 @@
+id: flula-borg
+canonical_name: Flula Borg
+sort_name: Borg, Flula
+aliases:
+  - id: default
+    name: Flula Borg
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E5: CelebriD&D with Suicide Squad (2 August 2020)"
+    role: guest player
+    character: BL00PSI
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Flula Borg's role and
+          episode count.

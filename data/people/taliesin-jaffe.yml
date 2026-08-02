@@ -121,3 +121,14 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: celebrid-d
+    season: 1
+    role: player
+    character: Percival Fredrickstein von Musel Klossowski de Rolo III / Nullas Deepriver
+    note: Two episodes, 2017–2018.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Taliesin Jaffe's role
+          and episode count.

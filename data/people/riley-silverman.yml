@@ -1,0 +1,19 @@
+id: riley-silverman
+canonical_name: Riley Silverman
+sort_name: Silverman, Riley
+aliases:
+  - id: default
+    name: Riley Silverman
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E5: CelebriD&D with Suicide Squad (2 August 2020)"
+    role: guest GM
+    note: Game Master for the finale.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Riley Silverman's role
+          and episode count.

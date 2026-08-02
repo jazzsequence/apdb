@@ -1,0 +1,22 @@
+id: nathan-fillion
+canonical_name: Nathan Fillion
+sort_name: Fillion, Nathan
+aliases:
+  - id: default
+    name: Nathan Fillion
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E5: CelebriD&D with Suicide Squad (2 August 2020)"
+    role: guest player
+    character: Jolene Glaplok
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Nathan Fillion's role
+          and episode count.
+      - tier: reference
+        url: https://nerdist.com/article/the-suicide-squad-dungeons-dragons-celebridd-nathan-fillion-flula-borg-michael-rooker-riley-silverman/
+        note: Nerdist's own write-up of the finale names the table.

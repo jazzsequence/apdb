@@ -14,6 +14,17 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: celebrid-d
+    season: 1
+    role: player
+    character: The Headmistress / Dietrich
+    note: Four episodes, 2015–2018.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Jessica Chobot's role
+          and episode count.
 wikidata_qid: Q6187134
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/1/14/RTX_2014_-_Jessica_Chobot_%2814387683959%29_%28cropped%29.jpg

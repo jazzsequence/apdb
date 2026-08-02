@@ -213,3 +213,14 @@ credits:
         url: https://www.youtube.com/watch?v=2k8p62-DpS0
         note: Cast per the production's own description of "Prologue - The Tides of
           Wildemount | LIVE D&D with RealmSmith".
+  - show: celebrid-d
+    season: 1
+    role: GM/DM
+    note: Dungeon Master for four of the five episodes; Riley Silverman ran the
+      finale.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Matthew Mercer's role
+          and episode count.

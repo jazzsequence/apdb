@@ -1,0 +1,19 @@
+id: michael-rooker
+canonical_name: Michael Rooker
+sort_name: Rooker, Michael
+aliases:
+  - id: default
+    name: Michael Rooker
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E5: CelebriD&D with Suicide Squad (2 August 2020)"
+    role: guest player
+    character: Arnold
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Michael Rooker's role
+          and episode count.

@@ -118,3 +118,14 @@ credits:
         url: https://geekandsundry.fandom.com/wiki/Titansgrave
         note: Cast per Geek & Sundry and contemporary coverage. The playlist description
           is a credits roll, not a cast list.
+  - show: celebrid-d
+    season: 1
+    role: player
+    character: Vex'ahlia
+    note: Two episodes, 2015–2017.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Laura Bailey's role and
+          episode count.

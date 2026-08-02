@@ -1,6 +1,7 @@
 id: celebrid-d
 title: CelebriD&D
 channels:
+  - nerdist
   - geek-and-sundry
 format: video
 status: unknown
@@ -13,7 +14,7 @@ links:
 seasons:
   - ordinal: 1
     game: dnd-5e
-    episode_count: 6
+    episode_count: 5
 image:
   url: https://i.ytimg.com/vi/yLEMb_RIZ3o/hqdefault.jpg
   licence: fair use

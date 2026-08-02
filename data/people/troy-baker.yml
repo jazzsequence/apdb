@@ -1,0 +1,19 @@
+id: troy-baker
+canonical_name: Troy Baker
+sort_name: Baker, Troy
+aliases:
+  - id: default
+    name: Troy Baker
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E4: CelebriD&D with Terry Crews (2 August 2018)"
+    role: guest player
+    character: Captain Arnost Windborn
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Troy Baker's role and
+          episode count.

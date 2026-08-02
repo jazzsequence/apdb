@@ -1,0 +1,19 @@
+id: vin-diesel
+canonical_name: Vin Diesel
+sort_name: Diesel, Vin
+aliases:
+  - id: default
+    name: Vin Diesel
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E1: D&Diesel (25 October 2015)"
+    role: guest player
+    character: Kaulder
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Vin Diesel's role and
+          episode count.

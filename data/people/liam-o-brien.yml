@@ -137,3 +137,14 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
         note: Cast per Geek & Sundry.
+  - show: celebrid-d
+    season: 1
+    episode: "S1E3: CelebriD&D with Game of Thrones' John Bradley (3 August 2017)"
+    role: guest player
+    character: Vax'ildan
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Liam O'Brien's role and
+          episode count.

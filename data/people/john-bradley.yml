@@ -1,0 +1,19 @@
+id: john-bradley
+canonical_name: John Bradley
+sort_name: Bradley, John
+aliases:
+  - id: default
+    name: John Bradley
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E3: CelebriD&D with Game of Thrones' John Bradley (3 August 2017)"
+    role: guest player
+    character: Mankum
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists John Bradley's role and
+          episode count.

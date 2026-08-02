@@ -17,6 +17,20 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
+  - show: celebrid-d
+    season: 1
+    episode: "S1E2: CelebriD&D with Joe Manganiello (24 March 2017)"
+    role: guest player
+    character: Arkhan
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Joe Manganiello's role
+          and episode count.
+      - tier: reference
+        url: https://nerdist.com/article/joe-manganiello-celebridd-arkhan-the-cruel/
+        note: Nerdist's own write-up of the episode names the table.
 wikidata_qid: Q470005
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Joe_Manganiello_July_2015.jpg

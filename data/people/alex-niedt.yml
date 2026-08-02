@@ -1,0 +1,19 @@
+id: alex-niedt
+canonical_name: Alex Niedt
+sort_name: Niedt, Alex
+aliases:
+  - id: default
+    name: Alex Niedt
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E1: D&Diesel (25 October 2015)"
+    role: editor
+    note: Re-recording mixer, sound designer and sound editor.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Alex Niedt's role and
+          episode count.

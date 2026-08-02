@@ -1,0 +1,18 @@
+id: ben-mekler
+canonical_name: Ben Mekler
+sort_name: Mekler, Ben
+aliases:
+  - id: default
+    name: Ben Mekler
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E1: D&Diesel (25 October 2015)"
+    role: director
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Ben Mekler's role and
+          episode count.

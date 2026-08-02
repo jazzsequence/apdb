@@ -305,6 +305,7 @@ export const CreditRole = z.enum([
   'editor',
   'composer',
   'writer',
+  'director',
 ]);
 
 /**

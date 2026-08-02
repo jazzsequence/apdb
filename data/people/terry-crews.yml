@@ -1,0 +1,19 @@
+id: terry-crews
+canonical_name: Terry Crews
+sort_name: Crews, Terry
+aliases:
+  - id: default
+    name: Terry Crews
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E4: CelebriD&D with Terry Crews (2 August 2018)"
+    role: guest player
+    character: Thodak the Blacksmith
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Terry Crews's role and
+          episode count.

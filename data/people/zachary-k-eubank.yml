@@ -1,0 +1,18 @@
+id: zachary-k-eubank
+canonical_name: Zachary K. Eubank
+sort_name: Eubank, Zachary K.
+aliases:
+  - id: default
+    name: Zachary K. Eubank
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    episode: "S1E1: D&Diesel (25 October 2015)"
+    role: director
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Zachary K. Eubank's
+          role and episode count.

@@ -1,0 +1,18 @@
+id: johnny-wickham
+canonical_name: Johnny Wickham
+sort_name: Wickham, Johnny
+aliases:
+  - id: default
+    name: Johnny Wickham
+    alias_type: legal
+credits:
+  - show: celebrid-d
+    season: 1
+    role: producer
+    note: Executive producer, two episodes, 2017.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Johnny Wickham's role
+          and episode count.
