@@ -17,7 +17,8 @@
     "sweep:youtube": "tsx scripts/sweep-youtube.ts",
     "fetch:images": "tsx scripts/fetch-images.ts",
     "import:archive": "tsx scripts/import-archive.ts",
-    "find:wikis": "tsx scripts/find-wikis.ts"
+    "find:wikis": "tsx scripts/find-wikis.ts",
+    "close:gaps": "tsx scripts/close-gaps.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

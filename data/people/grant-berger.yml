@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live! (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: grant-berger
 canonical_name: Grant Berger
 sort_name: Berger, Grant
@@ -31,8 +25,8 @@ credits:
         note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-live-strange-aeons
-    season: 1
+  - show: glass-cannon-podcast
+    season: 4
     role: player
     alias: default
     sources:
@@ -40,8 +34,8 @@ credits:
         note: Glass Cannon Live! - Strange Aeons cast, via the
           glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: side-quest-side-sesh
-    season: 1
+  - show: glass-cannon-podcast
+    season: 9
     role: player
     alias: default
     sources:
@@ -66,8 +60,8 @@ credits:
       - url: https://glasscannonnetwork.fandom.com/wiki/Delta_Green
         note: Delta Green cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: star-wars-age-of-republic
-    season: 1
+  - show: new-game-who-dis
+    season: 13
     role: player
     alias: default
     sources:
@@ -75,8 +69,8 @@ credits:
         note: "Star Wars: Age of Republic cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: dungeons-dragons
-    season: 1
+  - show: new-game-who-dis
+    season: 5
     role: player
     alias: default
     sources:
@@ -93,8 +87,8 @@ credits:
         note: Crypt of the Everflame cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: tales-from-the-loop
-    season: 1
+  - show: new-game-who-dis
+    season: 14
     role: player
     alias: default
     sources:
@@ -102,8 +96,8 @@ credits:
         note: Tales From The Loop cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-2
-    season: 1
+  - show: get-in-the-trunk
+    season: 2
     role: player
     alias: default
     sources:
@@ -111,24 +105,24 @@ credits:
         note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: aliens-rpg
-    season: 1
+  - show: new-game-who-dis
+    season: 2
     role: player
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Aliens_RPG
         note: Aliens RPG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: fiasco
-    season: 1
+  - show: new-game-who-dis
+    season: 6
     role: player
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Fiasco
         note: Fiasco cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-3
-    season: 1
+  - show: get-in-the-trunk
+    season: 3
     role: GM/DM
     alias: default
     sources:
@@ -136,8 +130,8 @@ credits:
         note: "Get In The Trunk: Season 3 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: warhammer-40k-wrath-glory
-    season: 1
+  - show: new-game-who-dis
+    season: 20
     role: GM/DM
     alias: default
     sources:
@@ -145,8 +139,8 @@ credits:
         note: "Warhammer 40K: Wrath & Glory cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: dungeon-crawl-classics
-    season: 1
+  - show: new-game-who-dis
+    season: 4
     role: player
     alias: default
     sources:
@@ -154,8 +148,8 @@ credits:
         note: Dungeon Crawl Classics cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: twilight-2000
-    season: 1
+  - show: new-game-who-dis
+    season: 17
     role: player
     alias: default
     sources:
@@ -163,16 +157,16 @@ credits:
         note: "Twilight: 2000 cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: traveller
-    season: 1
+  - show: new-game-who-dis
+    season: 16
     role: player
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Traveller
         note: Traveller cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: the-one-ring
-    season: 1
+  - show: new-game-who-dis
+    season: 15
     role: player
     alias: default
     sources:
@@ -180,8 +174,8 @@ credits:
         note: The One Ring cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-podcast-giantslayer
-    season: 1
+  - show: glass-cannon-podcast
+    season: 6
     role: player
     alias: default
     sources:
@@ -194,7 +188,43 @@ credits:
     role: player
     alias: default
     sources:
-      - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
         note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: disorganized-play
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Disorganized_Play
+        note: Disorganized Play cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: the-thunder-company
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/The_Thunder_Company
+        note: The Thunder Company cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

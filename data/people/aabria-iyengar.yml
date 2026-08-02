@@ -1,5 +1,5 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone (CC-BY-SA).
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -180,6 +180,14 @@ credits:
     season: 3
     role: host
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: tales-from-salt-bay
+    season: 1
+    role: player
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
+        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

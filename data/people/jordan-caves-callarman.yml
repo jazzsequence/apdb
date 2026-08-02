@@ -1,0 +1,43 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: jordan-caves-callarman
+canonical_name: Jordan Caves-Callarman
+sort_name: Caves-Callarman, Jordan
+links: {}
+aliases:
+  - id: default
+    name: Jordan Caves-Callarman
+    alias_type: legal
+credits:
+  - show: prickly-tallstag-and-the-danger-seekers-pears
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Prickly_Tallstag_and_the_Danger_Seekers%2C_Pears
+        note: Prickly Tallstag and the Danger Seekers, Pears cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: twilight-protocol
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Twilight_Protocol
+        note: Twilight Protocol cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: the-last-vhs-store
+    season: 1
+    role: player
+    character: '"Beamer" Verhalen'
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store
+        note: The Last VHS Store cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

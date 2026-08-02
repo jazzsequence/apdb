@@ -9,3 +9,25 @@ links:
 seasons:
   - ordinal: 1
     game: pathfinder-2e
+  - ordinal: 2
+    title: Burnt Offerings
+    game: pathfinder-2e
+  - ordinal: 3
+    title: Fortress of the Stone Giants
+    game: pathfinder-2e
+  - ordinal: 4
+    title: The Hook Mountain Massacre
+    game: pathfinder-2e
+  - ordinal: 5
+    title: The Skinsaw Murders
+    game: pathfinder-2e
+image:
+  url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/8/8b/Legacy_of_the_Ancients.jpg/revision/latest/scale-to-width-down/400?cb=20210312002507
+  licence: fair use
+  attribution: Legacy of the Ancients series art, © its producers. Via
+    glasscannonnetwork.fandom.com.
+  source: https://glasscannonnetwork.fandom.com/wiki/File:Legacy_of_the_Ancients.jpg
+  depicts: Series art for Legacy of the Ancients
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

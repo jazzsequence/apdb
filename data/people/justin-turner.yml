@@ -1,0 +1,23 @@
+id: justin-turner
+canonical_name: Justin Turner
+sort_name: Turner, Justin
+aliases:
+  - id: default
+    name: Justin Turner
+    alias_type: legal
+credits:
+  - show: dune-mini-series
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Dune_Mini-Series
+        note: Dune Mini-Series cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+wikidata_qid: Q3190505
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/2/25/Justin_Turner.jpg
+  licence: CC-BY-SA-4.0
+  attribution: TonyTheTiger
+  source: https://commons.wikimedia.org/wiki/File:Justin_Turner.jpg

@@ -1,7 +1,13 @@
 id: jason-bulmahn
 canonical_name: Jason Bulmahn
 sort_name: Bulmahn, Jason
+wikidata_qid: Q3807389
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/1/16/JasonBulmahn2010Ennies.JPG
+  licence: CC-BY-SA-2.0
+  attribution: "Jason_Bulmahn.jpg: Carlos A, Smith derivative work: BOZ at en.wikipedia"
+  source: https://commons.wikimedia.org/wiki/File:JasonBulmahn2010Ennies.JPG
 aliases:
   - id: default
     name: Jason Bulmahn
@@ -16,18 +22,30 @@ credits:
         note: Crypt of the Everflame cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: marvel-super-heroes
+  - show: new-game-who-dis
+    season: 7
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Marvel_Super_Heroes
+        note: Marvel Super Heroes cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: the-thunder-company
     season: 1
     role: GM/DM
     alias: default
     sources:
       - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Marvel_Super_Heroes
-        note: Marvel Super Heroes cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-wikidata_qid: Q3807389
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/1/16/JasonBulmahn2010Ennies.JPG
-  licence: CC-BY-SA-2.0
-  attribution: "Jason_Bulmahn.jpg: Carlos A, Smith derivative work: BOZ at en.wikipedia"
-  source: https://commons.wikimedia.org/wiki/File:JasonBulmahn2010Ennies.JPG
+        url: https://the-glass-cannon-network.fandom.com/wiki/The_Thunder_Company
+        note: The Thunder Company cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

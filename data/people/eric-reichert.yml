@@ -1,0 +1,32 @@
+id: eric-reichert
+canonical_name: Eric Reichert
+sort_name: Reichert, Eric
+links: {}
+aliases:
+  - id: default
+    name: Eric Reichert
+    alias_type: legal
+credits:
+  - show: rpg-exploration-society
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/RPG_Exploration_Society
+        note: RPG Exploration Society cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: tales-from-salt-bay
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
+        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/b/be/Tom_Reichert%2C_Parker_Middleton_and_Charles_N._Davis%2C_May_2016.jpg
+  licence: CC-BY-2.0
+  attribution: Peabody Awards
+  source: https://commons.wikimedia.org/w/index.php?curid=54408687

@@ -9,3 +9,70 @@ links:
 seasons:
   - ordinal: 1
     game: pathfinder-2e
+  - ordinal: 2
+    title: Aliens RPG
+    game: pathfinder-2e
+  - ordinal: 3
+    title: Call of Cthulhu
+    game: pathfinder-2e
+  - ordinal: 4
+    title: Dungeon Crawl Classics
+    game: pathfinder-2e
+  - ordinal: 5
+    title: Dungeons & Dragons
+    game: pathfinder-2e
+  - ordinal: 6
+    title: Fiasco
+    game: pathfinder-2e
+  - ordinal: 7
+    title: Marvel Super Heroes
+    game: pathfinder-2e
+  - ordinal: 8
+    title: MÖRK BORG
+    game: pathfinder-2e
+  - ordinal: 9
+    title: Paranoia
+    game: pathfinder-2e
+  - ordinal: 10
+    title: Runequest
+    game: pathfinder-2e
+  - ordinal: 11
+    title: Something is Wrong Here
+    game: pathfinder-2e
+  - ordinal: 12
+    title: Star Trek Adventures RPG
+    game: pathfinder-2e
+  - ordinal: 13
+    title: "Star Wars: Age of Republic"
+    game: pathfinder-2e
+  - ordinal: 14
+    title: Tales From The Loop
+    game: pathfinder-2e
+  - ordinal: 15
+    title: The One Ring
+    game: pathfinder-2e
+  - ordinal: 16
+    title: Traveller
+    game: pathfinder-2e
+  - ordinal: 17
+    title: "Twilight: 2000"
+    game: pathfinder-2e
+  - ordinal: 18
+    title: "Vampire: The Masquerade"
+    game: pathfinder-2e
+  - ordinal: 19
+    title: "Warhammer 40k: Deathwatch"
+    game: pathfinder-2e
+  - ordinal: 20
+    title: "Warhammer 40K: Wrath & Glory"
+    game: pathfinder-2e
+image:
+  url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/1/16/New_Game%2C_Who_Dis.jpg/revision/latest/scale-to-width-down/400?cb=20210310001722
+  licence: fair use
+  attribution: New Game, Who Dis? series art, © its producers. Via
+    glasscannonnetwork.fandom.com.
+  source: https://glasscannonnetwork.fandom.com/wiki/File:New_Game,_Who_Dis.jpg
+  depicts: Series art for New Game, Who Dis?
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

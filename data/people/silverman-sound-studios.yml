@@ -1,0 +1,23 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Ghosts_of_Saltmarsh (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: silverman-sound-studios
+canonical_name: Silverman Sound Studios
+sort_name: Studios, Silverman Sound
+aliases:
+  - id: default
+    name: Silverman Sound Studios
+    alias_type: legal
+credits:
+  - show: ghosts-of-saltmarsh
+    season: 1
+    role: composer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Ghosts_of_Saltmarsh
+        note: Ghosts of Saltmarsh cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

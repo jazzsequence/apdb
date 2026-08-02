@@ -1,7 +1,19 @@
+# Credits imported from the-glass-cannon-network.fandom.com on 2026-08-02.
+# Source: https://the-glass-cannon-network.fandom.com/wiki/Legacy_of_the_Ancients (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: nick-lowe
 canonical_name: Nick Lowe
 sort_name: Lowe, Nick
+wikidata_qid: Q962095
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/7/72/Nick_Lowe_at_Knuckleheads_Saloon.png
+  licence: CC-BY-SA-3.0
+  attribution: K8 fan
+  source: https://commons.wikimedia.org/wiki/File:Nick_Lowe_at_Knuckleheads_Saloon.png
 aliases:
   - id: default
     name: Nick Lowe
@@ -21,13 +33,16 @@ credits:
     role: player
     alias: default
     sources:
-      - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+      - url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
-wikidata_qid: Q962095
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/7/72/Nick_Lowe_at_Knuckleheads_Saloon.png
-  licence: CC-BY-SA-3.0
-  attribution: K8 fan
-  source: https://commons.wikimedia.org/wiki/File:Nick_Lowe_at_Knuckleheads_Saloon.png
+        tier: community
+  - show: legacy-of-the-ancients
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://the-glass-cannon-network.fandom.com/wiki/Legacy_of_the_Ancients
+        note: Legacy of the Ancients cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

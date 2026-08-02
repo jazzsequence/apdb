@@ -1,0 +1,42 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: jameson-mcdaniel
+canonical_name: Jameson McDaniel
+sort_name: McDaniel, Jameson
+links: {}
+aliases:
+  - id: default
+    name: Jameson McDaniel
+    alias_type: legal
+credits:
+  - show: the-lost-brigade
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade
+        note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: barky-s-brigade
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Barky's_Brigade
+        note: Barky's Brigade cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: 2015-star-wars-holiday-special
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
+        note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.

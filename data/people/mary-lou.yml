@@ -2,13 +2,18 @@ id: mary-lou
 canonical_name: Mary Lou
 sort_name: Lou, Mary
 links: {}
+image:
+  url: https://live.staticflickr.com/2930/14274992203_342db0008f_b.jpg
+  licence: CC-BY-2.0
+  attribution: kevin dooley
+  source: https://www.flickr.com/photos/12836528@N00/14274992203
 aliases:
   - id: default
     name: Mary Lou
     alias_type: legal
 credits:
-  - show: the-game-garage
-    season: 1
+  - show: glass-cannon-network-presents
+    season: 2
     role: player
     alias: default
     sources:
@@ -25,17 +30,30 @@ credits:
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-7
+  - show: get-in-the-trunk
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
+        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: get-in-the-trunk
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: blood-of-the-wild
     season: 1
     role: player
     alias: default
     sources:
       - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
-        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-image:
-  url: https://live.staticflickr.com/2930/14274992203_342db0008f_b.jpg
-  licence: CC-BY-2.0
-  attribution: kevin dooley
-  source: https://www.flickr.com/photos/12836528@N00/14274992203
+        url: https://the-glass-cannon-network.fandom.com/wiki/Blood_of_the_Wild
+        note: Blood of the Wild cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

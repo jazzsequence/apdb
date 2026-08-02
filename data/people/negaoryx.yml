@@ -1,0 +1,23 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: negaoryx
+canonical_name: NegaOryx
+sort_name: NegaOryx
+aliases:
+  - id: default
+    name: NegaOryx
+    alias_type: legal
+credits:
+  - show: tales-from-salt-bay
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
+        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

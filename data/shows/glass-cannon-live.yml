@@ -11,6 +11,18 @@ seasons:
   - ordinal: 1
     game: pathfinder-2e
     episode_count: 100
+  - ordinal: 2
+    title: Dreams of the Yellow King
+    game: pathfinder-2e
+  - ordinal: 3
+    title: In Search of Sanity
+    game: pathfinder-2e
+  - ordinal: 4
+    title: The Thrushmoor Terror
+    game: pathfinder-2e
+  - ordinal: 5
+    title: The Whisper Out of Time
+    game: pathfinder-2e
 image:
   url: https://i.ytimg.com/vi/0UAqWotIAUw/hqdefault.jpg
   licence: fair use

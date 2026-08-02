@@ -2,13 +2,18 @@ id: anne-richmond
 canonical_name: Anne Richmond
 sort_name: Richmond, Anne
 links: {}
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/e/e5/William_Holl_the_Younger_-_Mrs_Ann_Richmond_-_B1977.14.12955_-_Yale_Center_for_British_Art.jpg
+  licence: CC0
+  attribution: William Holl
+  source: https://commons.wikimedia.org/w/index.php?curid=113510951
 aliases:
   - id: default
     name: Anne Richmond
     alias_type: legal
 credits:
-  - show: dungeons-dragons
-    season: 1
+  - show: new-game-who-dis
+    season: 5
     role: GM/DM
     alias: default
     sources:
@@ -16,17 +21,21 @@ credits:
         note: Dungeons & Dragons cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: tales-from-the-loop
-    season: 1
+  - show: new-game-who-dis
+    season: 14
     role: player
     alias: default
     sources:
-      - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Tales_From_The_Loop
+      - url: https://glasscannonnetwork.fandom.com/wiki/Tales_From_The_Loop
         note: Tales From The Loop cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/e/e5/William_Holl_the_Younger_-_Mrs_Ann_Richmond_-_B1977.14.12955_-_Yale_Center_for_British_Art.jpg
-  licence: CC0
-  attribution: William Holl
-  source: https://commons.wikimedia.org/w/index.php?curid=113510951
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

@@ -1,0 +1,60 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: meghan-caves
+canonical_name: Meghan Caves
+sort_name: Caves, Meghan
+links: {}
+aliases:
+  - id: default
+    name: Meghan Caves
+    alias_type: legal
+credits:
+  - show: prickly-tallstag-and-the-danger-seekers-pears
+    season: 1
+    role: player
+    character: Thola Khalid
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Prickly_Tallstag_and_the_Danger_Seekers%2C_Pears
+        note: Prickly Tallstag and the Danger Seekers, Pears cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: pirates-of-salt-bay
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: mysterium
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Mysterium
+        note: Mysterium cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: ghosts-of-saltmarsh
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Ghosts_of_Saltmarsh
+        note: Ghosts of Saltmarsh cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: deadlands-lawless
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless
+        note: "Deadlands: Lawless cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA."

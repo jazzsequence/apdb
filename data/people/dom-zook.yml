@@ -1,0 +1,212 @@
+id: dom-zook
+canonical_name: Dom Zook
+sort_name: Zook, Dom
+links: {}
+aliases:
+  - id: default
+    name: Dom Zook
+    alias_type: legal
+credits:
+  - show: the-ironkeep-chronicles
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/The_Ironkeep_Chronicles
+        note: The Ironkeep Chronicles cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: prickly-tallstag-and-the-danger-seekers-pears
+    season: 1
+    role: player
+    character: Lian Calabra
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Prickly_Tallstag_and_the_Danger_Seekers%2C_Pears
+        note: Prickly Tallstag and the Danger Seekers, Pears cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: pirates-of-salt-bay
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: black-bag
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Black_Bag
+        note: Black Bag cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dark-lanterns
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Dark_Lanterns
+        note: Dark Lanterns cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: mysterium
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Mysterium
+        note: Mysterium cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: rpg-exploration-society
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/RPG_Exploration_Society
+        note: RPG Exploration Society cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: pathfinder-acme-livestream
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pathfinder_-_ACME_Livestream
+        note: Pathfinder - ACME cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: barky-s-brigade
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Barky's_Brigade
+        note: Barky's Brigade cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: pugmire-homeward-bound
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pugmire%3A_Homeward_Bound
+        note: "Pugmire: Homeward Bound cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: black-bag-vikings
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Black_Bag%3A_Vikings
+        note: "Black Bag: Vikings cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: the-broken-pact
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/The_Broken_Pact
+        note: The Broken Pact cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: ghosts-of-saltmarsh
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Ghosts_of_Saltmarsh
+        note: Ghosts of Saltmarsh cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: monday-night-dungeon-fight
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Monday_Night_Dungeon_Fight
+        note: Monday Night Dungeon Fight cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: miss-adventures
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Miss_Adventures
+        note: Miss Adventures cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: hoi-chummer
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Hoi_Chummer!
+        note: Hoi Chummer! cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dark-sun
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Dark_Sun
+        note: Dark Sun cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: call-of-cthulhu-halloween-2015
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Call_of_Cthulhu_-_Halloween_2015
+        note: Call of Cthulhu - Halloween 2015 cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: roll-for-shoes-the-imps-of-hell
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Roll_for_Shoes_-_%22The_Imps_of_Hell%22
+        note: Roll for Shoes - "The Imps of Hell" cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dinner-dragons
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Dinner_%26_Dragons
+        note: Dinner & Dragons cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: deadlands-lawless
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless
+        note: "Deadlands: Lawless cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: dice-ex-machina
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Dice_Ex_Machina
+        note: Dice Ex Machina cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: all-games-no-masters
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/All_Games_No_Masters
+        note: All Games No Masters cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

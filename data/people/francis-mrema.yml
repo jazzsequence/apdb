@@ -2,6 +2,11 @@ id: francis-mrema
 canonical_name: Francis Mrema
 sort_name: Mrema, Francis
 links: {}
+image:
+  url: https://live.staticflickr.com/65535/52195806613_5f2769b5f0_b.jpg
+  licence: CC-BY-2.0
+  attribution: UN Biodiversity
+  source: https://www.flickr.com/photos/150988932@N04/52195806613
 aliases:
   - id: default
     name: Francis Mrema
@@ -16,8 +21,8 @@ credits:
         note: Cyberpunk Red cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-4
-    season: 1
+  - show: get-in-the-trunk
+    season: 4
     role: player
     alias: default
     sources:
@@ -25,8 +30,8 @@ credits:
         note: "Get In The Trunk: Season 4 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: get-in-the-trunk-season-5
-    season: 1
+  - show: get-in-the-trunk
+    season: 5
     role: player
     alias: default
     sources:
@@ -34,17 +39,30 @@ credits:
         note: "Get In The Trunk: Season 5 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: get-in-the-trunk-season-6
+  - show: get-in-the-trunk
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_6
+        note: "Get In The Trunk: Season 6 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk
     season: 1
     role: player
     alias: default
     sources:
       - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_6
-        note: "Get In The Trunk: Season 6 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-image:
-  url: https://live.staticflickr.com/65535/52195806613_5f2769b5f0_b.jpg
-  licence: CC-BY-2.0
-  attribution: UN Biodiversity
-  source: https://www.flickr.com/photos/150988932@N04/52195806613
+        url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

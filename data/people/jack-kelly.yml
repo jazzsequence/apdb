@@ -1,0 +1,23 @@
+id: jack-kelly
+canonical_name: Jack Kelly
+sort_name: Kelly, Jack
+aliases:
+  - id: default
+    name: Jack Kelly
+    alias_type: legal
+credits:
+  - show: masks
+    season: 1
+    role: player
+    character: Buckshot
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Masks
+        note: Masks cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+wikidata_qid: Q1253621
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/2/28/Jack_Kelly_1957.JPG
+  licence: public domain
+  attribution: ABC Television
+  source: https://commons.wikimedia.org/wiki/File:Jack_Kelly_1957.JPG

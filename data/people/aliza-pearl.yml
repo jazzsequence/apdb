@@ -1,6 +1,13 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Dune_Mini-Series (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: aliza-pearl
 canonical_name: Aliza Pearl
 sort_name: Pearl, Aliza
+links: {}
 aliases:
   - id: default
     name: Aliza Pearl
@@ -12,5 +19,14 @@ credits:
     character: Chelsea
     alias: default
     sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
+      - url: https://en.wikipedia.org/wiki/L.A._by_Night
+        tier: reference
+  - show: dune-mini-series
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Dune_Mini-Series
+        note: Dune Mini-Series cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

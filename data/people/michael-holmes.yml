@@ -1,0 +1,33 @@
+id: michael-holmes
+canonical_name: Michael Holmes
+sort_name: Holmes, Michael
+links: {}
+aliases:
+  - id: default
+    name: Michael Holmes
+    alias_type: legal
+credits:
+  - show: phoenix-dawn-command
+    season: 1
+    role: player
+    character: Ink
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Phoenix_Dawn_Command
+        note: Phoenix Dawn Command cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: masks
+    season: 1
+    role: player
+    character: Kid Stardust
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Masks
+        note: Masks cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/6/66/Melinda_Webber%2C_Michael_Holmes_Royal_Society_Auckland_2023_%28cropped%29.jpg
+  licence: CC-BY-4.0
+  attribution: Royal Society Te Apārangi
+  source: https://commons.wikimedia.org/w/index.php?curid=142173139

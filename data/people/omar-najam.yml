@@ -1,5 +1,5 @@
-# Credits imported from dimension20.fandom.com on 2026-08-01.
-# Source: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers (CC-BY-SA).
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store (CC-BY-SA).
 #
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
@@ -7,6 +7,7 @@
 id: omar-najam
 canonical_name: Omar Najam
 sort_name: Najam, Omar
+links: {}
 aliases:
   - id: default
     name: Omar Najam
@@ -18,7 +19,16 @@ credits:
     character: Prince Andhera
     alias: default
     sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers
+      - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_%26_Flowers
         note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: the-last-vhs-store
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Last_VHS_Store
+        note: The Last VHS Store cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.

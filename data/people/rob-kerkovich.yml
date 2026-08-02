@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7 (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: rob-kerkovich
 canonical_name: Rob Kerkovich
 sort_name: Kerkovich, Rob
@@ -13,8 +7,8 @@ aliases:
     name: Rob Kerkovich
     alias_type: legal
 credits:
-  - show: time-for-chaos
-    season: 1
+  - show: glass-cannon-network-presents
+    season: 3
     role: player
     alias: default
     sources:
@@ -31,12 +25,21 @@ credits:
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-7
+  - show: get-in-the-trunk
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
+        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: get-in-the-trunk
     season: 1
     role: player
     alias: default
     sources:
       - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
-        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
+        url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

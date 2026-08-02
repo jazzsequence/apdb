@@ -11,6 +11,12 @@ seasons:
   - ordinal: 1
     game: traveller
     episode_count: 20
+  - ordinal: 2
+    title: Voyagers of the Jump Season 1
+    game: pathfinder-2e
+  - ordinal: 3
+    title: Voyagers of the Jump Season 2
+    game: pathfinder-2e
 image:
   url: https://i.ytimg.com/vi/_5ESEkFoOdE/hqdefault.jpg
   licence: fair use

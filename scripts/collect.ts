@@ -340,9 +340,17 @@ async function collectFromWiki(existingPeople: Person[], apply: boolean): Promis
 
   // Guest groups arrive already distinguished from main cast by the wiki, which
   // is the long-tail case this adapter exists for.
-  const wanted: { person: WikiPerson; role: CreditRole }[] = campaign.credits.flatMap((group) =>
-    group.people.map((person) => ({ person, role: group.role })),
-  );
+  // One person can appear in two fields (a GM named in the infobox and again
+  // in prose); that is one credit, not two.
+  const seenPerson = new Set<string>();
+  const wanted: { person: WikiPerson; role: CreditRole }[] = campaign.credits
+    .flatMap((group) => group.people.map((person) => ({ person, role: group.role })))
+    .filter(({ person, role }) => {
+      const k = `${person.name.toLowerCase()}|${role}`;
+      if (seenPerson.has(k)) return false;
+      seenPerson.add(k);
+      return true;
+    });
 
   // Preview before writing. The single most useful check on this whole
   // pipeline is a human reading what it is about to claim, next to the page it

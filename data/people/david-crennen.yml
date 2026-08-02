@@ -1,0 +1,41 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: david-crennen
+canonical_name: David Crennen
+sort_name: Crennen, David
+links: {}
+aliases:
+  - id: default
+    name: David Crennen
+    alias_type: legal
+credits:
+  - show: never-tell-me-the-odds
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Never_Tell_Me_the_Odds
+        note: Never Tell Me the Odds cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: crit-juice
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Crit_Juice
+        note: Crit Juice cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: 2015-star-wars-holiday-special
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
+        note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.

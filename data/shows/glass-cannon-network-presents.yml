@@ -9,3 +9,19 @@ links:
 seasons:
   - ordinal: 1
     game: pathfinder-2e
+  - ordinal: 2
+    title: The Game Garage
+    game: pathfinder-2e
+  - ordinal: 3
+    title: Time For Chaos
+    game: pathfinder-2e
+image:
+  url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/e/ed/GCNP.jpg/revision/latest/scale-to-width-down/400?cb=20220304151311
+  licence: fair use
+  attribution: Glass Cannon Network Presents... series art, © its producers. Via
+    glasscannonnetwork.fandom.com.
+  source: https://glasscannonnetwork.fandom.com/wiki/File:GCNP.jpg
+  depicts: Series art for Glass Cannon Network Presents...
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

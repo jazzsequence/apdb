@@ -1,0 +1,34 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: havana-mahoney
+canonical_name: Havana Mahoney
+sort_name: Mahoney, Havana
+links: {}
+aliases:
+  - id: default
+    name: Havana Mahoney
+    alias_type: legal
+credits:
+  - show: the-lost-brigade
+    season: 1
+    role: player
+    character: Theronna
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade
+        note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: tales-from-salt-bay
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
+        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

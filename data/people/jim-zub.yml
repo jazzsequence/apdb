@@ -1,23 +1,33 @@
 id: jim-zub
 canonical_name: Jim Zub
 sort_name: Zub, Jim
-aliases:
-  - id: default
-    name: Jim Zub
-    alias_type: legal
-credits:
-  - show: marvel-super-heroes
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Marvel_Super_Heroes
-        note: Marvel Super Heroes cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
 wikidata_qid: Q61045231
+links: {}
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Jim_Zub_at_MCM_Comic_Con_London%2C_May_2025.jpg
   licence: CC-BY-SA-4.0
   attribution: DavidPMaynard
   source: https://commons.wikimedia.org/wiki/File:Jim_Zub_at_MCM_Comic_Con_London%2C_May_2025.jpg
+aliases:
+  - id: default
+    name: Jim Zub
+    alias_type: legal
+credits:
+  - show: new-game-who-dis
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Marvel_Super_Heroes
+        note: Marvel Super Heroes cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

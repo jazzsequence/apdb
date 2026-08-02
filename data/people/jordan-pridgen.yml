@@ -1,0 +1,34 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Masks (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: jordan-pridgen
+canonical_name: Jordan Pridgen
+sort_name: Pridgen, Jordan
+links: {}
+aliases:
+  - id: default
+    name: Jordan Pridgen
+    alias_type: legal
+credits:
+  - show: prickly-tallstag-and-the-danger-seekers-pears
+    season: 1
+    role: player
+    character: Helm Nemetsk
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Prickly_Tallstag_and_the_Danger_Seekers%2C_Pears
+        note: Prickly Tallstag and the Danger Seekers, Pears cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: masks
+    season: 1
+    role: player
+    character: Swole
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Masks
+        note: Masks cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.

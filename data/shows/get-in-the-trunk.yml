@@ -9,3 +9,31 @@ links:
 seasons:
   - ordinal: 1
     game: pathfinder-2e
+  - ordinal: 2
+    title: "Get In The Trunk: Season 2"
+    game: pathfinder-2e
+  - ordinal: 3
+    title: "Get In The Trunk: Season 3"
+    game: pathfinder-2e
+  - ordinal: 4
+    title: "Get In The Trunk: Season 4"
+    game: pathfinder-2e
+  - ordinal: 5
+    title: "Get In The Trunk: Season 5"
+    game: pathfinder-2e
+  - ordinal: 6
+    title: "Get In The Trunk: Season 6"
+    game: pathfinder-2e
+  - ordinal: 7
+    title: "Get In The Trunk: Season 7"
+    game: pathfinder-2e
+image:
+  url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/8/8d/GetInTheTrunk.png/revision/latest/scale-to-width-down/400?cb=20210302002253
+  licence: fair use
+  attribution: Get In The Trunk series art, © its producers. Via
+    glasscannonnetwork.fandom.com.
+  source: https://glasscannonnetwork.fandom.com/wiki/File:GetInTheTrunk.png
+  depicts: Series art for Get In The Trunk
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

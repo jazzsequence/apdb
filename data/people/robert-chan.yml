@@ -1,0 +1,24 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Phoenix_Dawn_Command (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: robert-chan
+canonical_name: Robert Chan
+sort_name: Chan, Robert
+aliases:
+  - id: default
+    name: Robert Chan
+    alias_type: legal
+credits:
+  - show: phoenix-dawn-command
+    season: 1
+    role: player
+    character: Eerie
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Phoenix_Dawn_Command
+        note: Phoenix Dawn Command cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

@@ -1,0 +1,41 @@
+id: tom-lommel
+canonical_name: Tom Lommel
+sort_name: Lommel, Tom
+links: {}
+aliases:
+  - id: default
+    name: Tom Lommel
+    alias_type: legal
+credits:
+  - show: the-ironkeep-chronicles
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/The_Ironkeep_Chronicles
+        note: The Ironkeep Chronicles cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: monday-night-dungeon-fight
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Monday_Night_Dungeon_Fight
+        note: Monday Night Dungeon Fight cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: 2015-star-wars-holiday-special
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
+        note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Gen_Con_-_2005-08-19_-_NASCRAG_Lommel.jpg
+  licence: CC-BY-3.0
+  attribution: Alan De Smet
+  source: https://commons.wikimedia.org/w/index.php?curid=28090025

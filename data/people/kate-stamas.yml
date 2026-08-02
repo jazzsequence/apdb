@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Ascension (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: kate-stamas
 canonical_name: Kate Stamas
 sort_name: Stamas, Kate
@@ -22,8 +16,8 @@ credits:
         note: Glass Cannon Podcast cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-live-strange-aeons
-    season: 1
+  - show: glass-cannon-podcast
+    season: 4
     role: player
     alias: default
     sources:
@@ -40,16 +34,16 @@ credits:
         note: Cyberpunk Red cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: aliens-rpg
-    season: 1
+  - show: new-game-who-dis
+    season: 2
     role: player
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Aliens_RPG
         note: Aliens RPG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: star-trek-adventures-rpg
-    season: 1
+  - show: new-game-who-dis
+    season: 12
     role: player
     alias: default
     sources:
@@ -57,16 +51,16 @@ credits:
         note: Star Trek Adventures RPG cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: mork-borg
-    season: 1
+  - show: new-game-who-dis
+    season: 8
     role: player
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/M%C3%96RK_BORG
         note: MÖRK BORG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-3
-    season: 1
+  - show: get-in-the-trunk
+    season: 3
     role: player
     alias: default
     sources:
@@ -74,8 +68,8 @@ credits:
         note: "Get In The Trunk: Season 3 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: warhammer-40k-wrath-glory
-    season: 1
+  - show: new-game-who-dis
+    season: 20
     role: player
     alias: default
     sources:
@@ -83,8 +77,8 @@ credits:
         note: "Warhammer 40K: Wrath & Glory cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: dungeon-crawl-classics
-    season: 1
+  - show: new-game-who-dis
+    season: 4
     role: player
     alias: default
     sources:
@@ -92,8 +86,8 @@ credits:
         note: Dungeon Crawl Classics cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: twilight-2000
-    season: 1
+  - show: new-game-who-dis
+    season: 17
     role: player
     alias: default
     sources:
@@ -101,8 +95,8 @@ credits:
         note: "Twilight: 2000 cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: the-one-ring
-    season: 1
+  - show: new-game-who-dis
+    season: 15
     role: player
     alias: default
     sources:
@@ -110,8 +104,8 @@ credits:
         note: The One Ring cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: time-for-chaos
-    season: 1
+  - show: glass-cannon-network-presents
+    season: 3
     role: player
     alias: default
     sources:
@@ -128,8 +122,8 @@ credits:
         note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-podcast-gatewalkers
-    season: 1
+  - show: glass-cannon-podcast
+    season: 5
     role: player
     alias: default
     sources:
@@ -146,12 +140,30 @@ credits:
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-live-ascension
+  - show: glass-cannon-podcast
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Ascension
+        note: Glass Cannon Live! - Ascension cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk
     season: 1
     role: player
     alias: default
     sources:
       - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Ascension
-        note: Glass Cannon Live! - Ascension cast, via the glasscannonnetwork.fandom.com
+        url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.

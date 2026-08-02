@@ -1,0 +1,23 @@
+id: blythe-kala
+canonical_name: Blythe Kala
+sort_name: Kala, Blythe
+aliases:
+  - id: default
+    name: Blythe Kala
+    alias_type: legal
+credits:
+  - show: the-lost-brigade
+    season: 1
+    role: player
+    character: Alaras
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade
+        note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+image:
+  url: https://live.staticflickr.com/2089/2309177233_fdac586d3a_b.jpg
+  licence: CC-BY-SA-2.0
+  attribution: mark6mauno
+  source: https://www.flickr.com/photos/98147195@N00/2309177233

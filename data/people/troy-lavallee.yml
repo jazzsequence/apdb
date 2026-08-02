@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Shadowdark (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: troy-lavallee
 canonical_name: Troy Lavallee
 sort_name: Lavallee, Troy
@@ -31,8 +25,8 @@ credits:
         note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-live-strange-aeons
-    season: 1
+  - show: glass-cannon-podcast
+    season: 4
     role: GM/DM
     alias: default
     sources:
@@ -40,8 +34,8 @@ credits:
         note: Glass Cannon Live! - Strange Aeons cast, via the
           glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: side-quest-side-sesh
-    season: 1
+  - show: glass-cannon-podcast
+    season: 9
     role: GM/DM
     alias: default
     sources:
@@ -49,8 +43,8 @@ credits:
         note: Side Quest Side Sesh cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: cannon-fodder
-    season: 1
+  - show: glass-cannon-podcast
+    season: 2
     role: GM/DM
     alias: default
     sources:
@@ -75,8 +69,8 @@ credits:
       - url: https://glasscannonnetwork.fandom.com/wiki/Delta_Green
         note: Delta Green cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: star-wars-age-of-republic
-    season: 1
+  - show: new-game-who-dis
+    season: 13
     role: player
     alias: default
     sources:
@@ -84,8 +78,8 @@ credits:
         note: "Star Wars: Age of Republic cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: dungeons-dragons
-    season: 1
+  - show: new-game-who-dis
+    season: 5
     role: player
     alias: default
     sources:
@@ -120,8 +114,8 @@ credits:
         note: Powerhouse & Tate cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: call-of-cthulhu
-    season: 1
+  - show: new-game-who-dis
+    season: 3
     role: GM/DM
     alias: default
     sources:
@@ -129,8 +123,8 @@ credits:
         note: Call of Cthulhu cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-2
-    season: 1
+  - show: get-in-the-trunk
+    season: 2
     role: player
     alias: default
     sources:
@@ -138,16 +132,16 @@ credits:
         note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: aliens-rpg
-    season: 1
+  - show: new-game-who-dis
+    season: 2
     role: player
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Aliens_RPG
         note: Aliens RPG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: vampire-the-masquerade
-    season: 1
+  - show: new-game-who-dis
+    season: 18
     role: player
     alias: default
     sources:
@@ -155,16 +149,16 @@ credits:
         note: "Vampire: The Masquerade cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: mork-borg
-    season: 1
+  - show: new-game-who-dis
+    season: 8
     role: GM/DM
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/M%C3%96RK_BORG
         note: MÖRK BORG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: warhammer-40k-wrath-glory
-    season: 1
+  - show: new-game-who-dis
+    season: 20
     role: player
     alias: default
     sources:
@@ -172,8 +166,8 @@ credits:
         note: "Warhammer 40K: Wrath & Glory cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: marvel-super-heroes
-    season: 1
+  - show: new-game-who-dis
+    season: 7
     role: player
     alias: default
     sources:
@@ -181,16 +175,16 @@ credits:
         note: Marvel Super Heroes cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: runequest
-    season: 1
+  - show: new-game-who-dis
+    season: 10
     role: GM/DM
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Runequest
         note: Runequest cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: something-is-wrong-here
-    season: 1
+  - show: new-game-who-dis
+    season: 11
     role: GM/DM
     alias: default
     sources:
@@ -198,8 +192,8 @@ credits:
         note: Something is Wrong Here cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-4
-    season: 1
+  - show: get-in-the-trunk
+    season: 4
     role: player
     alias: default
     sources:
@@ -207,8 +201,8 @@ credits:
         note: "Get In The Trunk: Season 4 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: time-for-chaos
-    season: 1
+  - show: glass-cannon-network-presents
+    season: 3
     role: GM/DM
     alias: default
     sources:
@@ -216,8 +210,8 @@ credits:
         note: Time For Chaos cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-podcast-giantslayer
-    season: 1
+  - show: glass-cannon-podcast
+    season: 6
     role: GM/DM
     alias: default
     sources:
@@ -234,8 +228,8 @@ credits:
         note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-podcast-gatewalkers
-    season: 1
+  - show: glass-cannon-podcast
+    season: 5
     role: GM/DM
     alias: default
     sources:
@@ -253,8 +247,8 @@ credits:
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-5
-    season: 1
+  - show: get-in-the-trunk
+    season: 5
     role: player
     alias: default
     sources:
@@ -262,8 +256,8 @@ credits:
         note: "Get In The Trunk: Season 5 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: get-in-the-trunk-season-6
-    season: 1
+  - show: get-in-the-trunk
+    season: 6
     role: player
     alias: default
     sources:
@@ -271,8 +265,8 @@ credits:
         note: "Get In The Trunk: Season 6 cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: glass-cannon-live-ascension
-    season: 1
+  - show: glass-cannon-podcast
+    season: 3
     role: GM/DM
     alias: default
     sources:
@@ -280,12 +274,84 @@ credits:
         note: Glass Cannon Live! - Ascension cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: glass-cannon-podcast-shadowdark
+  - show: glass-cannon-podcast
+    season: 7
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Shadowdark
+        note: Glass Cannon Podcast - Shadowdark cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legacy-of-the-ancients
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Legacy_of_the_Ancients
+        note: Legacy of the Ancients cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: echo-quest
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Echo_Quest
+        note: Echo Quest cast, via the the-glass-cannon-network.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: disorganized-play
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Disorganized_Play
+        note: Disorganized Play cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: the-thunder-company
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/The_Thunder_Company
+        note: The Thunder Company cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: blood-blades
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Blood_%26_Blades
+        note: Blood & Blades cast, via the the-glass-cannon-network.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: inherit-the-sand
     season: 1
     role: GM/DM
     alias: default
     sources:
       - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Shadowdark
-        note: Glass Cannon Podcast - Shadowdark cast, via the
-          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        url: https://the-glass-cannon-network.fandom.com/wiki/Inherit_The_Sand
+        note: Inherit The Sand cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: noura-ibrahim
 canonical_name: Noura Ibrahim
 sort_name: Ibrahim, Noura
@@ -93,8 +87,8 @@ credits:
         note: Cast per the production's own description of "Prologue - The Tides of
           Wildemount | LIVE D&D with RealmSmith".
         tier: official
-  - show: call-of-cthulhu
-    season: 1
+  - show: new-game-who-dis
+    season: 3
     role: player
     alias: default
     sources:
@@ -102,8 +96,8 @@ credits:
         note: Call of Cthulhu cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: vampire-the-masquerade
-    season: 1
+  - show: new-game-who-dis
+    season: 18
     role: player
     alias: default
     sources:
@@ -111,16 +105,16 @@ credits:
         note: "Vampire: The Masquerade cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: runequest
-    season: 1
+  - show: new-game-who-dis
+    season: 10
     role: player
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Runequest
         note: Runequest cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: something-is-wrong-here
-    season: 1
+  - show: new-game-who-dis
+    season: 11
     role: player
     alias: default
     sources:
@@ -128,8 +122,8 @@ credits:
         note: Something is Wrong Here cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: time-for-chaos
-    season: 1
+  - show: glass-cannon-network-presents
+    season: 3
     role: player
     alias: default
     sources:
@@ -142,7 +136,34 @@ credits:
     role: player
     alias: default
     sources:
-      - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+      - url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: wicked-empire
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Wicked_Empire
+        note: Wicked Empire cast, via the the-glass-cannon-network.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: inherit-the-sand
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://the-glass-cannon-network.fandom.com/wiki/Inherit_The_Sand
+        note: Inherit The Sand cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

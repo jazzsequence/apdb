@@ -1,0 +1,96 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Dice_Ex_Machina (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: gaurav-gulati
+canonical_name: Gaurav Gulati
+sort_name: Gulati, Gaurav
+links: {}
+aliases:
+  - id: default
+    name: Gaurav Gulati
+    alias_type: legal
+credits:
+  - show: the-lost-brigade
+    season: 1
+    role: player
+    character: Ruckus
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/The_Lost_Brigade
+        note: The Lost Brigade cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: prickly-tallstag-and-the-danger-seekers-pears
+    season: 1
+    role: player
+    character: Derven Tallstag
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Prickly_Tallstag_and_the_Danger_Seekers%2C_Pears
+        note: Prickly Tallstag and the Danger Seekers, Pears cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: east-texas-university-undeclared
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/East_Texas_University%3A_Undeclared
+        note: "East Texas University: Undeclared cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: dark-lanterns
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Dark_Lanterns
+        note: Dark Lanterns cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: mysterium
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Mysterium
+        note: Mysterium cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: pugmire-homeward-bound
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pugmire%3A_Homeward_Bound
+        note: "Pugmire: Homeward Bound cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: the-broken-pact
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/The_Broken_Pact
+        note: The Broken Pact cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: it-s-always-cloudy-in-barovia
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/It's_Always_Cloudy_in_Barovia
+        note: It's Always Cloudy in Barovia cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: dice-ex-machina
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Dice_Ex_Machina
+        note: Dice Ex Machina cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

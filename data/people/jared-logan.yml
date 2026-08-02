@@ -7,8 +7,8 @@ aliases:
     name: Jared Logan
     alias_type: legal
 credits:
-  - show: glass-cannon-live-strange-aeons
-    season: 1
+  - show: glass-cannon-podcast
+    season: 4
     role: player
     alias: default
     sources:
@@ -16,8 +16,8 @@ credits:
         note: Glass Cannon Live! - Strange Aeons cast, via the
           glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: side-quest-side-sesh
-    season: 1
+  - show: glass-cannon-podcast
+    season: 9
     role: player
     alias: default
     sources:
@@ -25,8 +25,8 @@ credits:
         note: Side Quest Side Sesh cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: vampire-the-masquerade
-    season: 1
+  - show: new-game-who-dis
+    season: 18
     role: GM/DM
     alias: default
     sources:
@@ -43,8 +43,8 @@ credits:
         note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: the-game-garage
-    season: 1
+  - show: glass-cannon-network-presents
+    season: 2
     role: GM/DM
     alias: default
     sources:
@@ -61,8 +61,8 @@ credits:
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-radio
-    season: 1
+  - show: glass-cannon-podcast
+    season: 8
     role: GM/DM
     alias: default
     sources:
@@ -70,12 +70,75 @@ credits:
         note: Glass Cannon Radio cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk-season-7
+  - show: get-in-the-trunk
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
+        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk
     season: 1
     role: player
     alias: default
     sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: blood-blades
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Blood_%26_Blades
+        note: Blood & Blades cast, via the the-glass-cannon-network.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: wicked-empire
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Wicked_Empire
+        note: Wicked Empire cast, via the the-glass-cannon-network.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: inherit-the-sand
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Inherit_The_Sand
+        note: Inherit The Sand cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: haunted-city
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Haunted_City
+        note: Haunted City cast, via the the-glass-cannon-network.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: blood-of-the-wild
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
       - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
-        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
+        url: https://the-glass-cannon-network.fandom.com/wiki/Blood_of_the_Wild
+        note: Blood of the Wild cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

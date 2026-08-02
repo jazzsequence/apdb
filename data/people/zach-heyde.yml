@@ -1,0 +1,32 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/RPG_Exploration_Society (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: zach-heyde
+canonical_name: Zach Heyde
+sort_name: Heyde, Zach
+links: {}
+aliases:
+  - id: default
+    name: Zach Heyde
+    alias_type: legal
+credits:
+  - show: dark-lanterns
+    season: 1
+    role: composer
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Dark_Lanterns
+        note: Dark Lanterns cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: rpg-exploration-society
+    season: 1
+    role: composer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/RPG_Exploration_Society
+        note: RPG Exploration Society cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

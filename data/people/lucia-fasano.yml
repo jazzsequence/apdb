@@ -1,0 +1,23 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Gosh_Darn_Fiasco (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: lucia-fasano
+canonical_name: Lucia Fasano
+sort_name: Fasano, Lucia
+aliases:
+  - id: default
+    name: Lucia Fasano
+    alias_type: legal
+credits:
+  - show: gosh-darn-fiasco
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Gosh_Darn_Fiasco
+        note: Gosh Darn Fiasco cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

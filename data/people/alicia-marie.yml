@@ -2,13 +2,18 @@ id: alicia-marie
 canonical_name: Alicia Marie
 sort_name: Marie, Alicia
 links: {}
+image:
+  url: https://live.staticflickr.com/2917/14260823414_4d69d3e8ba_b.jpg
+  licence: CC-BY-2.0
+  attribution: webvideopreis
+  source: https://www.flickr.com/photos/59772487@N08/14260823414
 aliases:
   - id: default
     name: Alicia Marie
     alias_type: legal
 credits:
-  - show: star-trek-adventures-rpg
-    season: 1
+  - show: new-game-who-dis
+    season: 12
     role: player
     alias: default
     sources:
@@ -16,8 +21,8 @@ credits:
         note: Star Trek Adventures RPG cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: marvel-super-heroes
-    season: 1
+  - show: new-game-who-dis
+    season: 7
     role: player
     alias: default
     sources:
@@ -25,16 +30,16 @@ credits:
         note: Marvel Super Heroes cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: traveller
-    season: 1
+  - show: new-game-who-dis
+    season: 16
     role: player
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Traveller
         note: Traveller cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: the-one-ring
-    season: 1
+  - show: new-game-who-dis
+    season: 15
     role: player
     alias: default
     sources:
@@ -56,12 +61,16 @@ credits:
     role: player
     alias: default
     sources:
-      - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+      - url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
-image:
-  url: https://live.staticflickr.com/2917/14260823414_4d69d3e8ba_b.jpg
-  licence: CC-BY-2.0
-  attribution: webvideopreis
-  source: https://www.flickr.com/photos/59772487@N08/14260823414
+        tier: community
+  - show: new-game-who-dis
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

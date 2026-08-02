@@ -1,0 +1,23 @@
+# Credits imported from the-glass-cannon-network.fandom.com on 2026-08-02.
+# Source: https://the-glass-cannon-network.fandom.com/wiki/Echo_Quest (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: kiah-amara
+canonical_name: Kiah Amara
+sort_name: Amara, Kiah
+aliases:
+  - id: default
+    name: Kiah Amara
+    alias_type: legal
+credits:
+  - show: echo-quest
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://the-glass-cannon-network.fandom.com/wiki/Echo_Quest
+        note: Echo Quest cast, via the the-glass-cannon-network.fandom.com infobox.
+          CC-BY-SA.

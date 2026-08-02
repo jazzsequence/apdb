@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Fiasco (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: ellinor-dilorenzo
 canonical_name: Ellinor DiLorenzo
 sort_name: DiLorenzo, Ellinor
@@ -31,8 +25,8 @@ credits:
         note: Raiders of the Lost Continent cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: tales-from-the-loop
-    season: 1
+  - show: new-game-who-dis
+    season: 14
     role: player
     alias: default
     sources:
@@ -40,11 +34,20 @@ credits:
         note: Tales From The Loop cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: fiasco
+  - show: new-game-who-dis
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Fiasco
+        note: Fiasco cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: disorganized-play
     season: 1
     role: player
     alias: default
     sources:
       - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Fiasco
-        note: Fiasco cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        url: https://the-glass-cannon-network.fandom.com/wiki/Disorganized_Play
+        note: Disorganized Play cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.

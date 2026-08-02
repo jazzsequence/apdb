@@ -1,0 +1,23 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Shadows_of_the_Mirror-Men (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: cinematic-sounds
+canonical_name: Cinematic Sounds
+sort_name: Sounds, Cinematic
+aliases:
+  - id: default
+    name: Cinematic Sounds
+    alias_type: legal
+credits:
+  - show: shadows-of-the-mirror-men
+    season: 1
+    role: composer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Shadows_of_the_Mirror-Men
+        note: Shadows of the Mirror-Men cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.

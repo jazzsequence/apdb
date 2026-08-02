@@ -1,6 +1,15 @@
+# Credits imported from high-rollers-dnd.fandom.com on 2026-08-02.
+# Source: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: mara-holmes
 canonical_name: Mara Holmes
 sort_name: Holmes, Mara
+pronouns: she/her
+bio: Founding member and principal dungeon master of High Rollers, which she
+  started at the Yogscast in 2016.
 links: {}
 aliases:
   - id: holmes
@@ -30,15 +39,15 @@ credits:
   - show: high-rollers-dnd
     season: 1
     role: GM/DM
+    alias: hulmes
     sources:
       - url: https://highrollers.fandom.com/wiki/Aerois_(Campaign)
         note: Aerois (Campaign) cast, via the highrollers.fandom.com infobox. CC-BY-SA.
         tier: community
-      - tier: official
-        url: https://www.youtube.com/watch?v=KE-8q08L11k
+      - url: https://www.youtube.com/watch?v=KE-8q08L11k
         note: "Cast per the production's own description of \"High Rollers: Aerois #147
           | The Best Defense\"."
-    alias: hulmes
+        tier: official
   - show: high-rollers-dnd
     season: 2
     role: GM/DM
@@ -50,6 +59,7 @@ credits:
   - show: high-rollers-dnd
     season: 3
     role: GM/DM
+    alias: hulmes
     sources:
       - url: https://highrollers.fandom.com/wiki/Uncharted_Territory
         note: Uncharted Territory cast, via the highrollers.fandom.com infobox.
@@ -59,7 +69,6 @@ credits:
         note: "Cast per the production's own description of \"A World of Stories |
           Altheya: The Dragon Empire #1\"."
         tier: official
-    alias: hulmes
   - show: high-rollers-dnd
     season: 4
     role: GM/DM
@@ -109,9 +118,14 @@ credits:
     season: 7
     role: player
     sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Thresher
+      - url: https://criticalrole.fandom.com/wiki/Thresher
         note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-pronouns: she/her
-bio: Founding member and principal dungeon master of High Rollers, which she
-  started at the Yogscast in 2016.
+        tier: community
+  - show: warhammer-fantasy-roleplay
+    season: 1
+    role: GM/DM
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+        note: Warhammer Fantasy Roleplay cast, via the high-rollers-dnd.fandom.com
+          infobox. CC-BY-SA.

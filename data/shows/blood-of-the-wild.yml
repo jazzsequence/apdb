@@ -9,3 +9,19 @@ links:
 seasons:
   - ordinal: 1
     game: pathfinder-2e
+  - ordinal: 2
+    title: Broken Tusk Moon
+    game: pathfinder-2e
+  - ordinal: 3
+    title: Lost Mammoth Valley
+    game: pathfinder-2e
+image:
+  url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/4/45/BotW.jpg/revision/latest/scale-to-width-down/400?cb=20221126155447
+  licence: fair use
+  attribution: Blood of the Wild series art, © its producers. Via
+    glasscannonnetwork.fandom.com.
+  source: https://glasscannonnetwork.fandom.com/wiki/File:BotW.jpg
+  depicts: Series art for Blood of the Wild
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

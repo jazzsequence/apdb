@@ -345,6 +345,8 @@ export const CAMPAIGN_TEMPLATES = [
   'Template:Infobox Season',        // Acquisitions Incorporated
   'Template:GCN Show Book Template', // Glass Cannon Network
   'Template:GCN Show Template',
+  'Template:Show Template',          // Glass Cannon, third variant
+  'Template:Show',
 ];
 
 /**

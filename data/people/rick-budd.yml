@@ -1,0 +1,22 @@
+# Credits imported from savingthrowshow.fandom.com on 2026-08-02.
+# Source: https://savingthrowshow.fandom.com/wiki/Tempting_Fate (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: rick-budd
+canonical_name: Rick Budd
+sort_name: Budd, Rick
+aliases:
+  - id: default
+    name: Rick Budd
+    alias_type: legal
+credits:
+  - show: tempting-fate
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tempting_Fate
+        note: Tempting Fate cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.

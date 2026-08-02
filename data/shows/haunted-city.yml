@@ -11,6 +11,12 @@ seasons:
   - ordinal: 1
     game: blades-in-the-dark
     episode_count: 45
+  - ordinal: 2
+    title: Haunted City - Season 1
+    game: pathfinder-2e
+  - ordinal: 3
+    title: Haunted City - Season 2
+    game: pathfinder-2e
 image:
   url: https://i.ytimg.com/vi/VT04k7d74yg/hqdefault.jpg
   licence: fair use
