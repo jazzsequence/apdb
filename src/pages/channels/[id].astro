@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getDb } from '../../lib/db';
 import EntityActions from '../../components/EntityActions.astro';
+import WatchLinks from '../../components/WatchLinks.astro';
 
 export async function getStaticPaths() {
   const db = await getDb();
@@ -35,6 +36,10 @@ const totalSeasons = shows.reduce((n, s) => n + s.show.seasons.length, 0);
   <p class="billing">
     <strong>{channel.type}</strong> · {shows.length} shows · {totalSeasons} seasons
   </p>
+  <WatchLinks
+    links={channel.links}
+    emptyNote="No home page recorded for this channel yet."
+  />
   {channel.description && <p class="lede">{channel.description}</p>}
 
   <h2>Shows</h2>
@@ -62,15 +67,6 @@ const totalSeasons = shows.reduce((n, s) => n + s.show.seasons.length, 0);
     )
   }
 
-  {
-    channel.links.website && (
-      <p class="billing">
-        <a href={channel.links.website} rel="nofollow noopener">
-          {channel.links.website}
-        </a>
-      </p>
-    )
-  }
   <EntityActions
     kind="channel"
     name={channel.name}

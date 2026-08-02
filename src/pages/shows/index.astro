@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getDb } from '../../lib/db';
+import { primaryLink } from '../../lib/links';
 
 const db = await getDb();
 const base = import.meta.env.BASE_URL;
@@ -15,6 +16,8 @@ const rows = db.shows.map((show) => {
     games,
     gameIds: games.map((g) => g.id),
     editions: games.map((g) => `${g.name} ${g.edition}`),
+    // The card links to our page; this is the link to the thing itself.
+    watch: primaryLink(show.links),
   };
 });
 
@@ -69,7 +72,7 @@ const formats = [...new Set(db.shows.map((s) => s.format))].sort();
   */}
   <ul class="poster-grid" id="results">
     {
-      rows.map(({ show, channels, games, gameIds, editions: showEditions }) => (
+      rows.map(({ show, channels, games, gameIds, editions: showEditions, watch }) => (
         <li
           data-show
           data-games={gameIds.join('|')}
@@ -97,6 +100,9 @@ const formats = [...new Set(db.shows.map((s) => s.format))].sort();
               {games.length > 0 && <span class="sys"> · {games.map((g) => g.name).join(', ')}</span>}
             </p>
           </a>
+          {watch && (
+            <a class="card-watch" href={watch.url} rel="nofollow noopener">{watch.label} ↗</a>
+          )}
         </li>
       ))
     }

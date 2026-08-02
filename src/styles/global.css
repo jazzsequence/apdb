@@ -696,3 +696,66 @@ footer.site {
   color: var(--muted);
   line-height: 1.35;
 }
+
+/* --- where to actually watch it ------------------------------------------
+ * Every show and channel carried a link the whole time and none of them were
+ * rendered, so the index told you what existed and never where to find it.
+ */
+.watch-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  margin: 0.6rem 0 0;
+}
+.watch {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.32rem 0.7rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.watch:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+/* Watching is the thing most readers came for, so it gets the amber. */
+.watch--watch {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.watch--watch:hover {
+  color: var(--accent-ink);
+  filter: brightness(1.08);
+}
+.watch-host {
+  font-weight: 400;
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+.watch--watch .watch-host {
+  color: var(--accent-ink);
+  opacity: 0.75;
+}
+
+/* A secondary link on a poster card — the card itself goes to our page. */
+.card-watch {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+}
+.card-watch:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}

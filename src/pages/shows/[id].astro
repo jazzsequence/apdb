@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getDb } from '../../lib/db';
 import EntityActions from '../../components/EntityActions.astro';
+import WatchLinks from '../../components/WatchLinks.astro';
 
 export async function getStaticPaths() {
   const db = await getDb();
@@ -56,6 +57,10 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
     {games.map((g) => `${g.name} ${g.edition}`).join(', ')}
   </p>
 
+      <WatchLinks
+        links={show.links}
+        emptyNote="No link recorded for this show yet — a correction with one would be welcome."
+      />
     </div>
   </div>
 

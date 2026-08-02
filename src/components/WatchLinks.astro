@@ -1,0 +1,36 @@
+---
+/**
+ * Where to actually go and watch, listen to, or read about a thing.
+ *
+ * An index of what exists is only half useful if it never tells you where the
+ * thing is. Every show and channel here already carried a link; none of them
+ * were rendered on show pages, and channels showed a bare URL.
+ */
+import { describedLinks, type DescribedLink } from '../lib/links';
+
+interface Props {
+  links: Record<string, string | undefined> | undefined;
+  /** Shown when there is nothing to link to. */
+  emptyNote?: string;
+}
+
+const { links, emptyNote } = Astro.props;
+const described: DescribedLink[] = describedLinks(links);
+---
+
+{
+  described.length > 0 ? (
+    <ul class="watch-links">
+      {described.map((link) => (
+        <li>
+          <a href={link.url} rel="nofollow noopener" class={`watch watch--${link.kind}`}>
+            <span class="watch-label">{link.label}</span>
+            <span class="watch-host">{link.host}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  ) : emptyNote ? (
+    <p class="billing">{emptyNote}</p>
+  ) : null
+}
