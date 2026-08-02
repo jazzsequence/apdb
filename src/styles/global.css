@@ -598,3 +598,101 @@ footer.site {
 .poster-grid .sys {
   display: block;
 }
+
+/* --- home rails ----------------------------------------------------------
+ * The front page used to print all 691 people and all 299 shows, which is a
+ * directory dump rather than a way in. These are two horizontal rails: who is
+ * most credited, and six shows chosen by today's date.
+ */
+.rail,
+.poster-rail {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0 0 0.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(8.5rem, 1fr);
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.rail > li,
+.poster-rail > li {
+  scroll-snap-align: start;
+}
+.rail a,
+.poster-rail a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.rail .face {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--sunk);
+  display: block;
+}
+.rail .face--blank {
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--border-strong);
+}
+.rail a:hover .face {
+  border-color: var(--accent);
+}
+.rail-name {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+.rail a:hover .rail-name {
+  color: var(--accent);
+}
+.rail-meta {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
+.poster-rail {
+  grid-auto-columns: minmax(11rem, 1fr);
+}
+.poster-rail .art {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--sunk);
+}
+.poster-rail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.poster-rail a:hover .art {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+.poster-rail h3 {
+  margin: 0.5rem 0 0.1rem;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+.poster-rail a:hover h3 {
+  color: var(--accent);
+}
+.poster-rail p {
+  margin: 0;
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.35;
+}

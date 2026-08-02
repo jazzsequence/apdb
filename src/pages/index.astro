@@ -6,7 +6,40 @@ const db = await getDb();
 const base = import.meta.env.BASE_URL;
 
 const creditCount = db.people.reduce((sum, p) => sum + p.credits.length, 0);
-const withFormerNames = db.people.filter((p) => p.aliases.length > 1);
+
+// Most credited. Ties broken by number of distinct shows, so someone with 20
+// credits across 9 shows ranks above someone with 20 on one long-running one.
+const mostCredited = [...db.people]
+  .map((p) => ({ p, shows: new Set(p.credits.map((c) => c.show)).size }))
+  .sort((a, b) => b.p.credits.length - a.p.credits.length || b.shows - a.shows)
+  .slice(0, 18)
+  .map(({ p, shows }) => ({
+    id: p.id,
+    name: p.canonical_name,
+    credits: p.credits.length,
+    shows,
+    image: p.image?.url ?? null,
+  }));
+
+/*
+ * The daily pick pool. Shows with art and at least one credit — a poster row
+ * of blank plates and empty pages is not a good front door.
+ *
+ * The whole pool ships to the client so the selection can be made against the
+ * reader's own date rather than the date of the last build. A static site is
+ * built when someone pushes, which might be weeks apart; "resets every day"
+ * has to mean the reader's day.
+ */
+const pool = db.shows
+  .filter((s) => s.image && db.castFor(s).length > 0)
+  .map((s) => ({
+    id: s.id,
+    title: s.title,
+    image: s.image!.url,
+    by: db.channelsFor(s).map((c) => c.name).join(', '),
+    cast: db.castFor(s).length,
+  }));
+
 ---
 
 <Base
@@ -19,56 +52,84 @@ const withFormerNames = db.people.filter((p) => p.aliases.length > 1);
     <strong>person</strong> — every credit across every show and season, including
     the one-off guest spots on small indie campaigns that other aggregators drop.
   </p>
-  <p class="lede">
-    Performers who changed their name are one person here, not two. Each credit
-    records the name they were billed under at the time.
-  </p>
 
   <p class="billing">
-    Currently indexing <strong>{creditCount}</strong> credits ·
+    Indexing <strong>{creditCount.toLocaleString()}</strong> credits ·
     <strong>{db.people.length}</strong> people · <strong>{db.shows.length}</strong> shows
     · <strong>{db.channels.length}</strong> channels
+    · <a href={`${base}random/`}>surprise me →</a>
   </p>
 
-  <h2>People</h2>
-  <ul class="card-list">
+  <h2>Most credited</h2>
+  <ul class="rail" id="most-credited">
     {
-      db.people.map((person) => {
-        const others = person.aliases.filter((a) => a.name !== person.canonical_name);
-        return (
-          <li>
-            <a href={`${base}people/${person.id}/`}>
-              <div class="card">
-                <h3>{person.canonical_name}</h3>
-                <p>
-                  {person.credits.length} credits
-                  {others.length > 0 && <> · also credited as {others.map((a) => a.name).join(', ')}</>}
-                </p>
-              </div>
-            </a>
-          </li>
-        );
-      })
-    }
-  </ul>
-
-
-  <h2>Shows</h2>
-  <ul class="card-list">
-    {
-      db.shows.map((show) => (
+      mostCredited.map((p) => (
         <li>
-          <a href={`${base}shows/${show.id}/`}>
-            <div class="card">
-              <h3>{show.title}</h3>
-              <p>
-                {db.channelsFor(show).map((c) => c.name).join(', ')} · {show.format} ·{' '}
-                {db.gamesFor(show).map((g) => `${g.name} ${g.edition}`).join(', ')}
-              </p>
-            </div>
+          <a href={`${base}people/${p.id}/`}>
+            {p.image ? (
+              <img class="face" src={p.image} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            ) : (
+              <span class="face face--blank" aria-hidden="true">{p.name.charAt(0)}</span>
+            )}
+            <span class="rail-name">{p.name}</span>
+            <span class="rail-meta">{p.credits} credits · {p.shows} shows</span>
           </a>
         </li>
       ))
     }
   </ul>
+
+  <h2>Today's picks</h2>
+  <p class="billing">Six shows, chosen by the date. Different tomorrow.</p>
+  <ul class="poster-rail" id="daily"></ul>
+
+  <noscript>
+    <p class="billing">
+      The daily picks need JavaScript to follow your date.
+      <a href={`${base}shows/`}>Browse all shows instead →</a>
+    </p>
+  </noscript>
 </Base>
+
+<script define:vars={{ pool, base }}>
+  /*
+   * Deterministic per-day shuffle. Everyone loading the page on the same day
+   * sees the same six shows, and nobody needs a server to arrange that.
+   */
+  function seededRandom(seed) {
+    let t = seed + 0x6d2b79f5;
+    return function () {
+      t = Math.imul(t ^ (t >>> 15), t | 1);
+      t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function pickForToday(items, n) {
+    const now = new Date();
+    const seed = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+    const rand = seededRandom(seed);
+    const copy = [...items];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(rand() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy.slice(0, n);
+  }
+
+  const daily = document.getElementById('daily');
+  if (daily) {
+    daily.innerHTML = pickForToday(pool, 6)
+      .map(
+        (s) => `
+      <li>
+        <a href="${base}shows/${s.id}/">
+          <div class="art"><img src="${s.image}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /></div>
+          <h3>${s.title.replace(/</g, '&lt;')}</h3>
+          <p>${s.by.replace(/</g, '&lt;')} · ${s.cast} credited</p>
+        </a>
+      </li>`,
+      )
+      .join('');
+  }
+</script>

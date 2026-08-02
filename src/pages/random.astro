@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import { getDb } from '../lib/db';
+
+const db = await getDb();
+const base = import.meta.env.BASE_URL;
+
+/*
+ * A static site cannot redirect at request time, so the index of what exists
+ * ships to the browser and the choice is made there. It is small — three
+ * arrays of slugs — and it means the link works offline and never goes stale
+ * relative to the build.
+ *
+ * `?type=show` (or person / channel / any) jumps straight there, so a
+ * "surprise me" link can be shared or bookmarked.
+ */
+const index = {
+  show: db.shows.map((s) => ({ id: s.id, label: s.title })),
+  person: db.people.map((p) => ({ id: p.id, label: p.canonical_name })),
+  channel: db.channels.map((c) => ({ id: c.id, label: c.name })),
+};
+---
+
+<Base
+  title="Surprise me — Actual Play Database"
+  description="Jump to a random show, person or channel."
+>
+  <h1>Surprise me</h1>
+  <p class="lede">
+    The point of an index this size is the things you would never have thought
+    to search for. Pick a direction and go somewhere.
+  </p>
+
+  <div class="random-buttons">
+    <button type="button" data-type="any" class="button">Anything at all</button>
+    <button type="button" data-type="show">A random show</button>
+    <button type="button" data-type="person">A random person</button>
+    <button type="button" data-type="channel">A random channel</button>
+  </div>
+
+  <p class="billing" id="going" hidden></p>
+
+  <noscript>
+    <p class="billing">
+      This needs JavaScript, because a static site has no server to do the
+      choosing. <a href={`${base}shows/`}>Browse the shows instead →</a>
+    </p>
+  </noscript>
+</Base>
+
+<style>
+  .random-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.5rem 0;
+  }
+  .random-buttons button {
+    font: inherit;
+    font-weight: 600;
+    padding: 0.6rem 1.1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .random-buttons button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  /* The unfiltered option is the headline action, so it takes the amber. */
+  .random-buttons button.button {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-color: var(--accent);
+  }
+  .random-buttons button.button:hover {
+    color: var(--accent-ink);
+    filter: brightness(1.08);
+  }
+</style>
+
+<script define:vars={{ index, base }}>
+  const PATH = { show: 'shows', person: 'people', channel: 'channels' };
+  const note = document.getElementById('going');
+
+  function go(type) {
+    let kind = type;
+    if (kind === 'any') {
+      // Weighted by how many of each there are, so the "anything" button
+      // reflects the shape of the database rather than treating 115 channels
+      // as equally likely as 691 people.
+      const all = Object.keys(PATH).flatMap((k) => index[k].map(() => k));
+      kind = all[Math.floor(Math.random() * all.length)];
+    }
+    const items = index[kind];
+    if (!items || items.length === 0) return;
+    const pick = items[Math.floor(Math.random() * items.length)];
+    if (note) {
+      note.hidden = false;
+      note.textContent = `Going to ${pick.label}…`;
+    }
+    window.location.href = `${base}${PATH[kind]}/${pick.id}/`;
+  }
+
+  for (const button of document.querySelectorAll('[data-type]')) {
+    button.addEventListener('click', () => go(button.getAttribute('data-type')));
+  }
+
+  // ?type=show jumps immediately, so the link is shareable.
+  const wanted = new URLSearchParams(window.location.search).get('type');
+  if (wanted && (wanted === 'any' || PATH[wanted])) go(wanted);
+</script>
