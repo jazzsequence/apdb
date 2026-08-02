@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { getDb } from '../../../lib/db';
 import EntityActions from '../../../components/EntityActions.astro';
+import WatchLinks from '../../../components/WatchLinks.astro';
 
 export async function getStaticPaths() {
   const db = await getDb();
@@ -23,6 +24,15 @@ export async function getStaticPaths() {
 }
 
 const { show, season, game, channels, cast } = Astro.props;
+
+/*
+ * A season's own playlist if it has one, otherwise the show's. Most
+ * productions publish one playlist per campaign, so the season is the level a
+ * reader actually wants — "watch Campaign 2", not "here is the channel". When
+ * only the show-level link exists the page says so, rather than implying the
+ * link goes straight to this season.
+ */
+const seasonLinks = season.links && Object.values(season.links).some(Boolean) ? season.links : undefined;
 const base = import.meta.env.BASE_URL;
 
 const ROLE_ORDER = ['GM/DM', 'guest GM', 'player', 'guest player', 'host', 'producer', 'editor', 'composer', 'writer'];
@@ -45,10 +55,20 @@ const dates = [season.started, season.ended].filter(Boolean).join(' – ');
 
   <p class="billing">
     {channels.map((c) => c.name).join(', ')}
-    {game && <> · {game.name} {game.edition}</>}
+    {game && <> · {game.name} · {game.edition}</>}
     {dates && <> · {dates}</>}
     {season.episode_count && <> · {season.episode_count} episodes</>}
   </p>
+
+  <WatchLinks
+    links={seasonLinks ?? show.links}
+    emptyNote="No link recorded for this season — a correction with one would be welcome."
+  />
+  {!seasonLinks && (
+    <p class="billing">
+      That link covers the whole of {show.title}, not this season on its own.
+    </p>
+  )}
 
   {season.description && <p class="lede">{season.description}</p>}
 

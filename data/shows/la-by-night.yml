@@ -17,10 +17,14 @@ seasons:
     title: Season 4
     game: vampire-the-masquerade-v5
     episode_count: 13
+    links:
+      website: https://www.youtube.com/playlist?list=PL4qzoETfmhLY9OQHWzCRKgwmQt50T153E
   - ordinal: 5
     title: Season 5
     game: vampire-the-masquerade-v5
     episode_count: 9
+    links:
+      website: https://www.youtube.com/playlist?list=PL4qzoETfmhLYjEWmLvGgxo5UWtG1Fu_fF
 image:
   url: https://i.ytimg.com/vi/3YGyhSppu2Q/hqdefault.jpg
   licence: fair use

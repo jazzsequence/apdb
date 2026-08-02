@@ -10,6 +10,8 @@ seasons:
   - ordinal: 1
     game: blades-in-the-dark
     episode_count: 45
+    links:
+      website: https://www.youtube.com/playlist?list=PLk4WDQKwZJHGWnpjiADVnVCutBgp5NYVZ
 image:
   url: https://i.ytimg.com/vi/dMokpLvlaag/hqdefault.jpg
   licence: fair use

@@ -245,6 +245,17 @@ export const Season = z
     ended: PartialDate.optional(),
     episode_count: z.number().int().positive().optional(),
     description: z.string().optional(),
+    /**
+     * Where to watch *this season*, when it has its own home.
+     *
+     * Most shows publish one playlist per campaign, so the season is the level
+     * a reader actually wants — "watch Campaign 2", not "here is the channel".
+     * Seasons had no links field at all, which meant that every time a
+     * season-split show was folded into its parent, the per-season playlist
+     * URL was thrown away. L.A. by Night's seasons four and five and OSRPG's
+     * Blades in the Dark all lost theirs that way and have been recovered.
+     */
+    links: Links.optional(),
   })
   .strict();
 
