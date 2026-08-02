@@ -61,7 +61,13 @@ const formats = [...new Set(db.shows.map((s) => s.format))].sort();
 
   <p class="facet-count" id="count"></p>
 
-  <ul class="card-list" id="results">
+  {/*
+    A poster grid rather than a list. 268 of these shows have key art, and it is
+    far faster to recognise a show you half-remember by its art than by reading
+    331 titles. Shows without art get a lettered plate rather than a hole, so
+    the grid stays even.
+  */}
+  <ul class="poster-grid" id="results">
     {
       rows.map(({ show, channels, games, gameIds, editions: showEditions }) => (
         <li
@@ -72,13 +78,24 @@ const formats = [...new Set(db.shows.map((s) => s.format))].sort();
           data-format={show.format}
         >
           <a href={`${base}shows/${show.id}/`}>
-            <div class="card">
-              <h3>{show.title}</h3>
-              <p>
-                {channels.map((c) => c.name).join(', ')} · {show.format} · {show.status} ·{' '}
-                {games.map((g) => `${g.name} ${g.edition}`).join(', ')}
-              </p>
+            <div class="art">
+              {show.image ? (
+                <img
+                  src={show.image.url}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                />
+              ) : (
+                <span class="plate" aria-hidden="true">{show.title.replace(/^(The|A|An) /, '').charAt(0)}</span>
+              )}
             </div>
+            <h3>{show.title}</h3>
+            <p>
+              {channels.map((c) => c.name).join(', ')}
+              {games.length > 0 && <span class="sys"> · {games.map((g) => g.name).join(', ')}</span>}
+            </p>
           </a>
         </li>
       ))

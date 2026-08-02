@@ -25,7 +25,7 @@ const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
   <div class="portrait-row">
     {person.image && (
       <figure class="portrait">
-        <img src={person.image.url} alt={person.canonical_name} loading="lazy" width="140" />
+        <img src={person.image.url} alt={person.canonical_name} loading="lazy" width="140" referrerpolicy="no-referrer" />
         <figcaption>
           {person.image.attribution}, <a href={person.image.source} rel="nofollow noopener">{person.image.licence}</a>
         </figcaption>

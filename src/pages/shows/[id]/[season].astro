@@ -64,7 +64,7 @@ const dates = [season.started, season.ended].filter(Boolean).join(' – ');
           <li>
             <a href={`${base}people/${person.id}/`}>
               {person.image ? (
-                <img class="cast-face" src={person.image.url} alt="" loading="lazy" />
+                <img class="cast-face" src={person.image.url} alt="" loading="lazy" referrerpolicy="no-referrer" />
               ) : (
                 <span class="cast-face cast-face--blank" aria-hidden="true">
                   {person.canonical_name.slice(0, 1)}

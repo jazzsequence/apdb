@@ -1,28 +1,50 @@
+/*
+ * The visual brief is "reference work", not "streaming service": this is an
+ * index, and it should read like one. Warm paper ground, a serif for names and
+ * titles, and a tight sans for the data itself — so a credit row scans like a
+ * table and a person's name reads like an entry heading.
+ */
 :root {
-  --bg: #fbfaf8;
+  --bg: #faf8f4;
   --surface: #ffffff;
-  --border: #e3ded6;
-  --ink: #1a1815;
-  --muted: #6b645a;
-  --accent: #7a3b2e;
-  --accent-soft: #f3e9e5;
-  --flag: #8a6d1f;
-  --flag-soft: #fbf3dc;
-  --radius: 6px;
+  --sunk: #f4f1ea;
+  --border: #e2dcd1;
+  --border-strong: #cfc6b6;
+  --ink: #17150f;
+  --muted: #6d6558;
+  --accent: #8a3520;
+  --accent-soft: #f6ece7;
+  --flag: #7d6416;
+  --flag-soft: #f9f1d8;
+  --radius: 5px;
   --measure: 68ch;
+
+  --display: ui-serif, 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --body: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* One ratio, used everywhere, so headings relate to each other. */
+  --step--1: 0.833rem;
+  --step-0: 1rem;
+  --step-1: 1.2rem;
+  --step-2: 1.44rem;
+  --step-3: clamp(1.6rem, 3.4vw, 2.05rem);
+  --step-4: clamp(2rem, 5vw, 2.9rem);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #171513;
-    --surface: #201d1a;
-    --border: #35302a;
-    --ink: #ece7e0;
-    --muted: #a29889;
-    --accent: #e0937f;
-    --accent-soft: #2e211c;
+    --bg: #14120f;
+    --surface: #1d1a16;
+    --sunk: #100e0c;
+    --border: #322c25;
+    --border-strong: #4a4238;
+    --ink: #efe9df;
+    --muted: #a89d8c;
+    --accent: #e8967c;
+    --accent-soft: #2d1f19;
     --flag: #d9bb6a;
-    --flag-soft: #2b2415;
+    --flag-soft: #2a2214;
   }
 }
 
@@ -36,7 +58,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font: 16px/1.6 var(--body);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -56,42 +78,66 @@ a:hover {
 
 /* --- masthead ----------------------------------------------------------- */
 .masthead {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-strong);
   margin-bottom: 2.5rem;
   background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .masthead .wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
+  gap: 0.4rem 1.4rem;
   align-items: baseline;
-  padding-block: 1rem;
+  padding-block: 0.85rem;
 }
 .masthead a {
   text-decoration: none;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: var(--step--1);
+  letter-spacing: 0.01em;
 }
 .masthead a:hover {
   color: var(--accent);
 }
+/* The wordmark carries the identity, so it gets the serif and the ampersand-ish
+ * detail: a hairline rule under the initials, like a catalogue heading. */
 .masthead .brand {
-  font-weight: 700;
+  font-family: var(--display);
+  font-weight: 600;
   color: var(--ink);
-  font-size: 1rem;
+  font-size: var(--step-1);
+  letter-spacing: -0.015em;
   margin-right: auto;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.1rem;
+}
+.masthead .brand:hover {
+  color: var(--ink);
 }
 
 h1 {
-  font-size: clamp(1.7rem, 4vw, 2.3rem);
-  line-height: 1.15;
-  margin: 0 0 0.35rem;
-  letter-spacing: -0.02em;
+  font-family: var(--display);
+  font-size: var(--step-4);
+  font-weight: 600;
+  line-height: 1.08;
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.022em;
 }
 h2 {
-  font-size: 1.15rem;
-  margin: 2.5rem 0 0.75rem;
-  letter-spacing: -0.01em;
+  font-family: var(--display);
+  font-size: var(--step-2);
+  font-weight: 600;
+  margin: 2.75rem 0 0.85rem;
+  letter-spacing: -0.015em;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.012em;
 }
 .lede {
   color: var(--muted);
@@ -165,25 +211,41 @@ h2 {
   cursor: help;
 }
 
-/* --- filmography -------------------------------------------------------- */
+/* --- credits ------------------------------------------------------------
+ * Tabular, not card-based. Someone reading a long filmography is scanning for
+ * a show or a season, and rows of aligned columns are what that scanning wants.
+ * The show header still carries poster art, because the images are the fastest
+ * way to recognise a show you half-remember.
+ */
 .film-show {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
   overflow: hidden;
 }
 .film-show > header {
-  padding: 0.85rem 1rem;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 0.75rem;
-  align-items: baseline;
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--border-strong);
+  background: var(--sunk);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.1rem 0.75rem;
+  align-items: center;
+}
+.film-show .poster {
+  grid-row: span 2;
+  width: 62px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  background: var(--border);
 }
 .film-show > header h3 {
   margin: 0;
-  font-size: 1.02rem;
+  font-size: var(--step-1);
+  align-self: end;
 }
 .film-show > header h3 a {
   text-decoration: none;
@@ -193,71 +255,125 @@ h2 {
 }
 .film-show .years {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: var(--step--1);
   font-variant-numeric: tabular-nums;
-  margin-left: auto;
+  align-self: end;
 }
 .film-show .channel {
+  grid-column: 2 / -1;
   color: var(--muted);
-  font-size: 0.85rem;
-  width: 100%;
+  font-size: var(--step--1);
+  align-self: start;
 }
 
-.credit {
-  display: grid;
-  grid-template-columns: minmax(9rem, 15rem) 1fr;
-  gap: 0.15rem 1.25rem;
-  padding: 0.7rem 1rem;
-  border-top: 1px solid var(--border);
+.credit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
 }
-.credit:first-of-type {
-  border-top: 0;
-}
-.credit .where {
+.credit-table th {
+  text-align: left;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
 }
-.credit .episode {
+.credit-table td {
+  padding: 0.45rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: baseline;
+}
+.credit-table tr:last-child td {
+  border-bottom: 0;
+}
+.credit-table tbody tr:hover {
+  background: var(--sunk);
+}
+.credit-table .c-where {
+  color: var(--muted);
+  width: 30%;
+}
+.credit-table .c-where .episode {
   display: block;
   color: var(--accent);
-  font-weight: 600;
   font-size: 0.82rem;
 }
-.credit .what {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem 0.6rem;
-  align-items: baseline;
-}
-.credit .role {
+.credit-table .c-role {
   font-weight: 600;
+  white-space: nowrap;
 }
-.credit .character {
-  color: var(--muted);
+.credit-table .c-char {
+  width: 26%;
 }
-.credit .meta {
-  grid-column: 2;
+.credit-table .c-system {
   color: var(--muted);
   font-size: 0.82rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem 0.6rem;
-  align-items: baseline;
+  width: 17%;
+  line-height: 1.3;
 }
-.credit .note {
-  grid-column: 2;
+/* Edition on its own line: "Dungeons & Dragons · 5th Edition (2014)" set as one
+ * run wraps to three lines in a column this narrow. */
+.credit-table .c-system .edition {
+  display: block;
+  font-size: 0.74rem;
+  opacity: 0.8;
+}
+.credit-table .c-prov {
+  text-align: right;
+  white-space: nowrap;
+}
+.credit-table .c-prov > * {
+  margin-left: 0.25rem;
+}
+.credit-table .row-note td {
+  border-bottom: 0;
+  padding-top: 0;
   color: var(--muted);
   font-size: 0.82rem;
   font-style: italic;
 }
+.credit-table .row-note + tr td {
+  border-top: 1px solid var(--border);
+}
 
-@media (max-width: 34rem) {
-  .credit {
-    grid-template-columns: 1fr;
+/* Below ~48rem a five-column table stops being readable, so each credit
+ * becomes a stacked block with its column names as labels. */
+@media (max-width: 48rem) {
+  .credit-table thead {
+    display: none;
   }
-  .credit .meta,
-  .credit .note {
-    grid-column: 1;
+  .credit-table,
+  .credit-table tbody,
+  .credit-table tr,
+  .credit-table td {
+    display: block;
+    width: auto;
+  }
+  .credit-table tr {
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 0;
+  }
+  .credit-table td {
+    border: 0;
+    padding: 0.1rem 0.85rem;
+  }
+  .credit-table .c-prov {
+    text-align: left;
+    margin-top: 0.2rem;
+  }
+  .credit-table .c-prov > * {
+    margin: 0 0.25rem 0 0;
+  }
+  .credit-table td[data-label]::before {
+    content: attr(data-label) ' ';
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
   }
 }
 
@@ -408,3 +524,64 @@ footer.site {
   color: var(--muted); font-weight: 600; font-size: 0.9rem;
 }
 .cast-face--sm.cast-face--blank { font-size: 0.7rem; }
+
+/* --- poster grid ---------------------------------------------------------
+ * The shows index. Art first, because recognition beats reading when you are
+ * looking for something you only half remember the name of.
+ */
+.poster-grid {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 1.25rem 1rem;
+}
+.poster-grid a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.poster-grid .art {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--sunk);
+  display: grid;
+  place-items: center;
+  transition: border-color 0.15s ease;
+}
+.poster-grid a:hover .art {
+  border-color: var(--accent);
+}
+.poster-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* No art: a lettered plate keeps the grid even instead of leaving a hole. */
+.poster-grid .plate {
+  font-family: var(--display);
+  font-size: 2.4rem;
+  color: var(--border-strong);
+  line-height: 1;
+}
+.poster-grid h3 {
+  margin: 0.5rem 0 0.1rem;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+.poster-grid a:hover h3 {
+  color: var(--accent);
+}
+.poster-grid p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+.poster-grid .sys {
+  display: block;
+}

@@ -22,6 +22,15 @@ function yearRange(group: FilmographyGroup): string {
   groups.map((group) => (
     <article class="film-show">
       <header>
+        {group.show.image && (
+          <img
+            class="poster"
+            src={group.show.image.url}
+            alt=""
+            loading="lazy"
+            decoding="async" referrerpolicy="no-referrer"
+          />
+        )}
         <h3>
           <a href={`${base}shows/${group.show.id}/`}>{group.show.title}</a>
         </h3>
@@ -31,75 +40,104 @@ function yearRange(group: FilmographyGroup): string {
         </span>
       </header>
 
-      {group.credits.map(({ credit, season, game, alias, creditedUnderFormerName, tier, corroboration }) => (
-        <div class="credit">
-          <div class="where">
-            {season && (
-              <span>
-                Season {season.ordinal}
-                {season.title ? ` — ${season.title}` : ''}
-              </span>
-            )}
-            {credit.episode && <span class="episode">{credit.episode}</span>}
-            {!season && !credit.episode && <span>Show-level credit</span>}
-          </div>
+      <table class="credit-table">
+        <thead>
+          <tr>
+            <th scope="col">Season</th>
+            <th scope="col">Role</th>
+            <th scope="col">Character</th>
+            <th scope="col">System</th>
+            <th scope="col">Provenance</th>
+          </tr>
+        </thead>
+        <tbody>
+          {group.credits.map(({ credit, season, game, alias, creditedUnderFormerName, tier, corroboration }) => (
+            <>
+              <tr>
+                <td class="c-where" data-label="Season">
+                  {season
+                    ? `Season ${season.ordinal}${season.title ? ` — ${season.title}` : ''}`
+                    : 'Show-level credit'}
+                  {credit.episode && <span class="episode">{credit.episode}</span>}
+                </td>
 
-          <div class="what">
-            <span class="role">{credit.role}</span>
-            {credit.character && <span class="character">as {credit.character}</span>}
-          </div>
+                <td class="c-role" data-label="Role">{credit.role}</td>
 
-          <div class="meta">
-            {game && (
-              <span>
-                {game.name} · {game.edition}
-              </span>
-            )}
-            {alias ? (
-              <span>
-                credited as {alias.name}{' '}
-                {creditedUnderFormerName && <span class="tag tag--former">former name</span>}
-              </span>
-            ) : (
-              <span class="unbilled" title="Nobody has established which name was on the billing for this credit.">
-                billed name not established
-              </span>
-            )}
-            <span
-              class={`tag tier tier--${tier.strength}`}
-              title={[
-                tier.description,
-                ...credit.sources
-                  .filter((s) => s.attested_by)
-                  .map((s) => `Attested by ${s.attested_by}.`),
-              ].join(' ')}
-            >
-              {tier.label}
-            </span>
-            {corroboration.status === 'corroborated' ? (
-              <span
-                class="tag tag--corroborated"
-                title={`${corroboration.independent} independent sources agree.`}
-              >
-                corroborated ×{corroboration.independent}
-              </span>
-            ) : (
-              <span class="tag tag--flag" title="One source so far. A second independent account would corroborate it.">
-                single source
-              </span>
-            )}
-            {credit.sources.map((source) =>
-              source.url ? (
-                <a href={source.url} rel="nofollow noopener">
-                  source
-                </a>
-              ) : null,
-            )}
-          </div>
+                <td class="c-char" data-label="Character">
+                  {credit.character ?? ''}
+                  {alias ? (
+                    creditedUnderFormerName && (
+                      <>
+                        {' '}
+                        <span class="tag tag--former" title={`Credited as ${alias.name}`}>
+                          as {alias.name}
+                        </span>
+                      </>
+                    )
+                  ) : (
+                    <span
+                      class="unbilled"
+                      title="Nobody has established which name was on the billing for this credit."
+                    >
+                      billing unknown
+                    </span>
+                  )}
+                </td>
 
-          {credit.note && <div class="note">{credit.note}</div>}
-        </div>
-      ))}
+                <td class="c-system" data-label="System">
+                  {game && (
+                    <>
+                      {game.name}
+                      <span class="edition">{game.edition}</span>
+                    </>
+                  )}
+                </td>
+
+                <td class="c-prov" data-label="Provenance">
+                  <span
+                    class={`tag tier tier--${tier.strength}`}
+                    title={[
+                      tier.description,
+                      ...credit.sources
+                        .filter((s) => s.attested_by)
+                        .map((s) => `Attested by ${s.attested_by}.`),
+                    ].join(' ')}
+                  >
+                    {tier.label}
+                  </span>
+                  {corroboration.status === 'corroborated' ? (
+                    <span
+                      class="tag tag--corroborated"
+                      title={`${corroboration.independent} independent sources agree.`}
+                    >
+                      ×{corroboration.independent}
+                    </span>
+                  ) : (
+                    <span
+                      class="tag tag--flag"
+                      title="One source so far. A second independent account would corroborate it."
+                    >
+                      single
+                    </span>
+                  )}
+                  {credit.sources.map((source) =>
+                    source.url ? (
+                      <a href={source.url} rel="nofollow noopener" title={source.note}>
+                        source
+                      </a>
+                    ) : null,
+                  )}
+                </td>
+              </tr>
+              {credit.note && (
+                <tr class="row-note">
+                  <td colspan="5">{credit.note}</td>
+                </tr>
+              )}
+            </>
+          ))}
+        </tbody>
+      </table>
     </article>
   ))
 }

@@ -21,6 +21,13 @@ const base = import.meta.env.BASE_URL;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/*
+      Fandom serves a 404 for any image request carrying a Referer header —
+      standard hotlink protection — which silently broke every wiki-sourced
+      poster and portrait on the site. Suppressing the referrer fixes it, and
+      is the more privacy-preserving default for outbound links anyway.
+    */}
+    <meta name="referrer" content="no-referrer" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
   </head>

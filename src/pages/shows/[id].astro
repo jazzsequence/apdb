@@ -39,7 +39,7 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
   <div class="portrait-row">
     {show.image && (
       <figure class="keyart">
-        <img src={show.image.url} alt={show.image.depicts ?? show.title} loading="lazy" />
+        <img src={show.image.url} alt={show.image.depicts ?? show.title} loading="lazy" referrerpolicy="no-referrer" />
         <figcaption>
           {show.image.attribution}{' '}
           <a href={show.image.source} rel="nofollow noopener">source</a>
@@ -106,29 +106,45 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
                   )}
             </h3>
           </header>
-          {bySeason.get(key)!.map(({ person, credit, alias }) => (
-            <div class="credit">
-              <div class="where">
-                {person.image ? (
-                  <img class="cast-face cast-face--sm" src={person.image.url} alt="" loading="lazy" />
-                ) : (
-                  <span class="cast-face cast-face--sm cast-face--blank" aria-hidden="true">
-                    {person.canonical_name.slice(0, 1)}
+          {/*
+            Faces, not rows. On a show page the question is "who is in this",
+            and a portrait answers it faster than a name — especially for the
+            guest spots this index exists to record.
+          */}
+          <ul class="cast-grid">
+            {bySeason.get(key)!.map(({ person, credit, alias }) => (
+              <li>
+                <a href={`${base}people/${person.id}/`}>
+                  {person.image ? (
+                    <img
+                      class="cast-face"
+                      src={person.image.url}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    />
+                  ) : (
+                    <span class="cast-face cast-face--blank" aria-hidden="true">
+                      {person.canonical_name.slice(0, 1)}
+                    </span>
+                  )}
+                  <span class="cast-name">
+                    {alias?.name ?? person.canonical_name}
+                    {alias && alias.name !== person.canonical_name && (
+                      <em> — now {person.canonical_name}</em>
+                    )}
+                    {!alias && <em> — billing unknown</em>}
                   </span>
-                )}
-                <a href={`${base}people/${person.id}/`}>{alias?.name ?? person.canonical_name}</a>
-                {alias && alias.name !== person.canonical_name && (
-                  <span class="episode">now {person.canonical_name}</span>
-                )}
-                {!alias && <span class="unbilled">billed name not established</span>}
-              </div>
-              <div class="what">
-                <span class="role">{credit.role}</span>
-                {credit.character && <span class="character">as {credit.character}</span>}
-              </div>
-              {credit.episode && <div class="meta">{credit.episode}</div>}
-            </div>
-          ))}
+                  <span class="cast-role">
+                    {credit.role}
+                    {credit.character ? ` as ${credit.character}` : ''}
+                    {credit.episode ? ` · ${credit.episode}` : ''}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </article>
       ))
     )
