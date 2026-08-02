@@ -1,0 +1,80 @@
+id: joaquin-foster
+canonical_name: Joaquin Foster
+sort_name: Foster, Joaquin
+aliases:
+  - id: default
+    name: Joaquin Foster
+    alias_type: legal
+credits:
+  - show: dagger-in-the-heart-heart-the-city-beneath
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://open.spotify.com/show/6Wtg6jh1RWW3zxbaGLD6uk
+        note: GM per the show’s published cast listing. Player line-ups vary by
+          campaign.
+  - show: eat-the-reich
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://open.spotify.com/show/6Wtg6jh1RWW3zxbaGLD6uk
+        note: GM per the show’s published cast listing. Player line-ups vary by
+          campaign.
+  - show: hunting-heresy
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://open.spotify.com/show/6Wtg6jh1RWW3zxbaGLD6uk
+        note: GM per the show’s published cast listing. Player line-ups vary by
+          campaign.
+  - show: pirate-borg
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://open.spotify.com/show/6Wtg6jh1RWW3zxbaGLD6uk
+        note: GM per the show’s published cast listing. Player line-ups vary by
+          campaign.
+  - show: secrets-of-the-dragon-emperor-dragonbane-actual-play-al
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://open.spotify.com/show/6Wtg6jh1RWW3zxbaGLD6uk
+        note: GM per the show’s published cast listing. Player line-ups vary by
+          campaign.
+  - show: shadows-in-the-mist-blackened-earth-soulbound-rpg-actua
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://open.spotify.com/show/6Wtg6jh1RWW3zxbaGLD6uk
+        note: GM per the show’s published cast listing. Player line-ups vary by
+          campaign.
+  - show: the-delian-company-a-daggerheart-actual-play-series
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://open.spotify.com/show/6Wtg6jh1RWW3zxbaGLD6uk
+        note: GM per the show’s published cast listing. Player line-ups vary by
+          campaign.
+  - show: war-of-crows-blades-in-the-dark-campaign
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://open.spotify.com/show/6Wtg6jh1RWW3zxbaGLD6uk
+        note: GM per the show’s published cast listing. Player line-ups vary by
+          campaign.

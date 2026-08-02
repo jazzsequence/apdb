@@ -30,3 +30,36 @@ credits:
       - tier: official
         url: https://www.youtube.com/channel/UCZypxipNmn_8WzTwy_2lXqQ
         note: GM per the channel's own description. Player names not published.
+  - show: a-war-of-fang-fur
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - &a1
+        tier: official
+        url: https://www.youtube.com/channel/UCZypxipNmn_8WzTwy_2lXqQ
+        note: GM per the channel's own description. Player names not published.
+  - show: beyond-the-liminal-haven
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - *a1
+  - show: goldbrine-s-grave
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - *a1
+  - show: the-chaos-hours
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - *a1
+  - show: top-hats-tombstones
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - *a1

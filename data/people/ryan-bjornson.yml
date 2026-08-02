@@ -1,0 +1,17 @@
+id: ryan-bjornson
+canonical_name: Ryan Bjornson
+sort_name: Bjornson, Ryan
+aliases:
+  - id: default
+    name: Ryan Bjornson
+    alias_type: legal
+credits:
+  - show: d-d-the-shards-of-nyrn-season-4-generic-fantasy-setting
+    season: 1
+    role: player
+    character: Jassen
+    alias: default
+    sources:
+      - tier: reference
+        url: https://dorktales.fandom.com/wiki/The_Shards_of_Nyrn
+        note: Cast per the DorkTales wiki and the show’s own site.

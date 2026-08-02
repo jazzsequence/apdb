@@ -1,0 +1,17 @@
+id: wynter-swaluk
+canonical_name: Wynter Swaluk
+sort_name: Swaluk, Wynter
+aliases:
+  - id: default
+    name: Wynter Swaluk
+    alias_type: legal
+credits:
+  - show: d-d-the-shards-of-nyrn-season-4-generic-fantasy-setting
+    season: 1
+    role: player
+    character: Marisol
+    alias: default
+    sources:
+      - tier: reference
+        url: https://dorktales.fandom.com/wiki/The_Shards_of_Nyrn
+        note: Cast per the DorkTales wiki and the show’s own site.

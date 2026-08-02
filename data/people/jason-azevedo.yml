@@ -117,3 +117,24 @@ credits:
         url: https://www.youtube.com/watch?v=2k8p62-DpS0
         note: Cast per the production's own description of "Prologue - The Tides of
           Wildemount | LIVE D&D with RealmSmith".
+  - show: sentinels-of-the-storm
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - &a1
+        tier: official
+        url: https://youtube.com/@realmsmith
+        note: GM per the channel's own video descriptions. Player names vary by series.
+  - show: the-order-of-dragonsbane
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - *a1
+  - show: the-smurfs-roleplaying-game
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - *a1
