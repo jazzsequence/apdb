@@ -6,6 +6,10 @@ aliases:
   - id: default
     name: Holly Conrad
     alias_type: legal
+  - id: commander-holly
+    name: Commander Holly
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `commander-holly`.
 credits:
   - show: acquisitions-incorporated
     season: 13

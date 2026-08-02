@@ -33,15 +33,6 @@ credits:
         url: https://www.imdb.com/title/tt9193494/fullcredits/
         note: IMDb full cast and crew for "Barky's Brigade" (2015), via the official
           datasets.
-  - show: 2015-star-wars-holiday-special
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
-        note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
-          infobox. CC-BY-SA.
   - show: dinner-dragons
     role: GM/DM
     season: 1
@@ -53,3 +44,12 @@ credits:
         url: https://www.imdb.com/title/tt8281092/fullcredits/
         note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
           datasets.
+  - show: 2015-star-wars-holiday-special
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
+        note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.

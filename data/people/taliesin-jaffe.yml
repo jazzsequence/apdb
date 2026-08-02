@@ -37,17 +37,6 @@ credits:
         url: https://thetvdb.com/series/critical-role
         note: Cast for "Critical Role" per TheTVDB.
   - show: critical-role
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-      - *a1
-      - *a2
-      - *a3
-  - show: critical-role
     season: 1
     role: player
     character: Percival de Rolo
@@ -70,62 +59,6 @@ credits:
       - *a1
       - *a2
       - *a3
-  - show: candela-obscura
-    season: 1
-    role: host
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 2
-    role: host
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 3
-    role: host
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-      - &a4
-        tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-      - &a5
-        tier: reference
-        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
-        note: Cast for "Candela Obscura" per TMDB.
-      - &a6
-        tier: reference
-        url: https://thetvdb.com/series/candela-obscura
-        note: Cast for "Candela Obscura" per TheTVDB.
-  - show: candela-obscura
-    season: 5
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-      - *a4
-      - *a5
-      - *a6
   - show: critical-role-specials
     season: 2
     role: player
@@ -136,14 +69,6 @@ credits:
         note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: critical-role-specials
-    season: 3
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
   - show: la-by-night
     season: 1
     role: player
@@ -209,6 +134,30 @@ credits:
         note: IMDb full cast and crew for "Callisto 6" (2018), via the official
           datasets.
   - show: candela-obscura
+    season: 1
+    role: host
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 2
+    role: host
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
+    season: 3
+    role: host
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
     role: writer
     note: IMDb credits this at series level; which of this show's seasons it covers
       is not established.
@@ -218,3 +167,54 @@ credits:
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+      - *a1
+      - *a2
+      - *a3
+  - show: candela-obscura
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+      - &a4
+        tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+      - &a5
+        tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
+      - &a6
+        tier: reference
+        url: https://thetvdb.com/series/candela-obscura
+        note: Cast for "Candela Obscura" per TheTVDB.
+  - show: candela-obscura
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+      - *a4
+      - *a5
+      - *a6
+  - show: critical-role-specials
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
+        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

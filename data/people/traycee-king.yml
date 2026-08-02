@@ -32,6 +32,16 @@ credits:
         url: https://www.imdb.com/title/tt9196904/fullcredits/
         note: IMDb full cast and crew for "Garden of Good and Evil" (2018), via the
           official datasets.
+  - show: barky-s-brigade
+    role: player
+    season: 1
+    character: Dayl Clawthorne (2016)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9193494/fullcredits/
+        note: IMDb full cast and crew for "Barky's Brigade" (2015), via the official
+          datasets.
   - show: sagas-of-sundry
     role: producer
     season: 1
@@ -42,14 +52,4 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
-          datasets.
-  - show: barky-s-brigade
-    role: player
-    season: 1
-    character: Dayl Clawthorne (2016)
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9193494/fullcredits/
-        note: IMDb full cast and crew for "Barky's Brigade" (2015), via the official
           datasets.

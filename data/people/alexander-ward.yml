@@ -7,6 +7,40 @@ aliases:
     name: Alexander Ward
     alias_type: legal
 credits:
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Jasper
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+      - tier: reference
+        url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
+        note: Cast for "L.A. by Night" per TMDB.
+  - show: dnd-dungeon-masters
+    role: player
+    character: Lividity
+    note: TMDB credits this at series level; which season it covers is not
+      established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
+        note: Cast for "Dungeon Masters" per TMDB.
+  - show: la-by-night
+    season: 4
+    role: player
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+        note: Cast and roles per Wikipedia.
+      - tier: community
+        url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
+        note: Cast page on the show's own wiki, which records when each player-actor
+          joined.
+    character: Jasper
+    alias: default
   - show: critical-role
     season: 4
     role: player
@@ -58,47 +92,3 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Jasper
-    alias: default
-    sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
-      - tier: reference
-        url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
-        note: Cast for "L.A. by Night" per TMDB.
-  - show: player-piano
-    role: player
-    season: 1
-    character: Store Patron
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4677382/fullcredits/
-        note: IMDb full cast and crew for "Player Piano" (2014), via the official
-          datasets.
-  - show: dnd-dungeon-masters
-    role: player
-    character: Lividity
-    note: TMDB credits this at series level; which season it covers is not
-      established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
-        note: Cast for "Dungeon Masters" per TMDB.
-  - show: la-by-night
-    season: 4
-    role: player
-    sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
-        note: Cast and roles per Wikipedia.
-      - tier: community
-        url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
-        note: Cast page on the show's own wiki, which records when each player-actor
-          joined.
-    character: Jasper
-    alias: default

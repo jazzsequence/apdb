@@ -44,19 +44,6 @@ credits:
           CC-BY-SA."
         tier: community
   - show: the-adventure-zone
-    season: 3
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_(K)nights
-        note: "MaxFunDrive Bonus Campaign: (K)nights cast, via the
-          theadventurezone.fandom.com infobox. CC-BY-SA."
-        tier: community
-      - &a1
-        tier: reference
-        url: https://thetvdb.com/series/the-adventure-zone
-        note: Cast for "The Adventure Zone" per TheTVDB.
-  - show: the-adventure-zone
     season: 4
     role: player
     character: Aubrey Little
@@ -66,49 +53,6 @@ credits:
         note: "Campaign 3: Amnesty cast, via the theadventurezone.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: the-adventure-zone
-    season: 5
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://theadventurezone.fandom.com/wiki/Campaign_4%3A_Dust
-        note: "Campaign 4: Dust cast, via the theadventurezone.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-      - *a1
-  - show: the-adventure-zone
-    season: 6
-    role: player
-    alias: default
-    sources:
-      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Elementary
-        note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
-          theadventurezone.fandom.com infobox. CC-BY-SA."
-        tier: community
-      - &a2
-        tier: reference
-        url: https://thetvdb.com/series/the-adventure-zone
-        note: Cast for "The Adventure Zone" per TheTVDB.
-  - show: the-adventure-zone
-    season: 7
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Fur
-        note: "MaxFunDrive Bonus Campaign: Fur cast, via the theadventurezone.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-      - *a1
-  - show: the-adventure-zone
-    season: 8
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://theadventurezone.fandom.com/wiki/Campaign_5%3A_Graduation
-        note: "Campaign 5: Graduation cast, via the theadventurezone.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-      - *a1
   - show: the-adventure-zone
     season: 9
     role: player
@@ -159,6 +103,62 @@ credits:
         note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
         tier: community
+  - show: the-adventure-zone
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_(K)nights
+        note: "MaxFunDrive Bonus Campaign: (K)nights cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."
+        tier: community
+      - &a1
+        tier: reference
+        url: https://thetvdb.com/series/the-adventure-zone
+        note: Cast for "The Adventure Zone" per TheTVDB.
+  - show: the-adventure-zone
+    season: 5
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Campaign_4%3A_Dust
+        note: "Campaign 4: Dust cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+      - *a1
+  - show: the-adventure-zone
+    season: 7
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Fur
+        note: "MaxFunDrive Bonus Campaign: Fur cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+      - *a1
+  - show: the-adventure-zone
+    season: 8
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/Campaign_5%3A_Graduation
+        note: "Campaign 5: Graduation cast, via the theadventurezone.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+      - *a1
+  - show: the-adventure-zone
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Elementary
+        note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."
+        tier: community
+      - &a2
+        tier: reference
+        url: https://thetvdb.com/series/the-adventure-zone
+        note: Cast for "The Adventure Zone" per TheTVDB.
   - show: the-adventure-zone
     season: 17
     role: player

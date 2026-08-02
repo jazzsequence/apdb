@@ -5,6 +5,10 @@ aliases:
   - id: default
     name: Satine Phoenix
     alias_type: legal
+  - id: satine-pheonix
+    name: Satine Pheonix
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `satine-pheonix`.
 credits:
   - show: la-by-night
     season: 1

@@ -33,15 +33,6 @@ credits:
         note: Cast per the production's own description of "Prologue - The Tides of
           Wildemount | LIVE D&D with RealmSmith".
         tier: official
-  - show: friends-of-the-pod
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
-        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
   - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
     season: 1
     role: player
@@ -82,6 +73,15 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/relics-and-rarities
         note: Cast for "Relics and Rarities" per TheTVDB.
+  - show: friends-of-the-pod
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
   - show: champions-of-the-realm
     season: 1
     role: player

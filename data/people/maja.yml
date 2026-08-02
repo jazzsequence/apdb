@@ -1,9 +1,3 @@
-# Credits imported from avantris.fandom.com on 2026-08-01.
-# Source: https://avantris.fandom.com/wiki/Blank_Slate (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: maja
 canonical_name: Maja
 sort_name: Maja
@@ -50,14 +44,6 @@ credits:
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
-    season: 23
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
-        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legends-of-avantris
     season: 39
     role: player
     character: Phil Nudisc
@@ -65,6 +51,14 @@ credits:
     sources:
       - url: https://avantris.fandom.com/wiki/An_Island_Hidden
         note: An Island Hidden cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 23
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
+        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: legends-of-avantris
     season: 41

@@ -90,14 +90,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/133643-we-re-alive-frontier/cast
         note: "Cast for \"We're Alive: Frontier\" per TMDB."
-  - show: game-masters-hall
-    role: player
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/game-masters-hall
-        note: Cast for "Game Masters Hall" per TheTVDB.
   - show: la-by-night
     season: 4
     role: player
@@ -111,3 +103,11 @@ credits:
           joined.
     character: Victor Temple
     alias: default
+  - show: game-masters-hall
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/game-masters-hall
+        note: Cast for "Game Masters Hall" per TheTVDB.

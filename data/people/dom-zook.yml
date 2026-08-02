@@ -7,15 +7,6 @@ aliases:
     name: Dom Zook
     alias_type: legal
 credits:
-  - show: the-ironkeep-chronicles
-    season: 1
-    role: editor
-    alias: default
-    sources:
-      - url: https://savingthrowshow.fandom.com/wiki/The_Ironkeep_Chronicles
-        note: The Ironkeep Chronicles cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: prickly-tallstag-and-the-danger-seekers-pears
     season: 1
     role: player
@@ -30,6 +21,78 @@ credits:
         url: https://www.imdb.com/title/tt8102874/fullcredits/
         note: IMDb full cast and crew for "Prickly Tallstag and the Danger Seekers,
           Pears" (2017), via the official datasets.
+  - show: legacy
+    role: player
+    season: 1
+    character: French
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359834/fullcredits/
+        note: IMDb full cast and crew for "Legacy" (2018), via the official datasets.
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Carl
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: deadlands-lawless
+    role: player
+    season: 1
+    character: Ransom Keane
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt12286336/fullcredits/
+        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
+          datasets.'
+  - show: it-s-always-cloudy-in-barovia
+    role: player
+    season: 1
+    character: Firk Cragholder
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8359254/fullcredits/
+        note: IMDb full cast and crew for "It's Always Cloudy in Barovia" (2018), via
+          the official datasets.
+  - show: east-texas-university-undeclared
+    role: player
+    season: 1
+    character: Mike Squire
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9187582/fullcredits/
+        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
+          via the official datasets.'
+  - show: twilight-protocol
+    role: player
+    season: 1
+    character: Professor Duncan
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9886618/fullcredits/
+        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
+          datasets.
+  - show: the-ironkeep-chronicles
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/The_Ironkeep_Chronicles
+        note: The Ironkeep Chronicles cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
   - show: pirates-of-salt-bay
     season: 1
     role: producer
@@ -214,66 +277,3 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/All_Games_No_Masters
         note: All Games No Masters cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
-  - show: legacy
-    role: player
-    season: 1
-    character: French
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt8359834/fullcredits/
-        note: IMDb full cast and crew for "Legacy" (2018), via the official datasets.
-  - show: tempting-fate
-    role: player
-    season: 1
-    character: Carl
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7394666/fullcredits/
-        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
-          datasets.
-  - show: deadlands-lawless
-    role: player
-    season: 1
-    character: Ransom Keane
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt12286336/fullcredits/
-        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
-          datasets.'
-  - show: it-s-always-cloudy-in-barovia
-    role: player
-    season: 1
-    character: Firk Cragholder
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt8359254/fullcredits/
-        note: IMDb full cast and crew for "It's Always Cloudy in Barovia" (2018), via
-          the official datasets.
-  - show: east-texas-university-undeclared
-    role: player
-    season: 1
-    character: Mike Squire
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9187582/fullcredits/
-        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
-          via the official datasets.'
-  - show: twilight-protocol
-    role: player
-    season: 1
-    character: Professor Duncan
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9886618/fullcredits/
-        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
-          datasets.

@@ -32,15 +32,6 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
-  - show: tempting-fate
-    role: GM/DM
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7394666/fullcredits/
-        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
-          datasets.
   - show: vast
     role: player
     season: 1
@@ -67,6 +58,25 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/callisto-6
         note: Cast for "Callisto 6" per TheTVDB.
+  - show: tempting-fate
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: dimension-20
+    role: writer
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
   - show: shadows-on-the-horizon
     role: player
     season: 1
@@ -78,16 +88,6 @@ credits:
         url: https://www.imdb.com/title/tt9196944/fullcredits/
         note: IMDb full cast and crew for "Shadows on the Horizon" (2018), via the
           official datasets.
-  - show: dimension-20
-    role: writer
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
   - show: game-masters-hall
     role: player
     season: 1

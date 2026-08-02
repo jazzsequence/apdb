@@ -33,23 +33,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/critical-role
         note: Cast for "Critical Role" per TheTVDB.
-  - show: critical-role
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: exandria-unlimited
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
-        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: exandria-unlimited
     season: 4
     role: player
@@ -90,6 +73,33 @@ credits:
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+  - show: critical-role-specials
+    season: 2
+    role: player
+    character: Trist
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
   - show: candela-obscura
     season: 1
     role: player
@@ -108,16 +118,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/candela-obscura
         note: Cast for "Candela Obscura" per TheTVDB.
-  - show: critical-role-specials
-    season: 2
-    role: player
-    character: Trist
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
   - show: critical-role-specials
     season: 3
     role: player

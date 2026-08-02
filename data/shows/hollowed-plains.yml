@@ -8,4 +8,6 @@ links:
   website: https://happyjacks.org/hollowedplains/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: vampire-the-dark-ages
+description: System corrected to vampire-the-dark-ages from the show's own
+  title; it had been left at the D&D 5e default.

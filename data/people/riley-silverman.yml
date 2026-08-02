@@ -6,6 +6,16 @@ aliases:
     name: Riley Silverman
     alias_type: legal
 credits:
+  - show: the-broken-pact
+    role: player
+    season: 1
+    character: Velma
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9660096/fullcredits/
+        note: IMDb full cast and crew for "The Broken Pact" (2018), via the official
+          datasets.
   - show: celebrid-d
     season: 1
     episode: "S1E5: CelebriD&D with Suicide Squad (2 August 2020)"
@@ -39,14 +49,4 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt22487604/fullcredits/
         note: IMDb full cast and crew for "Dice Ex Machina" (2020), via the official
-          datasets.
-  - show: the-broken-pact
-    role: player
-    season: 1
-    character: Velma
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9660096/fullcredits/
-        note: IMDb full cast and crew for "The Broken Pact" (2018), via the official
           datasets.

@@ -1,9 +1,3 @@
-# Credits imported from avantris.fandom.com on 2026-08-01.
-# Source: https://avantris.fandom.com/wiki/Blank_Slate (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: mikey
 canonical_name: Mikey
 sort_name: Mikey
@@ -21,14 +15,6 @@ credits:
     sources:
       - url: https://avantris.fandom.com/wiki/Curse_of_Strahdanya
         note: Curse of Strahdanya cast, via the avantris.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legends-of-avantris
-    season: 2
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Prime
-        note: Prime cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: legends-of-avantris
     season: 3
@@ -60,14 +46,6 @@ credits:
           CC-BY-SA."
         tier: community
   - show: legends-of-avantris
-    season: 6
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
-        note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legends-of-avantris
     season: 7
     role: player
     character: Jericho Sticks
@@ -75,41 +53,6 @@ credits:
     sources:
       - url: https://avantris.fandom.com/wiki/Edge_of_Midnight
         note: Edge of Midnight cast, via the avantris.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legends-of-avantris
-    season: 8
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Vagabond's_Heart%3A_A_Dimwood_Tale
-        note: "Vagabond's Heart: A Dimwood Tale cast, via the avantris.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
-    season: 9
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
-        note: "Uprooted: Dimwits of the Dimwood cast, via the avantris.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
-    season: 10
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Shroud_Over_Saltmarsh
-        note: Shroud Over Saltmarsh cast, via the avantris.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legends-of-avantris
-    season: 11
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Shadow_Over_Gauntsmouth
-        note: Shadow Over Gauntsmouth cast, via the avantris.fandom.com infobox.
-          CC-BY-SA.
         tier: community
   - show: legends-of-avantris
     season: 12
@@ -139,14 +82,6 @@ credits:
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
-    season: 15
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Tactical_Waifu
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
     season: 16
     role: player
     character: B. Yancy Zurr
@@ -162,14 +97,6 @@ credits:
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
-    season: 18
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Kobold_Storm
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
@@ -207,14 +134,6 @@ credits:
     sources:
       - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
-    season: 23
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
-        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: legends-of-avantris
     season: 24
@@ -272,14 +191,6 @@ credits:
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
-    season: 31
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
     season: 32
     role: player
     character: Orata Whispermouse
@@ -305,14 +216,6 @@ credits:
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_A_Starlight
         note: Once Upon A Starlight cast, via the avantris.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legends-of-avantris
-    season: 35
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Uproot-a-rama
-        note: Uproot-a-rama cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: legends-of-avantris
     season: 36
@@ -368,3 +271,94 @@ credits:
       - tier: community
         url: https://avantris.fandom.com/wiki/Blank_Slate
         note: Blank Slate cast, via the avantris.fandom.com infobox. CC-BY-SA.
+  - show: legends-of-avantris
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Prime
+        note: Prime cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 6
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
+        note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 8
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Vagabond's_Heart%3A_A_Dimwood_Tale
+        note: "Vagabond's Heart: A Dimwood Tale cast, via the avantris.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 9
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Uprooted%3A_Dimwits_of_the_Dimwood
+        note: "Uprooted: Dimwits of the Dimwood cast, via the avantris.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 10
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Shroud_Over_Saltmarsh
+        note: Shroud Over Saltmarsh cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 11
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Shadow_Over_Gauntsmouth
+        note: Shadow Over Gauntsmouth cast, via the avantris.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 15
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Tactical_Waifu
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 31
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 35
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Uproot-a-rama
+        note: Uproot-a-rama cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 18
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Kobold_Storm
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 23
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
+        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community

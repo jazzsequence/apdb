@@ -7,6 +7,16 @@ aliases:
     alias_type: legal
 credits:
   - show: phoenix-dawn-command
+    role: player
+    season: 1
+    character: Marshall
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196714/fullcredits/
+        note: IMDb full cast and crew for "Phoenix Dawn Command" (2016), via the
+          official datasets.
+  - show: phoenix-dawn-command
     season: 1
     role: GM/DM
     alias: default
@@ -33,16 +43,6 @@ credits:
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
-  - show: phoenix-dawn-command
-    role: player
-    season: 1
-    character: Marshall
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9196714/fullcredits/
-        note: IMDb full cast and crew for "Phoenix Dawn Command" (2016), via the
-          official datasets.
 image:
   url: https://live.staticflickr.com/5476/10201891386_8b6efd2e9b_b.jpg
   licence: CC-BY-2.0

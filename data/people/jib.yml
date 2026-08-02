@@ -14,22 +14,6 @@ credits:
       - tier: official
         url: https://happyjacks.org/justusheroes/
         note: Cast per the network's own show page.
-  - show: desert-of-despair
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/desertofdespair/
-        note: Cast per the network's own show page.
-  - show: hollowed-plains
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/hollowedplains/
-        note: Cast per the network's own show page.
   - show: the-spaniard-s-ghost
     season: 1
     role: GM/DM
@@ -45,6 +29,22 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/genex/
+        note: Cast per the network's own show page.
+  - show: desert-of-despair
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/desertofdespair/
+        note: Cast per the network's own show page.
+  - show: hollowed-plains
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/hollowedplains/
         note: Cast per the network's own show page.
 image:
   url: https://live.staticflickr.com/5460/16995838808_7cb18cc7df_b.jpg

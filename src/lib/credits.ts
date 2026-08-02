@@ -40,6 +40,23 @@ function sameFact(a: Partial<Credit>, b: Partial<Credit>): boolean {
 }
 
 /**
+ * Values that catalogues put in the character field which are not characters.
+ *
+ * TMDB and TheTVDB have one cast category — actor — so a game master is filed
+ * as an actor whose "character" is the label the catalogue happened to use.
+ * TheTVDB gave Brennan Lee Mulligan the character "Actor" on Worlds Beyond
+ * Number, a show he runs.
+ */
+export const ROLE_LABEL =
+  /^(actor|actress|self|host|guest|guest star|self\s*[-–—,]\s*\w+|narrator|announcer|storyteller|story teller|game ?master|dungeon ?master|gm|dm|keeper|crew|player|cast|various|additional voices)$/i;
+
+/** A character field worth keeping, or nothing. */
+export function realCharacter(value: string | undefined): string | undefined {
+  const v = (value ?? '').trim();
+  return !v || ROLE_LABEL.test(v) ? undefined : v;
+}
+
+/**
  * Roles that describe the same activity at different confidence. Sources
  * routinely disagree about whether an appearance was a regular or a guest
  * slot, and that disagreement should not fork one appearance into two credits.
@@ -123,7 +140,45 @@ function alreadyCited(credit: Credit, source: Source): boolean {
  * name, an episode locator — are filled in, but never overwritten: the first
  * importer to record something specific keeps it.
  */
+/**
+ * Is this incoming credit merely "they were involved", against an existing
+ * credit that says what they actually did?
+ *
+ * TMDB and TheTVDB file everybody as an actor, so their credit for a game
+ * master arrives as a character-less `player`. Stored alongside the GM credit
+ * it reads as one person both running and playing in the same season, which
+ * is not what the catalogue meant — it has no way to express "GM" at all.
+ * Twenty credits were forked this way.
+ *
+ * Only applies where the incoming credit names no character. Someone who
+ * genuinely did both — Cat Blackard runs The Call of Cthulhu Mystery Program
+ * and plays The Announcer in it — names a character, and keeps both credits.
+ */
+function isBareParticipation(incoming: Partial<Credit>, existing: Partial<Credit>): boolean {
+  return (
+    incoming.show === existing.show &&
+    (incoming.season ?? null) === (existing.season ?? null) &&
+    (incoming.episode ?? null) === (existing.episode ?? null) &&
+    realCharacter(incoming.character) === undefined &&
+    (incoming.role ?? '').includes('player') &&
+    !(existing.role ?? '').includes('player')
+  );
+}
+
 export function upsertCredit(existing: Credit[], incoming: Credit): UpsertResult {
+  // A catalogue saying "they were in this" does not contradict a source saying
+  // what they did. It corroborates it.
+  const moreSpecific = existing.find((c) => isBareParticipation(incoming, c));
+  if (moreSpecific) {
+    const fresh = incoming.sources.filter((s) => !alreadyCited(moreSpecific, s));
+    if (fresh.length === 0) return { outcome: 'already-cited', credits: existing };
+    const merged = { ...moreSpecific, sources: [...moreSpecific.sources, ...fresh] };
+    return {
+      outcome: 'corroborated',
+      credits: existing.map((c) => (c === moreSpecific ? merged : c)),
+    };
+  }
+
   // A vague incoming credit that an existing specific one already covers is
   // corroboration for that one, not a new row.
   if (incoming.season === undefined) {

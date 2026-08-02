@@ -38,33 +38,6 @@ credits:
         url: https://www.imdb.com/title/tt12286336/fullcredits/
         note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
           datasets.'
-  - show: deadlands-lawless
-    role: producer
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt12286336/fullcredits/
-        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
-          datasets.'
-  - show: prickly-tallstag-and-the-danger-seekers-pears
-    role: GM/DM
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt8102874/fullcredits/
-        note: IMDb full cast and crew for "Prickly Tallstag and the Danger Seekers,
-          Pears" (2017), via the official datasets.
-  - show: prickly-tallstag-and-the-danger-seekers-pears
-    role: producer
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt8102874/fullcredits/
-        note: IMDb full cast and crew for "Prickly Tallstag and the Danger Seekers,
-          Pears" (2017), via the official datasets.
   - show: black-bag-vikings
     role: player
     season: 1
@@ -99,15 +72,6 @@ credits:
         url: https://www.imdb.com/title/tt9187582/fullcredits/
         note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
           via the official datasets.'
-  - show: east-texas-university-undeclared
-    role: producer
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9187582/fullcredits/
-        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
-          via the official datasets.'
   - show: monday-night-dungeon-fight
     role: player
     season: 1
@@ -117,24 +81,6 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt9196562/fullcredits/
         note: IMDb full cast and crew for "Monday Night Dungeon Fight" (2016), via the
-          official datasets.
-  - show: rpg-exploration-society
-    role: GM/DM
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9196806/fullcredits/
-        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
-          official datasets.
-  - show: rpg-exploration-society
-    role: producer
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9196806/fullcredits/
-        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
           official datasets.
   - show: the-last-vhs-store
     role: player
@@ -158,17 +104,6 @@ credits:
         url: https://www.imdb.com/title/tt9886618/fullcredits/
         note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
           datasets.
-  - show: twilight-protocol
-    role: producer
-    season: 1
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9886618/fullcredits/
-        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
-          datasets.
   - show: black-bag
     role: player
     season: 1
@@ -180,3 +115,68 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt8236012/fullcredits/
         note: IMDb full cast and crew for "Black Bag" (2016), via the official datasets.
+  - show: deadlands-lawless
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt12286336/fullcredits/
+        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
+          datasets.'
+  - show: prickly-tallstag-and-the-danger-seekers-pears
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8102874/fullcredits/
+        note: IMDb full cast and crew for "Prickly Tallstag and the Danger Seekers,
+          Pears" (2017), via the official datasets.
+  - show: prickly-tallstag-and-the-danger-seekers-pears
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8102874/fullcredits/
+        note: IMDb full cast and crew for "Prickly Tallstag and the Danger Seekers,
+          Pears" (2017), via the official datasets.
+  - show: east-texas-university-undeclared
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9187582/fullcredits/
+        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
+          via the official datasets.'
+  - show: rpg-exploration-society
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196806/fullcredits/
+        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
+          official datasets.
+  - show: rpg-exploration-society
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196806/fullcredits/
+        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
+          official datasets.
+  - show: twilight-protocol
+    role: producer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9886618/fullcredits/
+        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
+          datasets.

@@ -6,14 +6,6 @@ aliases:
     name: CADave
     alias_type: handle
 credits:
-  - show: just-us-heroes
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/justusheroes/
-        note: Cast per the network's own show page.
   - show: dead-reign
     season: 1
     role: GM/DM
@@ -21,6 +13,38 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/deadreign/
+        note: Cast per the network's own show page.
+  - show: tomorrow-legion
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/tomorrowlegion/
+        note: Cast per the network's own show page.
+  - show: insert-coin
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/insertcoin/
+        note: Cast per the network's own show page.
+  - show: second-star
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/secondstar/
+        note: Cast per the network's own show page.
+  - show: just-us-heroes
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/justusheroes/
         note: Cast per the network's own show page.
   - show: saga-of-the-inukai
     season: 1
@@ -38,14 +62,6 @@ credits:
       - tier: official
         url: https://happyjacks.org/dissension/
         note: Cast per the network's own show page.
-  - show: tomorrow-legion
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/tomorrowlegion/
-        note: Cast per the network's own show page.
   - show: the-imperial-march
     season: 1
     role: player
@@ -53,22 +69,6 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/theimperialmarch/
-        note: Cast per the network's own show page.
-  - show: insert-coin
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/insertcoin/
-        note: Cast per the network's own show page.
-  - show: second-star
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/secondstar/
         note: Cast per the network's own show page.
   - show: saint-elco-s-fire
     season: 1

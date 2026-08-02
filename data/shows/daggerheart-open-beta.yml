@@ -4,12 +4,14 @@ channels:
   - the-faint-divinities
 format: video
 status: unknown
-description: The Faint Divinities group get together to discuss the Daggerheart TTRPG System
+description: The Faint Divinities group get together to discuss the Daggerheart
+  TTRPG System System corrected to daggerheart from the show's own title; it had
+  been left at the D&D 5e default.
 links:
   website: https://www.youtube.com/playlist?list=PLaQLjcd26y6h6obwMQNjCLK32PQUUOAJz
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: daggerheart
     episode_count: 11
 image:
   url: https://i.ytimg.com/vi/OgsBwJm6LzE/hqdefault.jpg

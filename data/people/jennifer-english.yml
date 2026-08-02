@@ -6,15 +6,6 @@ aliases:
     name: Jennifer English
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
-        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
   - show: baldur-s-gate-3-cast-play-d-d
     season: 1
     role: guest player
@@ -29,6 +20,15 @@ credits:
     note: One-shot in which the Baldur's Gate 3 voice cast played their own
       characters.
     alias: default
+  - show: critical-role-specials
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
+        note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
 wikidata_qid: Q123253089
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Stuttgart_2024_-_ComicCon_-_Jennifer_English_-_by-RaBoe_005.jpg

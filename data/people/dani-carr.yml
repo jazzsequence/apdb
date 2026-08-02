@@ -6,16 +6,6 @@ aliases:
     name: Dani Carr
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    note: Listed as a guest player for this season; specific episodes not identified.
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
   - show: critical-role
     role: GM/DM
     note: IMDb credits this at series level; which of this show's seasons it covers
@@ -26,6 +16,16 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+  - show: critical-role-specials
+    season: 5
+    role: guest player
+    note: Listed as a guest player for this season; specific episodes not identified.
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
+        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
 image:
   url: https://live.staticflickr.com/65535/54434641777_59190424e3_b.jpg
   licence: CC-BY-SA-2.0

@@ -6,15 +6,6 @@ aliases:
     name: Aki
     alias_type: legal
 credits:
-  - show: all-games-no-masters
-    season: 1
-    role: producer
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/All_Games_No_Masters
-        note: All Games No Masters cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
   - show: pathfinder-knights-of-everflame
     season: 1
     role: player
@@ -60,3 +51,12 @@ credits:
         url: https://www.imdb.com/title/tt8861702/fullcredits/
         note: IMDb full cast and crew for "Callisto 6" (2018), via the official
           datasets.
+  - show: all-games-no-masters
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/All_Games_No_Masters
+        note: All Games No Masters cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

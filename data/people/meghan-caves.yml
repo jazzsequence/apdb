@@ -21,41 +21,6 @@ credits:
         url: https://www.imdb.com/title/tt8102874/fullcredits/
         note: IMDb full cast and crew for "Prickly Tallstag and the Danger Seekers,
           Pears" (2017), via the official datasets.
-  - show: pirates-of-salt-bay
-    season: 1
-    role: editor
-    alias: default
-    sources:
-      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
-        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: mysterium
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://savingthrowshow.fandom.com/wiki/Mysterium
-        note: Mysterium cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: ghosts-of-saltmarsh
-    season: 1
-    role: editor
-    alias: default
-    sources:
-      - url: https://savingthrowshow.fandom.com/wiki/Ghosts_of_Saltmarsh
-        note: Ghosts of Saltmarsh cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: deadlands-lawless
-    season: 1
-    role: editor
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless
-        note: "Deadlands: Lawless cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA."
   - show: legacy
     role: player
     season: 1
@@ -103,15 +68,6 @@ credits:
     role: player
     season: 1
     character: Cherry
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt12286336/fullcredits/
-        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
-          datasets.'
-  - show: deadlands-lawless
-    role: producer
-    season: 1
     alias: default
     sources:
       - tier: reference
@@ -217,3 +173,47 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt8236012/fullcredits/
         note: IMDb full cast and crew for "Black Bag" (2016), via the official datasets.
+  - show: pirates-of-salt-bay
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: mysterium
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Mysterium
+        note: Mysterium cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: ghosts-of-saltmarsh
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Ghosts_of_Saltmarsh
+        note: Ghosts of Saltmarsh cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: deadlands-lawless
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless
+        note: "Deadlands: Lawless cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA."
+  - show: deadlands-lawless
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt12286336/fullcredits/
+        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
+          datasets.'

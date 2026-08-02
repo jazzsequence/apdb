@@ -7,6 +7,17 @@ aliases:
     alias_type: legal
 credits:
   - show: the-call-of-cthulhu-mystery-program
+    role: player
+    character: Woodrow Elias
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt10584444/fullcredits/
+        note: IMDb full cast and crew for "The Call of Cthulhu Mystery Program" (2015),
+          via the official datasets.
+  - show: the-call-of-cthulhu-mystery-program
     season: 1
     role: GM/DM
     alias: default
@@ -28,14 +39,3 @@ credits:
         url: https://www.cthulhumystery.com/series-2-meet-the-cast
         note: Cast per the show's own Meet the Cast page.
       - *a1
-  - show: the-call-of-cthulhu-mystery-program
-    role: player
-    character: Woodrow Elias
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt10584444/fullcredits/
-        note: IMDb full cast and crew for "The Call of Cthulhu Mystery Program" (2015),
-          via the official datasets.

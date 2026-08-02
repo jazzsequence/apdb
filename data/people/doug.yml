@@ -1,0 +1,36 @@
+id: doug
+canonical_name: Doug
+sort_name: Doug
+aliases:
+  - id: default
+    name: Doug
+    alias_type: handle
+credits:
+  - show: blades-in-the-dark
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=UzqIonvrdgM
+        note: "Cast stated in the show's own description for \"OSRPG: Blades in the Dark
+          Actual Play Campaign Season 1 Episode  8\"."
+    season: 1
+    character: Blinder
+    alias: default
+  - show: vtm-5th-edition-dark-city
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=FbLeGIXy7WQ
+        note: "Cast stated in the show's own description for \"OSRPG: Vampire the
+          Masquerade Dark City - Charlie's Introduction\"."
+    season: 1
+    alias: default
+  - show: vtm-dark-city-season-1
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=FbLeGIXy7WQ
+        note: "Cast stated in the show's own description for \"OSRPG: Vampire the
+          Masquerade Dark City - Charlie's Introduction\"."
+    season: 1
+    alias: default

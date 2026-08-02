@@ -7,6 +7,45 @@ aliases:
     name: Luis Carazo
     alias_type: legal
 credits:
+  - show: exandria-unlimited
+    season: 3
+    role: player
+    character: Zerxus Ilerez
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
+        note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Nines Rodriguez
+    alias: default
+    sources:
+      - url: https://en.wikipedia.org/wiki/L.A._by_Night
+        tier: reference
+  - show: shadowrun-excommunication
+    season: 1
+    role: player
+    character: Frayne
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=blF6ZWD3h5s
+        note: "Cast per the production's own description of \"Session Zero LIVE from
+          SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
+          RealmSmith\"."
   - show: critical-role
     season: 4
     role: player
@@ -34,26 +73,6 @@ credits:
         note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: exandria-unlimited
-    season: 3
-    role: player
-    character: Zerxus Ilerez
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
-        note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
-        note: Cast for "Exandria Unlimited" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/exandria-unlimited
-        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: candela-obscura
     season: 2
     role: player
@@ -69,22 +88,3 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Nines Rodriguez
-    alias: default
-    sources:
-      - url: https://en.wikipedia.org/wiki/L.A._by_Night
-        tier: reference
-  - show: shadowrun-excommunication
-    season: 1
-    role: player
-    character: Frayne
-    alias: default
-    sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=blF6ZWD3h5s
-        note: "Cast per the production's own description of \"Session Zero LIVE from
-          SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
-          RealmSmith\"."

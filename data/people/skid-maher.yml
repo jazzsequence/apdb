@@ -7,6 +7,42 @@ aliases:
     name: Skid Maher
     alias_type: legal
 credits:
+  - show: raiders-of-the-lost-continent
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
+        note: Raiders of the Lost Continent cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 12
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Star_Trek_Adventures_RPG
+        note: Star Trek Adventures RPG cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 15
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/The_One_Ring
+        note: The One Ring cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: legacy-of-the-ancients
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Legacy_of_the_Ancients
+        note: Legacy of the Ancients cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
   - show: glass-cannon-podcast
     season: 1
     role: player
@@ -46,15 +82,6 @@ credits:
       - url: https://glasscannonnetwork.fandom.com/wiki/Side_Quest_Side_Sesh
         note: Side Quest Side Sesh cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
-        tier: community
-  - show: raiders-of-the-lost-continent
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
-        note: Raiders of the Lost Continent cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA.
         tier: community
   - show: delta-green
     season: 1
@@ -129,15 +156,6 @@ credits:
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Aliens_RPG
         note: Aliens RPG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: new-game-who-dis
-    season: 12
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Star_Trek_Adventures_RPG
-        note: Star Trek Adventures RPG cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA.
         tier: community
   - show: new-game-who-dis
     season: 6
@@ -217,15 +235,6 @@ credits:
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Traveller
         note: Traveller cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: new-game-who-dis
-    season: 15
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/The_One_Ring
-        note: The One Ring cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
         tier: community
   - show: get-in-the-trunk
     season: 4
@@ -325,15 +334,6 @@ credits:
       - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Shadowdark
         note: Glass Cannon Podcast - Shadowdark cast, via the
           glasscannonnetwork.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legacy-of-the-ancients
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://the-glass-cannon-network.fandom.com/wiki/Legacy_of_the_Ancients
-        note: Legacy of the Ancients cast, via the the-glass-cannon-network.fandom.com
-          infobox. CC-BY-SA.
         tier: community
   - show: echo-quest
     season: 1

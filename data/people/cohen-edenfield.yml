@@ -6,15 +6,6 @@ aliases:
     name: Cohen Edenfield
     alias_type: legal
 credits:
-  - show: dune-mini-series
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Dune_Mini-Series
-        note: Dune Mini-Series cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
   - show: tempting-fate
     role: player
     season: 1
@@ -25,3 +16,12 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
+  - show: dune-mini-series
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Dune_Mini-Series
+        note: Dune Mini-Series cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

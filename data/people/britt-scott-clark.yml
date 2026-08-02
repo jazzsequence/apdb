@@ -6,6 +6,15 @@ aliases:
     name: Britt Scott Clark
     alias_type: legal
 credits:
+  - show: tales-of-the-misfits-entire-campaign
+    season: 1
+    role: player
+    character: Arrow the Ranger
+    alias: default
+    sources:
+      - tier: reference
+        url: https://vldl.fandom.com/wiki/Tales_of_the_Misfits
+        note: Cast per the VLDL wiki and IMDb.
   - show: adventures-of-azerim-entire-campaign-episodes
     season: 1
     role: guest player
@@ -94,12 +103,3 @@ credits:
         note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
           where a source states it; the others reprise their Epic NPC Man
           characters but the pairing is not established here.
-  - show: tales-of-the-misfits-entire-campaign
-    season: 1
-    role: player
-    character: Arrow the Ranger
-    alias: default
-    sources:
-      - tier: reference
-        url: https://vldl.fandom.com/wiki/Tales_of_the_Misfits
-        note: Cast per the VLDL wiki and IMDb.

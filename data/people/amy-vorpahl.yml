@@ -21,15 +21,6 @@ credits:
         url: https://www.imdb.com/title/tt9196764/fullcredits/
         note: IMDb full cast and crew for "The Lost Brigade" (2016), via the official
           datasets.
-  - show: 2015-star-wars-holiday-special
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
-        note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
-          infobox. CC-BY-SA.
   - show: la-by-night
     season: 1
     role: player
@@ -119,17 +110,6 @@ credits:
         url: https://www.imdb.com/title/tt9196898/fullcredits/
         note: IMDb full cast and crew for "The League of Adventure" (2018), via the
           official datasets.
-  - show: shadows-on-the-horizon
-    role: player
-    season: 1
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9196944/fullcredits/
-        note: IMDb full cast and crew for "Shadows on the Horizon" (2018), via the
-          official datasets.
   - show: dimension-20
     role: player
     character: Efink Murderdeath
@@ -147,6 +127,26 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/dimension-20
         note: Cast for "Dimension 20" per TheTVDB.
+  - show: 2015-star-wars-holiday-special
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
+        note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
+  - show: shadows-on-the-horizon
+    role: player
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196944/fullcredits/
+        note: IMDb full cast and crew for "Shadows on the Horizon" (2018), via the
+          official datasets.
   - show: game-masters-hall
     role: player
     season: 1

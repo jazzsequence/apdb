@@ -114,17 +114,6 @@ credits:
           CC-BY-SA."
         tier: community
   - show: dimension-20
-    season: 25
-    role: player
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Time_Quangle
-        note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-      - *a1
-      - *a2
-      - *a3
-  - show: dimension-20
     season: 28
     role: player
     character: Marya Junková
@@ -161,6 +150,17 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: dimension-20
+    season: 25
+    role: player
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Time_Quangle
+        note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+      - *a1
+      - *a2
+      - *a3
   - show: not-another-dnd-podcast
     season: 1
     role: player

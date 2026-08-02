@@ -1,0 +1,17 @@
+id: subtitles
+canonical_name: Subtitles
+sort_name: Subtitles
+aliases:
+  - id: default
+    name: Subtitles
+    alias_type: handle
+credits:
+  - show: season-zero-the-soul-searchers
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=TUhJ_IEcSXQ
+        note: Cast stated in the show's own description for "Run, Searchers, Run |
+          Episode 4".
+    season: 1
+    alias: default

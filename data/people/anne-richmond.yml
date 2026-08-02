@@ -22,15 +22,6 @@ credits:
           CC-BY-SA.
         tier: community
   - show: new-game-who-dis
-    season: 14
-    role: player
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Tales_From_The_Loop
-        note: Tales From The Loop cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: new-game-who-dis
     season: 1
     role: GM/DM
     alias: default
@@ -39,3 +30,12 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
         note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
+  - show: new-game-who-dis
+    season: 14
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Tales_From_The_Loop
+        note: Tales From The Loop cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community

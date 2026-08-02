@@ -8,7 +8,7 @@ links:
   website: https://www.youtube.com/playlist?list=PLk4WDQKwZJHHXHeqK4b0_1CTQQhFF4Rml
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: vampire-the-masquerade-v5
     episode_count: 18
 image:
   url: https://i.ytimg.com/vi/tiTLNa0F-2c/hqdefault.jpg
@@ -20,3 +20,5 @@ image:
     of its credits. Non-commercial, does not substitute for the original, and
     links back to the source. Removed on request by the rights holder — see
     POLICY.md.
+description: System corrected to vampire-the-masquerade-v5 from the show's own
+  title; it had been left at the D&D 5e default.

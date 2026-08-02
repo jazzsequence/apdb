@@ -6,18 +6,6 @@ aliases:
     name: Rick Budd
     alias_type: legal
 credits:
-  - show: tempting-fate
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Tempting_Fate
-        note: Tempting Fate cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
-      - tier: reference
-        url: https://www.imdb.com/title/tt7394666/fullcredits/
-        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
-          datasets.
   - show: legacy
     role: player
     season: 1
@@ -35,6 +23,31 @@ credits:
     character: Rory
     alias: default
     sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: shield-of-tomorrow
+    role: player
+    season: 1
+    character: Dirk Fray
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7142196/fullcredits/
+        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
+          datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/shield-of-tomorrow
+        note: Cast for "Shield of Tomorrow" per TheTVDB.
+  - show: tempting-fate
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tempting_Fate
+        note: Tempting Fate cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
       - tier: reference
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
@@ -58,16 +71,3 @@ credits:
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
-  - show: shield-of-tomorrow
-    role: player
-    season: 1
-    character: Dirk Fray
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7142196/fullcredits/
-        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
-          datasets.
-      - tier: reference
-        url: https://thetvdb.com/series/shield-of-tomorrow
-        note: Cast for "Shield of Tomorrow" per TheTVDB.

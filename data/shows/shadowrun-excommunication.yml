@@ -13,12 +13,13 @@ description: >-
   **INTENDED FOR MATURE AUDIENCES... because Shadowrun.**
 
 
-  Get Shadowrun 
+  Get Shadowrun  System corrected to shadowrun from the show's own title; it had
+  been left at the D&D 5e default.
 links:
   website: https://www.youtube.com/playlist?list=PLcVoov2ilOfIr_66Ri4cmpIjggaVg7dmr
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: shadowrun
     episode_count: 10
 image:
   url: https://i.ytimg.com/vi/blF6ZWD3h5s/hqdefault.jpg

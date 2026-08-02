@@ -8,4 +8,6 @@ links:
   website: https://happyjacks.org/glitteringnight/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: vampire-the-masquerade-v5
+description: System corrected to vampire-the-masquerade-v5 from the show's own
+  title; it had been left at the D&D 5e default.

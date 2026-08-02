@@ -6,22 +6,6 @@ aliases:
     name: Jason
     alias_type: handle
 credits:
-  - show: just-us-heroes
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/justusheroes/
-        note: Cast per the network's own show page.
-  - show: interpol-x
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/interpolx/
-        note: Cast per the network's own show page.
   - show: desert-of-despair
     season: 1
     role: GM/DM
@@ -30,14 +14,6 @@ credits:
       - tier: official
         url: https://happyjacks.org/desertofdespair/
         note: Cast per the network's own show page.
-  - show: insert-coin
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/insertcoin/
-        note: Cast per the network's own show page.
   - show: vault-818
     season: 1
     role: GM/DM
@@ -45,14 +21,6 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/vault818/
-        note: Cast per the network's own show page.
-  - show: dragon-heist
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/dragonheist/
         note: Cast per the network's own show page.
   - show: monsoon
     season: 1
@@ -77,4 +45,36 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/cityoftowers/
+        note: Cast per the network's own show page.
+  - show: just-us-heroes
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/justusheroes/
+        note: Cast per the network's own show page.
+  - show: interpol-x
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/interpolx/
+        note: Cast per the network's own show page.
+  - show: insert-coin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/insertcoin/
+        note: Cast per the network's own show page.
+  - show: dragon-heist
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/dragonheist/
         note: Cast per the network's own show page.

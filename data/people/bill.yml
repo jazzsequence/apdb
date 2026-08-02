@@ -6,6 +6,22 @@ aliases:
     name: Bill
     alias_type: handle
 credits:
+  - show: the-imperial-march
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/theimperialmarch/
+        note: Cast per the network's own show page.
+  - show: yuma-station
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/yumastation/
+        note: Cast per the network's own show page.
   - show: the-darknet
     season: 1
     role: player
@@ -29,20 +45,4 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/tomorrowlegion/
-        note: Cast per the network's own show page.
-  - show: the-imperial-march
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/theimperialmarch/
-        note: Cast per the network's own show page.
-  - show: yuma-station
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/yumastation/
         note: Cast per the network's own show page.

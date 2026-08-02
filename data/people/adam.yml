@@ -25,6 +25,22 @@ credits:
       - tier: official
         url: https://happyjacks.org/interpolx/
         note: Cast per the network's own show page.
+  - show: the-clockwise-court
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/clockwisecourt/
+        note: Cast per the network's own show page.
+  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/rainbow/
+        note: Cast per the network's own show page.
   - show: revelations
     season: 1
     role: player
@@ -48,20 +64,4 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/dragonheist/
-        note: Cast per the network's own show page.
-  - show: the-clockwise-court
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/clockwisecourt/
-        note: Cast per the network's own show page.
-  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/rainbow/
         note: Cast per the network's own show page.

@@ -38,21 +38,14 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/critical-role
         note: Cast for "Critical Role" per TheTVDB.
-  - show: critical-role
+  - show: exandria-unlimited
     season: 4
     role: player
+    character: Orym of the Air Ashari
     alias: default
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: exandria-unlimited
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
-        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited_Prime
+        note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
       - &a1
@@ -68,19 +61,6 @@ credits:
         tier: reference
         url: https://thetvdb.com/series/exandria-unlimited
         note: Cast for "Exandria Unlimited" per TheTVDB.
-  - show: exandria-unlimited
-    season: 4
-    role: player
-    character: Orym of the Air Ashari
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited_Prime
-        note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-      - *a1
-      - *a2
-      - *a3
   - show: exandria-unlimited
     season: 5
     role: player
@@ -111,71 +91,6 @@ credits:
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: candela-obscura
-    season: 3
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-      - &a4
-        tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-  - show: candela-obscura
-    season: 4
-    role: host
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: candela-obscura
-    season: 5
-    role: guest player
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-        tier: community
-      - *a4
-  - show: critical-role-specials
-    season: 3
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
-        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: critical-role-specials
-    season: 8
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Moonward
-        note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-  - show: sagas-of-sundry-goblin-mode
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: reference
-        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
-        note: Cast per Geek & Sundry.
   - show: celebrid-d
     role: player
     season: 1
@@ -220,6 +135,14 @@ credits:
         note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
           datasets.
   - show: candela-obscura
+    season: 4
+    role: host
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: candela-obscura
     role: GM/DM
     note: IMDb credits this at series level; which of this show's seasons it covers
       is not established.
@@ -232,3 +155,80 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+      - *a1
+      - *a2
+      - *a3
+  - show: candela-obscura
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+      - &a4
+        tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+  - show: candela-obscura
+    season: 5
+    role: guest player
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        tier: community
+      - *a4
+  - show: critical-role-specials
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
+        note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role-specials
+    season: 5
+    role: guest player
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
+        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: critical-role-specials
+    season: 8
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Moonward
+        note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: sagas-of-sundry-goblin-mode
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
+        note: Cast per Geek & Sundry.

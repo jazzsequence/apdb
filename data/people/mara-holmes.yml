@@ -104,13 +104,6 @@ credits:
         note: Warhammer Fantasy Roleplay cast, via the highrollers.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 7
-    role: player
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Thresher
-        note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
   - show: warhammer-fantasy-roleplay
     season: 1
     role: GM/DM
@@ -119,3 +112,10 @@ credits:
         url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
         note: Warhammer Fantasy Roleplay cast, via the high-rollers-dnd.fandom.com
           infobox. CC-BY-SA.
+  - show: critical-role-specials
+    season: 7
+    role: player
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Thresher
+        note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community

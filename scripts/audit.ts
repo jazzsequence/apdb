@@ -200,6 +200,136 @@ for (const show of db.shows) {
   }
 }
 
+// --- An anthology where every season claims the same system -----------------
+// Anthologies mix systems by definition. Critical Role Specials & One-Shots
+// had nine differently-titled seasons all recorded as dnd-5e, which hid that
+// UnDeadwood is Deadlands and both Age of Umbra runs are Daggerheart. Every
+// one of those came from the same `game: dnd-5e` default that once mislabelled
+// 67 shows.
+for (const show of db.shows) {
+  const titled = show.seasons.filter((s) => s.title && s.title !== `Season ${s.ordinal}`);
+  if (titled.length < 4) continue;
+  const systems = new Set(show.seasons.map((s) => s.game));
+  if (systems.size > 1) continue;
+  findings.push({
+    // Advisory: plenty of multi-season shows really are one system throughout.
+    severity: 'low',
+    what: 'anthology with one system across every season',
+    detail: `${show.title} — ${titled.length} separately titled seasons, all ${[...systems][0]}. Anthologies mix systems; check this was not defaulted.`,
+  });
+}
+
+// --- One person GMing and playing the same season ---------------------------
+// Sometimes true — Cat Blackard runs The Call of Cthulhu Mystery Program and
+// plays The Announcer. Often not: catalogues file game masters as actors, and
+// a DM voicing a returning character is DMing, not playing. Either way a
+// reader sees the same person twice and needs the credit to say which.
+for (const person of db.people) {
+  for (const a of person.credits) {
+    if (!a.role.includes('GM') && !a.role.includes('DM')) continue;
+    for (const b of person.credits) {
+      if (b === a || b.show !== a.show) continue;
+      if ((b.season ?? null) !== (a.season ?? null) || !b.role.includes('player')) continue;
+      if (b.episode || b.note) continue;      // already explained
+      findings.push({
+        severity: 'medium',
+        what: 'same person GMing and playing one season',
+        detail: `${person.canonical_name} — ${a.show} S${a.season ?? '-'}: "${a.role}" and "${b.role}"${b.character ? ` as ${b.character}` : ''}. If real it needs an episode locator or a note; if not, one of them is wrong.`,
+      });
+    }
+  }
+}
+
+// --- Two people credited as the same character ------------------------------
+// Found by the GM/player rule: The Ironkeep Chronicles had both Tom Lommel and
+// Havana Mahoney playing Avril Birdsong. One of them is wrong, and the
+// existing "character is another person" rule cannot see it because Avril
+// Birdsong is a character, not someone in the database.
+{
+  const byCharacter = new Map<string, Set<string>>();
+  for (const person of db.people) {
+    for (const credit of person.credits) {
+      if (!credit.character) continue;
+      const key = `${credit.show}|${credit.season ?? '-'}|${credit.character.toLowerCase()}`;
+      if (!byCharacter.has(key)) byCharacter.set(key, new Set());
+      byCharacter.get(key)!.add(person.canonical_name);
+    }
+  }
+  for (const [key, people] of byCharacter) {
+    if (people.size < 2) continue;
+    const [show, season, character] = key.split('|');
+    findings.push({
+      severity: 'high',
+      what: 'two people credited as the same character',
+      detail: `${character} on ${show} S${season} is credited to ${[...people].join(' and ')} — one of them is wrong`,
+    });
+  }
+}
+
+// --- A show whose own title contradicts its recorded system -----------------
+// The `game: dnd-5e` default has been found wrong three separate times now, so
+// this checks the cheapest available evidence: what the show calls itself.
+// It found 20 at once, including "VtM: Dark City Season 1" filed as D&D.
+const SYSTEM_HINTS: [RegExp, string][] = [
+  [/\bvtm\b|vampire[:\s]|masquerade/i, 'vampire-the'],
+  [/\bcall of cthulhu\b/i, 'call-of-cthulhu'],
+  [/\bshadowrun\b/i, 'shadowrun'],
+  [/\bblades in the dark\b/i, 'blades-in-the-dark'],
+  [/\bcyberpunk red\b/i, 'cyberpunk-red'],
+  [/\bcyberpunk 2020\b/i, 'cyberpunk-2020'],
+  [/\bpathfinder\b/i, 'pathfinder-'],
+  [/\bstarfinder\b/i, 'starfinder'],
+  [/\bdaggerheart\b/i, 'daggerheart'],
+  [/\bshadowdark\b/i, 'shadowdark'],
+  [/\bm(ö|o)rk borg\b/i, 'mork-borg'],
+  [/\btraveller\b/i, 'traveller'],
+  [/\bundeadwood\b/i, 'deadlands'],
+  [/\bstar trek\b/i, 'star-trek'],
+  [/\bforbidden lands\b/i, 'forbidden-lands'],
+  [/\bavatar legends\b/i, 'avatar-legends'],
+  [/\bmonsterhearts\b/i, 'monsterhearts'],
+  [/\bcoriolis\b/i, 'coriolis'],
+  [/\bwarhammer\b/i, 'warhammer'],
+  [/\bcity of mist\b/i, 'city-of-mist'],
+  [/\bdraw steel\b/i, 'draw-steel'],
+  [/\b13th age\b/i, '13th-age'],
+  [/\bkids on bikes\b/i, 'kids-on-bikes'],
+  [/\bvaesen\b/i, 'vaesen'],
+];
+for (const show of db.shows) {
+  for (const [re, prefix] of SYSTEM_HINTS) {
+    if (!re.test(show.title)) continue;
+    const games = [...new Set(show.seasons.map((s) => s.game))];
+    if (games.every((g) => g.startsWith(prefix))) break;
+    findings.push({
+      severity: 'high',
+      what: 'system contradicts the show title',
+      detail: `${show.title} — recorded as ${games.join(', ')} but its own title says ${prefix.replace(/-$/, '')}`,
+    });
+    break;
+  }
+}
+
+// --- Two shows with the same title ------------------------------------------
+// Season splits keep reappearing: L.A. by Night was three shows, and the Glass
+// Cannon arcs were 63. A near-identical pair of titles is the signature.
+{
+  const byTitle = new Map<string, string[]>();
+  for (const show of db.shows) {
+    const key = show.title.toLowerCase().replace(/\bseason\s*\d+\b|\bs\d+\b/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+    if (!key) continue;
+    byTitle.set(key, [...(byTitle.get(key) ?? []), show.title]);
+  }
+  for (const [, titles] of byTitle) {
+    if (titles.length < 2) continue;
+    findings.push({
+      severity: 'medium',
+      what: 'two shows that may be one show split by season',
+      detail: `${titles.join('  |  ')} — if these are one show, the seasons belong in one record`,
+    });
+  }
+}
+
 // --- Unverified system ------------------------------------------------------
 const unverified = db.shows.filter(
   (s) => !s.description?.startsWith('System per source') && s.seasons.every((x) => x.game === 'dnd-5e'),
@@ -234,6 +364,43 @@ if (findings.length === 0) {
     console.log(`   ${f.detail}`);
   }
   if (findings.length > 60) console.log(`\n… and ${findings.length - 60} more.`);
+}
+
+// The console output is capped, which hides whole categories once the list is
+// long. `--report` writes every finding grouped by kind, as a worklist.
+if (process.argv.includes('--report')) {
+  const { writeFile } = await import('node:fs/promises');
+  const byKind = new Map<string, Finding[]>();
+  for (const f of findings) byKind.set(f.what, [...(byKind.get(f.what) ?? []), f]);
+
+  const lines = [
+    '# Audit',
+    '',
+    `Generated by \`npm run audit -- --report\` against ${db.people.length} people, ` +
+      `${db.shows.length} shows and ${db.people.reduce((n, p) => n + p.credits.length, 0)} credits.`,
+    '',
+    `**${counts.high} high · ${counts.medium} medium · ${counts.low} low**`,
+    '',
+    'High findings are import bugs — something is wrong in the data. Medium and',
+    'low are curation gaps: the data is not wrong, it is missing or unverified.',
+    '',
+    '## Contents',
+    '',
+  ];
+  const ordered = [...byKind.entries()].sort((a, b) => {
+    const sev = (x: Finding[]) => order[x[0]!.severity];
+    return sev(a[1]) - sev(b[1]) || b[1].length - a[1].length;
+  });
+  for (const [what, items] of ordered) {
+    const anchor = what.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
+    lines.push(`- [${what}](#${anchor}) — ${items.length} (${items[0]!.severity})`);
+  }
+  for (const [what, items] of ordered) {
+    lines.push('', `## ${what}`, '', `${items.length} finding(s), severity **${items[0]!.severity}**.`, '');
+    for (const f of items) lines.push(`- ${f.detail}`);
+  }
+  await writeFile('AUDIT.md', lines.join('\n') + '\n', 'utf8');
+  console.log(`\nFull worklist written to AUDIT.md (${findings.length} findings in ${byKind.size} categories).`);
 }
 
 // High-severity findings are import bugs, not curation gaps.

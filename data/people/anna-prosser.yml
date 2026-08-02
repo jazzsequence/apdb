@@ -6,6 +6,11 @@ aliases:
   - id: default
     name: Anna Prosser
     alias_type: legal
+  - id: anna-prosser-robinson
+    name: Anna Prosser Robinson
+    alias_type: legal
+    note: Credited under this name on some sources; merged from
+      `anna-prosser-robinson`.
 credits:
   - show: acquisitions-incorporated
     season: 14
@@ -22,6 +27,10 @@ credits:
         url: https://www.imdb.com/title/tt29338249/fullcredits/
         note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
           official datasets.
+      - &a2
+        tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated
+        note: Cast for "Acquisitions Incorporated" per TheTVDB.
   - show: acquisitions-incorporated
     season: 15
     role: player
@@ -33,6 +42,7 @@ credits:
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
       - *a1
+      - *a2
   - show: acquisitions-incorporated
     season: 16
     role: player
@@ -44,6 +54,7 @@ credits:
         note: Acquisitions Inc. Season Fourteen cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
       - *a1
+      - *a2
   - show: dice-camera-action
     role: player
     season: 1

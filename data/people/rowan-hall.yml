@@ -7,7 +7,8 @@ aliases:
     alias_type: legal
 credits:
   - show: candela-obscura
-    role: writer
+    role: player
+    character: Young Lady Pushing Wheelchair
     note: IMDb credits this at series level; which of this show's seasons it covers
       is not established.
     alias: default
@@ -17,8 +18,7 @@ credits:
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
   - show: candela-obscura
-    role: player
-    character: Young Lady Pushing Wheelchair
+    role: writer
     note: IMDb credits this at series level; which of this show's seasons it covers
       is not established.
     alias: default

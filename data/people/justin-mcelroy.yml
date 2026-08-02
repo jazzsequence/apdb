@@ -82,16 +82,6 @@ credits:
         tier: community
       - *a1
   - show: the-adventure-zone
-    season: 6
-    role: player
-    alias: default
-    sources:
-      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Elementary
-        note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
-          theadventurezone.fandom.com infobox. CC-BY-SA."
-        tier: community
-      - *a1
-  - show: the-adventure-zone
     season: 7
     role: player
     character: Gerrrf
@@ -161,6 +151,16 @@ credits:
       - url: https://theadventurezone.fandom.com/wiki/Mini-series%3A_Zone_of_Adventure
         note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+      - *a1
+  - show: the-adventure-zone
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Elementary
+        note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."
         tier: community
       - *a1
   - show: the-adventure-zone

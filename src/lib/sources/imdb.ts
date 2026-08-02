@@ -18,6 +18,7 @@ import { createReadStream } from 'node:fs';
 import { createGunzip } from 'node:zlib';
 import { createInterface } from 'node:readline';
 import type { CreditRole } from '../schema.js';
+import { realCharacter } from '../credits.js';
 
 export const DATASETS = ['title.basics', 'title.episode', 'title.principals', 'name.basics'] as const;
 
@@ -96,7 +97,7 @@ export function creditFrom(category: string, charactersJson?: string): Omit<Imdb
 
   // "Self" with no character is a talking head, not a player. Only keep it
   // when something else says they were at the table.
-  const named = characters.filter((c) => c && !/^self$/i.test(c));
+  const named = characters.map(realCharacter).filter((c): c is string => Boolean(c));
 
   if (base === 'player') {
     if (named.some((c) => GM_CHARACTER.test(c))) return { role: 'GM/DM' };

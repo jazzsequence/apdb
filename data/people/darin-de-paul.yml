@@ -17,22 +17,6 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
-  - show: sagas-of-sundry-goblin-mode
-    season: 1
-    role: guest player
-    note: Returning guest across the season; specific episodes not identified.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
-        note: Cast per Geek & Sundry.
-  - show: critical-role
-    role: player
-    character: Self - Guest
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
       - tier: reference
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
@@ -58,3 +42,12 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/sagas-of-sundry
         note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
+  - show: sagas-of-sundry-goblin-mode
+    season: 1
+    role: guest player
+    note: Returning guest across the season; specific episodes not identified.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
+        note: Cast per Geek & Sundry.

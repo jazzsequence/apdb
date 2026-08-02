@@ -4,23 +4,26 @@ channels:
   - critical-role
 format: hybrid
 status: ongoing
-description: Standalone games and limited series from Critical Role Productions,
-  outside the numbered campaigns.
+description: "Standalone games and limited series from Critical Role
+  Productions, outside the numbered campaigns. An anthology: the system differs
+  per one-shot. UnDeadwood is Deadlands: Reloaded and both Age of Umbra runs are
+  Daggerheart; the rest are recorded as D&D 5e and Thresher, Moonward and Unend
+  have not been verified."
 links:
   website: https://critrole.com
 seasons:
   - ordinal: 1
     title: UnDeadwood
-    game: dnd-5e
+    game: deadlands
   - ordinal: 2
     title: Downfall
     game: dnd-5e
   - ordinal: 3
     title: Age of Umbra
-    game: dnd-5e
+    game: daggerheart
   - ordinal: 4
     title: "Age of Umbra: Sallowlands"
-    game: dnd-5e
+    game: daggerheart
   - ordinal: 5
     title: The Re-Slayer's Take
     game: dnd-5e

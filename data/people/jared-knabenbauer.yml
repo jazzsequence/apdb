@@ -5,6 +5,10 @@ aliases:
   - id: default
     name: Jared Knabenbauer
     alias_type: legal
+  - id: projared
+    name: ProJared
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `projared`.
 credits:
   - show: dice-camera-action
     role: player

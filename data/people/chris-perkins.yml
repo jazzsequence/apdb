@@ -24,6 +24,15 @@ credits:
         url: https://comicbook.com/gaming/news/critical-role-chris-perkins-cameo-dungeons-and-dragons/
         note: Contemporary report of the appearance, which dates it and describes the
           character. Also notes his earlier Vox Machina appearance as Shale.
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
   - show: critical-role
     season: 1
     role: guest player
@@ -35,6 +44,8 @@ credits:
         note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
+      - *a1
+      - *a2
   - show: acquisitions-incorporated
     season: 1
     role: GM/DM
@@ -44,12 +55,12 @@ credits:
         note: Season One cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - &a1
+      - &a3
         tier: reference
         url: https://www.imdb.com/title/tt29338249/fullcredits/
         note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
           official datasets.
-      - &a2
+      - &a4
         tier: reference
         url: https://thetvdb.com/series/acquisitions-incorporated
         note: Cast for "Acquisitions Incorporated" per TheTVDB.
@@ -62,8 +73,8 @@ credits:
         note: Season Two cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a1
-      - *a2
+      - *a3
+      - *a4
   - show: acquisitions-incorporated
     season: 7
     role: GM/DM
@@ -73,8 +84,8 @@ credits:
         note: PAX D&D 2011 cast, via the acquisitionsincorporated.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a1
-      - *a2
+      - *a3
+      - *a4
   - show: acquisitions-incorporated
     season: 8
     role: GM/DM
@@ -84,8 +95,8 @@ credits:
         note: Acquisitions Inc. Season Six cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
-      - *a2
+      - *a3
+      - *a4
   - show: acquisitions-incorporated
     season: 12
     role: GM/DM
@@ -95,8 +106,8 @@ credits:
         note: Acquisitions Inc. Season Ten cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
-      - *a2
+      - *a3
+      - *a4
   - show: acquisitions-incorporated
     season: 14
     role: GM/DM
@@ -106,8 +117,8 @@ credits:
         note: Acquisitions Inc. Season Twelve cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
-      - *a2
+      - *a3
+      - *a4
   - show: acquisitions-incorporated
     season: 16
     role: GM/DM
@@ -117,8 +128,8 @@ credits:
         note: Acquisitions Inc. Season Fourteen cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
-      - *a2
+      - *a3
+      - *a4
   - show: dice-camera-action
     season: 1
     role: GM/DM
@@ -128,28 +139,6 @@ credits:
         url: https://dicecameraaction.fandom.com/wiki/Dice%2C_Camera%2C_Action
         note: Dice, Camera, Action cast, via the dicecameraaction.fandom.com infobox.
           CC-BY-SA.
-      - tier: reference
-        url: https://thetvdb.com/series/dice-camera-action
-        note: Cast for "Dice, Camera, Action" per TheTVDB.
-  - show: critical-role
-    role: player
-    character: Self - Guest
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-  - show: dice-camera-action
-    role: player
-    season: 1
-    alias: default
-    sources:
       - tier: reference
         url: https://thetvdb.com/series/dice-camera-action
         note: Cast for "Dice, Camera, Action" per TheTVDB.

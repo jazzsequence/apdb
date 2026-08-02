@@ -96,14 +96,6 @@ credits:
           CC-BY-SA."
         tier: community
   - show: dimension-20
-    season: 25
-    role: player
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Time_Quangle
-        note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: dimension-20
     season: 28
     role: player
     character: Maxwell Gotch
@@ -145,3 +137,11 @@ credits:
     alias: default
     sources:
       - *a1
+  - show: dimension-20
+    season: 25
+    role: player
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Time_Quangle
+        note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community

@@ -108,24 +108,6 @@ credits:
         url: https://www.imdb.com/title/tt9187582/fullcredits/
         note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
           via the official datasets.'
-  - show: rpg-exploration-society
-    role: GM/DM
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9196806/fullcredits/
-        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
-          official datasets.
-  - show: rpg-exploration-society
-    role: producer
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9196806/fullcredits/
-        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
-          official datasets.
   - show: deepwater-deep
     role: player
     season: 1
@@ -160,3 +142,21 @@ credits:
         url: https://www.imdb.com/title/tt9886618/fullcredits/
         note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
           datasets.
+  - show: rpg-exploration-society
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196806/fullcredits/
+        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
+          official datasets.
+  - show: rpg-exploration-society
+    role: producer
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196806/fullcredits/
+        note: IMDb full cast and crew for "RPG Exploration Society" (2017), via the
+          official datasets.

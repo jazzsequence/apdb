@@ -23,33 +23,6 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: critical-role
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/critical-role
-        note: Cast for "Critical Role" per TheTVDB.
-  - show: exandria-unlimited
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
-        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: exandria-unlimited
     season: 3
     role: player
@@ -89,6 +62,33 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
   - show: candela-obscura
     season: 3

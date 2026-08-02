@@ -40,16 +40,6 @@ credits:
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
   - show: shield-of-tomorrow
-    role: player
-    season: 1
-    character: Host
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7142196/fullcredits/
-        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
-          datasets.
-  - show: shield-of-tomorrow
     role: producer
     season: 1
     alias: default
@@ -66,18 +56,6 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
-          datasets.
-  - show: callisto-6
-    role: player
-    season: 1
-    character: Story Teller
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt8861702/fullcredits/
-        note: IMDb full cast and crew for "Callisto 6" (2018), via the official
           datasets.
   - show: callisto-6
     role: GM/DM

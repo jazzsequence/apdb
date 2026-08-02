@@ -44,23 +44,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/critical-role
         note: Cast for "Critical Role" per TheTVDB.
-  - show: critical-role
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: exandria-unlimited
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
-        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: exandria-unlimited
     season: 3
     role: player
@@ -100,6 +83,63 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Ellenore
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: celebrid-d
+    season: 1
+    role: player
+    character: Keyleth / The Ritz
+    note: Two episodes, 2017–2018.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Marisha Ray's role and
+          episode count.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
+        note: Cast for "CelebriD&D" per TMDB.
+  - show: sagas-of-sundry
+    role: player
+    season: 1
+    character: Abigail
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7553424/fullcredits/
+        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
+        note: Cast for "SAGAS OF SUNDRY" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/sagas-of-sundry
+        note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
   - show: candela-obscura
     season: 2
@@ -161,14 +201,6 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Moonward
         note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Ellenore
-    alias: default
-    sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
   - show: sagas-of-sundry-goblin-mode
     season: 1
     role: player
@@ -177,38 +209,6 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
         note: Cast per Geek & Sundry.
-  - show: celebrid-d
-    season: 1
-    role: player
-    character: Keyleth / The Ritz
-    note: Two episodes, 2017–2018.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7537668/fullcredits/
-        note: CelebriD&D full cast and crew on IMDb, which lists Marisha Ray's role and
-          episode count.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
-        note: Cast for "CelebriD&D" per TMDB.
-  - show: sagas-of-sundry
-    role: player
-    season: 1
-    character: Abigail
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7553424/fullcredits/
-        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
-        note: Cast for "SAGAS OF SUNDRY" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/sagas-of-sundry
-        note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
   - show: thrashtopia
     role: player
     season: 1

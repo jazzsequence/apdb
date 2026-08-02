@@ -9,7 +9,6 @@ credits:
   - show: the-ironkeep-chronicles
     role: player
     season: 1
-    character: Player
     alias: default
     sources:
       - tier: reference

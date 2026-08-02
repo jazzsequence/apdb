@@ -25,6 +25,16 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: critical-role-specials
+    season: 2
+    role: player
+    character: The Emissary
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
   - show: candela-obscura
     season: 3
     role: player
@@ -40,16 +50,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
-  - show: critical-role-specials
-    season: 2
-    role: player
-    character: The Emissary
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
   - show: critical-role-specials
     season: 7
     role: player

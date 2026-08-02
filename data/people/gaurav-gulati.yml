@@ -35,6 +35,90 @@ credits:
         url: https://www.imdb.com/title/tt8102874/fullcredits/
         note: IMDb full cast and crew for "Prickly Tallstag and the Danger Seekers,
           Pears" (2017), via the official datasets.
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: Sir Cloppingworth the Third
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: miss-adventures
+    role: player
+    season: 1
+    character: Tom
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281086/fullcredits/
+        note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
+          datasets.
+  - show: deadlands-lawless
+    role: player
+    season: 1
+    character: Wheeler McLentic
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt12286336/fullcredits/
+        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
+          datasets.'
+  - show: the-ironkeep-chronicles
+    role: player
+    season: 1
+    character: Thawne of the Wood
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8080866/fullcredits/
+        note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
+          official datasets.
+  - show: east-texas-university-undeclared
+    role: player
+    season: 1
+    character: PK
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9187582/fullcredits/
+        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
+          via the official datasets.'
+  - show: barky-s-brigade
+    role: player
+    season: 1
+    character: Ruckus P. Fizzlebottom (2016)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9193494/fullcredits/
+        note: IMDb full cast and crew for "Barky's Brigade" (2015), via the official
+          datasets.
+  - show: the-broken-pact
+    role: player
+    season: 1
+    character: Lucian
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9660096/fullcredits/
+        note: IMDb full cast and crew for "The Broken Pact" (2018), via the official
+          datasets.
+  - show: twilight-protocol
+    role: player
+    season: 1
+    character: Sgt. Elijah Clay
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9886618/fullcredits/
+        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
+          datasets.
   - show: east-texas-university-undeclared
     season: 1
     role: editor
@@ -108,28 +192,6 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Dice_Ex_Machina
         note: Dice Ex Machina cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
-  - show: tempting-fate
-    role: player
-    season: 1
-    character: Sir Cloppingworth the Third
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7394666/fullcredits/
-        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
-          datasets.
-  - show: miss-adventures
-    role: player
-    season: 1
-    character: Tom
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt8281086/fullcredits/
-        note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
-          datasets.
   - show: dark-lanterns
     role: GM/DM
     season: 1
@@ -139,26 +201,6 @@ credits:
         url: https://www.imdb.com/title/tt11236310/fullcredits/
         note: IMDb full cast and crew for "Dark Lanterns" (2019), via the official
           datasets.
-  - show: deadlands-lawless
-    role: player
-    season: 1
-    character: Wheeler McLentic
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt12286336/fullcredits/
-        note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
-          datasets.'
-  - show: the-ironkeep-chronicles
-    role: player
-    season: 1
-    character: Thawne of the Wood
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt8080866/fullcredits/
-        note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
-          official datasets.
   - show: it-s-always-cloudy-in-barovia
     role: GM/DM
     season: 1
@@ -177,45 +219,3 @@ credits:
         url: https://www.imdb.com/title/tt8359254/fullcredits/
         note: IMDb full cast and crew for "It's Always Cloudy in Barovia" (2018), via
           the official datasets.
-  - show: east-texas-university-undeclared
-    role: player
-    season: 1
-    character: PK
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9187582/fullcredits/
-        note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
-          via the official datasets.'
-  - show: barky-s-brigade
-    role: player
-    season: 1
-    character: Ruckus P. Fizzlebottom (2016)
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9193494/fullcredits/
-        note: IMDb full cast and crew for "Barky's Brigade" (2015), via the official
-          datasets.
-  - show: the-broken-pact
-    role: player
-    season: 1
-    character: Lucian
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9660096/fullcredits/
-        note: IMDb full cast and crew for "The Broken Pact" (2018), via the official
-          datasets.
-  - show: twilight-protocol
-    role: player
-    season: 1
-    character: Sgt. Elijah Clay
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9886618/fullcredits/
-        note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
-          datasets.

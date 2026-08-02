@@ -7,6 +7,52 @@ aliases:
     name: Matthew Capodicasa
     alias_type: legal
 credits:
+  - show: new-game-who-dis
+    season: 13
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Star_Wars%3A_Age_of_Republic
+        note: "Star Wars: Age of Republic cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: new-game-who-dis
+    season: 14
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Tales_From_The_Loop
+        note: Tales From The Loop cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 6
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Fiasco
+        note: Fiasco cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 16
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Traveller
+        note: Traveller cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: voyagers-of-the-jump
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Voyagers_of_the_Jump
+        note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+      - tier: reference
+        url: https://thetvdb.com/series/voyagers-of-the-jump
+        note: Cast for "Voyagers of the Jump" per TheTVDB.
   - show: glass-cannon-podcast
     season: 1
     role: player
@@ -65,15 +111,6 @@ credits:
         note: Delta Green cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: new-game-who-dis
-    season: 13
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Star_Wars%3A_Age_of_Republic
-        note: "Star Wars: Age of Republic cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: new-game-who-dis
     season: 5
     role: player
     alias: default
@@ -90,15 +127,6 @@ credits:
       - url: https://glasscannonnetwork.fandom.com/wiki/Crypt_of_the_Everflame
         note: Crypt of the Everflame cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
-        tier: community
-  - show: new-game-who-dis
-    season: 14
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Tales_From_The_Loop
-        note: Tales From The Loop cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
         tier: community
   - show: new-game-who-dis
     season: 3
@@ -132,14 +160,6 @@ credits:
           infobox. CC-BY-SA.
         tier: community
   - show: new-game-who-dis
-    season: 6
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Fiasco
-        note: Fiasco cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: new-game-who-dis
     season: 4
     role: player
     alias: default
@@ -155,14 +175,6 @@ credits:
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Runequest
         note: Runequest cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: new-game-who-dis
-    season: 16
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Traveller
-        note: Traveller cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: glass-cannon-podcast
     season: 6
@@ -194,18 +206,6 @@ credits:
         note: The Game Garage cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: voyagers-of-the-jump
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Voyagers_of_the_Jump
-        note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-      - tier: reference
-        url: https://thetvdb.com/series/voyagers-of-the-jump
-        note: Cast for "Voyagers of the Jump" per TheTVDB.
   - show: glass-cannon-podcast
     season: 5
     role: player

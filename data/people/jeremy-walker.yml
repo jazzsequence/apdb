@@ -10,14 +10,6 @@ aliases:
     alias_type: legal
     note: Credited under this name on some sources; merged from `jeremy-s-walker`.
 credits:
-  - show: sagas-of-sundry-goblin-mode
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: reference
-        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
-        note: Cast per Geek & Sundry.
   - show: pathfinder-knights-of-everflame
     season: 1
     role: player
@@ -56,3 +48,11 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
         note: Cast for "SAGAS OF SUNDRY" per TMDB.
+  - show: sagas-of-sundry-goblin-mode
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
+        note: Cast per Geek & Sundry.

@@ -7,11 +7,13 @@ status: unknown
 description: War of Crows follows an intrepid crew of smugglers known as the
   Damned Emporium as they claw their way to the top of Crow's Foot! An actual
   play show of the award winning tabletop roleplaying game Blades in the Dark.
+  System corrected to blades-in-the-dark from the show's own title; it had been
+  left at the D&D 5e default.
 links:
   website: https://www.youtube.com/playlist?list=PLEUU6UScKQRuK2tNXzMp6kKgjlDTjgJBe
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: blades-in-the-dark
     episode_count: 46
 image:
   url: https://i.ytimg.com/vi/JhToB9Gj0Fg/hqdefault.jpg

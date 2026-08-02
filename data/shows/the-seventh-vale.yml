@@ -8,4 +8,6 @@ links:
   website: https://happyjacks.org/seventhvale/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: city-of-mist
+description: System corrected to city-of-mist from the show's own title; it had
+  been left at the D&D 5e default.

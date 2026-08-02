@@ -16,6 +16,16 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
+  - show: shield-of-tomorrow
+    role: player
+    season: 1
+    character: Chip Hardunk
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7142196/fullcredits/
+        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
+          datasets.
   - show: tempting-fate
     role: GM/DM
     season: 1
@@ -38,16 +48,6 @@ credits:
   - show: shield-of-tomorrow
     role: writer
     season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7142196/fullcredits/
-        note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
-          datasets.
-  - show: shield-of-tomorrow
-    role: player
-    season: 1
-    character: Chip Hardunk
     alias: default
     sources:
       - tier: reference

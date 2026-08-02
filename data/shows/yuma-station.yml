@@ -8,4 +8,6 @@ links:
   website: https://happyjacks.org/yumastation/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: traveller
+description: System corrected to traveller from the show's own title; it had
+  been left at the D&D 5e default.

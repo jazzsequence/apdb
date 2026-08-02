@@ -1,9 +1,3 @@
-# Credits imported from avantris.fandom.com on 2026-08-01.
-# Source: https://avantris.fandom.com/wiki/Blank_Slate (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: richie
 canonical_name: Richie
 sort_name: Richie
@@ -163,14 +157,6 @@ credits:
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
-    season: 18
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Kobold_Storm
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
     season: 19
     role: player
     character: Kristoff Reiner
@@ -204,22 +190,6 @@ credits:
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
-    season: 23
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
-        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legends-of-avantris
-    season: 24
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Ring_of_Chaos
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
@@ -367,6 +337,30 @@ credits:
     sources:
       - url: https://avantris.fandom.com/wiki/Survive_Until_Dawn
         note: Survive Until Dawn cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 18
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Kobold_Storm
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 23
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
+        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 24
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Ring_of_Chaos
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
     season: 41

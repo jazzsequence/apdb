@@ -8,14 +8,6 @@ aliases:
     alias_type: legal
 credits:
   - show: high-rollers-dnd
-    season: 8
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Chaos_Twins
-        note: Chaos Twins cast, via the highrollers.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: high-rollers-dnd
     season: 3
     role: player
     character: Xantheus
@@ -35,3 +27,11 @@ credits:
         url: https://www.youtube.com/watch?v=KE-8q08L11k
         note: "Cast per the production's own description of \"High Rollers: Aerois #147
           | The Best Defense\"."
+  - show: high-rollers-dnd
+    season: 8
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://highrollers.fandom.com/wiki/Chaos_Twins
+        note: Chaos Twins cast, via the highrollers.fandom.com infobox. CC-BY-SA.
+        tier: community

@@ -7,24 +7,6 @@ aliases:
     name: Jared Logan
     alias_type: legal
 credits:
-  - show: glass-cannon-podcast
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Strange_Aeons
-        note: Glass Cannon Live! - Strange Aeons cast, via the
-          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: glass-cannon-podcast
-    season: 9
-    role: player
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Side_Quest_Side_Sesh
-        note: Side Quest Side Sesh cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: new-game-who-dis
     season: 18
     role: GM/DM
@@ -34,18 +16,6 @@ credits:
         note: "Vampire: The Masquerade cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: glass-cannon-live
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
-        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-      - tier: reference
-        url: https://thetvdb.com/series/glass-cannon-live
-        note: Cast for "Glass Cannon Live!" per TheTVDB.
   - show: glass-cannon-network-presents
     season: 2
     role: GM/DM
@@ -73,15 +43,6 @@ credits:
         note: Glass Cannon Radio cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk
-    season: 7
-    role: player
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
-        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
   - show: new-game-who-dis
     season: 1
     role: GM/DM
@@ -89,15 +50,6 @@ credits:
     sources:
       - url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
         note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
-          infobox. CC-BY-SA.
-        tier: community
-  - show: get-in-the-trunk
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
-        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
         tier: community
   - show: blood-blades
@@ -145,3 +97,51 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Blood_of_the_Wild
         note: Blood of the Wild cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
+  - show: glass-cannon-podcast
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Strange_Aeons
+        note: Glass Cannon Live! - Strange Aeons cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: glass-cannon-podcast
+    season: 9
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Side_Quest_Side_Sesh
+        note: Side Quest Side Sesh cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: glass-cannon-live
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+      - tier: reference
+        url: https://thetvdb.com/series/glass-cannon-live
+        note: Cast for "Glass Cannon Live!" per TheTVDB.
+  - show: get-in-the-trunk
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
+        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: get-in-the-trunk
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community

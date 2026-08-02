@@ -7,6 +7,24 @@ aliases:
     name: Grant Berger
     alias_type: legal
 credits:
+  - show: get-in-the-trunk
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_3
+        note: "Get In The Trunk: Season 3 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: new-game-who-dis
+    season: 20
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Warhammer_40K%3A_Wrath_%26_Glory
+        note: "Warhammer 40K: Wrath & Glory cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
   - show: glass-cannon-podcast
     season: 1
     role: player
@@ -128,24 +146,6 @@ credits:
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Fiasco
         note: Fiasco cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: get-in-the-trunk
-    season: 3
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_3
-        note: "Get In The Trunk: Season 3 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: new-game-who-dis
-    season: 20
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Warhammer_40K%3A_Wrath_%26_Glory
-        note: "Warhammer 40K: Wrath & Glory cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
         tier: community
   - show: new-game-who-dis
     season: 4

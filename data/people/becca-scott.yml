@@ -41,6 +41,34 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/L.A._by_Night
         tier: reference
+  - show: tempting-fate
+    role: player
+    season: 1
+    character: House Glacial
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7394666/fullcredits/
+        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
+          datasets.
+  - show: tbd-rpg
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=FRRHwhVQhKY
+        note: Cast stated in the show's own description for "Dungeon in a Box | TBD
+          RPG".
+    season: 1
+    alias: default
+  - show: champions-of-the-realm
+    season: 1
+    role: host
+    sources:
+      - tier: reference
+        url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
+        note: Announcement naming the DM, commentators and full contestant list.
+    note: Called the play-by-play rather than playing.
+    alias: default
   - show: new-game-who-dis
     season: 3
     role: player
@@ -68,16 +96,6 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Inherit_The_Sand
         note: Inherit The Sand cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
-  - show: tempting-fate
-    role: player
-    season: 1
-    character: House Glacial
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7394666/fullcredits/
-        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
-          datasets.
   - show: game-masters-hall
     role: player
     season: 1
@@ -86,21 +104,3 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/game-masters-hall
         note: Cast for "Game Masters Hall" per TheTVDB.
-  - show: tbd-rpg
-    role: GM/DM
-    sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=FRRHwhVQhKY
-        note: Cast stated in the show's own description for "Dungeon in a Box | TBD
-          RPG".
-    season: 1
-    alias: default
-  - show: champions-of-the-realm
-    season: 1
-    role: host
-    sources:
-      - tier: reference
-        url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
-        note: Announcement naming the DM, commentators and full contestant list.
-    note: Called the play-by-play rather than playing.
-    alias: default

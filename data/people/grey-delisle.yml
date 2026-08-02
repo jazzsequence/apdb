@@ -6,6 +6,15 @@ aliases:
     name: Grey DeLisle
     alias_type: legal
 credits:
+  - show: guardians-of-the-galaxy
+    role: player
+    season: 1
+    character: Captain Marvel (voice)
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
+        note: Cast for "Guardians of the Galaxy" per TMDB.
   - show: critical-role
     role: player
     note: IMDb credits this at series level; which of this show's seasons it covers
@@ -16,12 +25,3 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
-  - show: guardians-of-the-galaxy
-    role: player
-    season: 1
-    character: Captain Marvel (voice)
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
-        note: Cast for "Guardians of the Galaxy" per TMDB.

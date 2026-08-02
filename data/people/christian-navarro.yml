@@ -25,16 +25,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
-  - show: critical-role-specials
-    season: 5
-    role: guest player
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: dnd-dungeon-masters
     season: 1
     role: player
@@ -59,3 +49,13 @@ credits:
         note: "Cast per the production's own description of \"Session Zero LIVE from
           SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
           RealmSmith\"."
+  - show: critical-role-specials
+    season: 5
+    role: guest player
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
+        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community

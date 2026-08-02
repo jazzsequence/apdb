@@ -6,6 +6,22 @@ aliases:
     name: Kimi
     alias_type: handle
 credits:
+  - show: wild-wild-talents
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/wildwildtalents/
+        note: Cast per the network's own show page.
+  - show: idolon-academy
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/idolonacademy/
+        note: Cast per the network's own show page.
   - show: the-darknet
     season: 1
     role: player
@@ -93,22 +109,6 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/vault818/
-        note: Cast per the network's own show page.
-  - show: wild-wild-talents
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/wildwildtalents/
-        note: Cast per the network's own show page.
-  - show: idolon-academy
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/idolonacademy/
         note: Cast per the network's own show page.
   - show: desert-of-despair
     season: 1

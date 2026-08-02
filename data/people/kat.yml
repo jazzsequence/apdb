@@ -1,0 +1,17 @@
+id: kat
+canonical_name: Kat
+sort_name: Kat
+aliases:
+  - id: default
+    name: Kat
+    alias_type: handle
+credits:
+  - show: d-d-with-high-school-students-season-5
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=dIohP8ew17A
+        note: Cast stated in the show's own description for "D&D with High School
+          Students S05E04 - DnD gameplay, Dungeons & Dragons actual play".
+    season: 1
+    alias: default

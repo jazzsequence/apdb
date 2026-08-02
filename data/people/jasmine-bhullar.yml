@@ -7,30 +7,6 @@ aliases:
     name: Jasmine Bhullar
     alias_type: legal
 credits:
-  - show: dimension-20
-    season: 15
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Coffin_Run
-        note: Coffin Run cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
-  - show: critical-role-specials
-    season: 5
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
-        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: acquisitions-incorporated
     season: 15
     role: player
@@ -57,18 +33,6 @@ credits:
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
         tier: community
       - *a1
-  - show: dnd-dungeon-masters
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=mY9w7n84PmM
-        note: Cast per the production's own description of "Dungeon Masters | Official
-          D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".
-      - tier: reference
-        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
-        note: Cast for "Dungeon Masters" per TMDB.
   - show: dimension-20
     role: player
     character: Little Army Man
@@ -98,6 +62,42 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/relics-and-rarities
         note: Cast for "Relics and Rarities" per TheTVDB.
+  - show: dimension-20
+    season: 15
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Coffin_Run
+        note: Coffin Run cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+  - show: dnd-dungeon-masters
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=mY9w7n84PmM
+        note: Cast per the production's own description of "Dungeon Masters | Official
+          D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".
+      - tier: reference
+        url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
+        note: Cast for "Dungeon Masters" per TMDB.
+  - show: critical-role-specials
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
+        note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
   - show: game-masters-hall
     role: player
     season: 1

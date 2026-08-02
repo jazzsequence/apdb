@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { person, groups, names } = Astro.props;
-const REPO = 'your-org/actual-play-db';
+const REPO = 'jazzsequence/apdb';
 const formerNames = person.aliases.filter((a) => a.name !== person.canonical_name);
 const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
 ---

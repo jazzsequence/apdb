@@ -15,15 +15,6 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/L.A._by_Night
         tier: reference
-  - show: dune-mini-series
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Dune_Mini-Series
-        note: Dune Mini-Series cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
   - show: tempting-fate
     role: player
     season: 1
@@ -72,3 +63,12 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/callisto-6
         note: Cast for "Callisto 6" per TheTVDB.
+  - show: dune-mini-series
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Dune_Mini-Series
+        note: Dune Mini-Series cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

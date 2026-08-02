@@ -196,37 +196,63 @@ function characterFirstBlock(description: string): YouTubeCredit[] {
  * role, not a character, so it is promoted; the trailing class descriptor
  * ("a Winter Walker Ranger") is dropped from the character name.
  */
+/** A line that is only a social or streaming link, not a credit. */
+const SOCIAL_LINE =
+  /^(twitch|twitter|x|fb|facebook|ig|insta(gram)?|youtube|yt|bluesky|bsky|tiktok|patreon|discord|website|web|email|mastodon|threads)\s*[:@]/i;
+
+/**
+ * A `Cast` / `Gamemaster` heading followed by entries.
+ *
+ * Written against how descriptions are actually laid out rather than an ideal:
+ * headings often have no colon, entries are separated by blank lines, each
+ * name is followed by several lines of social links, and the separator between
+ * performer and character is as often a dash as the word "as". OSRPG's Blades
+ * in the Dark lists its whole table this way and the earlier version of this
+ * function returned nothing for it, because it stopped at the first blank line
+ * and required "X as Y".
+ */
 function headedBlock(description: string): YouTubeCredit[] {
   const lines = description.split(/\r?\n/).map((l) => l.trim());
   const credits: YouTubeCredit[] = [];
 
+  const CAST_HEAD = /^(cast|starring|players?|featuring|the (cast|party))\s*:?\s*$/i;
+  const GM_HEAD = /^(game\s?master|gamemaster|dungeon\s?master|storyteller|keeper|gm|dm)\s*:?\s*$/i;
+
   for (let i = 0; i < lines.length; i++) {
-    if (!/^(cast|starring|players|featuring)\s*:?\s*$/i.test(lines[i]!)) continue;
+    const head = lines[i]!;
+    const isGmHead = GM_HEAD.test(head);
+    if (!CAST_HEAD.test(head) && !isGmHead) continue;
 
-    for (let j = i + 1; j < lines.length; j++) {
+    // Run to the next heading or the end, skipping blanks and link lines.
+    let misses = 0;
+    for (let j = i + 1; j < lines.length && misses < 6; j++) {
       const line = lines[j]!;
-      if (!line) break;
-      if (/https?:\/\//i.test(line)) break;
-      if (line.length > 140) break;
+      if (!line) continue;                                   // blank between entries
+      if (SOCIAL_LINE.test(line) || /^https?:\/\//i.test(line)) continue;
+      if (CAST_HEAD.test(line) || GM_HEAD.test(line)) break;  // next section
+      if (line.length > 140) { misses++; continue; }
 
-      const m = line.match(/^(.+?)\s+as\s+(.+)$/i);
-      if (!m) break;
+      // A game-master heading is followed by a bare name.
+      if (isGmHead && looksLikeName(line)) {
+        credits.push({ name: line, role: 'GM/DM', line });
+        break;
+      }
+
+      // "Angela - Reaper", "Angela as Reaper", "Angela: Reaper"
+      const m = line.match(/^(.+?)\s*(?:\s-\s|\s[–—]\s|\sas\s|:)\s*(.+)$/i);
+      if (!m) { misses++; continue; }
 
       const name = m[1]!.replace(/^[\s\-–—*•]+/, '').trim();
-      let character = m[2]!.split(/,\s*(?:an?\b|the\b)/i)[0]!.trim();
+      const character = m[2]!.split(/,\s*(?:an?\b|the\b)/i)[0]!.trim();
+      if (!looksLikeName(name)) { misses++; continue; }
 
-      const isGm = /^(the\s+)?(dungeon master|game master|dm|gm)$/i.test(character);
-      if (!looksLikeName(name)) break;
-
+      const isGm = /^(the\s+)?(dungeon master|game master|gamemaster|dm|gm|storyteller|keeper)$/i.test(character);
       credits.push(
-        isGm
-          ? { name, role: 'GM/DM', line }
-          : { name, role: 'player', character, line },
+        isGm ? { name, role: 'GM/DM', line } : { name, role: 'player', character, line },
       );
     }
-    if (credits.length > 1) return credits;
   }
-  return [];
+  return credits.length > 1 ? credits : [];
 }
 
 /**
@@ -248,9 +274,17 @@ function nameKey(name: string): string {
     .trim();
 }
 
+/**
+ * Job titles that appear in a cast block as though they were names. OSRPG's
+ * descriptions list "Artist" and "Editor" among the performers, and both were
+ * imported as people.
+ */
+const JOB_TITLE =
+  /^(artist|editor|producer|director|writer|composer|music|sound|art|graphics|design(er)?|animator|host|moderator|mod|crew|staff|team|cast|gamemaster|game ?master|dungeon ?master|storyteller|keeper|gm|dm|player|guest)$/i;
+
 function keepOnlyNames(credits: YouTubeCredit[]): YouTubeCredit[] {
   const cleaned = credits
-    .filter((c) => looksLikeName(c.name))
+    .filter((c) => looksLikeName(c.name) && !JOB_TITLE.test(c.name.trim()))
     // A social handle or a URL is not a character. "Ashlen Rose as @AshlenRose"
     // is a credit line being read out of a promo sentence, and "Kevin MacLeod
     // as incompetech.com" is a music attribution.

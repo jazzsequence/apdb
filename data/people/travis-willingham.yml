@@ -44,23 +44,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/critical-role
         note: Cast for "Critical Role" per TheTVDB.
-  - show: critical-role
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: exandria-unlimited
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
-        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: exandria-unlimited
     season: 3
     role: player
@@ -100,6 +83,36 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+  - show: celebrid-d
+    role: player
+    season: 1
+    character: Grog
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: IMDb full cast and crew for "CelebriD&D" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
+        note: Cast for "CelebriD&D" per TMDB.
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
   - show: candela-obscura
     season: 2
@@ -142,16 +155,3 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
-  - show: celebrid-d
-    role: player
-    season: 1
-    character: Grog
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7537668/fullcredits/
-        note: IMDb full cast and crew for "CelebriD&D" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
-        note: Cast for "CelebriD&D" per TMDB.

@@ -8,7 +8,6 @@ aliases:
 credits:
   - show: critical-role
     role: player
-    character: Self - Host
     note: IMDb credits this at series level; which of this show's seasons it covers
       is not established.
     alias: default

@@ -131,28 +131,12 @@ credits:
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
-    season: 15
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Tactical_Waifu
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
     season: 16
     role: player
     character: Babar B. Babar
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mighty_Trunks
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
-    season: 19
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Tainted_Grail
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
@@ -174,31 +158,6 @@ credits:
         note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
-    season: 23
-    role: guest player
-    alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
-        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: legends-of-avantris
-    season: 24
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Ring_of_Chaos
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
-    season: 25
-    role: player
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
     season: 26
     role: player
     character: Pyke
@@ -217,14 +176,6 @@ credits:
       - url: https://avantris.fandom.com/wiki/Stardust_Rhapsody%3A_Anthem
         note: "Stardust Rhapsody: Anthem cast, via the avantris.fandom.com infobox.
           CC-BY-SA."
-        tier: community
-  - show: legends-of-avantris
-    season: 28
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://avantris.fandom.com/wiki/Mud_and_Mercy
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: legends-of-avantris
     season: 29
@@ -325,3 +276,52 @@ credits:
       - tier: community
         url: https://avantris.fandom.com/wiki/Survive_Until_Dawn
         note: Survive Until Dawn cast, via the avantris.fandom.com infobox. CC-BY-SA.
+  - show: legends-of-avantris
+    season: 19
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Tainted_Grail
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 28
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Mud_and_Mercy
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 15
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Tactical_Waifu
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 23
+    role: guest player
+    alias: default
+    note: Listed as a guest player for this season; specific episodes not identified.
+    sources:
+      - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
+        note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: legends-of-avantris
+    season: 24
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Ring_of_Chaos
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 25
+    role: player
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community

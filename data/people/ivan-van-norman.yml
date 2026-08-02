@@ -6,14 +6,6 @@ aliases:
     name: Ivan Van Norman
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 1
-    role: producer
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
   - show: la-by-night
     season: 1
     role: player
@@ -22,6 +14,14 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: critical-role-specials
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/UnDeadwood
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
   - show: sagas-of-sundry-goblin-mode
     season: 1
     role: GM/DM
@@ -38,17 +38,6 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/
         note: Host per Geek & Sundry. Player names not published.
-  - show: candela-obscura
-    role: player
-    character: Self - Host
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
   - show: sagas-of-sundry
     role: GM/DM
     season: 1
@@ -66,18 +55,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/sagas-of-sundry
         note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
-  - show: sagas-of-sundry
-    role: player
-    season: 1
-    character: Story Teller
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7553424/fullcredits/
-        note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
-          datasets.
   - show: sagas-of-sundry
     role: writer
     season: 1
@@ -136,6 +113,16 @@ credits:
         url: https://www.imdb.com/title/tt8510552/fullcredits/
         note: "IMDb full cast and crew for \"We're Alive: Frontier\" (2018), via the
           official datasets."
+  - show: candela-obscura
+    role: player
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
   - show: game-masters-hall
     role: player
     season: 1

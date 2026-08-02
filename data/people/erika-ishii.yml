@@ -88,14 +88,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
         note: Cast for "L.A. by Night" per TMDB.
-  - show: sagas-of-sundry-goblin-mode
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: reference
-        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
-        note: Cast per Geek & Sundry.
   - show: vast
     role: player
     season: 1
@@ -125,26 +117,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/sagas-of-sundry
         note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
-  - show: thrashtopia
-    role: player
-    season: 1
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7588390/fullcredits/
-        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
-          datasets.
-  - show: worlds-beyond-number
-    role: player
-    season: 1
-    character: Actor
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/worlds-beyond-number
-        note: Cast for "Worlds Beyond Number" per TheTVDB.
   - show: dimension-20
     role: player
     character: Lilith
@@ -175,3 +147,30 @@ credits:
           joined.
     character: Annabelle
     alias: default
+  - show: sagas-of-sundry-goblin-mode
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
+        note: Cast per Geek & Sundry.
+  - show: thrashtopia
+    role: player
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7588390/fullcredits/
+        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
+          datasets.
+  - show: worlds-beyond-number
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://thetvdb.com/series/worlds-beyond-number
+        note: Cast for "Worlds Beyond Number" per TheTVDB.

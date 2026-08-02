@@ -6,6 +6,14 @@ aliases:
     name: Nick
     alias_type: handle
 credits:
+  - show: pembrooke
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/pembrooke/
+        note: Cast per the network's own show page.
   - show: razor-ridge
     season: 1
     role: player
@@ -21,14 +29,6 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/insertcoin/
-        note: Cast per the network's own show page.
-  - show: pembrooke
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/pembrooke/
         note: Cast per the network's own show page.
   - show: stonetop
     season: 1

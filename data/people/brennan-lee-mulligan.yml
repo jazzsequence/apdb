@@ -18,6 +18,68 @@ aliases:
     alias_type: legal
 credits:
   - show: dimension-20
+    season: 2
+    role: player
+    character: Evan Kelmp
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
+        note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+  - show: dimension-20
+    season: 18
+    role: player
+    character: Bishop Raphaniel Charlock
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/The_Ravening_War
+        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 21
+    role: player
+    character: Tula
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Burrow's_End
+        note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 26
+    role: player
+    character: Evan Kelmp
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
+        note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+      - *a1
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Adrian Clairmont
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
+    season: 1
+    role: player
+    character: Dorbin Kragstone
+    alias: default
+    year: "2024"
+    sources:
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
+        note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
+          show.
+  - show: dimension-20
     season: 1
     role: GM/DM
     alias: default
@@ -25,24 +87,15 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Dimension_20
         tier: reference
-      - &a1
+      - &a2
         tier: reference
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
-      - &a2
+      - &a3
         tier: reference
         url: https://www.themoviedb.org/tv/89180-dimension-20/cast
         note: Cast for "Dimension 20" per TMDB.
-  - show: dimension-20
-    season: 3
-    role: player
-    alias: default
-    year: "2022"
-    note: Character name to be confirmed.
-    sources:
-      - url: https://en.wikipedia.org/wiki/Dimension_20
-        tier: reference
   - show: worlds-beyond-number
     season: 1
     role: GM/DM
@@ -51,6 +104,9 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
         tier: reference
+      - tier: reference
+        url: https://thetvdb.com/series/worlds-beyond-number
+        note: Cast for "Worlds Beyond Number" per TheTVDB.
   - show: exandria-unlimited
     season: 3
     role: guest GM
@@ -75,20 +131,6 @@ credits:
           infobox. CC-BY-SA."
         tier: community
   - show: dimension-20
-    season: 2
-    role: player
-    character: Evan Kelmp
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic
-        note: Misfits and Magic cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-      - &a3
-        tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-  - show: dimension-20
     season: 5
     role: GM/DM
     alias: default
@@ -97,8 +139,8 @@ credits:
         note: The Unsleeping City cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 6
     role: GM/DM
@@ -107,8 +149,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Tiny_Heist
         note: Tiny Heist cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 7
     role: GM/DM
@@ -117,8 +159,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/A_Crown_of_Candy
         note: A Crown of Candy cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 8
     role: GM/DM
@@ -128,8 +170,8 @@ credits:
         note: Pirates of Leviathan cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 9
     role: GM/DM
@@ -139,8 +181,8 @@ credits:
         note: "The Unsleeping City: Chapter II cast, via the dimension20.fandom.com
           infobox. CC-BY-SA."
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 10
     role: GM/DM
@@ -150,8 +192,8 @@ credits:
         note: "Fantasy High: Sophomore Year cast, via the dimension20.fandom.com
           infobox. CC-BY-SA."
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 11
     role: GM/DM
@@ -160,8 +202,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Mice_%26_Murder
         note: Mice & Murder cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 12
     role: GM/DM
@@ -170,8 +212,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/The_Seven
         note: The Seven cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 14
     role: GM/DM
@@ -181,8 +223,8 @@ credits:
         note: A Starstruck Odyssey cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 17
     role: GM/DM
@@ -191,17 +233,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Neverafter
         note: Neverafter cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
-  - show: dimension-20
-    season: 18
-    role: player
-    character: Bishop Raphaniel Charlock
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/The_Ravening_War
-        note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
+      - *a3
   - show: dimension-20
     season: 19
     role: GM/DM
@@ -211,8 +244,8 @@ credits:
         note: Dungeons and Drag Queens cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 20
     role: GM/DM
@@ -221,17 +254,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Mentopolis
         note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
-  - show: dimension-20
-    season: 21
-    role: player
-    character: Tula
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Burrow's_End
-        note: Burrow's End cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
+      - *a3
   - show: dimension-20
     season: 22
     role: GM/DM
@@ -241,8 +265,8 @@ credits:
         note: "Fantasy High: Junior Year cast, via the dimension20.fandom.com infobox.
           CC-BY-SA."
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 23
     role: GM/DM
@@ -252,8 +276,8 @@ credits:
         note: Never Stop Blowing Up cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 24
     role: GM/DM
@@ -263,8 +287,8 @@ credits:
         note: Dungeons and Drag Queens Season 2 cast, via the dimension20.fandom.com
           infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 25
     role: GM/DM
@@ -273,18 +297,7 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Time_Quangle
         note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
-  - show: dimension-20
-    season: 26
-    role: player
-    character: Evan Kelmp
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Misfits_and_Magic_Season_2
-        note: Misfits and Magic Season 2 cast, via the dimension20.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
       - *a3
   - show: dimension-20
     season: 27
@@ -294,8 +307,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Titan_Takedown
         note: Titan Takedown cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 28
     role: GM/DM
@@ -304,8 +317,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Cloudward%2C_Ho!
         note: Cloudward, Ho! cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 30
     role: GM/DM
@@ -314,8 +327,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Gladlands
         note: Gladlands cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
   - show: dimension-20
     season: 31
     role: GM/DM
@@ -325,8 +338,61 @@ credits:
         note: City Council of Darkness cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a1
       - *a2
+      - *a3
+  - show: critical-role-specials
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 9
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Live_Campaign_2%3A_Dadlands
+        note: "Live Campaign 2: Dadlands cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+  - show: critical-role
+    role: GM/DM
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
+  - show: dimension-20
+    role: writer
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+  - show: dimension-20
+    season: 3
+    role: player
+    alias: default
+    year: "2022"
+    note: Character name to be confirmed.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dimension_20
+        tier: reference
   - show: critical-role
     season: 4
     role: player
@@ -396,15 +462,6 @@ credits:
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
   - show: critical-role-specials
-    season: 2
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
     season: 6
     role: player
     alias: default
@@ -413,66 +470,3 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
         note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Adrian Clairmont
-    alias: default
-    sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
-  - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
-    season: 1
-    role: player
-    character: Dorbin Kragstone
-    alias: default
-    year: "2024"
-    sources:
-      - tier: reference
-        url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
-        note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
-          show.
-  - show: the-adventure-zone
-    season: 9
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: community
-        url: https://theadventurezone.fandom.com/wiki/Live_Campaign_2%3A_Dadlands
-        note: "Live Campaign 2: Dadlands cast, via the theadventurezone.fandom.com
-          infobox. CC-BY-SA."
-  - show: worlds-beyond-number
-    role: player
-    season: 1
-    character: Actor
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/worlds-beyond-number
-        note: Cast for "Worlds Beyond Number" per TheTVDB.
-  - show: critical-role
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/critical-role
-        note: Cast for "Critical Role" per TheTVDB.
-  - show: dimension-20
-    role: writer
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.

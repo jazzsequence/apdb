@@ -46,22 +46,6 @@ credits:
       - tier: official
         url: https://happyjacks.org/eldemy/
         note: Cast per the network's own show page.
-  - show: tomorrow-legion
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/tomorrowlegion/
-        note: Cast per the network's own show page.
-  - show: the-imperial-march
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/theimperialmarch/
-        note: Cast per the network's own show page.
   - show: the-mote-of-sin
     season: 1
     role: GM/DM
@@ -77,14 +61,6 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/kindredone/
-        note: Cast per the network's own show page.
-  - show: hollowed-plains
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/hollowedplains/
         note: Cast per the network's own show page.
   - show: the-kintsugi-chronicles
     season: 1
@@ -133,6 +109,30 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/slouchingtowardseldemy/
+        note: Cast per the network's own show page.
+  - show: tomorrow-legion
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/tomorrowlegion/
+        note: Cast per the network's own show page.
+  - show: the-imperial-march
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/theimperialmarch/
+        note: Cast per the network's own show page.
+  - show: hollowed-plains
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/hollowedplains/
         note: Cast per the network's own show page.
 image:
   url: https://live.staticflickr.com/54/160040421_2beb0799ef_b.jpg

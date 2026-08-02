@@ -23,16 +23,6 @@ aliases:
     active_to: "2020"
     note: Birth name.
 credits:
-  - show: carefree-high
-    season: 1
-    role: player
-    alias: lipscomb
-    note: Joined mid-season, left before the campaign ended.
-    sources:
-      - note: Watched the stream; billed as Lipscomb. Not in the cast page, episode
-          notes, forum roster or episode threads — none track cast changes.
-        tier: firsthand
-        attested_by: Project maintainer
   - show: wildcards-east-texas-university
     season: 1
     episode: "S1E?: The Seekers"
@@ -43,54 +33,6 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
         tier: reference
-  - show: exandria-unlimited
-    season: 1
-    role: GM/DM
-    alias: iyengar
-    year: "2021"
-    sources:
-      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-        tier: reference
-      - &a3
-        tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - &a4
-        tier: reference
-        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
-        note: Cast for "Exandria Unlimited" per TMDB.
-      - &a5
-        tier: reference
-        url: https://thetvdb.com/series/exandria-unlimited
-        note: Cast for "Exandria Unlimited" per TheTVDB.
-  - show: dimension-20
-    season: 2
-    role: GM/DM
-    alias: iyengar
-    year: "2021"
-    sources:
-      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-        tier: reference
-      - &a1
-        tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - &a2
-        tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
-  - show: dimension-20
-    season: 3
-    role: GM/DM
-    alias: iyengar
-    year: "2022"
-    sources:
-      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-        tier: reference
-      - *a1
-      - *a2
   - show: critical-role
     season: 3
     episode: "C3E51: A Test of Worth"
@@ -145,6 +87,85 @@ credits:
       - url: https://dimension20.fandom.com/wiki/The_Ravening_War
         note: The Ravening War cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+  - show: exandria-unlimited
+    season: 3
+    role: player
+    character: Laerryn Coramar-Seelie
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
+        note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
+  - show: pirates-of-salt-bay
+    role: player
+    character: Fleabag
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: exandria-unlimited
+    season: 1
+    role: GM/DM
+    alias: iyengar
+    year: "2021"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        tier: reference
+      - &a3
+        tier: reference
+        url: https://www.imdb.com/title/tt14829636/fullcredits/
+        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
+          datasets.
+      - &a4
+        tier: reference
+        url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
+        note: Cast for "Exandria Unlimited" per TMDB.
+      - &a5
+        tier: reference
+        url: https://thetvdb.com/series/exandria-unlimited
+        note: Cast for "Exandria Unlimited" per TheTVDB.
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 2
+    role: GM/DM
+    alias: iyengar
+    year: "2021"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        tier: reference
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+  - show: dimension-20
+    season: 3
+    role: GM/DM
+    alias: iyengar
+    year: "2022"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        tier: reference
+      - *a1
+      - *a2
   - show: dimension-20
     season: 21
     role: GM/DM
@@ -164,21 +185,6 @@ credits:
         tier: community
       - *a1
       - *a2
-  - show: critical-role
-    season: 4
-    role: player
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: exandria-unlimited
-    season: 1
-    role: player
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
-        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: exandria-unlimited
     season: 2
     role: GM/DM
@@ -190,22 +196,6 @@ credits:
       - *a3
       - *a4
       - *a5
-  - show: exandria-unlimited
-    season: 3
-    role: player
-    character: Laerryn Coramar-Seelie
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited%3A_Calamity
-        note: "Exandria Unlimited: Calamity cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-      - tier: reference
-        url: https://www.imdb.com/title/tt14829636/fullcredits/
-        note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
-          datasets.
-      - tier: reference
-        url: https://thetvdb.com/series/exandria-unlimited
-        note: Cast for "Exandria Unlimited" per TheTVDB.
   - show: exandria-unlimited
     season: 4
     role: GM/DM
@@ -232,14 +222,6 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: tales-from-salt-bay
-    season: 1
-    role: player
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
-        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
   - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
     season: 1
     role: GM/DM
@@ -249,20 +231,6 @@ credits:
         url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
         note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
           show.
-  - show: revelations
-    season: 1
-    role: player
-    sources:
-      - tier: official
-        url: https://happyjacks.org/revelations/
-        note: Cast per the network's own show page.
-  - show: border-lands
-    season: 1
-    role: player
-    sources:
-      - tier: official
-        url: https://happyjacks.org/borderlands/
-        note: Cast per the network's own show page.
   - show: dragon-heist
     season: 1
     role: GM/DM
@@ -270,26 +238,8 @@ credits:
       - tier: official
         url: https://happyjacks.org/dragonheist/
         note: Cast per the network's own show page.
-  - show: gene-x
-    season: 1
-    role: player
-    sources:
-      - tier: official
-        url: https://happyjacks.org/genex/
-        note: Cast per the network's own show page.
   - show: pirates-of-salt-bay
     role: GM/DM
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against. IMDb credits this at series level; which of this show's seasons
-      it covers is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt18883950/fullcredits/
-        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
-          datasets.
-  - show: pirates-of-salt-bay
-    role: player
-    character: Fleabag
     note: Matched to IMDb on title alone; no existing credit here to cross-check
       against. IMDb credits this at series level; which of this show's seasons
       it covers is not established.
@@ -322,10 +272,55 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: carefree-high
+    season: 1
+    role: player
+    alias: lipscomb
+    note: Joined mid-season, left before the campaign ended.
+    sources:
+      - note: Watched the stream; billed as Lipscomb. Not in the cast page, episode
+          notes, forum roster or episode threads — none track cast changes.
+        tier: firsthand
+        attested_by: Project maintainer
+  - show: critical-role
+    season: 4
+    role: player
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: tales-from-salt-bay
+    season: 1
+    role: player
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
+        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: revelations
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://happyjacks.org/revelations/
+        note: Cast per the network's own show page.
+  - show: border-lands
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://happyjacks.org/borderlands/
+        note: Cast per the network's own show page.
+  - show: gene-x
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://happyjacks.org/genex/
+        note: Cast per the network's own show page.
   - show: worlds-beyond-number
     role: player
     season: 1
-    character: Actor
     sources:
       - tier: reference
         url: https://thetvdb.com/series/worlds-beyond-number

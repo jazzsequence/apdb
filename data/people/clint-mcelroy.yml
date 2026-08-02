@@ -64,15 +64,6 @@ credits:
           CC-BY-SA."
         tier: community
   - show: the-adventure-zone
-    season: 6
-    role: player
-    alias: default
-    sources:
-      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Elementary
-        note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
-          theadventurezone.fandom.com infobox. CC-BY-SA."
-        tier: community
-  - show: the-adventure-zone
     season: 7
     role: player
     character: Puka Malone
@@ -153,15 +144,6 @@ credits:
           infobox. CC-BY-SA."
         tier: community
   - show: the-adventure-zone
-    season: 17
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula
-        note: "Campaign 9: The Adventure Zone Versus Dracula cast, via the
-          theadventurezone.fandom.com infobox. CC-BY-SA."
-  - show: the-adventure-zone
     role: GM/DM
     note: TheTVDB credits this at series level; which season it covers is not
       established.
@@ -170,6 +152,24 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/the-adventure-zone
         note: Cast for "The Adventure Zone" per TheTVDB.
+  - show: the-adventure-zone
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Elementary
+        note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 17
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Campaign_9%3A_The_Adventure_Zone_Versus_Dracula
+        note: "Campaign 9: The Adventure Zone Versus Dracula cast, via the
+          theadventurezone.fandom.com infobox. CC-BY-SA."
 wikidata_qid: Q27067548
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Clint_McElroy_GalaxyCon_Louisville_2019.jpg

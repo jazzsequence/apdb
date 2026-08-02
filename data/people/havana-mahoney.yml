@@ -21,15 +21,6 @@ credits:
         url: https://www.imdb.com/title/tt9196764/fullcredits/
         note: IMDb full cast and crew for "The Lost Brigade" (2016), via the official
           datasets.
-  - show: tales-from-salt-bay
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
-        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
   - show: tempting-fate
     role: player
     season: 1
@@ -62,15 +53,6 @@ credits:
         url: https://www.imdb.com/title/tt8080866/fullcredits/
         note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
           official datasets.
-  - show: the-ironkeep-chronicles
-    role: GM/DM
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt8080866/fullcredits/
-        note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
-          official datasets.
   - show: dinner-dragons
     role: player
     season: 1
@@ -95,3 +77,21 @@ credits:
         url: https://www.imdb.com/title/tt9184362/fullcredits/
         note: 'IMDb full cast and crew for "Pugmire: Homeward Bound" (2018), via the
           official datasets.'
+  - show: tales-from-salt-bay
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
+        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: the-ironkeep-chronicles
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8080866/fullcredits/
+        note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
+          official datasets.

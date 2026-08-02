@@ -6,7 +6,7 @@ const db = await getDb();
 const base = import.meta.env.BASE_URL;
 
 // Set this to the repo once it has a home; the form deep-links into it.
-const REPO = 'your-org/actual-play-db';
+const REPO = 'jazzsequence/apdb';
 
 const shows = db.shows.map((show) => ({
   id: show.id,

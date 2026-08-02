@@ -6,15 +6,6 @@ aliases:
     name: Teri Gamble
     alias_type: legal
 credits:
-  - show: tales-from-salt-bay
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
-        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
-          CC-BY-SA.
   - show: tempting-fate
     role: player
     season: 1
@@ -49,17 +40,6 @@ credits:
         url: https://www.imdb.com/title/tt18883950/fullcredits/
         note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
           datasets.
-  - show: pirates-of-salt-bay
-    role: GM/DM
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against. IMDb credits this at series level; which of this show's seasons
-      it covers is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt18883950/fullcredits/
-        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
-          datasets.
   - show: black-bag-detectives
     role: player
     season: 1
@@ -72,3 +52,23 @@ credits:
         url: https://www.imdb.com/title/tt9196796/fullcredits/
         note: 'IMDb full cast and crew for "Black Bag: Detectives" (2017), via the
           official datasets.'
+  - show: tales-from-salt-bay
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
+        note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: pirates-of-salt-bay
+    role: GM/DM
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.

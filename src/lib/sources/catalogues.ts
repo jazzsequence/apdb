@@ -13,6 +13,7 @@
  * checked against the existing cast before anything is written.
  */
 import type { CreditRole } from '../schema.js';
+import { realCharacter } from '../credits.js';
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
@@ -53,9 +54,8 @@ const GM = /\b(dungeon|game)\s*master\b|\b(gm|dm)\b|\bkeeper\b|\bstoryteller\b|\
 function readCharacter(raw: string): { role: CreditRole; character?: string } {
   const value = raw.replace(/\*\s*needs role-specific image/i, '').trim();
   if (GM.test(value)) return { role: 'GM/DM' };
-  const cleaned = value.replace(/^self\s*[,/-]\s*/i, '').trim();
-  if (!cleaned || /^self$/i.test(cleaned)) return { role: 'player' };
-  return { role: 'player', character: cleaned };
+  const cleaned = realCharacter(value.replace(/^self\s*[,/-]\s*/i, '').trim());
+  return cleaned ? { role: 'player', character: cleaned } : { role: 'player' };
 }
 
 function looksLikeName(name: string): boolean {

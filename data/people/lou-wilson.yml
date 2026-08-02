@@ -132,14 +132,6 @@ credits:
           CC-BY-SA."
         tier: community
   - show: dimension-20
-    season: 25
-    role: player
-    alias: default
-    sources:
-      - url: https://dimension20.fandom.com/wiki/Time_Quangle
-        note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: dimension-20
     season: 26
     role: player
     character: Whitney Jammer
@@ -169,15 +161,6 @@ credits:
           CC-BY-SA.
         tier: community
   - show: exandria-unlimited
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
-        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: exandria-unlimited
     season: 3
     role: player
     character: Nydas Okiro
@@ -197,10 +180,26 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/exandria-unlimited
         note: Cast for "Exandria Unlimited" per TheTVDB.
+  - show: dimension-20
+    season: 25
+    role: player
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Time_Quangle
+        note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: exandria-unlimited
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Exandria_Unlimited
+        note: Exandria Unlimited cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
   - show: worlds-beyond-number
     role: player
     season: 1
-    character: Actor
     alias: default
     sources:
       - tier: reference

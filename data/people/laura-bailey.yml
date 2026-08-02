@@ -34,14 +34,6 @@ credits:
         url: https://thetvdb.com/series/critical-role
         note: Cast for "Critical Role" per TheTVDB.
   - show: critical-role
-    season: 4
-    role: player
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: critical-role
     season: 1
     role: player
     character: Vex'ahlia
@@ -60,6 +52,51 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
         note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+        tier: community
+  - show: critical-role-specials
+    season: 2
+    role: player
+    character: Emhira
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Downfall
+        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: titansgrave
+    season: 1
+    role: player
+    character: Lemley
+    alias: default
+    sources:
+      - tier: reference
+        url: https://geekandsundry.fandom.com/wiki/Titansgrave
+        note: Cast per Geek & Sundry and contemporary coverage. The playlist description
+          is a credits roll, not a cast list.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/63242-titansgrave-the-ashes-of-valkana/cast
+        note: Cast for "Titansgrave" per TMDB.
+  - show: celebrid-d
+    season: 1
+    role: player
+    character: Vex'ahlia
+    note: Two episodes, 2015–2017.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt7537668/fullcredits/
+        note: CelebriD&D full cast and crew on IMDb, which lists Laura Bailey's role and
+          episode count.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
+        note: Cast for "CelebriD&D" per TMDB.
+  - show: critical-role
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Four
+        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: candela-obscura
     season: 1
@@ -94,16 +131,6 @@ credits:
       - *a2
       - *a3
   - show: critical-role-specials
-    season: 2
-    role: player
-    character: Emhira
-    alias: default
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Downfall
-        note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: critical-role-specials
     season: 3
     role: player
     alias: default
@@ -130,30 +157,3 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
-  - show: titansgrave
-    season: 1
-    role: player
-    character: Lemley
-    alias: default
-    sources:
-      - tier: reference
-        url: https://geekandsundry.fandom.com/wiki/Titansgrave
-        note: Cast per Geek & Sundry and contemporary coverage. The playlist description
-          is a credits roll, not a cast list.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/63242-titansgrave-the-ashes-of-valkana/cast
-        note: Cast for "Titansgrave" per TMDB.
-  - show: celebrid-d
-    season: 1
-    role: player
-    character: Vex'ahlia
-    note: Two episodes, 2015–2017.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7537668/fullcredits/
-        note: CelebriD&D full cast and crew on IMDb, which lists Laura Bailey's role and
-          episode count.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
-        note: Cast for "CelebriD&D" per TMDB.

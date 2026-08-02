@@ -8,4 +8,6 @@ links:
   website: https://happyjacks.org/greenwoodcollective/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: shadowrun
+description: System corrected to shadowrun from the show's own title; it had
+  been left at the D&D 5e default.

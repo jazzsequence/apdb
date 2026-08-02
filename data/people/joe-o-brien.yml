@@ -7,6 +7,140 @@ aliases:
     name: Joe O'Brien
     alias_type: legal
 credits:
+  - show: friends-of-the-pod
+    season: 1
+    role: GM/DM
+    character: Andrew Clayton
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: glass-cannon-podcast
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Cannon_Fodder
+        note: Cannon Fodder cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: delta-green
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Delta_Green
+        note: Delta Green cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: powerhouse-tate
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Powerhouse_%26_Tate
+        note: Powerhouse & Tate cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_2
+        note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: new-game-who-dis
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Aliens_RPG
+        note: Aliens RPG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: new-game-who-dis
+    season: 17
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Twilight%3A_2000
+        note: "Twilight: 2000 cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: get-in-the-trunk
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_4
+        note: "Get In The Trunk: Season 4 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: get-in-the-trunk
+    season: 5
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_5
+        note: "Get In The Trunk: Season 5 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: get-in-the-trunk
+    season: 6
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_6
+        note: "Get In The Trunk: Season 6 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: glass-cannon-podcast
+    season: 8
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Radio
+        note: Glass Cannon Radio cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk
+    season: 7
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
+        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: echo-quest
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Echo_Quest
+        note: Echo Quest cast, via the the-glass-cannon-network.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: disorganized-play
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Disorganized_Play
+        note: Disorganized Play cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
+        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
   - show: glass-cannon-podcast
     season: 1
     role: player
@@ -43,15 +177,6 @@ credits:
         note: Side Quest Side Sesh cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: glass-cannon-podcast
-    season: 2
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Cannon_Fodder
-        note: Cannon Fodder cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: raiders-of-the-lost-continent
     season: 1
     role: player
@@ -60,14 +185,6 @@ credits:
       - url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
         note: Raiders of the Lost Continent cast, via the glasscannonnetwork.fandom.com
           infobox. CC-BY-SA.
-        tier: community
-  - show: delta-green
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Delta_Green
-        note: Delta Green cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: new-game-who-dis
     season: 13
@@ -105,15 +222,6 @@ credits:
         note: Cyberpunk Red cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: powerhouse-tate
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Powerhouse_%26_Tate
-        note: Powerhouse & Tate cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: new-game-who-dis
     season: 3
     role: player
@@ -122,23 +230,6 @@ credits:
       - url: https://glasscannonnetwork.fandom.com/wiki/Call_of_Cthulhu
         note: Call of Cthulhu cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
-        tier: community
-  - show: get-in-the-trunk
-    season: 2
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_2
-        note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: new-game-who-dis
-    season: 2
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Aliens_RPG
-        note: Aliens RPG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
   - show: new-game-who-dis
     season: 8
@@ -170,15 +261,6 @@ credits:
           infobox. CC-BY-SA."
         tier: community
   - show: new-game-who-dis
-    season: 17
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Twilight%3A_2000
-        note: "Twilight: 2000 cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: new-game-who-dis
     season: 15
     role: player
     alias: default
@@ -186,15 +268,6 @@ credits:
       - url: https://glasscannonnetwork.fandom.com/wiki/The_One_Ring
         note: The One Ring cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
-        tier: community
-  - show: get-in-the-trunk
-    season: 4
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_4
-        note: "Get In The Trunk: Season 4 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
         tier: community
   - show: glass-cannon-podcast
     season: 6
@@ -235,43 +308,6 @@ credits:
         note: Glass Cannon Podcast - Gatewalkers cast, via the
           glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: friends-of-the-pod
-    season: 1
-    role: GM/DM
-    character: Andrew Clayton
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
-        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: get-in-the-trunk
-    season: 5
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_5
-        note: "Get In The Trunk: Season 5 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: get-in-the-trunk
-    season: 6
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_6
-        note: "Get In The Trunk: Season 6 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-  - show: glass-cannon-podcast
-    season: 8
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Radio
-        note: Glass Cannon Radio cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: glass-cannon-podcast
     season: 3
     role: player
@@ -290,15 +326,6 @@ credits:
         note: Glass Cannon Podcast - Shadowdark cast, via the
           glasscannonnetwork.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: get-in-the-trunk
-    season: 7
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
-        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
   - show: legacy-of-the-ancients
     season: 1
     role: player
@@ -307,15 +334,6 @@ credits:
       - url: https://the-glass-cannon-network.fandom.com/wiki/Legacy_of_the_Ancients
         note: Legacy of the Ancients cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
-        tier: community
-  - show: echo-quest
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://the-glass-cannon-network.fandom.com/wiki/Echo_Quest
-        note: Echo Quest cast, via the the-glass-cannon-network.fandom.com infobox.
-          CC-BY-SA.
         tier: community
   - show: new-game-who-dis
     season: 1
@@ -326,15 +344,6 @@ credits:
         note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
         tier: community
-  - show: disorganized-play
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://the-glass-cannon-network.fandom.com/wiki/Disorganized_Play
-        note: Disorganized Play cast, via the the-glass-cannon-network.fandom.com
-          infobox. CC-BY-SA.
-        tier: community
   - show: the-thunder-company
     season: 1
     role: player
@@ -342,15 +351,6 @@ credits:
     sources:
       - url: https://the-glass-cannon-network.fandom.com/wiki/The_Thunder_Company
         note: The Thunder Company cast, via the the-glass-cannon-network.fandom.com
-          infobox. CC-BY-SA.
-        tier: community
-  - show: get-in-the-trunk
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://the-glass-cannon-network.fandom.com/wiki/Get_In_The_Trunk
-        note: Get In The Trunk cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
         tier: community
   - show: blood-blades
