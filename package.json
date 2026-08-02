@@ -16,7 +16,8 @@
     "import:yt-shows": "tsx scripts/import-yt-shows.ts",
     "sweep:youtube": "tsx scripts/sweep-youtube.ts",
     "fetch:images": "tsx scripts/fetch-images.ts",
-    "import:archive": "tsx scripts/import-archive.ts"
+    "import:archive": "tsx scripts/import-archive.ts",
+    "find:wikis": "tsx scripts/find-wikis.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

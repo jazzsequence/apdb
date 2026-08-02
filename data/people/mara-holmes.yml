@@ -1,23 +1,22 @@
-# Credits imported from criticalrole.fandom.com on 2026-08-01.
-# Source: https://criticalrole.fandom.com/wiki/Thresher (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: mara-holmes
 canonical_name: Mara Holmes
 sort_name: Holmes, Mara
 links: {}
 aliases:
-  - id: default
+  - id: holmes
     name: Mara Holmes
     alias_type: legal
+    active_from: 2026-03
+  - id: hulmes
+    name: Mark "Sherlock" Hulmes
+    alias_type: legal
+    active_to: 2026-03
+    note: The name on credits before March 2026.
 credits:
   - show: critical-role
     season: 2
     role: guest player
     character: Calianna Mordsson
-    alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
       - url: https://criticalrole.fandom.com/wiki/Campaign_2%3A_The_Mighty_Nein
@@ -31,15 +30,18 @@ credits:
   - show: high-rollers-dnd
     season: 1
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/Aerois_(Campaign)
         note: Aerois (Campaign) cast, via the highrollers.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: official
+        url: https://www.youtube.com/watch?v=KE-8q08L11k
+        note: "Cast per the production's own description of \"High Rollers: Aerois #147
+          | The Best Defense\"."
+    alias: hulmes
   - show: high-rollers-dnd
     season: 2
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/Lightfall_(Campaign)
         note: Lightfall (Campaign) cast, via the highrollers.fandom.com infobox.
@@ -48,16 +50,19 @@ credits:
   - show: high-rollers-dnd
     season: 3
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/Uncharted_Territory
         note: Uncharted Territory cast, via the highrollers.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - url: https://www.youtube.com/watch?v=Vrx5Tuu4xnM
+        note: "Cast per the production's own description of \"A World of Stories |
+          Altheya: The Dragon Empire #1\"."
+        tier: official
+    alias: hulmes
   - show: high-rollers-dnd
     season: 4
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/Dead_Reckoning
         note: Dead Reckoning cast, via the highrollers.fandom.com infobox. CC-BY-SA.
@@ -65,7 +70,6 @@ credits:
   - show: high-rollers-dnd
     season: 5
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/A_Rogue's_Gambit
         note: A Rogue's Gambit cast, via the highrollers.fandom.com infobox. CC-BY-SA.
@@ -73,7 +77,6 @@ credits:
   - show: high-rollers-dnd
     season: 6
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/Lightfall's_Descent
         note: Lightfall's Descent cast, via the highrollers.fandom.com infobox.
@@ -82,7 +85,6 @@ credits:
   - show: high-rollers-dnd
     season: 7
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/Curse_of_Strahd
         note: Curse of Strahd cast, via the highrollers.fandom.com infobox. CC-BY-SA.
@@ -90,7 +92,6 @@ credits:
   - show: high-rollers-dnd
     season: 11
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/Altheya%3A_The_Dragon_Empire
         note: "Altheya: The Dragon Empire cast, via the highrollers.fandom.com infobox.
@@ -99,7 +100,6 @@ credits:
   - show: high-rollers-dnd
     season: 12
     role: GM/DM
-    alias: default
     sources:
       - url: https://highrollers.fandom.com/wiki/Warhammer_Fantasy_Roleplay
         note: Warhammer Fantasy Roleplay cast, via the highrollers.fandom.com infobox.
@@ -108,8 +108,10 @@ credits:
   - show: critical-role-specials
     season: 7
     role: player
-    alias: default
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Thresher
         note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+pronouns: she/her
+bio: Founding member and principal dungeon master of High Rollers, which she
+  started at the Yogscast in 2016.
