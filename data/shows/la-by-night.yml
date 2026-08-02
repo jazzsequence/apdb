@@ -11,3 +11,15 @@ links:
 seasons:
   - ordinal: 1
     game: vampire-the-masquerade-v5
+    episode_count: 41
+image:
+  url: https://i.ytimg.com/vi/3YGyhSppu2Q/hqdefault.jpg
+  licence: fair use
+  attribution: "Vampire: The Masquerade - L.A. By Night series art, © its
+    producers. Via YouTube."
+  source: https://www.youtube.com/playlist?list=PL7atuZxmT957CplbNHCN5JAGp9SoZhyUH
+  depicts: "Series art for Vampire: The Masquerade - L.A. By Night"
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

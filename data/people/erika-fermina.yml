@@ -1,0 +1,16 @@
+id: erika-fermina
+canonical_name: Erika Fermina
+sort_name: Fermina, Erika
+aliases:
+  - id: default
+    name: Erika Fermina
+    alias_type: legal
+credits:
+  - show: pathfinder-knights-of-everflame
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://pathfinderwiki.com/wiki/Knights_of_Everflame_(campaign)
+        note: Cast per PathfinderWiki and Paizo.

@@ -12,7 +12,7 @@ links:
   website: https://www.youtube.com/playlist?list=PL7atuZxmT955DeqMXXbcg2l67Z-hNQrwS
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: pathfinder-2e
     episode_count: 28
 image:
   url: https://i.ytimg.com/vi/P7s90t8wr8k/hqdefault.jpg

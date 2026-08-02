@@ -46,7 +46,14 @@ for (const p of characterish) {
 }
 
 // --- A performer's "character" that is another performer's name ------------
-const personNames = new Set(db.people.map((p) => p.canonical_name.toLowerCase()));
+// Only full names count. Shows that credit by first name or handle create
+// real collisions — "Orla" is a Kingdom Sleeps player and an Avantris
+// character, and flagging that as an inverted pairing is noise.
+const personNames = new Set(
+  db.people
+    .filter((p) => p.canonical_name.trim().includes(' '))
+    .map((p) => p.canonical_name.toLowerCase()),
+);
 for (const person of db.people) {
   for (const credit of person.credits) {
     for (const part of (credit.character ?? '').split(' / ')) {

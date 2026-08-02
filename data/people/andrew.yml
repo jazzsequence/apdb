@@ -1,0 +1,16 @@
+id: andrew
+canonical_name: Andrew
+sort_name: Andrew
+aliases:
+  - id: default
+    name: Andrew
+    alias_type: handle
+credits:
+  - show: the-kingdom-sleeps
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://creators.spotify.com/pod/profile/the-kingdom-sleeps/
+        note: Cast per the show's own description. Credited by first name.

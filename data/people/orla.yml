@@ -1,0 +1,16 @@
+id: orla
+canonical_name: Orla
+sort_name: Orla
+aliases:
+  - id: default
+    name: Orla
+    alias_type: handle
+credits:
+  - show: the-kingdom-sleeps
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://creators.spotify.com/pod/profile/the-kingdom-sleeps/
+        note: Cast per the show's own description. Credited by first name.

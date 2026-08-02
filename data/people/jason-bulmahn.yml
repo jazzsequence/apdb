@@ -49,3 +49,11 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/The_Thunder_Company
         note: The Thunder Company cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
+  - show: pathfinder-knights-of-everflame
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://pathfinderwiki.com/wiki/Knights_of_Everflame_(campaign)
+        note: Cast per PathfinderWiki and Paizo.

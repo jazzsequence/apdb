@@ -1,0 +1,16 @@
+id: jeremy-steven-walker
+canonical_name: Jeremy Steven Walker
+sort_name: Walker, Jeremy Steven
+aliases:
+  - id: default
+    name: Jeremy Steven Walker
+    alias_type: legal
+credits:
+  - show: pathfinder-knights-of-everflame
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://pathfinderwiki.com/wiki/Knights_of_Everflame_(campaign)
+        note: Cast per PathfinderWiki and Paizo.

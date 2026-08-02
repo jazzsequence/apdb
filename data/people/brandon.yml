@@ -1,0 +1,16 @@
+id: brandon
+canonical_name: Brandon
+sort_name: Brandon
+aliases:
+  - id: default
+    name: Brandon
+    alias_type: handle
+credits:
+  - show: the-kingdom-sleeps
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://creators.spotify.com/pod/profile/the-kingdom-sleeps/
+        note: Cast per the show's own description. Credited by first name.
