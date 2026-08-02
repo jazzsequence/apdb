@@ -1,0 +1,16 @@
+id: jeremy-cobb
+canonical_name: Jeremy Cobb
+sort_name: Cobb, Jeremy
+aliases:
+  - id: default
+    name: Jeremy Cobb
+    alias_type: legal
+credits:
+  - show: shattered-a-daggerheart-actual-play
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://twitch.tv/rpgeeksdnd
+        note: Cast listed in the show's own episode description.
+    alias: default

@@ -5,6 +5,10 @@ aliases:
   - id: default
     name: Erika Fermina
     alias_type: legal
+  - id: billed
+    name: Erika
+    alias_type: handle
+    note: The name this show puts on screen.
 credits:
   - show: pathfinder-knights-of-everflame
     season: 1
@@ -19,3 +23,14 @@ credits:
         note: 'IMDb full cast and crew for "Pathfinder: Knights of Everflame" (2019),
           via the official datasets.'
     character: Tariel Windhaven
+  - show: avatar-legends-the-roleplaying-game
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@dicetimes
+        note: Cast listed in the show's own episode description.
+    alias: billed
+    character: Kaia
+    note: Billed by first name only; recorded under the social handle the show
+      links, because two different players here are both billed "Audrey".

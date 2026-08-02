@@ -1,0 +1,16 @@
+id: michelle-kelly
+canonical_name: Michelle Kelly
+sort_name: Kelly, Michelle
+aliases:
+  - id: default
+    name: Michelle Kelly
+    alias_type: legal
+credits:
+  - show: shattered-a-daggerheart-actual-play
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://twitch.tv/rpgeeksdnd
+        note: Cast listed in the show's own episode description.
+    alias: default

@@ -1,0 +1,17 @@
+id: tinypixxels
+canonical_name: TinyPixxels
+sort_name: TinyPixxels
+aliases:
+  - id: default
+    name: TinyPixxels
+    alias_type: handle
+credits:
+  - show: crash-city-a-woin-actual-play
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@tablestory
+        note: Cast listed in the show's own episode description.
+    note: Credited by stream handle.
+    alias: default

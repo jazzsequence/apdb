@@ -30,6 +30,15 @@ credits:
           joined.
     character: Nelli G.
     alias: default
+  - show: world-of-darkness-one-shots
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@WorldofDarkness
+        note: Cast listed in the show's own episode description.
+    note: No source found identifies which of these ran the games.
+    alias: default
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Cynthia_Marie_Hoffman5187988.jpg
   licence: CC-BY-SA-4.0

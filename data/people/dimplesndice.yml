@@ -1,0 +1,17 @@
+id: dimplesndice
+canonical_name: DimplesnDice
+sort_name: DimplesnDice
+aliases:
+  - id: default
+    name: DimplesnDice
+    alias_type: handle
+credits:
+  - show: world-of-darkness-one-shots
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@WorldofDarkness
+        note: Cast listed in the show's own episode description.
+    note: No source found identifies which of these ran the games.
+    alias: default

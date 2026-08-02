@@ -1,0 +1,16 @@
+id: folarin-akinmade
+canonical_name: Folarin Akinmade
+sort_name: Akinmade, Folarin
+aliases:
+  - id: default
+    name: Folarin Akinmade
+    alias_type: legal
+credits:
+  - show: shattered-a-daggerheart-actual-play
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://twitch.tv/rpgeeksdnd
+        note: Cast listed in the show's own episode description.
+    alias: default

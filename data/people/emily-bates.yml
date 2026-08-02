@@ -1,0 +1,16 @@
+id: emily-bates
+canonical_name: Emily Bates
+sort_name: Bates, Emily
+aliases:
+  - id: default
+    name: Emily Bates
+    alias_type: legal
+credits:
+  - show: shattered-a-daggerheart-actual-play
+    season: 1
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://twitch.tv/rpgeeksdnd
+        note: Cast listed in the show's own episode description.
+    alias: default

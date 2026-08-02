@@ -1,0 +1,16 @@
+id: shamini-bundell
+canonical_name: Shamini Bundell
+sort_name: Bundell, Shamini
+aliases:
+  - id: default
+    name: Shamini Bundell
+    alias_type: legal
+credits:
+  - show: shattered-a-daggerheart-actual-play
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://twitch.tv/rpgeeksdnd
+        note: Cast listed in the show's own episode description.
+    alias: default

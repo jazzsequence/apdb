@@ -1,0 +1,23 @@
+id: oddlyaudlee
+canonical_name: oddlyaudlee
+sort_name: oddlyaudlee
+aliases:
+  - id: default
+    name: oddlyaudlee
+    alias_type: handle
+  - id: billed
+    name: Audrey
+    alias_type: handle
+    note: The name this show puts on screen.
+credits:
+  - show: avatar-legends-the-roleplaying-game
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@dicetimes
+        note: Cast listed in the show's own episode description.
+    alias: billed
+    character: Fei
+    note: Billed by first name only; recorded under the social handle the show
+      links, because two different players here are both billed "Audrey".

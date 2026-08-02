@@ -1,0 +1,17 @@
+id: outstar
+canonical_name: Outstar
+sort_name: Outstar
+aliases:
+  - id: default
+    name: Outstar
+    alias_type: handle
+credits:
+  - show: world-of-darkness-one-shots
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@WorldofDarkness
+        note: Cast listed in the show's own episode description.
+    note: No source found identifies which of these ran the games.
+    alias: default

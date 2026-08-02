@@ -1,0 +1,17 @@
+id: ponypunch
+canonical_name: PonyPunch
+sort_name: PonyPunch
+aliases:
+  - id: default
+    name: PonyPunch
+    alias_type: handle
+credits:
+  - show: warped-a-n-e-w-actual-play-woin
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@tablestory
+        note: Cast listed in the show's own episode description.
+    note: Credited by stream handle.
+    alias: default
