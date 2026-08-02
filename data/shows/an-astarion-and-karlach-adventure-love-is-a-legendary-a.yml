@@ -4,14 +4,13 @@ channels:
   - dungeons-dragons
 format: video
 status: unknown
-description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
-  series title)."
+description: D&D Live one-shot from Gen Con 2024, played in the Baldur’s Gate 3
+  cast’s own characters.
 links:
-  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYr4vhX-bnhBdfr05VD2j9yw
+  website: https://www.youtube.com/watch?v=Cn7XLBykzEU
 seasons:
   - ordinal: 1
     game: dnd-5e
-    episode_count: 48
 image:
   url: https://i.ytimg.com/vi/pJoIQnfIdQc/hqdefault.jpg
   licence: fair use

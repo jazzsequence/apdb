@@ -1,0 +1,17 @@
+id: tory-renee-hatcher
+canonical_name: Tory Renee Hatcher
+sort_name: Hatcher, Tory Renee
+aliases:
+  - id: default
+    name: Tory Renee Hatcher
+    alias_type: legal
+credits:
+  - show: stillhearth-d-d5e-actual-play-series
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt31410075/
+        note: Cast per IMDb and the channel’s own listings. Roles beyond the recurring
+          cast not individually attributed.

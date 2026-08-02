@@ -1,0 +1,16 @@
+id: gabby-quintana
+canonical_name: Gabby Quintana
+sort_name: Quintana, Gabby
+aliases:
+  - id: default
+    name: Gabby Quintana
+    alias_type: legal
+credits:
+  - show: the-star-crossed-seaway-level-up-advanced-5th-edition-a
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.levelup5e.com/news/meet-the-cast-of-the-star-crossed-seaway
+        note: Cast per EN Publishing's own Meet the Cast announcement.

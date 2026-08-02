@@ -1,0 +1,17 @@
+id: maria-puig
+canonical_name: Maria Puig
+sort_name: Puig, Maria
+aliases:
+  - id: default
+    name: Maria Puig
+    alias_type: legal
+credits:
+  - show: stillhearth-d-d5e-actual-play-series
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt31410075/
+        note: Cast per IMDb and the channel’s own listings. Roles beyond the recurring
+          cast not individually attributed.

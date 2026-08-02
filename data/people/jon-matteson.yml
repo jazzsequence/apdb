@@ -1,0 +1,17 @@
+id: jon-matteson
+canonical_name: Jon Matteson
+sort_name: Matteson, Jon
+aliases:
+  - id: default
+    name: Jon Matteson
+    alias_type: legal
+credits:
+  - show: stillhearth-d-d5e-actual-play-series
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt31410075/
+        note: Cast per IMDb and the channel’s own listings. Roles beyond the recurring
+          cast not individually attributed.

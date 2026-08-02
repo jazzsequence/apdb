@@ -35,7 +35,15 @@ const findings: Finding[] = [];
 const characterish = db.people.filter((p) => {
   if (p.credits.length !== 1) return false;
   if (p.wikidata_qid || p.image) return false;
-  return /[''"()]|^The |^A /.test(p.canonical_name) || p.canonical_name.split(/\s+/).length > 3;
+
+  const name = p.canonical_name;
+  // Ordinary person-name shapes that the old rule kept flagging: apostrophe
+  // surnames (O'Brien, D'Angelo), middle initials, and generational suffixes.
+  if (/^[\p{Lu}][\p{L}'’-]*(?:\s+(?:[\p{Lu}]\.?|[\p{Lu}][\p{L}'’-]*))*(?:\s+(?:Jr\.?|Sr\.?|I{2,3}|IV))?$/u.test(name)) {
+    // Still suspicious if it is unusually long for a name.
+    return name.split(/\s+/).length > 4;
+  }
+  return /["()]|^The |^A /.test(name);
 });
 for (const p of characterish) {
   findings.push({
