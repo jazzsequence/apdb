@@ -7,16 +7,6 @@ aliases:
     name: Julian Kancko
     alias_type: legal
 credits:
-  - show: realmsmith-s-aftermath
-    season: 1
-    role: player
-    character: Baba Lysaga
-    alias: default
-    sources:
-      - url: https://www.youtube.com/watch?v=ogEVkNTtdvY
-        note: Cast per the production's own description of "Aftermath - Discussing Up To
-          "Into The Mist" S3E5 ft. David & Jason".
-        tier: official
   - show: the-tides-of-wildemount
     season: 1
     role: producer

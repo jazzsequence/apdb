@@ -57,7 +57,12 @@ function originKey(source: Source): string {
   if (source.url) {
     try {
       const url = new URL(source.url);
-      return `where:${url.host}${url.pathname}`.toLowerCase();
+      // Host, not host+path. Two pages on one fan wiki are one publisher
+      // checking its own work, which is not corroboration. This was not
+      // academic: fourteen credits cited both `Campaign_2:_The_Mighty_Nein`
+      // and `Campaign_Two:_The_Mighty_Nein` — the same page under a redirect —
+      // and every one of them counted as independently corroborated.
+      return `where:${url.host.replace(/^www\./, '')}`.toLowerCase();
     } catch {
       return `where:${source.url.toLowerCase()}`;
     }

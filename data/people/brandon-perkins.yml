@@ -28,16 +28,6 @@ credits:
           Playthrough (2020) - S1, Ep1: The Mists of Ravenloft | Into the
           Mist\"."
         tier: official
-  - show: realmsmith-s-aftermath
-    season: 1
-    role: player
-    character: Sterling
-    alias: default
-    sources:
-      - url: https://www.youtube.com/watch?v=8dfngflu6_Y
-        note: Cast per the production's own description of "Aftermath - Discussing Up To
-          "Into the Mist" S3E4 ft. Adam & Omega".
-        tier: official
   - show: the-tides-of-wildemount
     season: 1
     role: player

@@ -34,6 +34,29 @@ What we keep from Wikipedia is the discipline, not the gatekeeping: every claim
 carries its provenance, the strength of that provenance is visible on the page,
 and nothing is asserted flatly when it is actually contested.
 
+## What counts as an actual play
+
+A show is in scope when **people play a roleplaying game and the play itself is
+the programme**. Format does not matter: podcast, stream, edited video and live
+show are all equally admissible, as are one-shots, con games and arcs of three
+episodes.
+
+Companion programming is **out of scope**, however closely tied to a show that
+is in scope:
+
+- post-show discussion and recap shows
+- interview and talk shows, including ones hosted by the cast
+- news, review and reaction programming
+- behind-the-scenes and making-of material
+
+The test is whether a game is being played, not whether the same people are on
+camera. `RealmSmith's Aftermath` was removed under this rule: same channel, same
+cast, same campaign discussed at length — but nobody rolls anything.
+
+The consequence is that some real appearances will have no credit here. Chris
+Perkins and Jeremy Crawford have both appeared on Critical Role's Fireside Chat;
+only Perkins has Critical Role credits, because only Perkins sat at the table.
+
 ## Source tiers
 
 Every credit's source declares a tier. The ladder ranks by **proximity** — how
@@ -130,8 +153,20 @@ sources, and the status falls out of it:
 - `single-source` — one so far
 
 Independence is checked, not assumed: sources are keyed by who attested them, or
-by the page they cite. The same person filing twice, or two citations of one
-wiki page, is one source wearing two hats.
+by the **site** they cite — the host, not the page. Two articles on one fan wiki
+are that wiki checking its own work, and the same person filing twice is one
+source wearing two hats.
+
+Keying on the page rather than the site was the original implementation, and it
+was too weak in a way that only showed up when the numbers were checked: fourteen
+credits cited the Critical Role wiki's Mighty Nein page under both its title and
+its redirect, and all fourteen computed as corroborated. Correcting it took the
+corroborated count from 21 to 8 — the smaller number being the true one. CI now
+rejects a credit that cites the same url twice.
+
+Host-level keying is still not a complete test of independence. A production's
+own site and its own YouTube channel are different hosts and one publisher, and
+fan wikis copy each other. Treat the corroborated count as a floor.
 
 This is the mechanism that lets the community actually verify things. A second
 listener who watched the same stream and files their own firsthand account moves

@@ -80,15 +80,6 @@ credits:
         note: Cast per the production's own description of "Cyberpunk Red Live Show at
           PAX East Teaser | RealmSmith".
         tier: official
-  - show: realmsmith-s-aftermath
-    season: 1
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://www.youtube.com/watch?v=zJ4Q_-gIxhg
-        note: Cast per the production's own description of "Aftermath - Discussing Up To
-          "Into the Mist" S3E2 ft. Adam, David, Jason & Noura".
-        tier: official
   - show: shadowrun-excommunication
     season: 1
     role: GM/DM

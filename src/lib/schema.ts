@@ -356,6 +356,23 @@ export const Credit = z
         message: 'an episode-level credit must also name its season',
       });
     }
+    // The same source listed twice reads as corroboration to anyone skimming
+    // the page, and used to compute as corroboration too. Fourteen credits
+    // cited one Critical Role wiki page under both its title and its redirect.
+    const urls = new Set<string>();
+    for (const source of credit.sources) {
+      if (!source.url) continue;
+      const key = source.url.trim().toLowerCase().replace(/\/+$/, '');
+      if (urls.has(key)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ['sources'],
+          message: `the same url is cited twice on one credit (${source.url}) — one source, not two`,
+        });
+      }
+      urls.add(key);
+    }
+
     const isGuest = credit.role === 'guest GM' || credit.role === 'guest player';
     if (isGuest && !credit.episode && !credit.note) {
       ctx.addIssue({

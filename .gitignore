@@ -7,3 +7,6 @@ dist/
 # Never commit credentials
 .env
 .env.*
+
+# Bulk source dumps — large, regenerable
+.cache/

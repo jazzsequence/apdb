@@ -48,16 +48,6 @@ credits:
         note: Cast per the production's own description of "RealmSmith Learns Cyberpunk
           Red Intro | RealmSmith".
         tier: official
-  - show: realmsmith-s-aftermath
-    season: 1
-    role: player
-    character: Falpher
-    alias: default
-    sources:
-      - url: https://www.youtube.com/watch?v=5lkbtalQuI4
-        note: Cast per the production's own description of "Aftermath - Discussing Up To
-          "Into the Mist" S3E3 ft. Jason & Joel".
-        tier: official
   - show: the-tides-of-wildemount
     season: 1
     role: player
