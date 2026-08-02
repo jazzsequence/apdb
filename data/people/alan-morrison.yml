@@ -1,0 +1,88 @@
+id: alan-morrison
+canonical_name: Alan Morrison
+sort_name: Morrison, Alan
+aliases:
+  - id: default
+    name: Alan Morrison
+    alias_type: legal
+credits:
+  - show: adventures-of-azerim-entire-campaign-episodes
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Viva_La_Dirt_League
+        note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
+          where a source states it; the others reprise their Epic NPC Man
+          characters but the pairing is not established here.
+  - show: adventures-of-azerim-fifth-arc-giant-mission
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Viva_La_Dirt_League
+        note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
+          where a source states it; the others reprise their Epic NPC Man
+          characters but the pairing is not established here.
+  - show: adventures-of-azerim-first-arc-honeywood-adventures
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Viva_La_Dirt_League
+        note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
+          where a source states it; the others reprise their Epic NPC Man
+          characters but the pairing is not established here.
+  - show: adventures-of-azerim-fourth-arc-no-man-is-an-island
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Viva_La_Dirt_League
+        note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
+          where a source states it; the others reprise their Epic NPC Man
+          characters but the pairing is not established here.
+  - show: adventures-of-azerim-second-arc-the-dead-frost
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Viva_La_Dirt_League
+        note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
+          where a source states it; the others reprise their Epic NPC Man
+          characters but the pairing is not established here.
+  - show: adventures-of-azerim-sixth-arc-gerdawn-big-city-living
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Viva_La_Dirt_League
+        note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
+          where a source states it; the others reprise their Epic NPC Man
+          characters but the pairing is not established here.
+  - show: adventures-of-azerim-supercuts
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Viva_La_Dirt_League
+        note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
+          where a source states it; the others reprise their Epic NPC Man
+          characters but the pairing is not established here.
+  - show: adventures-of-azerim-third-arc-ewolin
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Viva_La_Dirt_League
+        note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
+          where a source states it; the others reprise their Epic NPC Man
+          characters but the pairing is not established here.
