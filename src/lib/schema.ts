@@ -39,6 +39,23 @@ export const ImageLicence = z.enum([
   'CC-BY-SA-4.0',
   'public domain',
   /**
+   * Creative Commons, but with conditions this project must actually keep.
+   *
+   * NC obliges the index to stay non-commercial. ND forbids derivatives, so an
+   * NC-ND image is displayed at the uploader's own dimensions rather than
+   * re-cropped. These are recorded as themselves rather than flattened into
+   * "fair use", because a stated licence is stronger provenance than a claim —
+   * and because the obligations only survive if they are written down.
+   */
+  'CC-BY-NC-3.0',
+  'CC-BY-NC-4.0',
+  'CC-BY-NC-SA-3.0',
+  'CC-BY-NC-SA-4.0',
+  'CC-BY-ND-3.0',
+  'CC-BY-ND-4.0',
+  'CC-BY-NC-ND-3.0',
+  'CC-BY-NC-ND-4.0',
+  /**
    * Not a free licence — a claim. Used for show/campaign key art, which is the
    * production's copyright and which no wiki can sublicense however
    * prominently it displays it.

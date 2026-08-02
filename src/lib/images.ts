@@ -220,9 +220,87 @@ export async function fetchOtherSeriesArt(): Promise<number> {
   return added;
 }
 
+/**
+ * Cover art for shows preserved on the Internet Archive.
+ *
+ * Archive exposes a public thumbnail per item, and many uploaders state an
+ * explicit licence — which is better provenance than a fair-use claim, so it
+ * is recorded as itself. Where nothing is stated, the fair-use claim applies.
+ */
+const CC_URL_LICENCES: [RegExp, string][] = [
+  [/publicdomain\/(zero|mark)/i, 'public domain'],
+  [/licenses\/by-nc-nd\/4/i, 'CC-BY-NC-ND-4.0'],
+  [/licenses\/by-nc-nd\/3/i, 'CC-BY-NC-ND-3.0'],
+  [/licenses\/by-nc-sa\/4/i, 'CC-BY-NC-SA-4.0'],
+  [/licenses\/by-nc-sa\/3/i, 'CC-BY-NC-SA-3.0'],
+  [/licenses\/by-nc\/4/i, 'CC-BY-NC-4.0'],
+  [/licenses\/by-nc\/3/i, 'CC-BY-NC-3.0'],
+  [/licenses\/by-nd\/4/i, 'CC-BY-ND-4.0'],
+  [/licenses\/by-nd\/3/i, 'CC-BY-ND-3.0'],
+  [/licenses\/by-sa\/4/i, 'CC-BY-SA-4.0'],
+  [/licenses\/by-sa\/3/i, 'CC-BY-SA-3.0'],
+  [/licenses\/by\/4/i, 'CC-BY-4.0'],
+  [/licenses\/by\/3/i, 'CC-BY-3.0'],
+];
+
+export async function fetchArchiveArt(): Promise<number> {
+  let added = 0;
+
+  for (const file of (await readdir(join(DATA_ROOT, 'shows'))).filter((f) => f.endsWith('.yml'))) {
+    const path = join(DATA_ROOT, 'shows', file);
+    const show = parse(await readFile(path, 'utf8'));
+    if (show.image) continue;
+
+    const identifier = String(show.links?.website ?? '').match(
+      /archive\.org\/details\/([^/?#]+)/,
+    )?.[1];
+    if (!identifier) continue;
+
+    let licenceUrl: string | undefined;
+    let creator: string | undefined;
+    try {
+      const r = await fetch(`https://archive.org/metadata/${encodeURIComponent(identifier)}`, {
+        headers: { 'User-Agent': 'ActualPlayDatabase/0.1' },
+      });
+      const meta: any = (await r.json())?.metadata;
+      licenceUrl = meta?.licenseurl;
+      creator = Array.isArray(meta?.creator) ? meta.creator[0] : meta?.creator;
+    } catch {
+      // metadata unavailable — fall back to the claim
+    }
+
+    const stated = licenceUrl
+      ? CC_URL_LICENCES.find(([re]) => re.test(licenceUrl!))?.[1]
+      : undefined;
+
+    show.image = {
+      url: `https://archive.org/services/img/${identifier}`,
+      licence: stated ?? 'fair use',
+      attribution: stated
+        ? `${creator ?? show.title}, ${stated}. Via the Internet Archive.`
+        : `${show.title} cover art, © its producers. Via the Internet Archive.`,
+      source: `https://archive.org/details/${identifier}`,
+      depicts: `Cover art for ${show.title}`,
+      ...(stated
+        ? {}
+        : {
+            rationale:
+              'Low-resolution thumbnail used solely to identify the show in an index of its ' +
+              'credits. The uploader states no licence. Non-commercial, does not substitute ' +
+              'for the original, links back to the source, removed on request — see POLICY.md.',
+          }),
+    };
+    await writeFile(path, stringify(show), 'utf8');
+    added += 1;
+    await new Promise((r) => setTimeout(r, 130));
+  }
+  return added;
+}
+
 /** Both passes. Called at the end of every import. */
 export async function fetchAllImages(): Promise<void> {
-  const art = (await fetchSeriesArt()) + (await fetchOtherSeriesArt());
+  const art =
+    (await fetchSeriesArt()) + (await fetchOtherSeriesArt()) + (await fetchArchiveArt());
   const portraits = await fetchPortraits(true);
   if (art || portraits) {
     console.log(`  images: ${art} series, ${portraits} portrait(s).`);

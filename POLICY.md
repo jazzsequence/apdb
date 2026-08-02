@@ -181,6 +181,21 @@ terms.
 Fan wikis are *not* used for portraits. Their text is CC-BY-SA; their uploaded
 images are not, and a wiki cannot sublicense what it doesn't own.
 
+### Where a licence is stated, it is recorded as itself
+
+Some sources publish an explicit licence with the image — Internet Archive
+uploaders in particular. Those are recorded as what they are rather than
+flattened into a fair-use claim, because a stated licence is stronger
+provenance than a claim, and because the obligations only survive if they are
+written down.
+
+Two of those obligations bind this project:
+
+- **NC (non-commercial).** An image under a `-NC` licence obliges the index to
+  stay non-commercial. If that ever changes, those images have to go.
+- **ND (no derivatives).** An `-ND` image is displayed at the source's own
+  dimensions rather than re-cropped.
+
 ### Show key art — used under a claim of fair use
 
 Campaign and show artwork is the production's copyright. No wiki can license it

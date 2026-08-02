@@ -14,3 +14,13 @@ seasons:
     episode_count: 4
     started: 2016-10-18
     ended: 2018-05-27
+image:
+  url: https://archive.org/services/img/Episode7_20180528
+  licence: fair use
+  attribution: The Lifecast cover art, © its producers. Via the Internet Archive.
+  source: https://archive.org/details/Episode7_20180528
+  depicts: Cover art for The Lifecast
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. The uploader states no licence. Non-commercial, does not
+    substitute for the original, links back to the source, removed on request —
+    see POLICY.md.

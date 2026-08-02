@@ -14,3 +14,9 @@ seasons:
     game: call-of-cthulhu
     episode_count: 7
     started: 2015-01-26
+image:
+  url: https://archive.org/services/img/eternallies019
+  licence: CC-BY-NC-ND-4.0
+  attribution: OHGG, CC-BY-NC-ND-4.0. Via the Internet Archive.
+  source: https://archive.org/details/eternallies019
+  depicts: Cover art for OHGG

@@ -13,3 +13,9 @@ seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 4
+image:
+  url: https://archive.org/services/img/N4Session4
+  licence: CC-BY-NC-ND-3.0
+  attribution: Doc and OldSchoolChris, CC-BY-NC-ND-3.0. Via the Internet Archive.
+  source: https://archive.org/details/N4Session4
+  depicts: Cover art for Doc and OldSchoolChris
