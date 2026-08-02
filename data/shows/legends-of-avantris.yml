@@ -11,33 +11,51 @@ seasons:
   - ordinal: 1
     title: Curse of Strahdanya
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K30aQywpsS0rdSORFDn4qmYm
   - ordinal: 2
     title: Prime
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K33cjYJyCBY9w1HO6W9iLy1K
   - ordinal: 3
     title: Once Upon a Witchlight
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K31D-IxOsAAy924LLnM54v1u
   - ordinal: 4
     title: Icebound
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K31eCeJXDyxVF2yRQW_bf5T5
   - ordinal: 5
     title: "Stardust Rhapsody: Overture"
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K30p3DnoQMLoPTyJSwTyRbDs
   - ordinal: 6
     title: Beneath Dark Wings
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K33mQU3gimf_xJTrJz_bFkoJ
   - ordinal: 7
     title: Edge of Midnight
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K33MOIPLAUnvvJinJ3tpRoVh
   - ordinal: 8
     title: "Vagabond's Heart: A Dimwood Tale"
     game: dnd-5e
   - ordinal: 9
     title: "Uprooted: Dimwits of the Dimwood"
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K30kdPlHpCT50TPJY2Lc_KGd
   - ordinal: 10
     title: Shroud Over Saltmarsh
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K31AQqn5ZIFZc85TNF_Wo-dQ
   - ordinal: 11
     title: Shadow Over Gauntsmouth
     game: dnd-5e
@@ -83,12 +101,16 @@ seasons:
   - ordinal: 25
     title: 13 Beers at the Local Cheese
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLNHZjUnoBZis
   - ordinal: 26
     title: Stardust Rhapsody Prelude
     game: dnd-5e
   - ordinal: 27
     title: "Stardust Rhapsody: Anthem"
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K308GWBYU-OZorg0T57jMVp7
   - ordinal: 28
     title: Mud and Mercy
     game: dnd-5e
@@ -98,9 +120,13 @@ seasons:
   - ordinal: 30
     title: Once Upon a Ghostlight
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K32kz4bSTdlCiSCxhtRLiTdV
   - ordinal: 31
     title: "Dust to Damnation: A Daggerheart Ballad"
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K31kBKwdqg7UkLm4N6eTi8jE
   - ordinal: 32
     title: Midnight Carnival
     game: dnd-5e
@@ -110,15 +136,23 @@ seasons:
   - ordinal: 34
     title: Once Upon A Starlight
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K30Gs1MTlu9jLBWcUZQhN2H3
   - ordinal: 35
     title: Uproot-a-rama
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K317G6GSbNXcNMablLAsjRv4
   - ordinal: 36
     title: Voidbound
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K32Y2mhg3uFe2rVqQxTAx0vw
   - ordinal: 37
     title: Waltz for Eternity
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K30hIkaDuNgqXSx2tdnFVZ_E
   - ordinal: 38
     title: Neon Odyssey One-Shot
     game: dnd-5e

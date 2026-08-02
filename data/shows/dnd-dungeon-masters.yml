@@ -12,9 +12,13 @@ seasons:
     title: "Campaign 1: Ravenloft"
     game: dnd-5e
     episode_count: 5
+    links:
+      website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYqr4_6btWrlIz9A45UtJ5iY
   - ordinal: 2
     title: "Campaign 2: Arcana Unleashed"
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYoGNLPpxNJkWpW3ksllG4Yz
 image:
   url: https://i.ytimg.com/vi/mY9w7n84PmM/hqdefault.jpg
   licence: fair use

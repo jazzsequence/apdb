@@ -21,21 +21,31 @@ seasons:
   - ordinal: 3
     title: Age of Umbra
     game: daggerheart
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQyLAwOfoBe6HjYZMnQbXNaZ
   - ordinal: 4
     title: "Age of Umbra: Sallowlands"
     game: daggerheart
   - ordinal: 5
     title: The Re-Slayer's Take
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxu60_aupDdql1RZnzposNI
   - ordinal: 6
     title: Wildemount Wildlings (show)
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQzuF3CgHvlsXevad_i4NwrQ
   - ordinal: 7
     title: Thresher
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxxFfPnoUlhkSDXdvZq82Zl
   - ordinal: 8
     title: Moonward
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQyc1EIjrUxdFaIlXq7QqVnV
   - ordinal: 9
     title: Unend
     game: dnd-5e

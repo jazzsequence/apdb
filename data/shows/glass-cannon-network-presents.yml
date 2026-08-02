@@ -12,6 +12,8 @@ seasons:
   - ordinal: 2
     title: The Game Garage
     game: pathfinder-2e
+    links:
+      website: https://www.youtube.com/playlist?list=PLz3Be--ot61MgzgYdIGkM8ZaEAITEVcwx
   - ordinal: 3
     title: Time For Chaos
     game: pathfinder-2e

@@ -12,9 +12,13 @@ seasons:
   - ordinal: 2
     title: Cannon Fodder
     game: pathfinder-2e
+    links:
+      website: https://www.youtube.com/playlist?list=PLz3Be--ot61PcaRzjxKIkP_BkgCZ4FVGw
   - ordinal: 3
     title: Glass Cannon Live! - Ascension
     game: pathfinder-2e
+    links:
+      website: https://www.youtube.com/playlist?list=PLz3Be--ot61Nn2fnVPpWT5EY7R_FvWb2F
   - ordinal: 4
     title: Glass Cannon Live! - Strange Aeons
     game: pathfinder-2e
@@ -30,6 +34,10 @@ seasons:
   - ordinal: 8
     title: Glass Cannon Radio
     game: pathfinder-2e
+    links:
+      website: https://www.youtube.com/playlist?list=PLz3Be--ot61Mdh-8CH_gzepaFsUh-siXX
   - ordinal: 9
     title: Side Quest Side Sesh
     game: pathfinder-2e
+    links:
+      website: https://www.youtube.com/playlist?list=PLz3Be--ot61NS2oV1PkL_WI3NDkKL4DXf

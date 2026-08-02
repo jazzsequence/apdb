@@ -20,18 +20,26 @@ seasons:
     game: dnd-5e
     started: "2022"
     episode_count: 2
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQwgI-BPd0nujKfVkCag3xFf
   - ordinal: 3
     title: "Exandria Unlimited: Calamity"
     game: dnd-5e
     started: 2022-05
     ended: 2022-06
     episode_count: 4
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQwzhdskYekmjr0h2tsbKaZw
   - ordinal: 4
     title: Exandria Unlimited Prime
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQz9kKDaPRPrX2E7RPTaxEZd
   - ordinal: 5
     title: "Exandria Unlimited: Divergence"
     game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQw_Q6CICX-9Rmoj2-OOvgPF
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/d/d1/ExuLogo.png/revision/latest/scale-to-width-down/400?cb=20210625202520
   licence: fair use

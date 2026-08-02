@@ -16,44 +16,62 @@ seasons:
     game: dnd-5e
     started: "2018"
     ended: "2019"
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhklSBUjoUJ0drkCEIHI6nXyf
   - ordinal: 2
     title: Misfits and Magic
     game: kids-on-brooms
     started: "2021"
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhkk7a9GbnMsrO6wbT1iP4cAG
   - ordinal: 3
     title: A Court of Fey & Flowers
     game: good-society
     started: "2022"
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhklm7ROsq8zkL5CT4GIDmui5
   - ordinal: 4
     title: Escape From the Bloodkeep
     game: dnd-5e
     started: 2019-04-30
     ended: 2019-06-04
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkmhsvbPmu7MCWzKCFfeRrve
   - ordinal: 5
     title: The Unsleeping City
     game: dnd-5e
     started: 2019-07-09
     ended: 2019-10-29
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkmJU5myEzM82EXNna99ykgC
   - ordinal: 6
     title: Tiny Heist
     game: dnd-5e
     started: 2020-01-09
     ended: 2020-02-13
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkntruCZvpkgMkFkpGGXCTom
   - ordinal: 7
     title: A Crown of Candy
     game: dnd-5e
     started: 2020-04-08
     ended: 2020-08-05
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhkm7msDryVXT0Ht8GBABrrF-
   - ordinal: 8
     title: Pirates of Leviathan
     game: dnd-5e
     started: 2020-09-16
     ended: 2020-10-21
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhkk2ufJLMauJ71NsujHqMxVz
   - ordinal: 9
     title: "The Unsleeping City: Chapter II"
     game: dnd-5e
     started: 2020-11-11
     ended: 2021-03-10
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhknGm7zewN43Xm_H9DrW4Y2z
   - ordinal: 10
     title: "Fantasy High: Sophomore Year"
     game: dnd-5e
@@ -64,99 +82,139 @@ seasons:
     game: dnd-5e
     started: 2021-04-07
     ended: 2021-06-09
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkkwCE70nH37McsKsca6Yx50
   - ordinal: 12
     title: The Seven
     game: dnd-5e
     started: 2021-08-18
     ended: 2021-10-20
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhkn30DSLn_KNduyhJd93SOSR
   - ordinal: 13
     title: Shriek Week
     game: the-mythic-system
     started: 2021-11-10
     ended: 2021-12-01
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkleFX_A08r5HlnD89iDA_Ql
   - ordinal: 14
     title: A Starstruck Odyssey
     game: star-wars-5th-edition
     started: 2022-01-12
     ended: 2022-05-11
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhkn1YLm9lvP_7lPRmRknpIyA
   - ordinal: 15
     title: Coffin Run
     game: dnd-5e
     started: 2022-06-08
     ended: 2022-07-13
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhknVZCRUgvLIXs9DZ_QaimVW
   - ordinal: 17
     title: Neverafter
     game: dnd-5e
     started: 2022-11-30
     ended: 2023-04-12
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkkcOL5Cny-kg_2NJKB4JKns
   - ordinal: 18
     title: The Ravening War
     game: dnd-5e
     started: 2023-05-10
     ended: 2023-06-14
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhkl1WatjPjS7zhKVVR38LMjw
   - ordinal: 19
     title: Dungeons and Drag Queens
     game: dnd-5e
     started: 2023-06-28
     ended: 2023-07-19
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhknUrmt6iHEjL0AoZ42tylCn
   - ordinal: 20
     title: Mentopolis
     game: kids-on-bikes
     started: 2023-08-09
     ended: 2023-09-13
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkmYq51iPCo79Qn4PvGlCIp1
   - ordinal: 21
     title: Burrow's End
     game: dnd-5e
     started: 2023-10-04
     ended: 2023-12-08
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhklykygrHBGZTyproUlKZ4j6
   - ordinal: 22
     title: "Fantasy High: Junior Year"
     game: dnd-5e
     started: 2024-01-10
     ended: 2024-05-22
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhklj1Dpe8NN7__nLxGoaOUMl
   - ordinal: 23
     title: Never Stop Blowing Up
     game: kids-on-bikes
     started: 2024-06-26
     ended: 2024-08-28
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhklvmcd5GMK0Br0sc1SvKSvp
   - ordinal: 24
     title: Dungeons and Drag Queens Season 2
     game: dnd-5e
     started: 2025-01-08
     ended: 2025-02-12
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhknDmpFfFNRsW-H4chcPTDBF
   - ordinal: 25
     title: Time Quangle
     game: dnd-5e
     ended: 2024-09-12
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-Whduhkn5XMejhfiJZldln4deNIbR
   - ordinal: 26
     title: Misfits and Magic Season 2
     game: kids-on-bikes
     started: 2024-09-25
     ended: 2024-11-05
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkkHWhaVwAAN1wHxSCbs6nA9
   - ordinal: 27
     title: Titan Takedown
     game: dnd-5e
     started: 2025-04-02
     ended: 2025-04-23
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkkZC19a9uJ50J966ThF-5xL
   - ordinal: 28
     title: Cloudward, Ho!
     game: dnd-5e
     started: 2025-06-04
     ended: 2025-10-22
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkkvZZ9Cdga9MqZm--UfkMg-
   - ordinal: 29
     title: On A Bus
     game: the-six-system
     started: 2025-07-14
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhklbEvc0kaAribIWBJ-Fmy1x
   - ordinal: 30
     title: Gladlands
     game: homebrewed-system
     started: 2026-01-07
     ended: 2026-02-11
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhknDBdHHfwVjQTZs7nGbqmcm
   - ordinal: 31
     title: City Council of Darkness
     game: vampire-the-masquerade-v5
     started: 2026-04-08
     ended: 2026-07-15
+    links:
+      website: https://www.youtube.com/playlist?list=PLuKg-WhduhkmgDrAxpUQOJ1PZRuGfKhI-
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/2/2f/Introfh.png/revision/latest/scale-to-width-down/400?cb=20200508134334
   licence: fair use
