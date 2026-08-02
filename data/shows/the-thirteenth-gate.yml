@@ -1,0 +1,11 @@
+id: the-thirteenth-gate
+title: The Thirteenth Gate
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/The_Thirteenth_Gate
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

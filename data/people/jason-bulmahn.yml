@@ -1,0 +1,33 @@
+id: jason-bulmahn
+canonical_name: Jason Bulmahn
+sort_name: Bulmahn, Jason
+links: {}
+aliases:
+  - id: default
+    name: Jason Bulmahn
+    alias_type: legal
+credits:
+  - show: crypt-of-the-everflame
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Crypt_of_the_Everflame
+        note: Crypt of the Everflame cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: marvel-super-heroes
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Marvel_Super_Heroes
+        note: Marvel Super Heroes cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+wikidata_qid: Q3807389
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/1/16/JasonBulmahn2010Ennies.JPG
+  licence: CC-BY-SA-2.0
+  attribution: "Jason_Bulmahn.jpg: Carlos A, Smith derivative work: BOZ at en.wikipedia"
+  source: https://commons.wikimedia.org/wiki/File:JasonBulmahn2010Ennies.JPG

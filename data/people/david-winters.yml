@@ -1,0 +1,23 @@
+# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
+# Source: https://glasscannonnetwork.fandom.com/wiki/Dungeon_Crawl_Classics (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: david-winters
+canonical_name: David Winters
+sort_name: Winters, David
+aliases:
+  - id: default
+    name: David Winters
+    alias_type: legal
+credits:
+  - show: dungeon-crawl-classics
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Dungeon_Crawl_Classics
+        note: Dungeon Crawl Classics cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.

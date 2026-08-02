@@ -4,30 +4,40 @@
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
 # not evidence of that.
-id: josephine-mcadam
-canonical_name: Josephine McAdam
-sort_name: McAdam, Josephine
+id: ross-bryant
+canonical_name: Ross Bryant
+sort_name: Bryant, Ross
 links: {}
 aliases:
   - id: default
-    name: Josephine McAdam
+    name: Ross Bryant
     alias_type: legal
 credits:
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Eva
-    alias: default
-    sources:
-      - url: https://en.wikipedia.org/wiki/L.A._by_Night
-        tier: reference
-  - show: the-game-garage
+  - show: twilight-2000
     season: 1
     role: player
     alias: default
     sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/The_Game_Garage
-        note: The Game Garage cast, via the glasscannonnetwork.fandom.com infobox.
+      - url: https://glasscannonnetwork.fandom.com/wiki/Twilight%3A_2000
+        note: "Twilight: 2000 cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA."
+        tier: community
+  - show: something-is-wrong-here
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Something_is_Wrong_Here
+        note: Something is Wrong Here cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: time-for-chaos
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Time_For_Chaos
+        note: Time For Chaos cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
   - show: friends-of-the-pod

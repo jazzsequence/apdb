@@ -4,30 +4,23 @@
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
 # not evidence of that.
-id: jason-charles-miller
-canonical_name: Jason Charles Miller
-sort_name: Miller, Jason Charles
+id: seth-skorkowsky
+canonical_name: Seth Skorkowsky
+sort_name: Skorkowsky, Seth
 links: {}
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Jason_Charles_Miller_2.jpg
-  licence: CC-BY-SA-4.0
-  attribution: Toglenn
-  source: https://commons.wikimedia.org/w/index.php?curid=63122859
 aliases:
   - id: default
-    name: Jason Charles Miller
+    name: Seth Skorkowsky
     alias_type: legal
 credits:
-  - show: critical-role
+  - show: voyagers-of-the-jump
     season: 1
-    role: guest player
-    character: Garthok
+    role: player
     alias: default
-    note: Listed as a guest player for this season; specific episodes not identified.
     sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
-        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
+      - url: https://glasscannonnetwork.fandom.com/wiki/Voyagers_of_the_Jump
+        note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
         tier: community
   - show: friends-of-the-pod
     season: 1

@@ -1,0 +1,11 @@
+id: aliens-rpg
+title: Aliens RPG
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Aliens_RPG
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

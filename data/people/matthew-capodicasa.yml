@@ -1,0 +1,236 @@
+# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
+# Source: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Shadowdark (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: matthew-capodicasa
+canonical_name: Matthew Capodicasa
+sort_name: Capodicasa, Matthew
+links: {}
+aliases:
+  - id: default
+    name: Matthew Capodicasa
+    alias_type: legal
+credits:
+  - show: glass-cannon-podcast
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast
+        note: Glass Cannon Podcast cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: androids-aliens
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: glass-cannon-live-strange-aeons
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Strange_Aeons
+        note: Glass Cannon Live! - Strange Aeons cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: side-quest-side-sesh
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Side_Quest_Side_Sesh
+        note: Side Quest Side Sesh cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: raiders-of-the-lost-continent
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
+        note: Raiders of the Lost Continent cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: delta-green
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Delta_Green
+        note: Delta Green cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: star-wars-age-of-republic
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Star_Wars%3A_Age_of_Republic
+        note: "Star Wars: Age of Republic cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: dungeons-dragons
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Dungeons_%26_Dragons
+        note: Dungeons & Dragons cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: crypt-of-the-everflame
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Crypt_of_the_Everflame
+        note: Crypt of the Everflame cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: tales-from-the-loop
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Tales_From_The_Loop
+        note: Tales From The Loop cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: call-of-cthulhu
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Call_of_Cthulhu
+        note: Call of Cthulhu cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk-season-2
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_2
+        note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: star-trek-adventures-rpg
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Star_Trek_Adventures_RPG
+        note: Star Trek Adventures RPG cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: fiasco
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Fiasco
+        note: Fiasco cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: dungeon-crawl-classics
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Dungeon_Crawl_Classics
+        note: Dungeon Crawl Classics cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: runequest
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Runequest
+        note: Runequest cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: traveller
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Traveller
+        note: Traveller cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: glass-cannon-podcast-giantslayer
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Giantslayer
+        note: Glass Cannon Podcast - Giantslayer cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: glass-cannon-live
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: the-game-garage
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/The_Game_Garage
+        note: The Game Garage cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: voyagers-of-the-jump
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Voyagers_of_the_Jump
+        note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: glass-cannon-podcast-gatewalkers
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Gatewalkers
+        note: Glass Cannon Podcast - Gatewalkers cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: friends-of-the-pod
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: glass-cannon-live-ascension
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Ascension
+        note: Glass Cannon Live! - Ascension cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: glass-cannon-podcast-shadowdark
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Shadowdark
+        note: Glass Cannon Podcast - Shadowdark cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.

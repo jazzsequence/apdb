@@ -1,0 +1,17 @@
+id: ey-or-vi-arsson
+canonical_name: Eyþór Viðarsson
+sort_name: Viðarsson, Eyþór
+aliases:
+  - id: default
+    name: Eyþór Viðarsson
+    alias_type: legal
+credits:
+  - show: dark-dice
+    season: 1
+    role: player
+    character: Father Sindri Westpike
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Travis_Vengroff
+        note: Season 1 cast per Wikipedia and the show's own site.

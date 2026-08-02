@@ -1,0 +1,22 @@
+id: hem-cleveland
+canonical_name: Hem Cleveland
+sort_name: Cleveland, Hem
+aliases:
+  - id: default
+    name: Hem Cleveland
+    alias_type: legal
+credits:
+  - show: dark-dice
+    season: 1
+    role: player
+    character: Rowena Granitepike
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Travis_Vengroff
+        note: Season 1 cast per Wikipedia and the show's own site.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Italy%2C_Florence%2C_16th_century_-_Apparel_from_a_Dalmatic_-_1919.857_-_Cleveland_Museum_of_Art.tif
+  licence: CC0
+  attribution: Unknown
+  source: https://commons.wikimedia.org/w/index.php?curid=78067467

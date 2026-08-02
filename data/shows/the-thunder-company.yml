@@ -1,0 +1,11 @@
+id: the-thunder-company
+title: The Thunder Company
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/The_Thunder_Company
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

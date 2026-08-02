@@ -1,0 +1,11 @@
+id: warhammer-40k-wrath-glory
+title: "Warhammer 40K: Wrath & Glory"
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Warhammer_40K%3A_Wrath_%26_Glory
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

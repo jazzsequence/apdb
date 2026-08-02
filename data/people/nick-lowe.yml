@@ -1,0 +1,33 @@
+id: nick-lowe
+canonical_name: Nick Lowe
+sort_name: Lowe, Nick
+links: {}
+aliases:
+  - id: default
+    name: Nick Lowe
+    alias_type: legal
+credits:
+  - show: raiders-of-the-lost-continent
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
+        note: Raiders of the Lost Continent cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: friends-of-the-pod
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+wikidata_qid: Q962095
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/7/72/Nick_Lowe_at_Knuckleheads_Saloon.png
+  licence: CC-BY-SA-3.0
+  attribution: K8 fan
+  source: https://commons.wikimedia.org/wiki/File:Nick_Lowe_at_Knuckleheads_Saloon.png

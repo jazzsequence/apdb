@@ -4,32 +4,14 @@
 # Verify the role and character before merging, and add an `alias` only if
 # you know which name was actually on the billing — the wiki's naming is
 # not evidence of that.
-id: josephine-mcadam
-canonical_name: Josephine McAdam
-sort_name: McAdam, Josephine
-links: {}
+id: sydney-amanuel
+canonical_name: Sydney Amanuel
+sort_name: Amanuel, Sydney
 aliases:
   - id: default
-    name: Josephine McAdam
+    name: Sydney Amanuel
     alias_type: legal
 credits:
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Eva
-    alias: default
-    sources:
-      - url: https://en.wikipedia.org/wiki/L.A._by_Night
-        tier: reference
-  - show: the-game-garage
-    season: 1
-    role: player
-    alias: default
-    sources:
-      - url: https://glasscannonnetwork.fandom.com/wiki/The_Game_Garage
-        note: The Game Garage cast, via the glasscannonnetwork.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
   - show: friends-of-the-pod
     season: 1
     role: player

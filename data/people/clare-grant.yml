@@ -1,0 +1,23 @@
+# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
+# Source: https://glasscannonnetwork.fandom.com/wiki/Something_is_Wrong_Here (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: clare-grant
+canonical_name: Clare Grant
+sort_name: Grant, Clare
+aliases:
+  - id: default
+    name: Clare Grant
+    alias_type: legal
+credits:
+  - show: something-is-wrong-here
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Something_is_Wrong_Here
+        note: Something is Wrong Here cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.

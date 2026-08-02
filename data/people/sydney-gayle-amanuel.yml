@@ -1,0 +1,157 @@
+# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
+# Source: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Shadowdark (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: sydney-gayle-amanuel
+canonical_name: Sydney Gayle Amanuel
+sort_name: Amanuel, Sydney Gayle
+links: {}
+aliases:
+  - id: default
+    name: Sydney Gayle Amanuel
+    alias_type: legal
+credits:
+  - show: glass-cannon-podcast
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast
+        note: Glass Cannon Podcast cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: androids-aliens
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: glass-cannon-live-strange-aeons
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Strange_Aeons
+        note: Glass Cannon Live! - Strange Aeons cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk-season-2
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_2
+        note: "Get In The Trunk: Season 2 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: vampire-the-masquerade
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Vampire%3A_The_Masquerade
+        note: "Vampire: The Masquerade cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: mork-borg
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/M%C3%96RK_BORG
+        note: MÖRK BORG cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: traveller
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Traveller
+        note: Traveller cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: something-is-wrong-here
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Something_is_Wrong_Here
+        note: Something is Wrong Here cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk-season-4
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_4
+        note: "Get In The Trunk: Season 4 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: glass-cannon-live
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: voyagers-of-the-jump
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Voyagers_of_the_Jump
+        note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: glass-cannon-podcast-gatewalkers
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Gatewalkers
+        note: Glass Cannon Podcast - Gatewalkers cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk-season-5
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_5
+        note: "Get In The Trunk: Season 5 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: get-in-the-trunk-season-6
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_6
+        note: "Get In The Trunk: Season 6 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+        tier: community
+  - show: glass-cannon-live-ascension
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Ascension
+        note: Glass Cannon Live! - Ascension cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: glass-cannon-podcast-shadowdark
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Shadowdark
+        note: Glass Cannon Podcast - Shadowdark cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.

@@ -1,0 +1,11 @@
+id: star-trek-adventures-rpg
+title: Star Trek Adventures RPG
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Star_Trek_Adventures_RPG
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

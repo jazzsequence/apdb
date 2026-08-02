@@ -1,0 +1,11 @@
+id: legacy-of-the-ancients
+title: Legacy of the Ancients
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Legacy_of_the_Ancients
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

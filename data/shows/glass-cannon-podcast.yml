@@ -1,0 +1,11 @@
+id: glass-cannon-podcast
+title: Glass Cannon Podcast
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

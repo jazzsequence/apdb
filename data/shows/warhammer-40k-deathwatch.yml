@@ -1,0 +1,11 @@
+id: warhammer-40k-deathwatch
+title: "Warhammer 40k: Deathwatch"
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Warhammer_40k%3A_Deathwatch
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

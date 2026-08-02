@@ -1,0 +1,69 @@
+id: erik-mona
+canonical_name: Erik Mona
+sort_name: Mona, Erik
+links: {}
+aliases:
+  - id: default
+    name: Erik Mona
+    alias_type: legal
+credits:
+  - show: glass-cannon-live-strange-aeons
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!_-_Strange_Aeons
+        note: Glass Cannon Live! - Strange Aeons cast, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: side-quest-side-sesh
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Side_Quest_Side_Sesh
+        note: Side Quest Side Sesh cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: crypt-of-the-everflame
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Crypt_of_the_Everflame
+        note: Crypt of the Everflame cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: star-trek-adventures-rpg
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Star_Trek_Adventures_RPG
+        note: Star Trek Adventures RPG cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: glass-cannon-live
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: the-game-garage
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/The_Game_Garage
+        note: The Game Garage cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+wikidata_qid: Q5388730
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/0/00/ErikMona2011Ennies.JPG
+  licence: CC-BY-SA-2.0
+  attribution: Carlos A. Smith
+  source: https://commons.wikimedia.org/wiki/File:ErikMona2011Ennies.JPG

@@ -1,0 +1,11 @@
+id: they-watched-the-stars
+title: They Watched the Stars
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/They_Watched_the_Stars
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

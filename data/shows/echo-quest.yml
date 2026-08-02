@@ -1,0 +1,11 @@
+id: echo-quest
+title: Echo Quest
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Echo_Quest
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

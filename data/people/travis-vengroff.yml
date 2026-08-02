@@ -1,0 +1,16 @@
+id: travis-vengroff
+canonical_name: Travis Vengroff
+sort_name: Vengroff, Travis
+aliases:
+  - id: default
+    name: Travis Vengroff
+    alias_type: legal
+credits:
+  - show: dark-dice
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Travis_Vengroff
+        note: Season 1 cast per Wikipedia and the show's own site.

@@ -66,6 +66,7 @@ export const FIELD_ROLES: Record<string, CreditRole> = {
   dungeon_mistress: 'GM/DM',
   game_mistress: 'GM/DM',
   gamemaster: 'GM/DM',
+  game_master_s: 'GM/DM',
   guest_gm: 'guest GM',
   guest_dm: 'guest GM',
   players: 'player',
@@ -342,6 +343,8 @@ export const CAMPAIGN_TEMPLATES = [
   'Template:Seasoninfo',            // Dungeons and Daddies
   'Template:Infobox Twitch show',   // Geek & Sundry
   'Template:Infobox Season',        // Acquisitions Incorporated
+  'Template:GCN Show Book Template', // Glass Cannon Network
+  'Template:GCN Show Template',
 ];
 
 /**
@@ -493,6 +496,31 @@ export function assemblePeople(
       });
     }
     if (ok && paired.length > 0) return { people: paired, dropped: [] };
+  }
+
+  // A bullet list is explicit structure: one entry per bullet. Without this,
+  // "* [[Joe O'Brien]]\n* [[Skid Maher]]" reads as a person and their
+  // character rather than as two performers.
+  const bullets = value
+    .split(/\n/)
+    .map((l) => l.trim())
+    .filter((l) => /^\*/.test(l) && l.includes('[['));
+  if (bullets.length > 1) {
+    const listed: WikiPerson[] = [];
+    for (const line of bullets) {
+      const ls = linksInOrder(line);
+      if (ls.length === 0) continue;
+      // A bullet may still say "X as Y" within itself.
+      const asAt = line.search(/\bas\b|\s[-–—]\s/i);
+      const before = ls.filter((l) => asAt < 0 || l.start < asAt);
+      const after = ls.filter((l) => asAt >= 0 && l.start > asAt);
+      if (before.length !== 1) { listed.length = 0; break; }
+      listed.push({
+        name: before[0]!.title,
+        ...(after.length ? { character: after.map((l) => l.title).join(' / ') } : {}),
+      });
+    }
+    if (listed.length > 1) return { people: listed, dropped: [] };
   }
 
   // Explicit structure beats inferred classification. When a field spells out

@@ -1,0 +1,22 @@
+id: tanya-depass
+canonical_name: Tanya DePass
+sort_name: DePass, Tanya
+aliases:
+  - id: default
+    name: Tanya DePass
+    alias_type: legal
+credits:
+  - show: runequest
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Runequest
+        note: Runequest cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+wikidata_qid: Q96100933
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/5/50/Tanya_DePass_Biography_Photo.jpg
+  licence: CC-BY-SA-4.0
+  attribution: SpringLeaf17
+  source: https://commons.wikimedia.org/wiki/File:Tanya_DePass_Biography_Photo.jpg

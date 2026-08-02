@@ -1,0 +1,11 @@
+id: lost-mammoth-valley
+title: Lost Mammoth Valley
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Lost_Mammoth_Valley
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

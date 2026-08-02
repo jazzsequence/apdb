@@ -1,0 +1,41 @@
+id: mary-lou
+canonical_name: Mary Lou
+sort_name: Lou, Mary
+links: {}
+aliases:
+  - id: default
+    name: Mary Lou
+    alias_type: legal
+credits:
+  - show: the-game-garage
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/The_Game_Garage
+        note: The Game Garage cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: friends-of-the-pod
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk-season-7
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_7
+        note: "Get In The Trunk: Season 7 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+image:
+  url: https://live.staticflickr.com/2930/14274992203_342db0008f_b.jpg
+  licence: CC-BY-2.0
+  attribution: kevin dooley
+  source: https://www.flickr.com/photos/12836528@N00/14274992203

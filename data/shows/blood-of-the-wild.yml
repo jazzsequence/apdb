@@ -1,0 +1,11 @@
+id: blood-of-the-wild
+title: Blood of the Wild
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Blood_of_the_Wild
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

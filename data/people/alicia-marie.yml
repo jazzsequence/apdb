@@ -1,0 +1,67 @@
+id: alicia-marie
+canonical_name: Alicia Marie
+sort_name: Marie, Alicia
+links: {}
+aliases:
+  - id: default
+    name: Alicia Marie
+    alias_type: legal
+credits:
+  - show: star-trek-adventures-rpg
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Star_Trek_Adventures_RPG
+        note: Star Trek Adventures RPG cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: marvel-super-heroes
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Marvel_Super_Heroes
+        note: Marvel Super Heroes cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: traveller
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Traveller
+        note: Traveller cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: the-one-ring
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/The_One_Ring
+        note: The One Ring cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: voyagers-of-the-jump
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Voyagers_of_the_Jump
+        note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: friends-of-the-pod
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+image:
+  url: https://live.staticflickr.com/2917/14260823414_4d69d3e8ba_b.jpg
+  licence: CC-BY-2.0
+  attribution: webvideopreis
+  source: https://www.flickr.com/photos/59772487@N08/14260823414

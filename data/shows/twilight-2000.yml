@@ -1,0 +1,11 @@
+id: twilight-2000
+title: "Twilight: 2000"
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Twilight%3A_2000
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

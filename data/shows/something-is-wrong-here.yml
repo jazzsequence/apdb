@@ -1,0 +1,11 @@
+id: something-is-wrong-here
+title: Something is Wrong Here
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Something_is_Wrong_Here
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

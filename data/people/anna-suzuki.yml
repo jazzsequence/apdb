@@ -1,0 +1,22 @@
+# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
+# Source: https://glasscannonnetwork.fandom.com/wiki/Fiasco (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: anna-suzuki
+canonical_name: Anna Suzuki
+sort_name: Suzuki, Anna
+aliases:
+  - id: default
+    name: Anna Suzuki
+    alias_type: legal
+credits:
+  - show: fiasco
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Fiasco
+        note: Fiasco cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.

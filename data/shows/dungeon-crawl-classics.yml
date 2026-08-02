@@ -1,0 +1,11 @@
+id: dungeon-crawl-classics
+title: Dungeon Crawl Classics
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Dungeon_Crawl_Classics
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

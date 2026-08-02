@@ -1,0 +1,23 @@
+# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
+# Source: https://glasscannonnetwork.fandom.com/wiki/The_Game_Garage (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: holly-laurent
+canonical_name: Holly Laurent
+sort_name: Laurent, Holly
+aliases:
+  - id: default
+    name: Holly Laurent
+    alias_type: legal
+credits:
+  - show: the-game-garage
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/The_Game_Garage
+        note: The Game Garage cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.

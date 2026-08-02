@@ -1,0 +1,11 @@
+id: blood-blades
+title: Blood & Blades
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Blood_%26_Blades
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

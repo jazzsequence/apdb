@@ -1,0 +1,11 @@
+id: the-one-ring
+title: The One Ring
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/The_One_Ring
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

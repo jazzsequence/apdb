@@ -1,0 +1,22 @@
+# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
+# Source: https://glasscannonnetwork.fandom.com/wiki/Runequest (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
+id: connie-chang
+canonical_name: Connie Chang
+sort_name: Chang, Connie
+aliases:
+  - id: default
+    name: Connie Chang
+    alias_type: legal
+credits:
+  - show: runequest
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Runequest
+        note: Runequest cast, via the glasscannonnetwork.fandom.com infobox. CC-BY-SA.

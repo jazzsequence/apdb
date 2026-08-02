@@ -1,0 +1,32 @@
+id: ari-rubin
+canonical_name: Ari Rubin
+sort_name: Rubin, Ari
+links: {}
+aliases:
+  - id: default
+    name: Ari Rubin
+    alias_type: legal
+credits:
+  - show: raiders-of-the-lost-continent
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
+        note: Raiders of the Lost Continent cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+        tier: community
+  - show: get-in-the-trunk-season-3
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Get_In_The_Trunk%3A_Season_3
+        note: "Get In The Trunk: Season 3 cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA."
+image:
+  url: https://live.staticflickr.com/65535/51709595907_4bafdff43e_b.jpg
+  licence: CC-BY-2.0
+  attribution: Chabad.org
+  source: https://www.flickr.com/photos/142668406@N06/51709595907

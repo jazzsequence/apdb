@@ -1,0 +1,11 @@
+id: new-game-who-dis
+title: New Game, Who Dis?
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

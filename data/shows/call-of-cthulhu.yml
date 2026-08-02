@@ -1,0 +1,11 @@
+id: call-of-cthulhu
+title: Call of Cthulhu
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Call_of_Cthulhu
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

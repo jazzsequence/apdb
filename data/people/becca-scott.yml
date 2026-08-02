@@ -1,3 +1,9 @@
+# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
+# Source: https://glasscannonnetwork.fandom.com/wiki/Call_of_Cthulhu (CC-BY-SA).
+#
+# Verify the role and character before merging, and add an `alias` only if
+# you know which name was actually on the billing — the wiki's naming is
+# not evidence of that.
 id: becca-scott
 canonical_name: Becca Scott
 sort_name: Scott, Becca
@@ -23,14 +29,23 @@ credits:
     character: Penny Luckstone
     alias: default
     sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/The_Seven
+      - url: https://dimension20.fandom.com/wiki/The_Seven
         note: The Seven cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
   - show: la-by-night
     season: 1
     role: player
     character: Chloe Hudson
     alias: default
     sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
+      - url: https://en.wikipedia.org/wiki/L.A._by_Night
+        tier: reference
+  - show: call-of-cthulhu
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Call_of_Cthulhu
+        note: Call of Cthulhu cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.

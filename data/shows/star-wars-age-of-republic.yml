@@ -1,0 +1,11 @@
+id: star-wars-age-of-republic
+title: "Star Wars: Age of Republic"
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Star_Wars%3A_Age_of_Republic
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e

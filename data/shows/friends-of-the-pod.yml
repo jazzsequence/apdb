@@ -1,0 +1,21 @@
+id: friends-of-the-pod
+title: Friends of the Pod
+channels:
+  - the-glass-cannon-network
+format: hybrid
+status: unknown
+links:
+  website: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+seasons:
+  - ordinal: 1
+    game: pathfinder-2e
+image:
+  url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/4/48/FriendsOfThePod.png/revision/latest/scale-to-width-down/400?cb=20230531132229
+  licence: fair use
+  attribution: Friends of the Pod series art, © its producers. Via
+    glasscannonnetwork.fandom.com.
+  source: https://glasscannonnetwork.fandom.com/wiki/File:FriendsOfThePod.png
+  depicts: Series art for Friends of the Pod
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

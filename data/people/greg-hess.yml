@@ -1,0 +1,22 @@
+id: greg-hess
+canonical_name: Greg Hess
+sort_name: Hess, Greg
+aliases:
+  - id: default
+    name: Greg Hess
+    alias_type: legal
+credits:
+  - show: the-game-garage
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/The_Game_Garage
+        note: The Game Garage cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
+image:
+  url: https://live.staticflickr.com/1778/29999106288_3a3f573c3b_b.jpg
+  licence: CC-BY-2.0
+  attribution: cyanotherm
+  source: https://www.flickr.com/photos/28861925@N02/29999106288
