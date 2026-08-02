@@ -1,28 +1,14 @@
-id: mark-hulmes
-canonical_name: Mark Hulmes
-sort_name: Hulmes, Mark
+id: theo-solomon
+canonical_name: Theo Solomon
+sort_name: Solomon, Theo
 aliases:
   - id: default
-    name: Mark Hulmes
+    name: Theo Solomon
     alias_type: legal
 credits:
-  - show: critical-role
-    role: player
-    character: Calianna
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
   - show: baldur-s-gate-3-cast-play-d-d
     season: 1
-    role: GM/DM
+    role: guest player
     sources:
       - tier: reference
         url: https://www.gamesradar.com/larian-gets-the-baldurs-gate-3-cast-to-role-play-their-own-characters-in-the-ultimate-dandd-session/
@@ -30,6 +16,7 @@ credits:
       - tier: reference
         url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
         note: Independent report of the same one-shot, confirming Mark Hulmes as GM.
+    character: Wyll
     note: One-shot in which the Baldur's Gate 3 voice cast played their own
       characters.
     alias: default

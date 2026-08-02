@@ -15,6 +15,20 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Age_of_Umbra%3A_Sallowlands
         note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
+  - show: baldur-s-gate-3-cast-play-d-d
+    season: 1
+    role: guest player
+    sources:
+      - tier: reference
+        url: https://www.gamesradar.com/larian-gets-the-baldurs-gate-3-cast-to-role-play-their-own-characters-in-the-ultimate-dandd-session/
+        note: Names the host and every voice actor with the character they reprised.
+      - tier: reference
+        url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
+        note: Independent report of the same one-shot, confirming Mark Hulmes as GM.
+    character: Shadowheart
+    note: One-shot in which the Baldur's Gate 3 voice cast played their own
+      characters.
+    alias: default
 wikidata_qid: Q123253089
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Stuttgart_2024_-_ComicCon_-_Jennifer_English_-_by-RaBoe_005.jpg

@@ -30,6 +30,20 @@ credits:
         url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
         note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
           show.
+  - show: baldur-s-gate-3-cast-play-d-d
+    season: 1
+    role: guest player
+    sources:
+      - tier: reference
+        url: https://www.gamesradar.com/larian-gets-the-baldurs-gate-3-cast-to-role-play-their-own-characters-in-the-ultimate-dandd-session/
+        note: Names the host and every voice actor with the character they reprised.
+      - tier: reference
+        url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
+        note: Independent report of the same one-shot, confirming Mark Hulmes as GM.
+    character: Astarion
+    note: One-shot in which the Baldur's Gate 3 voice cast played their own
+      characters.
+    alias: default
 wikidata_qid: Q5673372
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/23/Neil_Newbon_by_Gage_Skidmore.jpg

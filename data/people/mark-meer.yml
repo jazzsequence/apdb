@@ -57,6 +57,14 @@ credits:
         url: https://www.imdb.com/title/tt8861702/fullcredits/
         note: IMDb full cast and crew for "Callisto 6" (2018), via the official
           datasets.
+  - show: champions-of-the-realm
+    season: 1
+    role: player
+    sources:
+      - tier: reference
+        url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
+        note: Announcement naming the DM, commentators and full contestant list.
+    alias: default
 wikidata_qid: Q6768853
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/5/58/Mark_Meer_%28cropped%29.jpg

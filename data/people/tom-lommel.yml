@@ -6,6 +6,10 @@ aliases:
   - id: default
     name: Tom Lommel
     alias_type: legal
+  - id: bill-cavalier
+    name: Bill Cavalier
+    alias_type: stage
+    note: Performs as The Dungeon Bastard under this name.
 credits:
   - show: the-ironkeep-chronicles
     season: 1
@@ -90,6 +94,17 @@ credits:
         url: https://www.imdb.com/title/tt9196562/fullcredits/
         note: IMDb full cast and crew for "Monday Night Dungeon Fight" (2016), via the
           official datasets.
+  - show: godsmite
+    season: 1
+    role: GM/DM
+    alias: bill-cavalier
+    note: Two-episode one-shot in a homebrew setting. The players are not named by
+      any source found.
+    sources:
+      - tier: reference
+        url: https://www.savingthrowshow.com/shows/
+        note: Saving Throw's own show listing credits Bill Cavalier (The Dungeon
+          Bastard) as DM for Godsmite.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Gen_Con_-_2005-08-19_-_NASCRAG_Lommel.jpg
   licence: CC-BY-3.0

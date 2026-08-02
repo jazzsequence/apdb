@@ -29,3 +29,11 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/135430-sagas-of-sundry/cast
         note: Cast for "SAGAS OF SUNDRY" per TMDB.
+  - show: champions-of-the-realm
+    season: 1
+    role: player
+    sources:
+      - tier: reference
+        url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
+        note: Announcement naming the DM, commentators and full contestant list.
+    alias: default

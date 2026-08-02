@@ -1,0 +1,17 @@
+id: urijah-faber
+canonical_name: Urijah Faber
+sort_name: Faber, Urijah
+aliases:
+  - id: default
+    name: Urijah Faber
+    alias_type: legal
+credits:
+  - show: champions-of-the-realm
+    season: 1
+    role: host
+    sources:
+      - tier: reference
+        url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
+        note: Announcement naming the DM, commentators and full contestant list.
+    note: Called the play-by-play rather than playing.
+    alias: default

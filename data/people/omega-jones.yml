@@ -37,6 +37,14 @@ credits:
         url: https://www.youtube.com/watch?v=YHCw9IXZkJk
         note: "Cast per the production's own description of \"Ep1: You Meet in a Saloon
           | Tales of the Wasted West | D&D 5e Western Liveplay | RealmSmith\"."
+  - show: champions-of-the-realm
+    season: 1
+    role: player
+    sources:
+      - tier: reference
+        url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
+        note: Announcement naming the DM, commentators and full contestant list.
+    alias: default
 image:
   url: https://live.staticflickr.com/1048/816570668_e32fe78b41_b.jpg
   licence: CC-BY-SA-2.0
