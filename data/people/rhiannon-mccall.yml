@@ -1,0 +1,16 @@
+id: rhiannon-mccall
+canonical_name: Rhiannon McCall
+sort_name: McCall, Rhiannon
+aliases:
+  - id: default
+    name: Rhiannon McCall
+    alias_type: legal
+credits:
+  - show: tales-of-the-misfits-entire-campaign
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://vldl.fandom.com/wiki/Tales_of_the_Misfits
+        note: Cast per the VLDL wiki and IMDb.

@@ -1,0 +1,16 @@
+id: ellie-harwood
+canonical_name: Ellie Harwood
+sort_name: Harwood, Ellie
+aliases:
+  - id: default
+    name: Ellie Harwood
+    alias_type: legal
+credits:
+  - show: tales-of-the-misfits-entire-campaign
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://vldl.fandom.com/wiki/Tales_of_the_Misfits
+        note: Cast per the VLDL wiki and IMDb.

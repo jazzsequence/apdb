@@ -16,6 +16,17 @@ credits:
         url: https://www.youtube.com/watch?v=mY9w7n84PmM
         note: Cast per the production's own description of "Dungeon Masters | Official
           D&D Actual Play Series Premiere | Ep 1 & 2 | Ravenloft".
+  - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
+    season: 1
+    role: player
+    character: Astarion
+    alias: default
+    year: "2024"
+    sources:
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
+        note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
+          show.
 wikidata_qid: Q5673372
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/23/Neil_Newbon_by_Gage_Skidmore.jpg

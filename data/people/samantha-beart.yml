@@ -1,0 +1,25 @@
+id: samantha-beart
+canonical_name: Samantha Béart
+sort_name: Béart, Samantha
+aliases:
+  - id: default
+    name: Samantha Béart
+    alias_type: legal
+credits:
+  - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
+    season: 1
+    role: player
+    character: Karlach
+    alias: default
+    year: "2024"
+    sources:
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
+        note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
+          show.
+wikidata_qid: Q7408632
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Samantha_B%C3%A9art%2C_September_2023.jpg
+  licence: CC-BY-3.0
+  attribution: To All The Films We Judged Before
+  source: https://commons.wikimedia.org/wiki/File:Samantha_B%C3%A9art%2C_September_2023.jpg

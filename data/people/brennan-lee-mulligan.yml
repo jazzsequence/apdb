@@ -337,3 +337,14 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
+    season: 1
+    role: player
+    character: Dorbin Kragstone
+    alias: default
+    year: "2024"
+    sources:
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
+        note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
+          show.

@@ -1,0 +1,16 @@
+id: noir
+canonical_name: Noir
+sort_name: Noir
+aliases:
+  - id: default
+    name: Noir
+    alias_type: handle
+credits:
+  - show: bitten
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://darringtonpress.com/community-spotlight-bitten-a-fantasy-zombie-actual-play/
+        note: Cast per Darrington Press and the show's own listing. Credited by handle.

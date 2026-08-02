@@ -86,3 +86,11 @@ credits:
         note: Cast per Wikipedia and the VLDL wiki. Character mapping recorded only
           where a source states it; the others reprise their Epic NPC Man
           characters but the pairing is not established here.
+  - show: tales-of-the-misfits-entire-campaign
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://vldl.fandom.com/wiki/Tales_of_the_Misfits
+        note: Cast per the VLDL wiki and IMDb.
