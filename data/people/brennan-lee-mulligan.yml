@@ -348,3 +348,12 @@ credits:
         url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
         note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
           show.
+  - show: the-adventure-zone
+    season: 9
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Live_Campaign_2%3A_Dadlands
+        note: "Live Campaign 2: Dadlands cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."

@@ -203,3 +203,13 @@ credits:
         note: "Cast per the production's own description of \"Curse of Strahd
           Playthrough (2020) - S2, Ep1: A Dark Invitation (With Matt Mercer) |
           Into the Mist\"."
+  - show: the-tides-of-wildemount
+    season: 1
+    role: player
+    character: Dilyu
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=2k8p62-DpS0
+        note: Cast per the production's own description of "Prologue - The Tides of
+          Wildemount | LIVE D&D with RealmSmith".

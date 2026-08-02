@@ -14,3 +14,11 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
         note: Cast per Geek & Sundry.
+  - show: pathfinder-knights-of-everflame
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://pathfinderwiki.com/wiki/Knights_of_Everflame_(campaign)
+        note: Cast per PathfinderWiki and Paizo.

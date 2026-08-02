@@ -22,3 +22,11 @@ credits:
       - tier: official
         url: https://happyjacks.org/eldemy/
         note: Cast per the network's own show page.
+  - show: the-imperial-march
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/theimperialmarch/
+        note: Cast per the network's own show page.

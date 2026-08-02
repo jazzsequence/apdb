@@ -194,3 +194,12 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Wicked_Empire
         note: Wicked Empire cast, via the the-glass-cannon-network.fandom.com infobox.
           CC-BY-SA.
+  - show: friends-of-the-pod
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
+        note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.

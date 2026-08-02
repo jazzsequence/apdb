@@ -76,6 +76,69 @@ for (const person of db.people) {
   }
 }
 
+// --- The same person catalogued twice --------------------------------------
+// Whole batches of these got through: Matt/Matthew Mercer, Brian W./Brian Wayne
+// Foster, Amy Vorpahl/Vorphal, two Brennan Lee Mulligans differing by one
+// letter. Nothing was watching for it.
+function nameKey(name: string): string {
+  return name
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/\b(jr|sr|ii|iii|iv|wwe superstar|dr|mr|ms|mrs)\b/g, ' ')
+    .replace(/[^a-z ]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** "matt mercer" vs "matthew mercer": same surname, one forename a prefix. */
+function likelySamePerson(a: string, b: string): boolean {
+  const [x, y] = [nameKey(a).split(' '), nameKey(b).split(' ')];
+  if (x.length < 2 || y.length < 2) return false;
+  if (x.at(-1) !== y.at(-1)) return false;             // surnames must match
+  const [fx, fy] = [x[0]!, y[0]!];
+  if (fx === fy) return true;                          // differs only in middle names
+  return fx.length >= 3 && fy.length >= 3 && (fx.startsWith(fy) || fy.startsWith(fx));
+}
+
+const seenPairs = new Set<string>();
+for (const a of db.people) {
+  for (const b of db.people) {
+    if (a.id >= b.id) continue;
+    const key = `${a.id}|${b.id}`;
+    if (seenPairs.has(key)) continue;
+    if (!likelySamePerson(a.canonical_name, b.canonical_name)) continue;
+    seenPairs.add(key);
+    findings.push({
+      severity: 'high',
+      what: 'possibly the same person twice',
+      detail: `"${a.canonical_name}" (${a.credits.length}) and "${b.canonical_name}" (${b.credits.length}) — merge if they are one person`,
+    });
+  }
+}
+
+// --- Entries that are not people at all -------------------------------------
+// Companies and studios get swept in from crew fields; markup gets swept in
+// from wiki values that were never plain text.
+const NOT_A_PERSON =
+  /\b(studios?|sound|productions?|publishing|entertainment|media|records|llc|ltd|inc|network|games|press)\b/i;
+for (const p of db.people) {
+  if (NOT_A_PERSON.test(p.canonical_name)) {
+    findings.push({
+      severity: 'high',
+      what: 'looks like a company, not a person',
+      detail: `${p.canonical_name} — ${p.credits.length} credit(s)`,
+    });
+  }
+  if (/<[^>]+>|&[a-z]+;|\/{2,}/.test(p.canonical_name)) {
+    findings.push({
+      severity: 'high',
+      what: 'markup left in a person name',
+      detail: `${p.canonical_name} — parse artefact, not a name`,
+    });
+  }
+}
+
 // --- Suspiciously thin casts ----------------------------------------------
 for (const show of db.shows) {
   const cast = db.castFor(show);

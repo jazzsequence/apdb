@@ -15,6 +15,36 @@ credits:
       - tier: community
         url: https://dimension20.fandom.com/wiki/Titan_Takedown
         note: Titan Takedown cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+  - show: acquisitions-incorporated
+    season: 14
+    role: player
+    character: Bobby Zimmeruski
+    alias: default
+    sources:
+      - url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Twelve
+        note: Acquisitions Inc. Season Twelve cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: acquisitions-incorporated
+    season: 15
+    role: player
+    character: Bobby Zimmeruski
+    alias: default
+    sources:
+      - url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Thirteen
+        note: Acquisitions Inc. Season Thirteen cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: acquisitions-incorporated
+    season: 16
+    role: player
+    character: Bobbie Zimmeruski
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Fourteen
+        note: Acquisitions Inc. Season Fourteen cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
 wikidata_qid: Q2026559
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/6/63/Austin_Creed_GalaxyCon_Oklahoma_City_052026-1.jpg

@@ -66,8 +66,28 @@ const TIERS = [
       <select id="show">
         <option value="">— pick a show —</option>
         {shows.map((s) => <option value={s.id}>{s.title}</option>)}
+        <option value="__new__">✎ It's not listed — add a new show</option>
       </select>
     </label>
+
+    <div id="new-show-fields" hidden>
+      <label>
+        New show title
+        <input id="new-show-title" placeholder="Carefree High" autocomplete="off" />
+      </label>
+      <label>
+        Who makes it
+        <input id="new-show-channel" placeholder="Happy Jacks RPG Network" autocomplete="off" />
+      </label>
+      <label>
+        Game system <span style="font-weight:400;text-transform:none">— and edition, if you know it</span>
+        <input id="new-show-game" placeholder="Monsterhearts 2nd Edition" autocomplete="off" />
+      </label>
+      <label>
+        Where to find it
+        <input id="new-show-url" placeholder="https://…" autocomplete="off" />
+      </label>
+    </div>
 
     <label>
       Season
@@ -166,10 +186,20 @@ const TIERS = [
 
 <script define:vars={{ shows, REPO }}>
   const $ = (id) => document.getElementById(id);
-  const fields = ['person', 'show', 'season', 'episode', 'role', 'character', 'billed', 'tier', 'url', 'note'];
+  const fields = ['person', 'show', 'season', 'episode', 'role', 'character', 'billed', 'tier', 'url', 'note',
+                  'new-show-title', 'new-show-channel', 'new-show-game', 'new-show-url'];
 
   // Season options depend on the chosen show.
   $('show').addEventListener('change', () => {
+    // A credit for a show we do not have yet is still a credit. Reveal the
+    // fields needed to create the show alongside it.
+    const isNew = $('show').value === '__new__';
+    $('new-show-fields').hidden = !isNew;
+    if (isNew) {
+      $('season').innerHTML = '<option value="1">1 (first season)</option>';
+      render();
+      return;
+    }
     const show = shows.find((s) => s.id === $('show').value);
     $('season').innerHTML = show
       ? '<option value="">— whole show —</option>' +
@@ -180,11 +210,19 @@ const TIERS = [
 
   const quote = (s) => (/[:#'"\[\]{}|>]/.test(s) ? JSON.stringify(s) : s);
 
+  const slugify = (s) =>
+    s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 55).replace(/-+$/, '');
+
   function buildYaml() {
     const v = Object.fromEntries(fields.map((f) => [f, ($(f)?.value ?? '').trim()]));
     if (!v.person || !v.show) return null;
 
-    const lines = [`  - show: ${v.show}`];
+    const addingShow = v.show === '__new__';
+    if (addingShow && !v['new-show-title']) return null;
+    const showId = addingShow ? slugify(v['new-show-title']) : v.show;
+
+    const lines = [`  - show: ${showId}`];
     if (v.season) lines.push(`    season: ${v.season}`);
     if (v.episode) lines.push(`    episode: ${quote(v.episode)}`);
     lines.push(`    role: ${quote(v.role)}`);
@@ -200,6 +238,29 @@ const TIERS = [
     if (!v.url) lines.push(`        note: ${quote(v.note || 'Reported by a contributor.')}`);
 
     let yaml = `# Add to data/people/<slug>.yml for ${v.person}, under credits:\n` + lines.join('\n');
+
+    if (addingShow) {
+      const channelId = slugify(v['new-show-channel'] || 'unknown-channel');
+      const gameId = slugify(v['new-show-game'] || 'unknown-game');
+      yaml =
+        `# NEW SHOW — create data/shows/${showId}.yml:\n` +
+        `id: ${showId}\n` +
+        `title: ${quote(v['new-show-title'])}\n` +
+        `channels:\n  - ${channelId}\n` +
+        `format: podcast   # podcast | video | stream | hybrid\n` +
+        `status: unknown\n` +
+        (v['new-show-url'] ? `links:\n  website: ${v['new-show-url']}\n` : '') +
+        `seasons:\n  - ordinal: 1\n    game: ${gameId}\n` +
+        `\n# And data/channels/${channelId}.yml if it does not exist yet:\n` +
+        `id: ${channelId}\n` +
+        `name: ${quote(v['new-show-channel'] || 'Unknown')}\n` +
+        `type: indie studio   # network | indie studio | solo creator\n` +
+        (v['new-show-game']
+          ? `\n# And data/games/${gameId}.yml if it does not exist yet:\n` +
+            `id: ${gameId}\nname: ${quote(v['new-show-game'])}\nedition: N/A\npublisher: Unknown\n`
+          : '') +
+        `\n` + yaml;
+    }
     if (v.billed) {
       yaml +=
         `\n\n# ${v.person} was billed as "${v.billed}" here. Add this to their aliases:\n` +
@@ -213,7 +274,10 @@ const TIERS = [
     const built = buildYaml();
     const link = $('pr-link');
     if (!built) {
-      $('preview').textContent = 'Fill in at least a person and a show.';
+      $('preview').textContent =
+        $('show').value === '__new__'
+          ? 'Fill in the person and the new show’s title.'
+          : 'Fill in at least a person and a show.';
       link.setAttribute('aria-disabled', 'true');
       return;
     }
@@ -221,10 +285,16 @@ const TIERS = [
     link.removeAttribute('aria-disabled');
 
     const { v, yaml } = built;
-    const title = `[credit] ${v.person} — ${shows.find((s) => s.id === v.show)?.title ?? v.show}`;
+    const showName = built.v.show === '__new__'
+      ? built.v['new-show-title']
+      : (shows.find((s) => s.id === built.v.show)?.title ?? built.v.show);
+    const title = `[credit] ${v.person} — ${showName}`;
     const body = [
       `**Person:** ${v.person}`,
-      `**Show:** ${v.show}${v.season ? ` (season ${v.season})` : ''}`,
+      `**Show:** ${showName}${v.show === '__new__' ? ' — **NOT YET IN THE DATABASE**' : ''}${v.season ? ` (season ${v.season})` : ''}`,
+      v.show === '__new__' && v['new-show-channel'] ? `**Made by:** ${v['new-show-channel']}` : '',
+      v.show === '__new__' && v['new-show-game'] ? `**System:** ${v['new-show-game']}` : '',
+      v.show === '__new__' && v['new-show-url'] ? `**Where:** ${v['new-show-url']}` : '',
       v.episode ? `**Episode:** ${v.episode}` : '',
       `**Role:** ${v.role}`,
       v.character ? `**Character:** ${v.character}` : '',

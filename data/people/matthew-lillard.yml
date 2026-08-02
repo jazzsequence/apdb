@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: matthew-lillard
 canonical_name: Matthew Lillard
 sort_name: Lillard, Matthew
@@ -48,3 +42,14 @@ credits:
         url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
+  - show: ravenloft-curse-of-strahd-into-the-mist-live-d-d
+    season: 1
+    role: player
+    character: Rictavio
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YmE88oSZmKM
+        note: "Cast per the production's own description of \"Curse of Strahd
+          Playthrough (2020) - S1, Ep12: The Devil Himself - Pt. 1 | Into the
+          Mist\"."

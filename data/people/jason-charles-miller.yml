@@ -1,9 +1,3 @@
-# Credits imported from glasscannonnetwork.fandom.com on 2026-08-02.
-# Source: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod (CC-BY-SA).
-#
-# Verify the role and character before merging, and add an `alias` only if
-# you know which name was actually on the billing — the wiki's naming is
-# not evidence of that.
 id: jason-charles-miller
 canonical_name: Jason Charles Miller
 sort_name: Miller, Jason Charles
@@ -38,3 +32,11 @@ credits:
         url: https://glasscannonnetwork.fandom.com/wiki/Friends_of_the_Pod
         note: Friends of the Pod cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
+  - show: la-by-night
+    season: 1
+    role: player
+    character: Strikes a Chord
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/L.A._by_Night

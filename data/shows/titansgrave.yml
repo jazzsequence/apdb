@@ -8,7 +8,7 @@ links:
   website: https://www.youtube.com/playlist?list=PL7atuZxmT954UvydqNVClXAH3GRT0pAp2
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: fantasy-age
     episode_count: 16
 image:
   url: https://i.ytimg.com/vi/YWn6b8vi-PY/hqdefault.jpg
@@ -20,3 +20,5 @@ image:
     of its credits. Non-commercial, does not substitute for the original, and
     links back to the source. Removed on request by the rights holder — see
     POLICY.md.
+description: Wil Wheaton’s Geek & Sundry series, run on Green Ronin’s Fantasy
+  AGE system rather than D&D.

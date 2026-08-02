@@ -1,10 +1,10 @@
-id: eli-kintsugi-chronicles
-canonical_name: Eli Kintsugi Chronicles
-sort_name: Eli Kintsugi Chronicles
+id: eli
+canonical_name: Eli
+sort_name: Eli
 aliases:
   - id: default
-    name: Eli Kintsugi Chronicles
-    alias_type: legal
+    name: Eli
+    alias_type: handle
 credits:
   - show: the-kintsugi-chronicles
     season: 1

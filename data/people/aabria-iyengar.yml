@@ -194,3 +194,31 @@ credits:
         url: https://www.dndbeyond.com/posts/1792-d-d-live-at-gen-con-watch-an-astarion-and-karlach
         note: Cast per D&D Beyond and contemporary coverage of the Gen Con 2024 live
           show.
+  - show: revelations
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://happyjacks.org/revelations/
+        note: Cast per the network's own show page.
+  - show: border-lands
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://happyjacks.org/borderlands/
+        note: Cast per the network's own show page.
+  - show: dragon-heist
+    season: 1
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://happyjacks.org/dragonheist/
+        note: Cast per the network's own show page.
+  - show: gene-x
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://happyjacks.org/genex/
+        note: Cast per the network's own show page.

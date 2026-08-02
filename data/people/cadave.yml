@@ -86,6 +86,14 @@ credits:
       - tier: official
         url: https://happyjacks.org/yumastation/
         note: Cast per the network's own show page.
+  - show: the-kintsugi-chronicles
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/thekintsugichronicles/
+        note: Cast per the network's own show page.
 image:
   url: https://live.staticflickr.com/3077/3244373558_704e763edf_b.jpg
   licence: CC-BY-SA-2.0
