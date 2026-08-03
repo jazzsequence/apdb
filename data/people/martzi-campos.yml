@@ -1,0 +1,17 @@
+id: martzi-campos
+canonical_name: Martzi Campos
+sort_name: Campos, Martzi
+aliases:
+  - id: default
+    name: Martzi Campos
+    alias_type: legal
+credits:
+  - show: champions-of-the-past
+    season: 1
+    role: player
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Champions_of_the_Past
+        note: Saving Throw's own wiki page, cast under Main Cast. CC-BY-SA.
+    character: Rosalind Thorne
+    alias: default

@@ -27,3 +27,12 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt7289544/fullcredits/
         note: IMDb full cast and crew for "Vast" (2016), via the official datasets.
+  - show: champions-of-the-past
+    season: 1
+    role: player
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Champions_of_the_Past
+        note: Saving Throw's own wiki page, cast under Main Cast. CC-BY-SA.
+    character: Alice Abbott
+    alias: default

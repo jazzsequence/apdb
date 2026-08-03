@@ -1,0 +1,17 @@
+id: jesse-vigil
+canonical_name: Jesse Vigil
+sort_name: Vigil, Jesse
+aliases:
+  - id: default
+    name: Jesse Vigil
+    alias_type: legal
+credits:
+  - show: champions-of-the-past
+    season: 1
+    role: player
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Champions_of_the_Past
+        note: Saving Throw's own wiki page, cast under Main Cast. CC-BY-SA.
+    character: Preston Peabody
+    alias: default
