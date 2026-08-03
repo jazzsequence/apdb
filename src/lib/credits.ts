@@ -48,7 +48,7 @@ function sameFact(a: Partial<Credit>, b: Partial<Credit>): boolean {
  * Number, a show he runs.
  */
 export const ROLE_LABEL =
-  /^(actor|actress|self|host|guest|guest star|self\s*[-–—,]\s*\w+|narrator|announcer|storyteller|story teller|game ?master|dungeon ?master|gm|dm|keeper|crew|player|cast|various|additional voices)$/i;
+  /^(actor|actress|self|host|guest|guest star|self\s*[-–—,]\s*\w+|narrator|announcer|storyteller|story teller|game ?master|dungeon ?master|gm|dm|keeper|marshal|judge|referee|crew|player|cast|various|additional voices)$/i;
 
 /** A character field worth keeping, or nothing. */
 export function realCharacter(value: string | undefined): string | undefined {

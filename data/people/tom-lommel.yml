@@ -24,13 +24,14 @@ credits:
   - show: the-ironkeep-chronicles
     role: player
     season: 1
-    character: Avril Birdsong
     alias: default
     sources:
       - tier: reference
         url: https://www.imdb.com/title/tt8080866/fullcredits/
         note: IMDb full cast and crew for "The Ironkeep Chronicles" (2017), via the
           official datasets.
+    note: Character not established — an earlier import gave him Avril Birdsong,
+      whom IMDb credits to Havana Mahoney.
   - show: barky-s-brigade
     role: player
     season: 1

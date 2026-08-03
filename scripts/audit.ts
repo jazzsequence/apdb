@@ -250,14 +250,18 @@ for (const person of db.people) {
   for (const person of db.people) {
     for (const credit of person.credits) {
       if (!credit.character) continue;
-      const key = `${credit.show}|${credit.season ?? '-'}|${credit.character.toLowerCase()}`;
+      // Keyed on the episode too. A character recast partway through is real
+      // — Sgt. Elijah Clay was played by Eric Reichert in Twilight Protocol's
+      // first part and Gaurav Gulati in its second — and once both credits
+      // carry a locator they are no longer in conflict.
+      const key = `${credit.show}|${credit.season ?? '-'}|${credit.episode ?? '-'}|${credit.character.toLowerCase()}`;
       if (!byCharacter.has(key)) byCharacter.set(key, new Set());
       byCharacter.get(key)!.add(person.canonical_name);
     }
   }
   for (const [key, people] of byCharacter) {
     if (people.size < 2) continue;
-    const [show, season, character] = key.split('|');
+    const [show, season, , character] = key.split('|');
     findings.push({
       severity: 'high',
       what: 'two people credited as the same character',
@@ -344,7 +348,7 @@ const NOT_AN_ACTUAL_PLAY = new RegExp(
   [
     'talk ?show', 'chat show', 'news show', 'review show', '\\breviews\\b', '\\binterviews?\\b',
     'discussion show', 'post-?show discussion', '\\brecaps?\\b', 'behind the scenes',
-    '(?<!un)(?<!non)scripted', 'sketch comedy', 'animated series', '\\bcartoon\\b', 'documentary',
+    '\\bscripted\\b', 'sketch comedy', 'animated series', '\\bcartoon\\b', 'documentary',
     'card game', 'board game', 'video game', 'unboxing', 'highlights', 'tutorial',
     'how[- ]to', 'streaming platform', 'programming block', 'tips,? (and )?tricks',
     '\\bexperts\\b', 'hosted by our', 'share tips',

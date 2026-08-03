@@ -68,14 +68,18 @@ credits:
     role: player
     season: 1
     character: Sgt. Elijah Clay
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
+    note: Sgt. Elijah Clay was recast between parts; this is the part they played
+      him in.
     alias: default
     sources:
       - tier: reference
         url: https://www.imdb.com/title/tt9886618/fullcredits/
         note: IMDb full cast and crew for "Twilight Protocol" (2019), via the official
           datasets.
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Twilight_Protocol
+        note: Saving Throw's wiki lists the cast separately for each of the three parts.
+    episode: "Part 1: The Agency (1x01)"
   - show: rpg-exploration-society
     season: 1
     role: editor
