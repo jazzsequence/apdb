@@ -367,6 +367,21 @@ for (const show of db.shows) {
   });
 }
 
+// --- A title that promises instruction rather than play ---------------------
+// Two of these were reported by hand: "5E D&D Adventure Walkthroughs" and
+// "Build An Epic Cyberpunk Red Campaign". Channel sweeps take every playlist,
+// and a channel that plays games also teaches them.
+const INSTRUCTIONAL =
+  /\b(how to|build (an?|your)\b|building (an?|your)\b|walkthroughs?|guide to|tips|prep|worldbuilding|character creation|session zero|for beginners|tutorial|explained|rules (explained|breakdown))\b/i;
+for (const show of db.shows) {
+  if (!INSTRUCTIONAL.test(show.title)) continue;
+  findings.push({
+    severity: 'high',
+    what: 'title reads as instructional, not a recording of play',
+    detail: `${show.title} — a how-to or campaign-building series is not an actual play. Check the playlist.`,
+  });
+}
+
 // --- The description names a different system than the one recorded ---------
 // Same origin: "Listed as D&D but the description says Overlight RPG". Short
 // or ambiguous game names are excluded, because "Spire" matched three shows
