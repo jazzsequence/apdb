@@ -1,0 +1,17 @@
+id: greg-fernandes
+canonical_name: Greg Fernandes
+sort_name: Fernandes, Greg
+aliases:
+  - id: default
+    name: Greg Fernandes
+    alias_type: legal
+credits:
+  - show: the-coda-conflict
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://archive.org/details/Episode7_20180528
+        note: The item's own description names the full cast.
+    note: No GM named in the credited cast.
+    alias: default
