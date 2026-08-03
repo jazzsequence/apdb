@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import { getDb } from '../../../lib/db';
 import EntityActions from '../../../components/EntityActions.astro';
 import WatchLinks from '../../../components/WatchLinks.astro';
+import SuggestLink from '../../../components/SuggestLink.astro';
 
 export async function getStaticPaths() {
   const db = await getDb();
@@ -65,9 +66,21 @@ const dates = [season.started, season.ended].filter(Boolean).join(' – ');
     emptyNote="No link recorded for this season — a correction with one would be welcome."
   />
   {!seasonLinks && (
-    <p class="billing">
-      That link covers the whole of {show.title}, not this season on its own.
-    </p>
+    <>
+      <p class="billing">
+        That link covers the whole of {show.title}, not this season on its own.
+      </p>
+      <SuggestLink
+        file={`data/shows/${show.id}.yml`}
+        what={`${season.title ?? `season ${season.ordinal}`} on its own`}
+        hint={`add it under the season with ordinal ${season.ordinal}:`}
+        snippet={`  - ordinal: ${season.ordinal}
+${season.title ? `    title: ${season.title}
+` : ''}    game: ${season.game}
+    links:
+      website: https://www.youtube.com/playlist?list=…`}
+      />
+    </>
   )}
 
   {season.description && <p class="lede">{season.description}</p>}
