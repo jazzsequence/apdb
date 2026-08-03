@@ -1,0 +1,17 @@
+id: russ-morrissey
+canonical_name: Russ Morrissey
+sort_name: Morrissey, Russ
+aliases:
+  - id: default
+    name: Russ Morrissey
+    alias_type: legal
+credits:
+  - show: against-the-dragonlords-an-a5e-dragonlance-actual-play
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://enrpg.podbean.com/e/against-the-dragonlords-episode-8/
+        note: Cast listed in the show's own episode notes for "Against the Dragonlords -
+          Episode 8".
+    season: 1
+    alias: default

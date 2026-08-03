@@ -371,7 +371,11 @@ for (const show of db.shows) {
 // Same origin: "Listed as D&D but the description says Overlight RPG". Short
 // or ambiguous game names are excluded, because "Spire" matched three shows
 // set near an Obsidian Spire and "Cyberpunk" matched a genre.
-const AMBIGUOUS_GAME = /^(spire|cyberpunk|various|homebrewed system|tba|tutorial|product reviews)$/i;
+// Families rather than games. Night Witches, Monsterhearts and Dungeon World
+// are all Powered by the Apocalypse, so naming the family says nothing about
+// which of them was played.
+const AMBIGUOUS_GAME =
+  /^(spire|cyberpunk|various|various systems|homebrewed system|powered by the apocalypse|tba|tutorial|product reviews)$/i;
 for (const show of db.shows) {
   if (!show.description) continue;
   const recorded = new Set(show.seasons.map((s) => s.game));

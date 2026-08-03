@@ -1,0 +1,13 @@
+id: awfully-cheerful-engine-beam-me-up
+title: Awfully Cheerful Engine! Beam Me Up!
+channels:
+  - en-world-live
+format: podcast
+status: unknown
+links:
+  podcast: https://feed.podbean.com/enrpg/feed.xml
+seasons:
+  - ordinal: 1
+    game: awfully-cheerful-engine
+    episode_count: 1
+description: Discovered in en-world-live's own podcast feed.

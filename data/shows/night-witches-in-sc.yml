@@ -1,16 +1,19 @@
-id: bill-white
-title: Bill White
+id: night-witches-in-sc
+title: Night Witches in SC
 channels:
   - bill-white
 format: podcast
 status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Fate. Uploader licence: http://creativecommons.org/licenses/by-nc/3.0/."
+description: Powered by the Apocalypse sessions run by Bill White in Central
+  Pennsylvania, preserved on the Internet Archive. The item's own description
+  reads "pbtA RPGs run by Bill White in Central PA; Dungeon World; Night
+  Witches" — he ran both, and the Dungeon World sessions are a separate campaign
+  not yet indexed here.
 links:
   website: https://archive.org/details/NightWitchesInSCSession3
 seasons:
   - ordinal: 1
-    game: fate-core
+    game: night-witches
     episode_count: 4
     started: 2013-07-04
     ended: 2018-07-13

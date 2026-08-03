@@ -1,0 +1,17 @@
+id: krisfire98
+canonical_name: krisfire98
+sort_name: krisfire98
+aliases:
+  - id: default
+    name: krisfire98
+    alias_type: handle
+credits:
+  - show: awfully-cheerful-engine-one-shot-bite-me
+    role: player
+    sources:
+      - tier: official
+        url: https://enrpg.podbean.com/e/awfully-cheerful-engine-one-shot-bite-me/
+        note: "Cast listed in the show's own episode notes for \"Awfully Cheerful Engine
+          One-Shot: Bite Me!\"."
+    season: 1
+    alias: default

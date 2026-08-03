@@ -1,0 +1,22 @@
+id: madeleine-mason
+canonical_name: Madeleine Mason
+sort_name: Mason, Madeleine
+aliases:
+  - id: default
+    name: Madeleine Mason
+    alias_type: legal
+credits:
+  - show: to-save-a-kingdom-level-up-advanced-5th-edition-actual
+    role: player
+    sources:
+      - tier: official
+        url: https://enrpg.podbean.com/e/to-save-a-kingdom-episode6/
+        note: Cast listed in the show's own episode notes for "To Save a Kingdom -
+          Episode6".
+      - tier: official
+        url: https://enrpg.podbean.com/e/to-save-a-kingdom-episode-5/
+        note: Cast listed in the show's own episode notes for "To Save a Kingdom -
+          Episode 5".
+    season: 1
+    character: Rowan
+    alias: default

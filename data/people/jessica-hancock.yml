@@ -1,0 +1,18 @@
+id: jessica-hancock
+canonical_name: Jessica Hancock
+sort_name: Hancock, Jessica
+aliases:
+  - id: default
+    name: Jessica Hancock
+    alias_type: legal
+credits:
+  - show: against-the-dragonlords-an-a5e-dragonlance-actual-play
+    role: player
+    sources:
+      - tier: official
+        url: https://enrpg.podbean.com/e/against-the-dragonlords-episode-8/
+        note: Cast listed in the show's own episode notes for "Against the Dragonlords -
+          Episode 8".
+    season: 1
+    character: Constance
+    alias: default
