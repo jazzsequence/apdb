@@ -3,14 +3,18 @@ title: d5 Gamers
 channels:
   - d5-gamers
 format: podcast
-status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Pathfinder."
+status: ongoing
+description: "\"A casual Actual Play TTRPG podcast mainly playing published
+  Paizo adventures for Pathfinder 2e,\" per the show's own site. Doomsday Dawn
+  is one of at least two campaigns run — the site was still posting a second,
+  Season of Ghosts, as of mid-2025 — so this entry's episode count likely
+  undercounts the show's full run."
 links:
-  website: https://archive.org/details/DoomsdayDawn2
+  website: https://d5gamerspodcast.wordpress.com/
+  podcast: https://open.spotify.com/show/7mbQ2Fg7w5QyCts9uIuZpb
 seasons:
   - ordinal: 1
-    game: pathfinder-1e
+    game: pathfinder-2e
     episode_count: 34
     started: 2020-01-01
     ended: 2024-01-01
