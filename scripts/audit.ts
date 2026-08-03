@@ -157,6 +157,8 @@ for (const show of db.shows) {
 
 // --- Suspiciously thin casts ----------------------------------------------
 for (const show of db.shows) {
+  // A solo show has no cast to be missing.
+  if (show.solo) continue;
   const cast = db.castFor(show);
   const bySeason = new Map<number | 'show', number>();
   for (const c of cast) {

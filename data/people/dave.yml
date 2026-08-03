@@ -1,0 +1,19 @@
+id: dave
+canonical_name: Dave
+sort_name: Dave
+aliases:
+  - id: default
+    name: Dave
+    alias_type: handle
+credits:
+  - show: actual-play-night-below-the-orphans-of-westkeep-d-d-5e
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=PwPzSVgt-BA
+        note: Cast stated in the show's own description for "Actual Play - Dungeons &
+          Dragons 5th Edition D&D 5e - Night Below - The Orphans of Westkeep Pt
+          23".
+    season: 1
+    character: Tel'Andir
+    alias: default

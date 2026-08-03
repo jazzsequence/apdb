@@ -40,6 +40,14 @@ export function looksLikeName(value: string): boolean {
   return /^[\p{L}"'][\p{L}\s."'-]*$/u.test(v);
 }
 
+/** A character name: anything short and prose-free, "the" included. */
+function looksLikeCharacter(value: string): boolean {
+  const v = value.trim();
+  if (!v || v.length > 60) return false;
+  if (/[@|]|https?:|\bwww\./i.test(v)) return false;
+  return v.split(/\s+/).length <= 8;
+}
+
 export interface YouTubeCredit {
   name: string;
   role: CreditRole;
@@ -293,7 +301,10 @@ function keepOnlyNames(credits: YouTubeCredit[]): YouTubeCredit[] {
         !c.character ||
         !/^@|^https?:|^www\.|\.(com|net|org|io|tv|co\.uk)\b/i.test(c.character.trim()),
     )
-    .map((c) => (c.character && !looksLikeName(c.character) ? { ...c, character: undefined } : c));
+    // A character is not held to the performer-name test. `looksLikeName`
+    // rejects anything containing "the", which is fine for a person and wrong
+    // for "Knox the Unexpected" or "Grog Strongjaw".
+    .map((c) => (c.character && !looksLikeCharacter(c.character) ? { ...c, character: undefined } : c));
 
   // One credit per person per role. Prefer the plainest spelling of the name,
   // and keep a character if any spelling supplied one.
@@ -311,7 +322,49 @@ function keepOnlyNames(credits: YouTubeCredit[]): YouTubeCredit[] {
   return [...best.values()];
 }
 
+/**
+ * A cast introduced mid-sentence rather than under a heading:
+ *
+ *   You can find more about our players, here:
+ *   George (Knox the Unexpected):
+ *   IMdB: https://www.imdb.com/name/nm0833971/
+ *
+ *   Hobbs (Elanion Elandin):
+ *   Twitch: Twitch.tv/hobbs665
+ *
+ * Dungeon Musings writes every episode this way, and no heading-based parser
+ * finds it: the introduction is a sentence, the entries are "Name (Character):"
+ * rather than "Name as Character", and each is followed by several lines of
+ * links. The block ends at the music credits, which are not cast.
+ */
+function playersBlock(description: string): YouTubeCredit[] {
+  const lines = description.split(/\r?\n/).map((l) => l.trim());
+  const start = lines.findIndex((l) => /\b(about our|meet the|our) (players|cast|party)\b/i.test(l));
+  if (start < 0) return [];
+
+  const credits: YouTubeCredit[] = [];
+  for (let i = start + 1; i < lines.length; i++) {
+    const line = lines[i]!;
+    if (!line) continue;
+    // Music and licensing sit directly below the cast in these descriptions.
+    if (/^(all )?(music|licen[cs]|credits|sound|editing)\b/i.test(line)) break;
+    if (SOCIAL_LINE.test(line) || /^https?:\/\//i.test(line)) continue;
+
+    const m = line.match(/^(.+?)\s*\(([^)]+)\)\s*:?\s*$/);
+    if (!m) continue;
+    const name = m[1]!.trim();
+    const character = m[2]!.trim();
+    if (!looksLikeName(name)) continue;
+    const isGm = /^(the\s+)?(dungeon master|game master|gamemaster|dm|gm|storyteller|keeper|marshal)$/i.test(character);
+    credits.push(isGm ? { name, role: 'GM/DM', line } : { name, role: 'player', character, line });
+  }
+  return credits.length > 1 ? credits : [];
+}
+
 export function creditsFromDescription(description: string): YouTubeCredit[] {
+  const players = keepOnlyNames(playersBlock(description));
+  if (players.length > 1) return players;
+
   const headed = keepOnlyNames(headedBlock(description));
   if (headed.length > 1) return headed;
 

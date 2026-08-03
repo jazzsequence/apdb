@@ -267,6 +267,16 @@ export const Show = z
     /** Foreign keys -> Channel.id. A show can be co-produced. */
     channels: z.array(Slug).min(1),
     format: ShowFormat,
+    /**
+     * A solo roleplaying show: one person plays without a group and usually
+     * without a game master.
+     *
+     * Worth a field rather than an inference, because "no cast recorded" and
+     * "no cast exists" are different facts and the audit has to tell them
+     * apart. Soloist Venture's Shadowdark and Mörk Borg playthroughs were
+     * being flagged as missing credits forever; they are not missing anything.
+     */
+    solo: z.boolean().optional(),
     status: ShowStatus,
     description: z.string().optional(),
     links: Links,
