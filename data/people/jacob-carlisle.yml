@@ -1,0 +1,19 @@
+id: jacob-carlisle
+canonical_name: Jacob Carlisle
+sort_name: Carlisle, Jacob
+aliases:
+  - id: default
+    name: Jacob Carlisle
+    alias_type: legal
+credits:
+  - show: curse-of-strahd-live-play
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://archive.org/details/CurseOfStrahdLivePlay1
+        note: Players listed in the uploader's own description for episode 1. No GM
+          named.
+    note: Only episode 1 of 13 names the cast; whether the same players continued
+      throughout is not established.
+    alias: default

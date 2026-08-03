@@ -1,0 +1,19 @@
+id: janos-fireheart
+canonical_name: Janos Fireheart
+sort_name: Fireheart, Janos
+aliases:
+  - id: default
+    name: Janos Fireheart
+    alias_type: legal
+credits:
+  - show: curse-of-strahd-live-play
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://archive.org/details/CurseOfStrahdLivePlay1
+        note: Players listed in the uploader's own description for episode 1. No GM
+          named.
+    note: Only episode 1 of 13 names the cast; whether the same players continued
+      throughout is not established.
+    alias: default
