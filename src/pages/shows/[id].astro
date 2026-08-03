@@ -3,7 +3,6 @@ import Base from '../../layouts/Base.astro';
 import { getDb } from '../../lib/db';
 import EntityActions from '../../components/EntityActions.astro';
 import WatchLinks from '../../components/WatchLinks.astro';
-import SuggestLink from '../../components/SuggestLink.astro';
 import { describedLinks } from '../../lib/links';
 
 export async function getStaticPaths() {
@@ -160,17 +159,10 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
       ))
     )
   }
-  {!canWatch && (
-    <SuggestLink
-      file={`data/shows/${show.id}.yml`}
-      what={show.title}
-      hint="add it to the show's links:"
-      snippet={`links:
-  website: https://www.youtube.com/playlist?list=…`}
-    />
-  )}
   <EntityActions
     kind="show"
+    snippet={canWatch ? undefined : 'links:\n  website: https://www.youtube.com/playlist?list=…'}
+    snippetHint={canWatch ? undefined : "There is nowhere to watch this recorded — only a wiki or a home page. Add a playlist, feed or archive page to the show's links:"}
     file={`data/shows/${show.id}.yml`}
     name={show.title}
     path={`/shows/${show.id}/`}

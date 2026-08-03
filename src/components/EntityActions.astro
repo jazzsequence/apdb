@@ -8,47 +8,48 @@
  * to D&D, a campaign entered three times, a scripted comedy filed as an actual
  * play. Every entity page carries these now.
  *
- * The image prompt only appears where there is no image, because that is
- * exactly where a reader can help and where the gap is most visible.
+ * "Edit this show" is the primary action and appears on every page, because a
+ * pull request against the actual file is a better contribution than prose
+ * somebody has to transcribe. Anything more than that link — the YAML to
+ * paste, the explanation of where it goes — is hidden until asked for. It is
+ * help for the one reader in fifty who wants it and clutter for everyone else.
  */
 export const REPO = 'jazzsequence/apdb';
 
 interface Props {
-  /** Path of the YAML file behind this page, relative to the repo root. */
-  file?: string;
   /** What kind of thing this page is, in words a contributor would use. */
   kind: 'person' | 'show' | 'channel' | 'game' | 'season';
   /** Its display name, for the issue title. */
   name: string;
   /** Site-relative path of this page, so the issue says which one. */
   path: string;
+  /** Repo-relative path of the YAML behind this page. */
+  file?: string;
   /** Whether this entity already has a picture. */
   hasImage?: boolean;
+  /** YAML to show, on request, when something specific is missing. */
+  snippet?: string;
+  /** One line saying what the snippet is for and where it goes. */
+  snippetHint?: string;
   /** Optional extra sentence explaining what tends to be wrong here. */
   caveat?: string;
 }
 
-const { kind, name, path, file, hasImage = true, caveat } = Astro.props;
+const { kind, name, path, file, hasImage = true, snippet, snippetHint, caveat } = Astro.props;
 const site = 'https://actualplaydb.com';
 
-const correctionUrl =
-  `https://github.com/${REPO}/issues/new?template=correction.yml` +
-  `&labels=correction&title=${encodeURIComponent(`[correction] ${name}`)}` +
+const issue = (template: string, label: string) =>
+  `https://github.com/${REPO}/issues/new?template=${template}` +
+  `&labels=${label}&title=${encodeURIComponent(`[${label}] ${name}`)}` +
   `&where=${encodeURIComponent(`${site}${path}`)}`;
 
-const imageUrl =
-  `https://github.com/${REPO}/issues/new?template=add-image.yml` +
-  `&labels=image&title=${encodeURIComponent(`[image] ${name}`)}` +
-  `&where=${encodeURIComponent(`${site}${path}`)}`;
+const correctionUrl = issue('correction.yml', 'correction');
+const imageUrl = issue('add-image.yml', 'image');
 
 /*
- * GitHub's own editor turns an edit into a pull request: it forks, branches,
- * commits and opens the PR, all from this one link. That is a far better
- * contribution path than an issue somebody then has to transcribe by hand —
- * the change arrives as a diff against the actual file, CI validates it, and
- * it can be merged as-is.
- *
- * The issue forms stay, because not everyone wants to edit YAML.
+ * GitHub's editor forks, branches, commits and opens the pull request from
+ * this one link, so the change arrives as a diff against the real file with CI
+ * already validating it.
  */
 const editUrl = file ? `https://github.com/${REPO}/edit/main/${file}` : undefined;
 
@@ -59,32 +60,87 @@ const KIND_WORD: Record<Props['kind'], string> = {
   game: 'game',
   season: 'season',
 };
+const noun = KIND_WORD[kind];
 ---
 
-<p class="billing entity-actions">
-  Something wrong with this {KIND_WORD[kind]}?{' '}
-  <a href={correctionUrl} rel="nofollow noopener">Suggest a correction</a>
-  {caveat ? ` — ${caveat}` : ' — much of this is imported, and imports get things wrong.'}
-  {
-    editUrl && (
+<div class="entity-actions">
+  <p class="billing">
+    {editUrl && (
+      <>
+        <a class="edit-entity" href={editUrl} rel="nofollow noopener">Edit this {noun}</a>
+        {' '}
+      </>
+    )}
+    <span>
+      or <a href={correctionUrl} rel="nofollow noopener">suggest a correction</a>
+      {caveat ? ` — ${caveat}` : ' — much of this is imported, and imports get things wrong.'}
+    </span>
+    {!hasImage && (
       <>
         {' '}
-        <br />
-        Know YAML?{' '}
-        <a href={editUrl} rel="nofollow noopener">Edit this file directly</a> — GitHub
-        turns your change into a pull request, no transcription in between.
+        <a href={imageUrl} rel="nofollow noopener">Suggest a picture</a> — there is none yet.
       </>
-    )
-  }
+    )}
+  </p>
+
   {
-    !hasImage && (
-      <>
-        {' '}
-        <br />
-        No picture here yet.{' '}
-        <a href={imageUrl} rel="nofollow noopener">Suggest one</a> — freely licensed
-        images are preferred, but tell us what you know either way.
-      </>
+    snippet && editUrl && (
+      <details class="edit-help">
+        <summary>What do I change?</summary>
+        <p class="billing">{snippetHint}</p>
+        <pre class="yaml-snippet"><code>{snippet}</code></pre>
+        <p class="billing">
+          Editing opens a pull request automatically — you do not need to fork
+          anything yourself.
+        </p>
+      </details>
     )
   }
-</p>
+</div>
+
+<style>
+  .entity-actions {
+    margin-top: 1.5rem;
+  }
+  .edit-entity {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius);
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.84rem;
+  }
+  .edit-entity:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .edit-help {
+    margin-top: 0.6rem;
+  }
+  .edit-help summary {
+    cursor: pointer;
+    font-size: 0.84rem;
+    color: var(--muted);
+    width: fit-content;
+  }
+  .edit-help summary:hover {
+    color: var(--accent);
+  }
+  .edit-help .billing {
+    margin: 0.5rem 0;
+  }
+  .yaml-snippet {
+    background: var(--sunk);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.6rem 0.8rem;
+    margin: 0;
+    overflow-x: auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    white-space: pre;
+  }
+</style>
