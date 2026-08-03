@@ -30,14 +30,6 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
-  - show: game-masters-hall
-    role: player
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/game-masters-hall
-        note: Cast for "Game Masters Hall" per TheTVDB.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/7/7a/MarkeiaMcCarty.png/revision/latest/scale-to-width-down/400?cb=20230602030557
   licence: fair use

@@ -60,17 +60,6 @@ credits:
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
-  - show: thrashtopia
-    role: player
-    season: 1
-    character: Bunker Bot
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7588390/fullcredits/
-        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
-          datasets.
   - show: sagas-of-sundry
     role: composer
     season: 1

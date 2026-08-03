@@ -77,12 +77,3 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
-  - show: tbd-rpg
-    role: GM/DM
-    sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=FRRHwhVQhKY
-        note: Cast stated in the show's own description for "Dungeon in a Box | TBD
-          RPG".
-    season: 1
-    alias: default

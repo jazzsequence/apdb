@@ -6,9 +6,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Corrections are as valuable as new credits. A lot of this data is
-        imported from fan wikis, and imports get things wrong — characters filed
-        as people, a GM listed as a player, the same season entered twice.
+        Corrections are as valuable as new credits, and the ones about *shows*
+        are the most valuable of all — a scripted comedy filed as an actual play,
+        or a system left at the D&D default, is worse than a missing credit.
+
+        **If you are comfortable editing a YAML file, there is a faster path.**
+        Every page has an "edit this file" link that opens the file in GitHub's
+        editor and turns your change into a pull request directly, with no
+        manual transcription in between. This form exists for everyone else.
 
   - type: input
     id: where
@@ -23,15 +28,25 @@ body:
     id: kind
     attributes:
       label: What kind of problem
+      description: >-
+        Every option here corresponds to a mistake this database has actually
+        made. If several apply, pick the worst one and explain in the box below.
       options:
-        - Wrong role (e.g. listed as player, actually GMed)
-        - Wrong or missing character
-        - Wrong season or episode
-        - Wrong name they were credited under
-        - This isn't a real person (a character or company got imported)
-        - Duplicate entry
-        - Two entries are the same person
-        - Credit doesn't belong to this person at all
+        - 'Show: this is not an actual play at all'
+        - 'Show: wrong game system'
+        - 'Show: wrong season, or seasons that should be one show'
+        - 'Show: this is one season of another show, not its own show'
+        - 'Show: wrong or missing link to where you can watch it'
+        - 'Show: this is a duplicate of another entry'
+        - 'Show: something else is wrong'
+        - 'Credit: wrong role (listed as a player, actually GMed)'
+        - 'Credit: wrong or missing character'
+        - 'Credit: wrong season or episode'
+        - 'Credit: wrong name they were billed under'
+        - 'Credit: this credit does not belong to this person at all'
+        - 'Person: this is not a real person (a character or company got imported)'
+        - 'Person: two entries are the same person'
+        - 'Channel or game: something is wrong'
         - Something else
     validations:
       required: true

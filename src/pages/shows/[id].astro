@@ -157,6 +157,7 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
   }
   <EntityActions
     kind="show"
+    file={`data/shows/${show.id}.yml`}
     name={show.title}
     path={`/shows/${show.id}/`}
     hasImage={Boolean(show.image)}

@@ -68,11 +68,3 @@ credits:
         url: https://www.imdb.com/title/tt8861702/fullcredits/
         note: IMDb full cast and crew for "Callisto 6" (2018), via the official
           datasets.
-  - show: game-masters-hall
-    role: player
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/game-masters-hall
-        note: Cast for "Game Masters Hall" per TheTVDB.

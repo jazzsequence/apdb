@@ -330,6 +330,66 @@ for (const show of db.shows) {
   }
 }
 
+// --- The show's own description says it is not an actual play ---------------
+// This class was found entirely by hand: the project owner hit Random, landed
+// on Geek & Sundry entries, read the descriptions, and filed fifteen
+// corrections. Ten of those were things that were never actual plays. The
+// evidence was sitting in the description field the whole time.
+//
+// Validated against those ten before being added: it catches Thrashtopia
+// ("talk show"), Game Masters Hall ("share tips"), Omnibus ("hosted by our"),
+// and TBD RPG ("programming block"). It misses ones whose descriptions are
+// merely bland, which is the honest limit of reading a tagline.
+const NOT_AN_ACTUAL_PLAY = new RegExp(
+  [
+    'talk ?show', 'chat show', 'news show', 'review show', '\\breviews\\b', '\\binterviews?\\b',
+    'discussion show', 'post-?show discussion', '\\brecaps?\\b', 'behind the scenes',
+    '(?<!un)(?<!non)scripted', 'sketch comedy', 'animated series', '\\bcartoon\\b', 'documentary',
+    'card game', 'board game', 'video game', 'unboxing', 'highlights', 'tutorial',
+    'how[- ]to', 'streaming platform', 'programming block', 'tips,? (and )?tricks',
+    '\\bexperts\\b', 'hosted by our', 'share tips',
+  ].join('|'),
+  'i',
+);
+for (const show of db.shows) {
+  const hit = show.description?.match(NOT_AN_ACTUAL_PLAY);
+  if (!hit) continue;
+  findings.push({
+    severity: 'high',
+    what: 'description says this is not an actual play',
+    detail: `${show.title} — its own description contains "${hit[0]}". Check it is a recording of play at all.`,
+  });
+}
+
+// --- The description names a different system than the one recorded ---------
+// Same origin: "Listed as D&D but the description says Overlight RPG". Short
+// or ambiguous game names are excluded, because "Spire" matched three shows
+// set near an Obsidian Spire and "Cyberpunk" matched a genre.
+const AMBIGUOUS_GAME = /^(spire|cyberpunk|various|homebrewed system|tba|tutorial|product reviews)$/i;
+for (const show of db.shows) {
+  if (!show.description) continue;
+  const recorded = new Set(show.seasons.map((s) => s.game));
+  // By name, not id. `dnd-4e` and `dnd-5e` are both called "Dungeons &
+  // Dragons", so comparing ids flagged every D&D show in the database.
+  const recordedNames = new Set(
+    [...recorded].map((id) => db.games.find((g) => g.id === id)?.name.toLowerCase()).filter(Boolean),
+  );
+  for (const game of db.games) {
+    if (AMBIGUOUS_GAME.test(game.name) || game.name.length < 6) continue;
+    if (recordedNames.has(game.name.toLowerCase())) continue;
+    // A game line whose id extends a recorded one is the same family:
+    // `chronicles-of-darkness-hunter` is Chronicles of Darkness.
+    if ([...recorded].some((id) => id.startsWith(game.id) || game.id.startsWith(id))) continue;
+    if (!new RegExp(`\\b${game.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(show.description)) continue;
+    findings.push({
+      severity: 'high',
+      what: 'description names a different system',
+      detail: `${show.title} — recorded as ${[...recorded].join(', ')} but its description says "${game.name}"`,
+    });
+    break;
+  }
+}
+
 // --- Unverified system ------------------------------------------------------
 const unverified = db.shows.filter(
   (s) => !s.description?.startsWith('System per source') && s.seasons.every((x) => x.game === 'dnd-5e'),

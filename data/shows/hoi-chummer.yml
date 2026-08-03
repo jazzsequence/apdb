@@ -8,8 +8,9 @@ links:
   website: https://savingthrowshow.fandom.com/wiki/Hoi_Chummer!
 seasons:
   - ordinal: 1
-    game: dnd-5e
-description: "System per source: Shadowrun 5e."
+    game: shadowrun
+description: "System per source: Shadowrun 5e. System corrected to shadowrun,
+  which the show's own description names."
 image:
   url: https://static.wikia.nocookie.net/savingthrowshow/images/a/ab/Hoi_Chummer_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210506200942
   licence: fair use

@@ -155,17 +155,6 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
         note: Cast per Geek & Sundry.
-  - show: thrashtopia
-    role: player
-    season: 1
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt7588390/fullcredits/
-        note: IMDb full cast and crew for "Thrashtopia" (2017), via the official
-          datasets.
   - show: worlds-beyond-number
     role: player
     season: 1

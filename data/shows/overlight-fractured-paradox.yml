@@ -7,12 +7,13 @@ status: unknown
 description: A motley crew of Skyborn explorers encounter strange occurrences in
   their fractured, floating world. Using the Overlight RPG system, this
   kaleidoscopic fantasy crosses through colorful landscapes, with our heroes
-  channeling the mythical Overlight to perform astonishing feats!
+  channeling the mythical Overlight to perform astonishing feats! System
+  corrected to overlight; it had been left at the D&D 5e default.
 links:
   website: https://www.youtube.com/playlist?list=PL7atuZxmT955U2g4kVh-NmlyBjc2Zm-Vi
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: overlight
     episode_count: 7
 image:
   url: https://i.ytimg.com/vi/seWcBodyEuc/hqdefault.jpg

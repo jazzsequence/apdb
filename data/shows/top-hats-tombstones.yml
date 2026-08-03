@@ -5,12 +5,13 @@ channels:
 format: video
 status: unknown
 description: A modified Kids on Bikes actual play. A mysterious zombie plague
-  erupts in a fictional world based on Victorian Era England.
+  erupts in a fictional world based on Victorian Era England. System corrected
+  to kids-on-bikes, which the show's own description names.
 links:
   website: https://www.youtube.com/playlist?list=PLxbQBeapUkovbIqB1gzrsTJRMsZctWLyP
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: kids-on-bikes
     episode_count: 8
 image:
   url: https://i.ytimg.com/vi/X3dM-_SUiWE/hqdefault.jpg

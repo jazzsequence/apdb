@@ -29,14 +29,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
         note: Cast for "L.A. by Night" per TMDB.
-  - show: game-masters-hall
-    role: player
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/game-masters-hall
-        note: Cast for "Game Masters Hall" per TheTVDB.
 image:
   url: https://static.wikia.nocookie.net/vampire-the-masquerade-la-by-night/images/0/0f/Jason_Carl.jpg/revision/latest/scale-to-width-down/400?cb=20190322030730
   licence: fair use

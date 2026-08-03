@@ -42,15 +42,6 @@ credits:
     character: Eva
     note: Recurring player-actor from season four onwards.
     alias: default
-  - show: tbd-rpg
-    role: GM/DM
-    sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=FRRHwhVQhKY
-        note: Cast stated in the show's own description for "Dungeon in a Box | TBD
-          RPG".
-    season: 1
-    alias: default
   - show: glass-cannon-network-presents
     season: 2
     role: player

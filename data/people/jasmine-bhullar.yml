@@ -98,14 +98,6 @@ credits:
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: game-masters-hall
-    role: player
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/game-masters-hall
-        note: Cast for "Game Masters Hall" per TheTVDB.
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/f/f8/Dnd_stream_jasmine.png/revision/latest?cb=20220409060329
   licence: fair use

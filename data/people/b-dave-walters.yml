@@ -103,14 +103,6 @@ credits:
           joined.
     character: Victor Temple
     alias: default
-  - show: game-masters-hall
-    role: player
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/game-masters-hall
-        note: Cast for "Game Masters Hall" per TheTVDB.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/b/be/PCMarcid.png/revision/latest/scale-to-width-down/400?cb=20200813045748
   licence: fair use

@@ -8,7 +8,7 @@ links:
   website: https://www.youtube.com/playlist?list=PL7atuZxmT954EqboZ4VQjlo5kYNVoJ9Vi
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: 7th-sea
     episode_count: 6
 image:
   url: https://i.ytimg.com/vi/wQ_uDticZao/hqdefault.jpg
@@ -20,3 +20,4 @@ image:
     of its credits. Non-commercial, does not substitute for the original, and
     links back to the source. Removed on request by the rights holder — see
     POLICY.md.
+description: System corrected to 7th-sea; it had been left at the D&D 5e default.

@@ -14,6 +14,8 @@
 export const REPO = 'jazzsequence/apdb';
 
 interface Props {
+  /** Path of the YAML file behind this page, relative to the repo root. */
+  file?: string;
   /** What kind of thing this page is, in words a contributor would use. */
   kind: 'person' | 'show' | 'channel' | 'game' | 'season';
   /** Its display name, for the issue title. */
@@ -26,7 +28,7 @@ interface Props {
   caveat?: string;
 }
 
-const { kind, name, path, hasImage = true, caveat } = Astro.props;
+const { kind, name, path, file, hasImage = true, caveat } = Astro.props;
 const site = 'https://actualplaydb.com';
 
 const correctionUrl =
@@ -38,6 +40,17 @@ const imageUrl =
   `https://github.com/${REPO}/issues/new?template=add-image.yml` +
   `&labels=image&title=${encodeURIComponent(`[image] ${name}`)}` +
   `&where=${encodeURIComponent(`${site}${path}`)}`;
+
+/*
+ * GitHub's own editor turns an edit into a pull request: it forks, branches,
+ * commits and opens the PR, all from this one link. That is a far better
+ * contribution path than an issue somebody then has to transcribe by hand —
+ * the change arrives as a diff against the actual file, CI validates it, and
+ * it can be merged as-is.
+ *
+ * The issue forms stay, because not everyone wants to edit YAML.
+ */
+const editUrl = file ? `https://github.com/${REPO}/edit/main/${file}` : undefined;
 
 const KIND_WORD: Record<Props['kind'], string> = {
   person: 'person',
@@ -52,6 +65,17 @@ const KIND_WORD: Record<Props['kind'], string> = {
   Something wrong with this {KIND_WORD[kind]}?{' '}
   <a href={correctionUrl} rel="nofollow noopener">Suggest a correction</a>
   {caveat ? ` — ${caveat}` : ' — much of this is imported, and imports get things wrong.'}
+  {
+    editUrl && (
+      <>
+        {' '}
+        <br />
+        Know YAML?{' '}
+        <a href={editUrl} rel="nofollow noopener">Edit this file directly</a> — GitHub
+        turns your change into a pull request, no transcription in between.
+      </>
+    )
+  }
   {
     !hasImage && (
       <>

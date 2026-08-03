@@ -88,11 +88,3 @@ credits:
         url: https://www.imdb.com/title/tt9196944/fullcredits/
         note: IMDb full cast and crew for "Shadows on the Horizon" (2018), via the
           official datasets.
-  - show: game-masters-hall
-    role: player
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/game-masters-hall
-        note: Cast for "Game Masters Hall" per TheTVDB.

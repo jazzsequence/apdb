@@ -62,6 +62,7 @@ const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
 
   <EntityActions
     kind="person"
+    file={`data/people/${person.id}.yml`}
     name={person.canonical_name}
     path={`/people/${person.id}/`}
     hasImage={Boolean(person.image)}

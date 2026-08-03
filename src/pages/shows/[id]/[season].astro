@@ -109,6 +109,7 @@ const dates = [season.started, season.ended].filter(Boolean).join(' – ');
   }
   <EntityActions
     kind="season"
+    file={`data/shows/${show.id}.yml`}
     name={`${show.title} — ${season.title ?? `Season ${season.ordinal}`}`}
     path={`/shows/${show.id}/${season.ordinal}/`}
     hasImage={true}

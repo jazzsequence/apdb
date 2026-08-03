@@ -84,14 +84,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/callisto-6
         note: Cast for "Callisto 6" per TheTVDB.
-  - show: game-masters-hall
-    role: player
-    season: 1
-    alias: default
-    sources:
-      - tier: reference
-        url: https://thetvdb.com/series/game-masters-hall
-        note: Cast for "Game Masters Hall" per TheTVDB.
 image:
   url: https://live.staticflickr.com/5546/9436260162_4e9eb2320d_b.jpg
   licence: CC-BY-2.0

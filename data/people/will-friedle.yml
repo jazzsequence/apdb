@@ -24,15 +24,6 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
-  - show: guardians-of-the-galaxy
-    role: player
-    season: 1
-    character: Peter Quill / Star-Lord (voice)
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.themoviedb.org/tv/63181-marvel-s-guardians-of-the-galaxy/cast
-        note: Cast for "Guardians of the Galaxy" per TMDB.
 wikidata_qid: Q2056174
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/5/54/Will_Friedle_Photo_Op_GalaxyCon_Austin_2023_%28B201168%29.jpg

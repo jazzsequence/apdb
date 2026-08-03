@@ -69,6 +69,7 @@ const totalSeasons = shows.reduce((n, s) => n + s.show.seasons.length, 0);
 
   <EntityActions
     kind="channel"
+    file={`data/channels/${channel.id}.yml`}
     name={channel.name}
     path={`/channels/${channel.id}/`}
     hasImage={true}
