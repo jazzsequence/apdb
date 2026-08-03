@@ -1,18 +1,20 @@
-id: chris-renshaw
-title: Chris Renshaw
+id: the-dirtbags-of-holding
+title: The Dirtbags of Holding
 channels:
-  - chris-renshaw
+  - boards-and-swords
 format: podcast
 status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Fate. Uploader licence:
-  https://creativecommons.org/licenses/by-nc-nd/4.0/."
+description: "\"4 friends show off the real way to play Roleplaying Games\" per
+  the show's own site, Boards & Swords. The linked item covers their D&D 5th
+  Edition \"Baldur's Gate: Descent into Avernus\" campaign; the show has also
+  run other systems."
 links:
   website: https://archive.org/details/descent-into-avernus-outtakes-vol.-1-the-dirtbags-of-holding-159
 seasons:
   - ordinal: 1
-    game: fate-core
-    episode_count: 21
+    game: dnd-5e
+    episode_count: 9
+    title: Descent into Avernus
 image:
   url: https://archive.org/services/img/descent-into-avernus-outtakes-vol.-1-the-dirtbags-of-holding-159
   licence: CC-BY-NC-ND-4.0

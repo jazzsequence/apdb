@@ -1,0 +1,18 @@
+id: philip-herbig
+canonical_name: Philip Herbig
+sort_name: Herbig, Philip
+aliases:
+  - id: default
+    name: Philip Herbig
+    alias_type: legal
+credits:
+  - show: the-dirtbags-of-holding
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://boardsandswords.com/about
+        note: The show's own site, listing hosts and which shows each appears on.
+    note: The show's own site lists them as a host without saying who ran the table;
+      GM is not established.
+    alias: default

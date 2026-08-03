@@ -1,0 +1,18 @@
+id: cory-harrop
+canonical_name: Cory Harrop
+sort_name: Harrop, Cory
+aliases:
+  - id: default
+    name: Cory Harrop
+    alias_type: legal
+credits:
+  - show: the-dirtbags-of-holding
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://boardsandswords.com/about
+        note: The show's own site, listing hosts and which shows each appears on.
+    note: The show's own site lists them as a host without saying who ran the table;
+      GM is not established.
+    alias: default

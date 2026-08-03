@@ -1,0 +1,18 @@
+id: jimmy-pritts
+canonical_name: Jimmy Pritts
+sort_name: Pritts, Jimmy
+aliases:
+  - id: default
+    name: Jimmy Pritts
+    alias_type: legal
+credits:
+  - show: the-dirtbags-of-holding
+    season: 1
+    role: player
+    sources:
+      - tier: official
+        url: https://boardsandswords.com/about
+        note: The show's own site, listing hosts and which shows each appears on.
+    note: The show's own site lists them as a host without saying who ran the table;
+      GM is not established.
+    alias: default
