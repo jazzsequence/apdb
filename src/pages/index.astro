@@ -226,6 +226,11 @@ function formatViews(n: number): string {
       const max = track.scrollWidth - track.clientWidth;
       prev.disabled = track.scrollLeft <= 1;
       next.disabled = max <= 1 || track.scrollLeft >= max - 1;
+      // Height the buttons to match the thumbnail (face/art), not the whole
+      // card — the card's caption text below it would otherwise pull a
+      // full-height button's visual center down past the image.
+      const thumb = track.querySelector<HTMLElement>('.face, .art');
+      if (thumb) carousel.style.setProperty('--thumb-h', `${thumb.getBoundingClientRect().height}px`);
     };
 
     for (const btn of [prev, next]) {
@@ -238,8 +243,8 @@ function formatViews(n: number): string {
     new ResizeObserver(update).observe(track);
     // The "Today's picks" rail fills in after this script runs (its own
     // populate script hasn't necessarily executed yet); a short delay
-    // catches its scrollWidth once content lands rather than reading it
-    // while the list is still empty.
+    // catches its scrollWidth (and its first thumbnail, for height) once
+    // content lands rather than reading it while the list is still empty.
     update();
     setTimeout(update, 0);
   }

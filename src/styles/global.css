@@ -720,6 +720,15 @@ footer.site {
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  /* The prev/next buttons are the scroll affordance now; the native
+     scrollbar track just doubled up on that. Scrolling itself — drag,
+     touch swipe, keyboard — is untouched, only the drawn track is gone. */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.rail::-webkit-scrollbar,
+.poster-rail::-webkit-scrollbar {
+  display: none;
 }
 .rail > li,
 .poster-rail > li {
@@ -734,8 +743,13 @@ footer.site {
 }
 .carousel-btn {
   position: absolute;
+  /* Set from JS to the height of the row's own thumbnail (face/art), not
+     the full card — a card includes the caption text below the image, and
+     centering across all of that put the arrow noticeably below the
+     thumbnail rather than on it. Falls back to the old full-height span
+     if JS hasn't measured yet. */
   top: 0;
-  bottom: 0.5rem;
+  height: var(--thumb-h, 100%);
   width: 2.25rem;
   border: 0;
   background: linear-gradient(to right, var(--bg) 15%, transparent);
