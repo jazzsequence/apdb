@@ -78,11 +78,6 @@ function formatViews(n: number): string {
   description="An index of actual play TTRPG credits, by person. Every show, every season, every guest spot — including the indie long tail."
 >
   <h1>Actual Play Database</h1>
-  <p class="lede">
-    Existing actual-play indexes are organised by show. This one is organised by
-    <strong>person</strong> — every credit across every show and season, including
-    the one-off guest spots on small indie campaigns that other aggregators drop.
-  </p>
 
   <p class="billing">
     Indexing <strong>{creditCount.toLocaleString()}</strong> credits ·
@@ -143,8 +138,7 @@ function formatViews(n: number): string {
     )
   }
 
-  <h2>Today's picks</h2>
-  <p class="billing">Six shows, chosen by the date. Different tomorrow.</p>
+  <h2>Today's random picks</h2>
   <ul class="poster-rail" id="daily"></ul>
 
   <noscript>
