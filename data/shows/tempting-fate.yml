@@ -9,6 +9,8 @@ links:
 seasons:
   - ordinal: 1
     game: fate-core
+  - ordinal: 2
+    game: lasers-and-feelings
 description: "System per source: Fate (S1) Lasers & Feelings (S2 - current)."
 image:
   url: https://static.wikia.nocookie.net/savingthrowshow/images/d/d6/TemptingFate_logo_300x200.png/revision/latest?cb=20200305064146
