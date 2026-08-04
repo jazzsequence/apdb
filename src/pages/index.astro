@@ -110,11 +110,12 @@ function formatViews(n: number): string {
       <>
         <h2>Trending on YouTube</h2>
         <p class="billing">
-          Ranked by average views on each campaign's most recent episodes — only the{' '}
+          Ranked by views per day since publishing, not raw view count — so an old campaign whose
+          "recent" episodes are actually years old keeps degrading rather than coasting on a big
+          lifetime total, and something people are watching right now can outrank it. Only the{' '}
           {trendingData.eligibleCampaigns} campaigns that link a YouTube playlist can appear here,
           and a campaign missing from this list may simply have no playlist recorded yet, not low
-          viewership. Average, not total, so a long-running campaign is not ranked above a shorter
-          one purely for having more episodes.
+          viewership.
           Snapshot from {new Date(trendingData.generatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}.
         </p>
         <ul class="poster-rail">

@@ -1,115 +1,25 @@
 {
-  "generatedAt": "2026-08-04T14:03:59.554Z",
-  "method": "Average YouTube view count across each campaign's most recent 15 videos (or fewer, on a shorter playlist — campaigns under 3 videos are excluded as too thin to rank fairly). Average, not total, so a long-running campaign is not ranked above a shorter one purely for having more episodes. Recent videos only, not lifetime history, as the closer available proxy for current audience. Limited to campaigns with a YouTube playlist link — a campaign missing from this list may simply have no playlist recorded yet, not low viewership.",
+  "generatedAt": "2026-08-04T14:36:36.100Z",
+  "method": "Ranked by average views-per-day-since-published across each campaign's most recent 15 videos (or fewer, on a shorter playlist — campaigns under 3 videos are excluded as too thin to rank fairly), not raw average views. A video's lifetime view count is divided by its age in days, so old evergreen content keeps degrading the longer it sits, and a campaign whose \"recent\" videos are actually years old (a short, complete series has no newer tail to replace them) no longer outranks a campaign that just posted something people are watching right now. The \"avg views\" figure shown to readers is informational only; ranking is by the per-day rate. Limited to campaigns with a YouTube playlist link — a campaign missing from this list may simply have no playlist recorded yet, not low viewership.",
   "eligibleCampaigns": 181,
   "totalShows": 284,
   "campaigns": [
     {
-      "key": "exandria-unlimited#3",
-      "showId": "exandria-unlimited",
-      "seasonOrdinal": 3,
-      "label": "Exandria Unlimited — Exandria Unlimited: Calamity",
-      "avgViews": 3694750,
-      "sampled": 5
-    },
-    {
-      "key": "critical-role#1",
-      "showId": "critical-role",
-      "seasonOrdinal": 1,
-      "label": "Critical Role — Campaign 1: Vox Machina",
-      "avgViews": 2429550,
-      "sampled": 15
-    },
-    {
-      "key": "baldur-s-gate-3-cast-play-d-d",
-      "showId": "baldur-s-gate-3-cast-play-d-d",
-      "label": "Baldur's Gate 3 Cast Play D&D",
-      "avgViews": 2048467,
-      "sampled": 8
-    },
-    {
-      "key": "critical-role#2",
-      "showId": "critical-role",
+      "key": "dnd-dungeon-masters#2",
+      "showId": "dnd-dungeon-masters",
       "seasonOrdinal": 2,
-      "label": "Critical Role — Campaign 2: The Mighty Nein",
-      "avgViews": 1960103,
-      "sampled": 15
-    },
-    {
-      "key": "celebrid-d",
-      "showId": "celebrid-d",
-      "label": "CelebriD&D",
-      "avgViews": 1521053,
-      "sampled": 6
-    },
-    {
-      "key": "critical-role#3",
-      "showId": "critical-role",
-      "seasonOrdinal": 3,
-      "label": "Critical Role — Campaign 3: Bells Hells",
-      "avgViews": 905762,
-      "sampled": 15
-    },
-    {
-      "key": "exandria-unlimited#5",
-      "showId": "exandria-unlimited",
-      "seasonOrdinal": 5,
-      "label": "Exandria Unlimited — Exandria Unlimited: Divergence",
-      "avgViews": 739343,
+      "label": "Dungeon Masters — Campaign 2: Arcana Unleashed",
+      "avgViews": 519678,
+      "viewsPerDay": 26887,
       "sampled": 4
-    },
-    {
-      "key": "critical-role-specials#6",
-      "showId": "critical-role-specials",
-      "seasonOrdinal": 6,
-      "label": "Critical Role Specials & One-Shots — Wildemount Wildlings (show)",
-      "avgViews": 675624,
-      "sampled": 3
-    },
-    {
-      "key": "starter-kit-d-d-edition",
-      "showId": "starter-kit-d-d-edition",
-      "label": "Starter Kit: D&D Edition",
-      "avgViews": 665630,
-      "sampled": 6
     },
     {
       "key": "critical-role-specials#3",
       "showId": "critical-role-specials",
       "seasonOrdinal": 3,
       "label": "Critical Role Specials & One-Shots — Age of Umbra",
-      "avgViews": 602721,
-      "sampled": 15
-    },
-    {
-      "key": "dnd-dungeon-masters#2",
-      "showId": "dnd-dungeon-masters",
-      "seasonOrdinal": 2,
-      "label": "Dungeon Masters — Campaign 2: Arcana Unleashed",
-      "avgViews": 519670,
-      "sampled": 4
-    },
-    {
-      "key": "dimension-20#10",
-      "showId": "dimension-20",
-      "seasonOrdinal": 10,
-      "label": "Dimension 20 — Fantasy High: Sophomore Year",
-      "avgViews": 485890,
-      "sampled": 15
-    },
-    {
-      "key": "adventures-of-azerim-first-arc-honeywood-adventures",
-      "showId": "adventures-of-azerim-first-arc-honeywood-adventures",
-      "label": "Adventures of Azerim - First arc - 'Honeywood Adventures'",
-      "avgViews": 440486,
-      "sampled": 15
-    },
-    {
-      "key": "legends-of-avantris#9",
-      "showId": "legends-of-avantris",
-      "seasonOrdinal": 9,
-      "label": "Legends of Avantris — Uprooted: Dimwits of the Dimwood",
-      "avgViews": 427579,
+      "avgViews": 602746,
+      "viewsPerDay": 4172,
       "sampled": 15
     },
     {
@@ -117,36 +27,34 @@
       "showId": "dnd-dungeon-masters",
       "seasonOrdinal": 1,
       "label": "Dungeon Masters — Campaign 1: Ravenloft",
-      "avgViews": 342012,
+      "avgViews": 342019,
+      "viewsPerDay": 3997,
       "sampled": 11
     },
     {
-      "key": "legends-of-avantris#5",
-      "showId": "legends-of-avantris",
-      "seasonOrdinal": 5,
-      "label": "Legends of Avantris — Stardust Rhapsody: Overture",
-      "avgViews": 311594,
-      "sampled": 15
+      "key": "exandria-unlimited#3",
+      "showId": "exandria-unlimited",
+      "seasonOrdinal": 3,
+      "label": "Exandria Unlimited — Exandria Unlimited: Calamity",
+      "avgViews": 3694758,
+      "viewsPerDay": 2440,
+      "sampled": 5
     },
     {
-      "key": "titansgrave",
-      "showId": "titansgrave",
-      "label": "Titansgrave",
-      "avgViews": 302980,
-      "sampled": 15
+      "key": "baldur-s-gate-3-cast-play-d-d",
+      "showId": "baldur-s-gate-3-cast-play-d-d",
+      "label": "Baldur's Gate 3 Cast Play D&D",
+      "avgViews": 2048471,
+      "viewsPerDay": 1959,
+      "sampled": 8
     },
     {
-      "key": "adventures-of-azerim-second-arc-the-dead-frost",
-      "showId": "adventures-of-azerim-second-arc-the-dead-frost",
-      "label": "Adventures of Azerim - Second arc - 'The Dead Frost'",
-      "avgViews": 288617,
-      "sampled": 15
-    },
-    {
-      "key": "adventures-of-azerim-third-arc-ewolin",
-      "showId": "adventures-of-azerim-third-arc-ewolin",
-      "label": "Adventures of Azerim - Third arc - 'Ewolin'",
-      "avgViews": 231390,
+      "key": "critical-role#3",
+      "showId": "critical-role",
+      "seasonOrdinal": 3,
+      "label": "Critical Role — Campaign 3: Bells Hells",
+      "avgViews": 905765,
+      "viewsPerDay": 1502,
       "sampled": 15
     },
     {
@@ -154,22 +62,80 @@
       "showId": "legends-of-avantris",
       "seasonOrdinal": 35,
       "label": "Legends of Avantris — Uproot-a-rama",
-      "avgViews": 184436,
+      "avgViews": 184455,
+      "viewsPerDay": 1500,
       "sampled": 6
     },
     {
-      "key": "exandria-unlimited#4",
-      "showId": "exandria-unlimited",
-      "seasonOrdinal": 4,
-      "label": "Exandria Unlimited — Exandria Unlimited Prime",
-      "avgViews": 166871,
-      "sampled": 10
+      "key": "legends-of-avantris#9",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 9,
+      "label": "Legends of Avantris — Uprooted: Dimwits of the Dimwood",
+      "avgViews": 427592,
+      "viewsPerDay": 1439,
+      "sampled": 15
     },
     {
-      "key": "adventures-of-azerim-fourth-arc-no-man-is-an-island",
-      "showId": "adventures-of-azerim-fourth-arc-no-man-is-an-island",
-      "label": "Adventures of Azerim - Fourth arc - 'No Man is an Island'",
-      "avgViews": 159222,
+      "key": "critical-role-specials#6",
+      "showId": "critical-role-specials",
+      "seasonOrdinal": 6,
+      "label": "Critical Role Specials & One-Shots — Wildemount Wildlings (show)",
+      "avgViews": 675624,
+      "viewsPerDay": 1409,
+      "sampled": 3
+    },
+    {
+      "key": "exandria-unlimited#5",
+      "showId": "exandria-unlimited",
+      "seasonOrdinal": 5,
+      "label": "Exandria Unlimited — Exandria Unlimited: Divergence",
+      "avgViews": 739343,
+      "viewsPerDay": 1409,
+      "sampled": 4
+    },
+    {
+      "key": "critical-role#2",
+      "showId": "critical-role",
+      "seasonOrdinal": 2,
+      "label": "Critical Role — Campaign 2: The Mighty Nein",
+      "avgViews": 1960112,
+      "viewsPerDay": 1124,
+      "sampled": 15
+    },
+    {
+      "key": "critical-role#1",
+      "showId": "critical-role",
+      "seasonOrdinal": 1,
+      "label": "Critical Role — Campaign 1: Vox Machina",
+      "avgViews": 2429555,
+      "viewsPerDay": 797,
+      "sampled": 15
+    },
+    {
+      "key": "legends-of-avantris#34",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 34,
+      "label": "Legends of Avantris — Once Upon A Starlight",
+      "avgViews": 62358,
+      "viewsPerDay": 555,
+      "sampled": 11
+    },
+    {
+      "key": "legends-of-avantris#27",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 27,
+      "label": "Legends of Avantris — Stardust Rhapsody: Anthem",
+      "avgViews": 125533,
+      "viewsPerDay": 550,
+      "sampled": 15
+    },
+    {
+      "key": "dimension-20#10",
+      "showId": "dimension-20",
+      "seasonOrdinal": 10,
+      "label": "Dimension 20 — Fantasy High: Sophomore Year",
+      "avgViews": 485891,
+      "viewsPerDay": 497,
       "sampled": 15
     },
     {
@@ -177,15 +143,79 @@
       "showId": "legends-of-avantris",
       "seasonOrdinal": 30,
       "label": "Legends of Avantris — Once Upon a Ghostlight",
-      "avgViews": 151321,
+      "avgViews": 151326,
+      "viewsPerDay": 482,
       "sampled": 10
     },
     {
-      "key": "cyberpunk-red",
-      "showId": "cyberpunk-red",
-      "label": "Cyberpunk Red",
-      "avgViews": 141548,
-      "sampled": 11
+      "key": "legends-of-avantris#3",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 3,
+      "label": "Legends of Avantris — Once Upon a Witchlight",
+      "avgViews": 140473,
+      "viewsPerDay": 475,
+      "sampled": 15
+    },
+    {
+      "key": "legends-of-avantris#37",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 37,
+      "label": "Legends of Avantris — Waltz for Eternity",
+      "avgViews": 49346,
+      "viewsPerDay": 473,
+      "sampled": 7
+    },
+    {
+      "key": "celebrid-d",
+      "showId": "celebrid-d",
+      "label": "CelebriD&D",
+      "avgViews": 1521053,
+      "viewsPerDay": 470,
+      "sampled": 6
+    },
+    {
+      "key": "legends-of-avantris#36",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 36,
+      "label": "Legends of Avantris — Voidbound",
+      "avgViews": 40809,
+      "viewsPerDay": 432,
+      "sampled": 4
+    },
+    {
+      "key": "legends-of-avantris#25",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 25,
+      "label": "Legends of Avantris — 13 Beers at the Local Cheese",
+      "avgViews": 51700,
+      "viewsPerDay": 331,
+      "sampled": 9
+    },
+    {
+      "key": "legends-of-avantris#5",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 5,
+      "label": "Legends of Avantris — Stardust Rhapsody: Overture",
+      "avgViews": 311594,
+      "viewsPerDay": 321,
+      "sampled": 15
+    },
+    {
+      "key": "legends-of-avantris#31",
+      "showId": "legends-of-avantris",
+      "seasonOrdinal": 31,
+      "label": "Legends of Avantris — Dust to Damnation: A Daggerheart Ballad",
+      "avgViews": 84719,
+      "viewsPerDay": 319,
+      "sampled": 6
+    },
+    {
+      "key": "starter-kit-d-d-edition",
+      "showId": "starter-kit-d-d-edition",
+      "label": "Starter Kit: D&D Edition",
+      "avgViews": 665630,
+      "viewsPerDay": 234,
+      "sampled": 6
     }
   ]
 }

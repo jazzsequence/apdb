@@ -35,14 +35,43 @@ const base = import.meta.env.BASE_URL;
     <header class="masthead">
       <div class="wrap">
         <a class="brand" href={base}>Actual Play Database</a>
-        <a href={`${base}people/`}>People</a>
-        <a href={`${base}shows/`}>Shows</a>
-        <a href={`${base}channels/`}>Channels</a>
-        <a href={`${base}search/`}>Search</a>
-        <a href={`${base}random/`}>Surprise me</a>
-        <a href={`${base}submit/`}>Submit</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="nav-links" class="nav-links">
+          <a href={`${base}people/`}>People</a>
+          <a href={`${base}shows/`}>Shows</a>
+          <a href={`${base}channels/`}>Channels</a>
+          <a href={`${base}search/`}>Search</a>
+          <a href={`${base}random/`}>Surprise me</a>
+          <a href={`${base}submit/`}>Submit</a>
+        </nav>
       </div>
     </header>
+
+    <script>
+      const toggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
+      const nav = document.getElementById('nav-links');
+      if (toggle && nav) {
+        const setOpen = (open: boolean) => {
+          nav.classList.toggle('open', open);
+          toggle.setAttribute('aria-expanded', String(open));
+        };
+        toggle.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
+        nav.addEventListener('click', (e) => {
+          if ((e.target as HTMLElement).tagName === 'A') setOpen(false);
+        });
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') setOpen(false);
+        });
+      }
+    </script>
 
     <main class="wrap" data-pagefind-body={indexable ? '' : undefined}>
       <slot />

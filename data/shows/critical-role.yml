@@ -47,6 +47,7 @@ seasons:
     title: "Campaign 3: Bells Hells"
     game: dnd-5e
     started: 2021-10
+    ended: 2025-02
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQydg3QOkBLG9OYqWJ0dwlxF
     image:
@@ -62,6 +63,7 @@ seasons:
   - ordinal: 4
     title: Campaign Four
     game: dnd-5e
+    started: 2025-10
     links:
       website: https://www.youtube.com/playlist?list=PLEYr-o-2Q31GuiEgFrkmzsHuyObHkKddF
     image:

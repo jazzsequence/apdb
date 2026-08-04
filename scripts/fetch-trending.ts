@@ -26,14 +26,32 @@
  * quota for no good reason — the run that tried it exhausted a day's quota
  * partway through.
  *
- * This version fixes both by only ever looking at a campaign's most recent
- * ~15 videos and using the AVERAGE view count across that sample, not the
- * sum. Average removes the video-count bias entirely, and "recent" is a much
- * closer approximation of current audience than a lifetime total anyway —
- * an old campaign's early views from years ago say nothing about whether
- * anyone is watching it now. The API cost per campaign is two calls
- * regardless of how many episodes it has: one `playlistItems` page, one
- * `videos` statistics batch.
+ * v3 fixed both by only ever looking at a campaign's most recent ~15 videos
+ * and using the AVERAGE view count across that sample, not the sum. Average
+ * removes the video-count bias entirely, and "recent" is a much closer
+ * approximation of current audience than a lifetime total anyway — an old
+ * campaign's early views from years ago say nothing about whether anyone is
+ * watching it now.
+ *
+ * v3's flaw showed up the first time it ran against live data: "recent" was
+ * recent *within a campaign's own catalogue*, not recent on the calendar. A
+ * short, complete mini-series has no tail to dilute it — its 15 most recent
+ * videos are its entire run, premiere included — so Exandria Unlimited:
+ * Calamity (5 total videos, all from a heavily-promoted 2022 crossover event)
+ * out-ranked Critical Role Campaign 1's *finale arc*, years-old evergreen
+ * content by any reasonable definition of "trending."
+ *
+ * This version ranks by average VIEWS PER DAY SINCE PUBLISHED instead of raw
+ * average views. A video's lifetime view count no longer counts on its own —
+ * it's divided by how long it's had to accumulate them, so a campaign whose
+ * "recent" videos are actually old keeps degrading the longer they sit, while
+ * a campaign that just posted something genuinely new and being watched right
+ * now scores high regardless of its lifetime total. Very fresh uploads (same
+ * day) have their age floored at one day so an upload from an hour ago with a
+ * few hundred views can't produce an absurd rate. The API cost per campaign
+ * is unchanged at two calls regardless of episode count: one `playlistItems`
+ * page, one `videos` batch (now pulling `snippet.publishedAt` alongside
+ * `statistics`).
  *
  * None of this fixes a campaign having no playlist linked at all, which
  * cannot be ranked no matter the metric — Critical Role's then-current
@@ -98,13 +116,37 @@ async function recentVideoIds(playlistId: string, want: number): Promise<string[
   return all.slice(-want);
 }
 
-/** Average view count across a set of video ids (one batched call). */
-async function averageViews(videoIds: string[]): Promise<{ avg: number; sampled: number }> {
-  if (videoIds.length === 0) return { avg: 0, sampled: 0 };
-  const data = await get('videos', { part: 'statistics', id: videoIds.slice(0, 50).join(',') });
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+/**
+ * Average views, and average views-per-day-since-published, across a set of
+ * video ids (one batched call). The former is shown to readers as a
+ * recognisable number; the latter is what ranking is actually sorted by —
+ * it's what makes a two-day-old video with real momentum outrank a
+ * three-year-old video with a bigger lifetime total sitting in the same
+ * "recent 15" sample.
+ */
+async function averageViews(
+  videoIds: string[],
+): Promise<{ avg: number; avgPerDay: number; sampled: number }> {
+  if (videoIds.length === 0) return { avg: 0, avgPerDay: 0, sampled: 0 };
+  const data = await get('videos', { part: 'statistics,snippet', id: videoIds.slice(0, 50).join(',') });
   const items = data.items ?? [];
-  const total = items.reduce((n: number, v: any) => n + Number(v.statistics?.viewCount ?? 0), 0);
-  return { avg: items.length ? Math.round(total / items.length) : 0, sampled: items.length };
+  const now = Date.now();
+  let totalViews = 0;
+  let totalPerDay = 0;
+  for (const v of items) {
+    const views = Number(v.statistics?.viewCount ?? 0);
+    const publishedAt = v.snippet?.publishedAt ? Date.parse(v.snippet.publishedAt) : NaN;
+    const ageDays = Number.isNaN(publishedAt) ? 1 : Math.max(1, (now - publishedAt) / MS_PER_DAY);
+    totalViews += views;
+    totalPerDay += views / ageDays;
+  }
+  return {
+    avg: items.length ? Math.round(totalViews / items.length) : 0,
+    avgPerDay: items.length ? totalPerDay / items.length : 0,
+    sampled: items.length,
+  };
 }
 
 const playlistId = (url: unknown) => String(url ?? '').match(/[?&]list=([\w-]+)/)?.[1];
@@ -144,7 +186,15 @@ for (const f of showFiles) {
 
 console.log(`\n${targets.length} campaign(s) have a YouTube playlist to sample.\n`);
 
-const ranked: { key: string; showId: string; seasonOrdinal?: number; label: string; avgViews: number; sampled: number }[] = [];
+const ranked: {
+  key: string;
+  showId: string;
+  seasonOrdinal?: number;
+  label: string;
+  avgViews: number;
+  viewsPerDay: number;
+  sampled: number;
+}[] = [];
 for (const t of targets) {
   try {
     const ids = await recentVideoIds(t.playlistId, RECENT_SAMPLE);
@@ -152,24 +202,37 @@ for (const t of targets) {
       console.log(`  – ${t.label.slice(0, 50)} — only ${ids.length} video(s), too thin to rank`);
       continue;
     }
-    const { avg, sampled } = await averageViews(ids);
-    ranked.push({ key: t.key, showId: t.showId, seasonOrdinal: t.seasonOrdinal, label: t.label, avgViews: avg, sampled });
-    console.log(`  ${avg.toLocaleString().padStart(10)} avg  (${sampled} recent videos)  ${t.label}`);
+    const { avg, avgPerDay, sampled } = await averageViews(ids);
+    ranked.push({
+      key: t.key,
+      showId: t.showId,
+      seasonOrdinal: t.seasonOrdinal,
+      label: t.label,
+      avgViews: avg,
+      viewsPerDay: Math.round(avgPerDay),
+      sampled,
+    });
+    console.log(
+      `  ${Math.round(avgPerDay).toLocaleString().padStart(9)}/day  (${avg.toLocaleString()} avg, ${sampled} recent videos)  ${t.label}`,
+    );
   } catch (e) {
     console.log(`  ! ${t.label.slice(0, 50)} — ${(e as Error).message.slice(0, 60)}`);
   }
 }
 
-ranked.sort((a, b) => b.avgViews - a.avgViews);
+ranked.sort((a, b) => b.viewsPerDay - a.viewsPerDay);
 
 const out = {
   generatedAt: new Date().toISOString(),
-  method: `Average YouTube view count across each campaign's most recent ${RECENT_SAMPLE} videos ` +
-    `(or fewer, on a shorter playlist — campaigns under ${MIN_SAMPLE} videos are excluded as too thin ` +
-    'to rank fairly). Average, not total, so a long-running campaign is not ranked above a shorter one ' +
-    'purely for having more episodes. Recent videos only, not lifetime history, as the closer available ' +
-    'proxy for current audience. Limited to campaigns with a YouTube playlist link — a campaign missing ' +
-    'from this list may simply have no playlist recorded yet, not low viewership.',
+  method: `Ranked by average views-per-day-since-published across each campaign's most recent ` +
+    `${RECENT_SAMPLE} videos (or fewer, on a shorter playlist — campaigns under ${MIN_SAMPLE} videos ` +
+    'are excluded as too thin to rank fairly), not raw average views. A video\'s lifetime view count ' +
+    'is divided by its age in days, so old evergreen content keeps degrading the longer it sits, and a ' +
+    'campaign whose "recent" videos are actually years old (a short, complete series has no newer tail ' +
+    'to replace them) no longer outranks a campaign that just posted something people are watching right ' +
+    'now. The "avg views" figure shown to readers is informational only; ranking is by the per-day rate. ' +
+    'Limited to campaigns with a YouTube playlist link — a campaign missing from this list may simply ' +
+    'have no playlist recorded yet, not low viewership.',
   eligibleCampaigns: targets.length,
   totalShows: showFiles.length,
   campaigns: ranked.slice(0, 24),
