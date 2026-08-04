@@ -1,0 +1,20 @@
+id: pena
+canonical_name: Pena
+sort_name: Pena
+aliases:
+  - id: default
+    name: Pena
+    alias_type: handle
+credits:
+  - show: draw-steel-actual-play-the-fall-of-blackbottom
+    season: 1
+    role: player
+    sources:
+      - tier: community
+        url: https://www.youtube.com/playlist?list=PL3sFiRJEF28F1bNm1OVix1yXaDfjNv3wj
+        note: Cast reported by a contributor who had an AI tool read a transcript of the
+          videos, rather than the production's own written cast list — recorded
+          at community tier accordingly, since the description track itself
+          names nobody.
+    character: Wode Elf Elementalist
+    alias: default

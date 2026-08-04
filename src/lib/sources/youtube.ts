@@ -246,6 +246,23 @@ function headedBlock(description: string): YouTubeCredit[] {
         break;
       }
 
+      // "Lindy (Keeper of Arcane Lore): https://twitter.com/…" — the name/
+      // character pair a link trails, rather than sits alone on its own line
+      // as in playersBlock. Stripped and matched before the dash/colon form,
+      // since the parenthetical would otherwise defeat looksLikeName on the
+      // combined "Name (Character)" segment.
+      const noLink = line.replace(/\s*https?:\/\/\S+\s*$/i, '').trim();
+      const paren = noLink.match(/^(.+?)\s*\(([^)]+)\)\s*:?\s*$/);
+      if (paren && looksLikeName(paren[1]!.trim())) {
+        const name = paren[1]!.trim();
+        const character = paren[2]!.trim();
+        const isGmChar = /^(the\s+)?(dungeon master|game master|gamemaster|dm|gm|storyteller|keeper)(\s+of\s+.+)?$/i.test(character);
+        credits.push(
+          isGmChar ? { name, role: 'GM/DM', line } : { name, role: 'player', character, line },
+        );
+        continue;
+      }
+
       // "Angela - Reaper", "Angela as Reaper", "Angela: Reaper"
       const m = line.match(/^(.+?)\s*(?:\s-\s|\s[–—]\s|\sas\s|:)\s*(.+)$/i);
       if (!m) { misses++; continue; }

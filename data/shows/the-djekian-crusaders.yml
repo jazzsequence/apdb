@@ -1,0 +1,25 @@
+id: the-djekian-crusaders
+title: The Djekian Crusaders
+channels:
+  - dregadude
+format: podcast
+status: unknown
+description: '"An original DND 5E podcast DMed and edited by Drega," per its own
+  Apple Podcasts page. Archive.org holds 92 items running from Episode 1 to
+  Episode 78; the party changed over that run, so credits reflect specific
+  episodes rather than one fixed cast.'
+links:
+  website: https://archive.org/details/TdcEp31
+  podcast: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 78
+    started: 2017-07-16
+    ended: 2021-10-02
+image:
+  url: https://archive.org/services/img/TdcEp31
+  licence: CC-BY-NC-4.0
+  attribution: dregadude, CC-BY-NC-4.0. Via the Internet Archive.
+  source: https://archive.org/details/TdcEp31
+  depicts: Cover art for dregadude

@@ -1,21 +1,11 @@
-id: cord
-canonical_name: Cord
-sort_name: Cord
+id: toby
+canonical_name: Toby
+sort_name: Toby
 aliases:
   - id: default
-    name: Cord
+    name: Toby
     alias_type: handle
 credits:
-  - show: tales-from-the-silt-expanse
-    season: 1
-    role: player
-    sources:
-      - tier: official
-        url: https://www.youtube.com/playlist?list=PLQEFidMHP9SDFdobNPx330OLhRyfLzc_c
-        note: Cast listed in the show's own episode descriptions, each with the player's
-          own social link.
-    character: Kronqual
-    alias: default
   - show: journey-to-the-obsidian-spire
     role: player
     sources:
@@ -24,7 +14,7 @@ credits:
         note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
           the Veiled Alliance, EP15: Return to Balic\"."
     season: 1
-    character: Kronqual
+    character: Rysar
     alias: default
   - show: rise-of-the-veiled-alliance-season-1
     role: player
@@ -34,5 +24,5 @@ credits:
         note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
           the Veiled Alliance, EP1: City of Sails\"."
     season: 1
-    character: Kronqual
+    character: Rysar
     alias: default

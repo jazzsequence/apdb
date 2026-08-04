@@ -1,0 +1,19 @@
+id: tom-christy
+canonical_name: Tom Christy
+sort_name: Christy, Tom
+aliases:
+  - id: default
+    name: Tom Christy
+    alias_type: legal
+credits:
+  - show: draw-steel-actual-play-the-fall-of-blackbottom
+    season: 1
+    role: GM/DM
+    sources:
+      - tier: community
+        url: https://www.youtube.com/playlist?list=PL3sFiRJEF28F1bNm1OVix1yXaDfjNv3wj
+        note: Cast reported by a contributor who had an AI tool read a transcript of the
+          videos, rather than the production's own written cast list — recorded
+          at community tier accordingly, since the description track itself
+          names nobody.
+    alias: default

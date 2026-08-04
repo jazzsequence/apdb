@@ -1,0 +1,38 @@
+id: naams
+canonical_name: Naams
+sort_name: Naams
+aliases:
+  - id: default
+    name: Naams
+    alias_type: handle
+credits:
+  - show: d5-gamers
+    season: 3
+    role: player
+    sources:
+      - tier: official
+        url: https://d5gamerspodcast.wordpress.com/2021/02/24/plunder-peril-01-rum-punch/
+        note: Cast listed in the show's own "Featuring" block for this season's first
+          episode.
+    character: BORL
+    alias: default
+  - show: d5-gamers
+    season: 4
+    role: player
+    sources:
+      - tier: official
+        url: https://d5gamerspodcast.wordpress.com/2022/05/20/doomsday-dawn-01-the-lost-star/
+        note: Cast listed in the show's own "Featuring" block for this season's first
+          episode.
+    character: Remy Beaufort
+    alias: default
+  - show: d5-gamers
+    season: 5
+    role: player
+    sources:
+      - tier: official
+        url: https://d5gamerspodcast.wordpress.com/2024/01/15/season-of-ghosts-1-the-summer-that-never-was/
+        note: Cast listed in the show's own "Featuring" block for this season's first
+          episode.
+    character: Gilviss
+    alias: default

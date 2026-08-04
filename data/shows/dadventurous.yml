@@ -3,12 +3,17 @@ title: Dadventurous
 channels:
   - dadventurous
 format: podcast
-status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Dungeons & Dragons. Uploader licence:
-  https://creativecommons.org/licenses/by-nd/4.0/."
+status: ongoing
+description: "\"A Dad & Daughter Dungeons & Dragons Actual Play for all ages,\"
+  per the show's own site — still posting new episodes as of mid-2026. This
+  entry covers only the original campaign, \"Elsewhere\"; the feed also carries
+  at least two more, Bloomhaven (D&D) and Adventure Skeletons: Hazard Play (a
+  different game by Grant Howitt), neither indexed here yet. No performer names
+  given here or found — the show credits its cast only as \"Dad\" and
+  \"daughter.\""
 links:
   website: https://archive.org/details/dadventurous-episode-5-back-to-maps-edge
+  podcast: https://dadventurous.podbean.com/
 seasons:
   - ordinal: 1
     game: dnd-5e

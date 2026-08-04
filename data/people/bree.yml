@@ -16,6 +16,16 @@ credits:
           own social link.
     character: Kita
     alias: default
+  - show: journey-to-the-obsidian-spire
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=xJDZnP3X1h0
+        note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
+          the Veiled Alliance, EP15: Return to Balic\"."
+    season: 1
+    character: Kita
+    alias: default
 wikidata_qid: Q275863
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/e/e6/Bree_-_Voormalig_Augustijnenklooster.jpg

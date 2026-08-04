@@ -28,3 +28,12 @@ credits:
     character: Tank Molarson the Faerie Warrior
     note: The Faint Divinities credit their cast by first name only.
     alias: default
+  - show: journey-to-the-obsidian-spire
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=xJDZnP3X1h0
+        note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
+          the Veiled Alliance, EP15: Return to Balic\"."
+    season: 1
+    alias: default

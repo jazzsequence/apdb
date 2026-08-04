@@ -27,7 +27,8 @@
     "dedupe": "tsx scripts/dedupe-credits.ts",
     "fill:youtube": "tsx scripts/fill-youtube-casts.ts",
     "link:seasons": "tsx scripts/link-seasons.ts",
-    "import:feed": "tsx scripts/import-feed-casts.ts"
+    "import:feed": "tsx scripts/import-feed-casts.ts",
+    "import:archive-casts": "tsx scripts/import-archive-casts.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

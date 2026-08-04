@@ -1,0 +1,52 @@
+id: kerriodos
+canonical_name: Kerriodos
+sort_name: Kerriodos
+aliases:
+  - id: default
+    name: Kerriodos
+    alias_type: handle
+  - id: kerri
+    name: Kerri
+    alias_type: handle
+    note: Shortened form of Kerriodos, used from Doomsday Dawn onward.
+credits:
+  - show: d5-gamers
+    season: 2
+    role: player
+    sources:
+      - tier: official
+        url: https://d5gamerspodcast.wordpress.com/2020/10/02/feast-of-ravenmoor-01-the-missing-tax-collector/
+        note: Cast listed in the show's own "Featuring" block for this season's first
+          episode.
+    character: Silvus
+    alias: default
+  - show: d5-gamers
+    season: 3
+    role: player
+    sources:
+      - tier: official
+        url: https://d5gamerspodcast.wordpress.com/2021/02/24/plunder-peril-01-rum-punch/
+        note: Cast listed in the show's own "Featuring" block for this season's first
+          episode.
+    character: Sharis
+    alias: default
+  - show: d5-gamers
+    season: 4
+    role: player
+    sources:
+      - tier: official
+        url: https://d5gamerspodcast.wordpress.com/2022/05/20/doomsday-dawn-01-the-lost-star/
+        note: Cast listed in the show's own "Featuring" block for this season's first
+          episode.
+    character: Robert "Bobby" Cardei
+    alias: kerri
+  - show: d5-gamers
+    season: 5
+    role: player
+    sources:
+      - tier: official
+        url: https://d5gamerspodcast.wordpress.com/2024/01/15/season-of-ghosts-1-the-summer-that-never-was/
+        note: Cast listed in the show's own "Featuring" block for this season's first
+          episode.
+    character: Hana
+    alias: kerri

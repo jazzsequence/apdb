@@ -1,0 +1,16 @@
+id: jenn
+canonical_name: Jenn
+sort_name: Jenn
+aliases:
+  - id: default
+    name: Jenn
+    alias_type: handle
+credits:
+  - show: diecast
+    role: player
+    sources:
+      - tier: official
+        url: https://archive.org/details/CFDEpisode26
+        note: Cast stated in the item's own description on the Internet Archive.
+    season: 1
+    alias: default

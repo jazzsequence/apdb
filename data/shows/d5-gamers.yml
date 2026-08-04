@@ -5,19 +5,35 @@ channels:
 format: podcast
 status: ongoing
 description: "\"A casual Actual Play TTRPG podcast mainly playing published
-  Paizo adventures for Pathfinder 2e,\" per the show's own site. Doomsday Dawn
-  is one of at least two campaigns run — the site was still posting a second,
-  Season of Ghosts, as of mid-2025 — so this entry's episode count likely
-  undercounts the show's full run."
+  Paizo adventures for Pathfinder 2e,\" per the show's own site."
 links:
   website: https://d5gamerspodcast.wordpress.com/
   podcast: https://open.spotify.com/show/7mbQ2Fg7w5QyCts9uIuZpb
 seasons:
   - ordinal: 1
+    title: Fall of Plaguestone
     game: pathfinder-2e
-    episode_count: 34
-    started: 2020-01-01
-    ended: 2024-01-01
+    episode_count: 15
+    started: 2020-04-23
+  - ordinal: 2
+    title: Feast of Ravenmoor
+    game: pathfinder-2e
+    started: 2020-10-02
+  - ordinal: 3
+    title: Plunder & Peril
+    game: pathfinder-2e
+    started: 2021-02-24
+  - ordinal: 4
+    title: Doomsday Dawn
+    game: pathfinder-2e
+    started: 2022-05-20
+    ended: 2025-08-16
+    description: Seven chapters; the four recurring players take new characters each
+      chapter, with the original party returning for chapters 4 and 7.
+  - ordinal: 5
+    title: Season of Ghosts
+    game: pathfinder-2e
+    started: 2024-01-15
 image:
   url: https://archive.org/services/img/DoomsdayDawn2
   licence: fair use

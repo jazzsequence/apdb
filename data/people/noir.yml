@@ -14,3 +14,13 @@ credits:
       - tier: reference
         url: https://darringtonpress.com/community-spotlight-bitten-a-fantasy-zombie-actual-play/
         note: Cast per Darrington Press and the show's own listing. Credited by handle.
+  - show: degrees-of-madness
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=5cRfG0K-88w
+        note: "Cast stated in the show's own description for \"(Call of Cthulhu) Degrees
+          of Madness, EP1: Getting Orientated\"."
+    season: 1
+    character: Rupert
+    alias: default

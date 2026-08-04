@@ -1,0 +1,18 @@
+id: valergain
+canonical_name: Valergain
+sort_name: Valergain
+aliases:
+  - id: default
+    name: Valergain
+    alias_type: handle
+credits:
+  - show: d5-gamers
+    season: 5
+    role: player
+    sources:
+      - tier: official
+        url: https://d5gamerspodcast.wordpress.com/2024/01/15/season-of-ghosts-1-the-summer-that-never-was/
+        note: Cast listed in the show's own "Featuring" block for this season's first
+          episode.
+    character: Lee Si-Tzin
+    alias: default

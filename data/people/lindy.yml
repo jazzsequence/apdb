@@ -1,0 +1,17 @@
+id: lindy
+canonical_name: Lindy
+sort_name: Lindy
+aliases:
+  - id: default
+    name: Lindy
+    alias_type: handle
+credits:
+  - show: degrees-of-madness
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=5cRfG0K-88w
+        note: "Cast stated in the show's own description for \"(Call of Cthulhu) Degrees
+          of Madness, EP1: Getting Orientated\"."
+    season: 1
+    alias: default
