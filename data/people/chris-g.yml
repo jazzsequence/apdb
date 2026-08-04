@@ -1,0 +1,18 @@
+id: chris-g
+canonical_name: Chris G
+sort_name: Chris G
+bio: Happy Jacks RPG Network cast member, credited by first name or handle.
+aliases:
+  - id: default
+    name: Chris G
+    alias_type: handle
+credits:
+  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
+    season: 5
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/rainbow/
+        note: "RR2020-05: Great American Novel cast, per the network's Rainbow
+          Railroading 2020 episode listing."

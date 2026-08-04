@@ -7,6 +7,24 @@ aliases:
     name: Mac
     alias_type: handle
 credits:
+  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/rainbow/
+        note: "RR2020-02: Girl Underground cast, per the network's Rainbow Railroading
+          2020 episode listing."
+  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/rainbow/
+        note: "RR2020-05: Great American Novel cast, per the network's Rainbow
+          Railroading 2020 episode listing."
   - show: carefree-high
     season: 1
     role: GM/DM

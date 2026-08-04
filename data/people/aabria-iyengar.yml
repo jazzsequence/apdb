@@ -23,6 +23,15 @@ aliases:
     active_to: "2020"
     note: Birth name.
 credits:
+  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
+    season: 6
+    role: GM/DM
+    alias: iyengar
+    sources:
+      - tier: official
+        url: https://happyjacks.org/rainbow/
+        note: "RR2020-06: Kids on Bikes cast, per the network's Rainbow Railroading
+          2020 episode listing."
   - show: wildcards-east-texas-university
     season: 1
     episode: "S1E?: The Seekers"

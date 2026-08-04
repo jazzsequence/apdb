@@ -6,6 +6,15 @@ aliases:
     name: Jim
     alias_type: handle
 credits:
+  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/rainbow/
+        note: "RR2020-04: Mongoose Traveller cast, per the network's Rainbow
+          Railroading 2020 episode listing."
   - show: the-kintsugi-chronicles
     season: 1
     role: player
