@@ -16,6 +16,16 @@ seasons:
     ended: 2017-10
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQz7D0l_eLJGAISVtcL7oRu_
+    image:
+      url: https://media.themoviedb.org/t/p/w780/rOmurJaJFdKJFE74Lk5dz5LTgcT.jpg
+      licence: fair use
+      attribution: Critical Role Campaign 1 poster art, © its producers. Via TMDB.
+      source: https://www.themoviedb.org/tv/254002-critical-role/seasons
+      depicts: "Poster art for Campaign 1: Vox Machina"
+      rationale: Low-resolution poster used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 2
     title: "Campaign 2: The Mighty Nein"
     game: dnd-5e
@@ -23,14 +33,44 @@ seasons:
     ended: 2021-06
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxD0jjAE7PsWoaCrs0EkBH2
+    image:
+      url: https://media.themoviedb.org/t/p/w780/hqmkPlDuNVBR1LFoGl7QUmyaY9Y.jpg
+      licence: fair use
+      attribution: Critical Role Campaign 2 poster art, © its producers. Via TMDB.
+      source: https://www.themoviedb.org/tv/254002-critical-role/seasons
+      depicts: "Poster art for Campaign 2: The Mighty Nein"
+      rationale: Low-resolution poster used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 3
     title: "Campaign 3: Bells Hells"
     game: dnd-5e
     started: 2021-10
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQydg3QOkBLG9OYqWJ0dwlxF
+    image:
+      url: https://media.themoviedb.org/t/p/w780/2BAZcAvY0505MQsqldzO9a1JxPB.jpg
+      licence: fair use
+      attribution: Critical Role Campaign 3 poster art, © its producers. Via TMDB.
+      source: https://www.themoviedb.org/tv/254002-critical-role/seasons
+      depicts: "Poster art for Campaign 3: Bells Hells"
+      rationale: Low-resolution poster used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 4
     title: Campaign Four
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PLEYr-o-2Q31GuiEgFrkmzsHuyObHkKddF
+    image:
+      url: https://media.themoviedb.org/t/p/w780/qjdCuWaOUtILfRrPbHD9qLPkpes.jpg
+      licence: fair use
+      attribution: Critical Role Campaign 4 poster art, © its producers. Via TMDB.
+      source: https://www.themoviedb.org/tv/254002-critical-role/seasons
+      depicts: Poster art for Campaign Four
+      rationale: Low-resolution poster used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.

@@ -41,6 +41,7 @@ const ordered = [...cast].sort((a, b) => {
   return r !== 0 ? r : a.person.sort_name.localeCompare(b.person.sort_name);
 });
 const dates = [season.started, season.ended].filter(Boolean).join(' – ');
+const image = season.image ?? show.image;
 ---
 
 <Base
@@ -51,7 +52,24 @@ const dates = [season.started, season.ended].filter(Boolean).join(' – ');
   <p class="billing">
     <a href={`${base}shows/${show.id}/`}>{show.title}</a> · season {season.ordinal}
   </p>
-  <h1>{season.title ?? `Season ${season.ordinal}`}</h1>
+
+  <div class="portrait-row">
+    {image && (
+      <figure class="keyart">
+        <img
+          src={image.url}
+          alt={image.depicts ?? season.title ?? show.title}
+          loading="lazy"
+          referrerpolicy="no-referrer"
+        />
+        <figcaption>
+          {image.attribution}{' '}
+          <a href={image.source} rel="nofollow noopener">source</a>
+        </figcaption>
+      </figure>
+    )}
+    <div>
+      <h1>{season.title ?? `Season ${season.ordinal}`}</h1>
 
   <p class="billing">
     {channels.map((c) => c.name).join(', ')}
@@ -60,15 +78,17 @@ const dates = [season.started, season.ended].filter(Boolean).join(' – ');
     {season.episode_count && <> · {season.episode_count} episodes</>}
   </p>
 
-  <WatchLinks
-    links={seasonLinks ?? show.links}
-    emptyNote="No link recorded for this season — a correction with one would be welcome."
-  />
-  {!seasonLinks && (
-    <p class="billing">
-      That link covers the whole of {show.title}, not this season on its own.
-    </p>
-  )}
+      <WatchLinks
+        links={seasonLinks ?? show.links}
+        emptyNote="No link recorded for this season — a correction with one would be welcome."
+      />
+      {!seasonLinks && (
+        <p class="billing">
+          That link covers the whole of {show.title}, not this season on its own.
+        </p>
+      )}
+    </div>
+  </div>
 
   {season.description && <p class="lede">{season.description}</p>}
 

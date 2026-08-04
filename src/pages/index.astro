@@ -58,7 +58,7 @@ const trending = trendingData.campaigns
     return {
       href: season ? `${base}shows/${show.id}/${season.ordinal}/` : `${base}shows/${show.id}/`,
       label: t.label,
-      image: show.image?.url ?? null,
+      image: season?.image?.url ?? show.image?.url ?? null,
       by: db.channelsFor(show).map((c) => c.name).join(', '),
       avgViews: t.avgViews,
     };

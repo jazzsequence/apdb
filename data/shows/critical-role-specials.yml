@@ -15,48 +15,129 @@ seasons:
   - ordinal: 1
     title: UnDeadwood
     game: deadlands
+    image:
+      url: https://static.wikia.nocookie.net/criticalrole/images/d/d0/UnDeadwood.jpg/revision/latest/scale-to-width-down/400?cb=20191028110052
+      licence: fair use
+      attribution: UnDeadwood key art, © its producers. Via criticalrole.fandom.com.
+      source: https://criticalrole.fandom.com/wiki/File:UnDeadwood.jpg
+      depicts: Key art for UnDeadwood
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 2
     title: Downfall
     game: dnd-5e
+    image:
+      url: https://critrole.com/wp-content/uploads/2024/08/C3_thumbnail_E99-1024x576.jpg
+      licence: fair use
+      attribution: Critical Role — Downfall key art, © its producers. Via critrole.com.
+      source: https://critrole.com/qtvideo/downfall-part-one-critical-role-campaign-3-episode-99/
+      depicts: Key art for Downfall
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 3
     title: Age of Umbra
     game: daggerheart
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQyLAwOfoBe6HjYZMnQbXNaZ
+    image:
+      url: https://critrole.com/wp-content/uploads/2025/06/age_of_umbra_trailer_thumbnails_A-1024x576.jpg
+      licence: fair use
+      attribution: Age of Umbra key art, © its producers. Via critrole.com.
+      source: https://critrole.com/age-of-umbra/
+      depicts: Key art for Age of Umbra
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 4
     title: "Age of Umbra: Sallowlands"
     game: daggerheart
+    image:
+      url: https://critrole.com/wp-content/uploads/2026/06/AOU_SALLOWLANDS_key-art_names_1920x1080-1-1024x576.jpg
+      licence: fair use
+      attribution: "Age of Umbra: Sallowlands key art, © its producers. Via
+        critrole.com."
+      source: https://critrole.com/umbra/
+      depicts: "Key art for Age of Umbra: Sallowlands"
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 5
     title: The Re-Slayer's Take
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxu60_aupDdql1RZnzposNI
+    image:
+      url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/3a/f2/a3/3af2a36a-da2b-5ded-8df2-11002005c61d/mza_13268299256014514214.jpeg/600x600bb.jpg
+      licence: fair use
+      attribution: The Re-Slayer's Take cover art, © its producers. Via Apple
+        Podcasts.
+      source: https://podcasts.apple.com/us/podcast/the-re-slayers-take/id1746366965
+      depicts: Cover art for The Re-Slayer's Take
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 6
     title: Wildemount Wildlings (show)
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQzuF3CgHvlsXevad_i4NwrQ
+    image:
+      url: https://critrole.com/wp-content/uploads/2025/03/NEW-wildemount_wildlings_key_art_16X9-1024x576.jpg
+      licence: fair use
+      attribution: Wildemount Wildlings key art, © its producers. Via critrole.com.
+      source: https://critrole.com/wildemount-wildlings/
+      depicts: Key art for Wildemount Wildlings
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 7
     title: Thresher
     game: illuminated-worlds
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxxFfPnoUlhkSDXdvZq82Zl
+    image:
+      url: https://critrole.com/wp-content/uploads/2025/04/chicago_break_card_thresher_teaser_no_copy-1024x576.jpg
+      licence: fair use
+      attribution: Thresher key art, © its producers. Via critrole.com.
+      source: https://critrole.com/thresher/
+      depicts: Key art for Thresher
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 8
     title: Moonward
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQyc1EIjrUxdFaIlXq7QqVnV
+    image:
+      url: https://critrole.com/wp-content/uploads/2024/08/moonward_teaser_thumbnail_firstlook-1-1024x576.jpg
+      licence: fair use
+      attribution: Moonward key art by Lyadrielle, © its producers. Via critrole.com.
+      source: https://critrole.com/qtvideo/moonward-official-trailer/
+      depicts: Key art for Moonward
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 9
     title: Unend
     game: dnd-5e
-image:
-  url: https://static.wikia.nocookie.net/criticalrole/images/d/d0/UnDeadwood.jpg/revision/latest/scale-to-width-down/400?cb=20191028110052
-  licence: fair use
-  attribution: Critical Role Specials & One-Shots key art, © its producers. Via
-    criticalrole.fandom.com.
-  source: https://criticalrole.fandom.com/wiki/File:UnDeadwood.jpg
-  depicts: Key art for UnDeadwood
-  rationale: Low-resolution thumbnail used solely to identify the show in an index
-    of its credits. Non-commercial, does not substitute for the original, and
-    links back to the source. Removed on request by the rights holder — see
-    POLICY.md.
+    image:
+      url: https://critrole.com/wp-content/uploads/2024/10/UNEND_trailer_thumbnail_rev2-1024x576.jpg
+      licence: fair use
+      attribution: Unend key art, © its producers. Via critrole.com.
+      source: https://critrole.com/qtvideo/unend-official-series-trailer/
+      depicts: Key art for Unend
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.

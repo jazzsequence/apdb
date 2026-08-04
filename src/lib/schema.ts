@@ -256,6 +256,18 @@ export const Season = z
      * Blades in the Dark all lost theirs that way and have been recovered.
      */
     links: Links.optional(),
+    /**
+     * Art for *this season*, when it has its own distinct art.
+     *
+     * `Season` had no image field at all, so every season of a multi-season
+     * show fell back to the show's single `image` — or nothing, if the show
+     * had none. That made a show like Critical Role, which has no show-level
+     * image, render blank for every campaign, and made a one-shot anthology
+     * like Critical Role Specials render every unrelated one-shot under
+     * whichever season happened to own the show's single image (Age of Umbra
+     * and Wildemount Wildlings were both stuck showing UnDeadwood's art).
+     */
+    image: Image.optional(),
   })
   .strict();
 
