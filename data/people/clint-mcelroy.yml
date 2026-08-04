@@ -162,6 +162,25 @@ credits:
           theadventurezone.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: the-adventure-zone
+    season: 15
+    role: player
+    character: Emerich Dreadway
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Campaign_7%3A_Steeplechase
+        note: "Campaign 7: Steeplechase cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+  - show: the-adventure-zone
+    season: 16
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Campaign_8%3A_Outre_Space
+        note: "Campaign 8: Outre Space cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA."
+  - show: the-adventure-zone
     season: 17
     role: player
     alias: default

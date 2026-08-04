@@ -7,6 +7,15 @@ aliases:
     name: Amy Vorpahl
     alias_type: legal
 credits:
+  - show: dimension-20
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Escape_from_the_Bloodkeep
+        note: Escape from the Bloodkeep cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
   - show: the-lost-brigade
     season: 1
     role: player
