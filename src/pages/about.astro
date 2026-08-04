@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="About & methodology — Actual Play Database"
+  description="How credits are sourced, tiered, and corroborated on the Actual Play Database."
+>
+  <h1>About & methodology</h1>
+  <p class="lede">
+    Community-curated. Every entry is a file in git; every correction is a
+    pull request.
+  </p>
+
+  <h2>Source tiers</h2>
+  <p>
+    Every credit is tagged with its source tier, ranked by how close the
+    source was to the thing happening:
+    <span class="tag tier tier--strong">official</span>
+    <span class="tag tier tier--strong">recording</span>
+    <span class="tag tier tier--strong">participant</span>
+    <span class="tag tier tier--medium">saw it firsthand</span>
+    <span class="tag tier tier--medium">reference work</span>
+    <span class="tag tier tier--medium">community</span>.
+  </p>
+
+  <h2>Corroboration</h2>
+  <p>
+    A credit shows <span class="tag tag--corroborated">corroborated</span>
+    once two independent sources agree, and
+    <span class="tag tag--flag">single source</span> until then — a second
+    person who watched the same episode is enough, no publisher required.
+    Where nobody established which name was on the billing, we say so
+    rather than guess.
+  </p>
+  <p>
+    Someone who watched the episode outranks a published summary of it —
+    they were closer to the fact. Unlike Wikipedia, we admit unpublished
+    firsthand accounts, because for much of the indie long tail a listener
+    is the only source that will ever exist. Whether a stranger can go and
+    check is a separate question, marked
+    <span class="tag tag--flag">uncorroborated</span>.
+  </p>
+</Base>
