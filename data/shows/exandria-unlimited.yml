@@ -22,6 +22,17 @@ seasons:
     episode_count: 2
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQwgI-BPd0nujKfVkCag3xFf
+    image:
+      url: https://critrole.com/wp-content/uploads/2022/04/EXU_thumb_ep1_rev2-1024x576.jpg
+      licence: fair use
+      attribution: "Exandria Unlimited: Kymal key art, © its producers. Via
+        critrole.com."
+      source: https://critrole.com/qtvideo/exandria-unlimited-kymal-part-1/
+      depicts: "Key art for Exandria Unlimited: Kymal"
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 3
     title: "Exandria Unlimited: Calamity"
     game: dnd-5e
@@ -30,6 +41,17 @@ seasons:
     episode_count: 4
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQwzhdskYekmjr0h2tsbKaZw
+    image:
+      url: https://critrole.com/wp-content/uploads/2022/07/EXU_CALAMITY_WU_Schmidt_B00034020-1024x576.jpg
+      licence: fair use
+      attribution: "Exandria Unlimited: Calamity key art, © its producers. Via
+        critrole.com."
+      source: https://critrole.com/exandria-unlimited-calamity/
+      depicts: "Key art for Exandria Unlimited: Calamity"
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 4
     title: Exandria Unlimited Prime
     game: dnd-5e
@@ -40,11 +62,22 @@ seasons:
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQw_Q6CICX-9Rmoj2-OOvgPF
+    image:
+      url: https://critrole.com/wp-content/uploads/2025/02/WR_EXU_divergence_thumbnail_ep2-1024x576.jpg
+      licence: fair use
+      attribution: "Exandria Unlimited: Divergence key art, © its producers. Via
+        critrole.com."
+      source: https://critrole.com/how-to-catch-up/
+      depicts: "Key art for Exandria Unlimited: Divergence"
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
 image:
-  url: https://static.wikia.nocookie.net/criticalrole/images/d/d1/ExuLogo.png/revision/latest/scale-to-width-down/400?cb=20210625202520
+  url: https://critrole.com/wp-content/uploads/2026/01/EXU_1920_1080-1024x576.jpg
   licence: fair use
-  attribution: Exandria Unlimited key art, © its producers. Via criticalrole.fandom.com.
-  source: https://criticalrole.fandom.com/wiki/File:ExuLogo.png
+  attribution: Exandria Unlimited key art, © its producers. Via critrole.com.
+  source: https://critrole.com/exandria-unlimited/
   depicts: Key art for Exandria Unlimited
   rationale: Low-resolution thumbnail used solely to identify the show in an index
     of its credits. Non-commercial, does not substitute for the original, and

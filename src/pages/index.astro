@@ -107,8 +107,8 @@ function formatViews(n: number): string {
 
   {
     trending.length > 0 && (
-      <>
-        <h2>Trending on YouTube</h2>
+      <details class="disclosure">
+        <summary><h2>Trending on YouTube</h2></summary>
         <p class="billing">
           Ranked by views per day since publishing, not raw view count — so an old campaign whose
           "recent" episodes are actually years old keeps degrading rather than coasting on a big
@@ -135,7 +135,7 @@ function formatViews(n: number): string {
             </li>
           ))}
         </ul>
-      </>
+      </details>
     )
   }
 

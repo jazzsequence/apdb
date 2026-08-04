@@ -14,11 +14,33 @@ seasons:
     episode_count: 5
     links:
       website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYqr4_6btWrlIz9A45UtJ5iY
+    image:
+      url: https://i.ytimg.com/vi/mY9w7n84PmM/hqdefault.jpg
+      licence: fair use
+      attribution: "Dungeon Masters — Campaign 1: Ravenloft thumbnail, © its
+        producers. Via YouTube."
+      source: https://www.youtube.com/playlist?list=PLfS8QgUdeGYqr4_6btWrlIz9A45UtJ5iY
+      depicts: "Thumbnail for Campaign 1: Ravenloft"
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 2
     title: "Campaign 2: Arcana Unleashed"
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYoGNLPpxNJkWpW3ksllG4Yz
+    image:
+      url: https://i.ytimg.com/vi/6Hd8UYfmpsY/hqdefault.jpg
+      licence: fair use
+      attribution: "Dungeon Masters — Campaign 2: Arcana Unleashed thumbnail, © its
+        producers. Via YouTube."
+      source: https://www.youtube.com/playlist?list=PLfS8QgUdeGYoGNLPpxNJkWpW3ksllG4Yz
+      depicts: "Thumbnail for Campaign 2: Arcana Unleashed"
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
 image:
   url: https://i.ytimg.com/vi/mY9w7n84PmM/hqdefault.jpg
   licence: fair use

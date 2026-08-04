@@ -191,6 +191,31 @@ h2::before {
   background: var(--accent);
   border-radius: 2px;
 }
+
+/* A section collapsed by default — Trending on YouTube — opened only when
+   asked for, rather than always taking up homepage space. Native <details>
+   so it works without JS and gets free keyboard/screen-reader support. */
+.disclosure > summary {
+  cursor: pointer;
+  list-style: none;
+}
+.disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+.disclosure > summary h2 {
+  display: inline-flex;
+}
+.disclosure > summary::after {
+  content: '▸';
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: var(--muted);
+  font-size: var(--step--1);
+  transition: transform 0.15s ease;
+}
+.disclosure[open] > summary::after {
+  transform: rotate(90deg);
+}
 h3 {
   font-family: var(--display);
   font-weight: 700;
@@ -483,6 +508,12 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  /* Without this, a flex item's automatic minimum size is its content size —
+     for a <select> with long option text, or an <input> wired to a huge
+     <datalist> (729 people, on the submit form), that content-based floor
+     can exceed the available width and the item refuses to shrink below it,
+     overflowing its container instead of wrapping or scrolling internally. */
+  min-width: 0;
 }
 .facets select,
 .facets input {
@@ -493,7 +524,10 @@ h3 {
   border-radius: 4px;
   background: var(--bg);
   color: var(--ink);
+  width: 100%;
   min-width: 11rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .facet-count {
   color: var(--muted);

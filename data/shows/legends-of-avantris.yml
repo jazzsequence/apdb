@@ -7,12 +7,35 @@ channels:
   - avantris
 links:
   website: https://avantris.fandom.com
+image:
+  url: https://yt3.ggpht.com/37CN2axXDcDSK36VW7zUDFm0DjYkIxgOSplGFtI-U9bV1r73AqTi9I8VdsYWSD347yuYnRDrkZY=s800-c-k-c0x00ffffff-no-rj
+  licence: fair use
+  attribution: Legends of Avantris channel logo, © Avantris Entertainment. Via
+    YouTube.
+  source: https://www.youtube.com/legendsofavantris
+  depicts: Legends of Avantris channel logo
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits, as a fallback for the 39 of 41 seasons without their own
+    season-specific art. Non-commercial, does not substitute for the original,
+    and links back to the source. Removed on request by the rights holder —
+    see POLICY.md.
 seasons:
   - ordinal: 1
     title: Curse of Strahdanya
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PLZsrxxME7K30aQywpsS0rdSORFDn4qmYm
+    image:
+      url: https://static.wikia.nocookie.net/avantris/images/f/f3/Strahd_Wallpaper.png/revision/latest/scale-to-width-down/400?cb=20220321031416
+      licence: fair use
+      attribution: Curse of Strahdanya key art, © its producers. Via
+        avantris.fandom.com.
+      source: https://avantris.fandom.com/wiki/File:Strahd_Wallpaper.png
+      depicts: Key art for Curse of Strahdanya
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 2
     title: Prime
     game: dnd-5e
@@ -51,6 +74,17 @@ seasons:
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PLZsrxxME7K30kdPlHpCT50TPJY2Lc_KGd
+    image:
+      url: https://i.ytimg.com/vi/hiQ-LzfBPiE/hqdefault.jpg
+      licence: fair use
+      attribution: "Uprooted: Dimwits of the Dimwood thumbnail, © its producers.
+        Via YouTube."
+      source: https://www.youtube.com/playlist?list=PLZsrxxME7K30kdPlHpCT50TPJY2Lc_KGd
+      depicts: "Thumbnail for Uprooted: Dimwits of the Dimwood"
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 10
     title: Shroud Over Saltmarsh
     game: dnd-5e
@@ -143,6 +177,16 @@ seasons:
     game: dnd-5e
     links:
       website: https://www.youtube.com/playlist?list=PLZsrxxME7K317G6GSbNXcNMablLAsjRv4
+    image:
+      url: https://i.ytimg.com/vi/VaVlCoDHt88/hqdefault.jpg
+      licence: fair use
+      attribution: Uproot-a-rama thumbnail, © its producers. Via YouTube.
+      source: https://www.youtube.com/playlist?list=PLZsrxxME7K317G6GSbNXcNMablLAsjRv4
+      depicts: Thumbnail for Uproot-a-rama
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
   - ordinal: 36
     title: Voidbound
     game: dnd-5e
@@ -165,13 +209,3 @@ seasons:
   - ordinal: 41
     title: Blank Slate
     game: dnd-5e
-image:
-  url: https://static.wikia.nocookie.net/avantris/images/f/f3/Strahd_Wallpaper.png/revision/latest/scale-to-width-down/400?cb=20220321031416
-  licence: fair use
-  attribution: Legends of Avantris key art, © its producers. Via avantris.fandom.com.
-  source: https://avantris.fandom.com/wiki/File:Strahd_Wallpaper.png
-  depicts: Key art for Curse of Strahdanya
-  rationale: Low-resolution thumbnail used solely to identify the show in an index
-    of its credits. Non-commercial, does not substitute for the original, and
-    links back to the source. Removed on request by the rights holder — see
-    POLICY.md.
