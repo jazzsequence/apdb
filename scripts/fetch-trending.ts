@@ -1,44 +1,55 @@
 #!/usr/bin/env tsx
 /**
- * Rank campaigns by YouTube view count and write a snapshot for the home page.
+ * Rank campaigns by recent YouTube performance and write a snapshot for the
+ * home page.
  *
  *   YOUTUBE_API_KEY=… npm run fetch:trending
  *
  * "Trending" is honestly a stretch: the public Data API exposes lifetime view
  * counts per video, not view velocity or a real trend signal, and analytics
- * for that would need each channel's own dashboard. What is measurable — total
- * views across a playlist — is what this computes, and the home page names it
- * accordingly rather than implying something the data cannot support.
+ * for that would need each channel's own dashboard. What follows is the
+ * closest honest approximation available without that access, and it went
+ * through two designs that were each wrong in their own way before this one.
  *
- * Two bugs shaped the first version of this, both found by the numbers not
- * making sense: Adventures of Azerim was outranking Critical Role and
- * Dimension 20 by a wide margin, which nobody who follows this space would
- * believe. The cause was structural, not a close call:
+ * v1 summed every video in one arbitrarily-chosen playlist per show, capped
+ * at 100 videos. That hid Critical Role (3 playlists) and Dimension 20 (29,
+ * one per season) almost entirely: only whichever playlist was found first
+ * ever got counted, so a show with one small playlist had its whole
+ * catalogue read while a show spread across dozens had a sliver of it read
+ * and the rest silently dropped.
  *
- *   1. Only one playlist was read per show, picked arbitrarily as the first
- *      link found. Critical Role has 3 playlists on record and Dimension 20
- *      has 29 — one per season — and only one of them, whichever happened to
- *      be first, was ever counted. A show with a single small playlist (Viva
- *      La Dirt League's Azerim) had its whole total captured; a show whose
- *      catalogue is spread across dozens of playlists had a few percent of
- *      it counted and the rest silently dropped.
- *   2. Each playlist was capped at its first 100 videos. Campaigns that run
- *      to hundreds of episodes were truncated before the cap even mattered.
+ * v2 fixed the coverage problem — rank campaigns, sum every playlist a
+ * season or show actually links — but that surfaced a worse problem: raw
+ * SUM rewards video count over popularity. A campaign with 400 episodes at
+ * 50K views each would outrank one with 10 episodes at 2M views each, which
+ * is backwards, and fully paginating hundreds of videos per campaign burns
+ * quota for no good reason — the run that tried it exhausted a day's quota
+ * partway through.
  *
- * Fixed by ranking at the level the request actually asked for — campaigns,
- * not shows — and by summing every video in every playlist a season or show
- * holds, fully paginated. A season with its own playlist becomes its own
- * entry; a show without per-season playlists still ranks as a whole. Either
- * way, everything the season or show links is now counted, not a sample of
- * whichever playlist loaded first.
+ * This version fixes both by only ever looking at a campaign's most recent
+ * ~15 videos and using the AVERAGE view count across that sample, not the
+ * sum. Average removes the video-count bias entirely, and "recent" is a much
+ * closer approximation of current audience than a lifetime total anyway —
+ * an old campaign's early views from years ago say nothing about whether
+ * anyone is watching it now. The API cost per campaign is two calls
+ * regardless of how many episodes it has: one `playlistItems` page, one
+ * `videos` statistics batch.
  *
- * Only campaigns with at least one YouTube playlist link are eligible.
+ * None of this fixes a campaign having no playlist linked at all, which
+ * cannot be ranked no matter the metric — Critical Role's then-current
+ * Campaign Four and Dimension 20's Fantasy High: Sophomore Year were both
+ * missing their link entirely until a separate pass added them. A campaign
+ * absent from this list is worth checking for that before assuming it lost
+ * on the numbers.
  */
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parse } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { MissingKeyError } from '../src/lib/sources/youtube.js';
+
+const RECENT_SAMPLE = 15;
+const MIN_SAMPLE = 3;   // a campaign with fewer videos than this is too thin to rank fairly
 
 const API = 'https://www.googleapis.com/youtube/v3';
 function key(): string {
@@ -53,10 +64,19 @@ async function get(path: string, params: Record<string, string>): Promise<any> {
   return r.json();
 }
 
-/** Every video id in a playlist, paginated to completion — no sampling cap. */
-async function playlistVideoIds(playlistId: string): Promise<string[]> {
-  const ids: string[] = [];
+/**
+ * The most recent videos in a playlist. `playlistItems` lists in playlist
+ * order, which for an actual play is almost always upload order — oldest
+ * first — so this reads from the end rather than the start. One call gets
+ * the last page's token cheaply via the playlist's item count; simpler and
+ * just as cheap is to walk forward but stop as soon as enough are collected
+ * from the point where fewer than RECENT_SAMPLE remain. In practice a single
+ * page (up to 50) is enough to find the tail without walking the whole list.
+ */
+async function recentVideoIds(playlistId: string, want: number): Promise<string[]> {
+  const all: string[] = [];
   let pageToken: string | undefined;
+  let pages = 0;
   do {
     const data = await get('playlistItems', {
       part: 'contentDetails',
@@ -66,22 +86,25 @@ async function playlistVideoIds(playlistId: string): Promise<string[]> {
     });
     for (const item of data.items ?? []) {
       const id = item.contentDetails?.videoId;
-      if (id) ids.push(id);
+      if (id) all.push(id);
     }
     pageToken = data.nextPageToken;
-  } while (pageToken);
-  return ids;
+    pages++;
+    // Stop once there cannot possibly be more than `want` videos left to see
+    // — i.e. once this page came back under-full (the last page) — rather
+    // than reading a long-running show's entire history to reach the end.
+    if ((data.items ?? []).length < 50) break;
+  } while (pageToken && pages < 20);   // hard stop: never read more than ~1000 ids
+  return all.slice(-want);
 }
 
-/** Total view count across a set of video ids, batched 50 at a time. */
-async function totalViews(videoIds: string[]): Promise<number> {
-  let total = 0;
-  for (let i = 0; i < videoIds.length; i += 50) {
-    const batch = videoIds.slice(i, i + 50);
-    const data = await get('videos', { part: 'statistics', id: batch.join(',') });
-    for (const v of data.items ?? []) total += Number(v.statistics?.viewCount ?? 0);
-  }
-  return total;
+/** Average view count across a set of video ids (one batched call). */
+async function averageViews(videoIds: string[]): Promise<{ avg: number; sampled: number }> {
+  if (videoIds.length === 0) return { avg: 0, sampled: 0 };
+  const data = await get('videos', { part: 'statistics', id: videoIds.slice(0, 50).join(',') });
+  const items = data.items ?? [];
+  const total = items.reduce((n: number, v: any) => n + Number(v.statistics?.viewCount ?? 0), 0);
+  return { avg: items.length ? Math.round(total / items.length) : 0, sampled: items.length };
 }
 
 const playlistId = (url: unknown) => String(url ?? '').match(/[?&]list=([\w-]+)/)?.[1];
@@ -89,11 +112,11 @@ const playlistId = (url: unknown) => String(url ?? '').match(/[?&]list=([\w-]+)/
 // ---------------------------------------------------------------------------
 
 interface Target {
-  key: string;                 // unique per campaign, for de-duplicating snapshot rows
+  key: string;
   showId: string;
-  seasonOrdinal?: number;      // set when this is one season's own playlist
-  label: string;                // display title
-  playlistIds: string[];        // every distinct playlist this campaign links
+  seasonOrdinal?: number;
+  label: string;
+  playlistId: string;
 }
 
 const targets: Target[] = [];
@@ -107,61 +130,46 @@ for (const f of showFiles) {
     .filter((x): x is { season: any; id: string } => Boolean(x.id));
 
   if (seasonPlaylists.length > 0) {
-    // Each season with its own playlist is its own campaign entry.
+    // One entry per season that has its own playlist — this is what makes
+    // the ranking "campaigns", the level actually asked for.
     for (const { season, id } of seasonPlaylists) {
       const label = season.title ? `${s.title} — ${season.title}` : `${s.title} — Season ${season.ordinal}`;
-      targets.push({
-        key: `${s.id}#${season.ordinal}`,
-        showId: s.id,
-        seasonOrdinal: season.ordinal,
-        label,
-        playlistIds: [id],
-      });
+      targets.push({ key: `${s.id}#${season.ordinal}`, showId: s.id, seasonOrdinal: season.ordinal, label, playlistId: id });
     }
   } else {
-    // No per-season playlists — rank the show as a whole, summing every
-    // distinct playlist it links (show-level and any season-level ones that
-    // are not one-per-season).
-    const ids = new Set<string>();
-    const showId = playlistId(s.links?.website);
-    if (showId) ids.add(showId);
-    for (const season of seasons) {
-      const id = playlistId(season.links?.website);
-      if (id) ids.add(id);
-    }
-    if (ids.size > 0) {
-      targets.push({ key: s.id, showId: s.id, label: s.title, playlistIds: [...ids] });
-    }
+    const id = playlistId(s.links?.website) ?? seasons.map((x) => playlistId(x.links?.website)).find(Boolean);
+    if (id) targets.push({ key: s.id, showId: s.id, label: s.title, playlistId: id });
   }
 }
 
-console.log(`\n${targets.length} campaign(s) have at least one YouTube playlist to rank.\n`);
+console.log(`\n${targets.length} campaign(s) have a YouTube playlist to sample.\n`);
 
-const ranked: { key: string; showId: string; seasonOrdinal?: number; label: string; views: number; videoCount: number }[] = [];
+const ranked: { key: string; showId: string; seasonOrdinal?: number; label: string; avgViews: number; sampled: number }[] = [];
 for (const t of targets) {
   try {
-    let views = 0;
-    let videoCount = 0;
-    for (const pid of t.playlistIds) {
-      const ids = await playlistVideoIds(pid);
-      videoCount += ids.length;
-      views += await totalViews(ids);
+    const ids = await recentVideoIds(t.playlistId, RECENT_SAMPLE);
+    if (ids.length < MIN_SAMPLE) {
+      console.log(`  – ${t.label.slice(0, 50)} — only ${ids.length} video(s), too thin to rank`);
+      continue;
     }
-    ranked.push({ key: t.key, showId: t.showId, seasonOrdinal: t.seasonOrdinal, label: t.label, views, videoCount });
-    console.log(`  ${views.toLocaleString().padStart(12)}  (${String(videoCount).padStart(3)} videos)  ${t.label}`);
+    const { avg, sampled } = await averageViews(ids);
+    ranked.push({ key: t.key, showId: t.showId, seasonOrdinal: t.seasonOrdinal, label: t.label, avgViews: avg, sampled });
+    console.log(`  ${avg.toLocaleString().padStart(10)} avg  (${sampled} recent videos)  ${t.label}`);
   } catch (e) {
     console.log(`  ! ${t.label.slice(0, 50)} — ${(e as Error).message.slice(0, 60)}`);
   }
 }
 
-ranked.sort((a, b) => b.views - a.views);
+ranked.sort((a, b) => b.avgViews - a.avgViews);
 
 const out = {
   generatedAt: new Date().toISOString(),
-  method: 'Sum of lifetime YouTube view counts across every video in every playlist a ' +
-    'campaign (season, or show where seasons share no per-season playlist) links — fully ' +
-    'paginated, no sampling. Not a trend or velocity measure, and limited to campaigns with ' +
-    'at least one YouTube playlist.',
+  method: `Average YouTube view count across each campaign's most recent ${RECENT_SAMPLE} videos ` +
+    `(or fewer, on a shorter playlist — campaigns under ${MIN_SAMPLE} videos are excluded as too thin ` +
+    'to rank fairly). Average, not total, so a long-running campaign is not ranked above a shorter one ' +
+    'purely for having more episodes. Recent videos only, not lifetime history, as the closer available ' +
+    'proxy for current audience. Limited to campaigns with a YouTube playlist link — a campaign missing ' +
+    'from this list may simply have no playlist recorded yet, not low viewership.',
   eligibleCampaigns: targets.length,
   totalShows: showFiles.length,
   campaigns: ranked.slice(0, 24),

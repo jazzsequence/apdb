@@ -77,6 +77,8 @@ seasons:
     game: dnd-5e
     started: 2019-10-16
     ended: 2020-04-03
+    links:
+      website: https://www.youtube.com/playlist?list=PLhOoxQxz2yFOFL4eV6TXqtoMWBY1dPy8q
   - ordinal: 11
     title: Mice & Murder
     game: dnd-5e

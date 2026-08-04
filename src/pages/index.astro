@@ -43,30 +43,33 @@ const pool = db.shows
 
 /*
  * Trending is computed offline by `npm run fetch:trending` — see that script
- * for why "trending" means lifetime view count, not a real trend signal, and
- * why it only covers the 122 of 284 shows that link a YouTube playlist. The
- * snapshot is joined against current show data here so art and channel names
+ * for the two designs that turned out wrong before this one, and for why
+ * "trending" means average views on recent episodes, not a real trend
+ * signal. Ranked at campaign (season) level, so a show links to its specific
+ * season page when this entry is one season among several, and to the show
+ * page otherwise. Joined against current show data so art and channel names
  * stay live even between refreshes.
  */
-const trending = trendingData.shows
+const trending = trendingData.campaigns
   .map((t) => {
-    const show = db.shows.find((s) => s.id === t.id);
+    const show = db.shows.find((s) => s.id === t.showId);
     if (!show) return null;
+    const season = t.seasonOrdinal != null ? show.seasons.find((s) => s.ordinal === t.seasonOrdinal) : undefined;
     return {
-      id: show.id,
-      title: show.title,
+      href: season ? `${base}shows/${show.id}/${season.ordinal}/` : `${base}shows/${show.id}/`,
+      label: t.label,
       image: show.image?.url ?? null,
       by: db.channelsFor(show).map((c) => c.name).join(', '),
-      views: t.views,
+      avgViews: t.avgViews,
     };
   })
   .filter((t): t is NonNullable<typeof t> => t !== null)
   .slice(0, 10);
 
 function formatViews(n: number): string {
-  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M views`;
-  if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K views`;
-  return `${n} views`;
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M avg views`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K avg views`;
+  return `${n} avg views`;
 }
 ---
 
@@ -112,23 +115,26 @@ function formatViews(n: number): string {
       <>
         <h2>Trending on YouTube</h2>
         <p class="billing">
-          Ranked by lifetime view count on each show's playlist — only the {trendingData.eligibleShows} of{' '}
-          {trendingData.totalShows} shows that link one can appear here, and this is total views, not a
-          real trend signal. Snapshot from {new Date(trendingData.generatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}.
+          Ranked by average views on each campaign's most recent episodes — only the{' '}
+          {trendingData.eligibleCampaigns} campaigns that link a YouTube playlist can appear here,
+          and a campaign missing from this list may simply have no playlist recorded yet, not low
+          viewership. Average, not total, so a long-running campaign is not ranked above a shorter
+          one purely for having more episodes.
+          Snapshot from {new Date(trendingData.generatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}.
         </p>
         <ul class="poster-rail">
           {trending.map((t) => (
             <li>
-              <a href={`${base}shows/${t.id}/`}>
+              <a href={t.href}>
                 <div class="art">
                   {t.image ? (
                     <img src={t.image} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
                   ) : (
-                    <span class="plate" aria-hidden="true">{t.title.charAt(0)}</span>
+                    <span class="plate" aria-hidden="true">{t.label.charAt(0)}</span>
                   )}
                 </div>
-                <h3>{t.title}</h3>
-                <p>{t.by} · {formatViews(t.views)}</p>
+                <h3>{t.label}</h3>
+                <p>{t.by} · {formatViews(t.avgViews)}</p>
               </a>
             </li>
           ))}
