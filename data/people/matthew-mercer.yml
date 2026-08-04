@@ -353,3 +353,13 @@ credits:
         url: https://www.siliconera.com/watch-the-suikoden-critical-role-one-shot-campaign/
         note: Independent report naming the same cast and confirming D&D 5th Edition.
     alias: default
+  - show: critical-role
+    season: 3
+    role: player
+    character: Dariax
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Campaign_Three%3A_Bells_Hells
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+        tier: community

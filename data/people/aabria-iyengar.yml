@@ -325,3 +325,49 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/worlds-beyond-number
         note: Cast for "Worlds Beyond Number" per TheTVDB.
+      - url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+        tier: community
+      - url: https://en.wikipedia.org/wiki/Worlds_Beyond_Number
+        tier: reference
+    character: Suvirin "Suvi" Kedberiket
+  - show: pirates-of-salt-bay
+    season: 1
+    role: GM/DM
+    year: "2019"
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Wikipedia says player; the show's own wiki says GM.
+        tier: community
+  - show: pirates-of-salt-bay
+    season: 2
+    role: GM/DM
+    alias: iyengar
+    year: "2020"
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        tier: community
+  - show: pirates-of-salt-bay
+    season: 3
+    role: GM/DM
+    alias: iyengar
+    year: "2020"
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        tier: community
+  - show: pirates-of-salt-bay
+    season: 4
+    role: GM/DM
+    alias: iyengar
+    year: "2020"
+    sources:
+      - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        tier: community
+  - show: dimension-20
+    season: 29
+    role: player
+    character: Maria
+    alias: iyengar
+    sources:
+      - url: https://dimension20.fandom.com/wiki/On_a_Bus
+        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community

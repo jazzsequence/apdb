@@ -393,6 +393,11 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Dimension_20
         tier: reference
+      - url: https://dimension20.fandom.com/wiki/A_Court_of_Fey_and_Flowers
+        note: A Court of Fey and Flowers cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+    character: Captain K. P. Hob
   - show: critical-role
     season: 4
     role: player
@@ -446,6 +451,10 @@ credits:
           infobox. CC-BY-SA."
         tier: community
       - *a6
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Campaign_3
+        note: "Campaign Three: Bells Hells cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
   - show: candela-obscura
     season: 2
     role: player
@@ -470,3 +479,29 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
         note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: dimension-20
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/Escape_from_the_Bloodkeep
+        note: Escape From the Bloodkeep cast, via the dimension20.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
+  - show: dimension-20
+    season: 29
+    role: player
+    alias: default
+    sources:
+      - url: https://dimension20.fandom.com/wiki/On_a_Bus
+        note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
+        tier: community
+  - show: critical-role-specials
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - url: https://criticalrole.fandom.com/wiki/Wildemount_Wildlings_(show)
+        note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+        tier: community
