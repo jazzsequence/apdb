@@ -38,6 +38,16 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/320799-d-d-dungeon-masters/cast
         note: Cast for "Dungeon Masters" per TMDB.
+  - show: dnd-dungeon-masters
+    season: 2
+    role: player
+    character: Cadmus Pennypetal
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=eNCyccZS9sA
+        note: Cast per the production's own description of "Dungeon Masters |
+          Campaign 2 PREMIERE, Episode 1 & 2".
   - show: shadowrun-excommunication
     season: 1
     role: player

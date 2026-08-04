@@ -1,0 +1,18 @@
+id: sandeep-parikh
+canonical_name: Sandeep Parikh
+sort_name: Parikh, Sandeep
+links: {}
+aliases:
+  - id: default
+    name: Sandeep Parikh
+    alias_type: legal
+credits:
+  - show: desiquest
+    season: 1
+    role: player
+    character: Ashwathama "Ash" Aswinikumar
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.desiquest.com
+        note: Cast per the show's own official website.

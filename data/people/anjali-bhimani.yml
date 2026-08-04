@@ -13,6 +13,15 @@ aliases:
     name: Anjali Bhimani
     alias_type: legal
 credits:
+  - show: desiquest
+    season: 1
+    role: player
+    character: Sitara
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.desiquest.com
+        note: Cast per the show's own official website.
   - show: dimension-20
     season: 18
     role: player

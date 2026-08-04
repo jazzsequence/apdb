@@ -26,6 +26,25 @@ credits:
         note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+  - show: baldur-s-gate-3-cast-play-d-d
+    season: 1
+    role: GM/DM
+    note: One-shot in which the Baldur's Gate 3 voice cast played their own
+      characters.
+    sources:
+      - tier: reference
+        url: https://www.gamesradar.com/larian-gets-the-baldurs-gate-3-cast-to-role-play-their-own-characters-in-the-ultimate-dandd-session/
+        note: Names the host and every voice actor with the character they reprised.
+      - tier: reference
+        url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
+        note: Independent report of the same one-shot, confirming Mark Hulmes as GM.
   - show: high-rollers-dnd
     season: 1
     role: GM/DM

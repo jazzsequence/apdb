@@ -1,0 +1,34 @@
+id: desiquest
+title: DesiQuest
+channels:
+  - effinfunny
+format: video
+status: hiatus
+description: Created by Jasmine Bhullar and produced by EffinFunny; set in
+  Vehaar, a custom world drawing on South Asian mythology and culture, with
+  an all-South-Asian cast.
+links:
+  website: https://www.desiquest.com
+  youtube: https://www.youtube.com/playlist?list=PLCvYXhRsQQnUWrr8duQ15X_SKw1LBXkrl
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 8
+    started: 2023-11-15
+    ended: 2024-03-27
+    image:
+      url: https://i.ytimg.com/vi/b4rYvwLCVUc/hqdefault.jpg
+      licence: fair use
+      attribution: DesiQuest Episode 1 thumbnail, © its producers. Via YouTube.
+      source: https://www.youtube.com/watch?v=b4rYvwLCVUc
+      depicts: Thumbnail for DesiQuest Episode 1, "Big Uncle Energy"
+      rationale: Low-resolution thumbnail used solely to identify this season in an
+        index of its credits. Non-commercial, does not substitute for the
+        original, and links back to the source. Removed on request by the rights
+        holder — see POLICY.md.
+  - ordinal: 2
+    title: Winter Special
+    game: dnd-5e
+    episode_count: 3
+    started: 2025-02-19
+    ended: 2025-03-04

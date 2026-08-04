@@ -7,6 +7,15 @@ aliases:
     name: Omar Najam
     alias_type: legal
 credits:
+  - show: desiquest
+    season: 1
+    role: player
+    character: Murkha Anajan
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.desiquest.com
+        note: Cast per the show's own official website.
   - show: dimension-20
     season: 3
     role: player
