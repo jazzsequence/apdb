@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getDb } from '../lib/db';
+import trendingData from '../data/trending.json';
 
 const db = await getDb();
 const base = import.meta.env.BASE_URL;
@@ -40,6 +41,33 @@ const pool = db.shows
     cast: db.castFor(s).length,
   }));
 
+/*
+ * Trending is computed offline by `npm run fetch:trending` — see that script
+ * for why "trending" means lifetime view count, not a real trend signal, and
+ * why it only covers the 122 of 284 shows that link a YouTube playlist. The
+ * snapshot is joined against current show data here so art and channel names
+ * stay live even between refreshes.
+ */
+const trending = trendingData.shows
+  .map((t) => {
+    const show = db.shows.find((s) => s.id === t.id);
+    if (!show) return null;
+    return {
+      id: show.id,
+      title: show.title,
+      image: show.image?.url ?? null,
+      by: db.channelsFor(show).map((c) => c.name).join(', '),
+      views: t.views,
+    };
+  })
+  .filter((t): t is NonNullable<typeof t> => t !== null)
+  .slice(0, 10);
+
+function formatViews(n: number): string {
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M views`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K views`;
+  return `${n} views`;
+}
 ---
 
 <Base
@@ -78,6 +106,36 @@ const pool = db.shows
       ))
     }
   </ul>
+
+  {
+    trending.length > 0 && (
+      <>
+        <h2>Trending on YouTube</h2>
+        <p class="billing">
+          Ranked by lifetime view count on each show's playlist — only the {trendingData.eligibleShows} of{' '}
+          {trendingData.totalShows} shows that link one can appear here, and this is total views, not a
+          real trend signal. Snapshot from {new Date(trendingData.generatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}.
+        </p>
+        <ul class="poster-rail">
+          {trending.map((t) => (
+            <li>
+              <a href={`${base}shows/${t.id}/`}>
+                <div class="art">
+                  {t.image ? (
+                    <img src={t.image} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+                  ) : (
+                    <span class="plate" aria-hidden="true">{t.title.charAt(0)}</span>
+                  )}
+                </div>
+                <h3>{t.title}</h3>
+                <p>{t.by} · {formatViews(t.views)}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
 
   <h2>Today's picks</h2>
   <p class="billing">Six shows, chosen by the date. Different tomorrow.</p>

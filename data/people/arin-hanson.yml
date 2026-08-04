@@ -1,0 +1,21 @@
+id: arin-hanson
+canonical_name: Arin Hanson
+sort_name: Hanson, Arin
+aliases:
+  - id: default
+    name: Arin Hanson
+    alias_type: legal
+credits:
+  - show: suikoden-one-shot
+    season: 1
+    episode: Specials, Episode 93 (Sx93 / E4E04a) — "Suikoden One-Shot" (2025-03-11)
+    role: guest player
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Suikoden_One-Shot
+        note: Cast and characters per the Critical Role wiki. CC-BY-SA.
+      - tier: reference
+        url: https://www.siliconera.com/watch-the-suikoden-critical-role-one-shot-campaign/
+        note: Independent report naming the same cast and confirming D&D 5th Edition.
+    character: Maybel
+    alias: default

@@ -1,0 +1,16 @@
+id: suikoden-one-shot
+title: Suikoden One-Shot
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: A sponsored one-shot set in the White Deer Inn of Muse City, Dunan
+  — the Suikoden games' setting — using D&D 5th Edition. Aired 2025-03-11.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Suikoden_One-Shot
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2025-03-11
+    ended: 2025-03-11

@@ -341,3 +341,15 @@ credits:
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+  - show: suikoden-one-shot
+    season: 1
+    episode: Specials, Episode 93 (Sx93 / E4E04a) — "Suikoden One-Shot" (2025-03-11)
+    role: GM/DM
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Suikoden_One-Shot
+        note: Cast and characters per the Critical Role wiki. CC-BY-SA.
+      - tier: reference
+        url: https://www.siliconera.com/watch-the-suikoden-critical-role-one-shot-campaign/
+        note: Independent report naming the same cast and confirming D&D 5th Edition.
+    alias: default

@@ -206,3 +206,16 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
         note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: suikoden-one-shot
+    season: 1
+    episode: Specials, Episode 93 (Sx93 / E4E04a) — "Suikoden One-Shot" (2025-03-11)
+    role: player
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Suikoden_One-Shot
+        note: Cast and characters per the Critical Role wiki. CC-BY-SA.
+      - tier: reference
+        url: https://www.siliconera.com/watch-the-suikoden-critical-role-one-shot-campaign/
+        note: Independent report naming the same cast and confirming D&D 5th Edition.
+    character: Teddy Rockson
+    alias: default

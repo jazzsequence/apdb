@@ -671,6 +671,14 @@ footer.site {
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--sunk);
+  display: grid;
+  place-items: center;
+}
+.poster-rail .plate {
+  font-family: var(--display);
+  font-size: 2rem;
+  color: var(--border-strong);
+  line-height: 1;
 }
 .poster-rail img {
   width: 100%;
