@@ -1,0 +1,18 @@
+id: bird
+canonical_name: Bird
+sort_name: Bird
+aliases:
+  - id: default
+    name: Bird
+    alias_type: handle
+credits:
+  - show: the-djekian-crusaders
+    role: player
+    character: Tynus Aderyn
+    season: 1
+    alias: default
+    sources:
+      - tier: official
+        url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
+        note: "Show description names the core party. Tynus Aderyn: naive
+          aarakocra ranger, played by Bird."

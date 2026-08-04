@@ -1,0 +1,18 @@
+id: sand
+canonical_name: Sand
+sort_name: Sand
+aliases:
+  - id: default
+    name: Sand
+    alias_type: handle
+credits:
+  - show: the-djekian-crusaders
+    role: player
+    character: Vincent Paladino
+    season: 1
+    alias: default
+    sources:
+      - tier: official
+        url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
+        note: "Show description names the core party. Vincent Paladino: scofflaw
+          tabaxi gunslinger, played by Sand."

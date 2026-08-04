@@ -5,9 +5,11 @@ channels:
 format: podcast
 status: unknown
 description: '"An original DND 5E podcast DMed and edited by Drega," per its own
-  Apple Podcasts page. Archive.org holds 92 items running from Episode 1 to
-  Episode 78; the party changed over that run, so credits reflect specific
-  episodes rather than one fixed cast.'
+  Apple Podcasts page, which also names the core party: Swigahct the half-orc
+  paladin (Jee), Tynus Aderyn the aarakocra ranger (Bird), Noelle Hickey the
+  human cleric (Blue), and Vincent Paladino the tabaxi gunslinger (Sand).
+  Archive.org holds 92 items running from Episode 1 to Episode 78; the party
+  changed over that run, so this core lineup may not cover every episode.'
 links:
   website: https://archive.org/details/TdcEp31
   podcast: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
@@ -18,8 +20,12 @@ seasons:
     started: 2017-07-16
     ended: 2021-10-02
 image:
-  url: https://archive.org/services/img/TdcEp31
-  licence: CC-BY-NC-4.0
-  attribution: dregadude, CC-BY-NC-4.0. Via the Internet Archive.
-  source: https://archive.org/details/TdcEp31
-  depicts: Cover art for dregadude
+  url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/66/09/29/660929b0-40a9-1d0f-8891-27b4665eb9aa/mza_17735847173050292487.jpg/600x600bb.jpg
+  licence: fair use
+  attribution: The Djekian Crusaders series art, © its producers. Via Apple Podcasts.
+  source: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
+  depicts: Series art for The Djekian Crusaders
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

@@ -8,10 +8,14 @@ aliases:
 credits:
   - show: the-djekian-crusaders
     role: GM/DM
-    sources:
-      - tier: official
-        url: https://archive.org/details/TdcEp31
-        note: Cast stated in the item's own description on the Internet Archive.
     season: 1
     alias: default
-    episode: Episode 31
+    sources:
+      - tier: official
+        url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
+        note: "Show description credits Drega as DM and editor for the full
+          series."
+      - tier: official
+        url: https://archive.org/details/TdcEp31
+        note: Also independently stated in the item's own description on the
+          Internet Archive (Episode 31).

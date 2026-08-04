@@ -1,0 +1,18 @@
+id: blue
+canonical_name: Blue
+sort_name: Blue
+aliases:
+  - id: default
+    name: Blue
+    alias_type: handle
+credits:
+  - show: the-djekian-crusaders
+    role: player
+    character: Noelle Hickey
+    season: 1
+    alias: default
+    sources:
+      - tier: official
+        url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
+        note: "Show description names the core party. Noelle Hickey: motherly
+          human cleric, played by Blue."
