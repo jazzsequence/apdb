@@ -192,9 +192,11 @@ h2::before {
   border-radius: 2px;
 }
 
-/* A section collapsed by default — Trending on YouTube — opened only when
-   asked for, rather than always taking up homepage space. Native <details>
-   so it works without JS and gets free keyboard/screen-reader support. */
+/* A block of explanatory text collapsed by default, opened only when asked
+   for — the "how is this ranked" methodology note under Trending on
+   YouTube, so it doesn't force everyone to read a paragraph of ranking
+   logic just to see the row itself. Native <details> so it works without
+   JS and gets free keyboard/screen-reader support. */
 .disclosure > summary {
   cursor: pointer;
   list-style: none;
@@ -215,6 +217,23 @@ h2::before {
 }
 .disclosure[open] > summary::after {
   transform: rotate(90deg);
+}
+.disclosure--inline {
+  margin: -0.4rem 0 1rem;
+}
+.disclosure--inline > summary {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--step--1);
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.disclosure--inline > summary:hover {
+  color: var(--ink);
+}
+.disclosure--inline > p {
+  margin-top: 0.5rem;
 }
 h3 {
   font-family: var(--display);
