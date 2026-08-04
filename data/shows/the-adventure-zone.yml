@@ -4,8 +4,10 @@ channels:
   - maximum-fun
 format: podcast
 status: ongoing
-description: Anthology actual-play podcast by the McElroy family. Each campaign
-  is its own arc, with the GM chair rotating between them.
+description: "Anthology actual-play podcast by the McElroy family. Each campaign
+  is its own arc, with the GM chair rotating between them. A genuine anthology:
+  the McElroys change systems often, sometimes for a single episode. Verified
+  season by season against the show's own wiki rather than left at a default."
 links:
   website: https://maximumfun.org/podcasts/adventure-zone/
 seasons:
@@ -14,37 +16,37 @@ seasons:
     game: dnd-5e
   - ordinal: 2
     title: "Campaign 2: Commitment"
-    game: dnd-5e
+    game: fate-core
   - ordinal: 3
     title: "MaxFunDrive Bonus Campaign: (K)nights"
     game: dnd-5e
   - ordinal: 4
     title: "Campaign 3: Amnesty"
-    game: dnd-5e
+    game: monster-of-the-week
   - ordinal: 5
     title: "Campaign 4: Dust"
-    game: dnd-5e
+    game: urban-shadows
   - ordinal: 6
     title: "MaxFunDrive Bonus Campaign: Elementary"
-    game: dnd-5e
+    game: taz-elementary-homebrew
   - ordinal: 7
     title: "MaxFunDrive Bonus Campaign: Fur"
-    game: dnd-5e
+    game: honey-heist
   - ordinal: 8
     title: "Campaign 5: Graduation"
     game: dnd-5e
   - ordinal: 9
     title: "Live Campaign 2: Dadlands"
-    game: dnd-5e
+    game: taz-dadlands-homebrew
   - ordinal: 10
     title: "Live Campaign 3: Holiday Brawl in Chicago"
-    game: dnd-5e
+    game: the-fight-before-christmas
   - ordinal: 11
     title: "MaxFunDrive Bonus Campaign: Lords of Crunch"
-    game: dnd-5e
+    game: lasers-and-feelings
   - ordinal: 12
     title: "The Adventure Zone: Just Us"
-    game: dnd-5e
+    game: supernormal
   - ordinal: 13
     title: "Campaign 6: Ethersea"
     game: dnd-5e
@@ -53,10 +55,10 @@ seasons:
     game: dnd-5e
   - ordinal: 15
     title: "Campaign 7: Steeplechase"
-    game: dnd-5e
+    game: blades-in-the-dark
   - ordinal: 16
     title: "Campaign 8: Outre Space"
-    game: dnd-5e
+    game: marvel-multiverse
   - ordinal: 17
     title: "Campaign 9: The Adventure Zone Versus Dracula"
     game: dnd-5e

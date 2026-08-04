@@ -1,17 +1,21 @@
-id: playing-with-diceself-season-1
-title: Playing With Diceself Season 1
+id: playing-with-diceself
+title: Playing With Diceself
 channels:
   - lore-by-night
 format: video
 status: unknown
-description: "System per source: Vampire: The Masquerade 5th Edition (per the
-  series title)."
+description: "An anthology from Lore by Night: each season is a different
+  system. Season 2 is not yet indexed here — the ordinal gap between the two
+  seasons below is real, not an error."
 links:
   website: https://www.youtube.com/playlist?list=PLTDXW0PEYBq_8IkZrt0Iih3HYS0qhFS5c
 seasons:
   - ordinal: 1
     game: vampire-the-masquerade-v5
     episode_count: 6
+  - ordinal: 3
+    game: cyberpunk-red
+    episode_count: 11
 image:
   url: https://i.ytimg.com/vi/SR6vHt2CtHs/hqdefault.jpg
   licence: fair use

@@ -202,24 +202,22 @@ for (const show of db.shows) {
   }
 }
 
-// --- An anthology where every season claims the same system -----------------
-// Anthologies mix systems by definition. Critical Role Specials & One-Shots
-// had nine differently-titled seasons all recorded as dnd-5e, which hid that
-// UnDeadwood is Deadlands and both Age of Umbra runs are Daggerheart. Every
-// one of those came from the same `game: dnd-5e` default that once mislabelled
-// 67 shows.
-for (const show of db.shows) {
-  const titled = show.seasons.filter((s) => s.title && s.title !== `Season ${s.ordinal}`);
-  if (titled.length < 4) continue;
-  const systems = new Set(show.seasons.map((s) => s.game));
-  if (systems.size > 1) continue;
-  findings.push({
-    // Advisory: plenty of multi-season shows really are one system throughout.
-    severity: 'low',
-    what: 'anthology with one system across every season',
-    detail: `${show.title} — ${titled.length} separately titled seasons, all ${[...systems][0]}. Anthologies mix systems; check this was not defaulted.`,
-  });
-}
+// Deliberately not a rule: "every season of an anthology claims the same
+// system" was tried as a signal and retired. The premise was backwards —
+// most long-running actual plays stick to one system for their entire run,
+// and switching per arc (The Adventure Zone) is the unusual case, not the
+// norm. Run against real data it produced 14 findings and only one, TAZ, was
+// an actual default; the other 13 — Acquisitions Incorporated, Candela
+// Obscura, Critical Role, Dungeons and Daddies, Exandria Unlimited, Legends
+// of Avantris and the rest — were all correctly one system throughout, per
+// the project owner spot-checking the ones they knew well enough to be sure
+// of. A rule with 7% precision teaches the opposite of what it is meant to:
+// it trains a "just check the box" reflex on findings that are usually fine.
+// TAZ's eleven mislabelled seasons were fixed individually by research instead
+// (Fate Core, Monster of the Week, Urban Shadows, Honey Heist and several
+// one-off homebrews), which is what this class of error actually needs —
+// there is no shortcut for knowing a specific show changes systems except
+// knowing the show.
 
 // --- One person GMing and playing the same season ---------------------------
 // Sometimes true — Cat Blackard runs The Call of Cthulhu Mystery Program and
