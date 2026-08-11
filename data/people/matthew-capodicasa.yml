@@ -7,6 +7,30 @@ aliases:
     name: Matthew Capodicasa
     alias_type: legal
 credits:
+  - show: the-seventh-arch
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Gatewalkers
+        note: >-
+          The show's own wiki: "Troy Lavallee is the game master and the players
+          consist of the Joe, Skid, Matthew, Kate, Sydney," naming this Book 1
+          (The Seventh Arch) and Book 2 (They Watched the Stars) of Gatewalkers,
+          Campaign 2 of the flagship Glass Cannon Podcast.
+  - show: they-watched-the-stars
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Podcast_-_Gatewalkers
+        note: >-
+          The show's own wiki: "Troy Lavallee is the game master and the players
+          consist of the Joe, Skid, Matthew, Kate, Sydney," naming this Book 1
+          (The Seventh Arch) and Book 2 (They Watched the Stars) of Gatewalkers,
+          Campaign 2 of the flagship Glass Cannon Podcast.
   - show: new-game-who-dis
     season: 13
     role: GM/DM

@@ -7,6 +7,17 @@ aliases:
     name: Aliza Pearl
     alias_type: legal
 credits:
+  - show: overlight-fractured-paradox
+    season: 1
+    role: GM/DM
+    note: Players not named in any episode's own description.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=seWcBodyEuc
+        note: "The video's own description: \"Aliza Pearl, GM of Overlight:
+          Fractured Paradox, covers dice rolls, character creation, and game
+          mechanics.\""
   - show: la-by-night
     season: 1
     role: player
