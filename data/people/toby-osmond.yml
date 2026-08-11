@@ -5,6 +5,11 @@ aliases:
   - id: default
     name: Toby Osmond
     alias_type: legal
+  - id: toby
+    name: Toby
+    alias_type: handle
+    note: Credited by first name only on several other "Looking For More" Dark
+      Sun shows; merged from `toby`.
 credits:
   - show: tales-from-the-silt-expanse
     season: 1
@@ -14,5 +19,20 @@ credits:
         url: https://www.youtube.com/playlist?list=PLQEFidMHP9SDFdobNPx330OLhRyfLzc_c
         note: Cast listed in the show's own episode descriptions, each with the player's
           own social link.
+      - tier: official
+        url: https://www.youtube.com/watch?v=xJDZnP3X1h0
+        note: "Also listed under Toby (Rysar) in EP15, \"Return to Balic\" — a
+          joint episode whose description was previously misread as entirely
+          Journey to the Obsidian Spire's cast."
     character: Rysar
     alias: default
+  - show: rise-of-the-veiled-alliance-season-1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=puOgpsDXy34
+        note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
+          the Veiled Alliance, EP1: City of Sails\"."
+    season: 1
+    character: Rysar
+    alias: toby

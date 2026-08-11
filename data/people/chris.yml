@@ -28,12 +28,13 @@ credits:
     character: Tank Molarson the Faerie Warrior
     note: The Faint Divinities credit their cast by first name only.
     alias: default
-  - show: journey-to-the-obsidian-spire
+  - show: tales-from-the-silt-expanse
     role: GM/DM
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=xJDZnP3X1h0
-        note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
-          the Veiled Alliance, EP15: Return to Balic\"."
+        note: "EP15, \"Return to Balic,\" is a joint episode with Journey to the
+          Obsidian Spire; its own description splits the two casts and lists
+          Chris as DM of the Silt Expanse table only."
     season: 1
     alias: default

@@ -14,16 +14,11 @@ credits:
         url: https://www.youtube.com/playlist?list=PLQEFidMHP9SDFdobNPx330OLhRyfLzc_c
         note: Cast listed in the show's own episode descriptions, each with the player's
           own social link.
-    character: Kita
-    alias: default
-  - show: journey-to-the-obsidian-spire
-    role: player
-    sources:
       - tier: official
         url: https://www.youtube.com/watch?v=xJDZnP3X1h0
-        note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
-          the Veiled Alliance, EP15: Return to Balic\"."
-    season: 1
+        note: "Also listed under Bree (Kita) in EP15, \"Return to Balic\" — a joint
+          episode whose description was previously misread as entirely
+          Journey to the Obsidian Spire's cast."
     character: Kita
     alias: default
 wikidata_qid: Q275863
