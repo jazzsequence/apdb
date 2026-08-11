@@ -1,0 +1,19 @@
+id: john-wick
+canonical_name: John Wick
+sort_name: Wick, John
+aliases:
+  - id: default
+    name: John Wick
+    alias_type: legal
+credits:
+  - show: starter-kit-7th-sea-edition
+    role: GM/DM
+    season: 1
+    note: John Wick created 7th Sea; players not named in the show's own episode
+      descriptions.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL7atuZxmT954EqboZ4VQjlo5kYNVoJ9Vi
+        note: "The pilot's own description: \"Our Game Master, 7th Sea creator
+          John Wick, helps our players build their characters.\""

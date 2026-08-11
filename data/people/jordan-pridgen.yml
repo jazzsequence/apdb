@@ -7,6 +7,16 @@ aliases:
     name: Jordan Pridgen
     alias_type: legal
 credits:
+  - show: teenagers-from-outer-space
+    season: 1
+    role: player
+    character: Nug Slick
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Teenagers_from_Outer_Space_(RPGES_episode)
+        note: Teenagers from Outer Space (RPGES episode) cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: prickly-tallstag-and-the-danger-seekers-pears
     season: 1
     role: player

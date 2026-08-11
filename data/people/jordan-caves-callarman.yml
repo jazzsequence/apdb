@@ -11,6 +11,18 @@ aliases:
     alias_type: legal
     note: Credited under this name on some sources; merged from `jordan-callarman`.
 credits:
+  - show: the-realms-of-rothaen
+    season: 1
+    episode: Episode 1
+    role: player
+    character: Ovid
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Realms_of_Rothaen
+        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com
+          infobox, broken out per episode since each has its own DM and
+          largely separate cast. CC-BY-SA.
   - show: the-last-vhs-store
     season: 1
     role: player

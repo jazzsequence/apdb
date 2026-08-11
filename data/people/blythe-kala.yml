@@ -6,6 +6,18 @@ aliases:
     name: Blythe Kala
     alias_type: legal
 credits:
+  - show: the-realms-of-rothaen
+    season: 1
+    episode: Episode 2
+    role: player
+    character: Ellis
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Realms_of_Rothaen
+        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com
+          infobox, broken out per episode since each has its own DM and
+          largely separate cast. CC-BY-SA.
   - show: the-lost-brigade
     season: 1
     role: player

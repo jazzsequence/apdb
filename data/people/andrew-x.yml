@@ -1,0 +1,18 @@
+id: andrew-x
+canonical_name: Andrew X
+sort_name: X, Andrew
+aliases:
+  - id: default
+    name: Andrew X
+    alias_type: legal
+credits:
+  - show: dungeon-in-a-box
+    season: 1
+    role: player
+    character: Jack Holiday
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Dungeon_in_a_Box
+        note: Dungeon in a Box cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.

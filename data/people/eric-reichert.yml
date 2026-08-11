@@ -7,6 +7,15 @@ aliases:
     name: Eric Reichert
     alias_type: legal
 credits:
+  - show: salt-bay-court-of-thorns
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Salt_Bay%3A_Court_of_Thorns
+        note: "Salt Bay: Court of Thorns cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA."
   - show: dark-sun
     role: player
     season: 1

@@ -1,0 +1,22 @@
+id: craig-third-floor-wars
+canonical_name: Craig
+sort_name: Craig
+aliases:
+  - id: default
+    name: Craig
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named
+      Craig in this index by suffixing the id with the channel.
+credits:
+  - show: vaesen-actual-play
+    role: GM/DM
+    season: 1
+    note: 'Every episode''s own description reads "Join Craig and the cast as
+      they play Vaesen" — Craig named apart from "the cast" implies he hosts
+      / GMs, but this is inference from phrasing, not a stated role. The rest
+      of the cast is never named.'
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLYOGZIpC-07M9FGA6K-AUeBspnfuYXrQO
+        note: Cast per the show's own episode descriptions.

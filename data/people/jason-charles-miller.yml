@@ -60,6 +60,16 @@ credits:
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
+  - show: starter-kit-d-d-edition
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL7atuZxmT955yt0W4QP5VD4TwLQvV3EiM
+        note: "The show's own description: \"join host and Dungeon Master Jason
+          Charles Miller and his guests Mike Phirman, Mixi Demner, Angela
+          Webber, Hal Sparks, and Carmel Helene.\""
   - show: sagas-of-sundry
     role: composer
     season: 1

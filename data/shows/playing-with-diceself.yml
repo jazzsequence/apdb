@@ -4,9 +4,12 @@ channels:
   - lore-by-night
 format: video
 status: unknown
+solo: true
 description: "An anthology from Lore by Night: each season is a different
   system. Season 2 is not yet indexed here — the ordinal gap between the two
-  seasons below is real, not an error."
+  seasons below is real, not an error. Solo play — the title puns on it, and
+  its own episode description calls it \"the sad British Goth boy who plays
+  TTRPGs by himself.\""
 links:
   website: https://www.youtube.com/playlist?list=PLTDXW0PEYBq_8IkZrt0Iih3HYS0qhFS5c
 seasons:

@@ -5,11 +5,14 @@ channels:
 format: stream
 status: unknown
 links:
-  website: https://savingthrowshow.fandom.com/wiki/Teenagers_from_Outer_Space
+  website: https://savingthrowshow.fandom.com/wiki/Teenagers_from_Outer_Space_(RPGES_episode)
 seasons:
   - ordinal: 1
     game: gurps-teenagers-from-outer-space-w
-description: "System per source: GURPS}}'''''Teenagers from Outer Space '''''was
-  a mini-series where a group of improvisers, actors and gamers played the
-  Teenagers from Outer Space RPG based on [https://en.wikipedia.org/wiki/GURPS
-  GURP."
+    episode_count: 1
+description: "Corrected description: raw wiki markup (\"GURPS}}'''''...\") had
+  leaked into this field. Per the wiki's own infobox this is not a
+  standalone show but Episode 11 of RPG Exploration Society (aired June 19,
+  2017), a one-shot of Mike Pondsmith's Teenagers from Outer Space. Left as
+  its own entry here rather than restructured into RPG Exploration Society's
+  seasons — that would be a bigger data-model change than this pass covers."

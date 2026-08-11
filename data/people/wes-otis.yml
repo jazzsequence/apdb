@@ -6,6 +6,17 @@ aliases:
     name: Wes Otis
     alias_type: legal
 credits:
+  - show: the-realms-of-rothaen
+    season: 1
+    episode: Episode 3
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Realms_of_Rothaen
+        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com
+          infobox, broken out per episode since each has its own DM and
+          largely separate cast. CC-BY-SA.
   - show: black-bag-vikings
     role: GM/DM
     season: 1

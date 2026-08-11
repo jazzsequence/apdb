@@ -13,6 +13,20 @@ aliases:
     name: Erik Mona
     alias_type: legal
 credits:
+  - show: the-pathfinder-playtest-doomsday-dawn
+    role: guest player
+    season: 1
+    episode: "Part 4.1: The Mirrored Moon"
+    alias: default
+    note: The regular Glass Cannon crew running this livestream is not named in
+      any episode's own description ("the Glass Cannon Network boys"); not
+      credited here without a citable source.
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=HsGbuySuXNA
+        note: "The episode's own description: \"The Publisher and Chief Creative
+          Officer of Paizo, Erik Mona, joins the Glass Cannon Network boys as
+          they tackle Part 4 of Doomsday Dawn!\""
   - show: glass-cannon-podcast
     season: 4
     role: player

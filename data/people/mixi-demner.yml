@@ -1,0 +1,18 @@
+id: mixi-demner
+canonical_name: Mixi Demner
+sort_name: Demner, Mixi
+aliases:
+  - id: default
+    name: Mixi Demner
+    alias_type: legal
+credits:
+  - show: starter-kit-d-d-edition
+    role: player
+    season: 1
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL7atuZxmT955yt0W4QP5VD4TwLQvV3EiM
+        note: "The show's own description: \"join host and Dungeon Master Jason
+          Charles Miller and his guests Mike Phirman, Mixi Demner, Angela
+          Webber, Hal Sparks, and Carmel Helene.\""

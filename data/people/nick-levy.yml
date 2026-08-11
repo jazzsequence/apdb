@@ -6,6 +6,30 @@ aliases:
     name: Nick Levy
     alias_type: legal
 credits:
+  - show: the-realms-of-rothaen
+    season: 1
+    episode: Episode 3
+    role: player
+    character: Caiswell
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Realms_of_Rothaen
+        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com
+          infobox, broken out per episode since each has its own DM and
+          largely separate cast. CC-BY-SA.
+  - show: the-realms-of-rothaen
+    season: 1
+    episode: Episode 2
+    role: player
+    character: Honeyfoot
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Realms_of_Rothaen
+        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com
+          infobox, broken out per episode since each has its own DM and
+          largely separate cast. CC-BY-SA.
   - show: hoi-chummer
     role: player
     season: 1

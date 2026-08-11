@@ -7,6 +7,18 @@ aliases:
     name: Meghan Caves
     alias_type: legal
 credits:
+  - show: the-realms-of-rothaen
+    season: 1
+    episode: Episode 1
+    role: player
+    character: Shank
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Realms_of_Rothaen
+        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com
+          infobox, broken out per episode since each has its own DM and
+          largely separate cast. CC-BY-SA.
   - show: prickly-tallstag-and-the-danger-seekers-pears
     season: 1
     role: player
