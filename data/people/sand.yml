@@ -5,6 +5,11 @@ aliases:
   - id: default
     name: Sand
     alias_type: handle
+  - id: sandstriker
+    name: sandstriker
+    alias_type: handle
+    note: Full Internet Archive handle, given as "@sandstriker (sand)" on Episode
+      31's own cast list; merged from `sandstriker`.
 credits:
   - show: the-djekian-crusaders
     role: player
@@ -16,3 +21,15 @@ credits:
         url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
         note: "Show description names the core party. Vincent Paladino: scofflaw
           tabaxi gunslinger, played by Sand."
+  - show: the-djekian-crusaders
+    role: player
+    character: Pepper
+    season: 1
+    episode: Episode 31
+    alias: sandstriker
+    sources:
+      - tier: official
+        url: https://archive.org/details/TdcEp31
+        note: 'Episode 31''s own cast list: "@sandstriker (sand) - Pepper, Kenku
+          Rogue." A guest character for this one episode, distinct from
+          Sand''s usual Vincent Paladino.'

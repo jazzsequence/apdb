@@ -5,6 +5,11 @@ aliases:
   - id: default
     name: Bird
     alias_type: handle
+  - id: bird-cult
+    name: bird-cult
+    alias_type: handle
+    note: Full Internet Archive handle, given as "@bird-cult (bird)" on Episode
+      31's own cast list; merged from `bird-cult`.
 credits:
   - show: the-djekian-crusaders
     role: player
@@ -16,3 +21,15 @@ credits:
         url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
         note: "Show description names the core party. Tynus Aderyn: naive
           aarakocra ranger, played by Bird."
+  - show: the-djekian-crusaders
+    role: player
+    character: Siren
+    season: 1
+    episode: Episode 31
+    alias: bird-cult
+    sources:
+      - tier: official
+        url: https://archive.org/details/TdcEp31
+        note: 'Episode 31''s own cast list: "@bird-cult (bird) - Siren, Dragonborn
+          Sorcerer." A guest character for this one episode, distinct from
+          Bird''s usual Tynus Aderyn.'

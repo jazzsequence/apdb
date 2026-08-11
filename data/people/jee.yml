@@ -5,6 +5,11 @@ aliases:
   - id: default
     name: Jee
     alias_type: handle
+  - id: jeesideslug
+    name: jeesideslug
+    alias_type: handle
+    note: Full Internet Archive handle, given as "@jeesideslug (jee)" on Episode
+      31's own cast list; merged from `jeesideslug`.
 credits:
   - show: the-djekian-crusaders
     role: player
@@ -16,3 +21,15 @@ credits:
         url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
         note: "Show description names the core party. Swigahct: reserved half-orc
           paladin, played by Jee."
+  - show: the-djekian-crusaders
+    role: player
+    character: Jerndell
+    season: 1
+    episode: Episode 31
+    alias: jeesideslug
+    sources:
+      - tier: official
+        url: https://archive.org/details/TdcEp31
+        note: 'Episode 31''s own cast list: "@jeesideslug (jee) - Jerndell, Dwarf
+          Barbarian." A guest character for this one episode, distinct from
+          Jee''s usual Swigahct.'

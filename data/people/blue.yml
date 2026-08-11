@@ -5,6 +5,11 @@ aliases:
   - id: default
     name: Blue
     alias_type: handle
+  - id: bluespacequeen
+    name: bluespacequeen
+    alias_type: handle
+    note: Full Internet Archive handle, given as "@bluespacequeen (blue)" on
+      Episode 31's own cast list; merged from `bluespacequeen`.
 credits:
   - show: the-djekian-crusaders
     role: player
@@ -16,3 +21,15 @@ credits:
         url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
         note: "Show description names the core party. Noelle Hickey: motherly
           human cleric, played by Blue."
+  - show: the-djekian-crusaders
+    role: player
+    character: Fasmara
+    season: 1
+    episode: Episode 31
+    alias: bluespacequeen
+    sources:
+      - tier: official
+        url: https://archive.org/details/TdcEp31
+        note: 'Episode 31''s own cast list: "@bluespacequeen (blue) - Fasmara,
+          Dark Elf Wizard." A guest character for this one episode, distinct
+          from Blue''s usual Noelle Hickey.'
