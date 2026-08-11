@@ -1,0 +1,17 @@
+id: john-golden
+canonical_name: John Golden
+sort_name: Golden, John
+aliases:
+  - id: default
+    name: John Golden
+    alias_type: legal
+credits:
+  - show: the-story-network
+    season: 1
+    role: player
+    character: Engrin Ai
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/26-round
+        note: Cast stated in the item's own description on the Internet Archive.

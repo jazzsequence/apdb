@@ -1,0 +1,20 @@
+id: jade
+canonical_name: Jade
+sort_name: Jade
+aliases:
+  - id: default
+    name: Jade
+    alias_type: handle
+credits:
+  - show: the-esoteric-order-of-roleplayers
+    season: 1
+    role: player
+    character: Tobias Calvin Funk
+    alias: default
+    sources:
+      - tier: official
+        url: http://esoteric-rp.blogspot.com/2013/03/deadlands-reloaded-lost-in-maze-session.html
+        note: The show's own blog credits the "Lost in the Maze" cast under
+          "Featuring," linking each name to its character. Also ran the group's
+          Great Pendragon Campaign for one session, per the show's episode
+          guide.

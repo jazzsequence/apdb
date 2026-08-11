@@ -1,0 +1,22 @@
+id: dufrau
+canonical_name: Sarah
+sort_name: Sarah
+aliases:
+  - id: default
+    name: Sarah
+    alias_type: handle
+  - id: dufrau
+    name: dufrau
+    alias_type: handle
+    note: Twitter handle given alongside the first name in the show's own cast
+      list.
+credits:
+  - show: tgif-arcade
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/WorldBuildingAndroidDreamsEpisode0
+        note: "Cast stated in the item's own description for \"World Building -
+          Android Dreams Episode 0\": no GM specified."

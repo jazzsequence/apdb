@@ -1,0 +1,19 @@
+id: jeff-west-of-the-wood
+canonical_name: Jeff
+sort_name: Jeff
+aliases:
+  - id: default
+    name: Jeff
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named Jeff
+      in this index by suffixing the id with the show.
+credits:
+  - show: west-of-the-wood
+    season: 1
+    role: player
+    character: Adoy
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/Dragonfly27
+        note: Cast stated in the item's own description on the Internet Archive.

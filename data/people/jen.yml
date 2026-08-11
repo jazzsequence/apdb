@@ -1,0 +1,17 @@
+id: jen
+canonical_name: Jen
+sort_name: Jen
+aliases:
+  - id: default
+    name: Jen
+    alias_type: handle
+credits:
+  - show: west-of-the-wood
+    season: 1
+    role: player
+    character: Miri
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/Dragonfly27
+        note: Cast stated in the item's own description on the Internet Archive.

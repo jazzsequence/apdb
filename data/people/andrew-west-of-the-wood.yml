@@ -1,0 +1,18 @@
+id: andrew-west-of-the-wood
+canonical_name: Andrew
+sort_name: Andrew
+aliases:
+  - id: default
+    name: Andrew
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named
+      Andrew in this index by suffixing the id with the show.
+credits:
+  - show: west-of-the-wood
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/Dragonfly27
+        note: Cast stated in the item's own description on the Internet Archive.

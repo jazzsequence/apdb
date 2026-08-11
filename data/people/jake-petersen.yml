@@ -1,0 +1,17 @@
+id: jake-petersen
+canonical_name: Jake Petersen
+sort_name: Petersen, Jake
+aliases:
+  - id: default
+    name: Jake Petersen
+    alias_type: legal
+credits:
+  - show: the-story-network
+    season: 1
+    role: player
+    character: Thiradin Ossran
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/26-round
+        note: Cast stated in the item's own description on the Internet Archive.

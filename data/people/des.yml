@@ -1,0 +1,18 @@
+id: des
+canonical_name: Des
+sort_name: Des
+aliases:
+  - id: default
+    name: Des
+    alias_type: handle
+credits:
+  - show: the-esoteric-order-of-roleplayers
+    season: 1
+    role: player
+    character: Kangee Taken-Alive
+    alias: default
+    sources:
+      - tier: official
+        url: http://esoteric-rp.blogspot.com/2013/03/deadlands-reloaded-lost-in-maze-session.html
+        note: The show's own blog credits the "Lost in the Maze" cast under
+          "Featuring," linking each name to its character.

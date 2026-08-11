@@ -38,13 +38,19 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/
         note: Host per Geek & Sundry. Player names not published.
-  - show: sagas-of-sundry
+  - show: sagas-of-sundry-dread
     role: GM/DM
     season: 1
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
+    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all,
+      which bundles several distinct one-shots (Dread, Madness, Goblin Mode)
+      under one playlist. Retargeted — Van Norman DMed both Dread and
+      Madness (see below), per each show's own description.
     alias: default
     sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL7atuZxmT954X1GShT_jOY98YgS04FA3B
+        note: "The show's own description: \"Gather around our campfire as Ivan
+          Van Norman leads...\""
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
@@ -55,6 +61,15 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/sagas-of-sundry
         note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
+  - show: sagas-of-sundry-madness
+    role: GM/DM
+    season: 1
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL7atuZxmT955p1uySG2OpFPZ30I3wnIef
+        note: "The show's own description: \"...an original macabre tale hosted by
+          Ivan Van Norman...\""
   - show: sagas-of-sundry
     role: writer
     season: 1

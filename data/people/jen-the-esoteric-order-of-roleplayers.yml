@@ -1,0 +1,20 @@
+id: jen-the-esoteric-order-of-roleplayers
+canonical_name: Jen
+sort_name: Jen
+aliases:
+  - id: default
+    name: Jen
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named Jen
+      in this index by suffixing the id with the show.
+credits:
+  - show: the-esoteric-order-of-roleplayers
+    season: 1
+    role: player
+    character: Cuad Hoyter Pertullus
+    alias: default
+    sources:
+      - tier: official
+        url: http://esoteric-rp.blogspot.com/2013/03/deadlands-reloaded-lost-in-maze-session.html
+        note: The show's own blog credits the "Lost in the Maze" cast under
+          "Featuring," linking each name to its character.

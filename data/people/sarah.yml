@@ -1,0 +1,17 @@
+id: sarah
+canonical_name: Sarah
+sort_name: Sarah
+aliases:
+  - id: default
+    name: Sarah
+    alias_type: handle
+credits:
+  - show: west-of-the-wood
+    season: 1
+    role: player
+    character: Thorn
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/Dragonfly27
+        note: Cast stated in the item's own description on the Internet Archive.

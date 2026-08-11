@@ -1,0 +1,17 @@
+id: shane
+canonical_name: Shane
+sort_name: Shane
+aliases:
+  - id: default
+    name: Shane
+    alias_type: handle
+credits:
+  - show: west-of-the-wood
+    season: 1
+    role: player
+    character: Fuag
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/Dragonfly27
+        note: Cast stated in the item's own description on the Internet Archive.

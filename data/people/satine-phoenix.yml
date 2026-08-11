@@ -18,14 +18,20 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
-  - show: sagas-of-sundry
+  - show: sagas-of-sundry-dread
     role: player
     season: 1
     character: Sat
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
+    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all,
+      which bundles several distinct one-shots (Dread, Madness, Goblin Mode)
+      under one playlist. Retargeted to the specific one-shot its own cast
+      list names.
     alias: default
     sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL7atuZxmT954X1GShT_jOY98YgS04FA3B
+        note: Cast and characters per the show's own description, corroborated
+          by its own YouTube video description.
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official

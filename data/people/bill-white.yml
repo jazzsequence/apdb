@@ -1,0 +1,17 @@
+id: bill-white
+canonical_name: Bill White
+sort_name: White, Bill
+aliases:
+  - id: default
+    name: Bill White
+    alias_type: legal
+credits:
+  - show: night-witches-in-sc
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/NightWitchesInSCSession3
+        note: 'The item''s own description: "pbtA RPGs run by Bill White in
+          Central PA; Dungeon World; Night Witches."'

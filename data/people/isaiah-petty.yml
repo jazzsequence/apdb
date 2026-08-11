@@ -1,0 +1,16 @@
+id: isaiah-petty
+canonical_name: Isaiah Petty
+sort_name: Petty, Isaiah
+aliases:
+  - id: default
+    name: Isaiah Petty
+    alias_type: legal
+credits:
+  - show: the-story-network
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/26-round
+        note: Cast stated in the item's own description on the Internet Archive.
