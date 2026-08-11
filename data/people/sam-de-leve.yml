@@ -59,14 +59,18 @@ credits:
         url: https://thetvdb.com/series/callisto-6
         note: Cast for "Callisto 6" per TheTVDB.
   - show: tempting-fate
-    role: GM/DM
-    season: 1
+    role: guest GM
+    season: 2
+    episode: 'Lasers and Sams and Feelings (2019-04-08)'
     alias: default
+    note: A one-off Lasers & Feelings episode where de Leve takes the GM seat
+      instead of series GM Rick Budd, distinct from his regular season 1
+      player credit as Wrecks.
     sources:
       - tier: reference
-        url: https://www.imdb.com/title/tt7394666/fullcredits/
-        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
-          datasets.
+        url: https://www.imdb.com/title/tt10150292/
+        note: IMDb episode page for "Tempting Fate" S:E "Lasers and Sams and
+          Feelings" (2019) — Sam de Leve takes the GM seat.
   - show: dimension-20
     role: writer
     note: IMDb credits this at series level; which of this show's seasons it covers

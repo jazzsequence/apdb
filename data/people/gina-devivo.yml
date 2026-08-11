@@ -69,11 +69,15 @@ credits:
         url: https://thetvdb.com/series/callisto-6
         note: Cast for "Callisto 6" per TheTVDB.
   - show: tempting-fate
-    role: GM/DM
-    season: 1
+    role: guest GM
+    season: 2
+    episode: 'Lasers and Ginas and Feelings (2018-09-09)'
     alias: default
+    note: A one-off Lasers & Feelings episode where DeVivo takes the GM seat
+      instead of series GM Rick Budd, distinct from her regular season 1
+      player credit as Hermitide.
     sources:
       - tier: reference
-        url: https://www.imdb.com/title/tt7394666/fullcredits/
-        note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
-          datasets.
+        url: https://www.imdb.com/title/tt8975864/characters/nm1279065
+        note: IMDb episode credits for "Tempting Fate" S:E "Lasers and Ginas and
+          Feelings" (2018) — Gina DeVivo as Gamemaster.

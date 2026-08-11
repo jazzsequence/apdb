@@ -7,16 +7,6 @@ aliases:
     alias_type: legal
 credits:
   - show: phoenix-dawn-command
-    role: player
-    season: 1
-    character: Marshall
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9196714/fullcredits/
-        note: IMDb full cast and crew for "Phoenix Dawn Command" (2016), via the
-          official datasets.
-  - show: phoenix-dawn-command
     season: 1
     role: GM/DM
     alias: default
@@ -25,6 +15,13 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Phoenix_Dawn_Command
         note: Phoenix Dawn Command cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196714/fullcredits/
+        note: 'IMDb full cast and crew for "Phoenix Dawn Command" (2016), via the
+          official datasets — credits Sax Carr as "Marshall." Phoenix: Dawn
+          Command''s own rules call its GM the Game Marshal, so this is a
+          spelling of the GM title, not a separate played character; not a
+          second, player credit.'
   - show: shield-of-tomorrow
     role: GM/DM
     season: 1
