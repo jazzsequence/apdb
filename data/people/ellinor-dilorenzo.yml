@@ -8,6 +8,66 @@ aliases:
     alias_type: legal
 credits:
   - show: androids-aliens
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
     season: 1
     role: player
     alias: default

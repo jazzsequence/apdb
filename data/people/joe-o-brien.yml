@@ -6,7 +6,71 @@ aliases:
   - id: default
     name: Joe O'Brien
     alias_type: legal
+  - id: joseph-o-brien
+    name: Joseph O'Brien
+    alias_type: legal
+    note: Credited under this fuller name by IMDb; merged from `joseph-o-brien`.
 credits:
+  - show: androids-aliens
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
+  - show: androids-aliens
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com
+          infobox, which names the show's main cast across all its book
+          seasons. CC-BY-SA.
   - show: the-seventh-arch
     season: 1
     role: player
@@ -177,12 +241,18 @@ credits:
   - show: androids-aliens
     season: 1
     role: player
+    character: DAX (Distribution Android X-19)
     alias: default
     sources:
       - url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
         note: Androids & Aliens cast, via the glasscannonnetwork.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt14735282/fullcredits/
+        note: 'IMDb full cast and crew for "Androids & Aliens" (2020), via the
+          official datasets — credits him as "Joseph O''Brien," playing
+          Distribution Android X-19; merged from `joseph-o-brien`.'
   - show: glass-cannon-podcast
     season: 4
     role: player

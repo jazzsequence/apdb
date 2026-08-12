@@ -11,6 +11,37 @@ aliases:
     alias_type: legal
     note: Credited under this name on some sources; merged from `sydney-amanuel`.
 credits:
+  - show: androids-aliens
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: The show's own wiki history notes she joined as a sixth cast
+          member partway through, at episode 96 (partway through The Ruined
+          Clouds); fully present for Empire of Bones, which follows it.
+  - show: androids-aliens
+    season: 7
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: The show's own wiki history notes she joined as a sixth cast
+          member partway through, at episode 96; fully present for The
+          Thirteenth Gate, which follows her joining season.
+  - show: androids-aliens
+    season: 6
+    role: player
+    note: Joined partway through this season (episode 96 of the show overall),
+      per the show's own wiki history; not present for its earlier episodes.
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Androids_%26_Aliens
+        note: Androids & Aliens cast and history, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
   - show: the-seventh-arch
     season: 1
     role: player

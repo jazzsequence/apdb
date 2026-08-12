@@ -13,22 +13,28 @@ seasons:
     episode_count: 60
   - ordinal: 2
     title: Empire of Bones
-    game: pathfinder-2e
+    game: starfinder
+    episode_count: 23
   - ordinal: 3
     title: Incident at Absalom Station
-    game: pathfinder-2e
+    game: starfinder
+    episode_count: 25
   - ordinal: 4
     title: Splintered Worlds
-    game: pathfinder-2e
+    game: starfinder
+    episode_count: 26
   - ordinal: 5
     title: Temple of the Twelve
-    game: pathfinder-2e
+    game: starfinder
+    episode_count: 30
   - ordinal: 6
     title: The Ruined Clouds
-    game: pathfinder-2e
+    game: starfinder
+    episode_count: 27
   - ordinal: 7
     title: The Thirteenth Gate
-    game: pathfinder-2e
+    game: starfinder
+    episode_count: 24
 image:
   url: https://i.ytimg.com/vi/4mXNNAlqT3k/hqdefault.jpg
   licence: fair use
