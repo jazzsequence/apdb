@@ -7,6 +7,15 @@ aliases:
     name: Clint McElroy
     alias_type: legal
 credits:
+  - show: the-smurfs-roleplaying-game
+    season: 1
+    role: player
+    character: Papa Smurf
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=pW_ngPV4ByU
+        note: Cast per the show's own YouTube video description.
   - show: dimension-20
     season: 6
     role: player

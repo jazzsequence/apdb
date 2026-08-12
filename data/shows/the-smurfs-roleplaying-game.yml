@@ -4,12 +4,14 @@ channels:
   - realmsmith
 format: video
 status: unknown
+description: A one-shot sneak peek of The Smurfs Roleplaying Game, played live
+  at Gen Con 2024.
 links:
-  website: https://www.youtube.com/playlist?list=PLcVoov2ilOfJXCUPE8SR5Z7ONIUXvVmBO
+  website: https://www.youtube.com/watch?v=pW_ngPV4ByU
 seasons:
   - ordinal: 1
-    game: dnd-5e
-    episode_count: 4
+    game: smurfs-rpg
+    episode_count: 1
 image:
   url: https://i.ytimg.com/vi/aJ68cA6Vf3g/hqdefault.jpg
   licence: fair use

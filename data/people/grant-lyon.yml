@@ -1,0 +1,17 @@
+id: grant-lyon
+canonical_name: Grant Lyon
+sort_name: Lyon, Grant
+aliases:
+  - id: default
+    name: Grant Lyon
+    alias_type: legal
+credits:
+  - show: the-smurfs-roleplaying-game
+    season: 1
+    role: player
+    character: Jokey Smurf
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=pW_ngPV4ByU
+        note: Cast per the show's own YouTube video description.
