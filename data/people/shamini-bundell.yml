@@ -6,6 +6,18 @@ aliases:
     name: Shamini Bundell
     alias_type: legal
 credits:
+  - show: the-absalom-files-a-starfinder-actual-play
+    season: 1
+    role: player
+    note: One of RPGeeks' four core members; which of them GMs this specific
+      show is not stated anywhere found (they split GMing duties across
+      different shows — Emily Bates GMs Shattered, for instance).
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.keengamer.com/articles/features/interviews/science-rpgs-and-adventure-the-rpgeeks-and-what-theyve-got-in-store-for-us-in-2024/
+        note: Interview naming the four RPGeeks and The Absalom Files as one of
+          their shows.
   - show: shattered-a-daggerheart-actual-play
     season: 1
     role: player

@@ -1,0 +1,19 @@
+id: anna-wenger
+canonical_name: Anna Wenger
+sort_name: Wenger, Anna
+aliases:
+  - id: default
+    name: Anna Wenger
+    alias_type: legal
+credits:
+  - show: strahdo-mojado
+    season: 1
+    role: GM/DM
+    note: Co-DMs with Arthur Milliken, per the show's own description; players
+      are not named in any episode description found.
+    alias: default
+    sources:
+      - tier: official
+        url: https://podcasts.apple.com/us/podcast/strahdo-mojado/id1493604091
+        note: "The show's own Apple Podcasts description: \"Led by Dungeon
+          Masters Arthur Milliken and Anna Wenger.\""

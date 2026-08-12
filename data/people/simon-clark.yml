@@ -1,9 +1,9 @@
-id: emily-bates
-canonical_name: Emily Bates
-sort_name: Bates, Emily
+id: simon-clark
+canonical_name: Simon Clark
+sort_name: Clark, Simon
 aliases:
   - id: default
-    name: Emily Bates
+    name: Simon Clark
     alias_type: legal
 credits:
   - show: the-absalom-files-a-starfinder-actual-play
@@ -11,19 +11,10 @@ credits:
     role: player
     note: One of RPGeeks' four core members; which of them GMs this specific
       show is not stated anywhere found (they split GMing duties across
-      different shows — Emily Bates GMs Shattered, so this credit is left
-      as player rather than assumed).
+      different shows).
     alias: default
     sources:
       - tier: reference
         url: https://www.keengamer.com/articles/features/interviews/science-rpgs-and-adventure-the-rpgeeks-and-what-theyve-got-in-store-for-us-in-2024/
         note: Interview naming the four RPGeeks and The Absalom Files as one of
           their shows.
-  - show: shattered-a-daggerheart-actual-play
-    season: 1
-    role: GM/DM
-    sources:
-      - tier: official
-        url: https://twitch.tv/rpgeeksdnd
-        note: Cast listed in the show's own episode description.
-    alias: default
