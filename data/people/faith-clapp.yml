@@ -1,0 +1,17 @@
+id: faith-clapp
+canonical_name: Faith Clapp
+sort_name: Clapp, Faith
+aliases:
+  - id: default
+    name: Faith Clapp
+    alias_type: legal
+credits:
+  - show: never-tell-me-the-odds
+    season: 1
+    role: player
+    character: Ri Moyeen
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=XuEhkNT0Kgo
+        note: Cast per the show's own YouTube video description.

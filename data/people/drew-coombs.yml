@@ -1,0 +1,17 @@
+id: drew-coombs
+canonical_name: Drew Coombs
+sort_name: Coombs, Drew
+aliases:
+  - id: default
+    name: Drew Coombs
+    alias_type: legal
+credits:
+  - show: never-tell-me-the-odds
+    season: 1
+    role: player
+    character: Dakk Stryker
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=XuEhkNT0Kgo
+        note: Cast per the show's own YouTube video description.

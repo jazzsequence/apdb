@@ -7,6 +7,15 @@ aliases:
     name: Gaurav Gulati
     alias_type: legal
 credits:
+  - show: never-tell-me-the-odds
+    season: 1
+    role: player
+    character: Grango
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=XuEhkNT0Kgo
+        note: Cast per the show's own YouTube video description.
   - show: wildcards-east-texas-university
     season: 1
     role: player
