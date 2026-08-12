@@ -5,10 +5,21 @@ channels:
 format: hybrid
 status: unknown
 links:
-  website: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Labs
+  website: https://www.glasscannonnetwork.com/shows/glass-cannon-labs
+description: "\"Pairing rotating groups of players with new and exciting
+  tabletop RPGs,\" per the show's own site — a one-shot anthology, a
+  different system and mostly different cast each episode. Only one
+  episode's cast is confirmed and indexed here so far, season 1's HârnWorld
+  one-shot (EP32); the `game` field was previously left at this project's
+  usual network-wide default, which this show has never actually run —
+  corrected here to match the one episode actually indexed. Roughly 31
+  other episodes, each its own system and mostly its own cast, are not
+  indexed here yet."
 seasons:
   - ordinal: 1
-    game: pathfinder-2e
+    title: HârnWorld (EP32)
+    game: harnworld
+    episode_count: 1
 image:
   url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/e/ec/GlassCannonLabs.png/revision/latest/scale-to-width-down/400?cb=20230531132241
   licence: fair use

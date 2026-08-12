@@ -5,6 +5,11 @@ aliases:
   - id: default
     name: Clinton Trucks
     alias_type: legal
+  - id: clint-trucks
+    name: Clint Trucks
+    alias_type: stage
+    note: Credited under this name by Glass Cannon Network, which he also
+      produces for alongside Dropout and MST3K; merged from `clint-trucks`.
 credits:
   - show: dimension-20
     role: producer
@@ -16,3 +21,17 @@ credits:
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
           datasets.
+  - show: glass-cannon-labs
+    season: 1
+    episode: EP32
+    role: player
+    alias: clint-trucks
+    note: The audit's nickname-collision check flagged "Clint Trucks" against
+      the already-catalogued "Clinton Trucks" (Dimension 20 producer);
+      merged after confirming he also produces for Glass Cannon Network,
+      alongside Dropout and MST3K — the connection between this credit and
+      the Dimension 20 one.
+    sources:
+      - tier: official
+        url: https://www.glasscannonnetwork.com/shows/glass-cannon-labs
+        note: The show's own site lists EP32's cast for its HârnWorld one-shot.

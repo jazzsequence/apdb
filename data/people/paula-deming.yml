@@ -7,6 +7,15 @@ aliases:
     name: Paula Deming
     alias_type: legal
 credits:
+  - show: glass-cannon-labs
+    season: 1
+    episode: EP32
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.glasscannonnetwork.com/shows/glass-cannon-labs
+        note: The show's own site lists EP32's cast for its HârnWorld one-shot.
   - show: glass-cannon-network-presents
     season: 2
     role: player

@@ -6,6 +6,16 @@ aliases:
     name: Steven Pope
     alias_type: legal
 credits:
+  - show: uncanny-valley-cancer-cell
+    season: 1
+    role: player
+    character: Dr. James Wolfe
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Uncanny_Valley%3A_Cancer_Cell
+        note: 'Uncanny Valley: Cancer Cell cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.'
   - show: teenagers-from-outer-space
     season: 1
     role: player

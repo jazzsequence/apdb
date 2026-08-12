@@ -1,0 +1,20 @@
+id: michael-uncanny-valley-cancer-cell
+canonical_name: Michael
+sort_name: Michael
+aliases:
+  - id: default
+    name: Michael
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named
+      Michael in this index by suffixing the id with the show.
+credits:
+  - show: uncanny-valley-cancer-cell
+    season: 1
+    role: player
+    character: JD
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Uncanny_Valley%3A_Cancer_Cell
+        note: 'Uncanny Valley: Cancer Cell cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.'

@@ -1,0 +1,17 @@
+id: buckle
+canonical_name: Buckle
+sort_name: Buckle
+aliases:
+  - id: default
+    name: Buckle
+    alias_type: handle
+credits:
+  - show: uncanny-valley-cancer-cell
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Uncanny_Valley%3A_Cancer_Cell
+        note: 'Uncanny Valley: Cancer Cell cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.'

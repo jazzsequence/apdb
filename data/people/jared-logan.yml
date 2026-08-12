@@ -7,6 +7,15 @@ aliases:
     name: Jared Logan
     alias_type: legal
 credits:
+  - show: glass-cannon-labs
+    season: 1
+    episode: EP32
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.glasscannonnetwork.com/shows/glass-cannon-labs
+        note: The show's own site lists EP32's cast for its HârnWorld one-shot.
   - show: new-game-who-dis
     season: 18
     role: GM/DM
