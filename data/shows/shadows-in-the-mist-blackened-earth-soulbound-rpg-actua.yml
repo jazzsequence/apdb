@@ -9,7 +9,7 @@ links:
   website: https://www.youtube.com/playlist?list=PLEUU6UScKQRvlCMGNy5FfJeVyNh1_V-ZG
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: soulbound
     episode_count: 55
 image:
   url: https://i.ytimg.com/vi/o62rY7KfJdw/hqdefault.jpg

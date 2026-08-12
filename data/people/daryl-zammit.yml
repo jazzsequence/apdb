@@ -1,0 +1,17 @@
+id: daryl-zammit
+canonical_name: Daryl Zammit
+sort_name: Zammit, Daryl
+aliases:
+  - id: default
+    name: Daryl Zammit
+    alias_type: legal
+credits:
+  - show: shadows-in-the-mist-blackened-earth-soulbound-rpg-actua
+    season: 1
+    role: player
+    character: Carrich Bonnh
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=Ljh8w46axCk
+        note: Cast per the show's own YouTube video description.

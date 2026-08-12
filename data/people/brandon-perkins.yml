@@ -7,6 +7,15 @@ aliases:
     name: Brandon Perkins
     alias_type: legal
 credits:
+  - show: the-order-of-dragonsbane
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.d3atsea.com/f25/2025-gms
+        note: D3atSea convention GM bio for Brandon Perkins, naming this as one of
+          the shows he's "best known as a GM from."
   - show: sentinels-of-the-storm
     season: 1
     role: player

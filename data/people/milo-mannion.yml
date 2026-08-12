@@ -6,6 +6,15 @@ aliases:
     name: Milo Mannion
     alias_type: legal
 credits:
+  - show: shadows-in-the-mist-blackened-earth-soulbound-rpg-actua
+    season: 1
+    role: player
+    character: Zuriel Stormwake
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=Ljh8w46axCk
+        note: Cast per the show's own YouTube video description.
   - show: secrets-of-the-dragon-emperor-dragonbane-actual-play-al
     season: 1
     role: player
