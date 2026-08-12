@@ -1,0 +1,20 @@
+id: dominik
+canonical_name: Dominik
+sort_name: Dominik
+aliases:
+  - id: default
+    name: Dominik
+    alias_type: handle
+credits:
+  - show: michael-l-jaegers-team
+    season: 1
+    episode: 04.02 - Zirkel des Baphomet, Teil 2
+    role: player
+    character: Poggio Ariminium
+    alias: default
+    sources:
+      - tier: official
+        url: https://jaegers.net/call-of-cthulhu-podcast-04-02-kreuzzuege-zirkel-des-baphomet-teil-2/
+        note: The production's own episode page names the cast for this specific
+          campaign (Zirkel des Baphomet), distinct from the show's other
+          bundled campaigns.

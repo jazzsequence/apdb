@@ -1,0 +1,20 @@
+id: christian-b
+canonical_name: Christian B.
+sort_name: B., Christian
+aliases:
+  - id: default
+    name: Christian B.
+    alias_type: handle
+    note: Surname abbreviated to an initial by the production's own site.
+credits:
+  - show: michael-l-jaegers-team
+    season: 1
+    episode: 04.02 - Zirkel des Baphomet, Teil 2
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://jaegers.net/call-of-cthulhu-podcast-04-02-kreuzzuege-zirkel-des-baphomet-teil-2/
+        note: The production's own episode page names the cast for this specific
+          campaign (Zirkel des Baphomet), distinct from the show's other
+          bundled campaigns.

@@ -1,0 +1,23 @@
+id: michael-l-jaegers
+canonical_name: Michael L. Jaegers
+sort_name: Jaegers, Michael L.
+aliases:
+  - id: default
+    name: Michael L. Jaegers
+    alias_type: legal
+credits:
+  - show: michael-l-jaegers-team
+    season: 1
+    episode: 04.02 - Zirkel des Baphomet, Teil 2
+    role: player
+    character: Prior Gregorio
+    note: The show's namesake produces and hosts jaegers.net's Cthulhu Podcast,
+      but plays rather than GMs in this particular campaign — Christian B.
+      runs Zirkel des Baphomet.
+    alias: default
+    sources:
+      - tier: official
+        url: https://jaegers.net/call-of-cthulhu-podcast-04-02-kreuzzuege-zirkel-des-baphomet-teil-2/
+        note: The production's own episode page names the cast for this specific
+          campaign (Zirkel des Baphomet), distinct from the show's other
+          bundled campaigns.
