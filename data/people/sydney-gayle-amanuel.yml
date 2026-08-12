@@ -11,6 +11,46 @@ aliases:
     alias_type: legal
     note: Credited under this name on some sources; merged from `sydney-amanuel`.
 credits:
+  - show: glass-cannon-live
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
+          infobox, which names these as the constant Campaign 1 (Strange
+          Aeons) cast across its books. CC-BY-SA.
+  - show: glass-cannon-live
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
+          infobox, which names these as the constant Campaign 1 (Strange
+          Aeons) cast across its books. CC-BY-SA.
+  - show: glass-cannon-live
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
+          infobox, which names these as the constant Campaign 1 (Strange
+          Aeons) cast across its books. CC-BY-SA.
+  - show: glass-cannon-live
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
+          infobox, which names these as the constant Campaign 1 (Strange
+          Aeons) cast across its books. CC-BY-SA.
   - show: wicked-empire
     season: 2
     role: player

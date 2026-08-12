@@ -7,6 +7,46 @@ aliases:
     name: Troy Lavallee
     alias_type: legal
 credits:
+  - show: glass-cannon-live
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
+          infobox, which names these as the constant Campaign 1 (Strange
+          Aeons) cast across its books. CC-BY-SA.
+  - show: glass-cannon-live
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
+          infobox, which names these as the constant Campaign 1 (Strange
+          Aeons) cast across its books. CC-BY-SA.
+  - show: glass-cannon-live
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
+          infobox, which names these as the constant Campaign 1 (Strange
+          Aeons) cast across its books. CC-BY-SA.
+  - show: glass-cannon-live
+    season: 5
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Live!
+        note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
+          infobox, which names these as the constant Campaign 1 (Strange
+          Aeons) cast across its books. CC-BY-SA.
   - show: raiders-of-the-lost-continent
     season: 2
     role: player
