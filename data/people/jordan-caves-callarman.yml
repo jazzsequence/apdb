@@ -11,6 +11,15 @@ aliases:
     alias_type: legal
     note: Credited under this name on some sources; merged from `jordan-callarman`.
 credits:
+  - show: roll-for-shoes-the-imps-of-hell
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Roll_for_Shoes_-_%22The_Imps_of_Hell%22
+        note: Roll for Shoes - "The Imps of Hell" cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: wildcards-east-texas-university
     season: 1
     role: GM/DM

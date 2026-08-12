@@ -6,6 +6,16 @@ aliases:
     name: Blythe Kala
     alias_type: legal
 credits:
+  - show: roll-for-shoes-the-imps-of-hell
+    season: 1
+    role: player
+    character: Quincy aka Squee
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Roll_for_Shoes_-_%22The_Imps_of_Hell%22
+        note: Roll for Shoes - "The Imps of Hell" cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: the-realms-of-rothaen
     season: 1
     episode: Episode 2
