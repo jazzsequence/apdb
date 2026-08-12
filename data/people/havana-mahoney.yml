@@ -53,6 +53,39 @@ credits:
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
   - show: pirates-of-salt-bay
+    season: 2
+    role: player
+    character: Addi Balmyar
+    note: Main cast across the whole four-season run, per the show's own wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: pirates-of-salt-bay
+    season: 3
+    role: player
+    character: Addi Balmyar
+    note: Main cast across the whole four-season run, per the show's own wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: pirates-of-salt-bay
+    season: 4
+    role: player
+    character: Addi Balmyar
+    note: Main cast across the whole four-season run, per the show's own wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: pirates-of-salt-bay
     role: player
     character: Addi Balmyar
     note: Matched to IMDb on title alone; no existing credit here to cross-check

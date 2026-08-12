@@ -6,6 +6,50 @@ aliases:
     name: NegaOryx
     alias_type: legal
 credits:
+  - show: pirates-of-salt-bay
+    season: 1
+    role: player
+    character: Trislynn Orana
+    note: Main cast across the whole four-season run, per the show's own wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: pirates-of-salt-bay
+    season: 2
+    role: player
+    character: Trislynn Orana
+    note: Main cast across the whole four-season run, per the show's own wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: pirates-of-salt-bay
+    season: 3
+    role: player
+    character: Trislynn Orana
+    note: Main cast across the whole four-season run, per the show's own wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
+  - show: pirates-of-salt-bay
+    season: 4
+    role: player
+    character: Trislynn Orana
+    note: Main cast across the whole four-season run, per the show's own wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
+        note: Pirates of Salt Bay cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
   - show: salt-bay-court-of-thorns
     season: 1
     role: player
