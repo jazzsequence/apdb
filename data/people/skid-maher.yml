@@ -7,6 +7,16 @@ aliases:
     name: Skid Maher
     alias_type: legal
 credits:
+  - show: new-game-who-dis
+    season: 19
+    role: player
+    character: Brother Lukian
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Brother_Lukian
+        note: New Game, Who Dis? - Deathwatch character page, via
+          glasscannonnetwork.fandom.com. CC-BY-SA.
   - show: glass-cannon-live
     season: 2
     role: player

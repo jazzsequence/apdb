@@ -7,6 +7,26 @@ aliases:
     name: Matthew Capodicasa
     alias_type: legal
 credits:
+  - show: new-game-who-dis
+    season: 9
+    role: player
+    character: Nix
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Nix
+        note: New Game, Who Dis? - Paranoia character page, via
+          glasscannonnetwork.fandom.com. CC-BY-SA.
+  - show: new-game-who-dis
+    season: 19
+    role: player
+    character: Brother Sköld
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Brother_Sk%C3%B6ld
+        note: New Game, Who Dis? - Deathwatch character page, via
+          glasscannonnetwork.fandom.com. CC-BY-SA.
   - show: glass-cannon-live
     season: 2
     role: player

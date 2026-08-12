@@ -11,6 +11,26 @@ aliases:
     alias_type: legal
     note: Credited under this fuller name by IMDb; merged from `joseph-o-brien`.
 credits:
+  - show: new-game-who-dis
+    season: 9
+    role: player
+    character: Fleetwood
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Fleetwood
+        note: New Game, Who Dis? - Paranoia character page, via
+          glasscannonnetwork.fandom.com. CC-BY-SA.
+  - show: new-game-who-dis
+    season: 19
+    role: player
+    character: Brother Elliosh
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Brother_Elliosh
+        note: New Game, Who Dis? - Deathwatch character page, via
+          glasscannonnetwork.fandom.com. CC-BY-SA.
   - show: glass-cannon-live
     season: 2
     role: player
