@@ -6,6 +6,16 @@ aliases:
     name: Shawn Graham
     alias_type: legal
 credits:
+  - show: the-stormblossom-chronicles
+    season: 1
+    role: player
+    character: Stormblossom
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Stormblossom_Chronicles
+        note: The Stormblossom Chronicles cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: godsmite
     season: 1
     episode: First Episode

@@ -6,6 +6,16 @@ aliases:
     name: Ben Dunn
     alias_type: legal
 credits:
+  - show: the-stormblossom-chronicles
+    season: 1
+    role: player
+    character: "Fro'jin Kaliss"
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Stormblossom_Chronicles
+        note: The Stormblossom Chronicles cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: pathfinder-acme-livestream
     season: 1
     role: player
