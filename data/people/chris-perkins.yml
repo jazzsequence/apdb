@@ -7,6 +7,14 @@ aliases:
     name: Chris Perkins
     alias_type: legal
 credits:
+  - show: acquisitions-incorporated
+    season: 6
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Four
+        note: '"Acquisitions Incorporated: Season Four" cast, via the acquisitionsincorporated.fandom.com infobox. CC-BY-SA.'
   - show: critical-role
     season: 2
     role: guest player

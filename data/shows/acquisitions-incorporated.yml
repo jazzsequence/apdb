@@ -10,22 +10,19 @@ links:
 seasons:
   - ordinal: 1
     title: "Acquisitions Incorporated: Season One"
-    game: dnd-5e
+    game: dnd-4e
   - ordinal: 2
     title: "Acquisitions Incorporated: Season Two"
-    game: dnd-5e
+    game: dnd-4e
   - ordinal: 3
     title: "Acquisitions Incorporated: Season Three"
-    game: dnd-5e
+    game: dnd-4e
   - ordinal: 4
     title: "Interlude: Dark Sun"
-    game: dnd-5e
-  - ordinal: 5
-    title: Keep on the Shadowfell
-    game: dnd-5e
+    game: dnd-4e
   - ordinal: 6
     title: "Acquisitions Incorporated: Season Four"
-    game: dnd-5e
+    game: dnd-4e
   - ordinal: 7
     title: "Acquisitions Incorporated: Season Five"
     game: dnd-5e

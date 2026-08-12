@@ -7,6 +7,15 @@ aliases:
     alias_type: legal
 credits:
   - show: acquisitions-incorporated
+    season: 4
+    role: player
+    character: Carheel
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Interlude:_Dark_Sun
+        note: '"Interlude: Dark Sun" cast, via the acquisitionsincorporated.fandom.com infobox and character list. CC-BY-SA.'
+  - show: acquisitions-incorporated
     role: player
     character: K'thriss Drow'b
     note: TheTVDB credits this at series level; which season it covers is not
