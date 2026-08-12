@@ -7,6 +7,16 @@ aliases:
     alias_type: legal
 credits:
   - show: la-by-night
+    season: 5
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
+        note: The show's own wiki lists this as the consistent core cast
+          across the show's run, matching what's already recorded for
+          Season 4. CC-BY-SA.
+  - show: la-by-night
     season: 4
     role: GM/DM
     sources:
