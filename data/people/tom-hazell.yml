@@ -8,6 +8,15 @@ aliases:
     alias_type: legal
 credits:
   - show: high-rollers-dnd
+    season: 10
+    role: player
+    character: Diyan
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Tales_of_Xadia
+        note: Tales of Xadia cast, via the high-rollers-dnd.fandom.com infobox. CC-BY-SA.
+  - show: high-rollers-dnd
     season: 3
     role: player
     character: Xantheus

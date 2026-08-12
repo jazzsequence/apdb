@@ -1,0 +1,20 @@
+id: vanessa-guerrero
+canonical_name: Vanessa Guerrero
+sort_name: Guerrero, Vanessa
+aliases:
+  - id: default
+    name: Vanessa Guerrero
+    alias_type: legal
+credits:
+  - show: high-rollers-dnd
+    season: 10
+    role: guest player
+    character: Winda
+    note: Guest from Role & Keep, the joint-venture partner behind this Tales of
+      Xadia mini-series.
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Tales_of_Xadia
+        note: Tales of Xadia cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.

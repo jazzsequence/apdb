@@ -2,7 +2,9 @@ id: high-rollers-dnd
 title: High Rollers DnD
 format: stream
 status: ongoing
-description: Long-form D&D campaigns GMed by Mark Hulmes.
+description: Long-form D&D campaigns GMed by Mark Hulmes. Ordinal 9 is
+  intentionally missing — "Rhicap" was a series of recap videos summarizing
+  earlier episodes, not a recording of play, and isn't indexed here.
 channels:
   - yogscast
 links:
@@ -34,12 +36,9 @@ seasons:
   - ordinal: 8
     title: Chaos Twins
     game: dnd-5e
-  - ordinal: 9
-    title: Rhicap
-    game: dnd-5e
   - ordinal: 10
     title: Tales of Xadia
-    game: dnd-5e
+    game: cortex
   - ordinal: 11
     title: "Altheya: The Dragon Empire"
     game: dnd-5e
