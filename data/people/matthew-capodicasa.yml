@@ -7,6 +7,42 @@ aliases:
     name: Matthew Capodicasa
     alias_type: legal
 credits:
+  - show: legacy-of-the-ancients
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Legacy_of_the_Ancients
+        note: Legacy of the Ancients cast and season history, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+  - show: legacy-of-the-ancients
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Legacy_of_the_Ancients
+        note: Legacy of the Ancients cast and season history, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+  - show: legacy-of-the-ancients
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Legacy_of_the_Ancients
+        note: Legacy of the Ancients cast and season history, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
+  - show: legacy-of-the-ancients
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Legacy_of_the_Ancients
+        note: Legacy of the Ancients cast and season history, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
   - show: androids-aliens
     season: 2
     role: player

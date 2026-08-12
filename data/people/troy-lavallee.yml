@@ -7,6 +7,17 @@ aliases:
     name: Troy Lavallee
     alias_type: legal
 credits:
+  - show: legacy-of-the-ancients
+    season: 2
+    role: player
+    note: Replaced by Sydney Gayle Amanuel from the next season onward,
+      per the show's own wiki history.
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Legacy_of_the_Ancients
+        note: Legacy of the Ancients cast and season history, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
   - show: androids-aliens
     season: 2
     role: GM/DM

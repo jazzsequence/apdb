@@ -8,19 +8,19 @@ links:
   website: https://glasscannonnetwork.fandom.com/wiki/Legacy_of_the_Ancients
 seasons:
   - ordinal: 1
-    game: pathfinder-2e
+    game: pathfinder-1e
   - ordinal: 2
     title: Burnt Offerings
-    game: pathfinder-2e
+    game: pathfinder-1e
   - ordinal: 3
     title: Fortress of the Stone Giants
-    game: pathfinder-2e
+    game: pathfinder-1e
   - ordinal: 4
     title: The Hook Mountain Massacre
-    game: pathfinder-2e
+    game: pathfinder-1e
   - ordinal: 5
     title: The Skinsaw Murders
-    game: pathfinder-2e
+    game: pathfinder-1e
 image:
   url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/8/8b/Legacy_of_the_Ancients.jpg/revision/latest/scale-to-width-down/400?cb=20210312002507
   licence: fair use

@@ -7,6 +7,24 @@ aliases:
     name: Paula Deming
     alias_type: legal
 credits:
+  - show: blood-of-the-wild
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Blood_of_the_Wild
+        note: Blood of the Wild cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+  - show: blood-of-the-wild
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Blood_of_the_Wild
+        note: Blood of the Wild cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
   - show: glass-cannon-labs
     season: 1
     episode: EP32
