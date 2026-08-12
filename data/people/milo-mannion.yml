@@ -6,6 +6,15 @@ aliases:
     name: Milo Mannion
     alias_type: legal
 credits:
+  - show: the-delian-company-a-daggerheart-actual-play-series
+    season: 1
+    role: player
+    character: Veyn Ashcroft
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=pJfujPBjRHs
+        note: Cast per the show's own YouTube video description.
   - show: shadows-in-the-mist-blackened-earth-soulbound-rpg-actua
     season: 1
     role: player

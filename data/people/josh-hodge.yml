@@ -6,6 +6,17 @@ aliases:
     name: Josh Hodge
     alias_type: legal
 credits:
+  - show: the-delian-company-a-daggerheart-actual-play-series
+    season: 1
+    role: player
+    character: Bernard Helisson
+    note: Also credited playing a second character, Meunier Poivier, in this
+      episode's cast list.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=pJfujPBjRHs
+        note: Cast per the show's own YouTube video description.
   - show: pirate-borg
     season: 1
     role: player
