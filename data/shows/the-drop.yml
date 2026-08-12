@@ -6,6 +6,8 @@ format: podcast
 status: unknown
 links:
   website: https://happyjacks.org/thedrop/
+description: "\"PBT-Traveller,\" a homebrew hack of Powered by the Apocalypse
+  and Traveller, per the network's own show page."
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: traveller

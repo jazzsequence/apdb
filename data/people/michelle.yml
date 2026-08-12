@@ -1,0 +1,18 @@
+id: michelle
+canonical_name: Michelle
+sort_name: Michelle
+bio: Happy Jacks RPG Network cast member, credited by first name or handle.
+aliases:
+  - id: default
+    name: Michelle
+    alias_type: handle
+credits:
+  - show: the-drop
+    season: 1
+    role: player
+    character: Charity "C.C." Constance
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.happyjacks.org/thedrop/
+        note: Cast per the network's own show page.

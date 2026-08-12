@@ -6,6 +6,15 @@ aliases:
     name: Nick
     alias_type: handle
 credits:
+  - show: the-drop
+    season: 1
+    role: player
+    character: Sacha "Sach" Balabanov
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.happyjacks.org/thedrop/
+        note: Cast per the network's own show page.
   - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
     season: 6
     role: player
