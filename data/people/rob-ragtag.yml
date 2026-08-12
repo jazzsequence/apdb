@@ -1,0 +1,19 @@
+id: rob-ragtag
+canonical_name: Rob
+sort_name: Rob
+aliases:
+  - id: default
+    name: Rob
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named
+      Rob in this index by suffixing the id with the show.
+credits:
+  - show: tabletop-time-roleplay-ragtag-level-up-advanced-5th-edi
+    season: 1
+    role: player
+    character: an elven magician
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.levelup5e.com/news/tabletop-time-roleplays-actual-play-ragtag-showcases-level-up-advanced-5th-edition
+        note: EN Publishing's write-up of the show.

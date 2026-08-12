@@ -7,6 +7,14 @@ aliases:
     name: Eric Reichert
     alias_type: legal
 credits:
+  - show: lords-of-gray-haven
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Lords_of_Gray_Haven
+        note: Lords of Gray Haven cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: shadows-of-the-mirror-men
     season: 1
     role: player

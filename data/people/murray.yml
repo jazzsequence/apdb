@@ -1,0 +1,17 @@
+id: murray
+canonical_name: Murray
+sort_name: Murray
+aliases:
+  - id: default
+    name: Murray
+    alias_type: handle
+credits:
+  - show: tabletop-time-roleplay-ragtag-level-up-advanced-5th-edi
+    season: 1
+    role: player
+    character: Muereena
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.levelup5e.com/news/tabletop-time-roleplays-actual-play-ragtag-showcases-level-up-advanced-5th-edition
+        note: EN Publishing's write-up of the show.

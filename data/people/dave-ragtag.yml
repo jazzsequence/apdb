@@ -1,0 +1,20 @@
+id: dave-ragtag
+canonical_name: Dave
+sort_name: Dave
+aliases:
+  - id: default
+    name: Dave
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named
+      Dave in this index by suffixing the id with the show.
+credits:
+  - show: tabletop-time-roleplay-ragtag-level-up-advanced-5th-edi
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.levelup5e.com/news/tabletop-time-roleplays-actual-play-ragtag-showcases-level-up-advanced-5th-edition
+        note: EN Publishing's write-up names Dave as "The Forever Narrator," who
+          "has owned and operated a Game Store for the past 7 years and now
+          works at Tabletop Time."

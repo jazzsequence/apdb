@@ -4,13 +4,14 @@ channels:
   - en-world-live
 format: video
 status: unknown
-description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
-  series title)."
+description: "Produced by Tabletop Time Roleplay; this chapter of Ragtag switched
+  to Level Up: Advanced 5th Edition, per EN Publishing's own write-up of the
+  show."
 links:
   website: https://www.youtube.com/playlist?list=PLpbzuJtxfbQKg7MPoOyc7KZ8Z9U3Z0CKL
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: level-up-a5e
     episode_count: 4
 image:
   url: https://i.ytimg.com/vi/Wr8u43sIq_8/hqdefault.jpg

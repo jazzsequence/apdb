@@ -7,6 +7,15 @@ aliases:
     name: Sam de Leve
     alias_type: legal
 credits:
+  - show: lords-of-gray-haven
+    season: 1
+    role: player
+    character: Vell Sequar
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Lords_of_Gray_Haven
+        note: Lords of Gray Haven cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: shadowrun-where-the-wall-meets-the-sky
     season: 1
     role: player
