@@ -11,7 +11,21 @@ aliases:
     note: Credited under this shortened name on an earlier Dicey Encounters
       show; his own blog's About page and Bluesky handle
       (ollytaylorpaul.bsky.social) confirm the same person.
+  - id: olly-paul
+    name: Olly Paul
+    alias_type: legal
+    note: Credited under this further-shortened name on another Dicey
+      Encounters show.
 credits:
+  - show: war-of-crows-blades-in-the-dark-campaign
+    season: 1
+    role: GM/DM
+    note: Credited as "Story Teller" per the show's own terminology.
+    alias: olly-paul
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=JhToB9Gj0Fg
+        note: Cast per the show's own YouTube video description.
   - show: the-delian-company-a-daggerheart-actual-play-series
     season: 1
     role: GM/DM

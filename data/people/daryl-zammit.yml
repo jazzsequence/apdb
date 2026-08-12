@@ -6,6 +6,15 @@ aliases:
     name: Daryl Zammit
     alias_type: legal
 credits:
+  - show: war-of-crows-blades-in-the-dark-campaign
+    season: 1
+    role: player
+    character: Szaszachel P. Krohn
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=JhToB9Gj0Fg
+        note: Cast per the show's own YouTube video description.
   - show: shadows-in-the-mist-blackened-earth-soulbound-rpg-actua
     season: 1
     role: player
