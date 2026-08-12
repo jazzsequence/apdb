@@ -6,6 +6,15 @@ aliases:
     name: Alex Evans
     alias_type: legal
 credits:
+  - show: secrets-of-the-dragon-emperor-dragonbane-actual-play-al
+    season: 1
+    role: player
+    character: Archibald Kreyn
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=WtcRqfmDX7g
+        note: Cast per the show's own YouTube video description.
   - show: pirate-borg
     season: 1
     role: player

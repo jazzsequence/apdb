@@ -12,6 +12,15 @@ aliases:
       show; his own blog's About page and Bluesky handle
       (ollytaylorpaul.bsky.social) confirm the same person.
 credits:
+  - show: secrets-of-the-dragon-emperor-dragonbane-actual-play-al
+    season: 1
+    role: GM/DM
+    note: Credited as "Director" per the game's own terminology.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=WtcRqfmDX7g
+        note: Cast per the show's own YouTube video description.
   - show: pirate-borg
     season: 1
     role: GM/DM
