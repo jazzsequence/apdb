@@ -6,6 +6,15 @@ aliases:
     name: Kimi
     alias_type: handle
 credits:
+  - show: murmurs-at-the-abyss
+    season: 1
+    role: player
+    character: Doris Daniels
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/murmursattheabyss/
+        note: Cast per the network's own show page.
   - show: exodus
     season: 1
     role: player
