@@ -7,6 +7,15 @@ aliases:
     name: Noura Ibrahim
     alias_type: legal
 credits:
+  - show: wicked-empire
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Wicked_Empire
+        note: Wicked Empire cast, via the glasscannonnetwork.fandom.com
+          infobox — the show's only season. CC-BY-SA.
   - show: into-the-mist
     season: 1
     role: player

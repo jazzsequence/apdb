@@ -7,6 +7,24 @@ aliases:
     name: Josephine McAdam
     alias_type: legal
 credits:
+  - show: haunted-city
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Haunted_City
+        note: Haunted City cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+  - show: haunted-city
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Haunted_City
+        note: Haunted City cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
   - show: la-by-night
     season: 1
     role: player

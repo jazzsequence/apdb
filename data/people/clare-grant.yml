@@ -7,6 +7,15 @@ aliases:
     name: Clare Grant
     alias_type: legal
 credits:
+  - show: wicked-empire
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Wicked_Empire
+        note: Wicked Empire cast, via the glasscannonnetwork.fandom.com
+          infobox — the show's only season. CC-BY-SA.
   - show: new-game-who-dis
     season: 11
     role: player
