@@ -1,0 +1,16 @@
+id: noelle
+canonical_name: Noelle
+sort_name: Noelle
+aliases:
+  - id: default
+    name: Noelle
+    alias_type: handle
+credits:
+  - show: strange-aeons
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=2Z4rqUL6EiA
+        note: Cast per the show's own YouTube video description.

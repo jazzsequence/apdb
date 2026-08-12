@@ -1,0 +1,16 @@
+id: chrysanth
+canonical_name: Chrysanth
+sort_name: Chrysanth
+aliases:
+  - id: default
+    name: Chrysanth
+    alias_type: handle
+credits:
+  - show: strange-aeons
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=2Z4rqUL6EiA
+        note: Cast per the show's own YouTube video description.

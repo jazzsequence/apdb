@@ -1,0 +1,16 @@
+id: velrock
+canonical_name: Velrock
+sort_name: Velrock
+aliases:
+  - id: default
+    name: Velrock
+    alias_type: handle
+credits:
+  - show: star-wars-dawn-of-defiance
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=MGXTfKfaTaI
+        note: Cast per the show's own YouTube video description.

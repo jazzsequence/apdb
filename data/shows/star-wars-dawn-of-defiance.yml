@@ -4,12 +4,14 @@ channels:
   - moonskull
 format: video
 status: unknown
-description: "System per source: Star Wars Roleplaying FFG Edition (per the series title)."
+description: Set in the aftermath of Revenge of the Sith, a Star Wars Saga
+  Edition campaign following a small band of heroes resisting the newly
+  formed Empire.
 links:
   website: https://www.youtube.com/playlist?list=PL0H8BdffG56-MIOVSmKZMOZLfpXFeHava
 seasons:
   - ordinal: 1
-    game: star-wars-ffg
+    game: star-wars-saga-edition
     episode_count: 62
 image:
   url: https://i.ytimg.com/vi/MGXTfKfaTaI/hqdefault.jpg

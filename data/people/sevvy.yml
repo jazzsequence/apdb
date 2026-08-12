@@ -1,9 +1,9 @@
-id: froste
-canonical_name: Froste
-sort_name: Froste
+id: sevvy
+canonical_name: Sevvy
+sort_name: Sevvy
 aliases:
   - id: default
-    name: Froste
+    name: Sevvy
     alias_type: handle
 credits:
   - show: strange-aeons
@@ -14,11 +14,11 @@ credits:
       - tier: official
         url: https://www.youtube.com/watch?v=2Z4rqUL6EiA
         note: Cast per the show's own YouTube video description.
-  - show: deathrattle
+  - show: star-wars-dawn-of-defiance
     season: 1
     role: player
     alias: default
     sources:
       - tier: official
-        url: https://www.youtube.com/playlist?list=PL0H8BdffG56-JDypIG24OuA-Dvm7KDr-9
-        note: Cast per the show's own YouTube video description ("The Table").
+        url: https://www.youtube.com/watch?v=MGXTfKfaTaI
+        note: Cast per the show's own YouTube video description.
