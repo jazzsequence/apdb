@@ -6,9 +6,11 @@ format: video
 status: unknown
 links:
   website: https://www.youtube.com/playlist?list=PLEUU6UScKQRtCnAQV2S26SoiNJpYP1xDi
+description: A Dark Heresy 2nd Edition Warhammer 40,000 campaign following an
+  Inquisition warband hunting a heretic across the sub-sector.
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: dark-heresy
     episode_count: 6
 image:
   url: https://i.ytimg.com/vi/YDBhgO31i4g/hqdefault.jpg

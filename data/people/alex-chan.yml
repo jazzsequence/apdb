@@ -1,0 +1,17 @@
+id: alex-chan
+canonical_name: Alex Chan
+sort_name: Chan, Alex
+aliases:
+  - id: default
+    name: Alex Chan
+    alias_type: legal
+credits:
+  - show: hunting-heresy
+    season: 1
+    role: player
+    character: Ragaa Ulriah
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YDBhgO31i4g
+        note: Cast per the show's own YouTube video description.

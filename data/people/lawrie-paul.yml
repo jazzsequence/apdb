@@ -1,0 +1,17 @@
+id: lawrie-paul
+canonical_name: Lawrie Paul
+sort_name: Paul, Lawrie
+aliases:
+  - id: default
+    name: Lawrie Paul
+    alias_type: legal
+credits:
+  - show: hunting-heresy
+    season: 1
+    role: player
+    character: Davruse Harlocke
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YDBhgO31i4g
+        note: Cast per the show's own YouTube video description.
