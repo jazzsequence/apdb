@@ -7,6 +7,15 @@ aliases:
     name: Joey
     alias_type: handle
 credits:
+  - show: the-seventh-vale
+    season: 1
+    role: player
+    character: Mira Vin Zauberin
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/seventhvale/
+        note: Cast per the network's own show page.
   - show: great-american-witch
     season: 1
     role: player
