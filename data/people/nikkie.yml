@@ -8,6 +8,14 @@ aliases:
     alias_type: legal
 credits:
   - show: legends-of-avantris
+    season: 24
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://avantris.fandom.com/wiki/Ring_of_Chaos
+        note: Ring of Chaos cast, via the avantris.fandom.com infobox. CC-BY-SA.
+  - show: legends-of-avantris
     season: 2
     role: player
     character: Sylvie Flickerwickett

@@ -203,6 +203,17 @@ credits:
     season: 33
     role: player
     character: Gricko Grimgrin
+    note: Doubled as GM for this one-shot while also playing a PC.
+    alias: default
+    sources:
+      - url: https://avantris.fandom.com/wiki/Into_the_Court_of_Candy
+        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        tier: community
+  - show: legends-of-avantris
+    season: 33
+    role: GM/DM
+    note: Doubled as a player for this one-shot, running the character Gricko
+      Grimgrin alongside GMing.
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Into_the_Court_of_Candy

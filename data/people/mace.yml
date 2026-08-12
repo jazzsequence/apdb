@@ -8,6 +8,15 @@ aliases:
     alias_type: legal
 credits:
   - show: legends-of-avantris
+    season: 38
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot
+        note: Neon Odyssey One-Shot cast, via the avantris.fandom.com infobox.
+          CC-BY-SA.
+  - show: legends-of-avantris
     season: 3
     role: player
     character: Gideon Coal
