@@ -32,7 +32,7 @@ seasons:
     game: pathfinder-2e
   - ordinal: 9
     title: Paranoia
-    game: pathfinder-2e
+    game: paranoia
   - ordinal: 10
     title: Runequest
     game: pathfinder-2e
@@ -62,7 +62,7 @@ seasons:
     game: pathfinder-2e
   - ordinal: 19
     title: "Warhammer 40k: Deathwatch"
-    game: pathfinder-2e
+    game: warhammer-40k-deathwatch
   - ordinal: 20
     title: "Warhammer 40K: Wrath & Glory"
     game: pathfinder-2e

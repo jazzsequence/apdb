@@ -7,6 +7,18 @@ aliases:
     name: Troy Lavallee
     alias_type: legal
 credits:
+  - show: new-game-who-dis
+    season: 9
+    role: GM/DM
+    note: The show's own wiki breaks its GMs down by which of the show's many
+      systems each ran; players are not broken down the same way, so aren't
+      credited here for this specific season.
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/New_Game%2C_Who_Dis%3F
+        note: New Game, Who Dis? GM-by-system breakdown, via the
+          glasscannonnetwork.fandom.com infobox. CC-BY-SA.
   - show: glass-cannon-live
     season: 2
     role: GM/DM
