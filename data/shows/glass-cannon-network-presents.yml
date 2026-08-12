@@ -4,6 +4,13 @@ channels:
   - the-glass-cannon-network
 format: hybrid
 status: unknown
+description: "\"Only on the wiki, maintains this category of shows to distinguish
+  all Glass Cannon Network shows from the Glass Cannon Podcast and Glass
+  Cannon Live!\" — not itself a show with its own cast, but the wiki's
+  umbrella grouping for a set of Patreon-exclusive Glass Cannon Network
+  shows and mini-series, most of which are indexed here as their own shows
+  (Androids & Aliens, Haunted City, Voyagers of the Jump, Wicked Empire and
+  others)."
 links:
   website: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Network_Presents...
 seasons:
@@ -16,7 +23,7 @@ seasons:
       website: https://www.youtube.com/playlist?list=PLz3Be--ot61MgzgYdIGkM8ZaEAITEVcwx
   - ordinal: 3
     title: Time For Chaos
-    game: pathfinder-2e
+    game: call-of-cthulhu
 image:
   url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/e/ed/GCNP.jpg/revision/latest/scale-to-width-down/400?cb=20220304151311
   licence: fair use
