@@ -7,12 +7,12 @@ aliases:
     alias_type: legal
 credits:
   - show: dungeons-and-daddies
-    role: player
+    season: 2
+    role: guest player
     character: Ratticus Finch
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
+    note: One-episode guest in Season 1, Odyssey.
     alias: default
     sources:
-      - tier: reference
-        url: https://thetvdb.com/series/dungeons-and-daddies
-        note: Cast for "Dungeons and Daddies" per TheTVDB.
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_1:_Odyssey
+        note: 'Season 1: Odyssey cast, via dungeonsanddads.fandom.com. CC-BY-SA.'

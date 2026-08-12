@@ -1,0 +1,18 @@
+id: elyse-willems
+canonical_name: Elyse Willems
+sort_name: Willems, Elyse
+aliases:
+  - id: default
+    name: Elyse Willems
+    alias_type: legal
+credits:
+  - show: dungeons-and-daddies
+    season: 1
+    role: guest player
+    character: Erica Drippins
+    note: One-episode guest in Season 2 - Legacy.
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_2:_Legacy
+        note: '"Season 2: Legacy" cast, via dungeonsanddads.fandom.com. CC-BY-SA.'

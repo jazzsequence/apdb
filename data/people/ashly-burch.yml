@@ -56,15 +56,17 @@ credits:
         url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
         note: Cast for "CelebriD&D" per TMDB.
   - show: dungeons-and-daddies
-    role: player
-    character: Dennis Anderson / Mark Likely
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
+    season: 2
+    role: guest player
+    character: Mark Likely
+    note: One-episode guest in Season 1, Odyssey. TheTVDB additionally credits
+      her as "Dennis Anderson," a second character not confirmed against the
+      show's own wiki.
     alias: default
     sources:
-      - tier: reference
-        url: https://thetvdb.com/series/dungeons-and-daddies
-        note: Cast for "Dungeons and Daddies" per TheTVDB.
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_1:_Odyssey
+        note: 'Season 1: Odyssey cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
   - show: candela-obscura
     season: 3
     role: player

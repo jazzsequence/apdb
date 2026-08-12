@@ -1,0 +1,18 @@
+id: amanda-schuckman
+canonical_name: Amanda Schuckman
+sort_name: Schuckman, Amanda
+aliases:
+  - id: default
+    name: Amanda Schuckman
+    alias_type: legal
+credits:
+  - show: dungeons-and-daddies
+    season: 4
+    role: GM/DM
+    note: Co-DMs with Anthony Burch and also plays the antagonists, the Rogan
+      sisters.
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Sons_and_Sonsability
+        note: '"Sons and Sonsability" cast, via dungeonsanddads.fandom.com. CC-BY-SA.'

@@ -7,12 +7,64 @@ aliases:
     alias_type: legal
 credits:
   - show: dungeons-and-daddies
+    season: 2
     role: player
     character: Darryl Wilson
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
     alias: default
     sources:
-      - tier: reference
-        url: https://thetvdb.com/series/dungeons-and-daddies
-        note: Cast for "Dungeons and Daddies" per TheTVDB.
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_1:_Odyssey
+        note: 'Season 1: Odyssey cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 1
+    role: player
+    character: Lincoln Li-Wilson
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_2:_Legacy
+        note: 'Season 2: Legacy cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 3
+    role: player
+    character: Robert Wilson
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/At_The_Mountains_of_Dadness
+        note: 'At The Mountains of Dadness cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 4
+    role: player
+    character: Cynthia Nixon
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Sons_and_Sonsability
+        note: 'Sons and Sonsability cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 5
+    role: player
+    character: Kelsey Grammar
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_3:_The_Peachyville_Horror
+        note: 'Season 3: The Peachyville Horror cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Kingdom_Dad_Monster
+        note: 'Kingdom Dad Monster cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 7
+    role: player
+    character: Dale Elliot
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_4:_Grandpas_and_Galaxies
+        note: 'Season 4: Grandpas and Galaxies cast, via dungeonsanddads.fandom.com. CC-BY-SA.'

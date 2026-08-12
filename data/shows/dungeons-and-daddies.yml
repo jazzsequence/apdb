@@ -7,7 +7,7 @@ description: Comedy actual-play podcast about four dads from our world lost in
 channels:
   - dungeons-and-daddies
 links:
-  website: https://dungeonsanddaddies.fandom.com
+  website: https://dungeonsanddads.fandom.com
 seasons:
   - ordinal: 1
     title: "Season 2: Legacy"
@@ -17,16 +17,16 @@ seasons:
     game: dnd-5e
   - ordinal: 3
     title: At The Mountains of Dadness
-    game: dnd-5e
+    game: call-of-cthulhu
   - ordinal: 4
     title: Sons and Sonsability
-    game: dnd-5e
+    game: dungeons-and-daddies-sons-and-sonsability-homebrew
   - ordinal: 5
     title: "Season 3: The Peachyville Horror"
-    game: dnd-5e
+    game: call-of-cthulhu
   - ordinal: 6
     title: Kingdom Dad Monster
-    game: dnd-5e
+    game: kingdom-death-monster
   - ordinal: 7
     title: "Season 4: Grandpas and Galaxies"
     game: dnd-5e

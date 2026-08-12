@@ -23,15 +23,67 @@ credits:
         url: https://www.themoviedb.org/tv/89180-dimension-20/cast
         note: Cast for "Dimension 20" per TMDB.
   - show: dungeons-and-daddies
+    season: 2
     role: player
     character: Glenn Close
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
     alias: default
     sources:
-      - tier: reference
-        url: https://thetvdb.com/series/dungeons-and-daddies
-        note: Cast for "Dungeons and Daddies" per TheTVDB.
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_1:_Odyssey
+        note: 'Season 1: Odyssey cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 1
+    role: player
+    character: Taylor Swift
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_2:_Legacy
+        note: 'Season 2: Legacy cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 3
+    role: player
+    character: Meryl Streep
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/At_The_Mountains_of_Dadness
+        note: 'At The Mountains of Dadness cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 4
+    role: player
+    character: Fannie Mothman
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Sons_and_Sonsability
+        note: 'Sons and Sonsability cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 5
+    role: player
+    character: Tony Collette
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_3:_The_Peachyville_Horror
+        note: 'Season 3: The Peachyville Horror cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 6
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Kingdom_Dad_Monster
+        note: 'Kingdom Dad Monster cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
+  - show: dungeons-and-daddies
+    season: 7
+    role: player
+    character: Ashley Birch
+    alias: default
+    sources:
+      - tier: community
+        url: https://dungeonsanddads.fandom.com/wiki/Season_4:_Grandpas_and_Galaxies
+        note: 'Season 4: Grandpas and Galaxies cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
 wikidata_qid: Q971622
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/c/c6/Freddie_Wong_WikiPortrait_at_SXSW_2024_Taken_March_13%2C_2024.jpg
