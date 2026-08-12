@@ -8,6 +8,16 @@ aliases:
     alias_type: legal
 credits:
   - show: desiquest
+    season: 2
+    role: player
+    character: Murkha
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=xS5D-xI5f0w
+        note: Cast per the episode's own description for "Always Look A Gift Horse
+          in the Mouth | DesiQuest Winter Special Episode 1."
+  - show: desiquest
     season: 1
     role: player
     character: Murkha Anajan

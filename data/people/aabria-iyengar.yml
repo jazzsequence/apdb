@@ -23,6 +23,17 @@ aliases:
     active_to: "2020"
     note: Birth name.
 credits:
+  - show: desiquest
+    season: 2
+    episode: 'Always Look A Gift Horse in the Mouth | DesiQuest Winter Special Episode 1'
+    role: guest player
+    character: Asha
+    alias: iyengar
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=xS5D-xI5f0w
+        note: Cast per the episode's own description for "Always Look A Gift Horse
+          in the Mouth | DesiQuest Winter Special Episode 1."
   - show: salt-bay-court-of-thorns
     season: 1
     role: GM/DM
