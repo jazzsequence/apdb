@@ -6,6 +6,15 @@ aliases:
     name: Michael Powers
     alias_type: legal
 credits:
+  - show: pirate-borg
+    season: 1
+    role: player
+    character: Mutton De Espada
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=J1fCxluEBrY
+        note: Cast per the show's own YouTube video description.
   - show: eat-the-reich
     season: 1
     role: player

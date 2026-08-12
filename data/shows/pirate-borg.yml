@@ -6,9 +6,11 @@ format: video
 status: unknown
 links:
   website: https://www.youtube.com/playlist?list=PLEUU6UScKQRu-QYxhu6eQ-n2WjqvKFWHK
+description: An actual play of Pirate Borg, following a crew of undead-hunting
+  pirates.
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: pirate-borg
     episode_count: 8
 image:
   url: https://i.ytimg.com/vi/J1fCxluEBrY/hqdefault.jpg
