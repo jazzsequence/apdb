@@ -6,6 +6,24 @@ aliases:
     name: Blythe
     alias_type: handle
 credits:
+  - show: pembrooke
+    season: 1
+    role: player
+    character: Analia
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/pembrooke/
+        note: Cast per the network's own show page.
+  - show: dying-embers
+    season: 1
+    role: player
+    character: "Sal'haera Fyr"
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/dyingembers/
+        note: Cast per the network's own show page.
   - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
     season: 4
     role: player
