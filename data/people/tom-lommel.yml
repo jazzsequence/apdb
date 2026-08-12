@@ -111,13 +111,10 @@ credits:
     season: 1
     role: GM/DM
     alias: bill-cavalier
-    note: Two-episode one-shot in a homebrew setting. The players are not named by
-      any source found.
     sources:
-      - tier: reference
-        url: https://www.savingthrowshow.com/shows/
-        note: Saving Throw's own show listing credits Bill Cavalier (The Dungeon
-          Bastard) as DM for Godsmite.
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Godsmite
+        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: 2015-star-wars-holiday-special
     season: 1
     role: player

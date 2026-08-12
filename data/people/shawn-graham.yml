@@ -6,6 +6,16 @@ aliases:
     name: Shawn Graham
     alias_type: legal
 credits:
+  - show: godsmite
+    season: 1
+    episode: First Episode
+    role: player
+    character: Goodbrand
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Godsmite
+        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: call-of-cthulhu-halloween-2015
     season: 1
     role: player

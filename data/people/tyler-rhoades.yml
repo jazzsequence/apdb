@@ -6,6 +6,16 @@ aliases:
     name: Tyler Rhoades
     alias_type: legal
 credits:
+  - show: godsmite
+    season: 1
+    episode: Second Episode
+    role: player
+    character: Ozure
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Godsmite
+        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: starfinder-mini-campaign
     season: 1
     role: GM/DM

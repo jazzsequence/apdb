@@ -6,6 +6,16 @@ aliases:
     name: Traycee King
     alias_type: legal
 credits:
+  - show: godsmite
+    season: 1
+    role: player
+    character: Viglund
+    note: Played across both episodes of the one-shot.
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Godsmite
+        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: the-lost-brigade
     season: 1
     role: player

@@ -49,6 +49,16 @@ credits:
       - url: https://savingthrowshow.fandom.com/wiki/Crit_Juice
         note: Crit Juice cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
         tier: community
+  - show: godsmite
+    season: 1
+    episode: Second Episode
+    role: player
+    character: Goodbrand
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Godsmite
+        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: 2015-star-wars-holiday-special
     season: 1
     role: GM/DM

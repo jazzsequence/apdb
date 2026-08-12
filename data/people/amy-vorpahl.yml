@@ -7,6 +7,16 @@ aliases:
     name: Amy Vorpahl
     alias_type: legal
 credits:
+  - show: godsmite
+    season: 1
+    episode: Second Episode
+    role: player
+    character: Asta
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Godsmite
+        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: foreververse-w-ivan-van-norman
     season: 1
     role: player
