@@ -1,0 +1,19 @@
+id: scott
+canonical_name: Scott
+sort_name: Scott
+aliases:
+  - id: default
+    name: Scott
+    alias_type: handle
+credits:
+  - show: catthulhu-dark
+    season: 1
+    role: player
+    note: Credited by first name only in the GM's own recap blog post.
+    alias: default
+    sources:
+      - tier: firsthand
+        url: https://atomicbananapress.blogspot.com/2014/12/actual-play-catthulhu-dark.html
+        attested_by: David Schimpff
+        note: The GM's own blog post recounting running this Catthulhu Dark
+          session for Crit This!.

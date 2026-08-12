@@ -1,0 +1,18 @@
+id: david-schimpff
+canonical_name: David Schimpff
+sort_name: Schimpff, David
+aliases:
+  - id: default
+    name: David Schimpff
+    alias_type: legal
+credits:
+  - show: catthulhu-dark
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: firsthand
+        url: https://atomicbananapress.blogspot.com/2014/12/actual-play-catthulhu-dark.html
+        attested_by: David Schimpff
+        note: The GM's own blog post recounting running this Catthulhu Dark
+          session for Crit This!.
