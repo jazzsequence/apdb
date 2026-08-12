@@ -11,6 +11,46 @@ aliases:
     alias_type: legal
     note: Credited under this name on some sources; merged from `jordan-callarman`.
 credits:
+  - show: wildcards-east-texas-university
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+        note: '"Wildcards: East Texas University" main cast, via the
+          savingthrowshow.fandom.com infobox, credited throughout the campaign''s
+          four seasons. CC-BY-SA.'
+  - show: wildcards-east-texas-university
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+        note: '"Wildcards: East Texas University" main cast, via the
+          savingthrowshow.fandom.com infobox, credited throughout the campaign''s
+          four seasons. CC-BY-SA.'
+  - show: wildcards-east-texas-university
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+        note: '"Wildcards: East Texas University" main cast, via the
+          savingthrowshow.fandom.com infobox, credited throughout the campaign''s
+          four seasons. CC-BY-SA.'
+  - show: wildcards-east-texas-university
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+        note: '"Wildcards: East Texas University" main cast, via the
+          savingthrowshow.fandom.com infobox, credited throughout the campaign''s
+          four seasons. CC-BY-SA.'
   - show: the-realms-of-rothaen
     season: 1
     episode: Episode 1

@@ -7,6 +7,50 @@ aliases:
     name: Jordan Pridgen
     alias_type: legal
 credits:
+  - show: wildcards-east-texas-university
+    season: 1
+    role: player
+    character: Josh Sawyer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+        note: '"Wildcards: East Texas University" main cast, via the
+          savingthrowshow.fandom.com infobox, credited throughout the campaign''s
+          four seasons. CC-BY-SA.'
+  - show: wildcards-east-texas-university
+    season: 2
+    role: player
+    character: Josh Sawyer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+        note: '"Wildcards: East Texas University" main cast, via the
+          savingthrowshow.fandom.com infobox, credited throughout the campaign''s
+          four seasons. CC-BY-SA.'
+  - show: wildcards-east-texas-university
+    season: 3
+    role: player
+    character: Josh Sawyer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+        note: '"Wildcards: East Texas University" main cast, via the
+          savingthrowshow.fandom.com infobox, credited throughout the campaign''s
+          four seasons. CC-BY-SA.'
+  - show: wildcards-east-texas-university
+    season: 4
+    role: player
+    character: Josh Sawyer
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Wildcards:_East_Texas_University
+        note: '"Wildcards: East Texas University" main cast, via the
+          savingthrowshow.fandom.com infobox, credited throughout the campaign''s
+          four seasons. CC-BY-SA.'
   - show: lords-of-gray-haven
     season: 1
     role: player
