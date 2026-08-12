@@ -7,6 +7,17 @@ aliases:
     name: Brandon Perkins
     alias_type: legal
 credits:
+  - show: sentinels-of-the-storm
+    season: 1
+    role: player
+    note: Character not established — confirmed only as a player on this show by
+      his own convention-GM bio.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.d3atsea.com/f25/2025-gms
+        note: D3atSea convention GM bio for Brandon Perkins, listing his acting
+          credits including this show.
   - show: into-the-mist
     season: 1
     role: player

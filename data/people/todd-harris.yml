@@ -1,0 +1,18 @@
+id: todd-harris
+canonical_name: Todd Harris
+sort_name: Harris, Todd
+aliases:
+  - id: default
+    name: Todd Harris
+    alias_type: legal
+credits:
+  - show: sentinels-of-the-storm
+    season: 1
+    role: player
+    character: Megil
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.youtube.com/watch?v=45q7fEMyqfU
+        note: A tribute episode from the show's own channel confirms Todd Harris
+          played Megil.
