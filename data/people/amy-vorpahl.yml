@@ -7,6 +7,16 @@ aliases:
     name: Amy Vorpahl
     alias_type: legal
 credits:
+  - show: pathfinder-acme-livestream
+    season: 1
+    role: player
+    character: Denida Stormblossom
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pathfinder_-_ACME_Livestream
+        note: Pathfinder - ACME Livestream cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: never-tell-me-the-odds
     season: 1
     role: player

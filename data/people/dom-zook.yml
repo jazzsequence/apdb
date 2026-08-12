@@ -7,6 +7,16 @@ aliases:
     name: Dom Zook
     alias_type: legal
 credits:
+  - show: pathfinder-acme-livestream
+    season: 1
+    role: player
+    character: Steve Firebanks
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pathfinder_-_ACME_Livestream
+        note: Pathfinder - ACME Livestream cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: wildcards-east-texas-university
     season: 1
     role: player

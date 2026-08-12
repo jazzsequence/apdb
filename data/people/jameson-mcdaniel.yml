@@ -7,6 +7,16 @@ aliases:
     name: Jameson McDaniel
     alias_type: legal
 credits:
+  - show: pathfinder-acme-livestream
+    season: 1
+    role: player
+    character: Choric Sunderdark
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pathfinder_-_ACME_Livestream
+        note: Pathfinder - ACME Livestream cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: the-lost-brigade
     season: 1
     role: GM/DM
