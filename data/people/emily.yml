@@ -6,6 +6,15 @@ aliases:
     name: Emily
     alias_type: handle
 credits:
+  - show: great-american-witch
+    season: 1
+    role: player
+    character: Abigail Hawkes
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/greatamericanwitch/
+        note: Cast per the network's own show page.
   - show: pembrooke
     season: 1
     role: player

@@ -7,6 +7,15 @@ aliases:
     name: Mac
     alias_type: handle
 credits:
+  - show: great-american-witch
+    season: 1
+    role: player
+    character: Imelda "Mel" Lake
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/greatamericanwitch/
+        note: Cast per the network's own show page.
   - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
     season: 2
     role: player

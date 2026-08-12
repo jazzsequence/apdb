@@ -6,6 +6,8 @@ format: podcast
 status: unknown
 links:
   website: https://happyjacks.org/greatamericanwitch/
+description: A playtest of a homebrew Great American Novel supplement, using
+  the game's "witch" archetype cast.
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: great-american-novel
