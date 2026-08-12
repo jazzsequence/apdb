@@ -1,0 +1,18 @@
+id: d-artagnan-mattaliano
+canonical_name: D'Artagnan Mattaliano
+sort_name: Mattaliano, D'Artagnan
+aliases:
+  - id: default
+    name: D'Artagnan Mattaliano
+    alias_type: legal
+credits:
+  - show: shadowrun-where-the-wall-meets-the-sky
+    season: 1
+    role: player
+    character: Gwyzy
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Shadowrun_-_Where_the_Wall_Meets_the_Sky
+        note: "Shadowrun - Where the Wall Meets the Sky cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA."

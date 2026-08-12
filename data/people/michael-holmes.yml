@@ -7,6 +7,15 @@ aliases:
     name: Michael Holmes
     alias_type: legal
 credits:
+  - show: shadows-of-the-mirror-men
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Shadows_of_the_Mirror-Men
+        note: Shadows of the Mirror-Men cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: phoenix-dawn-command
     season: 1
     role: player

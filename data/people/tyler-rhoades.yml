@@ -6,6 +6,15 @@ aliases:
     name: Tyler Rhoades
     alias_type: legal
 credits:
+  - show: starfinder-mini-campaign
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Starfinder_-_Mini_Campaign
+        note: Starfinder - Mini Campaign cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: the-lost-brigade
     season: 1
     role: player

@@ -6,6 +6,16 @@ aliases:
     name: Sam de Leve
     alias_type: legal
 credits:
+  - show: shadowrun-where-the-wall-meets-the-sky
+    season: 1
+    role: player
+    character: Eights
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Shadowrun_-_Where_the_Wall_Meets_the_Sky
+        note: "Shadowrun - Where the Wall Meets the Sky cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA."
   - show: shield-of-tomorrow
     season: 1
     role: player

@@ -6,6 +6,16 @@ aliases:
     name: Dan Peck
     alias_type: legal
 credits:
+  - show: starfinder-mini-campaign
+    season: 1
+    role: player
+    character: Twill
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Starfinder_-_Mini_Campaign
+        note: Starfinder - Mini Campaign cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: deepwater-deep
     role: player
     season: 1
