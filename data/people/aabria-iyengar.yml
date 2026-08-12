@@ -23,6 +23,15 @@ aliases:
     active_to: "2020"
     note: Birth name.
 credits:
+  - show: idolon-academy
+    season: 1
+    role: player
+    character: 'Tendai Collier aka "Eye"'
+    alias: iyengar
+    sources:
+      - tier: official
+        url: https://happyjacks.org/idolonacademy/
+        note: Cast per the network's own show page.
   - show: desiquest
     season: 2
     episode: 'Always Look A Gift Horse in the Mouth | DesiQuest Winter Special Episode 1'
