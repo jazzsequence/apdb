@@ -1,0 +1,20 @@
+id: josh-hodge
+canonical_name: Josh Hodge
+sort_name: Hodge, Josh
+aliases:
+  - id: default
+    name: Josh Hodge
+    alias_type: legal
+credits:
+  - show: dagger-in-the-heart-heart-the-city-beneath
+    season: 1
+    role: player
+    character: Soshar Yqem
+    note: Left the campaign partway through, per the show's own written review;
+      later episode credits list a different third player instead.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLEUU6UScKQRvGQi4L5tOjZA24c5iJ6LRm
+        note: Cast per the show's own YouTube video description, retained from
+          the show's original imported description.

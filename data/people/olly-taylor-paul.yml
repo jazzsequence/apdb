@@ -1,0 +1,16 @@
+id: olly-taylor-paul
+canonical_name: Olly Taylor-Paul
+sort_name: Taylor-Paul, Olly
+aliases:
+  - id: default
+    name: Olly Taylor-Paul
+    alias_type: legal
+credits:
+  - show: dagger-in-the-heart-heart-the-city-beneath
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=evjeiNfE3So
+        note: Cast per the show's own YouTube video descriptions.

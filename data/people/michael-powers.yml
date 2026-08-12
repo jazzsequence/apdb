@@ -1,0 +1,17 @@
+id: michael-powers
+canonical_name: Michael Powers
+sort_name: Powers, Michael
+aliases:
+  - id: default
+    name: Michael Powers
+    alias_type: legal
+credits:
+  - show: dagger-in-the-heart-heart-the-city-beneath
+    season: 1
+    role: player
+    character: Ambrosia-Quenches-Agony
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=evjeiNfE3So
+        note: Cast per the show's own YouTube video descriptions.

@@ -4,25 +4,13 @@ channels:
   - dicey-encounters
 format: video
 status: unknown
-description: >-
-  This is our Actual Play of the TTRPG Heart: The City Beneath, playing the
-  adventure Dagger in the Heart, created and published by Rowan, Rook & Decard.
-
-
-  Consider buying me a coffee if you like our stuff:
-  https://buymeacoffee.com/ojgpaul0
-
-
-  Cast
-
-  Soshar Yqem, Gnoll Hound (Played by Josh Hodge)
-
-  Kael Emb
+description: "An actual play of Heart: The City Beneath, running the published
+  adventure Dagger in the Heart by Rowan, Rook and Decard."
 links:
   website: https://www.youtube.com/playlist?list=PLEUU6UScKQRvGQi4L5tOjZA24c5iJ6LRm
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: heart-the-city-beneath
     episode_count: 24
 image:
   url: https://i.ytimg.com/vi/7qhBkIE2lAg/hqdefault.jpg
