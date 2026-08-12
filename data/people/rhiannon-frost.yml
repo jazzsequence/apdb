@@ -6,6 +6,16 @@ aliases:
     name: Rhiannon Frost
     alias_type: legal
 credits:
+  - show: warhammer-fantasy-roleplay
+    season: 1
+    role: player
+    character: Ernesta Thorn
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+        note: Warhammer Fantasy Roleplay cast, via the high-rollers-dnd.fandom.com
+          infobox. CC-BY-SA.
   - show: high-rollers-dnd
     season: 10
     role: player

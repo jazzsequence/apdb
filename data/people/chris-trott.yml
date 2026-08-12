@@ -7,6 +7,16 @@ aliases:
     name: Chris Trott
     alias_type: legal
 credits:
+  - show: warhammer-fantasy-roleplay
+    season: 1
+    role: player
+    character: Siegfried Bummell
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+        note: Warhammer Fantasy Roleplay cast, via the high-rollers-dnd.fandom.com
+          infobox. CC-BY-SA.
   - show: high-rollers-dnd
     season: 3
     role: player

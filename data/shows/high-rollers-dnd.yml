@@ -41,9 +41,6 @@ seasons:
     title: "Altheya: The Dragon Empire"
     game: dnd-5e
     episode_count: 117
-  - ordinal: 12
-    title: Warhammer Fantasy Roleplay
-    game: dnd-5e
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/d/d3/Aerois_Logo.png/revision/latest/scale-to-width-down/400?cb=20201207040906
   licence: fair use
