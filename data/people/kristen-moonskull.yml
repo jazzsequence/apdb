@@ -1,0 +1,16 @@
+id: kristen-moonskull
+canonical_name: Kristen
+sort_name: Kristen
+aliases:
+  - id: default
+    name: Kristen
+    alias_type: handle
+credits:
+  - show: seasons-of-ghosts
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=B2pdimb16eQ
+        note: Cast per the show's own YouTube video description.
