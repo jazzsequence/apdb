@@ -400,11 +400,12 @@ credits:
     character: Captain K. P. Hob
   - show: critical-role
     season: 4
-    role: player
+    role: GM/DM
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
-        note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+        note: 'Campaign Four cast, via the criticalrole.fandom.com infobox, which
+          tags him "| DM" among the season''s starring cast. CC-BY-SA.'
         tier: community
       - &a6
         tier: reference

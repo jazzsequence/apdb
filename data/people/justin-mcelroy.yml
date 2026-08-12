@@ -155,12 +155,23 @@ credits:
       - *a1
   - show: the-adventure-zone
     season: 6
-    role: player
+    role: GM/DM
     alias: default
     sources:
       - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Elementary
         note: "MaxFunDrive Bonus Campaign: Elementary cast, via the
-          theadventurezone.fandom.com infobox. CC-BY-SA."
+          theadventurezone.fandom.com infobox, which lists him as game_master.
+          CC-BY-SA."
+        tier: community
+  - show: the-adventure-zone
+    season: 11
+    role: GM/DM
+    alias: default
+    sources:
+      - url: https://theadventurezone.fandom.com/wiki/MaxFunDrive_Bonus_Campaign%3A_Lords_of_Crunch
+        note: "MaxFunDrive Bonus Campaign: Lords of Crunch cast, via the
+          theadventurezone.fandom.com infobox, which lists him as game_master.
+          CC-BY-SA."
         tier: community
       - *a1
   - show: the-adventure-zone

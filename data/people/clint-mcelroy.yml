@@ -7,6 +7,15 @@ aliases:
     name: Clint McElroy
     alias_type: legal
 credits:
+  - show: the-adventure-zone
+    season: 2
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Campaign_2%3A_Commitment
+        note: Campaign 2 - Commitment cast, via the theadventurezone.fandom.com
+          infobox. CC-BY-SA.
   - show: the-smurfs-roleplaying-game
     season: 1
     role: player
