@@ -10,9 +10,6 @@ seasons:
   - ordinal: 1
     game: gurps-teenagers-from-outer-space-w
     episode_count: 1
-description: "Corrected description: raw wiki markup (\"GURPS}}'''''...\") had
-  leaked into this field. Per the wiki's own infobox this is not a
-  standalone show but Episode 11 of RPG Exploration Society (aired June 19,
-  2017), a one-shot of Mike Pondsmith's Teenagers from Outer Space. Left as
-  its own entry here rather than restructured into RPG Exploration Society's
-  seasons — that would be a bigger data-model change than this pass covers."
+description: "Episode 11 of RPG Exploration Society (aired June 19, 2017), a
+  one-shot of Mike Pondsmith's Teenagers from Outer Space RPG, itself based
+  on GURPS."
