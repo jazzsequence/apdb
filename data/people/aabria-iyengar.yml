@@ -273,7 +273,9 @@ credits:
         tier: community
   - show: candela-obscura
     season: 3
-    role: host
+    role: GM/DM
+    note: Credited as "Game Master" per the show's own cast table; distinct from
+      Taliesin Jaffe's recurring "Lightkeeper" host/narrator role.
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
         note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

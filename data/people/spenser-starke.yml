@@ -9,7 +9,9 @@ aliases:
 credits:
   - show: candela-obscura
     season: 2
-    role: host
+    role: GM/DM
+    note: Credited as "Game Master" per the show's own cast table; distinct from
+      Taliesin Jaffe's recurring "Lightkeeper" host/narrator role.
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
@@ -17,7 +19,9 @@ credits:
         tier: community
   - show: candela-obscura
     season: 5
-    role: host
+    role: GM/DM
+    note: Credited as "Game Master" per the show's own cast table; distinct from
+      Taliesin Jaffe's recurring "Lightkeeper" host/narrator role.
     alias: default
     sources:
       - tier: community

@@ -230,7 +230,9 @@ credits:
         note: Cast for "Dimension 20" per TMDB.
   - show: candela-obscura
     season: 1
-    role: host
+    role: GM/DM
+    note: Credited as "Game Master" per the show's own cast table; distinct from
+      Taliesin Jaffe's recurring "Lightkeeper" host/narrator role.
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
