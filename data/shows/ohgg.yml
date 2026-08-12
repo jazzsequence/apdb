@@ -4,14 +4,15 @@ channels:
   - ohgg
 format: podcast
 status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Call of Cthulhu. Uploader licence:
+description: "Öppethusgruppen (\"The Open House Group\"), a Swedish group,
+  playing Eternal Lies, a campaign for Trail of Cthulhu. Preserved on the
+  Internet Archive. Uploader licence:
   https://creativecommons.org/licenses/by-nc-nd/4.0/."
 links:
   website: https://archive.org/details/eternallies019
 seasons:
   - ordinal: 1
-    game: call-of-cthulhu
+    game: trail-of-cthulhu
     episode_count: 7
     started: 2015-01-26
 image:
