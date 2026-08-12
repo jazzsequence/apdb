@@ -8,6 +8,51 @@ aliases:
     alias_type: legal
 credits:
   - show: acquisitions-incorporated
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Three
+        note: '"Acquisitions Incorporated: Season Three" cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.'
+  - show: acquisitions-incorporated
+    season: 9
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Seven
+        note: '"Acquisitions Incorporated: Season Seven" cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.'
+  - show: acquisitions-incorporated
+    season: 10
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Eight
+        note: '"Acquisitions Incorporated: Season Eight" cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.'
+  - show: acquisitions-incorporated
+    season: 11
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Nine
+        note: '"Acquisitions Incorporated: Season Nine" cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.'
+  - show: acquisitions-incorporated
+    season: 13
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Eleven
+        note: '"Acquisitions Incorporated: Season Eleven" cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.'
+  - show: acquisitions-incorporated
     season: 6
     role: GM/DM
     alias: default
