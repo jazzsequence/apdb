@@ -1,0 +1,18 @@
+id: matt-cook
+canonical_name: Matt Cook
+sort_name: Cook, Matt
+aliases:
+  - id: default
+    name: Matt Cook
+    alias_type: legal
+credits:
+  - show: crit-juice
+    season: 1
+    role: player
+    alias: default
+    note: Credited as a core cast member of the "Crit Juice" podcast and its
+      Saving Throw stream continuation.
+    sources:
+      - tier: community
+        url: http://critjuice.wikidot.com/people:people
+        note: Crit Juice cast list, via the show's own wikidot site.

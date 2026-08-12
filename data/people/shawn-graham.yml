@@ -6,6 +6,16 @@ aliases:
     name: Shawn Graham
     alias_type: legal
 credits:
+  - show: call-of-cthulhu-halloween-2015
+    season: 1
+    role: player
+    character: Ernest Hemingway
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Call_of_Cthulhu_-_Halloween_2015
+        note: Call of Cthulhu - Halloween 2015 cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: the-realms-of-rothaen
     season: 1
     episode: Episode 1

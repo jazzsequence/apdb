@@ -1,0 +1,18 @@
+id: chris-greenwood
+canonical_name: Chris Greenwood
+sort_name: Greenwood, Chris
+aliases:
+  - id: default
+    name: Chris Greenwood
+    alias_type: legal
+credits:
+  - show: call-of-cthulhu-halloween-2015
+    season: 1
+    role: player
+    character: 'Aloysius "Big Al" Lombardo'
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Call_of_Cthulhu_-_Halloween_2015
+        note: Call of Cthulhu - Halloween 2015 cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.

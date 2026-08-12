@@ -1,0 +1,18 @@
+id: brian-mcgrath
+canonical_name: Brian McGrath
+sort_name: McGrath, Brian
+aliases:
+  - id: default
+    name: Brian McGrath
+    alias_type: legal
+credits:
+  - show: crit-juice
+    season: 1
+    role: player
+    alias: default
+    note: Credited as a core cast member of the "Crit Juice" podcast and its
+      Saving Throw stream continuation.
+    sources:
+      - tier: community
+        url: http://critjuice.wikidot.com/people:people
+        note: Crit Juice cast list, via the show's own wikidot site.
