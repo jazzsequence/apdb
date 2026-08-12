@@ -8,16 +8,16 @@ links:
   website: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
 seasons:
   - ordinal: 1
-    game: pathfinder-2e
+    game: pathfinder-1e
   - ordinal: 2
     title: Into the Shattered Continent
-    game: pathfinder-2e
+    game: pathfinder-1e
   - ordinal: 3
     title: The Flooded Cathedral
-    game: pathfinder-2e
+    game: pathfinder-1e
   - ordinal: 4
     title: The Lost Outpost
-    game: pathfinder-2e
+    game: pathfinder-1e
 image:
   url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/e/e9/Raiders_of_the_Lost_Continent.jpg/revision/latest/scale-to-width-down/400?cb=20201005023234
   licence: fair use

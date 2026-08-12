@@ -11,6 +11,36 @@ aliases:
     alias_type: legal
     note: Credited under this fuller name by IMDb; merged from `joseph-o-brien`.
 credits:
+  - show: raiders-of-the-lost-continent
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
+        note: Raiders of the Lost Continent cast, via the
+          glasscannonnetwork.fandom.com infobox, which names these four as
+          the constant main cast throughout the show's run. CC-BY-SA.
+  - show: raiders-of-the-lost-continent
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
+        note: Raiders of the Lost Continent cast, via the
+          glasscannonnetwork.fandom.com infobox, which names these four as
+          the constant main cast throughout the show's run. CC-BY-SA.
+  - show: raiders-of-the-lost-continent
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Raiders_of_the_Lost_Continent
+        note: Raiders of the Lost Continent cast, via the
+          glasscannonnetwork.fandom.com infobox, which names these four as
+          the constant main cast throughout the show's run. CC-BY-SA.
   - show: legacy-of-the-ancients
     season: 2
     role: player

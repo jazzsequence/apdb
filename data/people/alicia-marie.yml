@@ -12,6 +12,26 @@ aliases:
     name: Alicia Marie
     alias_type: legal
 credits:
+  - show: voyagers-of-the-jump
+    season: 2
+    role: player
+    character: Gigi Kershawn
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Voyagers_of_the_Jump
+        note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
+  - show: voyagers-of-the-jump
+    season: 3
+    role: player
+    character: Gigi Kershawn
+    alias: default
+    sources:
+      - tier: community
+        url: https://glasscannonnetwork.fandom.com/wiki/Voyagers_of_the_Jump
+        note: Voyagers of the Jump cast, via the glasscannonnetwork.fandom.com
+          infobox. CC-BY-SA.
   - show: new-game-who-dis
     season: 12
     role: player
