@@ -6,6 +6,12 @@ aliases:
   - id: default
     name: Sam de Leve
     alias_type: legal
+  - id: sam
+    name: Sam
+    alias_type: handle
+    note: Credited by first name only on Interpol X and the "Looking For More"
+      Dark Sun shows Journey to the Obsidian Spire and Rise of the Veiled
+      Alliance; merged from `sam`.
 credits:
   - show: lords-of-gray-haven
     season: 1
@@ -112,6 +118,37 @@ credits:
         url: https://www.imdb.com/title/tt9196944/fullcredits/
         note: IMDb full cast and crew for "Shadows on the Horizon" (2018), via the
           official datasets.
+  - show: interpol-x
+    season: 1
+    role: player
+    alias: sam
+    sources:
+      - tier: official
+        url: https://happyjacks.org/interpolx/
+        note: Cast per the network's own show page.
+  - show: journey-to-the-obsidian-spire
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=xJDZnP3X1h0
+        note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
+          the Veiled Alliance, EP15: Return to Balic\"."
+    season: 1
+    character: Merula
+    alias: sam
+  - show: rise-of-the-veiled-alliance-season-1
+    role: player
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=puOgpsDXy34
+        note: "Cast stated in the show's own description for \"(Dark Sun D&D5e) Rise of
+          the Veiled Alliance, EP1: City of Sails\"."
+      - tier: firsthand
+        attested_by: jazzsequence
+        note: Confirmed billed name while watching the show.
+    season: 1
+    character: Merula
+    alias: sam
 image:
   url: https://static.wikia.nocookie.net/shield-of-tomorrow/images/4/43/Sam_de_Leve.jpg/revision/latest?cb=20170630134513
   licence: fair use
