@@ -7,6 +7,14 @@ aliases:
     name: Gina
     alias_type: handle
 credits:
+  - show: vast-dominions
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/vastdominions/
+        note: Cast per the network's own show page.
   - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
     season: 1
     role: player

@@ -6,6 +6,14 @@ aliases:
     name: CADave
     alias_type: handle
 credits:
+  - show: vast-dominions
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/vastdominions/
+        note: Cast per the network's own show page.
   - show: the-seventh-vale
     season: 1
     role: player

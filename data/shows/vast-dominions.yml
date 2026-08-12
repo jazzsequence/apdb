@@ -4,9 +4,10 @@ channels:
   - happy-jacks
 format: podcast
 status: unknown
-description: "System per source: Moment of Truth Beta."
+description: A campaign in Moment of Truth, a d6-dice-pool tabletop RPG designed
+  by Happy Jacks' own Stu Venable.
 links:
   website: https://happyjacks.org/vastdominions/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: moment-of-truth
