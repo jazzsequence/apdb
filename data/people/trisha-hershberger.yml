@@ -6,6 +6,15 @@ aliases:
     name: Trisha Hershberger
     alias_type: legal
 credits:
+  - show: foreververse-w-ivan-van-norman
+    season: 1
+    role: player
+    note: Core cast member, per the show's own fandom wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://foreververse.fandom.com/wiki/ForeverVerse
+        note: ForeverVerse cast, via the show's own fandom wiki. CC-BY-SA.
   - show: la-by-night
     season: 1
     role: player

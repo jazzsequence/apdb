@@ -16,6 +16,15 @@ aliases:
     alias_type: legal
     note: Credited under this name on some sources; merged from `jason-miller`.
 credits:
+  - show: foreververse-w-ivan-van-norman
+    season: 1
+    role: player
+    note: Core cast member, per the show's own fandom wiki.
+    alias: default
+    sources:
+      - tier: community
+        url: https://foreververse.fandom.com/wiki/ForeverVerse
+        note: ForeverVerse cast, via the show's own fandom wiki. CC-BY-SA.
   - show: critical-role
     season: 1
     role: guest player

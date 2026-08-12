@@ -32,12 +32,12 @@ credits:
         note: Cast per Geek & Sundry.
   - show: foreververse-w-ivan-van-norman
     season: 1
-    role: host
+    role: GM/DM
     alias: default
     sources:
-      - tier: reference
-        url: https://geekandsundry.com/
-        note: Host per Geek & Sundry. Player names not published.
+      - tier: community
+        url: https://foreververse.fandom.com/wiki/ForeverVerse
+        note: ForeverVerse cast, via the show's own fandom wiki. CC-BY-SA.
   - show: sagas-of-sundry-dread
     role: GM/DM
     season: 1
