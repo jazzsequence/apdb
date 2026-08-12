@@ -34,7 +34,8 @@ credits:
         tier: community
   - show: critical-role-specials
     season: 7
-    role: player
+    role: GM/DM
+    note: Credited "| GM" in the show's own cast infobox.
     alias: default
     sources:
       - tier: community

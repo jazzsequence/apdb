@@ -7,6 +7,15 @@ aliases:
     alias_type: legal
 credits:
   - show: critical-role-specials
+    season: 8
+    role: player
+    character: Dusty Rivers
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Moonward
+        note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: critical-role-specials
     season: 9
     role: player
     alias: default

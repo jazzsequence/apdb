@@ -1,0 +1,17 @@
+id: xen
+canonical_name: Xen
+sort_name: Xen
+aliases:
+  - id: default
+    name: Xen
+    alias_type: handle
+credits:
+  - show: critical-role-specials
+    season: 8
+    role: GM/DM
+    note: Credited "| GM" in the show's own cast infobox.
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Moonward
+        note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
