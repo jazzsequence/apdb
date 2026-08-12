@@ -23,6 +23,15 @@ aliases:
     active_to: "2020"
     note: Birth name.
 credits:
+  - show: the-autumn-people
+    season: 1
+    role: player
+    character: Khairyn Antwi
+    alias: iyengar
+    sources:
+      - tier: official
+        url: https://happyjacks.org/autumnpeople/
+        note: Cast per the network's own show page.
   - show: monsoon
     season: 1
     role: player

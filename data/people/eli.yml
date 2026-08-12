@@ -6,6 +6,15 @@ aliases:
     name: Eli
     alias_type: handle
 credits:
+  - show: the-autumn-people
+    season: 1
+    role: player
+    character: Charles Wagner
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/autumnpeople/
+        note: Cast per the network's own show page.
   - show: city-of-towers
     season: 1
     role: player
