@@ -1,6 +1,7 @@
 id: sam-de-leve
 canonical_name: Sam de Leve
 sort_name: Leve, Sam de
+pronouns: they/them
 aliases:
   - id: default
     name: Sam de Leve
@@ -74,7 +75,7 @@ credits:
     episode: 'Lasers and Sams and Feelings (2019-04-08)'
     alias: default
     note: A one-off Lasers & Feelings episode where de Leve takes the GM seat
-      instead of series GM Rick Budd, distinct from his regular season 1
+      instead of series GM Rick Budd, distinct from their regular season 1
       player credit as Wrecks.
     sources:
       - tier: reference
