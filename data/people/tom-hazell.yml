@@ -7,6 +7,67 @@ aliases:
     name: Tom Hazell
     alias_type: legal
 credits:
+  - show: high-rollers-dnd
+    season: 11
+    role: player
+    character: Xantheus Auregan
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Xantheus_Auregan
+        note: "Altheya: The Dragon Empire character page, via
+          high-rollers-dnd.fandom.com. CC-BY-SA."
+  - show: high-rollers-dnd
+    season: 7
+    role: player
+    character: The Mire
+    note: Shared character, co-played with Rhiannon Frost.
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Curse_of_Strahd
+        note: Curse of Strahd cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.
+  - show: high-rollers-dnd
+    season: 6
+    role: player
+    character: Reynard Ferehorn
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Lightfall%27s_Descent
+        note: Lightfall's Descent cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.
+  - show: high-rollers-dnd
+    season: 5
+    role: player
+    character: 'Bertham "Bertie" Teramansk'
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/A_Rogue%27s_Gambit
+        note: A Rogue's Gambit cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.
+  - show: high-rollers-dnd
+    season: 4
+    role: player
+    character: Tholschank Oreborn
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Dead_Reckoning
+        note: Dead Reckoning cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.
+  - show: high-rollers-dnd
+    season: 2
+    role: player
+    character: Reynard Ferehorn
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Lightfall_(Campaign)
+        note: Lightfall (Campaign) cast, via the high-rollers-dnd.fandom.com
+          infobox. CC-BY-SA.
   - show: warhammer-fantasy-roleplay
     season: 1
     role: player
@@ -46,14 +107,6 @@ credits:
         url: https://www.youtube.com/watch?v=KE-8q08L11k
         note: "Cast per the production's own description of \"High Rollers: Aerois #147
           | The Best Defense\"."
-  - show: high-rollers-dnd
-    season: 8
-    role: GM/DM
-    alias: default
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Chaos_Twins
-        note: Chaos Twins cast, via the highrollers.fandom.com infobox. CC-BY-SA.
-        tier: community
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/b/b7/Tom_Hazell.png/revision/latest?cb=20210209080318
   licence: fair use

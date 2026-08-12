@@ -31,9 +31,6 @@ seasons:
   - ordinal: 7
     title: Curse of Strahd
     game: dnd-5e
-  - ordinal: 8
-    title: Chaos Twins
-    game: dnd-5e
   - ordinal: 10
     title: Tales of Xadia
     game: cortex
