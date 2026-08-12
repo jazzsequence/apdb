@@ -6,6 +6,15 @@ aliases:
     name: Pooja
     alias_type: handle
 credits:
+  - show: exodus
+    season: 1
+    role: player
+    character: Shari Melnyk
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/exodus/
+        note: Cast per the network's own show page.
   - show: city-of-towers
     season: 1
     role: player

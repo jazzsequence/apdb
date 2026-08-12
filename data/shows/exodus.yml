@@ -6,8 +6,9 @@ format: podcast
 status: unknown
 links:
   website: https://happyjacks.org/exodus/
+description: A Mongoose Traveller 2nd Edition campaign following a crew of
+  colonists and ex-military drifting between worlds.
 seasons:
   - ordinal: 1
     game: traveller
-description: System corrected to traveller from the show's own title; it had
-  been left at the D&D 5e default.
+    episode_count: 13
