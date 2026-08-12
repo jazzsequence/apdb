@@ -1,0 +1,16 @@
+id: kris
+canonical_name: Kris
+sort_name: Kris
+aliases:
+  - id: default
+    name: Kris
+    alias_type: handle
+credits:
+  - show: slouching-towards-eldemy
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/slouchingtowardseldemy/
+        note: Cast per the network's own show page.
