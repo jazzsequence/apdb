@@ -26,17 +26,28 @@ const rows = db.channels
     first-class here — the small ones are where the long tail lives.
   </p>
 
-  <ul class="card-list">
+  <ul class="poster-grid">
     {
       rows.map(({ channel, shows, home }) => (
         <li>
           <a href={`${base}channels/${channel.id}/`}>
-            <div class="card">
-              <h3>{channel.name}</h3>
-              <p>
-                {channel.type} · {shows.length} show{shows.length === 1 ? '' : 's'}
-              </p>
+            <div class="art">
+              {channel.image ? (
+                <img
+                  src={channel.image.url}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                />
+              ) : (
+                <span class="plate" aria-hidden="true">{channel.name.charAt(0)}</span>
+              )}
             </div>
+            <h3>{channel.name}</h3>
+            <p>
+              {channel.type} · {shows.length} show{shows.length === 1 ? '' : 's'}
+            </p>
           </a>
           {home && (
             <a class="card-watch" href={home.url} rel="nofollow noopener">{home.label} ↗</a>
