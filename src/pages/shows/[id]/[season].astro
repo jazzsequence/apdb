@@ -42,12 +42,29 @@ const ordered = [...cast].sort((a, b) => {
 });
 const dates = [season.started, season.ended].filter(Boolean).join(' – ');
 const image = season.image ?? show.image;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWorkSeason',
+  name: season.title ?? `Season ${season.ordinal}`,
+  seasonNumber: season.ordinal,
+  url: new URL(`${base}shows/${show.id}/${season.ordinal}/`, Astro.site).toString(),
+  partOfSeries: {
+    '@type': show.format === 'podcast' ? 'PodcastSeries' : 'CreativeWorkSeries',
+    name: show.title,
+    url: new URL(`${base}shows/${show.id}/`, Astro.site).toString(),
+  },
+  ...(image && { image: image.url }),
+  ...(season.started && { startDate: season.started }),
+  ...(season.ended && { endDate: season.ended }),
+};
 ---
 
 <Base
   indexable
   title={`${season.title ?? `Season ${season.ordinal}`} — ${show.title}`}
   description={`Cast and credits for ${season.title ?? `season ${season.ordinal}`} of ${show.title}.`}
+  jsonLd={jsonLd}
 >
   <p class="billing">
     <a href={`${base}shows/${show.id}/`}>{show.title}</a> · season {season.ordinal}

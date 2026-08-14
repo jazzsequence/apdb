@@ -1,0 +1,46 @@
+# Actual Play Database is built to be indexed and cited, not gatekept — the
+# whole dataset is also public git history at github.com/jazzsequence/apdb.
+# Machine-readable entry points: /llms.txt and /api/index.json.
+
+User-agent: *
+Allow: /
+
+# Named explicitly so intent isn't left to a wildcard default: AI crawlers
+# and answer engines are welcome here, same as search engines.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://actualplaydb.com/sitemap-index.xml

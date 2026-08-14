@@ -16,12 +16,29 @@ const { person, groups, names } = Astro.props;
 const REPO = 'jazzsequence/apdb';
 const formerNames = person.aliases.filter((a) => a.name !== person.canonical_name);
 const creditCount = groups.reduce((sum, g) => sum + g.credits.length, 0);
+const base = import.meta.env.BASE_URL;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: person.canonical_name,
+  url: new URL(`${base}people/${person.id}/`, Astro.site).toString(),
+  ...(formerNames.length > 0 && { alternateName: formerNames.map((a) => a.name) }),
+  ...(person.bio && { description: person.bio }),
+  ...(person.image && { image: person.image.url }),
+  ...(person.wikidata_qid && { identifier: person.wikidata_qid }),
+  sameAs: [
+    person.links.wikipedia,
+    person.wikidata_qid && `https://www.wikidata.org/wiki/${person.wikidata_qid}`,
+  ].filter((v): v is string => Boolean(v)),
+};
 ---
 
 <Base
   indexable
   title={`${person.canonical_name} — Actual Play Database`}
   description={`Every actual play credit for ${names.join(', ')} — ${creditCount} credits across ${groups.length} shows.`}
+  jsonLd={jsonLd}
 >
   <div class="portrait-row">
     {person.image && (

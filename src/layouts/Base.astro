@@ -10,12 +10,22 @@ interface Props {
    * duplicate noise in the results.
    */
   indexable?: boolean;
+  /**
+   * A schema.org object, passed straight through to a JSON-LD <script> tag.
+   * Entity pages (person/show/channel) build one describing themselves;
+   * index and listing pages have nothing single to describe and omit it.
+   */
+  jsonLd?: Record<string, unknown>;
 }
 
-const { title, description, indexable = false } = Astro.props;
+const { title, description, indexable = false, jsonLd } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const ogImage = new URL(`${base}og-image.png`, Astro.site).toString();
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+// Unicode-escaping every '<' rather than just sanitizing "</script>" closes
+// the same hole for every other tag-opening sequence a bio or note field
+// could contain, and remains valid JSON either way.
+const jsonLdScript = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : undefined;
 ---
 
 <!doctype html>
@@ -50,6 +60,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
     <meta name="twitter:title" content={title} />
     {description && <meta name="twitter:description" content={description} />}
     <meta name="twitter:image" content={ogImage} />
+    {jsonLdScript && <script type="application/ld+json" set:html={jsonLdScript} />}
   </head>
   <body>
     <header class="masthead">
