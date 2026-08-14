@@ -1,0 +1,21 @@
+id: david-larkins
+canonical_name: David Larkins
+sort_name: Larkins, David
+aliases:
+  - id: default
+    name: David Larkins
+    alias_type: legal
+credits:
+  - show: the-esoteric-order-of-roleplayers
+    season: 1
+    role: GM/DM
+    note: The group's founder and regular GM; all games are run by him "unless
+      otherwise noted," per the show's own site.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.eorpodcast.com/
+        note: The show's own website, describing its history and format.
+      - tier: official
+        url: http://esoteric-rp.blogspot.com/2013/03/deadlands-reloaded-lost-in-maze-session.html
+        note: The specific session's own recap post on the group's blog.
