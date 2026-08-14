@@ -1,0 +1,19 @@
+id: bill-allan
+canonical_name: Bill Allan
+sort_name: Allan, Bill
+aliases:
+  - id: default
+    name: Bill Allan
+    alias_type: legal
+credits:
+  - show: d-d-with-high-school-students-season-5
+    season: 1
+    role: GM/DM
+    note: The channel's own creator and bio, describing running every edition of
+      D&D among other systems; the world of Kikapulan and Chamenos used in this
+      campaign is his own intellectual property.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=dIohP8ew17A
+        note: Cast and channel bio per the show's own YouTube video description.

@@ -8,6 +8,16 @@ aliases:
 credits:
   - show: d-d-the-shards-of-nyrn-season-4-generic-fantasy-setting
     season: 1
+    role: GM/DM
+    note: Also plays player characters (Feramina Hazal, Kadamus Warforge)
+      alongside DMing, per the show's own wiki.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://dorktales.fandom.com/wiki/The_Shards_of_Nyrn
+        note: Cast per the DorkTales wiki and the show's own site.
+  - show: d-d-the-shards-of-nyrn-season-4-generic-fantasy-setting
+    season: 1
     role: player
     character: Feramina Hazal
     alias: default
