@@ -123,11 +123,17 @@ credits:
         note: IMDb full cast and crew for "Miss Adventures" (2016), via the official
           datasets.
   - show: deadlands-lawless
-    role: player
+    role: GM/DM
     season: 1
-    character: Marshal
+    note: IMDb's own credits list him with the character name "Marshal" — that's
+      Deadlands' in-fiction term for the GM, not a player character; the
+      show's own wiki confirms him as GM.
     alias: default
     sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Deadlands%3A_Lawless
+        note: Deadlands - Lawless cast, via the savingthrowshow.fandom.com infobox.
+          CC-BY-SA.
       - tier: reference
         url: https://www.imdb.com/title/tt12286336/fullcredits/
         note: 'IMDb full cast and crew for "Deadlands: Lawless" (2020), via the official
@@ -157,11 +163,17 @@ credits:
         note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
           datasets.
   - show: east-texas-university-undeclared
-    role: player
+    role: GM/DM
     season: 1
-    character: Dean
+    note: IMDb's own credits list him with the character name "Dean" — that's
+      this show's in-fiction title for the GM, not a player character; the
+      show's own wiki confirms him as GM.
     alias: default
     sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/East_Texas_University%3A_Undeclared
+        note: "East Texas University: Undeclared cast, via the
+          savingthrowshow.fandom.com infobox. CC-BY-SA."
       - tier: reference
         url: https://www.imdb.com/title/tt9187582/fullcredits/
         note: 'IMDb full cast and crew for "East Texas University: Undeclared" (2018),
