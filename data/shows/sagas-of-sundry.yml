@@ -4,16 +4,16 @@ channels:
   - geek-and-sundry
 format: video
 status: unknown
-description: "Recently unearthed from the archives, Sagas of Sundry: Madness is
-  now available publicly for the very first time! Turn down the lights and turn
-  up the volume because you're about to experience MADNESS, an original macabre
-  tale hosted by Ivan Van Norman where cast members Marisha Ray, Liam O'Brien,
-  J"
+description: "System per source: Dread — the horror storytelling game resolved
+  by pulling blocks from a Jenga tower, per the franchise's own \"Sagas of
+  Sundry: Dread\" branding for both this original International Tabletop
+  Day one-shot and its Madness follow-up (a different, D&D-based season,
+  \"Goblin Mode,\" came later)."
 links:
   website: https://www.youtube.com/playlist?list=PL7atuZxmT957Gtda8k_LFP4bn3LELSydw
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: dread
     episode_count: 17
 image:
   url: https://i.ytimg.com/vi/qqGDrhAXq-I/hqdefault.jpg

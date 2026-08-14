@@ -89,7 +89,7 @@ low are curation gaps: the data is not wrong, it is missing or unverified.
 
 1 finding(s), severity **medium**.
 
-- 35 shows are all-5e with no sourced system line — check they were not defaulted
+- 24 shows are all-5e with no sourced system line — check they were not defaulted
 
 ## season with players but no GM
 
