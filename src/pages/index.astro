@@ -191,8 +191,18 @@ function formatViews(n: number): string {
     return copy.slice(0, n);
   }
 
-  const daily = document.getElementById('daily');
-  if (daily) {
+  /*
+   * Re-run on every 'pageshow', not just once at parse time. Safari and
+   * Firefox restore a page from the back/forward cache without re-executing
+   * scripts, so a reader who leaves the tab open overnight and comes back to
+   * it (rather than doing a fresh navigation) would otherwise keep seeing
+   * the picks computed on their last real visit — "the same as yesterday".
+   * The listener fires on the initial load too, so it fully replaces a
+   * one-off call rather than supplementing it.
+   */
+  function renderDaily() {
+    const daily = document.getElementById('daily');
+    if (!daily) return;
     daily.innerHTML = pickForToday(pool, 6)
       .map(
         (s) => `
@@ -206,6 +216,7 @@ function formatViews(n: number): string {
       )
       .join('');
   }
+  window.addEventListener('pageshow', renderDaily);
 </script>
 
 <script>

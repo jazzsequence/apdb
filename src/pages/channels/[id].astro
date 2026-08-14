@@ -32,14 +32,27 @@ const totalSeasons = shows.reduce((n, s) => n + s.show.seasons.length, 0);
   title={`${channel.name} — Actual Play Database`}
   description={`Every show produced by ${channel.name} — ${shows.length} shows, ${totalSeasons} seasons.`}
 >
-  <h1>{channel.name}</h1>
-  <p class="billing">
-    <strong>{channel.type}</strong> · {shows.length} shows · {totalSeasons} seasons
-  </p>
-  <WatchLinks
-    links={channel.links}
-    emptyNote="No home page recorded for this channel yet."
-  />
+  <div class="portrait-row">
+    {channel.image && (
+      <figure class="keyart">
+        <img src={channel.image.url} alt={channel.image.depicts ?? channel.name} loading="lazy" referrerpolicy="no-referrer" />
+        <figcaption>
+          {channel.image.attribution}{' '}
+          <a href={channel.image.source} rel="nofollow noopener">source</a>
+        </figcaption>
+      </figure>
+    )}
+    <div>
+      <h1>{channel.name}</h1>
+      <p class="billing">
+        <strong>{channel.type}</strong> · {shows.length} shows · {totalSeasons} seasons
+      </p>
+      <WatchLinks
+        links={channel.links}
+        emptyNote="No home page recorded for this channel yet."
+      />
+    </div>
+  </div>
   {channel.description && <p class="lede">{channel.description}</p>}
 
   <h2>Shows</h2>
@@ -72,6 +85,6 @@ const totalSeasons = shows.reduce((n, s) => n + s.show.seasons.length, 0);
     file={`data/channels/${channel.id}.yml`}
     name={channel.name}
     path={`/channels/${channel.id}/`}
-    hasImage={true}
+    hasImage={Boolean(channel.image)}
   />
 </Base>

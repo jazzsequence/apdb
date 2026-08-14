@@ -332,11 +332,19 @@ h3 {
   border-bottom: 1px solid var(--border-strong);
   background: var(--sunk);
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  /* minmax(0, …), not a bare 1fr/auto — a grid track's automatic minimum is
+     otherwise its content's min-content size. .channel spans both the title
+     and years columns, so both need their floor pinned to 0 or its line
+     forces the row wider than the viewport instead of wrapping. */
+  grid-template-columns: minmax(0, auto) minmax(0, 1fr) minmax(0, auto);
   gap: 0.1rem 0.75rem;
   align-items: center;
 }
 .film-show .poster {
+  /* Explicit placement, not DOM order — the poster is only rendered when
+     the show has art, and without it auto-placement shifted every column
+     after it left, landing the title in the (unguarded) first track. */
+  grid-column: 1;
   grid-row: span 2;
   width: 62px;
   aspect-ratio: 16 / 10;
@@ -347,6 +355,7 @@ h3 {
 }
 /* h3 inside a card header — no amber bar, that is an h2 device. */
 .film-show > header h3 {
+  grid-column: 2;
   margin: 0;
   font-size: var(--step-1);
   align-self: end;
@@ -358,6 +367,7 @@ h3 {
   text-decoration: underline;
 }
 .film-show .years {
+  grid-column: 3;
   color: var(--muted);
   font-size: var(--step--1);
   font-variant-numeric: tabular-nums;
