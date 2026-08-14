@@ -28,3 +28,26 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/2015_Star_Wars_Holiday_Special
         note: 2015 Star Wars Holiday Special cast, via the savingthrowshow.fandom.com
           infobox. CC-BY-SA.
+  - show: godsmite
+    season: 1
+    episode: First Episode
+    role: player
+    character: Asta
+    alias: chris-greenwood
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Godsmite
+        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. Same 2015
+          Saving Throw cast pool as his other credits (Shawn Graham, Traycee
+          King, Virva Aryan, Tom Lommel all overlap with Barky's Brigade / the
+          2015 Star Wars Holiday Special). CC-BY-SA.
+  - show: call-of-cthulhu-halloween-2015
+    season: 1
+    role: player
+    character: 'Aloysius "Big Al" Lombardo'
+    alias: chris-greenwood
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Call_of_Cthulhu_-_Halloween_2015
+        note: Call of Cthulhu - Halloween 2015 cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.

@@ -5,7 +5,23 @@ aliases:
   - id: default
     name: Christopher Lockey
     alias_type: legal
+  - id: chris-lockey
+    name: Chris Lockey
+    alias_type: legal
+    note: Credited under this shortened name as a Saving Throw performer;
+      confirmed the same person as Critical Role's former social/content
+      producer by contemporary coverage. Merged from `chris-lockey`.
 credits:
+  - show: the-stormblossom-chronicles
+    season: 1
+    role: player
+    character: Flinnegan Blackbarrow
+    alias: chris-lockey
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Stormblossom_Chronicles
+        note: The Stormblossom Chronicles cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.
   - show: candela-obscura
     role: writer
     note: IMDb credits this at series level; which of this show's seasons it covers
