@@ -4,11 +4,13 @@ channels:
   - realmsmith
 format: video
 status: unknown
+description: "System per source: Cyberpunk RED, per the series' own title and
+  YouTube descriptions (\"RealmSmith Learns // Cyberpunk Red\")."
 links:
   website: https://www.youtube.com/playlist?list=PLcVoov2ilOfJ167ELya4Zpg-6X2BQos5-
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: cyberpunk-red
     episode_count: 6
 image:
   url: https://i.ytimg.com/vi/hWXH8Z0bBno/hqdefault.jpg
