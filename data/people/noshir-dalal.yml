@@ -25,8 +25,8 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
-  - show: critical-role-specials
-    season: 2
+  - show: exandria-unlimited
+    season: 6
     role: player
     character: The Emissary
     alias: default

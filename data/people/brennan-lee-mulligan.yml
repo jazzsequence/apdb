@@ -340,8 +340,8 @@ credits:
         tier: community
       - *a2
       - *a3
-  - show: critical-role-specials
-    season: 2
+  - show: exandria-unlimited
+    season: 6
     role: GM/DM
     alias: default
     sources:
@@ -358,6 +358,26 @@ credits:
         url: https://theadventurezone.fandom.com/wiki/Live_Campaign_2%3A_Dadlands
         note: "Live Campaign 2: Dadlands cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
+  - show: the-adventure-zone
+    season: 18
+    role: GM/DM
+    alias: default
+    year: "2023"
+    sources:
+      - tier: official
+        url: https://maximumfun.org/episodes/adventure-zone/the-adventure-zone-dadlands-2-into-the-corn-hole/
+        note: "Dadlands 2: Into the Corn Hole episode page, Maximum Fun: \"Game Mom
+          Brennan Lee Mulligan returns to continue this rowdy dad-venture.\""
+  - show: the-adventure-zone
+    season: 19
+    role: GM/DM
+    alias: default
+    year: "2023"
+    sources:
+      - tier: official
+        url: https://maximumfun.org/episodes/adventure-zone/the-adventure-zone-dadlands-3-famlee-business/
+        note: "Dadlands 3: FAMLEE Business episode page, Maximum Fun: Brennan Lee
+          Mulligan returning for the third installment of Dadlands."
   - show: critical-role
     role: GM/DM
     note: IMDb credits this at series level; which of this show's seasons it covers

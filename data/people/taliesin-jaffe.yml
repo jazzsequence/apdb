@@ -59,8 +59,8 @@ credits:
       - *a1
       - *a2
       - *a3
-  - show: critical-role-specials
-    season: 2
+  - show: exandria-unlimited
+    season: 6
     role: player
     character: Asha
     alias: default

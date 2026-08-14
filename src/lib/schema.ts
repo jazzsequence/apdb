@@ -211,6 +211,7 @@ export const Channel = z
     type: ChannelType,
     description: z.string().optional(),
     links: Links,
+    image: Image.optional(),
   })
   .strict();
 
