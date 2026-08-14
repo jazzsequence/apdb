@@ -12,8 +12,6 @@ description: "\"Only on the wiki, maintains this category of shows to distinguis
 links:
   website: https://glasscannonnetwork.fandom.com/wiki/Glass_Cannon_Network_Presents...
 seasons:
-  - ordinal: 1
-    game: pathfinder-2e
   - ordinal: 2
     title: The Game Garage
     game: pathfinder-2e
