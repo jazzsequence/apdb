@@ -6,6 +6,17 @@ aliases:
     name: NegaOryx
     alias_type: legal
 credits:
+  - show: pugmire-homeward-bound
+    role: player
+    season: 1
+    episode: Episode 3
+    character: Sylvie
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pugmire%3A_Homeward_Bound
+        note: 'Pugmire: Homeward Bound cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.'
   - show: pirates-of-salt-bay
     season: 1
     role: player

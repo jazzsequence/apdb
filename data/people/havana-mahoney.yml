@@ -124,13 +124,17 @@ credits:
         note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
           datasets.
   - show: pugmire-homeward-bound
-    role: player
+    role: GM/DM
     season: 1
-    character: Guide
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against.
+    note: IMDb's own credits list her with the character name "Guide" — that's
+      Pugmire's own term for the GM, not a player character; the show's own
+      wiki confirms her as GM.
     alias: default
     sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Pugmire%3A_Homeward_Bound
+        note: 'Pugmire: Homeward Bound cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA.'
       - tier: reference
         url: https://www.imdb.com/title/tt9184362/fullcredits/
         note: 'IMDb full cast and crew for "Pugmire: Homeward Bound" (2018), via the
