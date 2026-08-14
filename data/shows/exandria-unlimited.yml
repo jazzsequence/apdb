@@ -4,8 +4,11 @@ channels:
   - critical-role
 format: hybrid
 status: hiatus
-description: Anthology series set in Exandria, handing the GM screen to guests
-  rather than to Critical Role's usual dungeon master.
+description: "Anthology series set in Exandria, handing the GM screen to guests
+  rather than to Critical Role's usual dungeon master. System per source:
+  D&D 5th Edition for all five listed miniseries; later Exandria one-shots
+  in a different, newer Darrington Press system (e.g. \"Oaths & Ash\") are
+  not part of this run."
 links:
   website: https://critrole.com
 seasons:

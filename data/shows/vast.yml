@@ -4,16 +4,15 @@ channels:
   - geek-and-sundry
 format: video
 status: unknown
-description: What happens when esteemed comic book creator Jackson Lanzing plays
+description: "What happens when esteemed comic book creator Jackson Lanzing plays
   Game Master to an intrepid space exploration crew in a completely original
-  science fiction role-playing game? Vast! Lanzing guides two crews through the
-  sprawling universe of Vast, navigating this space opera with countless unique
-  s
+  science fiction role-playing game of his own design? Vast! System per
+  source: an original homebrew system, not D&D despite the import default."
 links:
   website: https://www.youtube.com/playlist?list=PL7atuZxmT956Z8tNqlrZRhXH-i_oMfMWV
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: vast-rpg
     episode_count: 4
 image:
   url: https://i.ytimg.com/vi/g4O9oFEVJoU/hqdefault.jpg

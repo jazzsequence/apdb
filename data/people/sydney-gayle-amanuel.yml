@@ -51,15 +51,6 @@ credits:
         note: Glass Cannon Live! cast, via the glasscannonnetwork.fandom.com
           infobox, which names these as the constant Campaign 1 (Strange
           Aeons) cast across its books. CC-BY-SA.
-  - show: wicked-empire
-    season: 2
-    role: player
-    alias: default
-    sources:
-      - tier: community
-        url: https://glasscannonnetwork.fandom.com/wiki/Wicked_Empire
-        note: Wicked Empire cast, via the glasscannonnetwork.fandom.com
-          infobox — the show's only season. CC-BY-SA.
   - show: voyagers-of-the-jump
     season: 2
     role: player
@@ -367,8 +358,9 @@ credits:
     sources:
       - tier: community
         url: https://the-glass-cannon-network.fandom.com/wiki/Wicked_Empire
-        note: Wicked Empire cast, via the the-glass-cannon-network.fandom.com infobox.
-          CC-BY-SA.
+        note: Wicked Empire cast, via the the-glass-cannon-network.fandom.com
+          infobox — the show's only season (also mirrored at
+          glasscannonnetwork.fandom.com). CC-BY-SA.
   - show: friends-of-the-pod
     season: 1
     role: player

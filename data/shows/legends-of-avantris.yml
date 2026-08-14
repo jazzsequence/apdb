@@ -2,7 +2,12 @@ id: legends-of-avantris
 title: Legends of Avantris
 format: video
 status: ongoing
-description: Long-running independent actual-play series.
+description: "Long-running independent actual-play series. System per source:
+  D&D 5th Edition for nearly all seasons — Avantris Entertainment's own
+  published D&D 5e supplement lines (The Crooked Moon, Neon Odyssey) match
+  the system used across most of the group's actual plays. A handful of
+  one-shots/mini-campaigns use other systems instead (Dust to Damnation,
+  Honey Heist, Tainted Grail) — see each season's own game field."
 channels:
   - avantris
 links:
@@ -95,7 +100,7 @@ seasons:
     game: dnd-5e
   - ordinal: 12
     title: Honey Heist
-    game: dnd-5e
+    game: honey-heist
   - ordinal: 13
     title: The Mistchurch Horror
     game: dnd-5e
@@ -116,7 +121,7 @@ seasons:
     game: dnd-5e
   - ordinal: 19
     title: Tainted Grail
-    game: dnd-5e
+    game: tainted-grail-song-of-a-dying-world
   - ordinal: 20
     title: Of Heart and Harvest
     game: dnd-5e
@@ -158,7 +163,7 @@ seasons:
       website: https://www.youtube.com/playlist?list=PLZsrxxME7K32kz4bSTdlCiSCxhtRLiTdV
   - ordinal: 31
     title: "Dust to Damnation: A Daggerheart Ballad"
-    game: dnd-5e
+    game: daggerheart
     links:
       website: https://www.youtube.com/playlist?list=PLZsrxxME7K31kBKwdqg7UkLm4N6eTi8jE
   - ordinal: 32

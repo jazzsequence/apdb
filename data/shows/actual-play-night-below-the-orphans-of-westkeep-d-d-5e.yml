@@ -4,13 +4,13 @@ channels:
   - dungeon-musings
 format: video
 status: unknown
-description: "System per source: Dungeons & Dragons 5th Edition (2014) (per the
+description: "System per source: Dungeons & Dragons 5th Edition (2024) (per the
   series title)."
 links:
   website: https://www.youtube.com/playlist?list=PL1dc382O8j8SpJ9mN83KcbAsCWqWlPf-7
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: dnd-5e-2024
     episode_count: 25
 image:
   url: https://i.ytimg.com/vi/PwPzSVgt-BA/hqdefault.jpg

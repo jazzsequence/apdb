@@ -4,13 +4,12 @@ channels:
   - the-glass-cannon-network
 format: hybrid
 status: unknown
+description: "System per source: Dungeons & Dragons 5th Edition, per the show's
+  own wiki cast list."
 links:
   website: https://glasscannonnetwork.fandom.com/wiki/Wicked_Empire
 seasons:
   - ordinal: 1
-    game: dnd-5e
-  - ordinal: 2
-    title: Wicked Empire Season 1
     game: dnd-5e
 image:
   url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/8/8c/Wicked_Empire.png/revision/latest/scale-to-width-down/400?cb=20210908002856
