@@ -25,19 +25,6 @@ seasons:
         index of its credits. Non-commercial, does not substitute for the
         original, and links back to the source. Removed on request by the rights
         holder — see POLICY.md.
-  - ordinal: 2
-    title: Downfall
-    game: dnd-5e
-    image:
-      url: https://critrole.com/wp-content/uploads/2024/08/C3_thumbnail_E99-1024x576.jpg
-      licence: fair use
-      attribution: Critical Role — Downfall key art, © its producers. Via critrole.com.
-      source: https://critrole.com/qtvideo/downfall-part-one-critical-role-campaign-3-episode-99/
-      depicts: Key art for Downfall
-      rationale: Low-resolution thumbnail used solely to identify this season in an
-        index of its credits. Non-commercial, does not substitute for the
-        original, and links back to the source. Removed on request by the rights
-        holder — see POLICY.md.
   - ordinal: 3
     title: Age of Umbra
     game: daggerheart

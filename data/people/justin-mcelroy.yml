@@ -113,6 +113,27 @@ credits:
           infobox. CC-BY-SA."
         tier: community
   - show: the-adventure-zone
+    season: 18
+    role: player
+    alias: default
+    year: "2023"
+    sources:
+      - tier: official
+        url: https://maximumfun.org/episodes/adventure-zone/the-adventure-zone-dadlands-2-into-the-corn-hole/
+        note: "Dadlands 2: Into the Corn Hole episode page, Maximum Fun: \"Justin,
+          Travis, and Griffin McElroy... have recruited their dad Clint.\" Character
+          name not established."
+  - show: the-adventure-zone
+    season: 19
+    role: player
+    alias: default
+    year: "2023"
+    sources:
+      - tier: official
+        url: https://maximumfun.org/episodes/adventure-zone/the-adventure-zone-dadlands-3-famlee-business/
+        note: "Dadlands 3: FAMLEE Business episode page, Maximum Fun. Character name
+          not established."
+  - show: the-adventure-zone
     season: 10
     role: player
     character: Randy Rainspot

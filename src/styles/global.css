@@ -579,7 +579,10 @@ footer.site {
 
 /* Portraits carry their attribution inline — every licence we accept requires it. */
 .portrait-row { display: flex; gap: 1.25rem; align-items: flex-start; flex-wrap: wrap; }
-.portrait-row > div { flex: 1 1 18rem; }
+/* min-width: 0 lets this shrink below its content's natural width — otherwise
+   long titles and billing lines refuse to wrap and overflow the viewport on
+   narrow screens instead of dropping to a new line under the key art. */
+.portrait-row > div { flex: 1 1 18rem; min-width: 0; }
 .portrait { margin: 0; flex: 0 0 auto; }
 .portrait img {
   width: 140px; height: 140px; object-fit: cover;
