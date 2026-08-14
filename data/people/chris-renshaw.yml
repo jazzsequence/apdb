@@ -8,11 +8,10 @@ aliases:
 credits:
   - show: the-dirtbags-of-holding
     season: 1
-    role: player
+    role: GM/DM
     sources:
-      - tier: official
-        url: https://boardsandswords.com/about
-        note: The show's own site, listing hosts and which shows each appears on.
-    note: The show's own site lists them as a host without saying who ran the table;
-      GM is not established.
+      - tier: reference
+        url: https://rpggeek.com/rpgpodcast/44420/the-dirtbags-of-holding
+        note: "RPGGeek's own listing: \"GM Chris Renshaw takes his party of friends
+          through the world of tabletop RPGs.\""
     alias: default

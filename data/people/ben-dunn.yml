@@ -5,6 +5,12 @@ aliases:
   - id: default
     name: Ben Dunn
     alias_type: legal
+  - id: benjamin-dunn
+    name: Benjamin Dunn
+    alias_type: legal
+    note: His own Saving Throw wiki bio gives his nickname as "Dunnjamin," a
+      portmanteau confirming "Ben" is short for "Benjamin"; merged from
+      `benjamin-dunn`.
 credits:
   - show: the-stormblossom-chronicles
     season: 1
@@ -26,6 +32,64 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Pathfinder_-_ACME_Livestream
         note: Pathfinder - ACME Livestream cast, via the savingthrowshow.fandom.com
           infobox. CC-BY-SA.
+  - show: black-bag-vikings
+    role: player
+    season: 1
+    character: Magnus Sklarrsson
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: benjamin-dunn
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281076/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Vikings" (2017), via the official
+          datasets.'
+  - show: dinner-dragons
+    role: player
+    season: 1
+    character: Atticus the Arrogant
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: benjamin-dunn
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.
+  - show: black-bag-detectives
+    role: player
+    season: 1
+    character: Ritchie Moritz
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: benjamin-dunn
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9196796/fullcredits/
+        note: 'IMDb full cast and crew for "Black Bag: Detectives" (2017), via the
+          official datasets.'
+  - show: black-bag
+    role: player
+    season: 1
+    character: Terry Nostrum
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: benjamin-dunn
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8236012/fullcredits/
+        note: IMDb full cast and crew for "Black Bag" (2016), via the official datasets.
+  - show: dinner-dragons
+    role: producer
+    season: 1
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against.
+    alias: benjamin-dunn
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt8281092/fullcredits/
+        note: IMDb full cast and crew for "Dinner and Dragons" (2017), via the official
+          datasets.
 image:
   url: https://static.wikia.nocookie.net/savingthrowshow/images/8/8c/BenD_Cast.png/revision/latest?cb=20200303072026
   licence: fair use
