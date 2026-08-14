@@ -425,6 +425,27 @@ if (unverified.length > 5) {
   });
 }
 
+// --- A channel with no shows --------------------------------------------------
+// Shows get deleted, merged and recategorized fairly often — nothing ever
+// checked whether that left the channel it pointed to with nothing left
+// pointing back. A one-off audit found 42 of 116 channels in this state at
+// once: some were duplicates or leftovers from cleanup, some were bad imports
+// that were never a real actual-play channel at all, and some were real
+// creators whose show had simply never been added. This check exists so that
+// state can't build up silently again.
+{
+  const referenced = new Set<string>();
+  for (const show of db.shows) for (const c of show.channels ?? []) referenced.add(c);
+  const orphaned = db.channels.filter((c) => !referenced.has(c.id));
+  for (const c of orphaned) {
+    findings.push({
+      severity: 'medium',
+      what: 'channel with no shows',
+      detail: `${c.name} (${c.id}) — no show references this channel; confirm it belongs here and add its show(s), or remove it`,
+    });
+  }
+}
+
 // --- Report -----------------------------------------------------------------
 const order = { high: 0, medium: 1, low: 2 } as const;
 findings.sort((a, b) => order[a.severity] - order[b.severity]);
