@@ -4,3 +4,9 @@ type: indie studio
 description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22Richard%20Thomas%20George%22
+image:
+  url: https://archive.org/services/img/omgsep03
+  licence: CC-BY-NC-ND-4.0
+  attribution: "Richard Thomas George, CC-BY-NC-ND-4.0. Via the Internet Archive."
+  source: "https://archive.org/details/omgsep03"
+  depicts: "Cover art for Old Men — reused as the channel image since this uploader and the show are the same identity"

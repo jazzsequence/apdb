@@ -4,3 +4,10 @@ type: indie studio
 description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22Mel%20White%22
+image:
+  url: https://archive.org/services/img/ShockPhilcon
+  licence: fair use
+  attribution: "Mel White cover art, © its producers. Via the Internet Archive."
+  source: "https://archive.org/details/ShockPhilcon"
+  depicts: "Cover art for Mel White — reused as the channel image since this uploader and the show are the same identity"
+  rationale: "Low-resolution thumbnail used solely to identify the show in an index of its credits. The uploader states no licence. Non-commercial, does not substitute for the original, links back to the source, removed on request — see POLICY.md."

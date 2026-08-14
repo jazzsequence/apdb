@@ -4,3 +4,9 @@ type: indie studio
 description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22Dadventurous%22
+image:
+  url: https://archive.org/services/img/dadventurous-episode-5-back-to-maps-edge
+  licence: CC-BY-ND-4.0
+  attribution: "Dadventurous, CC-BY-ND-4.0. Via the Internet Archive."
+  source: "https://archive.org/details/dadventurous-episode-5-back-to-maps-edge"
+  depicts: "Cover art for Dadventurous — reused as the channel image since this uploader and the show are the same identity"

@@ -4,3 +4,9 @@ type: indie studio
 description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22Liam%20Gallagher%22
+image:
+  url: https://archive.org/services/img/Shatteredsea0005-weFoundOurselvesInTheCrucible
+  licence: CC-BY-NC-SA-3.0
+  attribution: "Liam Gallagher, CC-BY-NC-SA-3.0. Via the Internet Archive."
+  source: "https://archive.org/details/Shatteredsea0005-weFoundOurselvesInTheCrucible"
+  depicts: "Cover art for Liam Gallagher — reused as the channel image since this uploader and the show are the same identity"

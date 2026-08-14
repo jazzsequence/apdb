@@ -4,3 +4,9 @@ type: indie studio
 description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22Doc%20and%20OldSchoolChris%22
+image:
+  url: https://archive.org/services/img/N4Session4
+  licence: CC-BY-NC-ND-3.0
+  attribution: "Doc and OldSchoolChris, CC-BY-NC-ND-3.0. Via the Internet Archive."
+  source: "https://archive.org/details/N4Session4"
+  depicts: "Cover art for Doc and OldSchoolChris — reused as the channel image since this uploader and the show are the same identity"

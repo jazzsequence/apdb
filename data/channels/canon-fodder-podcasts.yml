@@ -4,3 +4,9 @@ type: indie studio
 description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22Canon%20Fodder%20Podcasts%22
+image:
+  url: https://archive.org/services/img/CFDEpisode26
+  licence: CC-BY-NC-4.0
+  attribution: "Canon Fodder Podcasts, CC-BY-NC-4.0. Via the Internet Archive."
+  source: "https://archive.org/details/CFDEpisode26"
+  depicts: "Cover art for Canon Fodder Podcasts — reused as the channel image since this uploader and the show are the same identity"

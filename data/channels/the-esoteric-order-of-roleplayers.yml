@@ -4,3 +4,9 @@ type: indie studio
 description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22The%20Esoteric%20Order%20of%20Roleplayers%22
+image:
+  url: https://archive.org/services/img/220DeadlandsReloadedLostInTheMazeSessionTwentyTheRiddleOfAngels
+  licence: CC-BY-NC-ND-3.0
+  attribution: "The Esoteric Order of Roleplayers, CC-BY-NC-ND-3.0. Via the Internet Archive."
+  source: "https://archive.org/details/220DeadlandsReloadedLostInTheMazeSessionTwentyTheRiddleOfAngels"
+  depicts: "Cover art for The Esoteric Order of Roleplayers — reused as the channel image since this uploader and the show are the same identity"
