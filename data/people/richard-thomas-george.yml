@@ -1,0 +1,26 @@
+id: richard-thomas-george
+canonical_name: Richard Thomas George
+sort_name: George, Richard Thomas
+aliases:
+  - id: default
+    name: Richard Thomas George
+    alias_type: legal
+  - id: smokebadger
+    name: Smokebadger
+    alias_type: handle
+    note: Blog handle for the "Old Men Play Runequest" blog, of which this show
+      is a spinoff; the blog's own posts identify Smokebadger as GM, and the
+      archive.org uploader for this specific show's episodes is credited as
+      Richard Thomas George.
+credits:
+  - show: old-men-get-savage
+    season: 1
+    role: GM/DM
+    alias: smokebadger
+    sources:
+      - tier: reference
+        url: https://oldmenplay.blogspot.com/
+        note: The group's own blog, identifying Smokebadger as GM.
+      - tier: official
+        url: https://archive.org/details/omgsep03
+        note: Archive.org item, crediting the uploader as Richard Thomas George.

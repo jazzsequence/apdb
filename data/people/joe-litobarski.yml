@@ -1,0 +1,22 @@
+id: joe-litobarski
+canonical_name: Joe Litobarski
+sort_name: Litobarski, Joe
+aliases:
+  - id: default
+    name: Joe Litobarski
+    alias_type: legal
+credits:
+  - show: uncaring-cosmos
+    season: 1
+    role: GM/DM
+    note: 'Runs the podcast and serves as Keeper (GM) for this scenario, "Bad
+      Trip"; a web summary of the episode confirms "Litobarski running the
+      game as Keeper."'
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.stitcher.com/podcast/uncaring-cosmos/e/call-of-cthulhu-bad-trip-part-1-road-kill-40370372
+        note: Episode summary naming him as Keeper.
+      - tier: official
+        url: https://archive.org/details/UncaringCosmos_017
+        note: Archive.org item, crediting the uploader as Joe Litobarski.

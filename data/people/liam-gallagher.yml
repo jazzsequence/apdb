@@ -1,0 +1,18 @@
+id: liam-gallagher
+canonical_name: Liam Gallagher
+sort_name: Gallagher, Liam
+aliases:
+  - id: default
+    name: Liam Gallagher
+    alias_type: legal
+credits:
+  - show: shattered-sea
+    season: 1
+    role: GM/DM
+    note: The "Shattered Sea D&D Encounters" series' own description names him
+      as DM; distinct from the Oasis musician of the same name.
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/SSDDE0011-Undermountian11
+        note: Archive.org item, crediting the uploader as Liam Gallagher.
