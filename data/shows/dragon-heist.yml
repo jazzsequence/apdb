@@ -4,6 +4,7 @@ channels:
   - happy-jacks
 format: podcast
 status: unknown
+description: "System per source: Dungeons & Dragons 5th Edition."
 links:
   website: https://happyjacks.org/dragonheist/
 seasons:

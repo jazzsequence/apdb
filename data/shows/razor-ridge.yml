@@ -4,8 +4,9 @@ channels:
   - happy-jacks
 format: podcast
 status: unknown
+description: "System per source: Werewolf – The Wild West."
 links:
   website: https://happyjacks.org/razorridge/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: werewolf-the-wild-west

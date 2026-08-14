@@ -4,8 +4,9 @@ channels:
   - happy-jacks
 format: podcast
 status: unknown
+description: "System per source: Tales from the Loop."
 links:
   website: https://happyjacks.org/insertcoin/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: tales-from-the-loop

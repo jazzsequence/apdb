@@ -4,8 +4,9 @@ channels:
   - happy-jacks
 format: podcast
 status: unknown
+description: "System per source: Wild Talents (ORE)."
 links:
   website: https://happyjacks.org/wildwildtalents/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: wild-talents

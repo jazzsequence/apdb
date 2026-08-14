@@ -4,8 +4,9 @@ channels:
   - happy-jacks
 format: podcast
 status: unknown
+description: "System per source: Apocalypse World."
 links:
   website: https://happyjacks.org/vault818/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: apocalypse-world

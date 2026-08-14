@@ -4,8 +4,9 @@ channels:
   - happy-jacks
 format: podcast
 status: unknown
+description: "System per source: Lighthearted."
 links:
   website: https://happyjacks.org/saintelcosfire/
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: lighthearted
