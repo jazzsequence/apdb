@@ -5,6 +5,13 @@ aliases:
   - id: default
     name: Joshua La Forge
     alias_type: legal
+  - id: josh-laforge
+    name: Josh LaForge
+    alias_type: legal
+    note: Credited under this shorter form on the show's own season 2 cast
+      page; IMDb (nm3191976, "Actor, Sound Department") and Podchaser both
+      list him under "Joshua/Josh La Forge" for this same show, confirming
+      one person. Merged from the separate `josh-laforge` record.
 credits:
   - show: the-call-of-cthulhu-mystery-program
     role: player
@@ -17,3 +24,20 @@ credits:
         url: https://www.imdb.com/title/tt10584444/fullcredits/
         note: IMDb full cast and crew for "The Call of Cthulhu Mystery Program" (2015),
           via the official datasets.
+  - show: the-call-of-cthulhu-mystery-program
+    season: 2
+    role: player
+    alias: josh-laforge
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/series-2-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.
+  - show: the-call-of-cthulhu-mystery-program
+    season: 3
+    role: player
+    character: René Morel
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/manse-live-1
+        note: Cast per the show's own live-special page.

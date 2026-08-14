@@ -20,6 +20,22 @@ seasons:
   - ordinal: 2
     title: The Terrible Secret of Lot X
     game: call-of-cthulhu
+  - ordinal: 3
+    title: The Crack'd & Crook'd Manse
+    game: call-of-cthulhu
+    episode_count: 3
+    description: A live charity performance (benefiting the Transgender Law
+      Center) of the Mansions of Madness scenario, released as a 3-part
+      special rather than a regular numbered episode run.
+    links:
+      website: https://www.cthulhumystery.com/manse-live-1
+  - ordinal: 4
+    title: Night at Howling House
+    game: call-of-cthulhu
+    episode_count: 7
+    description: Playing Kevin Ross's scenario "The Dare."
+    links:
+      website: https://www.cthulhumystery.com/howling-house-meet-the-cast
 image:
   url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/4b/2d/dd/4b2ddd52-3b52-a56f-2913-8c4b96cff3c0/mza_5670512131698460547.jpeg/600x600bb.jpg
   licence: fair use

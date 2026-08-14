@@ -18,3 +18,14 @@ credits:
         url: https://www.imdb.com/title/tt10584444/fullcredits/
         note: IMDb full cast and crew for "The Call of Cthulhu Mystery Program" (2015),
           via the official datasets.
+  - show: the-call-of-cthulhu-mystery-program
+    season: 4
+    role: player
+    character: Dirt
+    note: An 11-year-old farm boy with pathological kindness, per the show's own
+      cast page.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/howling-house-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.

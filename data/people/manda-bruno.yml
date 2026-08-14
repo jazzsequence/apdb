@@ -1,0 +1,20 @@
+id: manda-bruno
+canonical_name: Manda Bruno
+sort_name: Bruno, Manda
+aliases:
+  - id: default
+    name: Manda Bruno
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 4
+    role: player
+    character: Chelsea Northwood
+    note: Also credited as the season's artist ("local Orlando artist"), per
+      the show's own cast page; no separate illustrator role exists in this
+      schema.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/howling-house-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.

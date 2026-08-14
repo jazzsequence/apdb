@@ -1,0 +1,20 @@
+id: dorian-vox
+canonical_name: Dorian Vox
+sort_name: Vox, Dorian
+aliases:
+  - id: default
+    name: Dorian Vox
+    alias_type: handle
+    note: Spelled "Dorian Vox" consistently across the show's own live-special
+      cast pages (manse-live-1 and manse-live-3); some secondary sources
+      spell it "Dottie Vox," but the show's own primary listing is used here.
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 3
+    role: player
+    character: Hazel Martin
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/manse-live-1
+        note: Cast per the show's own live-special page.

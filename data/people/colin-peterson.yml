@@ -1,0 +1,19 @@
+id: colin-peterson
+canonical_name: Colin Peterson
+sort_name: Peterson, Colin
+aliases:
+  - id: default
+    name: Colin Peterson
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 4
+    role: player
+    character: Thomas "Woods" Northwood
+    note: Also credited as the season's sound designer, per the show's own
+      cast page; no separate sound-design role exists in this schema.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/howling-house-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.

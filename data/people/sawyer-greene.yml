@@ -1,0 +1,17 @@
+id: sawyer-greene
+canonical_name: Sawyer Greene
+sort_name: Greene, Sawyer
+aliases:
+  - id: default
+    name: Sawyer Greene
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 3
+    role: player
+    character: Silas Merriweather
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/manse-live-1
+        note: Cast per the show's own live-special page.

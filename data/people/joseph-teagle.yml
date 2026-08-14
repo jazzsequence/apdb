@@ -1,0 +1,18 @@
+id: joseph-teagle
+canonical_name: Joseph Teagle
+sort_name: Teagle, Joseph
+aliases:
+  - id: default
+    name: Joseph Teagle
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 3
+    role: guest player
+    note: Billed only as "Special Guest Performer" on the show's own live-special
+      page; no character name given.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/manse-live-3
+        note: Cast per the show's own live-special page.

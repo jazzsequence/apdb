@@ -39,3 +39,21 @@ credits:
         url: https://www.cthulhumystery.com/series-2-meet-the-cast
         note: Cast per the show's own Meet the Cast page.
       - *a1
+  - show: the-call-of-cthulhu-mystery-program
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/manse-live-1
+        note: 'Cast per the show''s own live-special page: "Luke Stram – The
+          Keeper."'
+  - show: the-call-of-cthulhu-mystery-program
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/howling-house-meet-the-cast
+        note: 'Cast per the show''s own Meet the Cast page: Luke Stram as "our
+          Master of Games... our Keeper of Arcane Lore."'

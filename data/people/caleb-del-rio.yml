@@ -1,0 +1,17 @@
+id: caleb-del-rio
+canonical_name: Caleb Del Rio
+sort_name: Del Rio, Caleb
+aliases:
+  - id: default
+    name: Caleb Del Rio
+    alias_type: legal
+credits:
+  - show: the-call-of-cthulhu-mystery-program
+    season: 3
+    role: player
+    character: 'Perseverando "Percy" Gómez de Castellano'
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/manse-live-1
+        note: Cast per the show's own live-special page.

@@ -1,16 +1,17 @@
-id: josh-laforge
-canonical_name: Josh LaForge
-sort_name: LaForge, Josh
+id: chris-lebrane
+canonical_name: Chris LeBrane
+sort_name: LeBrane, Chris
 aliases:
   - id: default
-    name: Josh LaForge
+    name: Chris LeBrane
     alias_type: legal
 credits:
   - show: the-call-of-cthulhu-mystery-program
-    season: 2
+    season: 4
     role: player
+    character: Joey D.
     alias: default
     sources:
       - tier: official
-        url: https://www.cthulhumystery.com/series-2-meet-the-cast
+        url: https://www.cthulhumystery.com/howling-house-meet-the-cast
         note: Cast per the show's own Meet the Cast page.

@@ -35,6 +35,34 @@ credits:
         url: https://www.cthulhumystery.com/series-2-meet-the-cast
         note: Cast per the show's own Meet the Cast page.
   - show: the-call-of-cthulhu-mystery-program
+    season: 3
+    role: player
+    character: The Narrator / The Announcer / Various Roles
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/manse-live-1
+        note: Cast per the show's own live-special page.
+  - show: the-call-of-cthulhu-mystery-program
+    season: 4
+    role: player
+    character: Roger Simmons
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/howling-house-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.
+  - show: the-call-of-cthulhu-mystery-program
+    season: 4
+    role: producer
+    note: 'Credited as "showrunner of this series" on the show''s own Meet the
+      Cast page.'
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.cthulhumystery.com/howling-house-meet-the-cast
+        note: Cast per the show's own Meet the Cast page.
+  - show: the-call-of-cthulhu-mystery-program
     role: GM/DM
     note: IMDb credits this at series level; which of this show's seasons it covers
       is not established.
