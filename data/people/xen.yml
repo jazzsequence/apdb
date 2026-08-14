@@ -7,6 +7,19 @@ aliases:
     alias_type: handle
 credits:
   - show: critical-role-specials
+    season: 9
+    role: GM/DM
+    note: Serves as "the Game Master/narrator for the series," per contemporary
+      coverage of Unend's announcement; Third Person's other two members
+      (Matt Roen, Sara Wile) handle writing and art rather than performing
+      as GM.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://x.com/midstpodcast/status/1902404799901139150
+        note: "MIDST & UNEND's own social post naming Xen, Sara Wile, and Matt
+          Roen as \"UNEND creators\"."
+  - show: critical-role-specials
     season: 8
     role: GM/DM
     note: Credited "| GM" in the show's own cast infobox.

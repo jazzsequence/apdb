@@ -25,6 +25,20 @@ credits:
         url: https://en.wikipedia.org/wiki/L.A._by_Night
   - show: critical-role-specials
     season: 1
+    role: GM/DM
+    note: Co-GMed with Brian W. Foster — created and produced the show together,
+      "who also served as the game's GM," per Pinnacle Entertainment Group's
+      own coverage.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://peginc.com/saddle-up-and-ride-into-deadlands-the-weird-west-with-critical-role/
+        note: Pinnacle Entertainment Group's own announcement naming both as GM.
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/UnDeadwood
+        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-specials
+    season: 1
     role: producer
     alias: default
     sources:

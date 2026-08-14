@@ -51,9 +51,15 @@ credits:
         note: 'Season 3: The Peachyville Horror cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
   - show: dungeons-and-daddies
     season: 6
-    role: player
+    role: GM/DM
+    note: "Podscripts' transcript of \"BONUS: Kingdom Dad Monster - Ep. 1 -
+      Founding Fathers\" identifies him as running the game, with Matt
+      Arnold, Will Campos, and Freddie Wong as players."
     alias: default
     sources:
+      - tier: reference
+        url: https://podscripts.co/podcasts/dungeons-and-daddies/bonus-kingdom-dad-monster-ep-1-founding-fathers
+        note: Episode transcript naming him as DM.
       - tier: community
         url: https://dungeonsanddads.fandom.com/wiki/Kingdom_Dad_Monster
         note: 'Kingdom Dad Monster cast, via dungeonsanddads.fandom.com. CC-BY-SA.'
