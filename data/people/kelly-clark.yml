@@ -9,8 +9,10 @@ credits:
   - show: d-d-the-shards-of-nyrn-season-4-generic-fantasy-setting
     season: 1
     role: GM/DM
-    note: Also plays player characters (Feramina Hazal, Kadamus Warforge)
-      alongside DMing, per the show's own wiki.
+    note: Also plays three player characters (Feramina "Fera" Hazal, Kadamus
+      Warforge, Vyslan Skyborn) alongside DMing — confirmed by the show's
+      own wiki cast list, which lists Kelly Clark as both the Dungeon
+      Master and the player of these three PCs. Not a data error.
     alias: default
     sources:
       - tier: reference
@@ -20,11 +22,35 @@ credits:
     season: 1
     role: player
     character: Feramina Hazal
+    note: One of three PCs Kelly Clark plays alongside DMing this show; see
+      the GM/DM credit's note.
     alias: default
     sources:
       - tier: reference
         url: https://dorktales.fandom.com/wiki/The_Shards_of_Nyrn
         note: Cast per the DorkTales wiki and the show’s own site.
+  - show: d-d-the-shards-of-nyrn-season-4-generic-fantasy-setting
+    season: 1
+    role: player
+    character: Kadamus Warforge
+    note: One of three PCs Kelly Clark plays alongside DMing this show; see
+      the GM/DM credit's note.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://dorktales.fandom.com/wiki/The_Shards_of_Nyrn
+        note: Cast per the DorkTales wiki and the show's own site.
+  - show: d-d-the-shards-of-nyrn-season-4-generic-fantasy-setting
+    season: 1
+    role: player
+    character: Vyslan Skyborn
+    note: One of three PCs Kelly Clark plays alongside DMing this show; see
+      the GM/DM credit's note.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://dorktales.fandom.com/wiki/The_Shards_of_Nyrn
+        note: Cast per the DorkTales wiki and the show's own site.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/1/16/Kelly_Clark_%28USA%29_2010.jpg
   licence: CC-BY-2.0
