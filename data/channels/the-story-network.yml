@@ -5,8 +5,11 @@ description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22The%20Story%20Network%22
 image:
-  url: https://archive.org/services/img/26-round
-  licence: CC-BY-NC-ND-4.0
-  attribution: "The Story Network, CC-BY-NC-ND-4.0. Via the Internet Archive."
-  source: "https://archive.org/details/26-round"
-  depicts: "Cover art for The Story Network — reused as the channel image since this uploader and the show are the same identity"
+  url: https://upload.wikimedia.org/wikipedia/commons/5/51/Internet_Archive_Logo.svg
+  licence: CC-BY-SA-4.0
+  attribution: Jason Alan Scott (Internet Archive), CC-BY-SA-4.0. Via Wikimedia
+    Commons.
+  source: https://commons.wikimedia.org/wiki/File:Internet_Archive_Logo.svg
+  depicts: Internet Archive logo (generic — this uploader's episode has no
+    real square cover art of its own; archive.org's auto-generated
+    thumbnail is a small non-square waveform placeholder, not usable here)
