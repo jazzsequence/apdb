@@ -475,6 +475,15 @@ h3 {
     border: 0;
     padding: 0.1rem 0.85rem;
   }
+  /* The desktop column widths (.c-where 30%, .c-char 26%, .c-system 17%) beat
+   * the block-display reset above on specificity alone, so without this each
+   * one stays squeezed to a fraction of the row's width and wraps one word
+   * per line instead of using the full viewport. */
+  .credit-table td.c-where,
+  .credit-table td.c-char,
+  .credit-table td.c-system {
+    width: auto;
+  }
   .credit-table .c-prov {
     text-align: left;
     margin-top: 0.2rem;
