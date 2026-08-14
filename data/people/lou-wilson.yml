@@ -200,11 +200,15 @@ credits:
   - show: worlds-beyond-number
     role: player
     season: 1
+    character: Eursulon Toma
     alias: default
     sources:
       - tier: reference
         url: https://thetvdb.com/series/worlds-beyond-number
         note: Cast for "Worlds Beyond Number" per TheTVDB.
+      - tier: community
+        url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+        note: The show's own wiki infobox names Lou Wilson as playing Eursulon Toma.
 wikidata_qid: Q116033476
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Lou_Wilson_2019_%28cropped%29.png

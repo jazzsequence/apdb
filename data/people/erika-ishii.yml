@@ -184,8 +184,12 @@ credits:
   - show: worlds-beyond-number
     role: player
     season: 1
+    character: Ame
     alias: default
     sources:
       - tier: reference
         url: https://thetvdb.com/series/worlds-beyond-number
         note: Cast for "Worlds Beyond Number" per TheTVDB.
+      - tier: community
+        url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
+        note: The show's own wiki infobox names Erika Ishii as playing Ame.
