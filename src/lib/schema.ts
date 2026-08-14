@@ -94,6 +94,7 @@ const Links = z
     wikipedia: z.string().url().optional(),
     youtube: z.string().url().optional(),
     podcast: z.string().url().optional(),
+    apple_podcasts: z.string().url().optional(),
     /** Community forum or wiki. Often the only place an indie show's cast is documented. */
     forum: z.string().url().optional(),
     bluesky: z.string().url().optional(),
