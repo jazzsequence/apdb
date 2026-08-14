@@ -4,3 +4,13 @@ type: network
 description: Listener-supported podcast network.
 links:
   website: https://maximumfun.org
+image:
+  url: https://maximumfun.org/wp-content/uploads/2019/03/logo.svg
+  licence: fair use
+  attribution: Maximum Fun logo, © its owner. Via maximumfun.org.
+  source: https://maximumfun.org
+  depicts: Maximum Fun logo
+  rationale: Low-resolution logo used solely to identify this channel in an
+    index of its shows. Non-commercial, does not substitute for the original,
+    and links back to the source. Removed on request by the rights holder —
+    see POLICY.md.
