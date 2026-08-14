@@ -1,0 +1,46 @@
+id: ryan-hartman
+canonical_name: Ryan Hartman
+sort_name: Hartman, Ryan
+aliases:
+  - id: default
+    name: Ryan Hartman
+    alias_type: legal
+credits:
+  - show: acquisitions-incorporated-the-c-team
+    season: 1
+    role: player
+    character: Donaar Blit'zen
+    note: Recurring player for all four seasons; TheTVDB and the show's own
+      wiki credit him at series level without a per-season breakdown.
+    alias: default
+    sources: &cteam_rh_sources
+      - tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated-the-c-team
+        note: Main cast list per TheTVDB.
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/The_%22C%22_Team
+        note: Show description naming the core four-player franchisee party.
+  - show: acquisitions-incorporated-the-c-team
+    season: 2
+    role: player
+    character: Donaar Blit'zen
+    note: Recurring player for all four seasons; TheTVDB and the show's own
+      wiki credit him at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_rh_sources
+  - show: acquisitions-incorporated-the-c-team
+    season: 3
+    role: player
+    character: Donaar Blit'zen
+    note: Recurring player for all four seasons; TheTVDB and the show's own
+      wiki credit him at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_rh_sources
+  - show: acquisitions-incorporated-the-c-team
+    season: 4
+    role: player
+    character: Donaar Blit'zen
+    note: Recurring player for all four seasons; TheTVDB and the show's own
+      wiki credit him at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_rh_sources

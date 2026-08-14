@@ -1,0 +1,17 @@
+id: toni-michael-sattler
+canonical_name: Toni Michael Sattler
+sort_name: Sattler, Toni Michael
+aliases:
+  - id: default
+    name: Toni Michael Sattler
+    alias_type: legal
+credits:
+  - show: tales-off-the-script
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCkk7RTz6eJPC-8P-RBF5Mrg
+        note: The channel's own description names Toni Michael Sattler
+          ("Spielleiter") as GM.

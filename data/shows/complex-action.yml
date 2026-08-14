@@ -1,0 +1,14 @@
+id: complex-action
+title: Complex Action
+channels:
+  - complex-action
+format: podcast
+status: unknown
+description: "System per source: Shadowrun. \"The official Shadowrun Actual
+  Play,\" hosted by GM Bobby, set in Columbia, South Carolina in the CAS
+  circa 2078."
+links:
+  website: https://www.listennotes.com/podcasts/complex-action-complex-action-G0OSM6wzPv2/
+seasons:
+  - ordinal: 1
+    game: shadowrun

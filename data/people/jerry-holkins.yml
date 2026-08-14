@@ -7,6 +7,40 @@ aliases:
     name: Jerry Holkins
     alias_type: legal
 credits:
+  - show: acquisitions-incorporated-the-c-team
+    season: 1
+    role: GM/DM
+    note: Recurring DM for all four seasons; TheTVDB and the show's own wiki
+      credit him at series level without a per-season breakdown.
+    alias: default
+    sources: &cteam_dm_sources
+      - tier: reference
+        url: https://thetvdb.com/series/acquisitions-incorporated-the-c-team
+        note: Main cast list per TheTVDB.
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/The_%22C%22_Team
+        note: Show description naming Jerry Holkins as DM.
+  - show: acquisitions-incorporated-the-c-team
+    season: 2
+    role: GM/DM
+    note: Recurring DM for all four seasons; TheTVDB and the show's own wiki
+      credit him at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_dm_sources
+  - show: acquisitions-incorporated-the-c-team
+    season: 3
+    role: GM/DM
+    note: Recurring DM for all four seasons; TheTVDB and the show's own wiki
+      credit him at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_dm_sources
+  - show: acquisitions-incorporated-the-c-team
+    season: 4
+    role: GM/DM
+    note: Recurring DM for all four seasons; TheTVDB and the show's own wiki
+      credit him at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_dm_sources
   - show: acquisitions-incorporated
     season: 6
     role: player

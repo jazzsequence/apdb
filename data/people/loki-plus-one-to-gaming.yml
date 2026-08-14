@@ -1,0 +1,19 @@
+id: loki-plus-one-to-gaming
+canonical_name: Loki
+sort_name: Loki
+aliases:
+  - id: default
+    name: Loki
+    alias_type: handle
+    note: Credited by handle only; distinguished from other people named Loki
+      in this index by suffixing the id with the channel.
+credits:
+  - show: spelljammer-light-of-xaryxis
+    season: 1
+    role: GM/DM
+    note: Billed as guest DM for this campaign, per the item's own description.
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/spelljammer-light-of-xaryxis-session-0
+        note: Archive.org item description naming Loki as guest DM.

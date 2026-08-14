@@ -1,0 +1,17 @@
+id: roll-for-distraction
+title: Roll for Distraction
+channels:
+  - spellbook-gaming
+format: podcast
+status: ongoing
+description: A non-serious TTRPG podcast started by a group of 6 friends to
+  document the shenanigans and mishaps of their campaigns; games played so
+  far include D&D 5e, Cyberpunk RED, Lancer, Monster of the Week, Salvage
+  Union and Honey Heist. System per source, per season/campaign — recorded
+  here as a multi-system anthology since campaigns rotate systems entirely
+  rather than mixing them within one season.
+links:
+  website: https://www.youtube.com/channel/UC_uRH2ssgVQ2cCxthcTETsw
+seasons:
+  - ordinal: 1
+    game: [dnd-5e, cyberpunk-red, lancer, monster-of-the-week, salvage-union, honey-heist]

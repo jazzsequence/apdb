@@ -15,16 +15,46 @@ credits:
       - tier: community
         url: https://acquisitionsincorporated.fandom.com/wiki/Interlude:_Dark_Sun
         note: '"Interlude: Dark Sun" cast, via the acquisitionsincorporated.fandom.com infobox and character list. CC-BY-SA.'
-  - show: acquisitions-incorporated
+  - show: acquisitions-incorporated-the-c-team
+    season: 1
     role: player
     character: K'thriss Drow'b
-    note: TheTVDB credits this at series level; which season it covers is not
-      established.
+    note: Recurring player for all four seasons; TheTVDB and the show's own
+      wiki credit her at series level without a per-season breakdown. This
+      credit was previously misattributed to the flagship Acquisitions
+      Incorporated show — K'thriss Drow'b is a "C" Team-only character.
     alias: default
-    sources:
+    sources: &cteam_ks_sources
       - tier: reference
-        url: https://thetvdb.com/series/acquisitions-incorporated
-        note: Cast for "Acquisitions Incorporated" per TheTVDB.
+        url: https://thetvdb.com/series/acquisitions-incorporated-the-c-team
+        note: Main cast list per TheTVDB.
+      - tier: community
+        url: https://acquisitionsincorporated.fandom.com/wiki/The_%22C%22_Team
+        note: Show description naming the core four-player franchisee party.
+  - show: acquisitions-incorporated-the-c-team
+    season: 2
+    role: player
+    character: K'thriss Drow'b
+    note: Recurring player for all four seasons; TheTVDB and the show's own
+      wiki credit her at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_ks_sources
+  - show: acquisitions-incorporated-the-c-team
+    season: 3
+    role: player
+    character: K'thriss Drow'b
+    note: Recurring player for all four seasons; TheTVDB and the show's own
+      wiki credit her at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_ks_sources
+  - show: acquisitions-incorporated-the-c-team
+    season: 4
+    role: player
+    character: K'thriss Drow'b
+    note: Recurring player for all four seasons; TheTVDB and the show's own
+      wiki credit her at series level without a per-season breakdown.
+    alias: default
+    sources: *cteam_ks_sources
   - show: acquisitions-incorporated
     season: 15
     role: GM/DM

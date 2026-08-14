@@ -1,0 +1,22 @@
+id: spelljammer-light-of-xaryxis
+title: "Spelljammer: Light of Xaryxis"
+channels:
+  - plus-one-to-gaming
+format: podcast
+status: completed
+description: "System per source: D&D 5th Edition (Spelljammer). Run by
+  guest DM Loki, per the item's own description."
+links:
+  website: https://archive.org/details/spelljammer-light-of-xaryxis-session-0
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 2
+    started: 2023-02-19
+    ended: 2023-02-26
+image:
+  url: https://archive.org/services/img/spelljammer-light-of-xaryxis-actual-play-session-i
+  licence: CC-BY-ND-4.0
+  attribution: Plus One to Gaming, CC-BY-ND-4.0. Via the Internet Archive.
+  source: https://archive.org/details/spelljammer-light-of-xaryxis-actual-play-session-i
+  depicts: Cover art for Spelljammer, Light of Xaryxis

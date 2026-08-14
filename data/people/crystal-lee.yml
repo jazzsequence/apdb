@@ -1,0 +1,17 @@
+id: crystal-lee
+canonical_name: Crystal Lee
+sort_name: Lee, Crystal
+aliases:
+  - id: default
+    name: Crystal Lee
+    alias_type: legal
+credits:
+  - show: rigamaroll
+    season: 1
+    role: player
+    note: Character not identified in sources checked.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.geeknative.com/224641/lasers-swords-and-daggerheart-inside-the-80s-inspired-world-of-rigamaroll/
+        note: Article naming Crystal Lee as part of the voice cast.

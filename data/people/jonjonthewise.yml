@@ -1,0 +1,18 @@
+id: jonjonthewise
+canonical_name: JonJonTheWise
+sort_name: JonJonTheWise
+aliases:
+  - id: default
+    name: JonJonTheWise
+    alias_type: handle
+credits:
+  - show: tabletop-cyberpunk-the-wise-guys
+    season: 1
+    role: GM/DM
+    note: No real/legal name found in sources checked; credited under the
+      handle the show itself uses.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://podcasts.apple.com/gb/podcast/tabletop-cyberpunk/id1516900326
+        note: Podcast credited to jonjonthewise, who runs the campaign.

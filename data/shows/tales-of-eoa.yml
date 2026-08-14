@@ -1,0 +1,44 @@
+id: tales-of-eoa
+title: Tales of Eoa
+channels:
+  - plus-one-to-gaming
+format: podcast
+status: completed
+description: "System per source: D&D 5th Edition (homebrew setting). Plus
+  One to Gaming's original campaign, told across three sub-arcs sharing
+  one continuity — the Adventurer's Guild party in Greystock's Notes,
+  the Omega Squad party in A Miner Issue, and the two-part Journey to
+  Gravelton/Granitos — plus two interludes."
+links:
+  website: https://archive.org/details/tales-of-eoa-greystocks-notes-session-1-podcast
+seasons:
+  - ordinal: 1
+    title: "Greystock's Notes"
+    game: dnd-5e
+    episode_count: 7
+    started: 2022-04-14
+    ended: 2022-06-26
+  - ordinal: 2
+    title: "A Miner Issue"
+    game: dnd-5e
+    episode_count: 8
+    started: 2022-07-25
+    ended: 2022-12-31
+  - ordinal: 3
+    title: "Journey to Gravelton / Journey to Granitos"
+    game: dnd-5e
+    episode_count: 2
+    started: 2023-07-23
+    ended: 2023-07-31
+  - ordinal: 4
+    title: Interludes
+    game: dnd-5e
+    episode_count: 2
+    started: 2022-07-07
+    ended: 2023-07-21
+image:
+  url: https://archive.org/services/img/tales-of-eoa-greystocks-notes-session-1-podcast
+  licence: CC-BY-ND-4.0
+  attribution: Plus One to Gaming, CC-BY-ND-4.0. Via the Internet Archive.
+  source: https://archive.org/details/tales-of-eoa-greystocks-notes-session-1-podcast
+  depicts: Cover art for Tales of Eoa

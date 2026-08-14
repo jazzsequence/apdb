@@ -1,0 +1,17 @@
+id: rigamaroll
+title: Rigamaroll
+channels:
+  - rigamaroll
+format: video
+status: ongoing
+description: "System per source: Daggerheart. A genre-blending theatrical
+  actual play set in the 80s-cartoon-inspired world of Synthara, following
+  two separate adventuring parties (Fantasy and Space) whose stories
+  asynchronously affect each other. Self-funded by creators Felix LaHaye,
+  Justin Woychowski and Matt Lowe."
+links:
+  website: https://heartofdaggers.com/actual-plays/rigamaroll/
+  youtube: https://www.youtube.com/@RigamarollShow
+seasons:
+  - ordinal: 1
+    game: daggerheart

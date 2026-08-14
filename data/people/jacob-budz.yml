@@ -1,0 +1,16 @@
+id: jacob-budz
+canonical_name: Jacob Budz
+sort_name: Budz, Jacob
+aliases:
+  - id: default
+    name: Jacob Budz
+    alias_type: legal
+credits:
+  - show: sunder
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://arcanearcade.fandom.com/wiki/Sunder
+        note: The show's own wiki names Jacob Budz (of XP to Level 3) as DM.

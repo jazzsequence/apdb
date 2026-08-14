@@ -1,0 +1,16 @@
+id: urthgard
+canonical_name: Urthgard
+sort_name: Urthgard
+aliases:
+  - id: default
+    name: Urthgard
+    alias_type: handle
+credits:
+  - show: nephilim-le-souffle-du-dragon
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://creators.spotify.com/pod/profile/time-to-roll/episodes/Nephilim---Souffle-du-Dragon---pisode-28---Omphalos-dAir-e2v8ktt
+        note: Episode description naming the players.

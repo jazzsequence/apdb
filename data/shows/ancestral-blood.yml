@@ -1,0 +1,17 @@
+id: ancestral-blood
+title: "Ancestral Blood: A Vampire the Masquerade Chronicle"
+channels:
+  - magirpg
+format: stream
+status: ongoing
+description: "System per source: Vampire: The Masquerade 5th Edition. A
+  Chicago by Night chronicle following the Lysander family's children as
+  they adjust to life as Kindred, streamed Fridays on twitch.tv/magirpg.
+  Storyteller: Miss Magitek."
+links:
+  website: https://magirpg.fandom.com/wiki/Ancestral_Blood
+  twitch: https://www.twitch.tv/magirpg
+seasons:
+  - ordinal: 1
+    game: vampire-the-masquerade-v5
+    started: 2020-01-01

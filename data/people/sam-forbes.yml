@@ -1,0 +1,17 @@
+id: sam-forbes
+canonical_name: Sam Forbes
+sort_name: Forbes, Sam
+aliases:
+  - id: default
+    name: Sam Forbes
+    alias_type: legal
+credits:
+  - show: rigamaroll
+    season: 1
+    role: player
+    note: Character not identified in sources checked.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.geeknative.com/224641/lasers-swords-and-daggerheart-inside-the-80s-inspired-world-of-rigamaroll/
+        note: Article naming Sam Forbes as part of the improv cast.

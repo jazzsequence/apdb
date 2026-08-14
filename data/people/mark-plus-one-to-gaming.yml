@@ -1,0 +1,20 @@
+id: mark-plus-one-to-gaming
+canonical_name: Mark
+sort_name: Mark
+aliases:
+  - id: default
+    name: Mark
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named
+      Mark in this index by suffixing the id with the channel.
+credits:
+  - show: a-deep-and-creeping-darkness
+    season: 1
+    role: GM/DM
+    note: "\"Mark takes the reins as DM for the first time,\" per the item's
+      own description of the season's zero session."
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/a-deep-and-creeping-darkness-zero-session
+        note: Archive.org item description naming Mark as DM.

@@ -1,0 +1,15 @@
+id: dark-underworld
+title: "Star Wars: Dark Underworld"
+channels:
+  - tabletop-empire
+format: video
+status: unknown
+description: "System per source: Star Wars Edge of the Empire (FFG). A
+  Human, Twi'lek, Wookiee and Toydarian navigate the criminal underworld
+  of Coruscant in the aftermath of Return of the Jedi, chasing a
+  mysterious artifact and fighting for power against rival syndicates."
+links:
+  website: https://tabletopempire.podbean.com/
+seasons:
+  - ordinal: 1
+    game: star-wars-ffg

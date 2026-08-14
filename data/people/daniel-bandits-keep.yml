@@ -1,0 +1,18 @@
+id: daniel-bandits-keep
+canonical_name: Daniel
+sort_name: Daniel
+aliases:
+  - id: default
+    name: Daniel
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named
+      Daniel in this index by suffixing the id with the channel.
+credits:
+  - show: mercy-of-the-icons
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/@BanditsKeepActualPlay
+        note: The channel's own about page identifies Daniel as the streamer/GM.

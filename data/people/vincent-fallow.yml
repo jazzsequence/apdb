@@ -1,0 +1,16 @@
+id: vincent-fallow
+canonical_name: Vincent Fallow
+sort_name: Fallow, Vincent
+aliases:
+  - id: default
+    name: Vincent Fallow
+    alias_type: legal
+credits:
+  - show: tales-off-the-script
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UCkk7RTz6eJPC-8P-RBF5Mrg
+        note: The channel's own description names the core cast.

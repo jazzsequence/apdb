@@ -1,0 +1,18 @@
+id: miss-magitek
+canonical_name: Miss Magitek
+sort_name: Magitek, Miss
+aliases:
+  - id: default
+    name: Miss Magitek
+    alias_type: handle
+credits:
+  - show: ancestral-blood
+    season: 1
+    role: GM/DM
+    note: Credited as Storyteller, per the show's own description; no
+      legal name found in sources checked.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://magirpg.fandom.com/wiki/Ancestral_Blood
+        note: The show's own wiki names Miss Magitek as Storyteller.

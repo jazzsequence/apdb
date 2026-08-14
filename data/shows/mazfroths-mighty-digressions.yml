@@ -1,0 +1,24 @@
+id: mazfroths-mighty-digressions
+title: "Mazfroth's Mighty Digressions"
+channels:
+  - plus-one-to-gaming
+format: podcast
+status: completed
+description: "System per source: D&D 5th Edition. The second Candlekeep
+  Mysteries one-shot Plus One to Gaming played; GM not named in any
+  episode description found — checked archive.org item metadata and web
+  search without a result."
+links:
+  website: https://archive.org/details/mazfroths-mighty-digressions-actual-play-part-iii
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 6
+    started: 2021-04-05
+    ended: 2021-06-08
+image:
+  url: https://archive.org/services/img/mazfroths-mighty-digressions-session-v
+  licence: CC-BY-ND-4.0
+  attribution: Plus One to Gaming, CC-BY-ND-4.0. Via the Internet Archive.
+  source: https://archive.org/details/mazfroths-mighty-digressions-session-v
+  depicts: Cover art for Mazfroth's Mighty Digressions

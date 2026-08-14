@@ -1,0 +1,14 @@
+id: sunder
+title: Sunder
+channels:
+  - arcane-arcade
+format: video
+status: unknown
+description: "System per source: D&D 5th Edition. DM'd by Jacob Budz of XP to
+  Level 3, hosted on Arcane Arcade's channel."
+links:
+  website: https://arcanearcade.fandom.com/wiki/Sunder
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: 2018-07-21

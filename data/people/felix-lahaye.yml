@@ -1,0 +1,17 @@
+id: felix-lahaye
+canonical_name: Felix LaHaye
+sort_name: LaHaye, Felix
+aliases:
+  - id: default
+    name: Felix LaHaye
+    alias_type: legal
+credits:
+  - show: rigamaroll
+    season: 1
+    role: writer
+    note: Co-creator of the series with Justin Woychowski and Matt Lowe.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.geeknative.com/224641/lasers-swords-and-daggerheart-inside-the-80s-inspired-world-of-rigamaroll/
+        note: Article naming Felix LaHaye as a co-creator.

@@ -1,0 +1,17 @@
+id: colin-search
+canonical_name: Colin Search
+sort_name: Search, Colin
+aliases:
+  - id: default
+    name: Colin Search
+    alias_type: legal
+credits:
+  - show: rigamaroll
+    season: 1
+    role: player
+    note: Character not identified in sources checked.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.geeknative.com/224641/lasers-swords-and-daggerheart-inside-the-80s-inspired-world-of-rigamaroll/
+        note: Article naming Colin Search as part of the improv cast.

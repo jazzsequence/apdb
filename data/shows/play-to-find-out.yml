@@ -1,0 +1,19 @@
+id: play-to-find-out
+title: Play to Find Out
+channels:
+  - quinns-quest
+format: hybrid
+status: ongoing
+description: An historical-focused actual play series from Quentin "Quinns"
+  Smith (of Shut Up & Sit Down) examining early-decades TTRPGs, each season
+  a recorded playthrough with two friends, broken up with explanations of
+  the rules.
+links:
+  website: https://www.rascal.news/play-to-find-out-with-quinns-quest/
+seasons:
+  - ordinal: 1
+    title: Skyrealms of Jorune
+    game: skyrealms-of-jorune
+  - ordinal: 2
+    title: Toon
+    game: toon

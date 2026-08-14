@@ -1,0 +1,17 @@
+id: thom-raley
+canonical_name: Thom Raley
+sort_name: Raley, Thom
+aliases:
+  - id: default
+    name: Thom Raley
+    alias_type: legal
+credits:
+  - show: into-the-darkness
+    season: 1
+    role: GM/DM
+    note: Players not named in any source checked.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://intothedarkness.fandom.com/wiki/Thom_Raley
+        note: The show's own wiki names Thom Raley as host/GM.

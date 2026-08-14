@@ -1,0 +1,46 @@
+id: acquisitions-incorporated-the-c-team
+title: 'Acquisitions Incorporated: The "C" Team'
+channels:
+  - pennyarcadetv
+format: hybrid
+status: completed
+description: Spin-off of Penny Arcade's Acquisitions Incorporated, DMed by Jerry
+  Holkins, following a new franchisee party in Red Larch. Streamed live on
+  Twitch and archived on Penny Arcade's video channel.
+links:
+  website: https://www.acq-inc.com/cteam
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 33
+    started: 2017-03-01
+    ended: 2017-11-30
+  - ordinal: 2
+    game: dnd-5e
+    episode_count: 35
+    started: 2018-01-01
+    ended: 2018-10-31
+  - ordinal: 3
+    game: dnd-5e
+    episode_count: 36
+    started: 2019-01-01
+    ended: 2019-11-30
+  - ordinal: 4
+    game: dnd-5e
+    episode_count: 28
+    started: 2020-02-01
+    ended: 2021-11-30
+    description: Includes the "Collections Agency" arc, a mid-season shift to a
+      second in-universe team while the original C Team characters were
+      sidelined; the original four return before the finale. Concluded with an
+      epilogue recorded at PAX Unplugged 2021.
+image:
+  url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts123/v4/d4/7d/5d/d47d5d26-71e9-e8bd-4f67-3a7943086843/mza_1354559708982867137.png/600x600bb.jpg
+  licence: fair use
+  attribution: 'AI: The "C" Team cover art, © Penny Arcade. Via Apple Podcasts.'
+  source: https://podcasts.apple.com/us/podcast/ai-the-c-team
+  depicts: Cover art for Acquisitions Incorporated, The "C" Team
+  rationale: Low-resolution cover art used solely to identify this show in an
+    index of its credits. Non-commercial, does not substitute for the
+    original, and links back to the source. Removed on request by the rights
+    holder — see POLICY.md.

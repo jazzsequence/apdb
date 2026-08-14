@@ -1,0 +1,15 @@
+id: into-the-darkness
+title: Into the Darkness
+channels:
+  - into-the-darkness-club
+format: hybrid
+status: unknown
+description: "System per source: Call of Cthulhu. Horror actual play hosted
+  and GM'd by Thom Raley; the group has also experimented with KULT and
+  Delta Green, but Call of Cthulhu is the primary system. Players not
+  named in sources checked."
+links:
+  website: https://intothedarkness.fandom.com/wiki/Into_the_Darkness_Wiki
+seasons:
+  - ordinal: 1
+    game: call-of-cthulhu

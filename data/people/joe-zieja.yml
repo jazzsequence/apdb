@@ -1,0 +1,17 @@
+id: joe-zieja
+canonical_name: Joe Zieja
+sort_name: Zieja, Joe
+aliases:
+  - id: default
+    name: Joe Zieja
+    alias_type: legal
+credits:
+  - show: rigamaroll
+    season: 1
+    role: player
+    note: Character not identified in sources checked.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.geeknative.com/224641/lasers-swords-and-daggerheart-inside-the-80s-inspired-world-of-rigamaroll/
+        note: Article naming Joe Zieja as part of the voice cast.

@@ -1,0 +1,20 @@
+id: billy-plus-one-to-gaming
+canonical_name: Billy
+sort_name: Billy
+aliases:
+  - id: default
+    name: Billy
+    alias_type: handle
+    note: Credited by first name only; distinguished from other people named
+      Billy in this index by suffixing the id with the channel.
+credits:
+  - show: book-of-the-raven
+    season: 1
+    role: GM/DM
+    note: "\"Billy takes on the role of DM,\" per the item's own description
+      of the season's zero session."
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/book-of-the-raven-session-zero
+        note: Archive.org item description naming Billy as DM.

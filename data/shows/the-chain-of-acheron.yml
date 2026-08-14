@@ -1,0 +1,15 @@
+id: the-chain-of-acheron
+title: "MCDM Presents: The Chain of Acheron"
+channels:
+  - mcdm
+format: hybrid
+status: completed
+description: "System per source: D&D 5th Edition. A weekly livestream
+  following the Chain of Acheron, an interdimensional mercenary company
+  in the world of Orden, DM'd by Matt Colville."
+links:
+  website: https://www.mcdmproductions.com/the-chain
+  youtube: https://www.youtube.com/playlist?list=PLTsnSjGlraRPzwZV8KTh_NKPFodAbZkf4
+seasons:
+  - ordinal: 1
+    game: dnd-5e

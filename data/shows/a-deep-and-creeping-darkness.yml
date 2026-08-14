@@ -1,0 +1,24 @@
+id: a-deep-and-creeping-darkness
+title: A Deep and Creeping Darkness
+channels:
+  - plus-one-to-gaming
+format: podcast
+status: completed
+description: "System per source: D&D 5th Edition. The fourth Candlekeep
+  Mysteries one-shot Plus One to Gaming played, run by Mark as his first
+  time DMing; billed as \"an epic Star Wars D&D adventure,\" per the
+  item's own description."
+links:
+  website: https://archive.org/details/a-deep-and-creeping-darkness-zero-session
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 9
+    started: 2021-09-16
+    ended: 2022-02-28
+image:
+  url: https://archive.org/services/img/a-deep-and-creeping-darkness-session-vi
+  licence: CC-BY-ND-4.0
+  attribution: Plus One to Gaming, CC-BY-ND-4.0. Via the Internet Archive.
+  source: https://archive.org/details/a-deep-and-creeping-darkness-session-vi
+  depicts: Cover art for A Deep and Creeping Darkness

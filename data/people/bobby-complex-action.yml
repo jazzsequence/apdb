@@ -1,0 +1,19 @@
+id: bobby-complex-action
+canonical_name: Bobby
+sort_name: Bobby
+aliases:
+  - id: default
+    name: Bobby
+    alias_type: handle
+    note: Credited by first name only ("Your Friendly GM Bobby"); distinguished
+      from other people named Bobby in this index by suffixing the id with
+      the channel.
+credits:
+  - show: complex-action
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.listennotes.com/podcasts/complex-action-complex-action-G0OSM6wzPv2/
+        note: Podcast description naming "Your Friendly GM Bobby" as host/GM.

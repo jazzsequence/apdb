@@ -1,0 +1,17 @@
+id: matt-lowe
+canonical_name: Matt Lowe
+sort_name: Lowe, Matt
+aliases:
+  - id: default
+    name: Matt Lowe
+    alias_type: legal
+credits:
+  - show: rigamaroll
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.geeknative.com/224641/lasers-swords-and-daggerheart-inside-the-80s-inspired-world-of-rigamaroll/
+        note: Article naming Matt Lowe as game master, alongside creators Felix
+          LaHaye and Justin Woychowski.

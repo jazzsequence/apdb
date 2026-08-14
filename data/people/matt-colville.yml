@@ -1,0 +1,17 @@
+id: matt-colville
+canonical_name: Matt Colville
+sort_name: Colville, Matt
+aliases:
+  - id: default
+    name: Matt Colville
+    alias_type: legal
+credits:
+  - show: the-chain-of-acheron
+    season: 1
+    role: GM/DM
+    note: Players not established in sources checked.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://mcdm.fandom.com/wiki/The_Chain_of_Acheron
+        note: The show's own wiki names Matt Colville as DM.

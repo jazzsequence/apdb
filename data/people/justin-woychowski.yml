@@ -1,0 +1,17 @@
+id: justin-woychowski
+canonical_name: Justin Woychowski
+sort_name: Woychowski, Justin
+aliases:
+  - id: default
+    name: Justin Woychowski
+    alias_type: legal
+credits:
+  - show: rigamaroll
+    season: 1
+    role: writer
+    note: Co-creator of the series with Felix LaHaye and Matt Lowe.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.geeknative.com/224641/lasers-swords-and-daggerheart-inside-the-80s-inspired-world-of-rigamaroll/
+        note: Article naming Justin Woychowski as a co-creator.
