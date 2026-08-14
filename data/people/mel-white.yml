@@ -1,0 +1,19 @@
+id: mel-white
+canonical_name: Mel White
+sort_name: White, Mel
+aliases:
+  - id: default
+    name: Mel White
+    alias_type: legal
+credits:
+  - show: shock-philcon
+    season: 1
+    role: GM/DM
+    note: The Internet Archive item is uploaded under his own name ("P. Mel
+      White") and is the sole named individual associated with this
+      recording; players are not named in the item description.
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/ShockPhilcon
+        note: Archive.org item, crediting the uploader as P. Mel White.

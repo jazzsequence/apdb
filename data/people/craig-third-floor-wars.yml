@@ -1,12 +1,16 @@
 id: craig-third-floor-wars
-canonical_name: Craig
-sort_name: Craig
+canonical_name: Craig Shipman
+sort_name: Shipman, Craig
 aliases:
   - id: default
+    name: Craig Shipman
+    alias_type: legal
+  - id: craig
     name: Craig
     alias_type: handle
-    note: Credited by first name only; distinguished from other people named
-      Craig in this index by suffixing the id with the channel.
+    note: Credited by first name only in Vaesen Actual Play's own episode
+      descriptions; distinguished from other people named Craig in this
+      index by suffixing the id with the channel.
 credits:
   - show: vaesen-actual-play
     role: GM/DM
@@ -15,8 +19,12 @@ credits:
       they play Vaesen" — Craig named apart from "the cast" implies he hosts
       / GMs, but this is inference from phrasing, not a stated role. The rest
       of the cast is never named.'
-    alias: default
+    alias: craig
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PLYOGZIpC-07M9FGA6K-AUeBspnfuYXrQO
         note: Cast per the show's own episode descriptions.
+      - tier: reference
+        url: https://podcasters.spotify.com/pod/show/thirdfloorwars/episodes/Craig-Shipman-AMA-Third-Floor-Wars-Founder-Interview-ep--200-e25ji3q
+        note: Confirms Craig's full name as Craig Shipman, founder of Third
+          Floor Wars.

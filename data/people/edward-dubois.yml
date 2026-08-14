@@ -1,0 +1,19 @@
+id: edward-dubois
+canonical_name: Edward DuBois
+sort_name: DuBois, Edward
+aliases:
+  - id: default
+    name: Edward DuBois
+    alias_type: legal
+credits:
+  - show: red-skies
+    season: 1
+    role: GM/DM
+    note: The item is preserved on the Internet Archive under his own name, and
+      he is the uploader for every episode; players are not named in any
+      episode's own description.
+    alias: default
+    sources:
+      - tier: official
+        url: https://archive.org/details/RedSkies018PlanningAPinchOfPiracyInPort
+        note: Archive.org item, crediting the uploader as Edward DuBois.
