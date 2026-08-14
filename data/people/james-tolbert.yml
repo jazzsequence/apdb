@@ -1,0 +1,17 @@
+id: james-tolbert
+canonical_name: James Tolbert
+sort_name: Tolbert, James
+aliases:
+  - id: default
+    name: James Tolbert
+    alias_type: legal
+credits:
+  - show: season-zero-the-soul-searchers
+    season: 1
+    role: player
+    character: Aurion
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=jgY3oJqxV70
+        note: Cast per the show's own YouTube video description.

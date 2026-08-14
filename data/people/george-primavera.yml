@@ -6,6 +6,22 @@ aliases:
     name: George Primavera
     alias_type: legal
 credits:
+  - show: season-zero-the-soul-searchers
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=jgY3oJqxV70
+        note: Cast per the show's own YouTube video description.
+  - show: season-zero-the-soul-searchers
+    season: 1
+    role: producer
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=jgY3oJqxV70
+        note: Credits per the show's own YouTube video description.
   - show: critical-role-specials
     season: 5
     role: host

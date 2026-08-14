@@ -1,0 +1,17 @@
+id: lauren-lopez
+canonical_name: Lauren Lopez
+sort_name: Lopez, Lauren
+aliases:
+  - id: default
+    name: Lauren Lopez
+    alias_type: legal
+credits:
+  - show: season-zero-the-soul-searchers
+    season: 1
+    role: player
+    character: Chehlsee
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=jgY3oJqxV70
+        note: Cast per the show's own YouTube video description.

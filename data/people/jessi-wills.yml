@@ -6,6 +6,14 @@ aliases:
     name: Jessi Wills
     alias_type: legal
 credits:
+  - show: season-zero-the-soul-searchers
+    season: 1
+    role: editor
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=jgY3oJqxV70
+        note: Credits per the show's own YouTube video description.
   - show: stillhearth-d-d5e-actual-play-series
     season: 1
     role: editor
