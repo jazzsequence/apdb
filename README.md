@@ -120,6 +120,33 @@ stronger. The full reasoning is in [POLICY.md](POLICY.md).
 
 Git history covers the rest.
 
+## Machine-readable access
+
+The site is built to be fetched, not just crawled — an agent or script
+shouldn't need to parse rendered HTML to get the underlying facts.
+
+- **[/llms.txt](https://actualplaydb.com/llms.txt)** is the entry point:
+  what this is, what's indexed right now, and links to everything below.
+  Generated at build time so its counts never drift from what's actually
+  in `data/`.
+- **[/api/index.json](https://actualplaydb.com/api/index.json)** is the
+  machine-readable equivalent — a manifest of every endpoint, current
+  counts, and how ids and season ordinals resolve.
+- **`/api/people.json`, `/api/shows.json`, `/api/channels.json`,
+  `/api/games.json`** are the full collections, same shape as the YAML,
+  generated straight from the validated dataset.
+- **`/people/{id}.json` and `/shows/{id}.json`** mirror each HTML page —
+  fetch one record without downloading the whole collection.
+- **[AGENTS.md](AGENTS.md)** is for AI agents specifically, not humans
+  operating one. It covers how to file a contribution autonomously and,
+  more importantly, which source tier an agent is and isn't allowed to
+  claim — an agent that read a wiki page is a `reference` or `community`
+  source, never `firsthand`, no matter how confident the page sounded.
+- A sitemap and a `robots.txt` that explicitly welcomes AI crawlers
+  (GPTBot, ClaudeBot, PerplexityBot, CCBot and others by name, not just a
+  wildcard) round it out — the data is meant to be found, cited and
+  corrected, not walled off from the tools that would do that at scale.
+
 ## Importing
 
 `npm run collect` has two modes.

@@ -25,12 +25,23 @@ export async function getStaticPaths() {
 const { channel, shows } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const totalSeasons = shows.reduce((n, s) => n + s.show.seasons.length, 0);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: channel.name,
+  url: new URL(`${base}channels/${channel.id}/`, Astro.site).toString(),
+  ...(channel.description && { description: channel.description }),
+  ...(channel.image && { logo: channel.image.url }),
+  sameAs: Object.values(channel.links).filter((v): v is string => Boolean(v)),
+};
 ---
 
 <Base
   indexable
   title={`${channel.name} — Actual Play Database`}
   description={`Every show produced by ${channel.name} — ${shows.length} shows, ${totalSeasons} seasons.`}
+  jsonLd={jsonLd}
 >
   <div class="portrait-row">
     {channel.image && (

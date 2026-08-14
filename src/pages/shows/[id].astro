@@ -35,12 +35,31 @@ const seasonKeys = [...bySeason.keys()].sort((a, b) => {
   if (b === 'show') return -1;
   return a - b;
 });
+
+// schema.org has a dedicated PodcastSeries type; everything else (video,
+// stream, hybrid) is credited work with no broadcast-TV connotation to
+// misrepresent, so CreativeWorkSeries — the type both TVSeries and
+// PodcastSeries themselves specialize — is the honest fit rather than
+// reaching for TVSeries on a YouTube show.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': show.format === 'podcast' ? 'PodcastSeries' : 'CreativeWorkSeries',
+  name: show.title,
+  url: new URL(`${base}shows/${show.id}/`, Astro.site).toString(),
+  ...(show.description && { description: show.description }),
+  ...(show.image && { image: show.image.url }),
+  ...(channels.length > 0 && {
+    productionCompany: channels.map((c) => ({ '@type': 'Organization', name: c.name })),
+  }),
+  sameAs: Object.values(show.links).filter((v): v is string => Boolean(v)),
+};
 ---
 
 <Base
   indexable
   title={`${show.title} — Actual Play Database`}
   description={show.description ?? `Cast, seasons and systems for ${show.title}.`}
+  jsonLd={jsonLd}
 >
   <div class="portrait-row">
     {show.image && (
