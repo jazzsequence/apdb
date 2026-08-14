@@ -696,6 +696,19 @@ footer.site {
   object-fit: cover;
   display: block;
 }
+/* Channel logos are square, not landscape key art — the shared 16:10 .art
+ * box crops them badly (a circular badge or wordmark loses its top and
+ * bottom). This variant makes the box itself square and lets the logo sit
+ * inside it uncropped, since a square image in a square box still fills it
+ * edge to edge, and object-fit: contain protects against any future image
+ * that isn't. */
+.poster-grid--square .art {
+  aspect-ratio: 1 / 1;
+}
+.poster-grid--square img {
+  object-fit: contain;
+  padding: 0.5rem;
+}
 /* No art: a lettered plate keeps the grid even instead of leaving a hole. */
 .poster-grid .plate {
   font-family: var(--display);
