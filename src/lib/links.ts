@@ -37,7 +37,7 @@ const PATTERNS: [RegExp, string, LinkKind][] = [
   [/archive\.org/i, 'Internet Archive', 'watch'],
   [/podcasts\.apple\.com/i, 'Listen on Apple Podcasts', 'listen'],
   [/open\.spotify\.com|spotify\.com/i, 'Listen on Spotify', 'listen'],
-  [/podbean\.com|libsyn\.com|buzzsprout\.com|simplecast\.com|megaphone\.fm|anchor\.fm|creators\.spotify\.com/i,
+  [/podbean\.com|libsyn\.com|buzzsprout\.com|simplecast\.com|megaphone\.fm|anchor\.fm|creators\.spotify\.com|acast\.com|art19\.com/i,
     'Listen to the podcast', 'listen'],
   [/en\.wikipedia\.org/i, 'Wikipedia', 'read'],
   [/wikidata\.org/i, 'Wikidata', 'read'],
