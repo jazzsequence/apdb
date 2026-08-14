@@ -4,11 +4,14 @@ channels:
   - arcanarama
 format: video
 status: unknown
+description: "System per source: Ryuutama, per the series' own YouTube episode
+  titles (\"[Ryuutama Actualplay]\") — not D&D despite the show's D&D-heavy
+  channel."
 links:
   website: https://www.youtube.com/playlist?list=PLxbQBeapUkovzuhnnikgM26ofRZos-AyN
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: ryuutama
     episode_count: 12
 image:
   url: https://i.ytimg.com/vi/R3B1CVW0wTs/hqdefault.jpg

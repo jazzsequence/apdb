@@ -4,11 +4,14 @@ channels:
   - arcanarama
 format: video
 status: unknown
+description: "System per source: Daggerheart, per the series' own YouTube episode
+  titles (\"[Daggerheart Actualplay]\") — not D&D despite the show's
+  D&D-heavy channel."
 links:
   website: https://www.youtube.com/playlist?list=PLxbQBeapUkovTw0c1N4PXibm_-APP5iIa
 seasons:
   - ordinal: 1
-    game: dnd-5e
+    game: daggerheart
     episode_count: 10
 image:
   url: https://i.ytimg.com/vi/a0ccC4dhTPM/hqdefault.jpg
