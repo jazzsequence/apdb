@@ -240,8 +240,15 @@ export const Season = z
   .object({
     ordinal: z.number().int().positive(),
     title: z.string().optional(),
-    /** Foreign key -> Game.id */
-    game: Slug,
+    /**
+     * Foreign key -> Game.id, or several when the season isn't one campaign
+     * in one system. A single scalar is the normal case; an array is for a
+     * season that is itself an anthology — a charity marathon of one-shots
+     * in different systems is one event but not one game, and forcing a
+     * single value there means picking one system and losing the rest. Use
+     * `seasonGameIds()` to read this without caring which shape it is.
+     */
+    game: z.union([Slug, z.array(Slug).min(2)]),
     started: PartialDate.optional(),
     ended: PartialDate.optional(),
     episode_count: z.number().int().positive().optional(),
@@ -271,6 +278,13 @@ export const Season = z
     image: Image.optional(),
   })
   .strict();
+
+export type Season = z.infer<typeof Season>;
+
+/** Read a season's game(s) without caring whether it's one id or several. */
+export function seasonGameIds(season: Pick<Season, 'game'>): string[] {
+  return Array.isArray(season.game) ? season.game : [season.game];
+}
 
 export const Show = z
   .object({

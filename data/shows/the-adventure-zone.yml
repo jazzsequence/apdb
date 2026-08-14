@@ -49,7 +49,11 @@ seasons:
     game: supernormal
   - ordinal: 13
     title: "Campaign 6: Ethersea"
-    game: dnd-5e
+    game: [the-quiet-year, dnd-5e]
+    description: "The first five episodes (a prologue building the world and the
+      city of Founders' Wake) were played using The Quiet Year; the rest of
+      the season is a homebrewed D&D 5e campaign informed by what that
+      prologue built. Per the show's own wiki infobox."
   - ordinal: 14
     title: "Mini-series: Zone of Adventure"
     game: dnd-5e

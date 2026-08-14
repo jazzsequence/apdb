@@ -5,7 +5,7 @@
  * truth; show cast lists are derived by inverting credits here at build time.
  */
 import type { Dataset } from './load.js';
-import { SOURCE_TIERS, tierRank } from './schema.js';
+import { SOURCE_TIERS, seasonGameIds, tierRank } from './schema.js';
 import type { Alias, Channel, Credit, Game, Person, Season, Show, Source } from './schema.js';
 
 export type Tier = (typeof SOURCE_TIERS)[number];
@@ -120,7 +120,13 @@ export interface ResolvedCredit {
   credit: Credit;
   show: Show;
   season?: Season;
-  game?: Game;
+  /**
+   * Almost always zero or one entry. More than one means the season itself
+   * spans multiple systems — a charity marathon of one-shots, or a campaign
+   * (like The Adventure Zone's Ethersea) that switched rules partway through
+   * — so there is no single answer to "what system is this."
+   */
+  games: Game[];
   channels: Channel[];
   /**
    * The name this person was credited under at the time. Undefined when nobody
@@ -215,7 +221,11 @@ export class Db {
       credit,
       show,
       season,
-      game: season ? this.#gamesById.get(season.game) : undefined,
+      games: season
+        ? seasonGameIds(season)
+            .map((id) => this.#gamesById.get(id))
+            .filter((g): g is Game => Boolean(g))
+        : [],
       channels: this.channelsFor(show),
       alias,
       creditedUnderFormerName: Boolean(alias && alias.name !== person.canonical_name),
@@ -296,7 +306,7 @@ export class Db {
 
   /** Distinct games played across a show's seasons, for faceting. */
   gamesFor(show: Show): Game[] {
-    const ids = new Set(show.seasons.map((s) => s.game));
+    const ids = new Set(show.seasons.flatMap((s) => seasonGameIds(s)));
     return [...ids].map((id) => this.#gamesById.get(id)).filter((g): g is Game => Boolean(g));
   }
 

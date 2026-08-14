@@ -43,7 +43,8 @@ credits:
         url: https://happyjacks.org/cityoftowers/
         note: Cast per the network's own show page.
   - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
-    season: 3
+    season: 1
+    episode: "RR2020-03: Masks"
     role: player
     alias: default
     sources:
@@ -52,7 +53,8 @@ credits:
         note: "RR2020-03: Masks cast, per the network's Rainbow Railroading 2020
           episode listing."
   - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
-    season: 5
+    season: 1
+    episode: "RR2020-05: Great American Novel"
     role: player
     alias: default
     sources:

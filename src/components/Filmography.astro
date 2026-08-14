@@ -51,7 +51,7 @@ function yearRange(group: FilmographyGroup): string {
           </tr>
         </thead>
         <tbody>
-          {group.credits.map(({ credit, season, game, alias, creditedUnderFormerName, tier, corroboration }) => (
+          {group.credits.map(({ credit, season, games, alias, creditedUnderFormerName, tier, corroboration }) => (
             <>
               <tr>
                 <td class="c-where" data-label="Season">
@@ -85,12 +85,12 @@ function yearRange(group: FilmographyGroup): string {
                 </td>
 
                 <td class="c-system" data-label="System">
-                  {game && (
-                    <>
+                  {games.map((game) => (
+                    <div>
                       {game.name}
                       <span class="edition">{game.edition}</span>
-                    </>
-                  )}
+                    </div>
+                  ))}
                 </td>
 
                 <td class="c-prov" data-label="Provenance">

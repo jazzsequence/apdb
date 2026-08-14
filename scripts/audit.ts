@@ -14,6 +14,7 @@
  */
 import { Db } from '../src/lib/derive.js';
 import { loadDataset } from '../src/lib/load.js';
+import { seasonGameIds } from '../src/lib/schema.js';
 
 interface Finding {
   severity: 'high' | 'medium' | 'low';
@@ -303,7 +304,7 @@ const SYSTEM_HINTS: [RegExp, string][] = [
 for (const show of db.shows) {
   for (const [re, prefix] of SYSTEM_HINTS) {
     if (!re.test(show.title)) continue;
-    const games = [...new Set(show.seasons.map((s) => s.game))];
+    const games = [...new Set(show.seasons.flatMap((s) => seasonGameIds(s)))];
     if (games.every((g) => g.startsWith(prefix))) break;
     findings.push({
       severity: 'high',
@@ -391,7 +392,7 @@ const AMBIGUOUS_GAME =
   /^(spire|cyberpunk|various|various systems|homebrewed system|powered by the apocalypse|tba|tutorial|product reviews)$/i;
 for (const show of db.shows) {
   if (!show.description) continue;
-  const recorded = new Set(show.seasons.map((s) => s.game));
+  const recorded = new Set(show.seasons.flatMap((s) => seasonGameIds(s)));
   // By name, not id. `dnd-4e` and `dnd-5e` are both called "Dungeons &
   // Dragons", so comparing ids flagged every D&D show in the database.
   const recordedNames = new Set(
@@ -415,7 +416,9 @@ for (const show of db.shows) {
 
 // --- Unverified system ------------------------------------------------------
 const unverified = db.shows.filter(
-  (s) => !s.description?.startsWith('System per source') && s.seasons.every((x) => x.game === 'dnd-5e'),
+  (s) =>
+    !s.description?.startsWith('System per source') &&
+    s.seasons.every((x) => !Array.isArray(x.game) && x.game === 'dnd-5e'),
 );
 if (unverified.length > 5) {
   findings.push({

@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { getDb } from '../../../lib/db';
+import { seasonGameIds } from '../../../lib/schema';
 import EntityActions from '../../../components/EntityActions.astro';
 import WatchLinks from '../../../components/WatchLinks.astro';
 
@@ -14,7 +15,9 @@ export async function getStaticPaths() {
         props: {
           show,
           season,
-          game: db.game(season.game),
+          games: seasonGameIds(season)
+            .map((id) => db.game(id))
+            .filter((g) => g !== undefined),
           channels: db.channelsFor(show),
           cast,
         },
@@ -23,7 +26,7 @@ export async function getStaticPaths() {
   );
 }
 
-const { show, season, game, channels, cast } = Astro.props;
+const { show, season, games, channels, cast } = Astro.props;
 
 /*
  * A season's own playlist if it has one, otherwise the show's. Most
@@ -90,7 +93,7 @@ const jsonLd = {
 
   <p class="billing">
     {channels.map((c) => c.name).join(', ')}
-    {game && <> · {game.name} · {game.edition}</>}
+    {games.length > 0 && <> · {games.map((g) => `${g.name} · ${g.edition}`).join(' / ')}</>}
     {dates && <> · {dates}</>}
     {season.episode_count && <> · {season.episode_count} episodes</>}
   </p>
@@ -148,7 +151,7 @@ const jsonLd = {
     kind="season"
     snippet={seasonLinks ? undefined : `  - ordinal: ${season.ordinal}
 ${season.title ? `    title: ${season.title}
-` : ''}    game: ${season.game}
+` : ''}    game: ${Array.isArray(season.game) ? `[${season.game.join(', ')}]` : season.game}
     links:
       website: https://www.youtube.com/playlist?list=…`}
     snippetHint={seasonLinks ? undefined : `This season has no link of its own. Find the season with ordinal ${season.ordinal} in the file and add a links block:`}

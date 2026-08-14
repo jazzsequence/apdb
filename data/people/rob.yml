@@ -25,7 +25,8 @@ credits:
         url: https://happyjacks.org/cityoftowers/
         note: Cast per the network's own show page.
   - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
-    season: 2
+    season: 1
+    episode: "RR2020-02: Girl Underground"
     role: player
     alias: default
     sources:

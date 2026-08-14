@@ -6,45 +6,19 @@ format: podcast
 status: completed
 description: A 24-hour charity marathon for Rainbow Railroad (which helps
   LGBTQIA+ people in hostile countries reach safety), aired 2020-02-21 as six
-  back-to-back one-shots in different systems, not a single ongoing campaign
-  — each "season" below is one segment. Player rosters are as credited in the
+  back-to-back one-shots in different systems — one event, one season, six
+  episodes, not six separate seasons. Player rosters are as credited in the
   episode listings, first names only where that's all that was given.
 links:
   website: https://happyjacks.org/rainbow/
 seasons:
   - ordinal: 1
-    title: "RR2020-01: Spirit of '77"
-    game: spirit-of-77
-    episode_count: 1
+    game: [spirit-of-77, girl-underground, masks, traveller, great-american-novel, kids-on-bikes]
+    episode_count: 6
     started: 2020-02-21
     ended: 2020-02-21
-  - ordinal: 2
-    title: "RR2020-02: Girl Underground"
-    game: girl-underground
-    episode_count: 1
-    started: 2020-02-21
-    ended: 2020-02-21
-  - ordinal: 3
-    title: "RR2020-03: Masks"
-    game: masks
-    episode_count: 1
-    started: 2020-02-21
-    ended: 2020-02-21
-  - ordinal: 4
-    title: "RR2020-04: Mongoose Traveller"
-    game: traveller
-    episode_count: 1
-    started: 2020-02-21
-    ended: 2020-02-21
-  - ordinal: 5
-    title: "RR2020-05: Great American Novel"
-    game: great-american-novel
-    episode_count: 1
-    started: 2020-02-21
-    ended: 2020-02-21
-  - ordinal: 6
-    title: "RR2020-06: Kids on Bikes"
-    game: kids-on-bikes
-    episode_count: 1
-    started: 2020-02-21
-    ended: 2020-02-21
+    description: >-
+      RR2020-01: Spirit of '77 · RR2020-02: Girl Underground · RR2020-03:
+      Masks · RR2020-04: Mongoose Traveller · RR2020-05: Great American
+      Novel · RR2020-06: Kids on Bikes — each episode's own game is recorded
+      on the credits for that episode.

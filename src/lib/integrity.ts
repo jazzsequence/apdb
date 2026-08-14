@@ -7,6 +7,7 @@
  */
 import type { Dataset, Problem } from './load.js';
 import type { Person } from './schema.js';
+import { seasonGameIds } from './schema.js';
 
 /** Normalise a name for duplicate detection: casefold, strip punctuation/accents. */
 function normaliseName(name: string): string {
@@ -61,12 +62,14 @@ export function checkIntegrity(dataset: Dataset): Problem[] {
     });
 
     show.seasons.forEach((season, index) => {
-      if (!gameIds.has(season.game)) {
-        problems.push({
-          file,
-          path: `seasons[${index}].game`,
-          message: `season ${season.ordinal} references game "${season.game}", which does not exist in data/games/`,
-        });
+      for (const id of seasonGameIds(season)) {
+        if (!gameIds.has(id)) {
+          problems.push({
+            file,
+            path: `seasons[${index}].game`,
+            message: `season ${season.ordinal} references game "${id}", which does not exist in data/games/`,
+          });
+        }
       }
     });
   }
