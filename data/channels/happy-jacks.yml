@@ -1,10 +1,7 @@
 id: happy-jacks
 name: Happy Jacks RPG Network
 type: indie studio
-description: >-
-  Long-running independent actual-play and RPG-advice podcast network. Cast
-  members are frequently credited by first name or handle rather than by legal
-  name, which is exactly the identity problem this database has to solve.
+description: Long-running independent actual-play and RPG-advice podcast network.
 links:
   website: https://happyjacks.org
 image:

@@ -5,8 +5,12 @@ description: Independent producer; episodes preserved on the Internet Archive.
 links:
   website: https://archive.org/search?query=creator%3A%22OHGG%22
 image:
-  url: https://archive.org/services/img/eternallies019
-  licence: CC-BY-NC-ND-4.0
-  attribution: "OHGG, CC-BY-NC-ND-4.0. Via the Internet Archive."
-  source: "https://archive.org/details/eternallies019"
-  depicts: "Cover art for OHGG — reused as the channel image since this uploader and the show are the same identity"
+  url: https://upload.wikimedia.org/wikipedia/commons/5/51/Internet_Archive_Logo.svg
+  licence: CC-BY-SA-4.0
+  attribution: Jason Alan Scott (Internet Archive), CC-BY-SA-4.0. Via Wikimedia
+    Commons.
+  source: https://commons.wikimedia.org/wiki/File:Internet_Archive_Logo.svg
+  depicts: Internet Archive logo (generic — this uploader's episodes have no
+    real square cover art of their own; archive.org's auto-generated
+    thumbnail for their items is a small non-square waveform placeholder,
+    not usable here)
