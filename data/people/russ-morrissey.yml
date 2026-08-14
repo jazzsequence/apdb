@@ -5,6 +5,11 @@ aliases:
   - id: default
     name: Russ Morrissey
     alias_type: legal
+  - id: morrus
+    name: Morrus
+    alias_type: handle
+    note: EN World founder's well-known handle, used to credit him on
+      EN World Live shows.
 credits:
   - show: against-the-dragonlords-an-a5e-dragonlance-actual-play
     role: GM/DM
@@ -15,3 +20,11 @@ credits:
           Episode 8".
     season: 1
     alias: default
+  - show: awfully-cheerful-engine-beam-me-up
+    role: GM/DM
+    season: 1
+    alias: morrus
+    sources:
+      - tier: official
+        url: https://enrpg.podbean.com/e/awfully-cheerful-engine-beam-me-up/
+        note: Cast listed in the show's own episode notes.
