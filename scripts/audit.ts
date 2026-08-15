@@ -30,6 +30,35 @@ if (problems.length > 0) {
 const db = new Db(dataset);
 const findings: Finding[] = [];
 
+// --- Allowlist ---------------------------------------------------------------
+// For findings that were investigated by hand and confirmed correct, not a
+// defect — the heuristic can't know this on its own (e.g. two genuinely
+// different people who happen to share a similar name). This is a record of
+// "checked, not a bug," not a way to silence noise: every entry needs a real
+// reason, and stale entries are reported at the end so they don't quietly
+// keep suppressing something that has since changed.
+interface Allowed {
+  what: string;
+  key: string;
+  reason: string;
+}
+const ALLOWLIST: Allowed[] = [
+  {
+    what: 'possibly the same person twice',
+    key: 'jack-kelly|jackson-kelly',
+    reason:
+      'Two distinct Saving Throw Show guest cast members with a similar name — the ' +
+      "wiki lists them as separate people and no source ties them together; both " +
+      'records carry a cross-referencing note saying so.',
+  },
+];
+const allowlistUsed = new Set<string>();
+function isAllowed(what: string, key: string): boolean {
+  const hit = ALLOWLIST.some((a) => a.what === what && a.key === key);
+  if (hit) allowlistUsed.add(`${what}|${key}`);
+  return hit;
+}
+
 // --- People who might be characters ---------------------------------------
 // A character imported as a performer almost always has exactly one credit, on
 // one show, and no free portrait or Wikidata id.
@@ -110,6 +139,7 @@ for (const a of db.people) {
     if (seenPairs.has(key)) continue;
     if (!likelySamePerson(a.canonical_name, b.canonical_name)) continue;
     seenPairs.add(key);
+    if (isAllowed('possibly the same person twice', key)) continue;
     findings.push({
       severity: 'high',
       what: 'possibly the same person twice',
@@ -144,11 +174,16 @@ for (const p of db.people) {
 // The Archive.org importer takes the item's creator field as a show title, so
 // a personal upload of someone's home game becomes a show named after them:
 // Bill White, Edward DuBois, Liam Gallagher, Mel White. They have no cast and
-// never will, because they are not productions.
+// never will, because they are not productions. But a person-shaped title
+// with a real podcast or YouTube presence (not just a bare archive.org
+// search) is evidence of an actual production that happens to be named after
+// a person — "Monster Hunt" turned out to be one, confirmed via its own
+// Apple Podcasts and YouTube pages.
 const PERSON_SHAPED = /^[\p{Lu}][\p{Ll}'’-]+(?:\s+[\p{Lu}]\.)?\s+[\p{Lu}][\p{Ll}'’-]+$/u;
 for (const show of db.shows) {
   if (db.castFor(show).length > 0) continue;
   if (!PERSON_SHAPED.test(show.title)) continue;
+  if (show.links.podcast || show.links.youtube) continue;
   findings.push({
     severity: 'medium',
     what: 'show title looks like a person, not a production',
@@ -190,8 +225,12 @@ for (const show of db.shows) {
 }
 
 // --- A GM-less season -------------------------------------------------------
+// Some games genuinely have no GM (Fiasco, The Quiet Year) — a season using
+// only those games is not missing anything.
 for (const show of db.shows) {
   for (const season of show.seasons) {
+    const gameIds = seasonGameIds(season);
+    if (gameIds.length > 0 && gameIds.every((id) => db.games.find((g) => g.id === id)?.gm_less)) continue;
     const cast = db.castFor(show).filter((c) => c.credit.season === season.ordinal);
     if (cast.length >= 3 && !cast.some((c) => c.credit.role.includes('GM'))) {
       findings.push({
@@ -248,6 +287,7 @@ for (const person of db.people) {
 // Birdsong is a character, not someone in the database.
 {
   const byCharacter = new Map<string, Set<string>>();
+  const allNoted = new Map<string, boolean>();
   for (const person of db.people) {
     for (const credit of person.credits) {
       if (!credit.character) continue;
@@ -258,10 +298,17 @@ for (const person of db.people) {
       const key = `${credit.show}|${credit.season ?? '-'}|${credit.episode ?? '-'}|${credit.character.toLowerCase()}`;
       if (!byCharacter.has(key)) byCharacter.set(key, new Set());
       byCharacter.get(key)!.add(person.canonical_name);
+      // A genuinely shared/co-created character (a hive-mind, a duo NPC) is
+      // real, not a bug — but only when every credit sharing the slot has a
+      // note explaining it, the same "already explained" bar the GM/player
+      // rule above uses. One noted credit and one bare one is still a real
+      // conflict worth a look.
+      allNoted.set(key, (allNoted.get(key) ?? true) && Boolean(credit.note));
     }
   }
   for (const [key, people] of byCharacter) {
     if (people.size < 2) continue;
+    if (allNoted.get(key)) continue;
     const [show, season, , character] = key.split('|');
     findings.push({
       severity: 'high',
@@ -317,16 +364,25 @@ for (const show of db.shows) {
 
 // --- Two shows with the same title ------------------------------------------
 // Season splits keep reappearing: L.A. by Night was three shows, and the Glass
-// Cannon arcs were 63. A near-identical pair of titles is the signature.
+// Cannon arcs were 63. A near-identical pair of titles is the signature — but
+// only when the shows also share a channel. A real split-by-season bug is one
+// production imported twice, which never crosses channels; two unrelated
+// groups who happen to both call their game "Ghosts of Saltmarsh" (the public
+// domain module) legitimately share nothing else.
 {
-  const byTitle = new Map<string, string[]>();
+  const byTitle = new Map<string, { title: string; channels: string[] }[]>();
   for (const show of db.shows) {
     const key = show.title.toLowerCase().replace(/\bseason\s*\d+\b|\bs\d+\b/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
     if (!key) continue;
-    byTitle.set(key, [...(byTitle.get(key) ?? []), show.title]);
+    byTitle.set(key, [...(byTitle.get(key) ?? []), { title: show.title, channels: show.channels ?? [] }]);
   }
-  for (const [, titles] of byTitle) {
-    if (titles.length < 2) continue;
+  for (const [, entries] of byTitle) {
+    if (entries.length < 2) continue;
+    const shareAChannel = entries.some((a, i) =>
+      entries.slice(i + 1).some((b) => a.channels.some((c) => b.channels.includes(c))),
+    );
+    if (!shareAChannel) continue;
+    const titles = entries.map((e) => e.title);
     findings.push({
       severity: 'medium',
       what: 'two shows that may be one show split by season',
@@ -446,6 +502,17 @@ if (unverified.length > 5) {
       what: 'channel with no shows',
       detail: `${c.name} (${c.id}) — no show references this channel; confirm it belongs here and add its show(s), or remove it`,
     });
+  }
+}
+
+// --- Stale allowlist entries --------------------------------------------------
+// An entry that matched nothing is either fixed data that no longer needs it
+// (fine, delete the entry) or a key that silently stopped matching because
+// something upstream changed (worth a look). Either way it shouldn't sit
+// there unnoticed.
+for (const a of ALLOWLIST) {
+  if (!allowlistUsed.has(`${a.what}|${a.key}`)) {
+    console.warn(`⚠ Stale allowlist entry, matched nothing: [${a.what}] ${a.key}`);
   }
 }
 

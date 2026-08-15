@@ -226,6 +226,9 @@ export const Game = z
     edition: z.string().min(1, 'edition is required — use "N/A" only for editionless games'),
     publisher: z.string().min(1),
     links: Links,
+    /** True for games with no GM by design (Fiasco, Microscope, etc.) — a
+     * season using one of these genuinely has no GM to credit. */
+    gm_less: z.boolean().optional(),
   })
   .strict();
 
