@@ -1,0 +1,17 @@
+id: noah-ludwig
+canonical_name: Noah Ludwig
+sort_name: Ludwig, Noah
+aliases:
+  - id: default
+    name: Noah Ludwig
+    alias_type: legal
+credits:
+  - show: dark-underworld
+    season: 1
+    role: player
+    character: Ragro
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLdMNhlrU2I2YDtjxig9wY8zJNRx5uFRES
+        note: Cast per the show's own YouTube video description.

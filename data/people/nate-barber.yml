@@ -1,0 +1,16 @@
+id: nate-barber
+canonical_name: Nate Barber
+sort_name: Barber, Nate
+aliases:
+  - id: default
+    name: Nate Barber
+    alias_type: legal
+credits:
+  - show: dark-underworld
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLdMNhlrU2I2YDtjxig9wY8zJNRx5uFRES
+        note: Cast per the show's own YouTube video description.

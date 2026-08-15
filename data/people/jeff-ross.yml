@@ -1,0 +1,17 @@
+id: jeff-ross
+canonical_name: Jeff Ross
+sort_name: Ross, Jeff
+aliases:
+  - id: default
+    name: Jeff Ross
+    alias_type: legal
+credits:
+  - show: dark-underworld
+    season: 1
+    role: player
+    character: Sir Kiinon Leobund
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLdMNhlrU2I2YDtjxig9wY8zJNRx5uFRES
+        note: Cast per the show's own YouTube video description.

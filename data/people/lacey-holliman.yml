@@ -1,0 +1,17 @@
+id: lacey-holliman
+canonical_name: Lacey Holliman
+sort_name: Holliman, Lacey
+aliases:
+  - id: default
+    name: Lacey Holliman
+    alias_type: legal
+credits:
+  - show: dark-underworld
+    season: 1
+    role: player
+    character: Sha'nal "Shay" Kah
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PLdMNhlrU2I2YDtjxig9wY8zJNRx5uFRES
+        note: Cast per the show's own YouTube video description.
