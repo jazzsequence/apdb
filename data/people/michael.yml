@@ -33,16 +33,6 @@ credits:
     season: 1
     character: Hannibal Wagner
     alias: default
-  - show: vtm-dark-city-season-1
-    role: player
-    sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=FbLeGIXy7WQ
-        note: "Cast stated in the show's own description for \"OSRPG: Vampire the
-          Masquerade Dark City - Charlie's Introduction\"."
-    season: 1
-    character: Hannibal Wagner
-    alias: default
   - show: journey-to-the-obsidian-spire
     role: player
     sources:

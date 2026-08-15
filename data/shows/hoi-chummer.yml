@@ -9,8 +9,7 @@ links:
 seasons:
   - ordinal: 1
     game: shadowrun
-description: "System per source: Shadowrun 5e. System corrected to shadowrun,
-  which the show's own description names."
+description: 'System per source: Shadowrun 5e.'
 image:
   url: https://static.wikia.nocookie.net/savingthrowshow/images/a/ab/Hoi_Chummer_Logo.jpg/revision/latest/scale-to-width-down/400?cb=20210506200942
   licence: fair use
