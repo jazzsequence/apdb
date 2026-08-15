@@ -4,14 +4,12 @@ channels:
   - the-esoteric-order-of-roleplayers
 format: podcast
 status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Call of Cthulhu. Uploader licence:
-  http://creativecommons.org/licenses/by-nc-nd/3.0/."
+description: '"Lost in the Maze," per the show''s own blog.'
 links:
   website: https://archive.org/search?query=creator%3A%22The%20Esoteric%20Order%20of%20Roleplayers%22%20AND%20title%3A%28%22Deadlands%22%29
 seasons:
   - ordinal: 1
-    game: call-of-cthulhu
+    game: deadlands
     episode_count: 11
     started: 2013-07-28
     ended: 2014-02-09

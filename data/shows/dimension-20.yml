@@ -4,9 +4,7 @@ channels:
   - dropout
 format: video
 status: ongoing
-description: Dropout's anthology actual-play series. Seasons rotate cast,
-  setting and system; ordinals here are this database's own ordering, not
-  Dropout's.
+description: Dropout's anthology actual-play series. Seasons rotate cast, setting, and system.
 links:
   website: https://www.dropout.tv/dimension-20
   wikipedia: https://en.wikipedia.org/wiki/Dimension_20

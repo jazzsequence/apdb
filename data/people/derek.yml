@@ -37,7 +37,7 @@ credits:
         note: Once Upon a Witchlight cast, via the avantris.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: stardust-rhapsody-overture
+  - show: stardust-rhapsody
     season: 1
     role: player
     character: Leboosh
@@ -138,8 +138,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
         note: "Ghosts of Saltmarsh cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: stardust-rhapsody-anthem
-    season: 2
+  - show: stardust-rhapsody
+    season: 3
     role: player
     character: Ziggy Woog
     alias: default

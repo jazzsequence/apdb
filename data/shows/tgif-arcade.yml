@@ -4,8 +4,7 @@ channels:
   - tgif-arcade
 format: podcast
 status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Powered by the Apocalypse."
+description: 'System per source: Powered by the Apocalypse.'
 links:
   website: https://archive.org/search?query=creator%3A%22TGIF%20Arcade%22%20AND%20title%3A%28%22Android%20Dreams%22%29
 seasons:

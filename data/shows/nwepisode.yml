@@ -4,8 +4,7 @@ channels:
   - team-nexuswatch
 format: podcast
 status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Savage Worlds."
+description: 'System per source: Savage Worlds.'
 links:
   website: https://archive.org/search?query=creator%3A%22Team%20Nexuswatch%22%20AND%20title%3A%28%22NWEpisode%22%29
 seasons:

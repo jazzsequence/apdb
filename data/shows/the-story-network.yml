@@ -4,9 +4,7 @@ channels:
   - the-story-network
 format: podcast
 status: unknown
-description: "System per source: Dungeons & Dragons 5th Edition. Preserved on
-  the Internet Archive. Uploader licence:
-  https://creativecommons.org/licenses/by-nc-nd/4.0/."
+description: 'System per source: Dungeons & Dragons 5th Edition.'
 links:
   website: https://archive.org/search?query=creator%3A%22The%20Story%20Network%22
 seasons:

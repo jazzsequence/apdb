@@ -155,7 +155,7 @@ credits:
       - tier: community
         url: https://avantris.fandom.com/wiki/Waltz_for_Eternity
         note: Waltz for Eternity cast, via the avantris.fandom.com infobox. CC-BY-SA.
-  - show: stardust-rhapsody-overture
+  - show: stardust-rhapsody
     season: 1
     role: GM/DM
     alias: default
@@ -172,8 +172,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
         note: "On a Silver Strand cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: stardust-rhapsody-anthem
-    season: 1
+  - show: stardust-rhapsody
+    season: 2
     role: GM/DM
     alias: default
     sources:
@@ -181,8 +181,8 @@ credits:
         note: Stardust Rhapsody Prelude cast, via the avantris.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: stardust-rhapsody-anthem
-    season: 2
+  - show: stardust-rhapsody
+    season: 3
     role: GM/DM
     alias: default
     sources:

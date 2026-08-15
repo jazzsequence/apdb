@@ -4,12 +4,9 @@ channels:
   - michael-l-jaegers-team
 format: podcast
 status: unknown
-description: "Preserved on the Internet Archive. System per the uploader's own
-  tags: Call of Cthulhu. Uploader licence:
-  http://creativecommons.org/licenses/by-nc-nd/3.0/de/. Bundles several
-  distinct campaigns from jaegers.net's Cthulhu Podcast archive (Die
-  Innsmouth Connection, Zirkel des Baphomet, Aufstieg und Niedergang eines
-  Imperiums, and others), each with its own cast."
+description: 'System per source: Call of Cthulhu. Bundles several distinct campaigns from
+  jaegers.net''s Cthulhu Podcast archive (Die Innsmouth Connection, Zirkel des Baphomet, Aufstieg
+  und Niedergang eines Imperiums, and others), each with its own cast.'
 links:
   website: https://archive.org/search?query=creator%3A%22Michael%20L.%20Jaegers%20%26%20Team%22
 seasons:

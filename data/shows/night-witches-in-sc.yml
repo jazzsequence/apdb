@@ -4,11 +4,9 @@ channels:
   - bill-white
 format: podcast
 status: unknown
-description: Powered by the Apocalypse sessions run by Bill White in Central
-  Pennsylvania, preserved on the Internet Archive. The item's own description
-  reads "pbtA RPGs run by Bill White in Central PA; Dungeon World; Night
-  Witches" — he ran both, and the Dungeon World sessions are a separate campaign
-  not yet indexed here.
+description: Powered by the Apocalypse sessions run by Bill White in Central Pennsylvania.
+  The item's own description reads "pbtA RPGs run by Bill White in Central PA; Dungeon World;
+  Night Witches" — he ran both.
 links:
   website: https://archive.org/search?query=creator%3A%22Bill%20White%22%20AND%20identifier%3A%28NightWitches%2A%29
 seasons:
