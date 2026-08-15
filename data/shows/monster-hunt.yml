@@ -7,7 +7,7 @@ status: unknown
 description: "Preserved on the Internet Archive. System per the uploader's own
   tags: Dungeons & Dragons."
 links:
-  website: https://archive.org/details/212_20210107
+  website: https://archive.org/search?query=creator%3A%22Monster%20Hunt%22
 seasons:
   - ordinal: 1
     game: dnd-5e

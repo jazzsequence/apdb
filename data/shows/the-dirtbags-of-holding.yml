@@ -9,7 +9,7 @@ description: "System per source: D&D 5th Edition. \"4 friends show off the real
   The linked item covers their \"Baldur's Gate: Descent into Avernus\"
   campaign; the show has also run other systems."
 links:
-  website: https://archive.org/details/descent-into-avernus-outtakes-vol.-1-the-dirtbags-of-holding-159
+  website: https://archive.org/search?query=creator%3A%22Chris%20Renshaw%22%20AND%20title%3A%28%22Dirtbags%22%29
 seasons:
   - ordinal: 1
     game: dnd-5e

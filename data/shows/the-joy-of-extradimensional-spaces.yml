@@ -9,7 +9,7 @@ description: "System per source: D&D 5th Edition. The first Candlekeep
   episode description found — checked archive.org item metadata and web
   search without a result."
 links:
-  website: https://archive.org/details/episode-ten-the-joy-of-extradimensional-spaces-podcast
+  website: https://archive.org/search?query=creator%3A%22Plus%20One%20to%20Gaming%22%20AND%20title%3A%28%22Joy%20of%20Extradimensional%20Spaces%22%29
 seasons:
   - ordinal: 1
     game: dnd-5e

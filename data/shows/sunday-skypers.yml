@@ -6,7 +6,7 @@ format: podcast
 status: unknown
 description: "Preserved on the Internet Archive. System per the uploader's own tags: Fate."
 links:
-  website: https://archive.org/details/sunday-skypers-sns-FATE-Vol3
+  website: https://archive.org/search?query=creator%3A%22Sunday-Skypers%22
 seasons:
   - ordinal: 1
     game: fate-core

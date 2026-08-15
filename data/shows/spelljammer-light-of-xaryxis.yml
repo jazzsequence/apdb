@@ -7,7 +7,7 @@ status: completed
 description: "System per source: D&D 5th Edition (Spelljammer). Run by
   guest DM Loki, per the item's own description."
 links:
-  website: https://archive.org/details/spelljammer-light-of-xaryxis-session-0
+  website: https://archive.org/search?query=creator%3A%22Plus%20One%20to%20Gaming%22%20AND%20title%3A%28%22Xaryxis%22%29
 seasons:
   - ordinal: 1
     game: dnd-5e

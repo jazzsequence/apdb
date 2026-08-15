@@ -9,7 +9,7 @@ description: "System per source: D&D 5th Edition. The fourth Candlekeep
   time DMing; billed as \"an epic Star Wars D&D adventure,\" per the
   item's own description."
 links:
-  website: https://archive.org/details/a-deep-and-creeping-darkness-zero-session
+  website: https://archive.org/search?query=creator%3A%22Plus%20One%20to%20Gaming%22%20AND%20title%3A%28%22A%20Deep%20and%20Creeping%20Darkness%22%29
 seasons:
   - ordinal: 1
     game: dnd-5e

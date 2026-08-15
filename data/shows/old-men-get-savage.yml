@@ -7,7 +7,7 @@ status: unknown
 description: "\"An unmoderated group of real life friends\" learning Savage
   Worlds with Fantasy Grounds, per the item's own description."
 links:
-  website: https://archive.org/details/omgsep03
+  website: https://archive.org/search?query=creator%3A%22Richard%20Thomas%20George%22%20AND%20title%3A%28%22Old%20Men%20Get%20Savage%22%29
 seasons:
   - ordinal: 1
     game: savage-worlds-deluxe

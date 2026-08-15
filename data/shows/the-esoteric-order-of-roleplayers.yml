@@ -8,7 +8,7 @@ description: "Preserved on the Internet Archive. System per the uploader's own
   tags: Call of Cthulhu. Uploader licence:
   http://creativecommons.org/licenses/by-nc-nd/3.0/."
 links:
-  website: https://archive.org/details/220DeadlandsReloadedLostInTheMazeSessionTwentyTheRiddleOfAngels
+  website: https://archive.org/search?query=creator%3A%22The%20Esoteric%20Order%20of%20Roleplayers%22%20AND%20title%3A%28%22Deadlands%22%29
 seasons:
   - ordinal: 1
     game: call-of-cthulhu

@@ -6,7 +6,7 @@ format: podcast
 status: unknown
 description: D&D 4th Edition campaign; system per the item's own subject tags ("4th ed").
 links:
-  website: https://archive.org/details/Shatteredsea0005-weFoundOurselvesInTheCrucible
+  website: https://archive.org/search?query=creator%3A%22Liam%20Gallagher%22%20AND%20identifier%3A%28Shatteredsea%2A%29
 seasons:
   - ordinal: 1
     game: dnd-4e

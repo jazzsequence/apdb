@@ -11,7 +11,7 @@ description: "Preserved on the Internet Archive. System per the uploader's own
   Innsmouth Connection, Zirkel des Baphomet, Aufstieg und Niedergang eines
   Imperiums, and others), each with its own cast."
 links:
-  website: https://archive.org/details/coc_0402
+  website: https://archive.org/search?query=creator%3A%22Michael%20L.%20Jaegers%20%26%20Team%22
 seasons:
   - ordinal: 1
     game: call-of-cthulhu
