@@ -1,0 +1,19 @@
+id: stardust-rhapsody-anthem
+title: 'Stardust Rhapsody: Anthem'
+channels:
+  - avantris
+format: video
+status: completed
+description: 'Second, separately-canon Stardust Rhapsody campaign — not connected to Stardust
+  Rhapsody: Overture despite sharing the ship name and some character names. Season 1 ("Prelude")
+  consists of precursor flashback episodes explicitly canon to this campaign. System per source:
+  D&D 5th Edition.'
+seasons:
+  - ordinal: 1
+    title: Stardust Rhapsody Prelude
+    game: dnd-5e
+  - ordinal: 2
+    title: 'Stardust Rhapsody: Anthem'
+    game: dnd-5e
+    links:
+      website: https://www.youtube.com/playlist?list=PLZsrxxME7K308GWBYU-OZorg0T57jMVp7

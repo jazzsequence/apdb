@@ -104,7 +104,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
       - &a1
         tier: reference
@@ -125,7 +125,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
       - *a1
       - *a2

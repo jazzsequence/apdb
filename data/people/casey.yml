@@ -7,8 +7,8 @@ aliases:
     name: Casey
     alias_type: legal
 credits:
-  - show: legends-of-avantris
-    season: 5
+  - show: stardust-rhapsody-overture
+    season: 1
     role: player
     character: Dandy
     alias: default
@@ -17,15 +17,15 @@ credits:
         note: "Stardust Rhapsody: Overture cast, via the avantris.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 17
+  - show: on-a-silver-strand
+    season: 1
     role: player
     character: D4ND1
     alias: default
     sources:
       - tier: community
         url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "On a Silver Strand cast, via the avantris.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/avantris/images/c/c0/Casey_Caffrey.jpg/revision/latest/scale-to-width-down/300?cb=20260312133741
   licence: fair use

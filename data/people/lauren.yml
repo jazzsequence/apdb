@@ -6,12 +6,12 @@ aliases:
     name: Lauren
     alias_type: legal
 credits:
-  - show: legends-of-avantris
-    season: 21
+  - show: for-what-its-worth
+    season: 1
     role: player
     character: Orla
     alias: default
     sources:
       - tier: community
         url: https://avantris.fandom.com/wiki/For_What_It's_Worth
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "For What It's Worth cast, via the avantris.fandom.com infobox. CC-BY-SA."

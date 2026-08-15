@@ -1,0 +1,12 @@
+id: midnight-carnival
+title: Midnight Carnival
+channels:
+  - avantris
+format: video
+status: completed
+description: 'Legends of Avantris campaign. System per source: D&D 5th Edition.'
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+links:
+  website: https://avantris.fandom.com/wiki/Midnight_Carnival

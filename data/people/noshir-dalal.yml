@@ -41,7 +41,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
       - tier: reference
         url: https://www.imdb.com/title/tt27715026/fullcredits/

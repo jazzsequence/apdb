@@ -1,0 +1,12 @@
+id: beneath-dark-wings
+title: Beneath Dark Wings
+channels:
+  - avantris
+format: video
+status: completed
+description: 'Legends of Avantris campaign. System per source: D&D 5th Edition.'
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+links:
+  website: https://www.youtube.com/playlist?list=PLZsrxxME7K33mQU3gimf_xJTrJz_bFkoJ

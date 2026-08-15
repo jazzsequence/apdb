@@ -7,7 +7,7 @@ aliases:
     name: Kelsey
     alias_type: legal
 credits:
-  - show: legends-of-avantris
+  - show: curse-of-strahdanya
     season: 1
     role: player
     character: Victoria Isaacs
@@ -16,8 +16,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Curse_of_Strahdanya
         note: Curse of Strahdanya cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 2
+  - show: prime
+    season: 1
     role: player
     character: Anulin Mossgrove
     alias: default
@@ -25,8 +25,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Prime
         note: Prime cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 6
+  - show: beneath-dark-wings
+    season: 1
     role: player
     character: Lufti
     alias: default
@@ -34,8 +34,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
         note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 7
+  - show: edge-of-midnight
+    season: 1
     role: player
     character: Farryn of the Hartsblight
     alias: default
@@ -43,8 +43,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Edge_of_Midnight
         note: Edge of Midnight cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 8
+  - show: vagabonds-heart-a-dimwood-tale
+    season: 1
     role: player
     character: Hazel
     alias: default
@@ -53,8 +53,8 @@ credits:
         note: "Vagabond's Heart: A Dimwood Tale cast, via the avantris.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 9
+  - show: uprooted-dimwits-of-the-dimwood
+    season: 1
     role: player
     character: Hazel
     alias: default
@@ -63,8 +63,8 @@ credits:
         note: "Uprooted: Dimwits of the Dimwood cast, via the avantris.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 12
+  - show: honey-heist-avantris
+    season: 1
     role: player
     character: Rhonda
     alias: default
@@ -72,26 +72,26 @@ credits:
       - url: https://avantris.fandom.com/wiki/Honey_Heist
         note: Honey Heist cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 16
+  - show: the-mighty-trunks
+    season: 1
     role: player
     character: Tootles
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mighty_Trunks
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "The Mighty Trunks cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 20
+  - show: of-heart-and-harvest
+    season: 1
     role: player
     character: Victoria Isaac
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Of Heart and Harvest cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 27
+  - show: stardust-rhapsody-anthem
+    season: 2
     role: guest player
     character: Ophelia Kalos
     alias: default
@@ -101,8 +101,8 @@ credits:
         note: "Stardust Rhapsody: Anthem cast, via the avantris.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 35
+  - show: uproot-a-rama
+    season: 1
     role: player
     character: Hazel
     alias: default
@@ -110,30 +110,30 @@ credits:
       - url: https://avantris.fandom.com/wiki/Uproot-a-rama
         note: Uproot-a-rama cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 38
+  - show: neon-odyssey-one-shot
+    season: 1
     role: player
     character: Ophelia Kalos
     alias: default
     sources:
       - tier: community
         url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
-  - show: legends-of-avantris
-    season: 15
+        note: "Neon Odyssey One-Shot cast, via the avantris.fandom.com infobox. CC-BY-SA."
+  - show: tactical-waifu
+    season: 1
     role: player
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Tactical_Waifu
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Tactical Waifu cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 24
+  - show: ring-of-chaos
+    season: 1
     role: player
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Ring_of_Chaos
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Ring of Chaos cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
 image:
   url: https://static.wikia.nocookie.net/avantris/images/3/36/Kelsey.webp/revision/latest/scale-to-width-down/400?cb=20250528034033

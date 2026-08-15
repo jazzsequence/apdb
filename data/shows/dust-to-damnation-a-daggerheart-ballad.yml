@@ -1,0 +1,12 @@
+id: dust-to-damnation-a-daggerheart-ballad
+title: 'Dust to Damnation: A Daggerheart Ballad'
+channels:
+  - avantris
+format: video
+status: completed
+description: One-shot/mini-campaign using Daggerheart.
+seasons:
+  - ordinal: 1
+    game: daggerheart
+links:
+  website: https://www.youtube.com/playlist?list=PLZsrxxME7K31kBKwdqg7UkLm4N6eTi8jE

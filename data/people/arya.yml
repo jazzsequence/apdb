@@ -7,8 +7,8 @@ aliases:
     name: Arya
     alias_type: legal
 credits:
-  - show: legends-of-avantris
-    season: 5
+  - show: stardust-rhapsody-overture
+    season: 1
     role: player
     character: Kavir
     alias: default
@@ -17,15 +17,15 @@ credits:
         note: "Stardust Rhapsody: Overture cast, via the avantris.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 17
+  - show: on-a-silver-strand
+    season: 1
     role: player
     character: Káveer
     alias: default
     sources:
       - tier: community
         url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "On a Silver Strand cast, via the avantris.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/avantris/images/5/52/Arya_%282%29.png/revision/latest?cb=20250601024633
   licence: fair use

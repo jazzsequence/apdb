@@ -37,7 +37,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
       - tier: reference
         url: https://www.imdb.com/title/tt27715026/fullcredits/
@@ -53,4 +53,4 @@ credits:
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA."

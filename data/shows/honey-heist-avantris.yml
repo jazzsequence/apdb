@@ -1,0 +1,12 @@
+id: honey-heist-avantris
+title: Honey Heist
+channels:
+  - avantris
+format: video
+status: completed
+description: One-shot using Grant Howitt's Honey Heist.
+seasons:
+  - ordinal: 1
+    game: honey-heist
+links:
+  website: https://avantris.fandom.com/wiki/Honey_Heist

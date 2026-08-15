@@ -7,7 +7,7 @@ aliases:
     name: Mikey
     alias_type: legal
 credits:
-  - show: legends-of-avantris
+  - show: curse-of-strahdanya
     season: 1
     role: player
     character: Sarnax of the Edelwood
@@ -16,8 +16,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Curse_of_Strahdanya
         note: Curse of Strahdanya cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 3
+  - show: once-upon-a-witchlight
+    season: 1
     role: player
     character: Gricko Grimgrin
     alias: default
@@ -26,8 +26,8 @@ credits:
         note: Once Upon a Witchlight cast, via the avantris.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 4
+  - show: icebound
+    season: 1
     role: player
     character: Barnabos
     alias: default
@@ -35,8 +35,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Icebound
         note: Icebound cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 5
+  - show: stardust-rhapsody-overture
+    season: 1
     role: player
     character: Chuckles
     alias: default
@@ -45,8 +45,8 @@ credits:
         note: "Stardust Rhapsody: Overture cast, via the avantris.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 7
+  - show: edge-of-midnight
+    season: 1
     role: player
     character: Jericho Sticks
     alias: default
@@ -54,8 +54,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Edge_of_Midnight
         note: Edge of Midnight cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 12
+  - show: honey-heist-avantris
+    season: 1
     role: player
     character: Geno
     alias: default
@@ -63,98 +63,98 @@ credits:
       - url: https://avantris.fandom.com/wiki/Honey_Heist
         note: Honey Heist cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 13
+  - show: the-mistchurch-horror
+    season: 1
     role: player
     character: Chuckles
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mistchurch_Horror
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "The Mistchurch Horror cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 14
+  - show: call-of-the-feywild
+    season: 1
     role: player
     character: Gricko Grimgrin
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Call_of_the_Feywild
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Call of the Feywild cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 16
+  - show: the-mighty-trunks
+    season: 1
     role: player
     character: B. Yancy Zurr
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mighty_Trunks
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "The Mighty Trunks cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 17
+  - show: on-a-silver-strand
+    season: 1
     role: player
     character: Chuckles
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/On_a_Silver_Strand
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "On a Silver Strand cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 19
+  - show: tainted-grail
+    season: 1
     role: player
     character: Jasper Dunnington
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Tainted_Grail
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Tainted Grail cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 20
+  - show: of-heart-and-harvest
+    season: 1
     role: player
     character: Sarnax of the Edelwood
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Of_Heart_and_Harvest
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Of Heart and Harvest cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 21
+  - show: for-what-its-worth
+    season: 1
     role: player
     character: Geno
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/For_What_It's_Worth
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "For What It's Worth cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 22
+  - show: ghosts-of-saltmarsh-avantris
+    season: 1
     role: player
     character: Ol' Jericho Sticks
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Ghosts_of_Saltmarsh
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Ghosts of Saltmarsh cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 24
+  - show: ring-of-chaos
+    season: 1
     role: player
     character: Gary Goodberry (Ring of Chaos)
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Ring_of_Chaos
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Ring of Chaos cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 25
+  - show: 13-beers-at-the-local-cheese
+    season: 1
     role: player
     character: Gary Goodberry
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/13_Beers_at_the_Local_Cheese
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "13 Beers at the Local Cheese cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 27
+  - show: stardust-rhapsody-anthem
+    season: 2
     role: player
     character: Ko Tetsutora
     alias: default
@@ -163,35 +163,35 @@ credits:
         note: "Stardust Rhapsody: Anthem cast, via the avantris.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 28
+  - show: mud-and-mercy
+    season: 1
     role: player
     character: Jasper
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Mud_and_Mercy
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Mud and Mercy cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 29
+  - show: cuttlefish-sweepstakes
+    season: 1
     role: player
     character: Felpip / Dr. Poison / Jean-Luc / Glup Shitto / G.4.R.Y. 64
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Cuttlefish_Sweepstakes
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Cuttlefish Sweepstakes cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 30
+  - show: once-upon-a-ghostlight
+    season: 1
     role: player
     character: Gricko Grimgrin
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Once_Upon_a_Ghostlight
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Once Upon a Ghostlight cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 32
+  - show: midnight-carnival
+    season: 1
     role: player
     character: Orata Whispermouse
     alias: default
@@ -199,28 +199,28 @@ credits:
       - url: https://avantris.fandom.com/wiki/Midnight_Carnival
         note: Midnight Carnival cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 33
+  - show: into-the-court-of-candy
+    season: 1
     role: player
     character: Gricko Grimgrin
     note: Doubled as GM for this one-shot while also playing a PC.
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Into_the_Court_of_Candy
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Into the Court of Candy cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 33
+  - show: into-the-court-of-candy
+    season: 1
     role: GM/DM
     note: Doubled as a player for this one-shot, running the character Gricko
       Grimgrin alongside GMing.
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Into_the_Court_of_Candy
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Into the Court of Candy cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 34
+  - show: once-upon-a-starlight
+    season: 1
     role: player
     character: Gricko
     alias: default
@@ -228,8 +228,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Once_Upon_A_Starlight
         note: Once Upon A Starlight cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 36
+  - show: voidbound
+    season: 1
     role: player
     character: Barnabos Dreadwake
     alias: default
@@ -237,8 +237,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Voidbound
         note: Voidbound cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 37
+  - show: waltz-for-eternity
+    season: 1
     role: player
     character: Mylo Erinia
     alias: default
@@ -246,17 +246,17 @@ credits:
       - url: https://avantris.fandom.com/wiki/Waltz_for_Eternity
         note: Waltz for Eternity cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 38
+  - show: neon-odyssey-one-shot
+    season: 1
     role: player
     character: Ko Tetsutora
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Neon Odyssey One-Shot cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 39
+  - show: an-island-hidden
+    season: 1
     role: player
     character: Toba Embershadow
     alias: default
@@ -264,8 +264,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/An_Island_Hidden
         note: An Island Hidden cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 40
+  - show: survive-until-dawn
+    season: 1
     role: player
     character: Felpip Musgribin (Survive Until Dawn)
     alias: default
@@ -273,8 +273,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Survive_Until_Dawn
         note: Survive Until Dawn cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 41
+  - show: blank-slate
+    season: 1
     role: player
     character: Muktuk
     alias: default
@@ -282,24 +282,24 @@ credits:
       - tier: community
         url: https://avantris.fandom.com/wiki/Blank_Slate
         note: Blank Slate cast, via the avantris.fandom.com infobox. CC-BY-SA.
-  - show: legends-of-avantris
-    season: 2
+  - show: prime
+    season: 1
     role: GM/DM
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Prime
         note: Prime cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 6
+  - show: beneath-dark-wings
+    season: 1
     role: GM/DM
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
         note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 8
+  - show: vagabonds-heart-a-dimwood-tale
+    season: 1
     role: GM/DM
     alias: default
     sources:
@@ -307,8 +307,8 @@ credits:
         note: "Vagabond's Heart: A Dimwood Tale cast, via the avantris.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 9
+  - show: uprooted-dimwits-of-the-dimwood
+    season: 1
     role: GM/DM
     alias: default
     sources:
@@ -316,16 +316,16 @@ credits:
         note: "Uprooted: Dimwits of the Dimwood cast, via the avantris.fandom.com
           infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 10
+  - show: shroud-over-saltmarsh
+    season: 1
     role: GM/DM
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Shroud_Over_Saltmarsh
         note: Shroud Over Saltmarsh cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 11
+  - show: shadow-over-gauntsmouth
+    season: 1
     role: GM/DM
     alias: default
     sources:
@@ -333,40 +333,40 @@ credits:
         note: Shadow Over Gauntsmouth cast, via the avantris.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 15
+  - show: tactical-waifu
+    season: 1
     role: GM/DM
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Tactical_Waifu
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Tactical Waifu cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 31
+  - show: dust-to-damnation-a-daggerheart-ballad
+    season: 1
     role: GM/DM
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Dust_to_Damnation%3A_A_Daggerheart_Ballad
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Dust to Damnation: A Daggerheart Ballad cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 35
+  - show: uproot-a-rama
+    season: 1
     role: GM/DM
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Uproot-a-rama
         note: Uproot-a-rama cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 18
+  - show: kobold-storm
+    season: 1
     role: player
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Kobold_Storm
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Kobold Storm cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 23
+  - show: you-will-be-witness
+    season: 1
     role: player
     alias: default
     sources:

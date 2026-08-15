@@ -7,8 +7,8 @@ aliases:
     name: Dagny
     alias_type: legal
 credits:
-  - show: legends-of-avantris
-    season: 6
+  - show: beneath-dark-wings
+    season: 1
     role: guest player
     character: Grubby
     alias: default
@@ -17,12 +17,12 @@ credits:
       - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
         note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 18
+  - show: kobold-storm
+    season: 1
     role: guest player
     note: Listed as a guest player for this season; specific episodes not identified.
     alias: default
     sources:
       - tier: community
         url: https://avantris.fandom.com/wiki/Kobold_Storm
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Kobold Storm cast, via the avantris.fandom.com infobox. CC-BY-SA."

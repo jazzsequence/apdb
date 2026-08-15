@@ -6,8 +6,8 @@ aliases:
     name: Hazard
     alias_type: legal
 credits:
-  - show: legends-of-avantris
-    season: 11
+  - show: shadow-over-gauntsmouth
+    season: 1
     role: player
     character: Vaz
     alias: default

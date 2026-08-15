@@ -1,0 +1,12 @@
+id: tainted-grail
+title: Tainted Grail
+channels:
+  - avantris
+format: video
+status: completed
+description: 'One-shot/mini-campaign using Tainted Grail: Song of a Dying World.'
+seasons:
+  - ordinal: 1
+    game: tainted-grail-song-of-a-dying-world
+links:
+  website: https://avantris.fandom.com/wiki/Tainted_Grail

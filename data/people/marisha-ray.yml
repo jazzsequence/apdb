@@ -153,7 +153,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of Needle and Thread cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
       - &a1
         tier: reference
@@ -170,7 +170,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
       - *a1
       - *a2
@@ -180,7 +180,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: critical-role-specials
     season: 3

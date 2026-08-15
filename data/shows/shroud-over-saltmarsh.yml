@@ -1,0 +1,15 @@
+id: shroud-over-saltmarsh
+title: Shroud Over Saltmarsh
+channels:
+  - avantris
+format: video
+status: completed
+description: 'Lovecraftian pirate campaign played in D&D 5th Edition but tonally inspired
+  by Wizards of the Coast''s Ghosts of Saltmarsh module, the tabletop RPG Pirate Borg, and
+  Sea of Thieves. Several player characters are reimagined versions of ones from the group''s
+  earlier, no-longer-canon Ghosts of Saltmarsh campaign.'
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+links:
+  website: https://www.youtube.com/playlist?list=PLZsrxxME7K31AQqn5ZIFZc85TNF_Wo-dQ

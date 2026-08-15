@@ -1,0 +1,13 @@
+id: once-upon-a-witchlight
+title: Once Upon a Witchlight
+channels:
+  - avantris
+format: video
+status: completed
+description: 'Homebrewed mainline campaign set in the Feywild realm of Prismeer, inspired
+  by Wizards of the Coast''s The Wild Beyond the Witchlight. System per source: D&D 5th Edition.'
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+links:
+  website: https://www.youtube.com/playlist?list=PLZsrxxME7K31D-IxOsAAy924LLnM54v1u

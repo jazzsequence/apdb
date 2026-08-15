@@ -6,8 +6,8 @@ aliases:
     name: Skotes
     alias_type: legal
 credits:
-  - show: legends-of-avantris
-    season: 2
+  - show: prime
+    season: 1
     role: player
     character: Gannji Stormscale
     alias: default

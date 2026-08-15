@@ -15,7 +15,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of Needle and Thread cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: candela-obscura
     season: 5
@@ -26,7 +26,7 @@ credits:
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
   - show: candela-obscura
     role: GM/DM
     note: IMDb credits this at series level; which of this show's seasons it covers

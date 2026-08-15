@@ -7,7 +7,7 @@ aliases:
     name: Maja
     alias_type: legal
 credits:
-  - show: legends-of-avantris
+  - show: curse-of-strahdanya
     season: 1
     role: player
     character: Kana Soyokaze
@@ -16,8 +16,8 @@ credits:
       - url: https://avantris.fandom.com/wiki/Curse_of_Strahdanya
         note: Curse of Strahdanya cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 6
+  - show: beneath-dark-wings
+    season: 1
     role: player
     character: Hyrja Anvilheart
     alias: default
@@ -25,26 +25,26 @@ credits:
       - url: https://avantris.fandom.com/wiki/Beneath_Dark_Wings
         note: Beneath Dark Wings cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 14
+  - show: call-of-the-feywild
+    season: 1
     role: player
     character: Renée Joubert
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/Call_of_the_Feywild
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "Call of the Feywild cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 16
+  - show: the-mighty-trunks
+    season: 1
     role: player
     character: Louise
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/The_Mighty_Trunks
-        note: "{{PAGENAME}} cast, via the avantris.fandom.com infobox. CC-BY-SA."
+        note: "The Mighty Trunks cast, via the avantris.fandom.com infobox. CC-BY-SA."
         tier: community
-  - show: legends-of-avantris
-    season: 39
+  - show: an-island-hidden
+    season: 1
     role: player
     character: Phil Nudisc
     alias: default
@@ -52,16 +52,16 @@ credits:
       - url: https://avantris.fandom.com/wiki/An_Island_Hidden
         note: An Island Hidden cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 23
+  - show: you-will-be-witness
+    season: 1
     role: player
     alias: default
     sources:
       - url: https://avantris.fandom.com/wiki/You_Will_Be_Witness
         note: You Will Be Witness cast, via the avantris.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: legends-of-avantris
-    season: 41
+  - show: blank-slate
+    season: 1
     role: player
     alias: default
     sources:

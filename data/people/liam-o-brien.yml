@@ -136,7 +136,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of the Crimson Mirror cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
   - show: candela-obscura
     role: GM/DM
@@ -177,7 +177,7 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
       - &a4
         tier: reference
@@ -191,7 +191,7 @@ credits:
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "{{PAGENAME}} cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: "Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
         tier: community
       - *a4
   - show: critical-role-specials

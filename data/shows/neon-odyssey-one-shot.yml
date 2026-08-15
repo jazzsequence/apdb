@@ -1,0 +1,13 @@
+id: neon-odyssey-one-shot
+title: Neon Odyssey One-Shot
+channels:
+  - avantris
+format: video
+status: completed
+description: One-shot set in Legends of Avantris' own Neon Odyssey D&D 5e space-opera supplement
+  line.
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+links:
+  website: https://avantris.fandom.com/wiki/Neon_Odyssey_One-Shot
