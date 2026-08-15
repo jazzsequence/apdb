@@ -1,0 +1,20 @@
+id: mr-johnson-complex-action
+canonical_name: Mr. Johnson
+sort_name: Johnson, Mr.
+aliases:
+  - id: default
+    name: Mr. Johnson
+    alias_type: handle
+    note: Credited by handle only, from the Arcology Podcast; distinguished
+      from other people credited "Mr. Johnson" in this index by suffixing
+      the id with the show.
+credits:
+  - show: complex-action
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.listennotes.com/podcasts/complex-action-complex-action-G0OSM6wzPv2/
+        note: Podcast description naming Mr. Johnson of the Arcology Podcast as
+          a cast member.

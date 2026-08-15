@@ -1,0 +1,17 @@
+id: maelefay
+canonical_name: Maelefay
+sort_name: Maelefay
+aliases:
+  - id: default
+    name: Maelefay
+    alias_type: handle
+credits:
+  - show: ancestral-blood
+    season: 1
+    role: player
+    character: Val
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=uthn-qI6rKA
+        note: Cast per the show's own YouTube video description.

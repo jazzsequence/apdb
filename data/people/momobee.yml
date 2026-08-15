@@ -1,0 +1,17 @@
+id: momobee
+canonical_name: MomoBee
+sort_name: MomoBee
+aliases:
+  - id: default
+    name: MomoBee
+    alias_type: handle
+credits:
+  - show: ancestral-blood
+    season: 1
+    role: player
+    character: Willow Lysander
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=uthn-qI6rKA
+        note: Cast per the show's own YouTube video description.

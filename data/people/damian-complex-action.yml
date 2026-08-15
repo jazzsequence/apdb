@@ -1,0 +1,20 @@
+id: damian-complex-action
+canonical_name: Damian
+sort_name: Damian
+aliases:
+  - id: default
+    name: Damian
+    alias_type: handle
+    note: Credited by first name only, from the Violent Life Podcast;
+      distinguished from other people named Damian in this index by
+      suffixing the id with the show.
+credits:
+  - show: complex-action
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.listennotes.com/podcasts/complex-action-complex-action-G0OSM6wzPv2/
+        note: Podcast description naming Damian of the Violent Life Podcast as
+          a cast member.
