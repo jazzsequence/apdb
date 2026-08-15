@@ -1,10 +1,13 @@
-id: star-wars-tabletop-roleplaying-game
-title: Star Wars Tabletop Roleplaying Game
+id: scum-and-smugglers
+title: Scum & Smugglers
 channels:
   - dice-times
 format: video
 status: unknown
-description: "System per source: Star Wars Roleplaying FFG Edition (per the series title)."
+description: 'A crew of smugglers called "The Blockade Runners" make amends to
+  the Crimson Dawn after losing a cargo of spice, per the show''s own YouTube
+  description. System per source: Star Wars Edge of the Empire (FFG). No
+  performer names given.'
 links:
   website: https://www.youtube.com/playlist?list=PLiB-PjNj4hdExQrpAnAT2bYUp9x_hTKEP
 seasons:
@@ -14,9 +17,9 @@ seasons:
 image:
   url: https://i.ytimg.com/vi/X1o3G0KFSbg/hqdefault.jpg
   licence: fair use
-  attribution: Star Wars Tabletop Roleplaying Game series art, © its producers. Via YouTube.
+  attribution: Scum & Smugglers series art, © its producers. Via YouTube.
   source: https://www.youtube.com/playlist?list=PLiB-PjNj4hdExQrpAnAT2bYUp9x_hTKEP
-  depicts: Series art for Star Wars Tabletop Roleplaying Game
+  depicts: Series art for Scum & Smugglers
   rationale: Low-resolution thumbnail used solely to identify the show in an index
     of its credits. Non-commercial, does not substitute for the original, and
     links back to the source. Removed on request by the rights holder — see

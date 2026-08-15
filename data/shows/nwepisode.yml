@@ -4,7 +4,8 @@ channels:
   - team-nexuswatch
 format: podcast
 status: unknown
-description: 'System per source: Savage Worlds.'
+description: 'System per source: Savage Worlds. No performer or GM names given in any episode
+  description or on the show''s podcast page.'
 links:
   website: https://archive.org/search?query=creator%3A%22Team%20Nexuswatch%22%20AND%20title%3A%28%22NWEpisode%22%29
 seasons:

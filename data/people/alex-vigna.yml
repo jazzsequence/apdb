@@ -1,0 +1,21 @@
+id: alex-vigna
+canonical_name: Alex Vigna
+sort_name: Vigna, Alex
+aliases:
+  - id: default
+    name: Alex Vigna
+    alias_type: legal
+credits:
+  - show: roll-for-distraction
+    season: 1
+    role: player
+    note: Producer and editor of the show; "also a player or GM on the show
+      depending on the season," per the show's own site. The other five
+      cast members are not named on the show's site, podcast pages, or
+      YouTube channel — checked all three without a result.
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.spellbookgaming.com/roll-for-distraction
+        note: The show's own page naming Alex Vigna as producer/editor and
+          occasional player/GM.

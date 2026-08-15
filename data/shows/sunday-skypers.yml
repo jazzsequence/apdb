@@ -4,7 +4,9 @@ channels:
   - sunday-skypers
 format: podcast
 status: unknown
-description: 'System per source: Fate.'
+description: 'System per source: Fate. No performer or GM names given in any episode description
+  or on the show''s podcast page; the FATE SRD''s own actual-play directory lists the show
+  without naming its cast.'
 links:
   website: https://archive.org/search?query=creator%3A%22Sunday-Skypers%22
 seasons:

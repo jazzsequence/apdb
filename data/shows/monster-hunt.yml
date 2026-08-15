@@ -4,20 +4,27 @@ channels:
   - monster-hunt
 format: podcast
 status: unknown
-description: 'System per source: Dungeons & Dragons.'
+description: 'System per source: Dungeons & Dragons. Based on Vall Syrene''s "100
+  Monster Hunts" DMsGuild supplement. No performer or GM names given on the
+  show''s own site, Apple Podcasts page, or YouTube channel — checked all three
+  without a result.'
 links:
-  website: https://archive.org/search?query=creator%3A%22Monster%20Hunt%22
+  website: https://monsterhuntcast.wordpress.com/
+  podcast: https://podcasts.apple.com/us/podcast/monster-hunt/id1481975793
+  youtube: https://www.youtube.com/channel/UCGnJFf2VGheGRLwjvogUaKQ
 seasons:
   - ordinal: 1
     game: dnd-5e
-    episode_count: 18
+    episode_count: 52
+    started: 2019-09-10
+    ended: 2021-06-28
 image:
-  url: https://archive.org/services/img/212_20210107
+  url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/9c/e3/46/9ce34620-1f42-9649-2b9c-5e5120496612/mza_9068834058936666618.jpg/600x600bb.jpg
   licence: fair use
-  attribution: Monster Hunt cover art, © its producers. Via the Internet Archive.
-  source: https://archive.org/details/212_20210107
+  attribution: Monster Hunt cover art, © its producers. Via Apple Podcasts.
+  source: https://podcasts.apple.com/us/podcast/monster-hunt/id1481975793
   depicts: Cover art for Monster Hunt
   rationale: Low-resolution thumbnail used solely to identify the show in an index
-    of its credits. The uploader states no licence. Non-commercial, does not
-    substitute for the original, links back to the source, removed on request —
-    see POLICY.md.
+    of its credits. Non-commercial, does not substitute for the original,
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

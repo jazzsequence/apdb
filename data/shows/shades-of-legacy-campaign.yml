@@ -4,19 +4,13 @@ channels:
   - osrpg
 format: video
 status: unknown
+description: System per source, Dungeons & Dragons. Produced by OSRPG, "a group
+  of nerdy people spinning yarns over the internet, while playing our favorite
+  role playing games," per the channel's own description. No performer names
+  given.
 links:
   website: https://www.youtube.com/playlist?list=PLk4WDQKwZJHFXiT67zM0rtoQ1Sluvk-gB
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 10
-image:
-  url: https://i.ytimg.com/img/no_thumbnail.jpg
-  licence: fair use
-  attribution: Shades of Legacy Campaign series art, © its producers. Via YouTube.
-  source: https://www.youtube.com/playlist?list=PLk4WDQKwZJHFXiT67zM0rtoQ1Sluvk-gB
-  depicts: Series art for Shades of Legacy Campaign
-  rationale: Low-resolution thumbnail used solely to identify the show in an index
-    of its credits. Non-commercial, does not substitute for the original, and
-    links back to the source. Removed on request by the rights holder — see
-    POLICY.md.
