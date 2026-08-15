@@ -4,10 +4,10 @@ channels:
   - canon-fodder-podcasts
 format: podcast
 status: unknown
-description: "Canon Fodder Podcasts, the creator, also publishes an unrelated
-  commentary show called \"Canon Fodder Podcast\" (episodes 00-06). Diecast is
-  the D&D 5th Edition actual play, with 30+ episodes. System per the item's
-  own subject tags."
+description: "System per source: D&D 5th Edition, per the item's own subject
+  tags. Canon Fodder Podcasts, the creator, also publishes an unrelated
+  commentary show called \"Canon Fodder Podcast\" (episodes 00-06); Diecast
+  is the actual play, with 30+ episodes."
 links:
   website: https://archive.org/search?query=creator%3A%22Canon%20Fodder%20Podcasts%22%20AND%20title%3A%28%22Diecast%22%29
 seasons:

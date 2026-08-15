@@ -4,9 +4,9 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'Root-inspired campaign set in a version of the Dimwood distinct from, and unrelated
-  to, Uprooted: Dimwits of the Dimwood''s version of the setting. System per source: D&D 5th
-  Edition.'
+description: 'System per source: D&D 5th Edition. Root-inspired campaign set in a version
+  of the Dimwood distinct from, and unrelated to, Uprooted: Dimwits of the Dimwood''s version
+  of the setting.'
 seasons:
   - ordinal: 1
     game: dnd-5e

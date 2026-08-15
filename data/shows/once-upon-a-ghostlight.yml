@@ -4,9 +4,9 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'Non-canon mini-campaign continuing directly from the group''s Crooked Moon one-shot,
-  using alternate versions of the Once Upon a Witchlight cast in the Crooked Moon D&D 5e supplement''s
-  Druskenvald. System per source: D&D 5th Edition.'
+description: 'System per source: D&D 5th Edition. Non-canon mini-campaign continuing directly
+  from the group''s Crooked Moon one-shot, using alternate versions of the Once Upon a Witchlight
+  cast in the Crooked Moon D&D 5e supplement''s Druskenvald.'
 seasons:
   - ordinal: 1
     game: dnd-5e

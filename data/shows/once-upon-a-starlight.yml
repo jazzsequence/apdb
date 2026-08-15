@@ -4,9 +4,9 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'Neon Odyssey (Legends of Avantris'' own D&D 5.5-edition space-opera supplement
-  line) mini-campaign reimagining the Once Upon a Witchlight cast; separate canon from Once
-  Upon a Witchlight. System per source: D&D 5th Edition.'
+description: 'System per source: D&D 5th Edition. Neon Odyssey (Legends of Avantris'' own
+  D&D 5.5-edition space-opera supplement line) mini-campaign reimagining the Once Upon a Witchlight
+  cast; separate canon from Once Upon a Witchlight.'
 seasons:
   - ordinal: 1
     game: dnd-5e

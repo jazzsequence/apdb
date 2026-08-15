@@ -4,8 +4,8 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'Legends of Avantris'' heavily homebrewed take on the Curse of Strahd D&D module.
-  System per source: D&D 5th Edition.'
+description: 'System per source: D&D 5th Edition. Legends of Avantris'' heavily homebrewed
+  take on the Curse of Strahd D&D module.'
 seasons:
   - ordinal: 1
     game: dnd-5e

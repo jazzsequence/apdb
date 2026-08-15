@@ -4,8 +4,8 @@ channels:
   - avantris
 format: video
 status: completed
-description: One-shot set in Legends of Avantris' own Neon Odyssey D&D 5e space-opera supplement
-  line.
+description: 'System per source: D&D 5th Edition. One-shot set in Legends of Avantris'' own
+  Neon Odyssey D&D 5e space-opera supplement line.'
 seasons:
   - ordinal: 1
     game: dnd-5e

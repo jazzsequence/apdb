@@ -4,10 +4,10 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'Lovecraftian pirate campaign played in D&D 5th Edition, tonally inspired
-  by Wizards of the Coast''s Ghosts of Saltmarsh module and Sea of Thieves. Several player
-  characters are reimagined versions of ones from the group''s earlier, no-longer-canon
-  Ghosts of Saltmarsh campaign.'
+description: 'System per source: D&D 5th Edition. Lovecraftian pirate campaign tonally
+  inspired by Wizards of the Coast''s Ghosts of Saltmarsh module and Sea of Thieves. Several
+  player characters are reimagined versions of ones from the group''s earlier,
+  no-longer-canon Ghosts of Saltmarsh campaign.'
 seasons:
   - ordinal: 1
     game: dnd-5e

@@ -4,8 +4,8 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'Survival campaign set on the icy tundra of Drakkar. System per source: D&D 5th
-  Edition.'
+description: 'System per source: D&D 5th Edition. Survival campaign set on the icy tundra
+  of Drakkar.'
 seasons:
   - ordinal: 1
     game: dnd-5e

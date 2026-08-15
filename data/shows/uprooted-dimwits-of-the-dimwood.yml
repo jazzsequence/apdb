@@ -4,9 +4,9 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'Homebrewed D&D 5th Edition mainline campaign set in a version of the Dimwood
-  inspired by Leder Games'' Root. Not connected to Vagabond''s Heart: A Dimwood Tale or to
-  Uproot-a-rama, despite shared naming and characters.'
+description: 'System per source: D&D 5th Edition. Homebrewed mainline campaign set in
+  a version of the Dimwood inspired by Leder Games'' Root. Not connected to Vagabond''s
+  Heart: A Dimwood Tale or to Uproot-a-rama, despite shared naming and characters.'
 seasons:
   - ordinal: 1
     game: dnd-5e

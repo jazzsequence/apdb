@@ -4,12 +4,12 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'Space-opera anthology following the crew of the ship "The Rhapsody." Overture
-  and Anthem are separately-canon stories that don''t depend on each other — the group''s own
-  site says you don''t need to watch Overture to follow Anthem, and recommends either order
-  — despite reusing the ship name and some character names across both. Season 2 ("Prelude")
-  consists of precursor flashback episodes explicitly canon to Anthem. System per source: D&D
-  5th Edition.'
+description: 'System per source: D&D 5th Edition. Space-opera anthology following the crew
+  of the ship "The Rhapsody." Overture and Anthem are separately-canon stories that don''t
+  depend on each other — the group''s own site says you don''t need to watch Overture to follow
+  Anthem, and recommends either order — despite reusing the ship name and some character names
+  across both. Season 2 ("Prelude") consists of precursor flashback episodes explicitly canon
+  to Anthem.'
 seasons:
   - ordinal: 1
     title: 'Stardust Rhapsody: Overture'
