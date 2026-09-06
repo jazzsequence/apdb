@@ -175,6 +175,44 @@ for (const spec of flags('log')) {
   );
 }
 
+// ---------------------------------------------------------------------------
+// Catalogue hygiene: duplicates that have accrued since the last fold.
+//
+// Not a discovery result, but it belongs in the one report a human reliably
+// reads each week. Duplicates never arrive by hand — they arrive whenever an
+// importer runs and `dedupe` does not, and they stay invisible until someone
+// opens the page of a specific person. Counting them as a finding means a week
+// whose only news is "the catalogue drifted" still opens a PR.
+// ---------------------------------------------------------------------------
+const dedupeLog = flag('dedupe');
+if (dedupeLog && existsSync(dedupeLog)) {
+  const body = (await readFile(dedupeLog, 'utf8')).trim();
+  const folded = Number(body.match(/\((\d+) folded\)/)?.[1] ?? '0');
+  const people = Number(body.match(/across (\d+) people/)?.[1] ?? '0');
+  if (folded > 0) {
+    findings += 1;
+    lines.push('## Duplicate credits', '');
+    lines.push(
+      `**${folded}** credit(s) across **${people}** people describe an appearance already ` +
+        'recorded by another credit on the same person.',
+      '',
+      'Safe to fold: `dedupe` only merges credits it can show describe the same fact, ' +
+        'and it unions their sources rather than discarding either. Left alone they ' +
+        'render as separate appearances, and each stays single-source while the pair ' +
+        'cites the same evidence twice.',
+      '',
+      '```bash',
+      'npm run dedupe && npm run validate',
+      '```',
+      '',
+      '```',
+      body,
+      '```',
+      '',
+    );
+  }
+}
+
 lines.push('---', '');
 lines.push(
   'Filed by the weekly `discovery.yml` job. Reviewing means: pick the candidates',

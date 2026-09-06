@@ -36,6 +36,14 @@ jobs:
       - name: Validate data files
         run: npm run validate
 
+      # Duplicate credits are valid data — every rule above passes — but they
+      # render one appearance as two, and each half stays single-source while
+      # both cite the same evidence. That is invisible to schema validation and
+      # invisible on the site until you open the one person it happened to.
+      # Fails the moment an unfolded pair lands, rather than months later.
+      - name: No unfolded duplicate credits
+        run: npm run dedupe -- --check
+
       # The build refuses to render from invalid data, so this doubles as a
       # check that every person and show still produces a page.
       - name: Build site

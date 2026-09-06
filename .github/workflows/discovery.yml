@@ -75,6 +75,22 @@ jobs:
         if: env.YOUTUBE_API_KEY != ''
         run: npm run discover:youtube > out/youtube.log 2>&1
 
+      # Runs after the sweeps, and reports rather than writes.
+      #
+      # Duplicates accrue whenever an importer runs and this does not, and they
+      # stay invisible until someone opens a particular person's page —
+      # fourteen CelebriD&D people sat double-credited for months. This job is
+      # the one weekly thing a human reliably reads, so the count belongs here.
+      #
+      # Deliberately --dry-run. The PR this job opens states that nothing under
+      # data/ changed, and that promise is what lets it be reviewed as a report
+      # instead of as data. Folding is a one-line command the report prints.
+      # `npm run dedupe -- --check` in validate.yml is the gate that stops new
+      # duplicates landing; this is the nudge to clear ones already there.
+      - name: Check for duplicate credits
+        continue-on-error: true
+        run: npm run dedupe -- --dry-run > out/dedupe.log 2>&1
+
       - name: Build the report
         id: report
         run: |
@@ -82,6 +98,7 @@ jobs:
             --person out/person-sweep.json \
             --log "Internet Archive:out/archive.log" \
             --log "YouTube:out/youtube.log" \
+            --dedupe out/dedupe.log \
             --out reports/discovery-latest.md
 
       # A weekly PR that says "nothing new" teaches everyone to close these
