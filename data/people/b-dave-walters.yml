@@ -124,6 +124,19 @@ credits:
           joined.
     character: Victor Temple
     alias: default
+  - show: the-black-dice-society
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://comicbook.com/gaming/news/dungeons-dragons-black-dice-society/
+        note: "Announcement naming B. Dave Walters as creator/DM of \"The Black Dice
+          Society\"."
+      - tier: community
+        url: https://black-dice-society.fandom.com/wiki/Cast
+        note: Cast page on the show's own wiki. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/b/be/PCMarcid.png/revision/latest/scale-to-width-down/400?cb=20200813045748
   licence: fair use

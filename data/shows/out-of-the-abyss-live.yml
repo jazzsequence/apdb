@@ -1,0 +1,16 @@
+id: out-of-the-abyss-live
+title: Out of the Abyss Live
+channels:
+  - dnd-official
+format: stream
+status: completed
+description: "System per source: D&D 5th Edition (Out of the Abyss). Official
+  D&D Twitch actual play running key scenarios from the module, DM'd by Greg
+  Tito."
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYrFpYL4A8xjuAgs4yAiAFNH
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2015-10"
+    episode_count: 12

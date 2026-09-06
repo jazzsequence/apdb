@@ -1,0 +1,19 @@
+id: demetrios-feredinos
+canonical_name: Demetrios Feredinos
+sort_name: Feredinos, Demetrios
+aliases:
+  - id: default
+    name: Demetrios Feredinos
+    alias_type: legal
+credits:
+  - show: out-of-the-abyss-live
+    season: 1
+    role: player
+    character: Marrok
+    alias: default
+    year: "2015"
+    sources:
+      - tier: reference
+        url: https://www.belloflostsouls.net/2015/11/dd-out-of-the-abyss-live.html
+        note: "Contemporary coverage naming the cast and characters of \"Out of
+          the Abyss Live\"."

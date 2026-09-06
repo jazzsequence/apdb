@@ -19,3 +19,13 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/dice-camera-action
         note: Cast for "Dice, Camera, Action" per TheTVDB.
+  - show: nights-of-eveningstar
+    season: 1
+    role: player
+    alias: default
+    year: "2020"
+    sources:
+      - tier: reference
+        url: https://x.com/wizards_dnd/status/1283449269886672897
+        note: "Official D&D account announcing the season 1 cast and DM of \"Nights
+          of Eveningstar\"."

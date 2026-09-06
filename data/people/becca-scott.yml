@@ -87,6 +87,19 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Inherit_The_Sand
         note: Inherit The Sand cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
+  - show: the-black-dice-society
+    season: 1
+    role: player
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://comicbook.com/gaming/news/dungeons-dragons-black-dice-society/
+        note: "Contemporary press coverage naming the cast of \"The Black Dice
+          Society\"."
+      - tier: community
+        url: https://black-dice-society.fandom.com/wiki/Cast
+        note: Cast page on the show's own wiki. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/a/a0/BeccaAndre.png/revision/latest/scale-to-width-down/400?cb=20230206115339
   licence: fair use

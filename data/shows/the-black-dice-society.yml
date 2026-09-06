@@ -1,0 +1,15 @@
+id: the-black-dice-society
+title: The Black Dice Society
+channels:
+  - dnd-official
+format: stream
+status: completed
+description: "System per source: D&D 5th Edition (Van Richten's Guide to
+  Ravenloft). Official D&D Twitch/YouTube horror-themed actual play, DM'd by
+  B. Dave Walters."
+links:
+  website: https://x.com/theblackdicesoc
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2021-04-01"

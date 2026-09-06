@@ -1,0 +1,21 @@
+id: greg-tito
+canonical_name: Greg Tito
+sort_name: Tito, Greg
+aliases:
+  - id: default
+    name: Greg Tito
+    alias_type: legal
+credits:
+  - show: out-of-the-abyss-live
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2015"
+    sources:
+      - tier: reference
+        url: https://twitter.com/gregtito/status/651832184664420352
+        note: Greg Tito's own tweet announcing he was about to DM "Out of the Abyss"
+          on the official D&D Twitch channel.
+      - tier: reference
+        url: https://www.belloflostsouls.net/2015/11/dd-out-of-the-abyss-live.html
+        note: Contemporary coverage confirming Greg Tito as DM.

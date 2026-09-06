@@ -1,0 +1,16 @@
+id: nights-of-eveningstar
+title: Nights of Eveningstar
+channels:
+  - dnd-official
+format: stream
+status: completed
+description: "System per source: D&D 5th Edition. Official D&D Twitch actual
+  play; per the production's own announcement, season 1 ran weekly for 12
+  weeks starting 2020-07-21. Later seasons/hosts are not yet confirmed here."
+links:
+  website: https://x.com/wizards_dnd/status/1283449269886672897
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2020-07-21"
+    episode_count: 12

@@ -72,6 +72,16 @@ credits:
         url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
         note: Announcement naming the DM, commentators and full contestant list.
     alias: default
+  - show: nights-of-eveningstar
+    season: 1
+    role: player
+    alias: default
+    year: "2020"
+    sources:
+      - tier: reference
+        url: https://x.com/wizards_dnd/status/1283449269886672897
+        note: "Official D&D account announcing the season 1 cast and DM of \"Nights
+          of Eveningstar\"."
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/1/10/AnnaProsser.png/revision/latest/scale-to-width-down/284?cb=20220409081355
   licence: fair use
