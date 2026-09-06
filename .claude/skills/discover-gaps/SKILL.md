@@ -1,12 +1,30 @@
 ---
-name: discover-new-shows
-description: Sweep known and new sources (fan wikis, YouTube, Internet Archive) for actual-play shows not yet in data/shows, and report candidates for human review. Use when the user asks to check for new/recent shows, "what's new since last time", or to run a discovery pass.
+name: discover-gaps
+description: Find what the catalogue is missing — shows not in data/shows, and credits missing from people who are. Sweeps person-first (Wikipedia/Wikidata filmographies) and show-first (fan wikis, YouTube, Internet Archive), then reports candidates for review. Use when the user asks to check for new or recent shows, "what's new since last time", why someone's credits look thin, or to run a discovery pass. (Was: discover-new-shows.)
 ---
 
 Report-only reconnaissance. Nothing in this skill writes to `data/` — every
-command below is `--discover` or `--dry-run`. Importing a candidate is a
-separate, explicit step the human decides on afterward (see "Handing off" at
-the end).
+command below is `--discover`, `--dry-run` or report-only by construction.
+Importing a candidate is a separate, explicit step the human decides on
+afterward (see "Handing off" at the end).
+
+## 0. What counts as a gap
+
+Two different kinds, and until recently this skill only looked for one:
+
+- **A missing show** — a series with no record in `data/shows`.
+- **A missing credit** — a person we have, on a show we have, with no credit
+  joining them. Or, worse and much more common: a person whose credit is
+  missing *because the show is missing*, which no show-first sweep can see.
+
+**Only actual play belongs in the database.** A performer's Wikipedia article
+lists voice roles, hosting, film, TV, video games and podcasts that are not
+actual play; none of that is in scope, and a sweep that drags it in makes more
+cleanup than it saves. The rule is enforced in code, not judgement —
+`src/lib/sources/actual-play.ts` classifies each candidate from the *work's*
+own article (categories first, lead text second) into `actual-play`,
+`excluded` or `unclear`. Report `unclear` as its own bucket; never quietly
+promote it to either of the others.
 
 ## 1. Orient
 
@@ -17,7 +35,61 @@ Check how stale the catalogue is before sweeping, so the report can say
 git log -1 --format='%ar (%ad)' --date=short -- data/shows data/channels
 ```
 
-## 2. Known wikis — re-run `--discover` against each one
+## 2. Person-first — run this before the show-first passes
+
+The pass with the highest yield, and the one the other four are structurally
+incapable of: every other adapter in this repo starts from a show already in
+`data/shows` and reads its cast down, so **a show nobody has catalogued
+contributes nothing to anybody's filmography, however well documented it is
+elsewhere**. That blind spot is worst for the people with the most credits,
+because a long list looks complete.
+
+It is not hypothetical. Aabria Iyengar had 42 credits here, a stored
+`wikidata_qid`, a stored Wikipedia link, and four whole series missing — NY by
+Night, KOllOK 1991, Into the Mother Lands, Private Nightmares — every one of
+them named in the article this repo already linked to and never read. A
+show-first sweep run the night before found none of them, and could not have.
+
+```bash
+npm run discover:person -- --person aabria-iyengar     # one person
+npm run discover:person -- --limit 25                  # the queue, 25 at a time
+npm run discover:person -- --all --json out/sweep.json # everything, machine-readable
+```
+
+What it does: resolves each person's enwiki article (from `links.wikipedia`,
+falling back to the QID's sitelink), reads the filmography tables **and the
+prose** — Kollok is prose-only on Aabria's article, so a table-only parse
+misses it — adds Wikidata's own works claims (P800 "notable work", plus a
+reverse P161/P725 lookup), classifies every candidate against the actual-play
+gate, and diffs the survivors against both `data/shows` and that person's
+existing credits.
+
+Output buckets, and what to do with each:
+
+- **`NO SHOW RECORD` + `actual-play`** — the real find. A series nothing here
+  knows about. Everyone else in its cast is missing it too, so treat one hit
+  as a show record plus a full cast to source, not a single credit.
+- **`have show ..., no credit`** — we hold the show and missed the person.
+  Cheapest fix in the report.
+- **`unclear`** — read the evidence line and decide. Usually a work with no
+  Wikipedia article, or a tabletop-adjacent thing that isn't a play.
+- **`excluded`** — counted, not listed. Voice roles, film, TV. Leave them out.
+
+Coverage caveat, and it is a big one: only ~126 of ~950 people carry a QID and
+**three** carry a stored `links.wikipedia`, so most of the index is unreachable
+by this pass. The script prints that count. Widening it — `npm run collect --
+--search "<name>"` to attach QIDs, then `--refresh` to backfill the Wikipedia
+links the collector already knows how to write — is itself a gap worth
+reporting.
+
+Offline check on the parser, when the network is unavailable or you are
+changing the parse:
+
+```bash
+npm run discover:person -- --fixture path/to/article.wikitext
+```
+
+## 3. Known wikis — re-run `--discover` against each one
 
 **`--dry-run` does NOT dedupe against the existing catalogue.** In
 `scripts/collect.ts`, the `--dry-run` branch of `discoverShows()` prints
@@ -73,7 +145,7 @@ grep -rhoE 'https?://[a-z0-9.-]+\.(fandom|miraheze)\.(com|org)' data/shows/*.yml
   | sed -E 's#https?://([^/]+).*#\1#' | sort -u
 ```
 
-## 3. YouTube — targeted discovery
+## 4. YouTube — targeted discovery
 
 Needs `YOUTUBE_API_KEY` (check `.env`; export it into the shell if the
 scripts don't pick it up automatically — they read `process.env` directly,
@@ -103,7 +175,7 @@ npm run sweep:youtube -- --dry-run
 (~30 searches, about a third of the 10k/day quota — don't run both this and
 `discover:youtube` back to back without checking remaining quota.)
 
-## 4. Internet Archive — defunct shows with no live source left
+## 5. Internet Archive — defunct shows with no live source left
 
 ```bash
 npm run import:archive -- --dry-run
@@ -123,10 +195,13 @@ a separate, silent gap worth noting in the report, not zero results.
 This is the only source here for shows whose sites/feeds are already gone,
 so it's worth including even though it moves slower than the others.
 
-## 5. Report
+## 6. Report
 
 Summarize by source, not as a raw command dump:
 
+- **Person-first hits** — person, work, whether the show record exists at all,
+  the classifier's verdict and its reason. Say how many people the pass could
+  not reach for want of a QID or a Wikipedia link.
 - **New wiki pages** — host, page title, episode/season count if visible.
 - **New YouTube channels/playlists** — channel title, playlist title, episode
   count, whether a cast was readable from descriptions (`discover:youtube`
@@ -147,6 +222,8 @@ import unattended:
 - Don't bulk-generate cast credits from a model's general knowledge of a
   show just because it was found here — importing still means reading an
   actual source per credit.
+- Non-actual-play candidates are not a judgement call to re-litigate per item.
+  Film, TV, voice and video game credits stay out.
 - Present the candidate list to the user and let them pick which to import
   and via which command (`collect --wiki ... --discover --apply`,
   `import:yt-shows`, `import:archive`, etc.).

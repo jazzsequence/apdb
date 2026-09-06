@@ -14,9 +14,8 @@ credits:
     sources:
       - tier: community
         url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
-        note: The show's own wiki lists this as the consistent core cast
-          across the show's run, matching what's already recorded for
-          Season 4. CC-BY-SA.
+        note: The show's own wiki lists this as the consistent core cast across the
+          show's run, matching what's already recorded for Season 4. CC-BY-SA.
   - show: la-by-night
     season: 1
     role: player
@@ -62,16 +61,15 @@ credits:
     role: player
     season: 1
     character: Fenly
-    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all,
-      which bundles several distinct one-shots (Dread, Madness, Goblin Mode)
-      under one playlist. Retargeted to the specific one-shot its own cast
-      list names.
+    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all, which
+      bundles several distinct one-shots (Dread, Madness, Goblin Mode) under one
+      playlist. Retargeted to the specific one-shot its own cast list names.
     alias: default
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PL7atuZxmT955p1uySG2OpFPZ30I3wnIef
-        note: Cast and characters per the show's own description, repeated
-          verbatim across every episode's own description.
+        note: Cast and characters per the show's own description, repeated verbatim
+          across every episode's own description.
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
@@ -165,11 +163,43 @@ credits:
     role: player
     alias: default
     year: "2021"
-    note: "Named by one source only; the other D&D Live 2021 write-up consulted does not cover this table."
+    note: Named by one source only; the other D&D Live 2021 write-up consulted does
+      not cover this table.
     sources:
       - tier: reference
         url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
         note: Screen Rant's report on the D&D Live 2021 game announcements.
+  - show: ny-by-night
+    role: player
+    year: "2022"
+    note: Named in the cast without a character in the source read; character
+      deliberately left blank rather than guessed.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/NY_by_Night
+        note: Wikipedia lists him among the series cast, without a character in what was
+          returned. Read via web search result content on 2026-09-06; the page
+          itself could not be fetched from this environment (network egress to
+          the host was blocked), so this cites what the search index returned,
+          not a page read end to end.
+  - show: private-nightmares
+    season: 1
+    role: player
+    character: Gable Clark
+    year: "2025"
+    sources:
+      - tier: reference
+        url: https://www.paradoxinteractive.com/games/world-of-darkness/entertainment/private-nightmares
+        note: Paradox's own page lists the coterie players. Read via web search result
+          content on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end.
+      - tier: community
+        url: https://project-ghostlight-private-nightmares.fandom.com/wiki/Characters
+        note: Series wiki character list. CC-BY-SA. Read via web search result content
+          on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end.
 image:
   url: https://static.wikia.nocookie.net/vampire-the-masquerade-la-by-night/images/b/b7/Xander_Jeanneret.png/revision/latest/scale-to-width-down/324?cb=20240611204137
   licence: fair use

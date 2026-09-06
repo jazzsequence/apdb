@@ -27,5 +27,34 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=eNCyccZS9sA
-        note: Cast per the production's own description of "Dungeon Masters |
-          Campaign 2 PREMIERE, Episode 1 & 2".
+        note: Cast per the production's own description of "Dungeon Masters | Campaign 2
+          PREMIERE, Episode 1 & 2".
+  - show: ny-by-night
+    role: player
+    character: Serif
+    year: "2022"
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/NY_by_Night
+        note: "Wikipedia cast list: Mayanna Berrin as Serif. Read via web search result
+          content on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end."
+  - show: private-nightmares
+    season: 1
+    role: player
+    character: Naomi Katz
+    year: "2025"
+    sources:
+      - tier: reference
+        url: https://www.paradoxinteractive.com/games/world-of-darkness/entertainment/private-nightmares
+        note: Paradox's own page lists the coterie players. Read via web search result
+          content on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end.
+      - tier: community
+        url: https://project-ghostlight-private-nightmares.fandom.com/wiki/Characters
+        note: Series wiki character list. CC-BY-SA. Read via web search result content
+          on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end.

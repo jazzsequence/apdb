@@ -30,6 +30,19 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
+  - show: ny-by-night
+    role: player
+    year: "2022"
+    note: Named in the cast without a character in the source read; character
+      deliberately left blank rather than guessed.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/NY_by_Night
+        note: Wikipedia lists her among the series cast, without a character in what was
+          returned. Read via web search result content on 2026-09-06; the page
+          itself could not be fetched from this environment (network egress to
+          the host was blocked), so this cites what the search index returned,
+          not a page read end to end.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/f/f4/ChipnRipMichelle.png/revision/latest/scale-to-width-down/400?cb=20230206130604
   licence: fair use

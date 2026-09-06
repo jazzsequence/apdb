@@ -1,0 +1,21 @@
+id: joey-rassool
+canonical_name: Joey Rassool
+sort_name: Rassool, Joey
+links: {}
+aliases:
+  - id: default
+    name: Joey Rassool
+    alias_type: legal
+credits:
+  - show: ny-by-night
+    role: player
+    character: Reyes "Rey" Malcolm
+    year: "2022"
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/NY_by_Night
+        note: "Wikipedia cast list: Joey Rassool as Reyes Malcolm. Read via web search
+          result content on 2026-09-06; the page itself could not be fetched
+          from this environment (network egress to the host was blocked), so
+          this cites what the search index returned, not a page read end to
+          end."

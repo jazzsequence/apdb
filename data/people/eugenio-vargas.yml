@@ -16,3 +16,15 @@ credits:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
         note: Season-by-season DM table per Wikipedia.
+  - show: into-the-mother-lands
+    season: 1
+    role: GM/DM
+    year: "2020"
+    sources:
+      - tier: reference
+        url: https://motherlandsrpg.com/
+        note: The production's own site and press credit Eugenio Vargas as storyteller.
+          Read via web search result content on 2026-09-06; the page itself
+          could not be fetched from this environment (network egress to the host
+          was blocked), so this cites what the search index returned, not a page
+          read end to end.

@@ -32,6 +32,26 @@ export const SOURCES: Record<string, SourceInfo> = {
       'identify with a User-Agent and do not hammer it.',
   },
 
+  wikipedia: {
+    id: 'wikipedia',
+    name: 'Wikipedia (en)',
+    licence: 'CC-BY-SA 4.0',
+    clearance: 'cleared',
+    attribution: 'Content from {url}, CC-BY-SA 4.0.',
+    notes:
+      'Read for PEOPLE, which is the thing no other adapter here does: every other ' +
+      'source is show-first, so a show missing from data/shows is invisible to all ' +
+      'of them no matter how well documented it is. A performer article names the ' +
+      'shows a show-first sweep cannot reach.\n' +
+      'It is a `reference` tier source and a fallible one — its filmography table ' +
+      'lists Aabria Iyengar as a player on Pirates of Salt Bay, which she ran (see ' +
+      'POLICY.md). So the adapter produces CANDIDATES, never credits: discovery ' +
+      'output goes to a review queue, and anything filed from it gets checked ' +
+      'against something closer to the fact first. Read through the MediaWiki API ' +
+      'for the same reason the fan-wiki adapter is: wikitext keeps the link ' +
+      'targets, and a link target resolves where a string match does not.',
+  },
+
   // --- Not cleared. Declared so the gate has something concrete to refuse. ---
   mediawiki: {
     id: 'mediawiki',

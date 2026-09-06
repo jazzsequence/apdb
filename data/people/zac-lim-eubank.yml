@@ -1,0 +1,21 @@
+id: zac-lim-eubank
+canonical_name: Zac Lim Eubank
+sort_name: Eubank, Zac Lim
+links: {}
+aliases:
+  - id: default
+    name: Zac Lim Eubank
+    alias_type: legal
+credits:
+  - show: kollok-1991
+    season: 2
+    role: GM/DM
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/Season_2_-_KOllOK_1991:_Bleach
+        note: The show's own fan wiki credits Zac Lim Eubank as creator, Game Master and
+          'Driver'. CC-BY-SA. Read via web search result content on 2026-09-06;
+          the page itself could not be fetched from this environment (network
+          egress to the host was blocked), so this cites what the search index
+          returned, not a page read end to end.

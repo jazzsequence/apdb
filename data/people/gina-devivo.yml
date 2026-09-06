@@ -71,13 +71,31 @@ credits:
   - show: tempting-fate
     role: guest GM
     season: 2
-    episode: 'Lasers and Ginas and Feelings (2018-09-09)'
+    episode: Lasers and Ginas and Feelings (2018-09-09)
     alias: default
-    note: A one-off Lasers & Feelings episode where DeVivo takes the GM seat
-      instead of series GM Rick Budd, distinct from her regular season 1
-      player credit as Hermitide.
+    note: A one-off Lasers & Feelings episode where DeVivo takes the GM seat instead
+      of series GM Rick Budd, distinct from her regular season 1 player credit
+      as Hermitide.
     sources:
       - tier: reference
         url: https://www.imdb.com/title/tt8975864/characters/nm1279065
         note: IMDb episode credits for "Tempting Fate" S:E "Lasers and Ginas and
           Feelings" (2018) — Gina DeVivo as Gamemaster.
+  - show: private-nightmares
+    season: 1
+    role: player
+    character: Jade Morggan
+    year: "2025"
+    sources:
+      - tier: reference
+        url: https://www.paradoxinteractive.com/games/world-of-darkness/entertainment/private-nightmares
+        note: Paradox's own page lists the coterie players. Read via web search result
+          content on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end.
+      - tier: community
+        url: https://project-ghostlight-private-nightmares.fandom.com/wiki/Characters
+        note: Series wiki character list. CC-BY-SA. Read via web search result content
+          on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end.

@@ -57,6 +57,7 @@ npm run dev                                   # local site
 npm run build                                 # validate, build, index for search
 npm run filmography -- "Aabria Lipscomb"      # print a filmography to the terminal
 npm run audit                                 # spot-check imports for bad data
+npm run discover:person -- --person aabria-iyengar   # what are we missing for one person?
 npm run collect -- --sources                  # import sources + licence status
 ```
 
@@ -221,7 +222,26 @@ phrase and per-episode casts are not guessed at.
 
 **Wikidata (`--qid`, `--search`)** is the identity backbone: stable QIDs,
 canonical names and, usefully, birth names. It carries almost no AP credits, so
-it is not used for them.
+it is not used for them — but its works claims (P800, and a reverse P161
+lookup) are read by the person-first sweep below, because a thin record of a
+show missing from the catalogue entirely is still the only pointer to it.
+
+**Wikipedia (`npm run discover:person`)** is the only person-first source here,
+and it exists because every other adapter is show-first: they start from a show
+already in `data/shows` and read its cast down, so a show nobody has catalogued
+contributes nothing to anybody's filmography. That blind spot is worst for the
+people with the most credits, whose long lists look complete. Aabria Iyengar had
+42 credits, a stored QID, a stored Wikipedia link and four missing series — all
+four named on the article this repo already linked to and had never read.
+
+So this reads the *person's* article: filmography tables and prose both, since a
+credit lives in prose until someone builds a table row for it. Everything it
+finds is filtered through `src/lib/sources/actual-play.ts`, which classifies each
+candidate from the work's own article — only actual play belongs here, and a
+performer's filmography is mostly other things. Output is a review queue, never
+data: Wikipedia is `reference` tier and demonstrably fallible, which is a point
+this project makes with Wikipedia's own claim that Aabria played on a show she
+ran.
 
 **Internet Archive (`npm run import:archive`)** is where shows go when they
 stop — productions whose sites are gone and whose feeds are dead. No other

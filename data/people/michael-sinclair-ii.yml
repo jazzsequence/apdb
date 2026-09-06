@@ -1,0 +1,21 @@
+id: michael-sinclair-ii
+canonical_name: Michael Sinclair II
+sort_name: Sinclair, Michael, II
+links: {}
+aliases:
+  - id: default
+    name: Michael Sinclair II
+    alias_type: legal
+credits:
+  - show: into-the-mother-lands
+    season: 1
+    role: player
+    character: Ilay
+    year: "2020"
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt13210470/
+        note: IMDb series cast listing. Read via web search result content on
+          2026-09-06; the page itself could not be fetched from this environment
+          (network egress to the host was blocked), so this cites what the
+          search index returned, not a page read end to end.

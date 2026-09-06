@@ -1,0 +1,21 @@
+id: private-nightmares
+title: Private Nightmares
+channels:
+  - project-ghostlight
+format: video
+status: ongoing
+description: Project Ghostlight's first series — a Vampire, The Masquerade V5
+  chronicle about a coterie of Los Angeles thin-bloods, storytold by Alexander Ward.
+  Staged in a black box theatre rather than around a table, with the cast acting out
+  scenes. Season 2 cast is not yet recorded here.
+links:
+  website: https://www.paradoxinteractive.com/games/world-of-darkness/entertainment/private-nightmares
+seasons:
+  - ordinal: 1
+    game: vampire-the-masquerade-v5
+    started: "2025-03-07"
+    ended: "2025-08-08"
+  - ordinal: 2
+    game: vampire-the-masquerade-v5
+    started: "2026-01-02"
+    ended: "2026-05-08"

@@ -1,0 +1,17 @@
+id: into-the-mother-lands
+title: Into the Mother Lands
+channels:
+  - cypheroftyr
+format: stream
+status: ongoing
+description: Twitch-sponsored science fiction actual play created by Tanya DePass and
+  storytold by Eugenio Vargas, run on the Cortex system and set on an alien world
+  settled by a human diaspora. Premiered 4 October 2020. Later seasons exist; their
+  boundaries and casts have not been checked here.
+links:
+  website: https://motherlandsrpg.com/
+  podcast: https://feeds.simplecast.com/Pqh2JzeV
+seasons:
+  - ordinal: 1
+    game: cortex
+    started: "2020-10-04"

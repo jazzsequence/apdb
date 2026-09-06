@@ -1,0 +1,19 @@
+id: ny-by-night
+title: NY by Night
+channels:
+  - world-of-darkness
+format: video
+status: completed
+description: Vampire, The Masquerade V5 chronicle set in New York and storytold by
+  Jason Carl, following on from L.A. by Night. Sixteen episodes across two seasons,
+  aired between July and November 2022. The season each cast member appeared in is
+  not yet recorded — the sources read name the series cast, not the split.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/NY_by_Night
+seasons:
+  - ordinal: 1
+    game: vampire-the-masquerade-v5
+    started: "2022-07-01"
+  - ordinal: 2
+    game: vampire-the-masquerade-v5
+    ended: "2022-11-18"

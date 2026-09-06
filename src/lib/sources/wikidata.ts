@@ -223,3 +223,101 @@ export async function wikidataImage(qid: string): Promise<FreeImage | undefined>
   if (typeof filename !== 'string') return undefined;
   return commonsImage(filename);
 }
+
+// ---------------------------------------------------------------------------
+// Works.
+//
+// The header of this file says Wikidata is not used for credits, and that is
+// still true: nothing below emits a credit. What it does is answer the
+// question no show-first adapter can — "what else was this person in?" — and
+// hand back candidates for a person-first discovery pass to check.
+//
+// The distinction matters. Wikidata's actual-play coverage really is thin, so
+// this will never be the source a credit rests on. But thin coverage of a
+// show that is missing from the catalogue entirely is still the only pointer
+// anyone has to it, and "known for: NY by Night" sitting unread on a QID we
+// already store is a gap with no excuse.
+// ---------------------------------------------------------------------------
+
+const SPARQL = 'https://query.wikidata.org/sparql';
+
+export interface WikidataWork {
+  qid: string;
+  title: string;
+  description?: string;
+  /** enwiki article title, when the work has one — the handle Wikipedia needs. */
+  wikipedia?: string;
+  /** How Wikidata connects the person to the work, for the report. */
+  via: string;
+  /** instance-of / genre labels, used by the actual-play classifier. */
+  types: string[];
+}
+
+/**
+ * Works this person is attached to.
+ *
+ * Two directions, because Wikidata models them separately:
+ *   - P800 "notable work", stored on the person;
+ *   - P161 "cast member" / P725 "voice actor" / P3092 "film crew member",
+ *     stored on the *work*, which needs a reverse query.
+ *
+ * The reverse half is a SPARQL query. That endpoint is rate-limited and asks
+ * for a descriptive User-Agent; a person-first sweep over hundreds of people
+ * must pace itself accordingly (the discovery script does).
+ */
+export async function fetchWorks(qid: string): Promise<WikidataWork[]> {
+  const query = `
+    SELECT ?work ?workLabel ?workDescription ?article ?via ?typeLabel WHERE {
+      {
+        wd:${qid} wdt:P800 ?work .
+        BIND("P800 notable work" AS ?via)
+      } UNION {
+        ?work wdt:P161 wd:${qid} .
+        BIND("P161 cast member" AS ?via)
+      } UNION {
+        ?work wdt:P725 wd:${qid} .
+        BIND("P725 voice actor" AS ?via)
+      }
+      OPTIONAL { ?work wdt:P31 ?type . }
+      OPTIONAL {
+        ?article schema:about ?work ; schema:isPartOf <https://en.wikipedia.org/> .
+      }
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+    }
+    LIMIT 200`;
+
+  const response = await fetch(`${SPARQL}?query=${encodeURIComponent(query)}`, {
+    headers: { 'User-Agent': USER_AGENT, Accept: 'application/sparql-results+json' },
+  });
+  if (!response.ok) {
+    throw new Error(`${response.status} ${response.statusText} from the Wikidata query service`);
+  }
+  const data = await response.json();
+
+  // One work comes back once per instance-of value; fold them into one record.
+  const works = new Map<string, WikidataWork>();
+  for (const row of data.results?.bindings ?? []) {
+    const uri: string = row.work?.value ?? '';
+    const workQid = uri.split('/').pop() ?? '';
+    if (!/^Q\d+$/.test(workQid)) continue;
+
+    const existing = works.get(workQid);
+    const type = row.typeLabel?.value;
+    if (existing) {
+      if (type && !existing.types.includes(type)) existing.types.push(type);
+      if (row.via?.value && !existing.via.includes(row.via.value)) existing.via += `, ${row.via.value}`;
+      continue;
+    }
+    works.set(workQid, {
+      qid: workQid,
+      title: row.workLabel?.value ?? workQid,
+      description: row.workDescription?.value,
+      wikipedia: row.article?.value
+        ? decodeURIComponent(row.article.value.split('/wiki/')[1] ?? '').replace(/_/g, ' ')
+        : undefined,
+      via: row.via?.value ?? 'unknown',
+      types: type ? [type] : [],
+    });
+  }
+  return [...works.values()];
+}

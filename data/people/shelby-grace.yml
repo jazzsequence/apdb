@@ -1,0 +1,26 @@
+id: shelby-grace
+canonical_name: Shelby Grace
+sort_name: Grace, Shelby
+links: {}
+aliases:
+  - id: default
+    name: Shelby Grace
+    alias_type: legal
+  - id: shubble
+    name: Shubble
+    alias_type: handle
+    note: The handle she is billed under on the Kollok wiki, which writes her as
+      Shelby "Shubble" Grace.
+credits:
+  - show: kollok-1991
+    season: 2
+    role: player
+    year: "2019"
+    character: Mickey Jones
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/Season_2_-_KOllOK_1991:_Bleach
+        note: 'The season 2 ("KOllOK 1991: Bleach") page lists them among the main cast. CC-BY-SA. Read via web search result content on 2026-09-06; the
+          page itself could not be fetched from this environment (network egress
+          to the host was blocked), so this cites what the search index
+          returned, not a page read end to end.'

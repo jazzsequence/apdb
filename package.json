@@ -13,6 +13,7 @@
     "collect": "tsx scripts/collect.ts",
     "audit": "tsx scripts/audit.ts",
     "discover:youtube": "tsx scripts/discover-youtube.ts",
+    "discover:person": "tsx scripts/discover-person.ts",
     "import:yt-shows": "tsx scripts/import-yt-shows.ts",
     "sweep:youtube": "tsx scripts/sweep-youtube.ts",
     "fetch:images": "tsx scripts/fetch-images.ts",

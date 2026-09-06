@@ -14,9 +14,8 @@ credits:
     sources:
       - tier: community
         url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
-        note: The show's own wiki lists this as the consistent core cast
-          across the show's run, matching what's already recorded for
-          Season 4. CC-BY-SA.
+        note: The show's own wiki lists this as the consistent core cast across the
+          show's run, matching what's already recorded for Season 4. CC-BY-SA.
   - show: la-by-night
     season: 1
     role: player
@@ -50,6 +49,19 @@ credits:
         note: Cast listed in the show's own episode description.
     note: No source found identifies which of these ran the games.
     alias: default
+  - show: ny-by-night
+    role: player
+    year: "2022"
+    note: Named in the cast without a character in the source read; character
+      deliberately left blank rather than guessed.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/NY_by_Night
+        note: Wikipedia lists her among the series cast, without a character in what was
+          returned. Read via web search result content on 2026-09-06; the page
+          itself could not be fetched from this environment (network egress to
+          the host was blocked), so this cites what the search index returned,
+          not a page read end to end.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Cynthia_Marie_Hoffman5187988.jpg
   licence: CC-BY-SA-4.0

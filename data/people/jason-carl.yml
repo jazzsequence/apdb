@@ -13,9 +13,8 @@ credits:
     sources:
       - tier: community
         url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
-        note: The show's own wiki lists this as the consistent core cast
-          across the show's run, matching what's already recorded for
-          Season 4. CC-BY-SA.
+        note: The show's own wiki lists this as the consistent core cast across the
+          show's run, matching what's already recorded for Season 4. CC-BY-SA.
   - show: la-by-night
     season: 4
     role: GM/DM
@@ -39,6 +38,17 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/282877-vampire-the-masquerade-l-a-by-night/cast
         note: Cast for "L.A. by Night" per TMDB.
+  - show: ny-by-night
+    role: GM/DM
+    year: "2022"
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/NY_by_Night
+        note: Wikipedia names Jason Carl as the storyteller for the series. Read via web
+          search result content on 2026-09-06; the page itself could not be
+          fetched from this environment (network egress to the host was
+          blocked), so this cites what the search index returned, not a page
+          read end to end.
 image:
   url: https://static.wikia.nocookie.net/vampire-the-masquerade-la-by-night/images/0/0f/Jason_Carl.jpg/revision/latest/scale-to-width-down/400?cb=20190322030730
   licence: fair use

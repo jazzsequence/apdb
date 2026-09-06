@@ -1,0 +1,16 @@
+id: kollok-1991
+title: KOllOK 1991
+channels:
+  - hyper-rpg
+format: stream
+status: completed
+description: Interactive science-fiction horror live play set in the town of Kollok,
+  Washington, created and run by Zac Lim Eubank. Two seasons on Hyper RPG's Twitch
+  channel; the show was later revived on FearHQ as a separate production.
+seasons:
+  - ordinal: 1
+    game: kids-on-bikes
+  - ordinal: 2
+    title: "KOllOK 1991: Bleach"
+    game: kids-on-bikes
+    started: "2019-08-26"

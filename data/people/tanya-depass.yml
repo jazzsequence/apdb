@@ -38,8 +38,7 @@ credits:
     sources:
       - tier: reference
         url: https://comicbook.com/gaming/news/dungeons-dragons-black-dice-society/
-        note: "Contemporary press coverage naming the cast of \"The Black Dice
-          Society\"."
+        note: Contemporary press coverage naming the cast of "The Black Dice Society".
       - tier: community
         url: https://black-dice-society.fandom.com/wiki/Cast
         note: Cast page on the show's own wiki. CC-BY-SA.
@@ -54,3 +53,22 @@ credits:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
         note: Season-by-season DM table per Wikipedia.
+  - show: into-the-mother-lands
+    season: 1
+    role: player
+    character: Invicta
+    year: "2020"
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt13210470/
+        note: IMDb series cast listing. Read via web search result content on
+          2026-09-06; the page itself could not be fetched from this environment
+          (network egress to the host was blocked), so this cites what the
+          search index returned, not a page read end to end.
+      - tier: reference
+        url: https://motherlandsrpg.com/
+        note: The production's own site; DePass is its creator and it airs on her
+          channel. Read via web search result content on 2026-09-06; the page
+          itself could not be fetched from this environment (network egress to
+          the host was blocked), so this cites what the search index returned,
+          not a page read end to end.

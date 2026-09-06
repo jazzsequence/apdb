@@ -446,12 +446,12 @@ credits:
     sources:
       - tier: reference
         url: https://www.dndbeyond.com/posts/1893-dungeons-dragons-is-coming-to-magiccon-chicago
-        note: "D&D Beyond's own MagicCon Chicago event page names Aabria Iyengar as
-          DM for \"Baldur's Gate: From Hags to Liches.\""
+        note: "D&D Beyond's own MagicCon Chicago event page names Aabria Iyengar as DM
+          for \"Baldur's Gate: From Hags to Liches.\""
       - tier: reference
         url: https://www.mtgfestivals.com/global/en-us/magiccon-news/your-guide-to-dand-at-magiccon-and-the-full-star-studded-cast-of-dand-live.html
-        note: Independent guide corroborating the DM and full player cast for the
-          same session.
+        note: Independent guide corroborating the DM and full player cast for the same
+          session.
   - show: d-d-live-2021
     season: 1
     episode: Chaos Carnival
@@ -471,9 +471,121 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=KtLcWpD16Uo
-        note: "Cast per the production's own description of \"Battle for Beyond:
-          Episode 1 | D&D Beyond\"."
+        note: "Cast per the production's own description of \"Battle for Beyond: Episode
+          1 | D&D Beyond\"."
       - tier: reference
         url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
         note: D&D Beyond's own announcement post, naming the DM and each player's
           character.
+  - show: ny-by-night
+    role: player
+    character: Margot "Fuego" Walker
+    alias: iyengar
+    year: "2022"
+    note: Season not established — the sources name the series and the character,
+      not which of the two 2022 seasons she appeared in.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: "Wikipedia: \"She also joined the cast of the Vampire: The Masquerade web
+          series NY by Night, playing as Margot 'Fuego' Walker.\" Read via web
+          search result content on 2026-09-06; the page itself could not be
+          fetched from this environment (network egress to the host was
+          blocked), so this cites what the search index returned, not a page
+          read end to end."
+      - tier: reference
+        url: https://www.imdb.com/title/tt21227972/characters/nm10682827
+        note: IMDb credits her as Margot "Fuego" Walker on the series, 8 episodes in
+          2022. Read via web search result content on 2026-09-06; the page
+          itself could not be fetched from this environment (network egress to
+          the host was blocked), so this cites what the search index returned,
+          not a page read end to end.
+  - show: kollok-1991
+    season: 1
+    role: guest player
+    character: Laura Bennett
+    note: 'Guest across an unrecorded set of season 1 episodes — Wikipedia says she
+      was "originally a guest player" before joining the main cast, without
+      naming episodes. '
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: 'Wikipedia: "Iyengar was originally a guest player, acting as Laura
+          Bennett, in the actual play web series Kollok: 1991 on the Hyper RPG
+          Twitch channel before joining the main cast in the second season in
+          2019." Read via web search result content on 2026-09-06; the page
+          itself could not be fetched from this environment (network egress to
+          the host was blocked), so this cites what the search index returned,
+          not a page read end to end.'
+      - tier: community
+        url: https://kollok.fandom.com/wiki/Aabria_Iyengar
+        note: The show's own fan wiki has a page for her as a cast member. CC-BY-SA.
+          Read via web search result content on 2026-09-06; the page itself
+          could not be fetched from this environment (network egress to the host
+          was blocked), so this cites what the search index returned, not a page
+          read end to end.
+  - show: kollok-1991
+    season: 2
+    role: player
+    character: Laura Bennett
+    year: "2019"
+    note: "Billing not established: the sources use her current name, which
+      reference works apply retroactively (POLICY.md rule 3), so which name was
+      on the title card in 2019 is unrecorded."
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: "Wikipedia: she joined the main cast in the second season in 2019, playing
+          Laura Bennett. Read via web search result content on 2026-09-06; the
+          page itself could not be fetched from this environment (network egress
+          to the host was blocked), so this cites what the search index
+          returned, not a page read end to end."
+      - tier: community
+        url: https://kollok.fandom.com/wiki/Season_2_-_KOllOK_1991:_Bleach
+        note: 'The season 2 ("KOllOK 1991: Bleach") page lists her among the main cast.
+          CC-BY-SA. Read via web search result content on 2026-09-06; the page
+          itself could not be fetched from this environment (network egress to
+          the host was blocked), so this cites what the search index returned,
+          not a page read end to end.'
+  - show: into-the-mother-lands
+    season: 1
+    role: player
+    character: Koseh
+    year: "2020"
+    note: Billing not established — the show premiered in October 2020, which
+      straddles her recorded name change, and the sources use the current name.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: 'Wikipedia: "Iyengar has been part of the main cast, playing as Koseh, for
+          Into the Mother Lands since 2020." Read via web search result content
+          on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end.'
+      - tier: reference
+        url: https://www.imdb.com/title/tt13210470/characters/nm10682827
+        note: IMDb credits her as Koseh on the series. Read via web search result
+          content on 2026-09-06; the page itself could not be fetched from this
+          environment (network egress to the host was blocked), so this cites
+          what the search index returned, not a page read end to end.
+  - show: private-nightmares
+    season: 1
+    role: player
+    character: Katherine "Katie" Marshall
+    alias: iyengar
+    year: "2025"
+    sources:
+      - tier: reference
+        url: https://www.paradoxinteractive.com/games/world-of-darkness/entertainment/private-nightmares
+        note: Paradox Interactive's own World of Darkness page for the series lists her
+          among the coterie players. Read via web search result content on
+          2026-09-06; the page itself could not be fetched from this environment
+          (network egress to the host was blocked), so this cites what the
+          search index returned, not a page read end to end.
+      - tier: community
+        url: https://project-ghostlight-private-nightmares.fandom.com/wiki/Characters
+        note: The series wiki maps Katie to Aabria Iyengar. CC-BY-SA. Read via web
+          search result content on 2026-09-06; the page itself could not be
+          fetched from this environment (network egress to the host was
+          blocked), so this cites what the search index returned, not a page
+          read end to end.
