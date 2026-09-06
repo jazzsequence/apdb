@@ -67,6 +67,19 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/dimension-20
         note: Cast for "Dimension 20" per TheTVDB.
+  - show: d-d-live-2021
+    season: 1
+    episode: Flubbybonks & Guzzleshucks
+    role: player
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/f/f2/Ify_Nwadiwe_as_Markus_St._Vincent.png/revision/latest/scale-to-width-down/400?cb=20200627193230
   licence: fair use

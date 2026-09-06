@@ -1,24 +1,16 @@
-id: reggie-watts
-canonical_name: Reggie Watts
-sort_name: Watts, Reggie
+id: mace-wwe
+canonical_name: Mace
+sort_name: Mace
+bio: WWE performer. Distinct from the indie actual-play performer also credited
+  here as Mace — different people who share a ring/stage name.
 aliases:
   - id: default
-    name: Reggie Watts
-    alias_type: legal
+    name: Mace
+    alias_type: stage
 credits:
-  - show: d-d-live-2020
-    season: 1
-    episode: Comedians Game
-    role: player
-    alias: default
-    year: "2020"
-    sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=_gnSPB6Zi4c
-        note: "Cast per the production's own description of \"Comedians Game - D&D Live 2020\"."
   - show: d-d-live-2021
     season: 1
-    episode: "Lost Odyssey: Last Light"
+    episode: Chaos Carnival
     role: player
     alias: default
     year: "2021"

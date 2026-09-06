@@ -1,0 +1,18 @@
+id: d-d-live-2021
+title: D&D Live 2021
+channels:
+  - dungeons-dragons
+format: stream
+status: completed
+description: Wizards of the Coast's July 2021 event, co-presented with G4. Five
+  celebrity tables were played, each with its own dungeon master and cast. The
+  games streamed on G4 rather than the official D&D channel, whose own D&D Live
+  2021 playlist carries only the panels and product deep dives — so no video
+  link is recorded here for the games themselves.
+links: {}
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2021-07"
+    ended: "2021-07"
+    episode_count: 5

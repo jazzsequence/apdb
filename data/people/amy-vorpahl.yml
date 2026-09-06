@@ -210,6 +210,19 @@ credits:
         url: https://www.imdb.com/title/tt9196944/fullcredits/
         note: IMDb full cast and crew for "Shadows on the Horizon" (2018), via the
           official datasets.
+  - show: d-d-live-2021
+    season: 1
+    episode: Flubbybonks & Guzzleshucks
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
 image:
   url: https://static.wikia.nocookie.net/savingthrowshow/images/1/15/Vorpahl.jpg/revision/latest/scale-to-width-down/266?cb=20200310070006
   licence: fair use

@@ -79,6 +79,19 @@ credits:
         url: https://savingthrowshow.fandom.com/wiki/Tales_from_Salt_Bay
         note: Tales from Salt Bay cast, via the savingthrowshow.fandom.com infobox.
           CC-BY-SA.
+  - show: d-d-live-2021
+    season: 1
+    episode: Flubbybonks & Guzzleshucks
+    role: player
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
 image:
   url: https://static.wikia.nocookie.net/savingthrowshow/images/9/96/NegaOyrx_Cast.png/revision/latest/scale-to-width-down/400?cb=20200303072032
   licence: fair use

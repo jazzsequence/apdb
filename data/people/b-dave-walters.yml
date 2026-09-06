@@ -147,6 +147,30 @@ credits:
       - tier: official
         url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
         note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."
+  - show: d-d-live-2021
+    season: 1
+    episode: Palace of the Vampire Queen
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
+  - show: d-d-live-2021
+    season: 1
+    episode: Faster, Purple Worm! Kill! Kill!
+    role: player
+    alias: default
+    year: "2021"
+    note: "Named by one source only; the other D&D Live 2021 write-up consulted does not cover this table."
+    sources:
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/b/be/PCMarcid.png/revision/latest/scale-to-width-down/400?cb=20200813045748
   licence: fair use

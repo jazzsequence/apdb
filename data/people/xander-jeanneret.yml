@@ -159,6 +159,17 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
         note: Cast per Geek & Sundry.
+  - show: d-d-live-2021
+    season: 1
+    episode: Faster, Purple Worm! Kill! Kill!
+    role: player
+    alias: default
+    year: "2021"
+    note: "Named by one source only; the other D&D Live 2021 write-up consulted does not cover this table."
+    sources:
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
 image:
   url: https://static.wikia.nocookie.net/vampire-the-masquerade-la-by-night/images/b/b7/Xander_Jeanneret.png/revision/latest/scale-to-width-down/324?cb=20240611204137
   licence: fair use

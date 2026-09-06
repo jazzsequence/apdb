@@ -21,6 +21,19 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/96805-relics-and-rarities/cast
         note: Cast for "Relics and Rarities" per TMDB.
+  - show: d-d-live-2021
+    season: 1
+    episode: "Lost Odyssey: Last Light"
+    role: player
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
 wikidata_qid: Q489831
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/0/02/Kevin_Smith_by_Gage_Skidmore_3.jpg

@@ -1,0 +1,18 @@
+id: tiffany-haddish
+canonical_name: Tiffany Haddish
+sort_name: Haddish, Tiffany
+aliases:
+  - id: default
+    name: Tiffany Haddish
+    alias_type: legal
+credits:
+  - show: d-d-live-2021
+    season: 1
+    episode: "Lost Odyssey: Last Light"
+    role: player
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.

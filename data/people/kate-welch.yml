@@ -104,6 +104,16 @@ credits:
       - tier: official
         url: https://www.youtube.com/watch?v=sbMkTqx7iaU
         note: "Cast per the production's own description of \"Cast of Thrones - D&D Live 2020\"."
+  - show: d-d-live-2021
+    season: 1
+    episode: "Lost Odyssey: Last Light"
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/9/93/Dnd_stream_kate.png/revision/latest?cb=20220409025227
   licence: fair use

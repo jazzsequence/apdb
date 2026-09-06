@@ -452,3 +452,13 @@ credits:
         url: https://www.mtgfestivals.com/global/en-us/magiccon-news/your-guide-to-dand-at-magiccon-and-the-full-star-studded-cast-of-dand-live.html
         note: Independent guide corroborating the DM and full player cast for the
           same session.
+  - show: d-d-live-2021
+    season: 1
+    episode: Chaos Carnival
+    role: GM/DM
+    alias: iyengar
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.

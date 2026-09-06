@@ -1,24 +1,14 @@
-id: reggie-watts
-canonical_name: Reggie Watts
-sort_name: Watts, Reggie
+id: fiona-nova
+canonical_name: Fiona Nova
+sort_name: Nova, Fiona
 aliases:
   - id: default
-    name: Reggie Watts
-    alias_type: legal
+    name: Fiona Nova
+    alias_type: handle
 credits:
-  - show: d-d-live-2020
-    season: 1
-    episode: Comedians Game
-    role: player
-    alias: default
-    year: "2020"
-    sources:
-      - tier: official
-        url: https://www.youtube.com/watch?v=_gnSPB6Zi4c
-        note: "Cast per the production's own description of \"Comedians Game - D&D Live 2020\"."
   - show: d-d-live-2021
     season: 1
-    episode: "Lost Odyssey: Last Light"
+    episode: Flubbybonks & Guzzleshucks
     role: player
     alias: default
     year: "2021"

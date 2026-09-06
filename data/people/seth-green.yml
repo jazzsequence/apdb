@@ -1,0 +1,19 @@
+id: seth-green
+canonical_name: Seth Green
+sort_name: Green, Seth
+aliases:
+  - id: default
+    name: Seth Green
+    alias_type: legal
+credits:
+  - show: d-d-live-2021
+    season: 1
+    episode: Faster, Purple Worm! Kill! Kill!
+    role: player
+    alias: default
+    year: "2021"
+    note: "Named by one source only; the other D&D Live 2021 write-up consulted does not cover this table."
+    sources:
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
