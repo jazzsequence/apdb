@@ -1,0 +1,28 @@
+id: battle-for-beyond
+title: Battle for Beyond
+channels:
+  - dnd-official
+format: video
+status: completed
+description: Six-part D&D Beyond mini-series. Adventurers drawn from across the
+  multiverse compete in the Temple of Beyond, an arena presided over by a
+  mysterious Master of Ceremonies. The cast was assembled from other
+  productions — Exandria Unlimited, Dimension 20, L.A. by Night and others.
+links:
+  website: https://www.youtube.com/playlist?list=PLPjdPog_vKX0asKeQeRaL3Ij6xubcMH-I
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2021-11"
+    ended: "2021-12"
+    episode_count: 6
+image:
+  url: https://i.ytimg.com/vi/KtLcWpD16Uo/hqdefault.jpg
+  licence: fair use
+  attribution: Battle for Beyond series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/watch?v=KtLcWpD16Uo
+  depicts: Series art for Battle for Beyond
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

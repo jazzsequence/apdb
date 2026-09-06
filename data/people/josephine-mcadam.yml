@@ -98,6 +98,21 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Haunted_City
         note: Haunted City cast, via the the-glass-cannon-network.fandom.com infobox.
           CC-BY-SA.
+  - show: battle-for-beyond
+    season: 1
+    role: player
+    character: Murdina
+    alias: default
+    year: "2021"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=KtLcWpD16Uo
+        note: "Cast per the production's own description of \"Battle for Beyond:
+          Episode 1 | D&D Beyond\"."
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
+        note: D&D Beyond's own announcement post, naming the DM and each player's
+          character.
 image:
   url: https://static.wikia.nocookie.net/vampire-the-masquerade-la-by-night/images/5/5e/Josephine_McAdam_new.jpg/revision/latest/scale-to-width-down/266?cb=20240611194304
   licence: fair use

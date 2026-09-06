@@ -124,6 +124,20 @@ credits:
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+  - show: battle-for-beyond
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=KtLcWpD16Uo
+        note: "Cast per the production's own description of \"Battle for Beyond:
+          Episode 1 | D&D Beyond\"."
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
+        note: D&D Beyond's own announcement post, naming the DM and each player's
+          character.
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/f/f8/Dnd_stream_jasmine.png/revision/latest?cb=20220409060329
   licence: fair use

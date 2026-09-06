@@ -193,3 +193,18 @@ credits:
       - tier: community
         url: https://worldsbeyondnumber.fandom.com/wiki/The_Wizard,_the_Witch_and_the_Wild_One
         note: The show's own wiki infobox names Erika Ishii as playing Ame.
+  - show: battle-for-beyond
+    season: 1
+    role: player
+    character: Leila
+    alias: default
+    year: "2021"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=KtLcWpD16Uo
+        note: "Cast per the production's own description of \"Battle for Beyond:
+          Episode 1 | D&D Beyond\"."
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
+        note: D&D Beyond's own announcement post, naming the DM and each player's
+          character.

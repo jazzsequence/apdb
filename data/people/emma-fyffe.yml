@@ -16,3 +16,18 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
+  - show: battle-for-beyond
+    season: 1
+    role: player
+    character: Lenore
+    alias: default
+    year: "2021"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=KtLcWpD16Uo
+        note: "Cast per the production's own description of \"Battle for Beyond:
+          Episode 1 | D&D Beyond\"."
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
+        note: D&D Beyond's own announcement post, naming the DM and each player's
+          character.

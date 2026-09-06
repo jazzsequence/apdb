@@ -80,6 +80,21 @@ credits:
       - tier: reference
         url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
         note: Screen Rant's report on the D&D Live 2021 game announcements.
+  - show: battle-for-beyond
+    season: 1
+    role: player
+    character: Ekon
+    alias: default
+    year: "2021"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=KtLcWpD16Uo
+        note: "Cast per the production's own description of \"Battle for Beyond:
+          Episode 1 | D&D Beyond\"."
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
+        note: D&D Beyond's own announcement post, naming the DM and each player's
+          character.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/f/f2/Ify_Nwadiwe_as_Markus_St._Vincent.png/revision/latest/scale-to-width-down/400?cb=20200627193230
   licence: fair use
