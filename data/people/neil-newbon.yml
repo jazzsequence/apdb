@@ -54,6 +54,22 @@ credits:
     note: One-shot in which the Baldur's Gate 3 voice cast played their own
       characters.
     alias: default
+  - show: baldur-s-gate-from-hags-to-liches
+    season: 1
+    role: player
+    character: Astarion
+    alias: default
+    year: "2025"
+    note: Official D&D Live celebrity one-shot at MagicCon Chicago, 2024 rules.
+    sources:
+      - tier: reference
+        url: https://www.dndbeyond.com/posts/1893-dungeons-dragons-is-coming-to-magiccon-chicago
+        note: "D&D Beyond's own MagicCon Chicago event page naming the cast for
+          \"Baldur's Gate: From Hags to Liches.\""
+      - tier: reference
+        url: https://www.mtgfestivals.com/global/en-us/magiccon-news/your-guide-to-dand-at-magiccon-and-the-full-star-studded-cast-of-dand-live.html
+        note: Independent guide corroborating the DM and full player cast for the
+          same session.
 wikidata_qid: Q5673372
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/23/Neil_Newbon_by_Gage_Skidmore.jpg
