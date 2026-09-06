@@ -10,3 +10,6 @@ dist/
 
 # Bulk source dumps — large, regenerable
 .cache/
+
+# Discovery sweep scratch output; the report it produces is what gets committed
+out/

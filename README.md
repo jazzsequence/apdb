@@ -58,6 +58,7 @@ npm run build                                 # validate, build, index for searc
 npm run filmography -- "Aabria Lipscomb"      # print a filmography to the terminal
 npm run audit                                 # spot-check imports for bad data
 npm run discover:person -- --person aabria-iyengar   # what are we missing for one person?
+npm run report:discovery -- --person out/sweep.json  # fold a sweep into one report
 npm run collect -- --sources                  # import sources + licence status
 ```
 

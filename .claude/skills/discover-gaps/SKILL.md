@@ -35,6 +35,23 @@ Check how stale the catalogue is before sweeping, so the report can say
 git log -1 --format='%ar (%ad)' --date=short -- data/shows data/channels
 ```
 
+And check whether the robot already did this. `.github/workflows/discovery.yml`
+runs the sweeps every Monday on a runner — which, unlike an agent session, has
+open network access to Wikipedia, Wikidata, the fan wikis and archive.org — and
+opens a PR against `reports/discovery-latest.md` when it finds something. Read
+that before sweeping by hand:
+
+```bash
+git log -1 --format='%ar' -- reports/discovery-latest.md   # when it last found anything
+gh pr list --head discovery/weekly --state open            # the open report, if any
+```
+
+Running the passes by hand is for an off-schedule question ("what are we missing
+for this one person?") or for sources the job does not cover. If the session has
+no network egress — Wikipedia and the wikis are commonly blocked — say so rather
+than reporting an empty sweep as a clean one, and read the last automated report
+instead.
+
 ## 2. Person-first — run this before the show-first passes
 
 The pass with the highest yield, and the one the other four are structurally

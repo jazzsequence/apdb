@@ -1,0 +1,166 @@
+name: Weekly discovery sweep
+
+# Data collection, moved off whatever machine happens to be awake.
+#
+# Every import adapter here needs the open internet — Wikipedia, Wikidata, the
+# fan wikis, YouTube, archive.org — and a sandboxed agent session frequently
+# does not have it. A runner does, on a schedule, for free. So the sweep runs
+# here and the result arrives the way everything else in this project arrives:
+# as a pull request somebody reads.
+#
+# It is report-only by construction. The scripts it calls write nothing to
+# `data/`, and the PR it opens touches one file under `reports/`. Merging it
+# merges the report, not the data — filing a candidate as a credit is still a
+# deliberate, separately-sourced edit. See POLICY.md on why a reference work is
+# where a credit starts, not where it ends.
+
+on:
+  schedule:
+    # Mondays, 06:17 UTC. Off the hour on purpose: scheduled jobs pile up at
+    # :00 across all of GitHub and get queued.
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      people:
+        description: 'How many people to sweep (blank = everyone with a QID or a Wikipedia link)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: discovery
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    # Job level, not step level: a step's `if` cannot see that step's own `env`
+    # and cannot see `secrets` at all, so checking either there is always false.
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - run: mkdir -p out
+
+      # Each pass is allowed to fail on its own. One rate-limited source should
+      # cost its own section of the report, not the whole week's sweep.
+      - name: Person-first sweep (Wikipedia + Wikidata)
+        continue-on-error: true
+        run: |
+          npm run discover:person -- \
+            ${{ inputs.people && format('--limit {0}', inputs.people) || '--all' }} \
+            --json out/person-sweep.json | tee out/person.log
+
+      - name: Internet Archive
+        continue-on-error: true
+        timeout-minutes: 20
+        run: npm run import:archive -- --dry-run > out/archive.log 2>&1
+
+      # No key, no pass — and no keyless fallback, because scraping around
+      # YouTube's API breaches their terms (see the source registry).
+      - name: YouTube
+        continue-on-error: true
+        if: env.YOUTUBE_API_KEY != ''
+        run: npm run discover:youtube > out/youtube.log 2>&1
+
+      - name: Build the report
+        id: report
+        run: |
+          npm run report:discovery -- \
+            --person out/person-sweep.json \
+            --log "Internet Archive:out/archive.log" \
+            --log "YouTube:out/youtube.log" \
+            --out reports/discovery-latest.md
+
+      # A weekly PR that says "nothing new" teaches everyone to close these
+      # unread, and then the one with a real find gets closed too.
+      - name: Nothing to report
+        if: steps.report.outputs.findings == '0'
+        run: echo "No new shows or credits found. Not opening a PR."
+
+      - name: Open or update the pull request
+        if: steps.report.outputs.findings != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          BRANCH=discovery/weekly
+          cp out/person-sweep.json reports/discovery-latest.json 2>/dev/null || true
+
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          # Carry the report across the branch switch by hand. Checking out a
+          # branch whose copy of the file differs from the one just generated
+          # would refuse rather than overwrite it.
+          rm -rf /tmp/sweep && mkdir -p /tmp/sweep && cp -r reports/. /tmp/sweep/
+
+          # Continue the existing branch where there is one, so the weekly
+          # update is an ordinary commit rather than a force-push. A human who
+          # pushes a fix onto the open PR keeps it either way.
+          if git fetch origin "$BRANCH"; then
+            git checkout -B "$BRANCH" FETCH_HEAD
+          else
+            git checkout -B "$BRANCH"
+          fi
+
+          mkdir -p reports && cp -r /tmp/sweep/. reports/
+          git add reports/
+          if git diff --cached --quiet; then
+            echo "Report is identical to the one already on $BRANCH — nothing to push."
+            exit 0
+          fi
+
+          git commit -m "Weekly discovery sweep: ${{ steps.report.outputs.findings }} finding(s)
+
+          Automated reconnaissance from .github/workflows/discovery.yml. Candidates
+          only — every one still needs a source closer to the fact before it can be
+          filed as a credit. See the report for what turned up and why each entry
+          reads as actual play.
+
+          Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git push origin "$BRANCH"
+
+          if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')" ]; then
+            echo "PR already open for $BRANCH — the push updated it."
+            exit 0
+          fi
+
+          gh pr create \
+            --head "$BRANCH" \
+            --base "${{ github.event.repository.default_branch || 'main' }}" \
+            --title "Weekly discovery sweep — ${{ steps.report.outputs.findings }} finding(s)" \
+            --body "$(cat <<'BODY'
+          The weekly sweep found something. The full report is the single file this
+          PR adds, `reports/discovery-latest.md`.
+
+          **This PR is not data.** Nothing under `data/` changed. Every candidate came
+          from a reference work or a fan wiki — `reference` or `community` tier at best,
+          and Wikipedia is wrong about this project's own subject often enough that
+          POLICY.md uses it as the worked example. Reviewing means picking the
+          candidates worth having, finding a closer source for each, and filing those
+          as a separate change.
+
+          Two passes to read differently:
+
+          - **Person-first** (`npm run discover:person`) diffs against the catalogue as
+            it goes, so its tables are a real diff. A show under "no record" is missing
+            from everyone in its cast, not just the person who surfaced it.
+          - **Internet Archive / YouTube** do not dedupe against `data/`, so their raw
+            output is every series they saw, not a list of new ones. Diff before believing.
+
+          🤖 Generated with [Claude Code](https://claude.com/claude-code)
+          BODY
+          )"
