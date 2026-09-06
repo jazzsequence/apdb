@@ -11,8 +11,8 @@ credits:
     role: player
     character: Buckshot
     note: Distinguished from Jackson Kelly (The Realms of Rothaen), a separate
-      Saving Throw Show guest cast member with a similar name; the wiki
-      lists them as two distinct people and no source ties them together.
+      Saving Throw Show guest cast member with a similar name; the wiki lists
+      them as two distinct people and no source ties them together.
     alias: default
     sources:
       - tier: community
@@ -21,3 +21,9 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt9196702/fullcredits/
         note: IMDb full cast and crew for "Masks" (2016), via the official datasets.
+wikidata_qid: Q1253621
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/2/28/Jack_Kelly_1957.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: public domain
+  attribution: ABC Television
+  source: https://commons.wikimedia.org/wiki/File:Jack_Kelly_1957.JPG

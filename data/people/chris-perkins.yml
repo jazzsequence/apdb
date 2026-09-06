@@ -205,6 +205,26 @@ credits:
       - tier: official
         url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
         note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."
+  - show: d-d-live-2020
+    season: 1
+    episode: Red Nose Day Game
+    role: GM/DM
+    alias: default
+    year: "2020"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YmQO8axrQ5M
+        note: "Cast per the production's own description of \"Red Nose Day Game - D&D Live 2020\"."
+  - show: d-d-live-2020
+    season: 1
+    episode: Lost Odyssey Heroes
+    role: GM/DM
+    alias: default
+    year: "2020"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=egS_67zD0T8
+        note: "Cast per the production's own description of \"Lost Odyssey Heroes - D&D Live 2020\"."
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/6/62/Stream_dca_chrisperkins.png/revision/latest?cb=20220409060020
   licence: fair use

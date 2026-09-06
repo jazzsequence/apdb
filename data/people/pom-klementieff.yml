@@ -1,0 +1,18 @@
+id: pom-klementieff
+canonical_name: Pom Klementieff
+sort_name: Klementieff, Pom
+aliases:
+  - id: default
+    name: Pom Klementieff
+    alias_type: legal
+credits:
+  - show: d-d-live-2020
+    season: 1
+    episode: Lost Odyssey Heroes
+    role: player
+    alias: default
+    year: "2020"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=egS_67zD0T8
+        note: "Cast per the production's own description of \"Lost Odyssey Heroes - D&D Live 2020\"."

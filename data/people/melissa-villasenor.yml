@@ -1,0 +1,19 @@
+id: melissa-villasenor
+canonical_name: Melissa Villaseñor
+sort_name: Villaseñor, Melissa
+aliases:
+  - id: default
+    name: Melissa Villaseñor
+    alias_type: legal
+credits:
+  - show: d-d-live-2020
+    season: 1
+    episode: Comedians Game
+    role: player
+    alias: default
+    year: "2020"
+    note: "Billed in the description as \"Melissa Villasenor\"."
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=_gnSPB6Zi4c
+        note: "Cast per the production's own description of \"Comedians Game - D&D Live 2020\"."

@@ -45,6 +45,16 @@ credits:
         url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Fourteen
         note: Acquisitions Inc. Season Fourteen cast, via the
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
+  - show: d-d-live-2020
+    season: 1
+    episode: WWE Superstars Game
+    role: player
+    alias: default
+    year: "2020"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=Fbjw9h0lK3k
+        note: "Cast per the production's own description of \"WWE Superstars Game - D&D Live 2020\"."
 wikidata_qid: Q2026559
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/6/63/Austin_Creed_GalaxyCon_Oklahoma_City_052026-1.jpg

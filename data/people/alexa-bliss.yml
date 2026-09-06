@@ -1,0 +1,19 @@
+id: alexa-bliss
+canonical_name: Alexa Bliss
+sort_name: Bliss, Alexa
+aliases:
+  - id: default
+    name: Alexa Bliss
+    alias_type: stage
+credits:
+  - show: d-d-live-2020
+    season: 1
+    episode: WWE Superstars Game
+    role: player
+    alias: default
+    year: "2020"
+    note: "Billed in the description as \"Alex Bliss\"."
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=Fbjw9h0lK3k
+        note: "Cast per the production's own description of \"WWE Superstars Game - D&D Live 2020\"."

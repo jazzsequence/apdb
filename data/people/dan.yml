@@ -9,8 +9,8 @@ credits:
   - show: seasons-of-ghosts
     season: 1
     role: player
-    note: A Moonskull cast member credited by first name only; may or may not be
-      the same "Dan" credited on D5 Gamers below.
+    note: A Moonskull cast member credited by first name only; may or may not be the
+      same "Dan" credited on D5 Gamers below.
     alias: default
     sources:
       - tier: official
@@ -26,3 +26,8 @@ credits:
           episode.
     character: Leta
     alias: default
+image:
+  url: https://live.staticflickr.com/31/57044316_79a3008d39_b.jpg
+  licence: CC-BY-SA-2.0
+  attribution: JayBuffington
+  source: https://www.flickr.com/photos/51035771158@N01/57044316

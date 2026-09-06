@@ -1,0 +1,18 @@
+id: kristian-nairn
+canonical_name: Kristian Nairn
+sort_name: Nairn, Kristian
+aliases:
+  - id: default
+    name: Kristian Nairn
+    alias_type: legal
+credits:
+  - show: d-d-live-2020
+    season: 1
+    episode: Cast of Thrones
+    role: player
+    alias: default
+    year: "2020"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=sbMkTqx7iaU
+        note: "Cast per the production's own description of \"Cast of Thrones - D&D Live 2020\"."

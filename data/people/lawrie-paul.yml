@@ -9,7 +9,7 @@ credits:
   - show: war-of-crows-blades-in-the-dark-campaign
     season: 1
     role: player
-    character: "Lorenzo 'Consigliere' Vincetti"
+    character: Lorenzo 'Consigliere' Vincetti
     alias: default
     sources:
       - tier: official
@@ -24,3 +24,8 @@ credits:
       - tier: official
         url: https://www.youtube.com/watch?v=YDBhgO31i4g
         note: Cast per the show's own YouTube video description.
+image:
+  url: https://live.staticflickr.com/4025/4711549781_008975802a.jpg
+  licence: CC-BY-2.0
+  attribution: IMLS DCC
+  source: https://www.flickr.com/photos/42381338@N04/4711549781

@@ -13,6 +13,11 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PL7atuZxmT955yt0W4QP5VD4TwLQvV3EiM
-        note: "The show's own description: \"join host and Dungeon Master Jason
-          Charles Miller and his guests Mike Phirman, Mixi Demner, Angela
-          Webber, Hal Sparks, and Carmel Helene.\""
+        note: "The show's own description: \"join host and Dungeon Master Jason Charles
+          Miller and his guests Mike Phirman, Mixi Demner, Angela Webber, Hal
+          Sparks, and Carmel Helene.\""
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/8/8c/GeekGirlCon_2011_-_Angela_Webber_%286228460282%29.jpg
+  licence: CC-BY-SA-2.0
+  attribution: Stephen Wilson
+  source: https://commons.wikimedia.org/w/index.php?curid=40698254

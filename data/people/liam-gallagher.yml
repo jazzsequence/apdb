@@ -9,10 +9,16 @@ credits:
   - show: shattered-sea
     season: 1
     role: GM/DM
-    note: The "Shattered Sea D&D Encounters" series' own description names him
-      as DM; distinct from the Oasis musician of the same name.
+    note: The "Shattered Sea D&D Encounters" series' own description names him as
+      DM; distinct from the Oasis musician of the same name.
     alias: default
     sources:
       - tier: official
         url: https://archive.org/details/SSDDE0011-Undermountian11
         note: Archive.org item, crediting the uploader as Liam Gallagher.
+wikidata_qid: Q216708
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Festival_des_Vieilles_Charrues_2018_-_Liam_Gallagher_-_013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-SA-4.0
+  attribution: Thesupermat
+  source: https://commons.wikimedia.org/wiki/File:Festival_des_Vieilles_Charrues_2018_-_Liam_Gallagher_-_013.jpg

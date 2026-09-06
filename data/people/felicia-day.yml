@@ -24,6 +24,16 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: d-d-live-2020
+    season: 1
+    episode: Red Nose Day Game
+    role: player
+    alias: default
+    year: "2020"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=YmQO8axrQ5M
+        note: "Cast per the production's own description of \"Red Nose Day Game - D&D Live 2020\"."
 wikidata_qid: Q234314
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/6/64/Felicia_Day_%2842917965544%29_%28cropped%29.jpg

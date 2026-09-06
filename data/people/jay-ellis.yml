@@ -1,0 +1,19 @@
+id: jay-ellis
+canonical_name: Jay Ellis
+sort_name: Ellis, Jay
+aliases:
+  - id: default
+    name: Jay Ellis
+    alias_type: legal
+credits:
+  - show: d-d-live-2020
+    season: 1
+    episode: Deborah's Game
+    role: player
+    alias: default
+    year: "2020"
+    note: "The description names all six participants but does not state who ran the game, so no GM is credited for it here."
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=h86STkplb0s
+        note: "Cast per the production's own description of \"Deborah's Game - D&D Live 2020\"."

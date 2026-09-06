@@ -1,0 +1,28 @@
+id: d-d-live-2020
+title: D&D Live 2020
+channels:
+  - dungeons-dragons
+format: stream
+status: completed
+description: Wizards of the Coast's June 2020 online event, previewing the
+  Icewind Dale storyline. Six separate celebrity games were played across the
+  weekend, each with its own cast and — where the production named one — its own
+  dungeon master, rather than one recurring table.
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYp4yfd2ByZc9BMXChmIs4ot
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2020-06"
+    ended: "2020-06"
+    episode_count: 6
+image:
+  url: https://i.ytimg.com/vi/h86STkplb0s/hqdefault.jpg
+  licence: fair use
+  attribution: D&D Live 2020 series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/watch?v=h86STkplb0s
+  depicts: Series art for D&D Live 2020
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

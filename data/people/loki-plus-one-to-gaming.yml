@@ -5,8 +5,8 @@ aliases:
   - id: default
     name: Loki
     alias_type: handle
-    note: Credited by handle only; distinguished from other people named Loki
-      in this index by suffixing the id with the channel.
+    note: Credited by handle only; distinguished from other people named Loki in
+      this index by suffixing the id with the channel.
 credits:
   - show: spelljammer-light-of-xaryxis
     season: 1
@@ -17,3 +17,9 @@ credits:
       - tier: official
         url: https://archive.org/details/spelljammer-light-of-xaryxis-session-0
         note: Archive.org item description naming Loki as guest DM.
+wikidata_qid: Q1147326
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Cosplay_of_Loki_at_the_2021_New_York_Comic_Con_%2851573811344%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-SA-2.0
+  attribution: Romer Jed Medina from Newark, NJ, United States
+  source: https://commons.wikimedia.org/wiki/File:Cosplay_of_Loki_at_the_2021_New_York_Comic_Con_(51573811344).jpg

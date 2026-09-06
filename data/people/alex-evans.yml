@@ -9,7 +9,7 @@ credits:
   - show: war-of-crows-blades-in-the-dark-campaign
     season: 1
     role: player
-    character: "Friedrich 'Nightingale' IV Von Haig"
+    character: Friedrich 'Nightingale' IV Von Haig
     alias: default
     sources:
       - tier: official
@@ -69,3 +69,9 @@ credits:
       - tier: official
         url: https://www.youtube.com/watch?v=evjeiNfE3So
         note: Cast per the show's own YouTube video descriptions.
+wikidata_qid: Q52085389
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/0/0c/Alex_Evans_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-SA-4.0
+  attribution: Éric Messel
+  source: https://commons.wikimedia.org/wiki/File:Alex_Evans_1.jpg
