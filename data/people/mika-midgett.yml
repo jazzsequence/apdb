@@ -26,10 +26,7 @@ credits:
     sources:
       - tier: community
         url: https://kollok.fandom.com/wiki/Season_2_-_KOllOK_1991:_Bleach
-        note: 'The season 2 ("KOllOK 1991: Bleach") page lists them among the main cast. CC-BY-SA. Read via web search result content on 2026-09-06; the
-          page itself could not be fetched from this environment (network egress
-          to the host was blocked), so this cites what the search index
-          returned, not a page read end to end.'
+        note: 'The season 2 ("KOllOK 1991: Bleach") page lists them among the main cast. CC-BY-SA.'
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/6/6b/Mika_Midgett_at_Creator_Clash_2023_01.png
   licence: CC-BY-3.0

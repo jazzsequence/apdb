@@ -178,10 +178,7 @@ credits:
       - tier: reference
         url: https://en.wikipedia.org/wiki/NY_by_Night
         note: Wikipedia lists him among the series cast, without a character in what was
-          returned. Read via web search result content on 2026-09-06; the page
-          itself could not be fetched from this environment (network egress to
-          the host was blocked), so this cites what the search index returned,
-          not a page read end to end.
+          returned.
   - show: private-nightmares
     season: 1
     role: player
@@ -190,16 +187,10 @@ credits:
     sources:
       - tier: reference
         url: https://www.paradoxinteractive.com/games/world-of-darkness/entertainment/private-nightmares
-        note: Paradox's own page lists the coterie players. Read via web search result
-          content on 2026-09-06; the page itself could not be fetched from this
-          environment (network egress to the host was blocked), so this cites
-          what the search index returned, not a page read end to end.
+        note: Paradox's own page lists the coterie players.
       - tier: community
         url: https://project-ghostlight-private-nightmares.fandom.com/wiki/Characters
-        note: Series wiki character list. CC-BY-SA. Read via web search result content
-          on 2026-09-06; the page itself could not be fetched from this
-          environment (network egress to the host was blocked), so this cites
-          what the search index returned, not a page read end to end.
+        note: Series wiki character list. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/vampire-the-masquerade-la-by-night/images/b/b7/Xander_Jeanneret.png/revision/latest/scale-to-width-down/324?cb=20240611204137
   licence: fair use

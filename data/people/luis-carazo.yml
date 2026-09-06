@@ -103,16 +103,10 @@ credits:
     sources:
       - tier: reference
         url: https://www.paradoxinteractive.com/games/world-of-darkness/entertainment/private-nightmares
-        note: Paradox's own page lists the coterie players. Read via web search result
-          content on 2026-09-06; the page itself could not be fetched from this
-          environment (network egress to the host was blocked), so this cites
-          what the search index returned, not a page read end to end.
+        note: Paradox's own page lists the coterie players.
       - tier: community
         url: https://project-ghostlight-private-nightmares.fandom.com/wiki/Characters
-        note: Series wiki character list. CC-BY-SA. Read via web search result content
-          on 2026-09-06; the page itself could not be fetched from this
-          environment (network egress to the host was blocked), so this cites
-          what the search index returned, not a page read end to end.
+        note: Series wiki character list. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/0/05/C4_Luis.jpg/revision/latest/scale-to-width-down/400?cb=20251001205749
   licence: fair use

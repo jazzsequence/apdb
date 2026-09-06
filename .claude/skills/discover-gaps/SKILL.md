@@ -229,6 +229,56 @@ Flag anything ambiguous (e.g. a playlist that might be a season of an
 existing show rather than a new show — `collect --discover` usually catches
 this via `seasons_of`, but a manual look is worth it for close calls).
 
+## Known false-positive patterns
+
+A wiki or channel discovery hit is a page that *exists*, not evidence it's an
+actual play. A real import pass (2026-09) turned up every one of these on
+wikis that already have working adapters — expect more like them, and check
+each hit's actual content before crediting anyone:
+
+- **Adaptations that share a wiki with the source material.** Amazon's
+  animated *The Legend of Vox Machina* and *The Mighty Nein* have pages on
+  criticalrole.fandom.com because the wiki covers the whole property, not
+  because they're actual plays — they're scripted animation with no table.
+  Same risk applies to any tie-in comic, novel, or spin-off page on a
+  campaign wiki.
+- **Recap/highlight/aftershow content.** High Rollers' "Rhicap" is a solo
+  narrated recap of an *existing* cataloged campaign — not a played session.
+  Critical Role's Talks Machina, 4-Sided Dive, Fireside Chat, etc. are the
+  same category. Not a show here, no matter how many episodes it has.
+- **Off-topic shows that reuse a network's infobox template.** High Rollers'
+  "Chaos Twins" uses the same `{{Campaign}}` template as the real campaigns
+  but its own infobox says `system=Gaming stream` and its episode list is
+  Sonic Adventure 2 / Spore / The Sims — a variety stream, not a TTRPG. Check
+  the `system=` field (or its absence) before trusting the template match.
+- **Module/location reference stubs.** Acquisitions Incorporated's "Keep on
+  the Shadowfell" page is about the D&D adventure module itself, not a
+  session someone ran — its own text says as much ("will be omitted... unless
+  Acq-Inc visits it in the future"). A tiny page with no player/GM fields
+  filled in is a sign to go read it, not stage it.
+- **Per-book/per-chapter sub-pages of an already-cataloged season.**
+  glasscannonnetwork.fandom.com pages individual adventure-path *books*
+  ("Battle of Bloodmarch Hill", "The Hill Giant's Pledge", ...) as separate
+  wiki pages even though this database already holds the whole arc as one
+  season ("Glass Cannon Podcast - Giantslayer"). Cross-check a hit's own
+  wikitext for an `adventure_path=`/`show=` field pointing at a parent
+  campaign before treating it as standalone.
+- **Non-TTRPG shows on an otherwise-relevant channel.** Glass Cannon
+  Network's "Degenerate Dungeon" is a sports talk show that happens to live
+  on the same wiki. Read the description, not just the template.
+- **Multi-system YouTube channels and `import:yt-shows`' single `--game`
+  flag.** That script applies one game to every playlist/show it creates for
+  a channel. A channel whose own description says "a variety of game
+  systems" or "wide variety of RPG systems" (channel-level, not per-video)
+  needs per-playlist system research before import — don't default it to
+  `dnd-5e` just because the flag has a default.
+- **Wrong-channel playlist links already in the data.** Worth a spot-check
+  whenever you're in a season record anyway: Critical Role's Campaign Four
+  season had its `links.website` pointing at a fan reaction channel's
+  playlist, not the official one. If a "discovery" pass has you looking at a
+  playlist to check cast, verify it's actually hosted on the production's own
+  channel before treating anything in its descriptions as `official` tier.
+
 ## Handing off
 
 Per `AGENTS.md`, discovery output is a list to review, not something to

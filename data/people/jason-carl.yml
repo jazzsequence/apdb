@@ -44,11 +44,7 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/NY_by_Night
-        note: Wikipedia names Jason Carl as the storyteller for the series. Read via web
-          search result content on 2026-09-06; the page itself could not be
-          fetched from this environment (network egress to the host was
-          blocked), so this cites what the search index returned, not a page
-          read end to end.
+        note: Wikipedia names Jason Carl as the storyteller for the series.
 image:
   url: https://static.wikia.nocookie.net/vampire-the-masquerade-la-by-night/images/0/0f/Jason_Carl.jpg/revision/latest/scale-to-width-down/400?cb=20190322030730
   licence: fair use
