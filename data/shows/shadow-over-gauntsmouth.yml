@@ -4,9 +4,18 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'System per source: D&D 5th Edition. Legends of Avantris campaign.'
+description: "System per source: D&D 5th Edition. Legends of Avantris campaign."
 seasons:
   - ordinal: 1
     game: dnd-5e
 links:
   website: https://avantris.fandom.com/wiki/Shadow_Over_Gauntsmouth
+image:
+  url: https://static.wikia.nocookie.net/avantris/images/0/0a/Shadow_Over_Gauntsmouth_thumbnail_by_Legends_of_Avantris.jpg/revision/latest/scale-to-width-down/400?cb=20240720070958
+  licence: fair use
+  attribution: Shadow Over Gauntsmouth series art, © its producers. Via avantris.fandom.com.
+  source: https://avantris.fandom.com/wiki/File:Shadow_Over_Gauntsmouth_thumbnail_by_Legends_of_Avantris.jpg
+  depicts: Series art for Shadow Over Gauntsmouth
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

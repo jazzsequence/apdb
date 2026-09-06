@@ -1,0 +1,21 @@
+id: audiomancer-media
+title: Audiomancer Media
+channels:
+  - audiomancer-media
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Dungeons & Dragons. Uploader licence:
+  https://creativecommons.org/licenses/by-nc-nd/4.0/."
+links:
+  website: https://archive.org/details/26-round-new-art
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 4
+image:
+  url: https://archive.org/services/img/26-round-new-art
+  licence: CC-BY-NC-ND-4.0
+  attribution: Audiomancer Media, CC-BY-NC-ND-4.0. Via the Internet Archive.
+  source: https://archive.org/details/26-round-new-art
+  depicts: Cover art for Audiomancer Media

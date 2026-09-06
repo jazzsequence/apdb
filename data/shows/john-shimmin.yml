@@ -1,0 +1,23 @@
+id: john-shimmin
+title: John Shimmin
+channels:
+  - john-shimmin
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Pathfinder. Uploader licence:
+  http://creativecommons.org/publicdomain/zero/1.0/."
+links:
+  website: https://archive.org/details/lnl_pfrpg_hellsrebels
+seasons:
+  - ordinal: 1
+    game: pathfinder-1e
+    episode_count: 4
+    started: 2014-04-06
+    ended: 2021-11-22
+image:
+  url: https://archive.org/services/img/lnl_pfrpg_hellsrebels
+  licence: public domain
+  attribution: John Shimmin, public domain. Via the Internet Archive.
+  source: https://archive.org/details/lnl_pfrpg_hellsrebels
+  depicts: Cover art for John Shimmin

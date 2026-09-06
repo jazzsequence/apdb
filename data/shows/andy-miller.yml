@@ -1,0 +1,26 @@
+id: andy-miller
+title: Andy Miller
+channels:
+  - andy-miller
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Call of Cthulhu."
+links:
+  website: https://archive.org/details/20180520CoCDATheDragonAndTheWolf
+seasons:
+  - ordinal: 1
+    game: call-of-cthulhu
+    episode_count: 9
+    started: 2017-10-18
+    ended: 2019-07-29
+image:
+  url: https://archive.org/services/img/20180520CoCDATheDragonAndTheWolf
+  licence: fair use
+  attribution: Andy Miller cover art, © its producers. Via the Internet Archive.
+  source: https://archive.org/details/20180520CoCDATheDragonAndTheWolf
+  depicts: Cover art for Andy Miller
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. The uploader states no licence. Non-commercial, does not
+    substitute for the original, links back to the source, removed on request —
+    see POLICY.md.

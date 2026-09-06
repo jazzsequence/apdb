@@ -1,0 +1,26 @@
+id: la-petite-pause-jdr
+title: La Petite Pause JDR
+channels:
+  - la-petite-pause-jdr
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Vampire: The Masquerade."
+links:
+  website: https://archive.org/details/ecryme-session-21
+seasons:
+  - ordinal: 1
+    game: vampire-the-masquerade-v5
+    episode_count: 28
+    started: 2020-01-06
+    ended: 2022-12-12
+image:
+  url: https://archive.org/services/img/ecryme-session-21
+  licence: fair use
+  attribution: La Petite Pause JDR cover art, © its producers. Via the Internet Archive.
+  source: https://archive.org/details/ecryme-session-21
+  depicts: Cover art for La Petite Pause JDR
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. The uploader states no licence. Non-commercial, does not
+    substitute for the original, links back to the source, removed on request —
+    see POLICY.md.

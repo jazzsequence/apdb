@@ -4,9 +4,18 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'System per source: D&D 5th Edition. Legends of Avantris campaign.'
+description: "System per source: D&D 5th Edition. Legends of Avantris campaign."
 seasons:
   - ordinal: 1
     game: dnd-5e
 links:
   website: https://avantris.fandom.com/wiki/The_Mistchurch_Horror
+image:
+  url: https://static.wikia.nocookie.net/avantris/images/2/2c/Mistchurch_Updated_Thumbnail.jpeg/revision/latest/scale-to-width-down/400?cb=20251031015428
+  licence: fair use
+  attribution: The Mistchurch Horror series art, © its producers. Via avantris.fandom.com.
+  source: https://avantris.fandom.com/wiki/File:Mistchurch_Updated_Thumbnail.jpeg
+  depicts: Series art for The Mistchurch Horror
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

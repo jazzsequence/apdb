@@ -4,12 +4,22 @@ channels:
   - jonjonthewise
 format: podcast
 status: unknown
-description: "System per source: Cyberpunk RED. An actual play using the
-  full rules for Cyberpunk RED, set in 2087. Character names (Theo, Doc,
-  Arata) are known from episode descriptions, but which player plays
-  which character is not established from sources checked."
+description: "System per source: Cyberpunk RED. An actual play using the full
+  rules for Cyberpunk RED, set in 2087. Character names (Theo, Doc, Arata) are
+  known from episode descriptions, but which player plays which character is not
+  established from sources checked."
 links:
   website: https://podcasts.apple.com/gb/podcast/tabletop-cyberpunk/id1516900326
 seasons:
   - ordinal: 1
     game: cyberpunk-red
+image:
+  url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/d8/87/8d/d8878d20-2761-7cc6-f79c-289124f58a88/mza_12878439493770967576.jpg/600x600bb.jpg
+  licence: fair use
+  attribution: "Tabletop Cyberpunk: The Wise Guys series art, © its producers. Via
+    Apple Podcasts."
+  source: https://podcasts.apple.com/gb/podcast/tabletop-cyberpunk/id1516900326
+  depicts: "Series art for Tabletop Cyberpunk: The Wise Guys"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

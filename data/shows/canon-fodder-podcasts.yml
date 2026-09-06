@@ -1,0 +1,21 @@
+id: canon-fodder-podcasts
+title: Canon Fodder Podcasts
+channels:
+  - canon-fodder-podcasts
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Pathfinder. Uploader licence:
+  http://creativecommons.org/licenses/by-nc/4.0/."
+links:
+  website: https://archive.org/details/CFDEpisode39EpilogueDreamsOfPastAndFuture
+seasons:
+  - ordinal: 1
+    game: pathfinder-1e
+    episode_count: 9
+image:
+  url: https://archive.org/services/img/CFDEpisode39EpilogueDreamsOfPastAndFuture
+  licence: CC-BY-NC-4.0
+  attribution: Canon Fodder Podcasts, CC-BY-NC-4.0. Via the Internet Archive.
+  source: https://archive.org/details/CFDEpisode39EpilogueDreamsOfPastAndFuture
+  depicts: Cover art for Canon Fodder Podcasts
