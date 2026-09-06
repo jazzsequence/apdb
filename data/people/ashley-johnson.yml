@@ -91,6 +91,12 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi
+        note: "Official Campaign 4 cast list, from the Critical Role channel's own
+          episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
+          Critical Role: Campaign 4."
+    character: Vaelus
   - show: exandria-unlimited
     season: 1
     role: player
@@ -106,7 +112,8 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
         tier: community
       - tier: reference
         url: https://www.imdb.com/title/tt27715026/fullcredits/

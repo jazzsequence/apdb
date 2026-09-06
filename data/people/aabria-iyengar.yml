@@ -44,7 +44,7 @@ credits:
   - show: idolon-academy
     season: 1
     role: player
-    character: 'Tendai Collier aka "Eye"'
+    character: Tendai Collier aka "Eye"
     alias: iyengar
     sources:
       - tier: official
@@ -52,15 +52,15 @@ credits:
         note: Cast per the network's own show page.
   - show: desiquest
     season: 2
-    episode: 'Always Look A Gift Horse in the Mouth | DesiQuest Winter Special Episode 1'
+    episode: Always Look A Gift Horse in the Mouth | DesiQuest Winter Special Episode 1
     role: guest player
     character: Asha
     alias: iyengar
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=xS5D-xI5f0w
-        note: Cast per the episode's own description for "Always Look A Gift Horse
-          in the Mouth | DesiQuest Winter Special Episode 1."
+        note: Cast per the episode's own description for "Always Look A Gift Horse in
+          the Mouth | DesiQuest Winter Special Episode 1."
   - show: salt-bay-court-of-thorns
     season: 1
     role: GM/DM
@@ -78,8 +78,8 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/rainbow/
-        note: "RR2020-06: Kids on Bikes cast, per the network's Rainbow Railroading
-          2020 episode listing."
+        note: "RR2020-06: Kids on Bikes cast, per the network's Rainbow Railroading 2020
+          episode listing."
   - show: wildcards-east-texas-university
     season: 1
     episode: "S1E?: The Seekers"
@@ -279,7 +279,8 @@ credits:
       Taliesin Jaffe's recurring "Lightkeeper" host/narrator role.
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
   - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
     season: 1
@@ -348,6 +349,12 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi
+        note: "Official Campaign 4 cast list, from the Critical Role channel's own
+          episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
+          Critical Role: Campaign 4."
+    character: Thaisha Lloy
   - show: tales-from-salt-bay
     season: 1
     role: player

@@ -84,6 +84,12 @@ credits:
       - *a4
       - *a5
       - *a6
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi
+        note: "Official Campaign 4 cast list, from the Critical Role channel's own
+          episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
+          Critical Role: Campaign 4."
+    character: Kattigan Vale
   - show: exandria-unlimited
     season: 1
     role: player
@@ -100,7 +106,8 @@ credits:
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
       - tier: reference
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official

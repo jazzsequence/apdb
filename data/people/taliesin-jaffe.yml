@@ -95,16 +95,16 @@ credits:
     role: player
     season: 1
     character: Cayden
-    note: 'IMDb (spelled "Kayden") had this filed under the generic "sagas-of-sundry"
+    note: IMDb (spelled "Kayden") had this filed under the generic "sagas-of-sundry"
       catch-all, which bundles several distinct one-shots (Dread, Madness,
       Goblin Mode) under one playlist. Retargeted to the specific one-shot its
-      own cast list names.'
+      own cast list names.
     alias: default
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PL7atuZxmT954X1GShT_jOY98YgS04FA3B
-        note: Cast and characters per the show's own description, corroborated
-          by its own YouTube video description.
+        note: Cast and characters per the show's own description, corroborated by its
+          own YouTube video description.
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
@@ -127,7 +127,8 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
         tier: community
   - show: candela-obscura
     season: 2
@@ -135,7 +136,8 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
-        note: "Circle of Needle and Thread cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of Needle and Thread cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
   - show: candela-obscura
     season: 3
@@ -143,7 +145,8 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
   - show: candela-obscura
     role: writer
@@ -166,13 +169,20 @@ credits:
       - *a1
       - *a2
       - *a3
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi
+        note: "Official Campaign 4 cast list, from the Critical Role channel's own
+          episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
+          Critical Role: Campaign 4."
+    character: Bolaire Lathalia
   - show: candela-obscura
     season: 4
     role: player
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
-        note: "Circle of the Crimson Mirror cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Crimson Mirror cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
         tier: community
       - &a4
         tier: reference
@@ -193,7 +203,8 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
       - *a4
       - *a5

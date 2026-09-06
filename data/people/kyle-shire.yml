@@ -30,6 +30,11 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi
+        note: "Official Campaign 4 cast list, from the Critical Role channel's own
+          episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
+          Critical Role: Campaign 4."
   - show: exandria-unlimited
     season: 5
     role: producer

@@ -108,16 +108,15 @@ credits:
     role: player
     season: 1
     character: Emmett
-    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all,
-      which bundles several distinct one-shots (Dread, Madness, Goblin Mode)
-      under one playlist. Retargeted to the specific one-shot its own cast
-      list names.
+    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all, which
+      bundles several distinct one-shots (Dread, Madness, Goblin Mode) under one
+      playlist. Retargeted to the specific one-shot its own cast list names.
     alias: default
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PL7atuZxmT955p1uySG2OpFPZ30I3wnIef
-        note: Cast and characters per the show's own description, repeated
-          verbatim across every episode's own description.
+        note: Cast and characters per the show's own description, repeated verbatim
+          across every episode's own description.
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
@@ -136,7 +135,8 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
-        note: "Circle of the Crimson Mirror cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Crimson Mirror cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
         tier: community
   - show: candela-obscura
     role: GM/DM
@@ -159,6 +159,12 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Campaign_Four
         note: Campaign Four cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi
+        note: "Official Campaign 4 cast list, from the Critical Role channel's own
+          episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
+          Critical Role: Campaign 4."
+    character: Halandil "Hal" Fang
   - show: exandria-unlimited
     season: 1
     role: player
@@ -177,7 +183,8 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
       - &a4
         tier: reference
@@ -191,7 +198,8 @@ credits:
     note: Listed as a guest player for this season; specific episodes not identified.
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
       - *a4
   - show: critical-role-specials
