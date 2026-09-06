@@ -139,6 +139,17 @@ credits:
         url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
         note: "High Rollers Presents: Warhammer Fantasy Roleplay cast/DM, via the
           high-rollers-dnd.fandom.com infobox and character table. CC-BY-SA."
+  - show: nights-of-eveningstar
+    season: 1
+    role: GM/DM
+    alias: hulmes
+    year: "2020"
+    sources:
+      - tier: reference
+        url: https://x.com/wizards_dnd/status/1283449269886672897
+        note: "Official D&D account naming @sherlock_hulmes as DM for season 1 of
+          \"Nights of Eveningstar\" — the name credited before her March 2026
+          legal name change."
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/d/da/Altheya_50_DM_Mara.png/revision/latest/scale-to-width-down/400?cb=20250212065303
   licence: fair use
