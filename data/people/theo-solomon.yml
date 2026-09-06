@@ -36,3 +36,13 @@ credits:
         url: https://www.mtgfestivals.com/global/en-us/magiccon-news/your-guide-to-dand-at-magiccon-and-the-full-star-studded-cast-of-dand-live.html
         note: Independent guide corroborating the DM and full player cast for the
           same session.
+  - show: what-we-do-in-the-shadow-cursed-lands
+    season: 1
+    role: player
+    character: Wyll
+    alias: default
+    year: "2024"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=imf5VIk_zmQ
+        note: "Cast per the production's own description of \"Baldur's Gate 3 Cast Play D&D Live | With Astarion, Karlach, Wyll and Lae'zel\"."

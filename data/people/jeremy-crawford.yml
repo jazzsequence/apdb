@@ -64,6 +64,15 @@ credits:
       - tier: official
         url: https://www.youtube.com/watch?v=Fbjw9h0lK3k
         note: "Cast per the production's own description of \"WWE Superstars Game - D&D Live 2020\"."
+  - show: what-we-do-in-the-shadow-cursed-lands
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2024"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=imf5VIk_zmQ
+        note: "Cast per the production's own description of \"Baldur's Gate 3 Cast Play D&D Live | With Astarion, Karlach, Wyll and Lae'zel\"."
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/7/73/Dnd_stream_jeremy.png/revision/latest?cb=20220409055847
   licence: fair use

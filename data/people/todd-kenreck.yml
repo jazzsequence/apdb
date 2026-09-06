@@ -1,0 +1,17 @@
+id: todd-kenreck
+canonical_name: Todd Kenreck
+sort_name: Kenreck, Todd
+aliases:
+  - id: default
+    name: Todd Kenreck
+    alias_type: legal
+credits:
+  - show: what-we-do-in-the-shadow-cursed-lands
+    season: 1
+    role: producer
+    alias: default
+    year: "2024"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=imf5VIk_zmQ
+        note: "Cast per the production's own description of \"Baldur's Gate 3 Cast Play D&D Live | With Astarion, Karlach, Wyll and Lae'zel\"."
