@@ -8,6 +8,31 @@ const base = import.meta.env.BASE_URL;
 
 const creditCount = db.people.reduce((sum, p) => sum + p.credits.length, 0);
 
+// Dataset markup, not a page-about-itself description: this is what gets
+// picked up by Google Dataset Search and is the clearest machine-legible
+// signal that the JSON API is the canonical distribution of this data,
+// not the HTML. `distribution` mirrors /api/index.json's endpoint list.
+const apiUrl = (path: string) => new URL(`${base}api/${path}`, Astro.site).toString();
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Actual Play Database',
+  description:
+    'An index of actual-play tabletop RPG credits organised by person — every show, season and one-off guest spot, including the indie long tail no other index tracks.',
+  url: new URL(base, Astro.site).toString(),
+  // No `license` field: the project deliberately declares no data licence
+  // beyond what's stated in the git repository itself (see llms.txt) —
+  // asserting one here would be a stronger claim than that.
+  isAccessibleForFree: true,
+  creator: { '@type': 'Organization', name: 'Actual Play Database', url: new URL(base, Astro.site).toString() },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: apiUrl('people.json'), name: 'People' },
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: apiUrl('shows.json'), name: 'Shows' },
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: apiUrl('channels.json'), name: 'Channels' },
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: apiUrl('games.json'), name: 'Games' },
+  ],
+};
+
 // Most credited. Ties broken by number of distinct shows, so someone with 20
 // credits across 9 shows ranks above someone with 20 on one long-running one.
 const mostCredited = [...db.people]
@@ -76,6 +101,7 @@ function formatViews(n: number): string {
 <Base
   title="Actual Play Database"
   description="An index of actual play TTRPG credits, by person. Every show, every season, every guest spot — including the indie long tail."
+  jsonLd={jsonLd}
 >
   <h1>Actual Play Database</h1>
 
