@@ -43,6 +43,8 @@ seasons:
   - ordinal: 4
     title: "Age of Umbra: Sallowlands"
     game: daggerheart
+    links:
+      website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQyLAwOfoBe6HjYZMnQbXNaZ
     image:
       url: https://critrole.com/wp-content/uploads/2026/06/AOU_SALLOWLANDS_key-art_names_1920x1080-1-1024x576.jpg
       licence: fair use
