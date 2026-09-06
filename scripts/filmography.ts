@@ -79,7 +79,7 @@ async function main(): Promise<void> {
     for (const {
       credit,
       season,
-      game,
+      games,
       alias,
       creditedUnderFormerName,
       tier,
@@ -95,7 +95,10 @@ async function main(): Promise<void> {
       const bits = [
         credit.role,
         credit.character ? `as ${credit.character}` : null,
-        game ? `[${game.name} ${game.edition}]` : null,
+        // A season can span several systems (an anthology of one-shots, or a
+        // campaign that switched rules partway through), which is why this is
+        // a list — printing games[0] would silently drop the rest.
+        games.length > 0 ? `[${games.map((g) => `${g.name} ${g.edition}`).join(' + ')}]` : null,
       ].filter(Boolean);
 
       console.log(`      ${where || 'show-level'}`);

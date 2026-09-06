@@ -478,7 +478,9 @@ export type Source = z.infer<typeof Source>;
 export type Image = z.infer<typeof Image>;
 export type Channel = z.infer<typeof Channel>;
 export type Game = z.infer<typeof Game>;
-export type Season = z.infer<typeof Season>;
+// Season is deliberately absent here: it is exported next to its schema above,
+// because seasonGameIds() needs the type before this block. Declaring it in
+// both places is a redeclaration error, not a harmless duplicate.
 export type Show = z.infer<typeof Show>;
 export type Alias = z.infer<typeof Alias>;
 export type Credit = z.infer<typeof Credit>;
