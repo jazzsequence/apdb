@@ -97,6 +97,15 @@ const GAME_CATEGORY =
  * nothing else, so no category rule can separate them from a show.
  * "Dungeon Master" is filed under exactly one category: "Dungeons & Dragons".
  */
+/**
+ * In-universe and rules articles. Prose describing a character names their
+ * class, species and home city, and every one of those links to a Dungeons &
+ * Dragons article whose categories match TTRPG_CATEGORY — so "a dwarf cleric
+ * from Waterdeep" contributed three candidate shows per sentence.
+ */
+const IN_UNIVERSE_CATEGORY =
+  /(character classes|creatures|monsters|\bdeities\b|\bfictional\b|campaign settings|magic items|\bspells\b|\braces\b|locations)/i;
+
 const CONCEPT_TITLE =
   /^(dungeon master|game ?master|storyteller|player character|non-player character|tabletop role-playing game|role-playing game|actual play|live streaming|twitch|youtube|podcast|web series)$/i;
 
@@ -159,10 +168,20 @@ export function classify(title: string, facts: WorkFacts): Classification {
     [STAGE_CATEGORY, 'a stage production — theatre, not actual play'],
     [CONCEPT_CATEGORY, 'a concept, terminology or list article, not a work'],
     [GAME_CATEGORY, 'the game system itself, not a show played in it'],
+    [IN_UNIVERSE_CATEGORY, 'an in-universe or rules article, not a work'],
   ];
   for (const [pattern, why] of disqualifiers) {
     const hit = categories.find((c) => pattern.test(c));
     if (hit) return { verdict: 'excluded', reasons: [`category "${hit}" — ${why}`] };
+  }
+
+  // Where the person's own article files the work. This runs before the
+  // tabletop-category rule below, not after it: an Adventure Zone graphic
+  // novel sits under "Bibliography" but still carries D&D categories, so
+  // leaving the section check last meant it was never reached and every
+  // tie-in book queued as a candidate series.
+  if (/\b(film|television|tv|video game|music|discography|theatre|theater|writing|bibliography|books?|graphic novels?|comics?|publications?)\b/i.test(section)) {
+    return { verdict: 'excluded', reasons: [`listed under "${section}" on the person's article`] };
   }
 
   const apCategory = categories.filter((c) => AP_CATEGORY.test(c));
@@ -190,10 +209,6 @@ export function classify(title: string, facts: WorkFacts): Classification {
   if (ttrpg.length > 0) {
     reasons.push(`category "${ttrpg[0]}" — tabletop, but nothing says actual play`);
     return { verdict: 'unclear', reasons };
-  }
-
-  if (/\b(film|television|tv|video game|music|discography|theatre|theater|writing|bibliography)\b/i.test(section)) {
-    return { verdict: 'excluded', reasons: [`listed under "${section}" on the person's article`] };
   }
 
   if (facts.missing) {
