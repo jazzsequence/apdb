@@ -1,19 +1,11 @@
-id: kelly-lynne-d-angelo
-canonical_name: Kelly Lynne D'Angelo
-sort_name: D'Angelo, Kelly Lynne
+id: alex-lee
+canonical_name: Alex Lee
+sort_name: Lee, Alex
 aliases:
   - id: default
-    name: Kelly Lynne D'Angelo
+    name: Alex Lee
     alias_type: legal
 credits:
-  - show: la-by-night
-    season: 1
-    role: player
-    character: Diane
-    alias: default
-    sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/L.A._by_Night
   - show: d-d-live-2019-the-descent
     season: 1
     episode: Part 1

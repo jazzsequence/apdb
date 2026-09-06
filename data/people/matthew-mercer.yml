@@ -392,3 +392,13 @@ credits:
         url: https://www.imdb.com/title/tt22090648/fullcredits
         note: "IMDb full cast and crew for \"Force Grey: Lost City of Omu\" episode
           1, via the official datasets, naming Matthew Mercer as Dungeon Master."
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 4
+    role: player
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."

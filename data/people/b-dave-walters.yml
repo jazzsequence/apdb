@@ -137,6 +137,16 @@ credits:
       - tier: community
         url: https://black-dice-society.fandom.com/wiki/Cast
         note: Cast page on the show's own wiki. CC-BY-SA.
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 4
+    role: player
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/b/be/PCMarcid.png/revision/latest/scale-to-width-down/400?cb=20200813045748
   licence: fair use

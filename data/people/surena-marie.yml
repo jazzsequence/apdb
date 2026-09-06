@@ -31,6 +31,16 @@ credits:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
         note: Season-by-season DM table per Wikipedia.
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 1
+    role: player
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=onH65amYMPI
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 1\"."
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/9/98/SurenaMarieCoF%26F.png/revision/latest/scale-to-width-down/400?cb=20230206131548
   licence: fair use

@@ -31,3 +31,13 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/New_Game%2C_Who_Dis%3F
         note: New Game, Who Dis? cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 4
+    role: player
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."

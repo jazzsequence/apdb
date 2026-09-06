@@ -44,6 +44,16 @@ credits:
         url: https://www.imdb.com/title/tt29338249/fullcredits/
         note: IMDb full cast and crew for "Acquisitions, Incorporated" (2023), via the
           official datasets.
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 1
+    role: GM/DM
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=onH65amYMPI
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 1\"."
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/7/73/Dnd_stream_jeremy.png/revision/latest?cb=20220409055847
   licence: fair use

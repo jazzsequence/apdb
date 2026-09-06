@@ -222,6 +222,16 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
         note: Cast per Geek & Sundry.
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 3
+    role: GM/DM
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=gyKvnUZiX1M
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 3\"."
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/2/2e/C4_Marisha.jpg/revision/latest/scale-to-width-down/400?cb=20251001205749
   licence: fair use

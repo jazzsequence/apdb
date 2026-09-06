@@ -221,6 +221,16 @@ credits:
           acquisitionsincorporated.fandom.com infobox. CC-BY-SA.
       - *a1
       - *a2
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 2
+    role: player
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=yEnbAC3mtGU
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent Part 2\"."
 wikidata_qid: Q15077926
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/6/60/Jerryholkins20090209.jpg

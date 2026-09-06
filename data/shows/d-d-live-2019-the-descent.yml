@@ -1,0 +1,32 @@
+id: d-d-live-2019-the-descent
+title: "D&D Live 2019: The Descent"
+channels:
+  - dungeons-dragons
+format: stream
+status: completed
+description: "Four-part live event staged in Los Angeles in May 2019 to preview
+  the Baldur's Gate: Descent into Avernus storyline. Each part was a separate
+  game with its own dungeon master and its own celebrity cast, run by Wizards of
+  the Coast staff designers and guest GMs rather than a single recurring table."
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYoMb-kfsrdHTrOjFLz5BnoV
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2019-05"
+    ended: "2019-05"
+    episode_count: 4
+    description: The four played parts. The event playlist also carries opening
+      ceremonies, a concert and a Relics & Rarities episode, which are not
+      counted here.
+image:
+  url: https://i.ytimg.com/vi/onH65amYMPI/hqdefault.jpg
+  licence: fair use
+  attribution: "D&D Live 2019: The Descent series art, © its producers. Via
+    YouTube."
+  source: https://www.youtube.com/watch?v=onH65amYMPI
+  depicts: "Series art for D&D Live 2019: The Descent"
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

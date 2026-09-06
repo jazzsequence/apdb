@@ -49,3 +49,13 @@ credits:
         url: https://x.com/wizards_dnd/status/1283449269886672897
         note: "Official D&D account announcing the season 1 cast and DM of \"Nights
           of Eveningstar\"."
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 4
+    role: player
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."

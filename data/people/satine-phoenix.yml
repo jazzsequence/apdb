@@ -47,3 +47,13 @@ credits:
         url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
         note: Announcement naming the DM, commentators and full contestant list.
     alias: default
+  - show: d-d-live-2019-the-descent
+    season: 1
+    episode: Part 3
+    role: player
+    alias: default
+    year: "2019"
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=gyKvnUZiX1M
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 3\"."
