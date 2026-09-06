@@ -19,10 +19,14 @@ git log -1 --format='%ar (%ad)' --date=short -- data/shows data/channels
 
 ## 2. Known wikis — re-run `--discover` against each one
 
-A wiki that already has an adapter can grow new campaign pages at any time.
-`collect --discover` already dedupes against the current catalogue (it skips
-anything whose id or `seasons_of` it recognizes), so re-running it is exactly
-"what's new since last time":
+**`--dry-run` does NOT dedupe against the existing catalogue.** In
+`scripts/collect.ts`, the `--dry-run` branch of `discoverShows()` prints
+every page and `return`s *before* reaching the `known.has(id)` check further
+down — that check only runs on the write path (plain or `--seasons-of`).
+Plain `--dry-run` output is every campaign page the wiki has, full stop, not
+a diff. (An earlier version of this skill claimed otherwise — don't trust
+`(already have ...)` / `(already a season)` annotations from a bare
+`--dry-run` run; those markers only appear once you're on the write path.)
 
 ```bash
 for host in \
@@ -40,10 +44,29 @@ for host in \
 done
 ```
 
-Lines like `– Some Page (already have some-id)` or `(already a season)` are
-noise — the wiki hasn't grown. Anything printed *without* one of those
-markers is a genuinely new page this pass found. Regenerate this host list
-first if it's been a while — grep for it instead of trusting a stale copy:
+Some of these hosts will error with "no campaign pages found... may use a
+template name this adapter doesn't know" — that's a `CAMPAIGN_TEMPLATES` gap
+in `src/lib/sources/mediawiki.ts`, not evidence the wiki has nothing. Note
+which hosts fail this way; don't read it as "zero candidates."
+
+You have to do the diffing yourself:
+
+- Pull every existing show **title** (not just id) and every existing
+  **season title** — a wiki's "campaign" is very often a season of a show
+  already in the catalogue (Dimension 20's 30-odd campaigns are one show),
+  and id-slug matching alone misses that:
+
+  ```bash
+  grep -h '^title:\|^  title:\|^    title:' data/shows/*.yml | sed 's/^\s*title:\s*//' | tr -d '"' | sort -u
+  ```
+
+- Compare each printed page title against that list (case/punctuation loose
+  — a wiki writes "&" where a curator wrote "and"). Anything with no
+  reasonable match is a real candidate; anything that matches a season title
+  is fillable via `--seasons-of <show-id>`, not a new show.
+
+Regenerate the host list itself first if it's been a while — grep for it
+instead of trusting a stale copy:
 
 ```bash
 grep -rhoE 'https?://[a-z0-9.-]+\.(fandom|miraheze)\.(com|org)' data/shows/*.yml data/people/*.yml \
@@ -85,6 +108,17 @@ npm run sweep:youtube -- --dry-run
 ```bash
 npm run import:archive -- --dry-run
 ```
+
+Same caveat as the wiki pass: **`--dry-run` doesn't dedupe either.** In
+`scripts/import-archive.ts`, the `has('dry-run')` branch logs and
+`continue`s before the later `if (existingShows.has(showId)) continue;`
+check, so every series above `--min-episodes` prints regardless of whether
+it's already in `data/shows/`. Diff the printed titles against
+`data/shows/*.yml` yourself (slugify the printed title and check for a
+matching filename, or match on title text — the archive importer slugifies
+with the same scheme `collect.ts` does). Series without a recognizable
+system tag are skipped by the script itself and won't print at all; that's
+a separate, silent gap worth noting in the report, not zero results.
 
 This is the only source here for shows whose sites/feeds are already gone,
 so it's worth including even though it moves slower than the others.
