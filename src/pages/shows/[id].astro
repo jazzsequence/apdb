@@ -53,6 +53,24 @@ const jsonLd = {
     productionCompany: channels.map((c) => ({ '@type': 'Organization', name: c.name })),
   }),
   sameAs: Object.values(show.links).filter((v): v is string => Boolean(v)),
+  // `contributor` (not `actor` — CreativeWorkSeries/PodcastSeries don't
+  // formally support it) accepts a Role wrapper per the schema.org Role
+  // pattern, which is how a credited role gets attached to a linked Person
+  // rather than a bare name. This is the concrete expression of the
+  // project's whole premise — credits organised by person — in the one
+  // place a crawler can actually follow it.
+  ...(cast.length > 0 && {
+    contributor: cast.map((member) => ({
+      '@type': 'Role',
+      roleName: member.credit.role,
+      contributor: {
+        '@type': 'Person',
+        '@id': new URL(`${base}people/${member.person.id}/`, Astro.site).toString(),
+        name: member.alias?.name ?? member.person.canonical_name,
+        url: new URL(`${base}people/${member.person.id}/`, Astro.site).toString(),
+      },
+    })),
+  }),
 };
 ---
 

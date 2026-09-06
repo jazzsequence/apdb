@@ -30,7 +30,29 @@ const jsonLd = {
   sameAs: [
     person.links.wikipedia,
     person.wikidata_qid && `https://www.wikidata.org/wiki/${person.wikidata_qid}`,
+    person.links.website,
+    person.links.youtube,
+    person.links.podcast,
+    person.links.forum,
+    person.links.bluesky,
+    person.links.mastodon,
+    person.links.twitch,
   ].filter((v): v is string => Boolean(v)),
+  // Mirrors the `contributor`/Role pattern on the show page from the other
+  // direction, so the show <-> person link is crawlable both ways rather
+  // than only from the show out.
+  ...(groups.length > 0 && {
+    subjectOf: groups.map((group) => ({
+      '@type': 'Role',
+      roleName: [...new Set(group.credits.map((c) => c.credit.role))].join(', '),
+      subjectOf: {
+        '@type': group.show.format === 'podcast' ? 'PodcastSeries' : 'CreativeWorkSeries',
+        '@id': new URL(`${base}shows/${group.show.id}/`, Astro.site).toString(),
+        name: group.show.title,
+        url: new URL(`${base}shows/${group.show.id}/`, Astro.site).toString(),
+      },
+    })),
+  }),
 };
 ---
 
