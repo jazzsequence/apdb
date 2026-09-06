@@ -65,8 +65,8 @@ credits:
     sources:
       - tier: community
         url: https://high-rollers-dnd.fandom.com/wiki/Lightfall_(Campaign)
-        note: Lightfall (Campaign) cast, via the high-rollers-dnd.fandom.com
-          infobox. CC-BY-SA.
+        note: Lightfall (Campaign) cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.
   - show: warhammer-fantasy-roleplay
     season: 1
     role: player
@@ -97,6 +97,16 @@ credits:
         url: https://www.youtube.com/watch?v=KE-8q08L11k
         note: "Cast per the production's own description of \"High Rollers: Aerois #147
           | The Best Defense\"."
+  - show: high-rollers-dnd
+    season: 12
+    role: player
+    character: Siegfried Bummell
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+        note: "High Rollers Presents: Warhammer Fantasy Roleplay cast/DM, via the
+          high-rollers-dnd.fandom.com infobox and character table. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/f/f2/Chris_Trott.png/revision/latest?cb=20210209080421
   licence: fair use

@@ -30,7 +30,7 @@ credits:
   - show: high-rollers-dnd
     season: 6
     role: player
-    character: "Jiǔtóu Zhìjī Jīng"
+    character: Jiǔtóu Zhìjī Jīng
     alias: default
     sources:
       - tier: community
@@ -60,17 +60,17 @@ credits:
   - show: high-rollers-dnd
     season: 2
     role: player
-    character: "Jiǔtóu Zhìjī Jīng"
+    character: Jiǔtóu Zhìjī Jīng
     alias: default
     sources:
       - tier: community
         url: https://high-rollers-dnd.fandom.com/wiki/Lightfall_(Campaign)
-        note: Lightfall (Campaign) cast, via the high-rollers-dnd.fandom.com
-          infobox. CC-BY-SA.
+        note: Lightfall (Campaign) cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.
   - show: warhammer-fantasy-roleplay
     season: 1
     role: player
-    character: "Groß Harry Rattenfänger"
+    character: Groß Harry Rattenfänger
     alias: default
     sources:
       - tier: community
@@ -85,7 +85,8 @@ credits:
     sources:
       - tier: community
         url: https://high-rollers-dnd.fandom.com/wiki/Tales_of_Xadia
-        note: Tales of Xadia cast, via the high-rollers-dnd.fandom.com infobox. CC-BY-SA.
+        note: Tales of Xadia cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.
   - show: high-rollers-dnd
     season: 3
     role: player
@@ -106,6 +107,16 @@ credits:
         url: https://www.youtube.com/watch?v=KE-8q08L11k
         note: "Cast per the production's own description of \"High Rollers: Aerois #147
           | The Best Defense\"."
+  - show: high-rollers-dnd
+    season: 12
+    role: player
+    character: Groß Harry Rattenfänger
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+        note: "High Rollers Presents: Warhammer Fantasy Roleplay cast/DM, via the
+          high-rollers-dnd.fandom.com infobox and character table. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/5/51/Kim_Richards.jpg/revision/latest?cb=20210301080519
   licence: fair use

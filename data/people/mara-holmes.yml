@@ -130,6 +130,15 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Thresher
         note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
+  - show: high-rollers-dnd
+    season: 12
+    role: GM/DM
+    alias: holmes
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+        note: "High Rollers Presents: Warhammer Fantasy Roleplay cast/DM, via the
+          high-rollers-dnd.fandom.com infobox and character table. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/d/da/Altheya_50_DM_Mara.png/revision/latest/scale-to-width-down/400?cb=20250212065303
   licence: fair use

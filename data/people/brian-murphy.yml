@@ -145,6 +145,15 @@ credits:
       - url: https://dimension20.fandom.com/wiki/Time_Quangle
         note: Time Quangle cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
+  - show: dimension-20
+    season: 32
+    role: player
+    character: Ol' Clyde Horsey
+    alias: default
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Toylight
+        note: Toylight cast/GM, via the dimension20.fandom.com infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/1/14/Brian_Murphy_as_Riz_Gukgak.png/revision/latest/scale-to-width-down/400?cb=20200508135652
   licence: fair use

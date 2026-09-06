@@ -9,7 +9,7 @@ credits:
   - show: high-rollers-dnd
     season: 11
     role: player
-    character: "Ophelia D'larosa"
+    character: Ophelia D'larosa
     alias: default
     sources:
       - tier: community
@@ -20,10 +20,10 @@ credits:
     season: 7
     role: player
     character: The Mire
-    note: The Mire is a hive-mind entity created live by Tom Hazell and
-      Rhiannon Frost together on a special stream (Jan 26, 2021); her form
-      is a swarmkeeper, his a spore druid — two people playing one shared
-      character concept, not a duplicate credit.
+    note: The Mire is a hive-mind entity created live by Tom Hazell and Rhiannon
+      Frost together on a special stream (Jan 26, 2021); her form is a
+      swarmkeeper, his a spore druid — two people playing one shared character
+      concept, not a duplicate credit.
     alias: default
     sources:
       - tier: community
@@ -68,7 +68,8 @@ credits:
     sources:
       - tier: community
         url: https://high-rollers-dnd.fandom.com/wiki/Tales_of_Xadia
-        note: Tales of Xadia cast, via the high-rollers-dnd.fandom.com infobox. CC-BY-SA.
+        note: Tales of Xadia cast, via the high-rollers-dnd.fandom.com infobox.
+          CC-BY-SA.
   - show: high-rollers-dnd
     season: 3
     role: player
@@ -79,6 +80,16 @@ credits:
         url: https://www.youtube.com/watch?v=Vrx5Tuu4xnM
         note: "Cast per the production's own description of \"A World of Stories |
           Altheya: The Dragon Empire #1\"."
+  - show: high-rollers-dnd
+    season: 12
+    role: player
+    character: Ernesta Thorn
+    alias: default
+    sources:
+      - tier: community
+        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+        note: "High Rollers Presents: Warhammer Fantasy Roleplay cast/DM, via the
+          high-rollers-dnd.fandom.com infobox and character table. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/0/06/Rhiannon_Frost.png/revision/latest?cb=20210209080247
   licence: fair use

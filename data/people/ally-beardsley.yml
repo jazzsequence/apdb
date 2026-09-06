@@ -164,6 +164,15 @@ credits:
       - *a1
       - *a2
       - *a3
+  - show: dimension-20
+    season: 32
+    role: player
+    character: Calypso
+    alias: default
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Toylight
+        note: Toylight cast/GM, via the dimension20.fandom.com infobox. CC-BY-SA.
 wikidata_qid: Q115121354
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/9/97/Ally_Beardsley%2C_2024.jpg

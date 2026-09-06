@@ -4,10 +4,21 @@ channels:
   - dropout
 format: video
 status: ongoing
-description: Dropout's anthology actual-play series. Seasons rotate cast, setting, and system.
+description: Dropout's anthology actual-play series. Seasons rotate cast,
+  setting, and system.
 links:
   website: https://www.dropout.tv/dimension-20
   wikipedia: https://en.wikipedia.org/wiki/Dimension_20
+image:
+  url: https://static.wikia.nocookie.net/fantasy-high/images/2/2f/Introfh.png/revision/latest/scale-to-width-down/400?cb=20200508134334
+  licence: fair use
+  attribution: Dimension 20 key art, © its producers. Via dimension20.fandom.com.
+  source: https://dimension20.fandom.com/wiki/File:Introfh.png
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.
+  depicts: Key art for Fantasy High
 seasons:
   - ordinal: 1
     title: Fantasy High
@@ -215,13 +226,7 @@ seasons:
     ended: 2026-07-15
     links:
       website: https://www.youtube.com/playlist?list=PLuKg-WhduhkmgDrAxpUQOJ1PZRuGfKhI-
-image:
-  url: https://static.wikia.nocookie.net/fantasy-high/images/2/2f/Introfh.png/revision/latest/scale-to-width-down/400?cb=20200508134334
-  licence: fair use
-  attribution: Dimension 20 key art, © its producers. Via dimension20.fandom.com.
-  source: https://dimension20.fandom.com/wiki/File:Introfh.png
-  depicts: Key art for Fantasy High
-  rationale: Low-resolution thumbnail used solely to identify the show in an index
-    of its credits. Non-commercial, does not substitute for the original, and
-    links back to the source. Removed on request by the rights holder — see
-    POLICY.md.
+  - ordinal: 32
+    title: Toylight
+    game: dnd-5e-2024
+    started: 2026-09-16
