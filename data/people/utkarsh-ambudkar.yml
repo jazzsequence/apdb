@@ -24,6 +24,26 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: force-grey-giant-hunters
+    season: 1
+    role: player
+    character: Hitch
+    alias: default
+    year: "2016"
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/74400-force-grey-giant-hunters/cast
+        note: "Cast and character names for \"Force Grey: Giant Hunters\" per TMDB."
+  - show: force-grey-lost-city-of-omu
+    season: 1
+    role: player
+    alias: default
+    year: "2017"
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22090648/fullcredits
+        note: "IMDb full cast and crew for \"Force Grey: Lost City of Omu\" episode
+          1, via the official datasets. Character not confirmed here."
 wikidata_qid: Q7902890
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Utkarsh_Ambudkar_Photo_Op_GalaxyCon_Columbus_2024.jpg

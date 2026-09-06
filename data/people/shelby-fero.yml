@@ -1,0 +1,18 @@
+id: shelby-fero
+canonical_name: Shelby Fero
+sort_name: Fero, Shelby
+aliases:
+  - id: default
+    name: Shelby Fero
+    alias_type: legal
+credits:
+  - show: force-grey-giant-hunters
+    season: 1
+    role: player
+    character: Brawlwin Chainminer
+    alias: default
+    year: "2016"
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/74400-force-grey-giant-hunters/cast
+        note: "Cast and character names for \"Force Grey: Giant Hunters\" per TMDB."

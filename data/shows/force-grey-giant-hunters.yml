@@ -1,0 +1,16 @@
+id: force-grey-giant-hunters
+title: "Force Grey: Giant Hunters"
+channels:
+  - nerdist
+format: video
+status: completed
+description: "System per source: D&D 5th Edition. Celebrity actual play
+  co-produced by Nerdist and Wizards of the Coast, tying into the Storm
+  King's Thunder storyline. DM'd by Matthew Mercer."
+links:
+  website: https://www.youtube.com/playlist?list=PLjdfbL5LrCRgAhjPHdOVqm4JGkmPhJZna
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2016-07"
+    episode_count: 8

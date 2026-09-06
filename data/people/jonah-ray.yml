@@ -1,0 +1,18 @@
+id: jonah-ray
+canonical_name: Jonah Ray
+sort_name: Ray, Jonah
+aliases:
+  - id: default
+    name: Jonah Ray
+    alias_type: legal
+credits:
+  - show: force-grey-giant-hunters
+    season: 1
+    role: player
+    character: Joppa
+    alias: default
+    year: "2016"
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/74400-force-grey-giant-hunters/cast
+        note: "Cast and character names for \"Force Grey: Giant Hunters\" per TMDB."

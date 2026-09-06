@@ -67,3 +67,13 @@ credits:
         url: https://bleedingcool.com/games/dungeons-dragons-to-debut-champions-of-the-realm-in-january/
         note: Announcement naming the DM, commentators and full contestant list.
     alias: default
+  - show: force-grey-lost-city-of-omu
+    season: 1
+    role: player
+    alias: default
+    year: "2017"
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22090648/fullcredits
+        note: "IMDb full cast and crew for \"Force Grey: Lost City of Omu\" episode
+          1, via the official datasets. Character not confirmed here."

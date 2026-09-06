@@ -370,3 +370,25 @@ credits:
         url: https://www.siliconera.com/watch-the-suikoden-critical-role-one-shot-campaign/
         note: Independent report naming the same cast and confirming D&D 5th Edition.
     alias: default
+  - show: force-grey-giant-hunters
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2016"
+    sources:
+      - tier: reference
+        url: https://www.themoviedb.org/tv/74400-force-grey-giant-hunters/cast
+        note: "DM credit for \"Force Grey: Giant Hunters\" per TMDB."
+      - tier: reference
+        url: https://www.avclub.com/meet-d-d-s-force-grey-giant-hunters-in-this-exclusive-1798249092
+        note: Contemporary press coverage naming Matthew Mercer as DM.
+  - show: force-grey-lost-city-of-omu
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2017"
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22090648/fullcredits
+        note: "IMDb full cast and crew for \"Force Grey: Lost City of Omu\" episode
+          1, via the official datasets, naming Matthew Mercer as Dungeon Master."

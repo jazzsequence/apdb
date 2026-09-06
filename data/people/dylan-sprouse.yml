@@ -1,0 +1,18 @@
+id: dylan-sprouse
+canonical_name: Dylan Sprouse
+sort_name: Sprouse, Dylan
+aliases:
+  - id: default
+    name: Dylan Sprouse
+    alias_type: legal
+credits:
+  - show: force-grey-lost-city-of-omu
+    season: 1
+    role: player
+    alias: default
+    year: "2017"
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22090648/fullcredits
+        note: "IMDb full cast and crew for \"Force Grey: Lost City of Omu\" episode
+          1, via the official datasets. Character not confirmed here."

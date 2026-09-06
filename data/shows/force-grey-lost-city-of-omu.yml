@@ -1,0 +1,15 @@
+id: force-grey-lost-city-of-omu
+title: "Force Grey: Lost City of Omu"
+channels:
+  - nerdist
+format: video
+status: completed
+description: "System per source: D&D 5th Edition. Second season of the
+  celebrity actual play co-produced by Nerdist and Wizards of the Coast,
+  tying into the Tomb of Annihilation storyline. DM'd by Matthew Mercer."
+links:
+  website: https://www.youtube.com/playlist?list=PLfS8QgUdeGYrqGfhq79VojkG8iTQ7J6HB
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2017-07"

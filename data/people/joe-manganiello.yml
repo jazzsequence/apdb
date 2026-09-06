@@ -51,6 +51,16 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/130540-celebrid-d/cast
         note: Cast for "CelebriD&D" per TMDB.
+  - show: force-grey-lost-city-of-omu
+    season: 1
+    role: player
+    alias: default
+    year: "2017"
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt22090648/fullcredits
+        note: "IMDb full cast and crew for \"Force Grey: Lost City of Omu\" episode
+          1, via the official datasets. Character not confirmed here."
 wikidata_qid: Q470005
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Joe_Manganiello_July_2015.jpg
