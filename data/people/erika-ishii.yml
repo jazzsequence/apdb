@@ -21,9 +21,8 @@ credits:
     sources:
       - tier: community
         url: https://vampire-the-masquerade-la-by-night.fandom.com/wiki/Cast
-        note: The show's own wiki lists this as the consistent core cast
-          across the show's run, matching what's already recorded for
-          Season 4. CC-BY-SA.
+        note: The show's own wiki lists this as the consistent core cast across the
+          show's run, matching what's already recorded for Season 4. CC-BY-SA.
   - show: dimension-20
     season: 4
     role: player
@@ -33,6 +32,16 @@ credits:
         note: Escape from the Bloodkeep cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/dimension-20
+        note: Cast for "Dimension 20" per TheTVDB.
   - show: dimension-20
     season: 2
     role: player
@@ -123,16 +132,15 @@ credits:
     role: player
     season: 1
     character: Selina
-    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all,
-      which bundles several distinct one-shots (Dread, Madness, Goblin Mode)
-      under one playlist. Retargeted to the specific one-shot its own cast
-      list names.
+    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all, which
+      bundles several distinct one-shots (Dread, Madness, Goblin Mode) under one
+      playlist. Retargeted to the specific one-shot its own cast list names.
     alias: default
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PL7atuZxmT955p1uySG2OpFPZ30I3wnIef
-        note: Cast and characters per the show's own description, repeated
-          verbatim across every episode's own description.
+        note: Cast and characters per the show's own description, repeated verbatim
+          across every episode's own description.
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
@@ -143,23 +151,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/sagas-of-sundry
         note: Cast for "SAGAS OF SUNDRY" per TheTVDB.
-  - show: dimension-20
-    role: player
-    character: Lilith
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/dimension-20
-        note: Cast for "Dimension 20" per TheTVDB.
   - show: la-by-night
     season: 4
     role: player
@@ -202,8 +193,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=KtLcWpD16Uo
-        note: "Cast per the production's own description of \"Battle for Beyond:
-          Episode 1 | D&D Beyond\"."
+        note: "Cast per the production's own description of \"Battle for Beyond: Episode
+          1 | D&D Beyond\"."
       - tier: reference
         url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
         note: D&D Beyond's own announcement post, naming the DM and each player's

@@ -23,33 +23,6 @@ aliases:
     active_to: "2020"
     note: Birth name.
 credits:
-  - show: the-autumn-people
-    season: 1
-    role: player
-    character: Khairyn Antwi
-    alias: iyengar
-    sources:
-      - tier: official
-        url: https://happyjacks.org/autumnpeople/
-        note: Cast per the network's own show page.
-  - show: monsoon
-    season: 1
-    role: player
-    character: Io
-    alias: iyengar
-    sources:
-      - tier: official
-        url: https://happyjacks.org/monsoon/
-        note: Cast per the network's own show page.
-  - show: idolon-academy
-    season: 1
-    role: player
-    character: Tendai Collier aka "Eye"
-    alias: iyengar
-    sources:
-      - tier: official
-        url: https://happyjacks.org/idolonacademy/
-        note: Cast per the network's own show page.
   - show: desiquest
     season: 2
     episode: Always Look A Gift Horse in the Mouth | DesiQuest Winter Special Episode 1
@@ -61,15 +34,6 @@ credits:
         url: https://www.youtube.com/watch?v=xS5D-xI5f0w
         note: Cast per the episode's own description for "Always Look A Gift Horse in
           the Mouth | DesiQuest Winter Special Episode 1."
-  - show: salt-bay-court-of-thorns
-    season: 1
-    role: GM/DM
-    alias: iyengar
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Salt_Bay%3A_Court_of_Thorns
-        note: "Salt Bay: Court of Thorns cast, via the savingthrowshow.fandom.com
-          infobox. CC-BY-SA."
   - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
     season: 1
     episode: "RR2020-06: Kids on Bikes"
@@ -112,6 +76,52 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/critical-role
         note: Cast for "Critical Role" per TheTVDB.
+  - show: d-d-live-2021
+    season: 1
+    episode: Chaos Carnival
+    role: GM/DM
+    alias: iyengar
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
+  - show: the-autumn-people
+    season: 1
+    role: player
+    character: Khairyn Antwi
+    alias: iyengar
+    sources:
+      - tier: official
+        url: https://happyjacks.org/autumnpeople/
+        note: Cast per the network's own show page.
+  - show: monsoon
+    season: 1
+    role: player
+    character: Io
+    alias: iyengar
+    sources:
+      - tier: official
+        url: https://happyjacks.org/monsoon/
+        note: Cast per the network's own show page.
+  - show: idolon-academy
+    season: 1
+    role: player
+    character: Tendai Collier aka "Eye"
+    alias: iyengar
+    sources:
+      - tier: official
+        url: https://happyjacks.org/idolonacademy/
+        note: Cast per the network's own show page.
+  - show: salt-bay-court-of-thorns
+    season: 1
+    role: GM/DM
+    alias: iyengar
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Salt_Bay%3A_Court_of_Thorns
+        note: "Salt Bay: Court of Thorns cast, via the savingthrowshow.fandom.com
+          infobox. CC-BY-SA."
   - show: dimension-20
     season: 8
     role: player
@@ -160,17 +170,6 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/exandria-unlimited
         note: Cast for "Exandria Unlimited" per TheTVDB.
-  - show: pirates-of-salt-bay
-    role: player
-    character: Fleabag
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against. IMDb credits this at series level; which of this show's seasons
-      it covers is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt18883950/fullcredits/
-        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
-          datasets.
   - show: exandria-unlimited
     season: 1
     role: GM/DM
@@ -282,6 +281,13 @@ credits:
         note: Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
   - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
     season: 1
     role: GM/DM
@@ -298,40 +304,6 @@ credits:
       - tier: official
         url: https://happyjacks.org/dragonheist/
         note: Cast per the network's own show page.
-  - show: pirates-of-salt-bay
-    role: GM/DM
-    note: Matched to IMDb on title alone; no existing credit here to cross-check
-      against. IMDb credits this at series level; which of this show's seasons
-      it covers is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt18883950/fullcredits/
-        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
-          datasets.
-  - show: candela-obscura
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
-        note: Cast for "Candela Obscura" per TMDB.
-  - show: critical-role
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
   - show: carefree-high
     season: 1
     role: player
@@ -404,6 +376,11 @@ credits:
       - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         note: Wikipedia says player; the show's own wiki says GM.
         tier: community
+      - &a6
+        tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
   - show: pirates-of-salt-bay
     season: 2
     role: GM/DM
@@ -412,6 +389,7 @@ credits:
     sources:
       - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         tier: community
+      - *a6
   - show: pirates-of-salt-bay
     season: 3
     role: GM/DM
@@ -420,6 +398,7 @@ credits:
     sources:
       - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         tier: community
+      - *a6
   - show: pirates-of-salt-bay
     season: 4
     role: GM/DM
@@ -428,6 +407,7 @@ credits:
     sources:
       - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         tier: community
+      - *a6
   - show: dimension-20
     season: 29
     role: player
@@ -452,16 +432,6 @@ credits:
         url: https://www.mtgfestivals.com/global/en-us/magiccon-news/your-guide-to-dand-at-magiccon-and-the-full-star-studded-cast-of-dand-live.html
         note: Independent guide corroborating the DM and full player cast for the same
           session.
-  - show: d-d-live-2021
-    season: 1
-    episode: Chaos Carnival
-    role: GM/DM
-    alias: iyengar
-    year: "2021"
-    sources:
-      - tier: reference
-        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
-        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
   - show: battle-for-beyond
     season: 1
     role: player
@@ -477,29 +447,13 @@ credits:
         url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
         note: D&D Beyond's own announcement post, naming the DM and each player's
           character.
-  - show: ny-by-night
-    role: player
-    character: Margot "Fuego" Walker
-    alias: iyengar
-    year: "2022"
-    note: Season not established — the sources name the series and the character,
-      not which of the two 2022 seasons she appeared in.
-    sources:
-      - tier: reference
-        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
-        note: "Wikipedia: \"She also joined the cast of the Vampire: The Masquerade web
-          series NY by Night, playing as Margot 'Fuego' Walker.\""
-      - tier: reference
-        url: https://www.imdb.com/title/tt21227972/characters/nm10682827
-        note: IMDb credits her as Margot "Fuego" Walker on the series, 8 episodes in
-          2022.
   - show: kollok-1991
     season: 1
     role: guest player
     character: Laura Bennett
-    note: 'Guest across an unrecorded set of season 1 episodes — Wikipedia says she
+    note: Guest across an unrecorded set of season 1 episodes — Wikipedia says she
       was "originally a guest player" before joining the main cast, without
-      naming episodes.'
+      naming episodes.
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Aabria_Iyengar
@@ -566,3 +520,42 @@ credits:
       - tier: community
         url: https://kollok.fandom.com/wiki/KOllOK
         note: KOllOK cast table, via the kollok.fandom.com season page. CC-BY-SA.
+  - show: pirates-of-salt-bay
+    role: player
+    character: Fleabag
+    note: Matched to IMDb on title alone; no existing credit here to cross-check
+      against. IMDb credits this at series level; which of this show's seasons
+      it covers is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt18883950/fullcredits/
+        note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
+          datasets.
+  - show: critical-role
+    role: GM/DM
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+  - show: ny-by-night
+    role: player
+    character: Margot "Fuego" Walker
+    alias: iyengar
+    year: "2022"
+    note: Season not established — the sources name the series and the character,
+      not which of the two 2022 seasons she appeared in.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: "Wikipedia: \"She also joined the cast of the Vampire: The Masquerade web
+          series NY by Night, playing as Margot 'Fuego' Walker.\""
+      - tier: reference
+        url: https://www.imdb.com/title/tt21227972/characters/nm10682827
+        note: IMDb credits her as Margot "Fuego" Walker on the series, 8 episodes in
+          2022.

@@ -21,6 +21,15 @@ jobs:
 
       - run: npm ci
 
+      # Types before data: an error in the loader or the derive layer makes
+      # every downstream result untrustworthy rather than merely wrong. This
+      # step is only addable because the four standing errors were fixed —
+      # `tsc --noEmit` exited 2 on a clean tree until then, which is how
+      # filmography.ts came to read a property that no longer existed and
+      # print nothing for months without anyone noticing.
+      - name: Typecheck
+        run: npm run typecheck
+
       # Schema (types, required fields, enums) + referential integrity
       # (every show/season/channel/game/alias id resolves) + id uniqueness
       # and slug format + duplicate-person heuristic.

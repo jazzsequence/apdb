@@ -15,8 +15,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=xS5D-xI5f0w
-        note: Cast per the episode's own description for "Always Look A Gift Horse
-          in the Mouth | DesiQuest Winter Special Episode 1."
+        note: Cast per the episode's own description for "Always Look A Gift Horse in
+          the Mouth | DesiQuest Winter Special Episode 1."
   - show: desiquest
     season: 1
     role: player
@@ -35,6 +35,16 @@ credits:
         note: Escape from the Bloodkeep cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/dimension-20
+        note: Cast for "Dimension 20" per TheTVDB.
   - show: dimension-20
     season: 11
     role: player
@@ -63,23 +73,6 @@ credits:
         url: https://dimension20.fandom.com/wiki/Never_Stop_Blowing_Up
         note: Never Stop Blowing Up cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-  - show: dimension-20
-    role: player
-    character: Maggie
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/dimension-20
-        note: Cast for "Dimension 20" per TheTVDB.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/9/96/Rekha_Shankar_as_Maggie.png/revision/latest/scale-to-width-down/400?cb=20200627193150
   licence: fair use

@@ -79,14 +79,36 @@ function sameKindOfRole(a: string, b: string): boolean {
  * kept alongside.
  */
 export function subsumedBy(vague: Partial<Credit>, specific: Partial<Credit>): boolean {
-  return (
-    vague.show === specific.show &&
-    vague.season === undefined &&
+  if (vague.show !== specific.show) return false;
+  if (!sameKindOfRole(vague.role ?? '', specific.role ?? '')) return false;
+  if (!compatibleCharacter(vague.character, specific.character)) return false;
+
+  // Show-level folded into season-level.
+  if (vague.season === undefined && vague.episode === undefined && specific.season !== undefined) {
+    return true;
+  }
+
+  // Season-level folded into episode-level, within that same season.
+  //
+  // The rule above only ever compared "no season at all" against "has a
+  // season", so a pair that agreed on the season but disagreed on whether an
+  // episode was recorded fell through every merge rule and stayed as two
+  // credits. CelebriD&D is built almost entirely of that pair: an episode-level
+  // pass read IMDb per episode, a later catalogue pass read the same IMDb page
+  // at season level, and fourteen of its twenty-two people ended up credited
+  // twice for one appearance. Both credits cited the same IMDb URL, so the
+  // show read as far better corroborated than it was while every individual
+  // credit stayed single-source.
+  if (
     vague.episode === undefined &&
-    specific.season !== undefined &&
-    sameKindOfRole(vague.role ?? '', specific.role ?? '') &&
-    compatibleCharacter(vague.character, specific.character)
-  );
+    specific.episode !== undefined &&
+    vague.season !== undefined &&
+    vague.season === specific.season
+  ) {
+    return true;
+  }
+
+  return false;
 }
 
 /**
@@ -180,8 +202,11 @@ export function upsertCredit(existing: Credit[], incoming: Credit): UpsertResult
   }
 
   // A vague incoming credit that an existing specific one already covers is
-  // corroboration for that one, not a new row.
-  if (incoming.season === undefined) {
+  // corroboration for that one, not a new row. Gated on `episode` rather than
+  // `season`: a credit that names a season but no episode is still the vaguer
+  // of the pair when an episode-level record for that season exists, and
+  // gating on `season` meant subsumedBy was never consulted for it.
+  if (incoming.episode === undefined) {
     const covered = existing.filter((c) => subsumedBy(incoming, c));
     if (covered.length > 0) {
       let credits = existing;

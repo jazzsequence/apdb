@@ -378,32 +378,6 @@ credits:
         url: https://maximumfun.org/episodes/adventure-zone/the-adventure-zone-dadlands-3-famlee-business/
         note: "Dadlands 3: FAMLEE Business episode page, Maximum Fun: Brennan Lee
           Mulligan returning for the third installment of Dadlands."
-  - show: critical-role
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/critical-role
-        note: Cast for "Critical Role" per TheTVDB.
-  - show: dimension-20
-    role: writer
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
   - show: dimension-20
     season: 3
     role: player
@@ -437,6 +411,12 @@ credits:
         note: "Official Campaign 4 cast list, from the Critical Role channel's own
           episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
           Critical Role: Campaign 4."
+      - tier: reference
+        url: https://www.themoviedb.org/tv/254002-critical-role/cast
+        note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/critical-role
+        note: Cast for "Critical Role" per TheTVDB.
   - show: exandria-unlimited
     season: 1
     role: player
@@ -550,9 +530,19 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=KtLcWpD16Uo
-        note: "Cast per the production's own description of \"Battle for Beyond:
-          Episode 1 | D&D Beyond\"."
+        note: "Cast per the production's own description of \"Battle for Beyond: Episode
+          1 | D&D Beyond\"."
       - tier: reference
         url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
         note: D&D Beyond's own announcement post, naming the DM and each player's
           character.
+  - show: dimension-20
+    role: writer
+    note: IMDb credits this at series level; which of this show's seasons it covers
+      is not established.
+    alias: default
+    sources:
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.

@@ -16,17 +16,6 @@ credits:
         url: https://www.cthulhumystery.com/series-1-meet-the-cast
         note: Cast per the show's own Meet the Cast page.
   - show: the-call-of-cthulhu-mystery-program
-    role: player
-    character: The Announcer
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt10584444/fullcredits/
-        note: IMDb full cast and crew for "The Call of Cthulhu Mystery Program" (2015),
-          via the official datasets.
-  - show: the-call-of-cthulhu-mystery-program
     season: 2
     role: producer
     alias: default
@@ -43,6 +32,10 @@ credits:
       - tier: official
         url: https://www.cthulhumystery.com/manse-live-1
         note: Cast per the show's own live-special page.
+      - tier: reference
+        url: https://www.imdb.com/title/tt10584444/fullcredits/
+        note: IMDb full cast and crew for "The Call of Cthulhu Mystery Program" (2015),
+          via the official datasets.
   - show: the-call-of-cthulhu-mystery-program
     season: 4
     role: player
@@ -55,8 +48,8 @@ credits:
   - show: the-call-of-cthulhu-mystery-program
     season: 4
     role: producer
-    note: 'Credited as "showrunner of this series" on the show''s own Meet the
-      Cast page.'
+    note: Credited as "showrunner of this series" on the show's own Meet the Cast
+      page.
     alias: default
     sources:
       - tier: official
@@ -89,7 +82,7 @@ image:
     own site, cthulhumystery.com.
   source: https://www.cthulhumystery.com/about
   depicts: Cat Blackard
-  rationale: Low-resolution illustration used solely to identify this person in
-    an index of their credits. Non-commercial, does not substitute for the
+  rationale: Low-resolution illustration used solely to identify this person in an
+    index of their credits. Non-commercial, does not substitute for the
     original, and links back to the source. Removed on request by the rights
     holder — see POLICY.md.

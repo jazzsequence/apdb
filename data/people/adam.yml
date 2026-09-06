@@ -7,6 +7,16 @@ aliases:
     name: Adam
     alias_type: handle
 credits:
+  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
+    season: 1
+    episode: "RR2020-01: Spirit of '77"
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://happyjacks.org/rainbow/
+        note: "RR2020-01: Spirit of '77 cast, per the network's Rainbow Railroading 2020
+          episode listing."
   - show: the-greenwood-collective
     season: 1
     role: player
@@ -25,16 +35,6 @@ credits:
       - tier: official
         url: https://happyjacks.org/idolonacademy/
         note: Cast per the network's own show page.
-  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
-    season: 1
-    episode: "RR2020-01: Spirit of '77"
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/rainbow/
-        note: "RR2020-01: Spirit of '77 cast, per the network's Rainbow Railroading
-          2020 episode listing."
   - show: carefree-high
     season: 1
     role: GM/DM
@@ -60,15 +60,6 @@ credits:
     sources:
       - tier: official
         url: https://happyjacks.org/clockwisecourt/
-        note: Cast per the network's own show page.
-  - show: happy-jacks-rpg-podcast-rainbow-railroading-2020
-    season: 1
-    episode: "RR2020-01: Spirit of '77"
-    role: GM/DM
-    alias: default
-    sources:
-      - tier: official
-        url: https://happyjacks.org/rainbow/
         note: Cast per the network's own show page.
   - show: revelations
     season: 1

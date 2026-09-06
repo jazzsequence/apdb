@@ -7,6 +7,29 @@ aliases:
     name: Amy Vorpahl
     alias_type: legal
 credits:
+  - show: godsmite
+    season: 1
+    episode: Second Episode
+    role: player
+    character: Asta
+    alias: default
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/Godsmite
+        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
+  - show: d-d-live-2021
+    season: 1
+    episode: Flubbybonks & Guzzleshucks
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
+        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
+      - tier: reference
+        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
+        note: Screen Rant's report on the D&D Live 2021 game announcements.
   - show: pathfinder-acme-livestream
     season: 1
     role: player
@@ -26,16 +49,6 @@ credits:
       - tier: official
         url: https://www.youtube.com/watch?v=XuEhkNT0Kgo
         note: Cast per the show's own YouTube video description.
-  - show: godsmite
-    season: 1
-    episode: Second Episode
-    role: player
-    character: Asta
-    alias: default
-    sources:
-      - tier: community
-        url: https://savingthrowshow.fandom.com/wiki/Godsmite
-        note: Godsmite cast, via the savingthrowshow.fandom.com infobox. CC-BY-SA.
   - show: foreververse-w-ivan-van-norman
     season: 1
     role: player
@@ -64,6 +77,16 @@ credits:
         note: Escape from the Bloodkeep cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
         tier: community
+      - tier: reference
+        url: https://www.imdb.com/title/tt9646546/fullcredits/
+        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
+          datasets.
+      - tier: reference
+        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
+        note: Cast for "Dimension 20" per TMDB.
+      - tier: reference
+        url: https://thetvdb.com/series/dimension-20
+        note: Cast for "Dimension 20" per TheTVDB.
   - show: the-lost-brigade
     season: 1
     role: player
@@ -111,16 +134,15 @@ credits:
     role: player
     season: 1
     character: Darby
-    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all,
-      which bundles several distinct one-shots (Dread, Madness, Goblin Mode)
-      under one playlist. Retargeted to the specific one-shot its own cast
-      list names.
+    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all, which
+      bundles several distinct one-shots (Dread, Madness, Goblin Mode) under one
+      playlist. Retargeted to the specific one-shot its own cast list names.
     alias: default
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PL7atuZxmT954X1GShT_jOY98YgS04FA3B
-        note: Cast and characters per the show's own description, corroborated
-          by its own YouTube video description.
+        note: Cast and characters per the show's own description, corroborated by its
+          own YouTube video description.
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
@@ -173,23 +195,6 @@ credits:
         url: https://www.imdb.com/title/tt9196898/fullcredits/
         note: IMDb full cast and crew for "The League of Adventure" (2018), via the
           official datasets.
-  - show: dimension-20
-    role: player
-    character: Efink Murderdeath
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt9646546/fullcredits/
-        note: IMDb full cast and crew for "Dimension 20" (2018), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/89180-dimension-20/cast
-        note: Cast for "Dimension 20" per TMDB.
-      - tier: reference
-        url: https://thetvdb.com/series/dimension-20
-        note: Cast for "Dimension 20" per TheTVDB.
   - show: 2015-star-wars-holiday-special
     season: 1
     role: player
@@ -210,19 +215,6 @@ credits:
         url: https://www.imdb.com/title/tt9196944/fullcredits/
         note: IMDb full cast and crew for "Shadows on the Horizon" (2018), via the
           official datasets.
-  - show: d-d-live-2021
-    season: 1
-    episode: Flubbybonks & Guzzleshucks
-    role: GM/DM
-    alias: default
-    year: "2021"
-    sources:
-      - tier: reference
-        url: https://www.inverse.com/gaming/dnd-live-2021-schedule-dates-how-to-watch-strixhaven-witchlight
-        note: Inverse's D&D Live 2021 schedule, naming each table's host and cast.
-      - tier: reference
-        url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
-        note: Screen Rant's report on the D&D Live 2021 game announcements.
 image:
   url: https://static.wikia.nocookie.net/savingthrowshow/images/1/15/Vorpahl.jpg/revision/latest/scale-to-width-down/266?cb=20200310070006
   licence: fair use

@@ -15,8 +15,18 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_Needle_and_Thread
-        note: "Circle of Needle and Thread cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of Needle and Thread cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
         tier: community
+      - &a1
+        tier: reference
+        url: https://www.imdb.com/title/tt27715026/fullcredits/
+        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
+          datasets.
+      - &a2
+        tier: reference
+        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
+        note: Cast for "Candela Obscura" per TMDB.
   - show: candela-obscura
     season: 5
     role: GM/DM
@@ -26,20 +36,10 @@ credits:
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Circle_of_the_Silver_Screen
-        note: "Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-  - show: candela-obscura
-    role: GM/DM
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt27715026/fullcredits/
-        note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
-        note: Cast for "Candela Obscura" per TMDB.
+        note: Circle of the Silver Screen cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+      - *a1
+      - *a2
   - show: candela-obscura
     role: writer
     note: IMDb credits this at series level; which of this show's seasons it covers

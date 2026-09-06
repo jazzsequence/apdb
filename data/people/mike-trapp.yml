@@ -15,22 +15,6 @@ credits:
         url: https://dimension20.fandom.com/wiki/Escape_from_the_Bloodkeep
         note: Escape from the Bloodkeep cast, via the dimension20.fandom.com infobox.
           CC-BY-SA.
-  - show: dimension-20
-    season: 20
-    role: player
-    character: Hunch Curio
-    alias: default
-    sources:
-      - tier: community
-        url: https://dimension20.fandom.com/wiki/Mentopolis
-        note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
-  - show: dimension-20
-    role: player
-    character: Sokhbarr the Boglord
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
       - tier: reference
         url: https://www.imdb.com/title/tt9646546/fullcredits/
         note: IMDb full cast and crew for "Dimension 20" (2018), via the official
@@ -41,6 +25,15 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/dimension-20
         note: Cast for "Dimension 20" per TheTVDB.
+  - show: dimension-20
+    season: 20
+    role: player
+    character: Hunch Curio
+    alias: default
+    sources:
+      - tier: community
+        url: https://dimension20.fandom.com/wiki/Mentopolis
+        note: Mentopolis cast, via the dimension20.fandom.com infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/9/94/Mike_Trapp_as_Sokhbarr.png/revision/latest/scale-to-width-down/400?cb=20200627192750
   licence: fair use

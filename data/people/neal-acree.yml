@@ -7,16 +7,6 @@ aliases:
     alias_type: legal
 credits:
   - show: critical-role
-    role: composer
-    note: IMDb credits this at series level; which of this show's seasons it covers
-      is not established.
-    alias: default
-    sources:
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-  - show: critical-role
     season: 4
     role: composer
     alias: default
@@ -26,6 +16,10 @@ credits:
         note: "Official Campaign 4 cast list, from the Critical Role channel's own
           episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
           Critical Role: Campaign 4."
+      - tier: reference
+        url: https://www.imdb.com/title/tt4834232/fullcredits/
+        note: IMDb full cast and crew for "Critical Role" (2015), via the official
+          datasets.
 wikidata_qid: Q6984038
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/d/d1/Composer_Neal_Acree%2C_2015.jpg

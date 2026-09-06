@@ -5,6 +5,7 @@
   "type": "module",
   "description": "An index of actual-play TTRPG credits, by person. Git-as-database, static-first.",
   "scripts": {
+    "typecheck": "tsc --noEmit",
     "validate": "tsx scripts/validate.ts",
     "dev": "astro dev",
     "build": "npm run validate && astro build && pagefind --site dist",
