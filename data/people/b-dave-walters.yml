@@ -171,6 +171,16 @@ credits:
       - tier: reference
         url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
         note: Screen Rant's report on the D&D Live 2021 game announcements.
+  - show: kollok
+    season: 1
+    role: player
+    year: "2022"
+    character: Marcus Bennett
+    alias: default
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/KOllOK
+        note: KOllOK cast table, via the kollok.fandom.com season page. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/b/be/PCMarcid.png/revision/latest/scale-to-width-down/400?cb=20200813045748
   licence: fair use

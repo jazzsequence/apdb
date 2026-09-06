@@ -58,6 +58,16 @@ credits:
         url: https://www.imdb.com/title/tt22487604/fullcredits/
         note: IMDb full cast and crew for "Dice Ex Machina" (2020), via the official
           datasets.
+  - show: kollok
+    season: 1
+    role: player
+    year: "2022"
+    character: C-Dubbs
+    alias: default
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/KOllOK
+        note: KOllOK cast table, via the kollok.fandom.com season page. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/0/0f/PCSamBlack.png/revision/latest/scale-to-width-down/400?cb=20210703001716
   licence: fair use

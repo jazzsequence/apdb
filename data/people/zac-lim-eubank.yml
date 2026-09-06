@@ -16,3 +16,13 @@ credits:
         url: https://kollok.fandom.com/wiki/Season_2_-_KOllOK_1991:_Bleach
         note: The show's own fan wiki credits Zac Lim Eubank as creator, Game Master and
           'Driver'. CC-BY-SA.
+  - show: kollok
+    season: 1
+    role: player
+    year: "2022"
+    character: The Driver
+    alias: default
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/KOllOK
+        note: KOllOK cast table, via the kollok.fandom.com season page. CC-BY-SA.

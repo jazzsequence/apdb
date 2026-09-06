@@ -556,3 +556,13 @@ credits:
       - tier: community
         url: https://project-ghostlight-private-nightmares.fandom.com/wiki/Characters
         note: The series wiki maps Katie to Aabria Iyengar. CC-BY-SA.
+  - show: kollok
+    season: 1
+    role: player
+    year: "2022"
+    character: Laura Bennett
+    alias: iyengar
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/KOllOK
+        note: KOllOK cast table, via the kollok.fandom.com season page. CC-BY-SA.

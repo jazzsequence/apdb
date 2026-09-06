@@ -1,0 +1,18 @@
+id: ethan-nestor
+canonical_name: Ethan Nestor
+sort_name: Nestor, Ethan
+aliases:
+  - id: default
+    name: Ethan Nestor
+    alias_type: legal
+credits:
+  - show: kollok
+    season: 1
+    role: player
+    year: "2022"
+    character: AJ Greer
+    alias: default
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/KOllOK
+        note: KOllOK cast table, via the kollok.fandom.com season page. CC-BY-SA.

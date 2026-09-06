@@ -1,0 +1,18 @@
+id: xu-mason
+canonical_name: Xu Mason
+sort_name: Mason, Xu
+aliases:
+  - id: default
+    name: Xu Mason
+    alias_type: legal
+credits:
+  - show: kollok
+    season: 1
+    role: player
+    year: "2022"
+    character: Rosemary Liang
+    alias: default
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/KOllOK
+        note: KOllOK cast table, via the kollok.fandom.com season page. CC-BY-SA.

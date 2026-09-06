@@ -1,0 +1,17 @@
+id: kollok
+title: KOllOK
+channels:
+  - fearhq
+format: stream
+status: completed
+description: Revival of the KOllOK series, set in 2021 — thirty years after the
+  events of KOllOK 1991 — following the Ascended, the last generation of children
+  born on earth. Mixes a new cast with legacy players returning as their original
+  characters. Produced for AMC Networks' FearHQ channel rather than Hyper RPG,
+  which is why it is filed as its own show rather than a third season.
+links:
+  website: https://kollok.fandom.com/wiki/KOllOK
+seasons:
+  - ordinal: 1
+    game: kids-on-bikes
+    started: "2022-02-14"

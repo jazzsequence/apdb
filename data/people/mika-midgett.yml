@@ -27,6 +27,16 @@ credits:
       - tier: community
         url: https://kollok.fandom.com/wiki/Season_2_-_KOllOK_1991:_Bleach
         note: 'The season 2 ("KOllOK 1991: Bleach") page lists them among the main cast. CC-BY-SA.'
+  - show: kollok
+    season: 1
+    role: player
+    year: "2022"
+    character: Embeth Pegg
+    alias: default
+    sources:
+      - tier: community
+        url: https://kollok.fandom.com/wiki/KOllOK
+        note: KOllOK cast table, via the kollok.fandom.com season page. CC-BY-SA.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/6/6b/Mika_Midgett_at_Creator_Clash_2023_01.png
   licence: CC-BY-3.0
