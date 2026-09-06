@@ -44,6 +44,70 @@ const TTRPG_CATEGORY =
 const EXCLUDED_CATEGORY =
   /\b(films?|feature films?|television series|television films?|sitcoms?|soap operas?|video games?|animated (?:series|films?)|anime|comics?|graphic novels?|albums?|songs?|singles?|novels?|books?|video game franchises|board games?|card games?|role-playing game systems?|tabletop role-playing games)\b/i;
 
+/**
+ * Not a work at all: the article is about a person.
+ *
+ * This is the rule that costs the most when it is missing. A person-first
+ * sweep reads prose, and prose about an actual-play performer links other
+ * performers constantly — and their articles carry "Actual play performers",
+ * which matches AP_CATEGORY exactly. So Matthew Mercer classified as an
+ * actual play, was counted as a missing *show*, and told the reader to go and
+ * add a series called "Matthew Mercer". Bio categories are the reliable tell:
+ * a show is not born in 1775 and does not have high-school alumni.
+ */
+const PERSON_CATEGORY =
+  /(\b\d{4} births\b|\b\d{4} deaths\b|living people|performers|actors|actresses|alumni|novelists|screenwriters|comedians|musicians|\bpeople\b)/i;
+
+/**
+ * Stage productions, which are not actual play however much they borrow from
+ * it. Dungeons & Dragons: The Twenty-Sided Tavern is the case that matters:
+ * it carries "Dungeons & Dragons actual play" *and* "Off-Broadway plays",
+ * "Fantasy theatre", "Immersive theater" and "2024 plays". It is improv
+ * theatre with audience participation, not a recorded campaign, so the
+ * theatre categories have to beat the actual-play one or it files as a show.
+ *
+ * `plays` carries a word boundary on purpose so it cannot fire on the `play`
+ * inside "Actual play web series".
+ */
+const STAGE_CATEGORY =
+  /(\bplays\b|\btheatre\b|\btheater\b|musicals?|broadway|stage productions?|immersive theat)/i;
+
+/** Disambiguation and index pages: a link target, not a work. */
+const NON_ARTICLE_CATEGORY = /(disambiguation pages|set index)/i;
+
+/**
+ * The game system itself, rather than a show played in it.
+ *
+ * Prose names the system in the same breath as the show ("a combination of
+ * Dungeons & Dragons and the Jane Austen-inspired game Good Society"), so
+ * these arrive as candidates constantly. They are doubly dangerous here
+ * because one show in this catalogue — New Game Who Dis — titles each season
+ * after the system it plays, so a linked game article matches a *season
+ * title* and reports as a real missing credit on a real show.
+ *
+ * EXCLUDED_CATEGORY already covers "tabletop role-playing games", but the
+ * categories that actually appear on D&D's article are "American role-playing
+ * games", "Role-playing games introduced in 1974" and "Tabletop games".
+ */
+const GAME_CATEGORY =
+  /(role-playing games|tabletop games|board games|card games|games introduced|wizards of the coast games|hasbro franchises)/i;
+
+/**
+ * Concept and rules-terminology articles that carry a bare game category and
+ * nothing else, so no category rule can separate them from a show.
+ * "Dungeon Master" is filed under exactly one category: "Dungeons & Dragons".
+ */
+const CONCEPT_TITLE =
+  /^(dungeon master|game ?master|storyteller|player character|non-player character|tabletop role-playing game|role-playing game|actual play|live streaming|twitch|youtube|podcast|web series)$/i;
+
+/**
+ * Concept, terminology and list articles. Prose links "game master" and
+ * "actual play" itself, and both carry TTRPG-shaped categories that would
+ * otherwise read as a candidate series.
+ */
+const CONCEPT_CATEGORY =
+  /(terminology|narrative forms|dynamic lists|lists of|glossaries|occupations|game mechanics)/i;
+
 /** Prose signals in the work's own lead. Weaker than a category, still real. */
 const AP_TEXT =
   /\b(actual[ -]play|live ?play|liveplay|play(?:s|ed|ing)? (?:a|the)? ?(?:campaign|one-shot)|streamed (?:campaign|game)|tabletop role-playing game (?:web series|series|podcast|show)|game master|dungeon master|storyteller)\b/i;
@@ -74,6 +138,32 @@ export function classify(title: string, facts: WorkFacts): Classification {
   const categories = facts.categories ?? [];
   const extract = facts.extract ?? '';
   const section = facts.section ?? '';
+
+  // These four run before the actual-play check, not after it, because each
+  // describes a thing that can legitimately carry an actual-play category
+  // while not being an actual play: a performer, a stage show, a
+  // disambiguation page, the concept article itself. Ordering them after
+  // AP_CATEGORY is what produced "Matthew Mercer" as a missing show.
+  // Title-only rules, for articles whose categories cannot distinguish them
+  // from a show.
+  if (CONCEPT_TITLE.test(title.trim())) {
+    return { verdict: 'excluded', reasons: [`"${title}" is a rules concept, not a work`] };
+  }
+  if (/\((role-playing|roleplaying|tabletop|card|board) game\)$/i.test(title.trim())) {
+    return { verdict: 'excluded', reasons: [`"${title}" is a game system, not a show played in it`] };
+  }
+
+  const disqualifiers: [RegExp, string][] = [
+    [NON_ARTICLE_CATEGORY, 'a disambiguation or index page, not a work'],
+    [PERSON_CATEGORY, 'an article about a person, not a work'],
+    [STAGE_CATEGORY, 'a stage production — theatre, not actual play'],
+    [CONCEPT_CATEGORY, 'a concept, terminology or list article, not a work'],
+    [GAME_CATEGORY, 'the game system itself, not a show played in it'],
+  ];
+  for (const [pattern, why] of disqualifiers) {
+    const hit = categories.find((c) => pattern.test(c));
+    if (hit) return { verdict: 'excluded', reasons: [`category "${hit}" — ${why}`] };
+  }
 
   const apCategory = categories.filter((c) => AP_CATEGORY.test(c));
   if (apCategory.length > 0) {

@@ -93,12 +93,38 @@ for (const show of shows) {
   }
 }
 
-/** Wikipedia writes "Vampire: The Masquerade – NY by Night"; we write "NY by Night". */
-function lookup(title: string): { show: string; season?: number } | undefined {
-  const direct = byTitle.get(titleKey(title));
-  if (direct) return direct;
-  const tail = title.split(/\s+[–—:-]\s+/).pop();
-  return tail && tail !== title ? byTitle.get(titleKey(tail)) : undefined;
+/**
+ * Wikipedia writes "Vampire: The Masquerade – NY by Night"; we write
+ * "NY by Night".
+ *
+ * Takes the link target as well as the display text, and tries it first. A
+ * piped link says "[[Critical Role|Critical Role main cast]]", and matching
+ * on the display alone missed a show this project has indexed since the
+ * beginning — reporting it as absent, which is the one thing a gap report
+ * must never do.
+ */
+function lookup(title: string, link?: string): { show: string; season?: number } | undefined {
+  for (const raw of [link, title]) {
+    if (!raw) continue;
+    // Wikipedia splits long-running shows into per-campaign articles and
+    // sections: "Critical Role campaign four", "Critical Role (campaign
+    // three)". Both are the show this project already indexes, with the
+    // campaign as a season — so strip the qualifier before giving up, or the
+    // sweep reports Critical Role as a show we have never heard of.
+    const variants = [
+      raw,
+      raw.replace(/\s*\([^)]*\)\s*$/, ''),
+      raw.replace(/\s+(campaign|season|series|part|chapter)\s+\S+$/i, ''),
+    ];
+    for (const candidate of variants) {
+      const direct = byTitle.get(titleKey(candidate));
+      if (direct) return direct;
+      const tail = candidate.split(/\s+[–—:-]\s+/).pop();
+      const byTail = tail && tail !== candidate ? byTitle.get(titleKey(tail)) : undefined;
+      if (byTail) return byTail;
+    }
+  }
+  return undefined;
 }
 
 // ---------------------------------------------------------------------------

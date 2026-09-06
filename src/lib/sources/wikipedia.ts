@@ -303,8 +303,28 @@ function parseProse(section: Section): WikiWork[] {
       // but skip the obvious non-works here to keep the list readable.
       if (/^(Category|File|Image|Template|Wikipedia|Help):/i.test(target)) continue;
 
+      // A common noun is never a work. One sentence about a Dimension 20
+      // season linked "game master", "tabletop role-playing game", "improv"
+      // and "immersive theater"; all four arrived as candidate series and
+      // pushed the real ones down the report. Titles are proper nouns — even
+      // a stylised one capitalises something — so a link whose target has no
+      // capital anywhere is prose furniture, not a series.
+      //
+      // Tested on the target rather than the display text: the display is
+      // frequently a lowercase inflection of a properly-capitalised article
+      // ("[[Gamemaster|game master]]"), and dropping on display alone would
+      // also discard the genuine link behind it.
+      if (!/[A-Z]/.test(target)) continue;
+
+      // Sentence-fragment links: "the [[Critical Role|fourth campaign]]".
+      // The target is the work; the display is a phrase from the sentence,
+      // and reporting it as a title asks a reviewer to go and add a show
+      // called "fourth campaign".
+      const ordinalPhrase = /^(the )?(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|final|latest|next|main|current)\b/i;
+      const title = ordinalPhrase.test(display) ? target : display;
+
       works.push({
-        title: stripMarkup(display),
+        title: stripMarkup(title),
         link: target,
         role: roleFromSentence(clean),
         character: characterFromSentence(clean),
