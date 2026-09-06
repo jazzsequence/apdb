@@ -1,0 +1,26 @@
+id: latia-jacquise
+canonical_name: LaTia Jacquise
+sort_name: Jacquise, LaTia
+aliases:
+  - id: default
+    name: LaTia Jacquise
+    alias_type: legal
+credits:
+  - show: rivals-of-waterdeep
+    season: 9
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.
+  - show: rivals-of-waterdeep
+    season: 12
+    role: GM/DM
+    alias: default
+    year: "2022"
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.

@@ -1,0 +1,26 @@
+id: masood-haque
+canonical_name: Masood Haque
+sort_name: Haque, Masood
+aliases:
+  - id: default
+    name: Masood Haque
+    alias_type: legal
+credits:
+  - show: rivals-of-waterdeep
+    season: 10
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.
+  - show: rivals-of-waterdeep
+    season: 14
+    role: GM/DM
+    alias: default
+    year: "2022"
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.

@@ -1,0 +1,66 @@
+id: rivals-of-waterdeep
+title: Rivals of Waterdeep
+channels:
+  - dnd-official
+format: stream
+status: completed
+description: "System per source: D&D 5th Edition. Official D&D Twitch/YouTube
+  actual play notable for an all-people-of-color main cast, rotating DMs
+  every 10-episode season. One of the earliest ongoing series Wizards of the
+  Coast produced in-house."
+links:
+  website: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    started: "2018-06"
+    episode_count: 10
+  - ordinal: 2
+    game: dnd-5e
+    episode_count: 10
+  - ordinal: 3
+    game: dnd-5e
+    episode_count: 10
+  - ordinal: 4
+    game: dnd-5e
+    episode_count: 10
+  - ordinal: 5
+    game: dnd-5e
+    episode_count: 10
+  - ordinal: 6
+    game: dnd-5e
+    episode_count: 10
+  - ordinal: 7
+    game: dnd-5e
+    episode_count: 10
+  - ordinal: 8
+    game: dnd-5e
+    episode_count: 10
+  - ordinal: 9
+    game: dnd-5e
+    started: "2021-01-31"
+    ended: "2021-04-16"
+    episode_count: 10
+  - ordinal: 10
+    game: dnd-5e
+    started: "2021-05-17"
+    ended: "2021-07-25"
+    episode_count: 10
+  - ordinal: 11
+    game: dnd-5e
+    started: "2021-10-23"
+    ended: "2021-12-10"
+    episode_count: 10
+  - ordinal: 12
+    game: dnd-5e
+    started: "2022-02-06"
+    ended: "2022-04-18"
+    episode_count: 10
+  - ordinal: 13
+    game: dnd-5e
+    started: "2022-06-01"
+    ended: "2022-08-18"
+    episode_count: 10
+  - ordinal: 14
+    game: dnd-5e
+    started: "2022-10-16"

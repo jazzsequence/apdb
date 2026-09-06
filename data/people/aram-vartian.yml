@@ -1,0 +1,19 @@
+id: aram-vartian
+canonical_name: Aram Vartian
+sort_name: Vartian, Aram
+aliases:
+  - id: default
+    name: Aram Vartian
+    alias_type: legal
+credits:
+  - show: rivals-of-waterdeep
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2018"
+    note: Wikipedia states he was replaced mid-season by Carlos Luna; the exact
+      episode split is not itemized here.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.

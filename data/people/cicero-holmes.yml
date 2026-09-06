@@ -1,0 +1,16 @@
+id: cicero-holmes
+canonical_name: Cicero Holmes
+sort_name: Holmes, Cicero
+aliases:
+  - id: default
+    name: Cicero Holmes
+    alias_type: legal
+credits:
+  - show: rivals-of-waterdeep
+    season: 5
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.

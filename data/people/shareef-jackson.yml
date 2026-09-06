@@ -1,0 +1,32 @@
+id: shareef-jackson
+canonical_name: Shareef Jackson
+sort_name: Jackson, Shareef
+aliases:
+  - id: default
+    name: Shareef Jackson
+    alias_type: legal
+credits:
+  - show: rivals-of-waterdeep
+    season: 3
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.
+  - show: rivals-of-waterdeep
+    season: 6
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.
+  - show: rivals-of-waterdeep
+    season: 7
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.

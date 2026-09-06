@@ -23,6 +23,14 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/89180-dimension-20/cast
         note: Cast for "Dimension 20" per TMDB.
+  - show: rivals-of-waterdeep
+    season: 4
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/9/98/SurenaMarieCoF%26F.png/revision/latest/scale-to-width-down/400?cb=20230206131548
   licence: fair use

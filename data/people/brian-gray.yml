@@ -1,0 +1,18 @@
+id: brian-gray
+canonical_name: Brian Gray
+sort_name: Gray, Brian
+aliases:
+  - id: default
+    name: Brian Gray
+    alias_type: legal
+credits:
+  - show: rivals-of-waterdeep
+    season: 11
+    role: GM/DM
+    alias: default
+    year: "2021"
+    note: Co-DM'd with Eugenio Vargas.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
+        note: Season-by-season DM table per Wikipedia.
