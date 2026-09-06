@@ -1,0 +1,18 @@
+id: ceasar-udave
+canonical_name: Ceasar Udave
+sort_name: Udave, Ceasar
+links: {}
+aliases:
+  - id: default
+    name: Ceasar Udave
+    alias_type: legal
+credits:
+  - show: tales-of-collide
+    season: 1
+    role: player
+    character: Learning Nomadic Recorder (L.R.N.R.)
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL6yxBISTVwyk6naS5RoyNfCMliEm6T6yX
+        note: Credited in the Phoenix Portal episode descriptions ("Starring...").

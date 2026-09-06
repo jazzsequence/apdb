@@ -1,0 +1,21 @@
+id: daniel-lok
+canonical_name: Daniel Lok
+sort_name: Lok, Daniel
+links: {}
+aliases:
+  - id: default
+    name: Daniel Lok
+    alias_type: legal
+credits:
+  - show: tales-of-collide
+    season: 1
+    role: GM/DM
+    alias: default
+    note: Also credited as writer, editor, producer and sound designer for the
+      season in the same episode descriptions.
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL6yxBISTVwyk6naS5RoyNfCMliEm6T6yX
+        note: Credited as "your Forever Gamemaster, Writer, Editor, Producer,
+          Sound designer and everything else" in the Phoenix Portal episode
+          descriptions.

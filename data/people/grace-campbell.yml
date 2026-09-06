@@ -1,0 +1,18 @@
+id: grace-campbell
+canonical_name: Grace Campbell
+sort_name: Campbell, Grace
+links: {}
+aliases:
+  - id: default
+    name: Grace Campbell
+    alias_type: legal
+credits:
+  - show: tales-of-collide
+    season: 1
+    role: player
+    character: Manda Potter
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL6yxBISTVwyk6naS5RoyNfCMliEm6T6yX
+        note: Credited in the Phoenix Portal episode descriptions ("Starring...").

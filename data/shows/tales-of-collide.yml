@@ -1,0 +1,14 @@
+id: tales-of-collide
+title: "Tales of Collide: Daggerheart Actual Play Podcast"
+channels:
+  - tales-of-collide
+format: video
+status: ongoing
+links:
+  youtube: https://www.youtube.com/@talesofcollide
+  website: https://www.youtube.com/playlist?list=PL6yxBISTVwyk6naS5RoyNfCMliEm6T6yX
+seasons:
+  - ordinal: 1
+    title: Phoenix Portal
+    game: daggerheart
+    episode_count: 8

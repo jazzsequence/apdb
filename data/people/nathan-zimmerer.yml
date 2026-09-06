@@ -1,0 +1,19 @@
+id: nathan-zimmerer
+canonical_name: Nathan Zimmerer
+sort_name: Zimmerer, Nathan
+links: {}
+aliases:
+  - id: default
+    name: Nathan Zimmerer
+    alias_type: legal
+credits:
+  - show: tales-of-collide
+    season: 1
+    role: player
+    character: Rolo Rollington the Third
+    alias: default
+    note: Also credited as the season's animator in the same episode descriptions.
+    sources:
+      - tier: official
+        url: https://www.youtube.com/playlist?list=PL6yxBISTVwyk6naS5RoyNfCMliEm6T6yX
+        note: Credited in the Phoenix Portal episode descriptions ("Starring...").

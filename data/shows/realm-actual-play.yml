@@ -1,0 +1,16 @@
+id: realm-actual-play
+title: "Realm: A D&D Actual Play"
+channels:
+  - realm-actual-play
+format: video
+status: ongoing
+description: An actual-play D&D series bringing together professional artists to
+  play through a fantastical adventure.
+links:
+  youtube: https://www.youtube.com/@realmdnd
+  website: https://www.youtube.com/playlist?list=PLQhl6niF03aI
+seasons:
+  - ordinal: 1
+    title: "Season Zero: Narrative Order"
+    game: dnd-5e
+    episode_count: 51
