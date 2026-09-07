@@ -120,6 +120,21 @@ jobs:
             --dedupe out/dedupe.log \
             --out reports/discovery-latest.md
 
+      # The raw sweep, as a build artifact rather than a commit.
+      #
+      # It is ~2.4 MB of JSON and it is regenerated in full every week, so
+      # committing it puts a fresh 2.4 MB in git history every Monday forever
+      # for something nobody reads by hand — the markdown report is the
+      # readable artifact. Ninety days of retention is longer than a candidate
+      # queue stays interesting.
+      - name: Upload the raw sweep
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-sweep-${{ github.run_id }}
+          path: out/
+          retention-days: 90
+
       # A weekly PR that says "nothing new" teaches everyone to close these
       # unread, and then the one with a real find gets closed too.
       - name: Nothing to report
@@ -133,7 +148,6 @@ jobs:
         run: |
           set -euo pipefail
           BRANCH=discovery/weekly
-          cp out/person-sweep.json reports/discovery-latest.json 2>/dev/null || true
 
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -180,7 +194,11 @@ jobs:
             exit 0
           fi
 
-          gh pr create \
+          # `gh pr create` fails with an opaque GraphQL error when the repo
+          # setting is off, and the branch is already pushed by this point, so
+          # the run's work is not lost — only the PR is missing. Say which
+          # setting, and leave a link that opens the PR by hand.
+          if ! gh pr create \
             --head "$BRANCH" \
             --base "${{ github.event.repository.default_branch || 'main' }}" \
             --title "Weekly discovery sweep — ${{ steps.report.outputs.findings }} finding(s)" \
@@ -226,4 +244,16 @@ jobs:
 
           🤖 Generated with [Claude Code](https://claude.com/claude-code)
           BODY
-          )"
+          )"; then
+            echo "::error::Could not open the pull request."
+            echo "The branch '$BRANCH' IS pushed — this run's work is not lost, only the PR."
+            echo ""
+            echo "Most likely cause: Settings > Actions > General > Workflow permissions"
+            echo "  > 'Allow GitHub Actions to create and approve pull requests' is off."
+            echo "  gh api -X PUT repos/${{ github.repository }}/actions/permissions/workflow \\"
+            echo "    -f default_workflow_permissions=read -F can_approve_pull_request_reviews=true"
+            echo ""
+            echo "Or open it by hand:"
+            echo "  ${{ github.server_url }}/${{ github.repository }}/compare/$BRANCH?expand=1"
+            exit 1
+          fi

@@ -423,36 +423,84 @@ function dedupe(works: WikiWork[]): WikiWork[] {
  *
  * The classifier needs the *work's* own page to tell an actual play from a
  * voice role, and a person's article names dozens of works — so this batches,
- * 50 titles a call, the API's limit.
+ * 50 titles a call, the API's limit on titles.
+ *
+ * FOLLOWS CONTINUATION, and must. `cllimit=max` is a cap on categories
+ * returned *for the whole request*, not per page, and `extracts` serves at
+ * most 20 pages per request whatever you ask for. A 50-title batch therefore
+ * comes back with categories for a handful of pages, nothing for the rest, and
+ * a `continue` token carrying the remainder.
+ *
+ * Ignoring that token did not fail loudly — it produced pages with no
+ * categories, which the classifier cannot distinguish from a page that
+ * genuinely has none. Every category rule (person, stage, game system,
+ * in-universe, disambiguation) silently stopped firing and everything fell
+ * through to the much weaker prose rule. The first full 126-person sweep
+ * reported Brennan Lee Mulligan, Dropout, CollegeHumor and a list of cartoon
+ * characters as missing *shows* for exactly this reason, while the same titles
+ * classified correctly in a small test — 13 of 50 pages in one batch came back
+ * with categories, the other 37 with none.
  */
 export async function fetchWorkFacts(
   titles: string[],
 ): Promise<Map<string, { categories: string[]; extract: string; missing: boolean }>> {
   const facts = new Map<string, { categories: string[]; extract: string; missing: boolean }>();
+
   for (let i = 0; i < titles.length; i += 50) {
     const batch = titles.slice(i, i + 50);
-    const data = await api({
-      action: 'query',
-      titles: batch.join('|'),
-      prop: 'categories|extracts',
-      cllimit: 'max',
-      exintro: '1',
-      explaintext: '1',
-      redirects: '1',
-    });
-    const normalised = new Map<string, string>();
-    for (const entry of data.query?.normalized ?? []) normalised.set(entry.from, entry.to);
-    for (const entry of data.query?.redirects ?? []) normalised.set(entry.from, entry.to);
 
-    for (const page of data.query?.pages ?? []) {
-      const fact = {
-        categories: (page.categories ?? []).map((c: any) => String(c.title).replace(/^Category:/, '')),
-        extract: String(page.extract ?? ''),
-        missing: Boolean(page.missing),
-      };
-      facts.set(page.title, fact);
-      for (const [from, to] of normalised) if (to === page.title) facts.set(from, fact);
+    // Accumulate across continuation rounds: each round carries some pages'
+    // categories and some pages' extracts, keyed by title.
+    const categories = new Map<string, string[]>();
+    const extracts = new Map<string, string>();
+    const missing = new Map<string, boolean>();
+    const normalised = new Map<string, string>();
+
+    let cont: Record<string, string> = {};
+    for (let round = 0; round < 40; round++) {
+      const data = await api({
+        action: 'query',
+        titles: batch.join('|'),
+        prop: 'categories|extracts',
+        cllimit: 'max',
+        exintro: '1',
+        explaintext: '1',
+        redirects: '1',
+        ...cont,
+      });
+
+      for (const entry of data.query?.normalized ?? []) normalised.set(entry.from, entry.to);
+      for (const entry of data.query?.redirects ?? []) normalised.set(entry.from, entry.to);
+
+      for (const page of data.query?.pages ?? []) {
+        const title = String(page.title);
+        if (page.categories) {
+          categories.set(title, [
+            ...(categories.get(title) ?? []),
+            ...page.categories.map((c: any) => String(c.title).replace(/^Category:/, '')),
+          ]);
+        }
+        // An extract can arrive in a later round than the categories, and an
+        // empty one must not overwrite a real one already collected.
+        if (page.extract) extracts.set(title, String(page.extract));
+        missing.set(title, Boolean(page.missing));
+      }
+
+      if (!data.continue) break;
+      cont = data.continue;
+      await new Promise((r) => setTimeout(r, 120));
     }
+
+    for (const title of missing.keys()) {
+      const fact = {
+        categories: categories.get(title) ?? [],
+        extract: extracts.get(title) ?? '',
+        missing: missing.get(title) ?? false,
+      };
+      facts.set(title, fact);
+      for (const [from, to] of normalised) if (to === title) facts.set(from, fact);
+    }
+
     if (i + 50 < titles.length) await new Promise((r) => setTimeout(r, 250));
   }
   return facts;

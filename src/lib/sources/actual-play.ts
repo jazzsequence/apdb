@@ -76,6 +76,20 @@ const STAGE_CATEGORY =
 const NON_ARTICLE_CATEGORY = /(disambiguation pages|set index)/i;
 
 /**
+ * The producer, network or platform, rather than a show it carries.
+ *
+ * These are the hardest false positives to keep out, because the prose rule is
+ * genuinely satisfied: Dropout's lead really does describe actual play, and
+ * really does say "series". But a company is a `channel` in this schema, not a
+ * show — Geek & Sundry and Dropout are both already channels here — and filing
+ * one as a show would invent a series that does not exist while burying the
+ * real ones under it. The first full sweep proposed Dropout twice, CollegeHumor
+ * and Geek & Sundry as missing shows.
+ */
+const COMPANY_CATEGORY =
+  /(\bcompanies\b|\bcompany\b|corporations|\d{4} establishments|establishments in \d{4}|internet properties|mergers and acquisitions|streaming media|subscription video|video on demand|youtube channels|webcasters|\bstreamers\b|mass media|television networks|record labels)/i;
+
+/**
  * The game system itself, rather than a show played in it.
  *
  * Prose names the system in the same breath as the show ("a combination of
@@ -169,6 +183,7 @@ export function classify(title: string, facts: WorkFacts): Classification {
     [CONCEPT_CATEGORY, 'a concept, terminology or list article, not a work'],
     [GAME_CATEGORY, 'the game system itself, not a show played in it'],
     [IN_UNIVERSE_CATEGORY, 'an in-universe or rules article, not a work'],
+    [COMPANY_CATEGORY, 'a producer, network or platform — a channel here, not a show'],
   ];
   for (const [pattern, why] of disqualifiers) {
     const hit = categories.find((c) => pattern.test(c));
