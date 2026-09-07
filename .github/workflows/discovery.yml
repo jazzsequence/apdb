@@ -8,11 +8,22 @@ name: Weekly discovery sweep
 # here and the result arrives the way everything else in this project arrives:
 # as a pull request somebody reads.
 #
-# It is report-only by construction. The scripts it calls write nothing to
-# `data/`, and the PR it opens touches one file under `reports/`. Merging it
-# merges the report, not the data — filing a candidate as a credit is still a
-# deliberate, separately-sourced edit. See POLICY.md on why a reference work is
-# where a credit starts, not where it ends.
+# The PR it opens contains two different kinds of thing, and they are reviewed
+# differently:
+#
+#   - A DATA change: the duplicate fold. `dedupe` merges credits it can show
+#     describe the same appearance and unions their sources. It makes no
+#     sourcing claim and adds no credit — it is a mechanical transform of data
+#     that already passed CI, and it is idempotent.
+#   - A REPORT: the discovery candidates. These are NOT filed. Every one came
+#     from a reference work or a fan wiki, and POLICY.md uses Wikipedia being
+#     wrong about this project's own subject as the worked example. Filing one
+#     is a deliberate, separately-sourced edit a human makes afterwards.
+#
+# Because the job now writes to `data/`, it validates its own output before
+# pushing. A PR opened with GITHUB_TOKEN does not trigger other workflows, so
+# validate.yml does NOT run on it — the checks below are the only gate this
+# change gets. Do not remove them.
 
 on:
   schedule:
@@ -75,21 +86,29 @@ jobs:
         if: env.YOUTUBE_API_KEY != ''
         run: npm run discover:youtube > out/youtube.log 2>&1
 
-      # Runs after the sweeps, and reports rather than writes.
+      # Runs after the sweeps and writes the fold to data/.
       #
       # Duplicates accrue whenever an importer runs and this does not, and they
       # stay invisible until someone opens a particular person's page —
-      # fourteen CelebriD&D people sat double-credited for months. This job is
-      # the one weekly thing a human reliably reads, so the count belongs here.
+      # fourteen CelebriD&D people sat double-credited for months.
       #
-      # Deliberately --dry-run. The PR this job opens states that nothing under
-      # data/ changed, and that promise is what lets it be reviewed as a report
-      # instead of as data. Folding is a one-line command the report prints.
-      # `npm run dedupe -- --check` in validate.yml is the gate that stops new
-      # duplicates landing; this is the nudge to clear ones already there.
-      - name: Check for duplicate credits
-        continue-on-error: true
-        run: npm run dedupe -- --dry-run > out/dedupe.log 2>&1
+      # Not continue-on-error: this is the data change the PR exists to carry,
+      # so a failure here should fail the run rather than quietly open a PR
+      # that folds nothing.
+      - name: Fold duplicate credits
+        run: npm run dedupe | tee out/dedupe.log
+
+      # The safety net that replaces validate.yml, which will not run on this
+      # PR. Schema, referential integrity, id uniqueness — the same gate every
+      # human PR passes. If this fails, nothing is pushed.
+      - name: Validate the folded data
+        run: npm run validate
+
+      # dedupe is idempotent, so a second pass must find nothing. If it does
+      # find something, the merge rule is not converging and the fold above is
+      # not trustworthy.
+      - name: Confirm the fold converged
+        run: npm run dedupe -- --check
 
       - name: Build the report
         id: report
@@ -119,36 +138,42 @@ jobs:
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-          # Carry the report across the branch switch by hand. Checking out a
-          # branch whose copy of the file differs from the one just generated
-          # would refuse rather than overwrite it.
-          rm -rf /tmp/sweep && mkdir -p /tmp/sweep && cp -r reports/. /tmp/sweep/
+          # The branch is rebuilt from the commit this run checked out, every
+          # run, and force-pushed.
+          #
+          # The report-only version continued whatever was already on the
+          # branch, to avoid force-pushing. That is the wrong shape now the PR
+          # carries data: a branch left over from an earlier week holds `data/`
+          # as it was then, and merging it would revert anything that landed on
+          # main in between. Freshness wins — fixes go to main, and the next run
+          # picks them up.
+          #
+          # The working tree already holds the fold and the report, both
+          # produced against this same commit, so switch branch without
+          # disturbing them.
+          git checkout -B "$BRANCH"
 
-          # Continue the existing branch where there is one, so the weekly
-          # update is an ordinary commit rather than a force-push. A human who
-          # pushes a fix onto the open PR keeps it either way.
-          if git fetch origin "$BRANCH"; then
-            git checkout -B "$BRANCH" FETCH_HEAD
-          else
-            git checkout -B "$BRANCH"
-          fi
-
-          mkdir -p reports && cp -r /tmp/sweep/. reports/
-          git add reports/
+          git add data/ reports/
           if git diff --cached --quiet; then
-            echo "Report is identical to the one already on $BRANCH — nothing to push."
+            echo "Nothing to push — no duplicates to fold and the report is unchanged."
             exit 0
           fi
 
+          FOLDED=$(sed -n 's/.*(\([0-9]*\) folded).*/\1/p' out/dedupe.log | head -1)
           git commit -m "Weekly discovery sweep: ${{ steps.report.outputs.findings }} finding(s)
 
-          Automated reconnaissance from .github/workflows/discovery.yml. Candidates
-          only — every one still needs a source closer to the fact before it can be
-          filed as a credit. See the report for what turned up and why each entry
-          reads as actual play.
+          Automated run of .github/workflows/discovery.yml.
+
+          Data change: ${FOLDED:-0} duplicate credit(s) folded. dedupe merges credits
+          it can show describe the same appearance and unions their sources; it files
+          nothing new and adds no source. Validated inside the run, because a PR opened
+          with GITHUB_TOKEN does not trigger validate.yml.
+
+          Report: the discovery candidates under reports/ are NOT filed. Each still
+          needs a source closer to the fact before it can become a credit.
 
           Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          git push origin "$BRANCH"
+          git push --force-with-lease origin "$BRANCH"
 
           if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')" ]; then
             echo "PR already open for $BRANCH — the push updated it."
@@ -160,15 +185,33 @@ jobs:
             --base "${{ github.event.repository.default_branch || 'main' }}" \
             --title "Weekly discovery sweep — ${{ steps.report.outputs.findings }} finding(s)" \
             --body "$(cat <<'BODY'
-          The weekly sweep found something. The full report is the single file this
-          PR adds, `reports/discovery-latest.md`.
+          Two different things in here, and they are reviewed differently. The full
+          report is `reports/discovery-latest.md`.
 
-          **This PR is not data.** Nothing under `data/` changed. Every candidate came
+          ### The data change: duplicate credits, folded
+
+          Any diff under `data/` is `npm run dedupe` and nothing else. It merges
+          credits it can show describe the same appearance and unions their sources —
+          it files no credit, adds no source, and makes no sourcing claim. Duplicates
+          accrue whenever an importer runs and dedupe does not; left alone they render
+          one appearance as two, and each half stays single-source while the pair
+          cites the same evidence twice.
+
+          Read it as you would any mechanical change: skim that the folds pair up.
+
+          > **This PR is not covered by `validate.yml`.** A PR opened with
+          > `GITHUB_TOKEN` does not trigger other workflows. The run validated its own
+          > output — schema, referential integrity, and a second dedupe pass to confirm
+          > the fold converged — and refuses to push if any of that fails. That in-run
+          > check is the only gate this change gets.
+
+          ### The report: discovery candidates, NOT filed
+
+          Nothing from the candidate tables has been written to `data/`. Every one came
           from a reference work or a fan wiki — `reference` or `community` tier at best,
           and Wikipedia is wrong about this project's own subject often enough that
-          POLICY.md uses it as the worked example. Reviewing means picking the
-          candidates worth having, finding a closer source for each, and filing those
-          as a separate change.
+          POLICY.md uses it as the worked example. Acting on one means finding a closer
+          source and filing it as a separate change.
 
           Two passes to read differently:
 
@@ -177,6 +220,9 @@ jobs:
             from everyone in its cast, not just the person who surfaced it.
           - **Internet Archive / YouTube** do not dedupe against `data/`, so their raw
             output is every series they saw, not a list of new ones. Diff before believing.
+
+          The branch is rebuilt from `main` and force-pushed every run, so push fixes to
+          `main` rather than onto this branch.
 
           🤖 Generated with [Claude Code](https://claude.com/claude-code)
           BODY

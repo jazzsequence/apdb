@@ -191,19 +191,18 @@ if (dedupeLog && existsSync(dedupeLog)) {
   const people = Number(body.match(/across (\d+) people/)?.[1] ?? '0');
   if (folded > 0) {
     findings += 1;
-    lines.push('## Duplicate credits', '');
+    lines.push('## Duplicate credits — folded', '');
     lines.push(
-      `**${folded}** credit(s) across **${people}** people describe an appearance already ` +
-        'recorded by another credit on the same person.',
+      `**${folded}** credit(s) across **${people}** people described an appearance already ` +
+        'recorded by another credit on the same person. They have been folded, and that ' +
+        'is the data change in this pull request.',
       '',
-      'Safe to fold: `dedupe` only merges credits it can show describe the same fact, ' +
-        'and it unions their sources rather than discarding either. Left alone they ' +
-        'render as separate appearances, and each stays single-source while the pair ' +
-        'cites the same evidence twice.',
+      '`dedupe` merges only credits it can show describe the same fact, and unions their ' +
+        'sources rather than discarding either — so this files no credit and adds no ' +
+        'source. Left alone they render one appearance as two, and each half stays ' +
+        'single-source while the pair cites the same evidence twice.',
       '',
-      '```bash',
-      'npm run dedupe && npm run validate',
-      '```',
+      'To see exactly what moved, read the `data/` diff on this PR.',
       '',
       '```',
       body,
@@ -215,10 +214,12 @@ if (dedupeLog && existsSync(dedupeLog)) {
 
 lines.push('---', '');
 lines.push(
-  'Filed by the weekly `discovery.yml` job. Reviewing means: pick the candidates',
-  'worth having, find a source closer to the fact than the one that surfaced them,',
-  'and file those as a separate change. Merging this report merges the report, not',
-  'the data.',
+  'Filed by the weekly `discovery.yml` job.',
+  '',
+  'The only data change in the pull request carrying this report is the duplicate',
+  'fold described above. The candidates are not filed: reviewing them means picking',
+  'the ones worth having, finding a source closer to the fact than the one that',
+  'surfaced them, and filing those as a separate change.',
   '',
 );
 
