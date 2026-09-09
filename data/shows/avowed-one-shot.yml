@@ -6,10 +6,19 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Avowed_One-Shot
+  website: https://criticalrole.fandom.com/wiki/Avowed_One-Shot
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2025-02-18
     ended: 2025-02-18
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/a/ad/Avowed_One-Shot.jpg/revision/latest/scale-to-width-down/400?cb=20250220201848
+  licence: fair use
+  attribution: Avowed One-Shot series art, © its producers. Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Avowed_One-Shot.jpg
+  depicts: Series art for Avowed One-Shot
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

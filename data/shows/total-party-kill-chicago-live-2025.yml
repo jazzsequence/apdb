@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Total_Party_Kill:_Chicago_Live_2025
+  website: https://criticalrole.fandom.com/wiki/Total_Party_Kill:_Chicago_Live_2025
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2025-04-24
     ended: 2025-04-24
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/a/a0/Total_Party_Kill_Chicago.png/revision/latest/scale-to-width-down/400?cb=20250509172022
+  licence: fair use
+  attribution: "Total Party Kill: Chicago Live 2025 series art, © its producers.
+    Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Total_Party_Kill_Chicago.png
+  depicts: "Series art for Total Party Kill: Chicago Live 2025"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

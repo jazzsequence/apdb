@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online_One-Shot
+  website: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online_One-Shot
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2025-04-29
     ended: 2025-04-29
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/8/89/Elder_Scrolls_Online_One-Shot_thumbnail.jpg/revision/latest/scale-to-width-down/400?cb=20250501195254
+  licence: fair use
+  attribution: The Elder Scrolls Online One-Shot series art, © its producers. Via
+    criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Elder_Scrolls_Online_One-Shot_thumbnail.jpg
+  depicts: Series art for The Elder Scrolls Online One-Shot
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.
