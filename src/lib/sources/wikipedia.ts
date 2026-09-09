@@ -397,7 +397,12 @@ function roleFromSentence(sentence: string): string | undefined {
     return /\bguest\b/i.test(sentence) ? 'guest GM' : 'GM/DM';
   }
   if (/\b(guest player|as a guest|guest star|originally a guest)\b/i.test(sentence)) return 'guest player';
-  if (/\b(played|plays|playing|portrayed|starred|stars|joined the (?:main )?cast|main cast)\b/i.test(sentence)) {
+  // "cast member" is the phrasing Wikipedia reaches for most often and it was
+  // missing here, so every sentence built on it produced a candidate with no
+  // role — which --apply then declines to file, correctly but uselessly. Lou
+  // Wilson's Calamity credit is the case: "he was a cast member of the actual
+  // play series Exandria Unlimited: Calamity".
+  if (/\b(played|plays|playing|portrayed|starred|stars|joined the (?:main )?cast|main cast|cast member|member of the cast|was a player|as a player)\b/i.test(sentence)) {
     return 'player';
   }
   return undefined;

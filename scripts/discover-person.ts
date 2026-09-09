@@ -17,22 +17,29 @@
  *   npm run discover:person -- --person aabria-iyengar
  *   npm run discover:person -- --limit 25
  *   npm run discover:person -- --all --json out/person-sweep.json
+ *   npm run discover:person -- --all --apply          # file what needs no guessing
  *   npm run discover:person -- --fixture article.wikitext   # parser only, offline
  *
- * Report-only, like every other discovery script here. It writes nothing to
- * `data/` — Wikipedia is a `reference` tier source and a demonstrably fallible
- * one (POLICY.md: its filmography table has Aabria as a player on a show she
- * ran), so what comes out of this is a queue to check, not data to merge.
+ * Reports by default. `--apply` files the subset that can be filed without
+ * guessing, and the shape of that subset is the whole point: Wikipedia is
+ * ADDITIVE here, never authoritative. It is a `reference` tier source and a
+ * demonstrably fallible one — POLICY.md's worked example is its filmography
+ * table calling Aabria Iyengar a player on a show she ran — so it may add a
+ * credit the catalogue lacks, or add itself as a second source to one already
+ * recorded, and nothing else. It never overwrites a field a closer source
+ * established, never invents a show, and never creates a person. See the
+ * gates on the --apply block below.
  */
 import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import { parse } from 'yaml';
+import { parse, stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { titleKey } from '../src/lib/sources/imdb.js';
 import { fetchPerson, fetchWorks } from '../src/lib/sources/wikidata.js';
 import { fetchPersonWorks, fetchWorkFacts, parseWorks, type WikiWork } from '../src/lib/sources/wikipedia.js';
 import { classify, type Verdict } from '../src/lib/sources/actual-play.js';
 import { assertCleared } from '../src/lib/sources/registry.js';
+import { upsertCredit } from '../src/lib/credits.js';
 import type { Credit, Person, Show } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
@@ -319,7 +326,90 @@ console.log(
   `\n${totals.show} show(s) with no record, ${totals.credit} missing credit(s) on shows we have, ` +
     `${totals.unclear} unclear, ${totals.excluded} excluded as not actual play.`,
 );
-console.log('Nothing was written. Check each candidate against a closer source before filing it.\n');
+
+// ---------------------------------------------------------------------------
+// --apply: write the credits that need no guessing.
+//
+// Wikipedia is additive here, never authoritative. It is a `reference` tier
+// source and a fallible one — POLICY.md's worked example of a source being
+// wrong about this project's subject is a Wikipedia filmography table — so
+// what it may do is add a credit the catalogue lacks, or add itself as a
+// second source to one already recorded. What it may never do is overwrite
+// something a closer source established, or invent a record it cannot fully
+// support. Four gates enforce that:
+//
+//   1. The show must already exist here. A person's article names a series
+//      but not its channel, system or season structure, so a show built from
+//      it would be a stub competing with the real importers — which read the
+//      production's own playlist or the archive item and get those fields
+//      right. Missing shows stay in the report.
+//   2. The role must be stated. A credit whose role was guessed is worse than
+//      no credit; "appeared on" without a role is not a role.
+//   3. Writes go through upsertCredit, the same merge every importer uses. An
+//      existing credit keeps its own character, note and role — Wikipedia's
+//      version is only ever appended as another source.
+//   4. Nothing creates a person. Someone absent here is absent from the sweep
+//      too; this only ever adds to the 968 already indexed.
+// ---------------------------------------------------------------------------
+if (!has('apply')) {
+  console.log('Nothing was written. Re-run with --apply to file the credits that need no guessing.\n');
+} else {
+  let added = 0;
+  let corroborated = 0;
+  let skippedNoRole = 0;
+  let skippedNoShow = 0;
+
+  for (const report of reports) {
+    const target = targets.find((t) => t.person.id === report.person);
+    if (!target || !report.wikipedia) continue;
+
+    const path = join(DATA_ROOT, 'people', `${report.person}.yml`);
+    const record = parse(await readFile(path, 'utf8'));
+    let credits: Credit[] = record.credits ?? [];
+    let touched = false;
+
+    for (const candidate of report.candidates) {
+      if (candidate.verdict !== 'actual-play') continue;
+      if (!candidate.show) { skippedNoShow++; continue; }
+      if (!candidate.role) { skippedNoRole++; continue; }
+
+      const incoming = {
+        show: candidate.show,
+        ...(candidate.season !== undefined ? { season: candidate.season } : {}),
+        role: candidate.role,
+        ...(candidate.character ? { character: candidate.character } : {}),
+        ...(candidate.year ? { year: candidate.year } : {}),
+        sources: [
+          {
+            tier: 'reference' as const,
+            url: report.wikipedia,
+            note:
+              `Wikipedia's article on ${record.canonical_name}` +
+              (candidate.evidence ? `: "${candidate.evidence.slice(0, 220)}"` : '.'),
+          },
+        ],
+      } as Credit;
+
+      const result = upsertCredit(credits, incoming);
+      if (result.outcome === 'already-cited') continue;
+      credits = result.credits;
+      touched = true;
+      result.outcome === 'added' ? added++ : corroborated++;
+    }
+
+    if (touched) {
+      record.credits = credits;
+      await writeFile(path, stringify(record), 'utf8');
+    }
+  }
+
+  console.log(
+    `\n${added} credit(s) added, ${corroborated} existing credit(s) gained Wikipedia as a ` +
+      `second source.\n${skippedNoShow} skipped — no show record here; ` +
+      `${skippedNoRole} skipped — the sentence states no role.`,
+  );
+  console.log('Run `npm run validate` before committing.\n');
+}
 
 const jsonPath = flag('json');
 if (jsonPath) {

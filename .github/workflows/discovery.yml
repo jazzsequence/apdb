@@ -75,12 +75,19 @@ jobs:
 
       # Each pass is allowed to fail on its own. One rate-limited source should
       # cost its own section of the report, not the whole week's sweep.
+      # --apply, but a strictly additive one. Wikipedia may add a credit the
+      # catalogue lacks, or add itself as a second source to one already there.
+      # It may not overwrite a field a closer source established, invent a show
+      # (a person's article does not give a channel, system or season
+      # structure — the archive and YouTube importers do, and get them right),
+      # or create a person. Anything whose show or role does not resolve is
+      # left in the report rather than guessed at.
       - name: Person-first sweep (Wikipedia + Wikidata)
         continue-on-error: true
         run: |
           npm run discover:person -- \
             ${{ inputs.people && format('--limit {0}', inputs.people) || '--all' }} \
-            --json out/person-sweep.json | tee out/person.log
+            --apply --json out/person-sweep.json | tee out/person.log
 
       # Imports, not dry runs. These write shows, channels and credits into
       # data/, and every record they write carries the source it came from —
