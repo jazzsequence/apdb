@@ -8,22 +8,30 @@ name: Weekly discovery sweep
 # here and the result arrives the way everything else in this project arrives:
 # as a pull request somebody reads.
 #
-# The PR it opens contains two different kinds of thing, and they are reviewed
-# differently:
+# This job IMPORTS. It opens a pull request that adds shows, channels and
+# credits to `data/`, and it is judged by what it added, not by what it noticed.
 #
-#   - A DATA change: the duplicate fold. `dedupe` merges credits it can show
-#     describe the same appearance and unions their sources. It makes no
-#     sourcing claim and adds no credit — it is a mechanical transform of data
-#     that already passed CI, and it is idempotent.
-#   - A REPORT: the discovery candidates. These are NOT filed. Every one came
-#     from a reference work or a fan wiki, and POLICY.md uses Wikipedia being
-#     wrong about this project's own subject as the worked example. Filing one
-#     is a deliberate, separately-sourced edit a human makes afterwards.
+# An earlier version produced a report instead: a few thousand words of
+# candidates for a human to go and investigate. That is the wrong trade. The
+# work of turning a lead into a sourced record is the job's, not the reader's,
+# and a PR nobody can act on without doing that work is worth nothing.
 #
-# Because the job now writes to `data/`, it validates its own output before
-# pushing. A PR opened with GITHUB_TOKEN does not trigger other workflows, so
-# validate.yml does NOT run on it — the checks below are the only gate this
-# change gets. Do not remove them.
+# What it can import automatically is bounded by what can be sourced without
+# guessing:
+#
+#   - archive.org gives show and channel metadata on the item itself, and casts
+#     in the uploader's own description.
+#   - YouTube gives shows from a channel's playlists, and casts from the
+#     production's own video descriptions — the strongest cast source there is,
+#     hence `official` tier. A description naming no role yields nothing.
+#
+# Anything whose show, season or role cannot be resolved from a source stays in
+# the report rather than being invented. That residue should shrink over time;
+# it is a list of gaps in the importers, not homework for the reviewer.
+#
+# Because the job writes to `data/`, it validates its own output before pushing.
+# A PR opened with GITHUB_TOKEN does not trigger other workflows, so validate.yml
+# does NOT run on it — the checks below are the only gate. Do not remove them.
 
 on:
   schedule:
@@ -74,14 +82,55 @@ jobs:
             ${{ inputs.people && format('--limit {0}', inputs.people) || '--all' }} \
             --json out/person-sweep.json | tee out/person.log
 
-      - name: Internet Archive
+      # Imports, not dry runs. These write shows, channels and credits into
+      # data/, and every record they write carries the source it came from —
+      # archive.org item metadata, or the production's own video description.
+      - name: Internet Archive — import shows
         continue-on-error: true
         timeout-minutes: 20
-        run: npm run import:archive -- --dry-run > out/archive.log 2>&1
+        run: npm run import:archive > out/archive.log 2>&1
+
+      # Casts from the uploader's own item description: `official` tier.
+      - name: Internet Archive — import casts
+        continue-on-error: true
+        timeout-minutes: 20
+        run: npm run import:archive-casts > out/archive-casts.log 2>&1
 
       # No key, no pass — and no keyless fallback, because scraping around
       # YouTube's API breaches their terms (see the source registry).
-      - name: YouTube
+      - name: YouTube — import shows
+        continue-on-error: true
+        timeout-minutes: 25
+        if: env.YOUTUBE_API_KEY != ''
+        run: npm run sweep:youtube -- --castable-out out/castable.tsv > out/youtube-shows.log 2>&1
+
+      # sweep:youtube catalogues a show but leaves its cast alone. It writes
+      # every playlist whose descriptions are readable to a TSV — read that
+      # rather than its stdout, which truncates the list at 25.
+      #
+      # These are the credits most worth having: a production describing its own
+      # episode is the strongest cast source there is, which is why they land as
+      # `official` tier rather than `community`.
+      - name: YouTube — import casts for the shows it just found
+        continue-on-error: true
+        timeout-minutes: 25
+        if: env.YOUTUBE_API_KEY != ''
+        run: |
+          set -uo pipefail
+          if [ ! -s out/castable.tsv ]; then
+            echo "No playlists with a readable cast."; exit 0
+          fi
+          echo "$(wc -l < out/castable.tsv) playlist(s) with a readable cast."
+          while IFS=$'\t' read -r show playlist; do
+            [ -z "${show:-}" ] && continue
+            echo "--- $show <- $playlist"
+            # One bad playlist must not abandon the rest of the queue.
+            npm run collect -- --youtube --playlist "$playlist" \
+              --show "$show" --season 1 --apply >> out/youtube-casts.log 2>&1 \
+              || echo "    failed, continuing"
+          done < out/castable.tsv
+
+      - name: YouTube — report channels not yet catalogued
         continue-on-error: true
         if: env.YOUTUBE_API_KEY != ''
         run: npm run discover:youtube > out/youtube.log 2>&1
@@ -111,7 +160,6 @@ jobs:
         run: npm run dedupe -- --check
 
       - name: Build the report
-        id: report
         run: |
           npm run report:discovery -- \
             --person out/person-sweep.json \
@@ -119,6 +167,33 @@ jobs:
             --log "YouTube:out/youtube.log" \
             --dedupe out/dedupe.log \
             --out reports/discovery-latest.md
+
+      # What actually landed in data/ — the only thing that decides whether
+      # there is a pull request.
+      #
+      # This used to gate on the report's finding count, which meant a PR could
+      # open carrying nothing but a list of things for a human to go and
+      # investigate. The point of the job is to add records; if it added none,
+      # there is nothing to review.
+      - name: Summarise what was added
+        id: added
+        run: |
+          set -uo pipefail
+          git add -A data/
+          SHOWS=$(git diff --cached --name-only --diff-filter=A -- data/shows | wc -l | tr -d ' ')
+          CHANNELS=$(git diff --cached --name-only --diff-filter=A -- data/channels | wc -l | tr -d ' ')
+          PEOPLE=$(git diff --cached --name-only --diff-filter=A -- data/people | wc -l | tr -d ' ')
+          TOUCHED=$(git diff --cached --name-only -- data/ | wc -l | tr -d ' ')
+          # Credits are lines, not files: an existing person gaining a credit
+          # shows up as a modified file, not an added one.
+          CREDITS=$(git diff --cached -U0 -- data/people | grep -c '^+  - show:' || true)
+          echo "shows=$SHOWS"       >> "$GITHUB_OUTPUT"
+          echo "channels=$CHANNELS" >> "$GITHUB_OUTPUT"
+          echo "people=$PEOPLE"     >> "$GITHUB_OUTPUT"
+          echo "credits=$CREDITS"   >> "$GITHUB_OUTPUT"
+          echo "touched=$TOUCHED"   >> "$GITHUB_OUTPUT"
+          echo "Added: $SHOWS show(s), $CHANNELS channel(s), $PEOPLE person file(s), $CREDITS credit(s)."
+          echo "$TOUCHED file(s) under data/ changed."
 
       # The raw sweep, as a build artifact rather than a commit.
       #
@@ -135,14 +210,14 @@ jobs:
           path: out/
           retention-days: 90
 
-      # A weekly PR that says "nothing new" teaches everyone to close these
-      # unread, and then the one with a real find gets closed too.
-      - name: Nothing to report
-        if: steps.report.outputs.findings == '0'
-        run: echo "No new shows or credits found. Not opening a PR."
+      # A weekly PR that adds nothing teaches everyone to close these unread,
+      # and then the one with real records in it gets closed too.
+      - name: Nothing was added
+        if: steps.added.outputs.touched == '0'
+        run: echo "No new shows, channels or credits. Not opening a PR."
 
       - name: Open or update the pull request
-        if: steps.report.outputs.findings != '0'
+        if: steps.added.outputs.touched != '0'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -181,17 +256,20 @@ jobs:
           fi
 
           FOLDED=$(sed -n 's/.*(\([0-9]*\) folded).*/\1/p' out/dedupe.log | head -1)
-          git commit -m "Weekly discovery sweep: ${{ steps.report.outputs.findings }} finding(s)
+          git commit -m "Weekly import: ${{ steps.added.outputs.shows }} show(s), ${{ steps.added.outputs.credits }} credit(s)
 
           Automated run of .github/workflows/discovery.yml.
 
-          Data change: ${FOLDED:-0} duplicate credit(s) folded. dedupe merges credits
-          it can show describe the same appearance and unions their sources; it files
-          nothing new and adds no source. Validated inside the run, because a PR opened
-          with GITHUB_TOKEN does not trigger validate.yml.
+          Added: ${{ steps.added.outputs.shows }} show(s), ${{ steps.added.outputs.channels }} channel(s),
+          ${{ steps.added.outputs.people }} new person file(s), ${{ steps.added.outputs.credits }} credit(s).
+          Also folded ${FOLDED:-0} duplicate credit(s).
 
-          Report: the discovery candidates under reports/ are NOT filed. Each still
-          needs a source closer to the fact before it can become a credit.
+          Every record carries the source it came from: archive.org item metadata for
+          the Internet Archive passes, and the production's own video description for
+          the YouTube ones, which is why those credits are official tier.
+
+          Validated inside the run — schema, referential integrity and a second dedupe
+          pass — because a PR opened with GITHUB_TOKEN does not trigger validate.yml.
 
           Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           git push --force-with-lease origin "$BRANCH"
@@ -208,43 +286,39 @@ jobs:
           if ! gh pr create \
             --head "$BRANCH" \
             --base "${{ github.event.repository.default_branch || 'main' }}" \
-            --title "Weekly discovery sweep — ${{ steps.report.outputs.findings }} finding(s)" \
+            --title "Weekly import — ${{ steps.added.outputs.shows }} show(s), ${{ steps.added.outputs.credits }} credit(s)" \
             --body "$(cat <<'BODY'
-          Two different things in here, and they are reviewed differently. The full
-          report is `reports/discovery-latest.md`.
+          Records added by the weekly import. **This is a data PR** — read the `data/`
+          diff, not prose.
 
-          ### The data change: duplicate credits, folded
+          | | added |
+          | --- | --- |
+          | Shows | ${{ steps.added.outputs.shows }} |
+          | Channels | ${{ steps.added.outputs.channels }} |
+          | New people | ${{ steps.added.outputs.people }} |
+          | Credits | ${{ steps.added.outputs.credits }} |
 
-          Any diff under `data/` is `npm run dedupe` and nothing else. It merges
-          credits it can show describe the same appearance and unions their sources —
-          it files no credit, adds no source, and makes no sourcing claim. Duplicates
-          accrue whenever an importer runs and dedupe does not; left alone they render
-          one appearance as two, and each half stays single-source while the pair
-          cites the same evidence twice.
+          Every record carries the source it was built from, on the record itself:
 
-          Read it as you would any mechanical change: skim that the folds pair up.
+          - **Internet Archive** — show and channel metadata from the archive item, and
+            casts from the uploader's own description (`official` tier).
+          - **YouTube** — shows from the channel's own playlists, and casts read out of
+            the production's own video descriptions (`official` tier). A description
+            that names no role yields nothing rather than a guess.
 
-          > **This PR is not covered by `validate.yml`.** A PR opened with
-          > `GITHUB_TOKEN` does not trigger other workflows. The run validated its own
-          > output — schema, referential integrity, and a second dedupe pass to confirm
-          > the fold converged — and refuses to push if any of that fails. That in-run
-          > check is the only gate this change gets.
+          Duplicates were folded before committing, and the fold was re-run to confirm
+          it converged.
 
-          ### The report: discovery candidates, NOT filed
+          > **`validate.yml` does not run on this PR** — a PR opened with `GITHUB_TOKEN`
+          > does not trigger other workflows. The job validated its own output instead:
+          > schema, referential integrity, id uniqueness and a second dedupe pass. It
+          > refuses to push if any of that fails, so this is the only gate the change
+          > gets.
 
-          Nothing from the candidate tables has been written to `data/`. Every one came
-          from a reference work or a fan wiki — `reference` or `community` tier at best,
-          and Wikipedia is wrong about this project's own subject often enough that
-          POLICY.md uses it as the worked example. Acting on one means finding a closer
-          source and filing it as a separate change.
-
-          Two passes to read differently:
-
-          - **Person-first** (`npm run discover:person`) diffs against the catalogue as
-            it goes, so its tables are a real diff. A show under "no record" is missing
-            from everyone in its cast, not just the person who surfaced it.
-          - **Internet Archive / YouTube** do not dedupe against `data/`, so their raw
-            output is every series they saw, not a list of new ones. Diff before believing.
+          `reports/discovery-latest.md` is attached for the leads that could **not** be
+          imported automatically — anything whose show, season or role could not be
+          resolved from a source without guessing. It is reference material, not a
+          to-do list you are expected to work through.
 
           The branch is rebuilt from `main` and force-pushed every run, so push fixes to
           `main` rather than onto this branch.

@@ -16,7 +16,7 @@
  *   npm run sweep:youtube -- --min-subs 5000
  */
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { creditsFromDescription, playlistVideos } from '../src/lib/sources/youtube.js';
@@ -338,6 +338,17 @@ async function main() {
     if (castable.length) {
       console.log(`\n${castable.length} have a readable cast — import with --youtube --playlist:`);
       for (const c of castable.slice(0, 25)) console.log(`   ${c}`);
+      if (castable.length > 25) console.log(`   … and ${castable.length - 25} more`);
+
+      // The console list is truncated for readability, so anything automating
+      // the follow-up import has to read this file rather than scrape stdout —
+      // scraping would silently import the first 25 and drop the rest.
+      const out = flag('castable-out');
+      if (out) {
+        await mkdir(dirname(out), { recursive: true });
+        await writeFile(out, castable.map((c) => c.replace(/\s+\(\d+ cast\)$/, '').replace(/\s+/g, '\t')).join('\n') + '\n', 'utf8');
+        console.log(`\n   full list -> ${out}`);
+      }
     }
     if (unknownSystem.length) {
       console.log(`\n${unknownSystem.length} series skipped — title states no system, so none was assumed:`);
