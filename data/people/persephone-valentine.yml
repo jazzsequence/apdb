@@ -22,6 +22,31 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/89180-dimension-20/cast
         note: Cast for "Dimension 20" per TMDB.
+  - show: desiquest
+    season: 1
+    episode: The Thick of It | DesiQuest Episode 4
+    role: guest player
+    character: Iman
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=hA35iqlG50o
+        note: Cast per the production's own description of "The Thick of It | DesiQuest
+          Episode 4".
+  - show: fast-times-at-d-d-high
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: official
+        url: https://feed.podbean.com/fasttimesdnd/feed.xml
+        note: "The show's own feed names the dungeon master and players: \"a magical
+          homebrew world from the mind of Dungeon Master Persephone! ... With
+          players: Caro, Elise, Nuance, and Wren!\""
+      - tier: community
+        url: https://fasttimesdnd.podbean.com
+        note: The show's Podbean page pairs each player with their character.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/0/04/PCPersephoneSam.png/revision/latest/scale-to-width-down/400?cb=20210729002946
   licence: fair use

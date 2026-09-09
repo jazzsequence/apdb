@@ -1,0 +1,25 @@
+id: fast-times-at-d-d-high
+title: Fast Times at D&D High
+channels:
+  - fast-times-at-d-d-high
+format: podcast
+status: unknown
+description: Four teenagers in the homebrew world of Cisternia juggle school,
+  mysteries and dating while hiding their magical-girl secret identities.
+links:
+  website: https://fasttimesdnd.podbean.com
+  podcast: https://feed.podbean.com/fasttimesdnd/feed.xml
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 31
+    started: 2021-09
+image:
+  url: https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/2b/2c/53/2b2c53eb-4132-a887-eb16-6aa428f5bdaa/mza_5873699499289897416.jpg/600x600bb.jpg
+  licence: fair use
+  attribution: Fast Times at D&D High cover art, © its producers. Via Apple Podcasts.
+  source: https://podcasts.apple.com/us/podcast/fast-times-at-d-d-high/id1523233133
+  depicts: Cover art for Fast Times at D&D High
+  rationale: Low-resolution cover used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

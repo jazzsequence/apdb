@@ -1,0 +1,23 @@
+id: nuance-vivian
+canonical_name: Nuance Vivian
+sort_name: Vivian, Nuance
+aliases:
+  - id: default
+    name: Nuance Vivian
+    alias_type: legal
+credits:
+  - show: fast-times-at-d-d-high
+    season: 1
+    role: player
+    alias: default
+    year: "2021"
+    character: Suri
+    sources:
+      - tier: official
+        url: https://feed.podbean.com/fasttimesdnd/feed.xml
+        note: "The show's own feed names the dungeon master and players: \"a magical
+          homebrew world from the mind of Dungeon Master Persephone! ... With
+          players: Caro, Elise, Nuance, and Wren!\""
+      - tier: community
+        url: https://fasttimesdnd.podbean.com
+        note: The show's Podbean page pairs each player with their character.
