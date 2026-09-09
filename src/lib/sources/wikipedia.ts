@@ -288,12 +288,45 @@ function parseProse(section: Section): WikiWork[] {
     const sentence = raw.replace(/\s+/g, ' ').trim();
     if (!sentence || !APPEARANCE.test(sentence)) continue;
 
-    const links = [...sentence.matchAll(/\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]*))?\]\]/g)];
-    if (links.length === 0) continue;
+    const allLinks = [...sentence.matchAll(/\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]*))?\]\]/g)];
+    if (allLinks.length === 0) continue;
 
     const clean = stripMarkup(
       sentence.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1'),
     );
+
+    // Which link in the sentence is the thing the person was actually in?
+    //
+    // Emitting all of them is what put Lou Wilson's Calamity credit on
+    // Critical Role and Jacqueline Emerson's Thresher credit on Critical Role:
+    // in both sentences the show they appeared in and its parent series are
+    // linked side by side, and the parent won. Two signals separate them, and
+    // they are Wikipedia's own house style rather than anything invented here.
+    //
+    // 1. Work titles are italicised. `''[[Nerd Poker]]''` is a work;
+    //    `[[Critical Role]] [[actual play]] series ''[[…|Thresher]]''` has the
+    //    parent and the genre as bare links and only the work in italics.
+    // 2. Context follows an appositive. "…the actual play series ''[[Exandria
+    //    Unlimited]]: Calamity'', a spin-off of the web series ''[[Critical
+    //    Role]]''" — everything after ", a spin-off of" describes the work
+    //    rather than naming another one the person was in.
+    const italicSpans: Array<[number, number]> = [];
+    for (const span of sentence.matchAll(/''+(?:[^']|'(?!'))+''+/g)) {
+      italicSpans.push([span.index, span.index + span[0].length]);
+    }
+    const italicSpanAt = (i: number) => italicSpans.find(([s, e]) => i >= s && i < e);
+
+    const appositive = sentence.match(
+      /,\s+(?:a|an|the)\s+[^,.]{0,60}?(?:spin-?off|adaptation|reboot|sequel|prequel|companion|continuation)|,\s+which\b|\bbased on\b/i,
+    );
+    const cutoff = appositive?.index ?? Number.POSITIVE_INFINITY;
+
+    const beforeCutoff = allLinks.filter((l) => l.index < cutoff);
+    const italicised = beforeCutoff.filter((l) => italicSpanAt(l.index));
+    // Fall back to every link before the cutoff when the sentence italicises
+    // nothing — plenty of articles do not, and dropping those would cost real
+    // finds. The classifier is the second line of defence there.
+    const links = italicised.length > 0 ? italicised : beforeCutoff;
 
     for (const link of links) {
       const target = link[1].trim();
@@ -321,7 +354,29 @@ function parseProse(section: Section): WikiWork[] {
       // and reporting it as a title asks a reviewer to go and add a show
       // called "fourth campaign".
       const ordinalPhrase = /^(the )?(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|final|latest|next|main|current)\b/i;
-      const title = ordinalPhrase.test(display) ? target : display;
+      let title = ordinalPhrase.test(display) ? target : display;
+
+      // A subtitle often sits outside the link but inside the italics:
+      // "''[[Exandria Unlimited]]: Calamity''" links the parent show and
+      // italicises the season. The link alone resolves to the show and reports
+      // a missing credit on it; the whole italic span resolves to the season,
+      // which is where the credit actually belongs and which the catalogue can
+      // match by season title.
+      const span = italicSpanAt(link.index);
+      if (span) {
+        const full = stripMarkup(
+          sentence
+            .slice(span[0], span[1])
+            .replace(/''+/g, '')
+            .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2')
+            .replace(/\[\[([^\]]+)\]\]/g, '$1'),
+        ).trim();
+        // Only when it genuinely extends the link text, so a span that is just
+        // the link does not overwrite a piped display with the raw target.
+        if (full && full.length > title.length && full.toLowerCase().includes(title.toLowerCase())) {
+          title = full;
+        }
+      }
 
       works.push({
         title: stripMarkup(title),
