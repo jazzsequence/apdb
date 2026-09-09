@@ -1,0 +1,15 @@
+id: the-mighty-nein-reunion-echoes-of-the-solstice
+title: "The Mighty Nein Reunion: Echoes of the Solstice"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_Reunion:_Echoes_of_the_Solstice
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2023-10-26
+    ended: 2023-10-26

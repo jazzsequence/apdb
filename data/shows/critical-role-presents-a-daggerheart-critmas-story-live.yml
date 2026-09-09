@@ -1,0 +1,15 @@
+id: critical-role-presents-a-daggerheart-critmas-story-live
+title: "Critical Role Presents: A Daggerheart Critmas Story Live Show"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_Presents:_A_Daggerheart_Critmas_Story_Live_Show
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 1
+    started: 2024-12-19
+    ended: 2024-12-19

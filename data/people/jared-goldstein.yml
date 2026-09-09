@@ -1,0 +1,19 @@
+id: jared-goldstein
+canonical_name: Jared Goldstein
+sort_name: Goldstein, Jared
+aliases:
+  - id: default
+    name: Jared Goldstein
+    alias_type: legal
+credits:
+  - show: persona-5-tactica-one-shot
+    season: 1
+    role: player
+    character: Patty
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Persona_5_Tactica_One-Shot
+        note: Persona 5 Tactica One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

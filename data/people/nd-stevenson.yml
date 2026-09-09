@@ -9,6 +9,11 @@ aliases:
     name: Nate Stevenson
     alias_type: legal
     note: Credited under this name on some sources; merged from `nate-stevenson`.
+  - id: noelle
+    name: Noelle Stevenson
+    alias_type: birth
+    active_to: "2021"
+    note: The name on credits before 2021.
 credits:
   - show: critical-role
     season: 1
@@ -28,6 +33,30 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+  - show: critical-role-one-shot-once-upon-a-fairytale-cruise
+    season: 1
+    role: player
+    character: Peter Pan
+    alias: noelle
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Once_Upon_a_Fairytale_Cruise
+        note: "Critical Role One-Shot: Once Upon a Fairytale Cruise cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Billed as Noelle Stevenson; the name was changed in 2021.
+  - show: honey-heist-3-tova-s-honeys
+    season: 1
+    role: player
+    character: Tova
+    alias: noelle
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Honey_Heist_3:_Tova’s_Honeys
+        note: "Honey Heist 3: Tova’s Honeys cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+    note: Billed as Noelle Stevenson; the name was changed in 2021.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/f/f0/ND_Stevenson.jpg
   licence: CC-BY-SA-4.0

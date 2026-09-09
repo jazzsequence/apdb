@@ -78,6 +78,16 @@ credits:
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
+  - show: generation-nord
+    season: 1
+    role: player
+    character: Wrigley Rincon (Rigglemethis89)
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Generation_Nord
+        note: Generation Nord cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/7/72/Christian_Navarro.png/revision/latest/scale-to-width-down/400?cb=20220725155906
   licence: fair use

@@ -1,0 +1,19 @@
+id: liam-mcintyre
+canonical_name: Liam McIntyre
+sort_name: McIntyre, Liam
+aliases:
+  - id: default
+    name: Liam McIntyre
+    alias_type: legal
+credits:
+  - show: kingdom-come-deliverance-ii-one-shot
+    season: 1
+    role: player
+    character: Big Hans
+    alias: default
+    year: "2026"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Kingdom_Come:_Deliverance_II_One-Shot
+        note: "Kingdom Come: Deliverance II One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."

@@ -1,0 +1,15 @@
+id: critical-role-one-shot-epic-level-battle-royale
+title: "Critical Role One-Shot: Epic Level Battle Royale"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Epic_Level_Battle_Royale
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2017-12-07
+    ended: 2017-12-07

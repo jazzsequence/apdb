@@ -241,3 +241,327 @@ credits:
         url: https://www.youtube.com/watch?v=onH65amYMPI
         note: "Cast per the production's own description of \"D&D Live 2019: The
           Descent, Part 1\"."
+  - show: 10th-anniversary-live-tour
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/10th_Anniversary_Live_Tour
+        note: 10th Anniversary Live Tour cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: bells-hells-and-the-maelstrom-kingdom
+    season: 1
+    role: player
+    character: Ashton Greymoore
+    alias: default
+    year: "2026"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Bells_Hells_&_the_Maelstrom_Kingdom
+        note: Bells Hells & the Maelstrom Kingdom cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: call-of-cthulhu-shadow-of-the-crystal-palace
+    season: 1
+    role: player
+    character: The Keeper of Arcane Lore
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Call_of_Cthulhu:_Shadow_of_the_Crystal_Palace
+        note: "Call of Cthulhu: Shadow of the Crystal Palace cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: choose-their-adventure-again
+    season: 1
+    role: player
+    character: Bobby Socks
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Choose_Their_Adventure...Again!
+        note: Choose Their Adventure...Again! cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: cinderbrush-a-monsterhearts-story
+    season: 1
+    role: player
+    character: Jamie Wrenly
+    alias: default
+    year: "2020"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Cinderbrush:_A_Monsterhearts_Story
+        note: "Cinderbrush: A Monsterhearts Story cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+  - show: critical-role-extra-liams-quest
+    season: 1
+    role: player
+    character: Taliesin Jaffe
+    alias: default
+    year: "2016"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_EXTRA_–_Liam's_Quest!
+        note: Critical Role EXTRA – Liam's Quest! cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: critical-role-one-shot-epic-level-battle-royale
+    season: 1
+    role: player
+    character: Percy
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Epic_Level_Battle_Royale
+        note: "Critical Role One-Shot: Epic Level Battle Royale cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-one-shot-kobolds-catacombs-and-dragons-oh
+    season: 1
+    role: player
+    character: Bundle
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Kobolds,_Catacombs_and_Dragons_(Oh_My!)
+        note: "Critical Role One-Shot: Kobolds, Catacombs and Dragons (Oh My!) cast, via
+          the criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-presents-a-daggerheart-critmas-story-live
+    season: 1
+    role: player
+    character: Dylan Brewster
+    alias: default
+    year: "2024"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_Presents:_A_Daggerheart_Critmas_Story_Live_Show
+        note: "Critical Role Presents: A Daggerheart Critmas Story Live Show cast, via
+          the criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-and-the-club-of-misfits
+    season: 1
+    role: player
+    character: Andy
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_and_the_Club_of_Misfits
+        note: Critical Role and the Club of Misfits cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: critical-role-plays-daggerheart
+    season: 1
+    role: player
+    character: Sir Danté Terrapin
+    alias: default
+    year: "2024"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_plays_Daggerheart
+        note: Critical Role plays Daggerheart cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: critical-role-grogs-one-shot
+    season: 1
+    role: player
+    character: Percy
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role:_Grog's_One-Shot
+        note: "Critical Role: Grog's One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+  - show: dalens-closet
+    season: 1
+    role: player
+    character: Percival de Rolo
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Dalen's_Closet
+        note: Dalen's Closet cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: doom-eternal-one-shot
+    season: 1
+    role: player
+    character: The Marauder
+    alias: default
+    year: "2020"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Doom_Eternal_One-Shot
+        note: Doom Eternal One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: echoes-of-exandria-live-tour
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Echoes_of_Exandria_Live_Tour
+        note: Echoes of Exandria Live Tour cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: honey-heist-2-electric-beargaloo
+    season: 1
+    role: player
+    character: Waffle
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Honey_Heist_2:_Electric_Beargaloo
+        note: "Honey Heist 2: Electric Beargaloo cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+  - show: hubris-a-darrington-brigade-one-shot
+    season: 1
+    role: player
+    character: The Owlbear
+    alias: default
+    year: "2026"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Hubris!_A_Darrington_Brigade_One-Shot
+        note: Hubris! A Darrington Brigade One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: jester-and-fjords-wedding-live-from-radio-city-music-ha
+    season: 1
+    role: player
+    character: Caduceus/Kingsley
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Jester_and_Fjord's_Wedding_-_Live_from_Radio_City_Music_Hall
+        note: Jester and Fjord's Wedding - Live from Radio City Music Hall cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: liams-quest-full-circle
+    season: 1
+    role: player
+    character: Taliesin Jaffe
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Liam's_Quest:_Full_Circle
+        note: "Liam's Quest: Full Circle cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA."
+  - show: menagerie-a-trois
+    season: 1
+    role: player
+    character: Sir Danté Terrapin
+    alias: default
+    year: "2024"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Ménagerie_a_Trois
+        note: Ménagerie a Trois cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: the-adventures-of-the-darrington-brigade
+    season: 1
+    role: player
+    character: The Owlbear
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Adventures_of_the_Darrington_Brigade
+        note: The Adventures of the Darrington Brigade cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: the-elder-scrolls-online-blackwood-part-i-death-and-tax
+    season: 1
+    role: player
+    character: Mallory Klaxton
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online:_Blackwood_-_Part_I:_Death_&_Taxes
+        note: "The Elder Scrolls Online: Blackwood - Part I: Death & Taxes cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: the-menagerie-returns
+    season: 1
+    role: player
+    character: Sir Danté Terrapin
+    alias: default
+    year: "2024"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Menagerie_Returns!
+        note: The Menagerie Returns! cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: the-mighty-nein-reunion-echoes-of-the-solstice
+    season: 1
+    role: player
+    character: Caduceus Clay
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_Reunion:_Echoes_of_the_Solstice
+        note: "The Mighty Nein Reunion: Echoes of the Solstice cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: the-mighty-nein-reunited-part-1-unfinished-business
+    season: 1
+    role: player
+    character: Kingsley Tealeaf
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_Reunited_Part_1_-_Unfinished_Business
+        note: The Mighty Nein Reunited Part 1 - Unfinished Business cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: the-night-before-critmas
+    season: 1
+    role: player
+    character: Arthur Fizzlebottom
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Night_Before_Critmas
+        note: The Night Before Critmas cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: the-search-for-bob
+    season: 1
+    role: player
+    character: Percival de Rolo
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Search_For_Bob
+        note: The Search For Bob cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: the-search-for-grog
+    season: 1
+    role: player
+    character: Percival de Rolo
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Search_For_Grog
+        note: The Search For Grog cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: to-the-poop-goblins-a-critical-role-pathfinder-one-shot
+    season: 1
+    role: player
+    character: Mezek
+    alias: default
+    year: "2016"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/To_the_Poop!_Goblins:_A_Critical_Role_Pathfinder_One-Shot
+        note: "To the Poop! Goblins: A Critical Role Pathfinder One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: trinkets-honey-heist
+    season: 1
+    role: player
+    character: Waffle
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Trinket's_Honey_Heist
+        note: Trinket's Honey Heist cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

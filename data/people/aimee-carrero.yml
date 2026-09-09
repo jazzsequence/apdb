@@ -83,7 +83,8 @@ credits:
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Circle_of_the_Crimson_Mirror
-        note: "Circle of the Crimson Mirror cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Crimson Mirror cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
       - tier: reference
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
@@ -91,3 +92,13 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
+  - show: generation-nord
+    season: 1
+    role: player
+    character: Lilith Ferrera (Jinxx)
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Generation_Nord
+        note: Generation Nord cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

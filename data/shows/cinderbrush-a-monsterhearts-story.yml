@@ -1,0 +1,15 @@
+id: cinderbrush-a-monsterhearts-story
+title: "Cinderbrush: A Monsterhearts Story"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Cinderbrush:_A_Monsterhearts_Story
+seasons:
+  - ordinal: 1
+    game: monsterhearts-2
+    episode_count: 1
+    started: 2020-02-14
+    ended: 2020-02-14

@@ -1,0 +1,13 @@
+id: echoes-of-exandria-live-tour
+title: Echoes of Exandria Live Tour
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Echoes_of_Exandria_Live_Tour
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 1

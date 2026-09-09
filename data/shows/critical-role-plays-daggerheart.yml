@@ -1,0 +1,15 @@
+id: critical-role-plays-daggerheart
+title: Critical Role plays Daggerheart
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_plays_Daggerheart
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 1
+    started: 2024-03-12
+    ended: 2024-03-12

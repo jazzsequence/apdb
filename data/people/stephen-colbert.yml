@@ -1,0 +1,19 @@
+id: stephen-colbert
+canonical_name: Stephen Colbert
+sort_name: Colbert, Stephen
+aliases:
+  - id: default
+    name: Stephen Colbert
+    alias_type: legal
+credits:
+  - show: stephen-colberts-dandd-adventure-with-matthew-mercer
+    season: 1
+    role: player
+    character: Capo
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Stephen_Colbert's_D&D_Adventure_with_Matthew_Mercer
+        note: Stephen Colbert's D&D Adventure with Matthew Mercer cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.

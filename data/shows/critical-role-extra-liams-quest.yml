@@ -1,0 +1,15 @@
+id: critical-role-extra-liams-quest
+title: Critical Role EXTRA – Liam's Quest!
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_EXTRA_–_Liam's_Quest!
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2016-06-30
+    ended: 2016-06-30

@@ -1,0 +1,15 @@
+id: dalens-closet
+title: Dalen's Closet
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Dalen's_Closet
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2019-08-29
+    ended: 2019-08-29

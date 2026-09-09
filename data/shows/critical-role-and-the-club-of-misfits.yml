@@ -1,0 +1,15 @@
+id: critical-role-and-the-club-of-misfits
+title: Critical Role and the Club of Misfits
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_and_the_Club_of_Misfits
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2018-10-25
+    ended: 2018-10-25

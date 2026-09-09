@@ -1,0 +1,19 @@
+id: xanthe-huynh
+canonical_name: Xanthe Huynh
+sort_name: Huynh, Xanthe
+aliases:
+  - id: default
+    name: Xanthe Huynh
+    alias_type: legal
+credits:
+  - show: persona-5-tactica-one-shot
+    season: 1
+    role: player
+    character: Van Nguyen
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Persona_5_Tactica_One-Shot
+        note: Persona 5 Tactica One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

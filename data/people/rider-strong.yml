@@ -1,0 +1,19 @@
+id: rider-strong
+canonical_name: Rider Strong
+sort_name: Strong, Rider
+aliases:
+  - id: default
+    name: Rider Strong
+    alias_type: legal
+credits:
+  - show: thank-goodness-its-thursday
+    season: 1
+    role: player
+    character: Lucas Belutchi
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Thank_Goodness_it's_Thursday!
+        note: Thank Goodness it's Thursday! cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.

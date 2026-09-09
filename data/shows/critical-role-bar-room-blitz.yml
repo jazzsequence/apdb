@@ -1,0 +1,15 @@
+id: critical-role-bar-room-blitz
+title: "Critical Role: Bar Room Blitz"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role:_Bar_Room_Blitz
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2017-08-31
+    ended: 2017-08-31

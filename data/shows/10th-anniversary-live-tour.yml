@@ -1,0 +1,15 @@
+id: 10th-anniversary-live-tour
+title: 10th Anniversary Live Tour
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/10th_Anniversary_Live_Tour
+seasons:
+  - ordinal: 1
+    game:
+      - daggerheart
+      - dnd-5e
+    episode_count: 1

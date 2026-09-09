@@ -1,0 +1,19 @@
+id: brittany-walloch-key
+canonical_name: Brittany Walloch-Key
+sort_name: Walloch-Key, Brittany
+aliases:
+  - id: default
+    name: Brittany Walloch-Key
+    alias_type: legal
+credits:
+  - show: honey-heist-3-tova-s-honeys
+    season: 1
+    role: player
+    character: Clair McFuzz
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Honey_Heist_3:_Tova’s_Honeys
+        note: "Honey Heist 3: Tova’s Honeys cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

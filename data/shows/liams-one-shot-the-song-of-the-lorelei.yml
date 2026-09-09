@@ -1,0 +1,15 @@
+id: liams-one-shot-the-song-of-the-lorelei
+title: "Liam's One Shot: The Song of the Lorelei"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Liam's_One_Shot:_The_Song_of_the_Lorelei
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2018-08-31
+    ended: 2018-08-31

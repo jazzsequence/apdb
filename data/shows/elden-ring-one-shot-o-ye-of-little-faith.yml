@@ -1,0 +1,15 @@
+id: elden-ring-one-shot-o-ye-of-little-faith
+title: "Elden Ring One-Shot: O Ye of Little Faith"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Elden_Ring_One-Shot:_O_Ye_of_Little_Faith
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2022-03-01
+    ended: 2022-03-01

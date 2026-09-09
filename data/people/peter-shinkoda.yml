@@ -1,0 +1,19 @@
+id: peter-shinkoda
+canonical_name: Peter Shinkoda
+sort_name: Shinkoda, Peter
+aliases:
+  - id: default
+    name: Peter Shinkoda
+    alias_type: legal
+credits:
+  - show: assassins-creed-shadows-one-shot
+    season: 1
+    role: player
+    character: Ryuichi
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Assassin's_Creed_Shadows_One-Shot
+        note: Assassin's Creed Shadows One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.

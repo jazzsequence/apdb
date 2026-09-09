@@ -1,0 +1,15 @@
+id: the-search-for-grog
+title: The Search For Grog
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/The_Search_For_Grog
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2019-02-22
+    ended: 2019-02-22

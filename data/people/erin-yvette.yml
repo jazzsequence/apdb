@@ -1,0 +1,18 @@
+id: erin-yvette
+canonical_name: Erin Yvette
+sort_name: Yvette, Erin
+aliases:
+  - id: default
+    name: Erin Yvette
+    alias_type: legal
+credits:
+  - show: dispatch-one-shot
+    season: 1
+    role: player
+    character: Fritzy Mane
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Dispatch_One-Shot
+        note: Dispatch One-Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

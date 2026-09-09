@@ -35,6 +35,17 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Downfall
         note: "Critical Role: Downfall cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
+  - show: kingdom-come-deliverance-ii-one-shot
+    season: 1
+    role: player
+    character: Dillon
+    alias: default
+    year: "2026"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Kingdom_Come:_Deliverance_II_One-Shot
+        note: "Kingdom Come: Deliverance II One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/d/d6/Nick_Marini_screenshot.png/revision/latest/scale-to-width-down/398?cb=20240622143825
   licence: fair use

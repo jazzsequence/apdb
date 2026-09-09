@@ -1,0 +1,15 @@
+id: the-menagerie-returns
+title: The Menagerie Returns!
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/The_Menagerie_Returns!
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 1
+    started: 2024-05-14
+    ended: 2024-05-14

@@ -1,0 +1,15 @@
+id: menagerie-a-trois
+title: Ménagerie a Trois
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Ménagerie_a_Trois
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 1
+    started: 2024-06-13
+    ended: 2024-06-13

@@ -1,0 +1,19 @@
+id: phil-lamarr
+canonical_name: Phil LaMarr
+sort_name: LaMarr, Phil
+aliases:
+  - id: default
+    name: Phil LaMarr
+    alias_type: legal
+credits:
+  - show: call-of-cthulhu-shadow-of-the-crystal-palace
+    season: 1
+    role: player
+    character: Dr. Mason Pocket
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Call_of_Cthulhu:_Shadow_of_the_Crystal_Palace
+        note: "Call of Cthulhu: Shadow of the Crystal Palace cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."

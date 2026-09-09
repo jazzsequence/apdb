@@ -15,8 +15,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=xS5D-xI5f0w
-        note: Cast per the episode's own description for "Always Look A Gift Horse
-          in the Mouth | DesiQuest Winter Special Episode 1."
+        note: Cast per the episode's own description for "Always Look A Gift Horse in
+          the Mouth | DesiQuest Winter Special Episode 1."
   - show: desiquest
     season: 1
     role: player
@@ -88,6 +88,17 @@ credits:
         url: https://www.imdb.com/title/tt9196862/fullcredits/
         note: IMDb full cast and crew for "The Last VHS Store" (2018), via the official
           datasets.
+  - show: the-legend-of-zelda-one-shot-lookout-here-we-come
+    season: 1
+    role: player
+    character: Tota
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Legend_of_Zelda_One-Shot:_Lookout,_Here_We_Come!
+        note: "The Legend of Zelda One-Shot: Lookout, Here We Come! cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/3/3f/OmarAndhera.png/revision/latest/scale-to-width-down/400?cb=20230206131322
   licence: fair use

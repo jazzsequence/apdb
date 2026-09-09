@@ -118,3 +118,36 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/candela-obscura
         note: Cast for "Candela Obscura" per TheTVDB.
+  - show: assassins-creed-shadows-one-shot
+    season: 1
+    role: player
+    character: Rufino
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Assassin's_Creed_Shadows_One-Shot
+        note: Assassin's Creed Shadows One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: persona-5-tactica-one-shot
+    season: 1
+    role: player
+    character: Jackson Sloan
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Persona_5_Tactica_One-Shot
+        note: Persona 5 Tactica One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: the-legend-of-zelda-one-shot-lookout-here-we-come
+    season: 1
+    role: player
+    character: Dink
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Legend_of_Zelda_One-Shot:_Lookout,_Here_We_Come!
+        note: "The Legend of Zelda One-Shot: Lookout, Here We Come! cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."

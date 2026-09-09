@@ -1,0 +1,15 @@
+id: honey-heist-3-tova-s-honeys
+title: "Honey Heist 3: Tova’s Honeys"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Honey_Heist_3:_Tova’s_Honeys
+seasons:
+  - ordinal: 1
+    game: honey-heist
+    episode_count: 1
+    started: 2018-11-23
+    ended: 2018-11-23

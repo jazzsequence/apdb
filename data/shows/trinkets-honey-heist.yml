@@ -1,0 +1,15 @@
+id: trinkets-honey-heist
+title: Trinket's Honey Heist
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Trinket's_Honey_Heist
+seasons:
+  - ordinal: 1
+    game: honey-heist
+    episode_count: 1
+    started: 2017-11-09
+    ended: 2017-11-09

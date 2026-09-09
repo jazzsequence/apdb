@@ -1,0 +1,19 @@
+id: emily-piggford
+canonical_name: Emily Piggford
+sort_name: Piggford, Emily
+aliases:
+  - id: default
+    name: Emily Piggford
+    alias_type: legal
+credits:
+  - show: assassins-creed-shadows-one-shot
+    season: 1
+    role: player
+    character: Umi
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Assassin's_Creed_Shadows_One-Shot
+        note: Assassin's Creed Shadows One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.

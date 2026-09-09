@@ -1,0 +1,19 @@
+id: tony-hale
+canonical_name: Tony Hale
+sort_name: Hale, Tony
+aliases:
+  - id: default
+    name: Tony Hale
+    alias_type: legal
+credits:
+  - show: choose-their-adventure-again
+    season: 1
+    role: player
+    character: Sarge
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Choose_Their_Adventure...Again!
+        note: Choose Their Adventure...Again! cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.

@@ -1,0 +1,15 @@
+id: the-adventures-of-the-darrington-brigade
+title: The Adventures of the Darrington Brigade
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/The_Adventures_of_the_Darrington_Brigade
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2019-11-29
+    ended: 2019-11-29

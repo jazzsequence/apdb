@@ -138,6 +138,26 @@ credits:
         url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
         note: D&D Beyond's own announcement post, naming the DM and each player's
           character.
+  - show: dispatch-one-shot
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Dispatch_One-Shot
+        note: Dispatch One-Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: doom-eternal-one-shot
+    season: 1
+    role: player
+    character: The Revenant
+    alias: default
+    year: "2020"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Doom_Eternal_One-Shot
+        note: Doom Eternal One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/f/f8/Dnd_stream_jasmine.png/revision/latest?cb=20220409060329
   licence: fair use

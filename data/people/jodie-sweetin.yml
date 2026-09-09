@@ -1,0 +1,19 @@
+id: jodie-sweetin
+canonical_name: Jodie Sweetin
+sort_name: Sweetin, Jodie
+aliases:
+  - id: default
+    name: Jodie Sweetin
+    alias_type: legal
+credits:
+  - show: thank-goodness-its-thursday
+    season: 1
+    role: player
+    character: Kasey aka K.C.
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Thank_Goodness_it's_Thursday!
+        note: Thank Goodness it's Thursday! cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.

@@ -1,0 +1,17 @@
+id: jester-and-fjords-wedding-live-from-radio-city-music-ha
+title: Jester and Fjord's Wedding - Live from Radio City Music Hall
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Jester_and_Fjord's_Wedding_-_Live_from_Radio_City_Music_Hall
+seasons:
+  - ordinal: 1
+    game:
+      - dnd-5e
+      - dnd-5e-2024
+    episode_count: 1
+    started: 2025-11-05
+    ended: 2025-11-05

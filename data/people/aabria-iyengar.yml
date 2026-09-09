@@ -559,3 +559,14 @@ credits:
         url: https://www.imdb.com/title/tt21227972/characters/nm10682827
         note: IMDb credits her as Margot "Fuego" Walker on the series, 8 episodes in
           2022.
+  - show: the-elder-scrolls-online-blackwood-part-i-death-and-tax
+    season: 1
+    role: player
+    character: Tavima
+    alias: iyengar
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online:_Blackwood_-_Part_I:_Death_&_Taxes
+        note: "The Elder Scrolls Online: Blackwood - Part I: Death & Taxes cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."

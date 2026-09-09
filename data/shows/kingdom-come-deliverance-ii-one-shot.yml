@@ -1,0 +1,15 @@
+id: kingdom-come-deliverance-ii-one-shot
+title: "Kingdom Come: Deliverance II One-Shot"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Kingdom_Come:_Deliverance_II_One-Shot
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 1
+    started: 2026-02-17
+    ended: 2026-02-17

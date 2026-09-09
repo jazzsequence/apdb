@@ -1,0 +1,15 @@
+id: doom-eternal-one-shot
+title: Doom Eternal One-Shot
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Doom_Eternal_One-Shot
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2020-03-16
+    ended: 2020-03-16

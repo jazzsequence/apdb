@@ -41,6 +41,39 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+  - show: critical-role-and-the-club-of-misfits
+    season: 1
+    role: player
+    character: Brian
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_and_the_Club_of_Misfits
+        note: Critical Role and the Club of Misfits cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: honey-heist-2-electric-beargaloo
+    season: 1
+    role: player
+    character: Liam Las Vegas
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Honey_Heist_2:_Electric_Beargaloo
+        note: "Honey Heist 2: Electric Beargaloo cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+  - show: trinkets-honey-heist
+    season: 1
+    role: player
+    character: Liam Las Vegas
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Trinket's_Honey_Heist
+        note: Trinket's Honey Heist cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/c/c5/Brian_W._Foster.jpg/revision/latest/scale-to-width-down/320?cb=20220112130125
   licence: fair use

@@ -14,3 +14,14 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
+  - show: critical-role-one-shot-once-upon-a-fairytale-cruise
+    season: 1
+    role: player
+    character: Goldilocks
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Once_Upon_a_Fairytale_Cruise
+        note: "Critical Role One-Shot: Once Upon a Fairytale Cruise cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."

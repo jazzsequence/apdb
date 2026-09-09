@@ -183,3 +183,14 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/UnDeadwood
         note: UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
+  - show: doom-eternal-one-shot
+    season: 1
+    role: player
+    character: The Pain Elemental
+    alias: default
+    year: "2020"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Doom_Eternal_One-Shot
+        note: Doom Eternal One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

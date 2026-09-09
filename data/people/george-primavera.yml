@@ -36,6 +36,16 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Re-Slayer's_Take
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: kingdom-come-deliverance-ii-one-shot
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2026"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Kingdom_Come:_Deliverance_II_One-Shot
+        note: "Kingdom Come: Deliverance II One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/0/0e/George_Primavera_-_CR_promo.jpg/revision/latest/scale-to-width-down/400?cb=20240522131556
   licence: fair use

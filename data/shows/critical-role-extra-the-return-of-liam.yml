@@ -1,0 +1,15 @@
+id: critical-role-extra-the-return-of-liam
+title: Critical Role Extra – The Return of Liam!
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_Extra_–_The_Return_of_Liam!
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2016-09-01
+    ended: 2016-09-01

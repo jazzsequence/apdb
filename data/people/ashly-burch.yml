@@ -73,3 +73,14 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
+  - show: call-of-cthulhu-shadow-of-the-crystal-palace
+    season: 1
+    role: player
+    character: Ida Codswell
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Call_of_Cthulhu:_Shadow_of_the_Crystal_Palace
+        note: "Call of Cthulhu: Shadow of the Crystal Palace cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."

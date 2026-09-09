@@ -1,0 +1,15 @@
+id: critical-role-one-shot-once-upon-a-fairytale-cruise
+title: "Critical Role One-Shot: Once Upon a Fairytale Cruise"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Once_Upon_a_Fairytale_Cruise
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2017-11-16
+    ended: 2017-11-16

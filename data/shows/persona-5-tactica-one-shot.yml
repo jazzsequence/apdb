@@ -1,0 +1,15 @@
+id: persona-5-tactica-one-shot
+title: Persona 5 Tactica One-Shot
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Persona_5_Tactica_One-Shot
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2023-11-17
+    ended: 2023-11-17

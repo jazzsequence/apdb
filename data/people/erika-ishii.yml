@@ -210,5 +210,27 @@ credits:
     sources:
       - tier: community
         url: https://theadventurezone.fandom.com/wiki/Louise_%22Lulu%22_Kagiyama
-        note: The character page names its player — "a player character in Season 2
-          of Dust, played by Erika Ishii". CC-BY-SA.
+        note: The character page names its player — "a player character in Season 2 of
+          Dust, played by Erika Ishii". CC-BY-SA.
+  - show: call-of-cthulhu-shadow-of-the-crystal-palace
+    season: 1
+    role: player
+    character: Hanako Hayashi
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Call_of_Cthulhu:_Shadow_of_the_Crystal_Palace
+        note: "Call of Cthulhu: Shadow of the Crystal Palace cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: cinderbrush-a-monsterhearts-story
+    season: 1
+    role: player
+    character: Sasha Murasaki
+    alias: default
+    year: "2020"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Cinderbrush:_A_Monsterhearts_Story
+        note: "Cinderbrush: A Monsterhearts Story cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."

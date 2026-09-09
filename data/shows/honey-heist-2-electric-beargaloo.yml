@@ -1,0 +1,15 @@
+id: honey-heist-2-electric-beargaloo
+title: "Honey Heist 2: Electric Beargaloo"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Honey_Heist_2:_Electric_Beargaloo
+seasons:
+  - ordinal: 1
+    game: honey-heist
+    episode_count: 1
+    started: 2018-08-10
+    ended: 2018-08-10

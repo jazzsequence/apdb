@@ -1,0 +1,15 @@
+id: bells-hells-and-the-maelstrom-kingdom
+title: Bells Hells & the Maelstrom Kingdom
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Bells_Hells_&_the_Maelstrom_Kingdom
+seasons:
+  - ordinal: 1
+    game: daggerheart
+    episode_count: 1
+    started: 2026-05-29
+    ended: 2026-05-29

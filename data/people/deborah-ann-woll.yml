@@ -75,8 +75,8 @@ credits:
     sources:
       - tier: reference
         url: https://www.imdb.com/title/tt22090648/fullcredits
-        note: "IMDb full cast and crew for \"Force Grey: Lost City of Omu\" episode
-          1, via the official datasets. Character not confirmed here."
+        note: 'IMDb full cast and crew for "Force Grey: Lost City of Omu" episode 1, via
+          the official datasets. Character not confirmed here.'
   - show: d-d-live-2019-the-descent
     season: 1
     episode: Part 3
@@ -86,7 +86,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=gyKvnUZiX1M
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 3\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The
+          Descent, Part 3\"."
   - show: d-d-live-2019-the-descent
     season: 1
     episode: Part 4
@@ -96,26 +97,41 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The
+          Descent, Part 4\"."
   - show: d-d-live-2020
     season: 1
     episode: Deborah's Game
     role: player
     alias: default
     year: "2020"
-    note: "The description names all six participants but does not state who ran the game, so no GM is credited for it here."
+    note: The description names all six participants but does not state who ran the
+      game, so no GM is credited for it here.
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=h86STkplb0s
-        note: "Cast per the production's own description of \"Deborah's Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "Deborah's Game - D&D Live
+          2020".
   - show: d-d-live-2021
     season: 1
     episode: Faster, Purple Worm! Kill! Kill!
     role: player
     alias: default
     year: "2021"
-    note: "Named by one source only; the other D&D Live 2021 write-up consulted does not cover this table."
+    note: Named by one source only; the other D&D Live 2021 write-up consulted does
+      not cover this table.
     sources:
       - tier: reference
         url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
         note: Screen Rant's report on the D&D Live 2021 game announcements.
+  - show: kingdom-come-deliverance-ii-one-shot
+    season: 1
+    role: player
+    character: Sister Agatha
+    alias: default
+    year: "2026"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Kingdom_Come:_Deliverance_II_One-Shot
+        note: "Kingdom Come: Deliverance II One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."

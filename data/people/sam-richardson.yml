@@ -30,11 +30,24 @@ credits:
     role: player
     alias: default
     year: "2020"
-    note: "The description names all six participants but does not state who ran the game, so no GM is credited for it here."
+    note: The description names all six participants but does not state who ran the
+      game, so no GM is credited for it here.
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=h86STkplb0s
-        note: "Cast per the production's own description of \"Deborah's Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "Deborah's Game - D&D Live
+          2020".
+  - show: choose-their-adventure-again
+    season: 1
+    role: player
+    character: Ranthiel Volthor
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Choose_Their_Adventure...Again!
+        note: Choose Their Adventure...Again! cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
 wikidata_qid: Q24050468
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/c/ca/Sam_Richardson_-_Jan_2019_%2846909537042%29_%28cropped%29.jpg

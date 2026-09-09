@@ -40,6 +40,17 @@ credits:
         url: https://en.wikipedia.org/wiki/NY_by_Night
         note: Wikipedia lists her among the series cast, without a character in what was
           returned.
+  - show: the-elder-scrolls-online-blackwood-part-i-death-and-tax
+    season: 1
+    role: player
+    character: Hoa Sen
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online:_Blackwood_-_Part_I:_Death_&_Taxes
+        note: "The Elder Scrolls Online: Blackwood - Part I: Death & Taxes cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/f/f4/ChipnRipMichelle.png/revision/latest/scale-to-width-down/400?cb=20230206130604
   licence: fair use
