@@ -17,6 +17,19 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Stephen_Colbert's_D&D_Adventure_with_Matthew_Mercer
         note: Stephen Colbert's D&D Adventure with Matthew Mercer cast, via the
           criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: dignity-an-adventure-with-stephen-colbert
+    season: 1
+    role: guest player
+    character: Lucky Jack
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Dignity:_An_Adventure_with_Stephen_Colbert
+        note: "Dignity: An Adventure with Stephen Colbert cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
 wikidata_qid: Q212886
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/9/95/Stephen_Colbert_June_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original

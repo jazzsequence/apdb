@@ -204,3 +204,14 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Avowed_One-Shot
         note: Avowed One-Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: guest-battle-royale
+    season: 1
+    role: player
+    character: Fy'ra Rai (''Exandria Unlimited'')
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Guest_Battle_Royale
+        note: Guest Battle Royale cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

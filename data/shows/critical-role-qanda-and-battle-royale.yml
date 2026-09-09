@@ -1,0 +1,15 @@
+id: critical-role-qanda-and-battle-royale
+title: Critical Role Q&A and Battle Royale!
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  website: https://criticalrole.fandom.com/wiki/Critical_Role_Q&A_and_Battle_Royale!
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2016-02-25
+    ended: 2016-02-25

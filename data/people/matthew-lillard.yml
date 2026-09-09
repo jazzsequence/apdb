@@ -99,7 +99,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=yEnbAC3mtGU
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent Part 2\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The Descent
+          Part 2\"."
   - show: d-d-live-2019-the-descent
     season: 1
     episode: Part 3
@@ -109,15 +110,29 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=gyKvnUZiX1M
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 3\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The
+          Descent, Part 3\"."
   - show: d-d-live-2020
     season: 1
     episode: Deborah's Game
     role: player
     alias: default
     year: "2020"
-    note: "The description names all six participants but does not state who ran the game, so no GM is credited for it here."
+    note: The description names all six participants but does not state who ran the
+      game, so no GM is credited for it here.
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=h86STkplb0s
-        note: "Cast per the production's own description of \"Deborah's Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "Deborah's Game - D&D Live
+          2020".
+  - show: generation-nord
+    season: 1
+    role: guest player
+    character: Emmanuel Goldstein
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Generation_Nord
+        note: Generation Nord cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

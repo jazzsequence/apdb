@@ -1,0 +1,15 @@
+id: dignity-an-adventure-with-stephen-colbert
+title: "Dignity: An Adventure with Stephen Colbert"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  website: https://criticalrole.fandom.com/wiki/Dignity:_An_Adventure_with_Stephen_Colbert
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2022-04-28
+    ended: 2022-04-28

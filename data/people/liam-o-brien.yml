@@ -689,6 +689,103 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Total_Party_Kill:_Chicago_Live_2025
         note: "Total Party Kill: Chicago Live 2025 cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+  - show: critical-role-qanda-and-battle-royale-take-ii
+    season: 1
+    role: player
+    character: Himself and Vax'ildan
+    alias: default
+    year: "2016"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_Q&A_and_Battle_Royale:_Take_II
+        note: "Critical Role Q&A and Battle Royale: Take II cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-trolls-for-extra-life
+    season: 1
+    role: player
+    character: Kurt
+    alias: default
+    year: "2015"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Trolls_for_Extra_Life
+        note: Critical Trolls for Extra Life cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: diablo-one-shot
+    season: 1
+    role: player
+    character: Mordred the Gaunt (crusader)
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Diablo_One_Shot
+        note: Diablo One Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: oaths-and-ash-indianapolis-live-show-2025
+    season: 1
+    role: player
+    character: Orym/Caleb
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Oaths_&_Ash_–_Indianapolis_Live_Show_2025
+        note: Oaths & Ash – Indianapolis Live Show 2025 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: tag-team-at-the-teeth-beyond-the-shroud
+    season: 1
+    role: player
+    character: Orym
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tag_Team_at_the_Teeth_–_Beyond_the_Shroud
+        note: Tag Team at the Teeth – Beyond the Shroud cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: tag-team-at-the-teeth-the-misty-ascent
+    season: 1
+    role: player
+    character: Caleb Widogast
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tag_Team_at_the_Teeth_–_The_Misty_Ascent
+        note: Tag Team at the Teeth – The Misty Ascent cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: the-elder-scrolls-online-blackwood-part-iii-the-golden
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online:_Blackwood_-_Part_III:_The_Golden_Goose
+        note: "The Elder Scrolls Online: Blackwood - Part III: The Golden Goose cast,
+          via the criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: the-mighty-nein-reunited-part-2-ukotoa-unleashed
+    season: 1
+    role: player
+    character: Caleb Widogast
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_Reunited_Part_2_-_Uk'otoa_Unleashed
+        note: The Mighty Nein Reunited Part 2 - Uk'otoa Unleashed cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: vox-machina-vs-mighty-nein
+    season: 1
+    role: player
+    character: Vax'ildan
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Vox_Machina_vs._Mighty_Nein
+        note: Vox Machina vs. Mighty Nein cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/d/d2/C4_Liam.jpg/revision/latest/scale-to-width-down/400?cb=20251001205749
   licence: fair use

@@ -31,3 +31,14 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: guest-battle-royale
+    season: 1
+    role: player
+    character: Nila (Campaign Two)
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Guest_Battle_Royale
+        note: Guest Battle Royale cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

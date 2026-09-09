@@ -109,6 +109,19 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Tiny_Tina's_Wonderlands_One-Shot
         note: Tiny Tina's Wonderlands One-Shot cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA.
+  - show: critical-trolls-for-extra-life
+    season: 1
+    role: guest player
+    character: Ulfgar Fireforge
+    alias: default
+    year: "2015"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Trolls_for_Extra_Life
+        note: Critical Trolls for Extra Life cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/f/f2/Ify_Nwadiwe_as_Markus_St._Vincent.png/revision/latest/scale-to-width-down/400?cb=20200627193230
   licence: fair use

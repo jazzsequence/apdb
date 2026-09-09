@@ -1,0 +1,15 @@
+id: critical-trolls-for-extra-life
+title: Critical Trolls for Extra Life
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  website: https://criticalrole.fandom.com/wiki/Critical_Trolls_for_Extra_Life
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2015-10-03
+    ended: 2015-10-03

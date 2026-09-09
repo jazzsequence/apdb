@@ -172,6 +172,18 @@ credits:
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
+  - show: to-the-poop-goblins-a-critical-role-pathfinder-one-shot
+    season: 1
+    role: guest player
+    character: Grizznak Snompstork
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/To_the_Poop!_Goblins:_A_Critical_Role_Pathfinder_One-Shot
+        note: "To the Poop! Goblins: A Critical Role Pathfinder One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/c/ce/Ivan_Van_Norman_by_meg.jpg/revision/latest/scale-to-width-down/400?cb=20220114150833
   licence: fair use

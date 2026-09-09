@@ -1,0 +1,15 @@
+id: guest-battle-royale
+title: Guest Battle Royale
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  website: https://criticalrole.fandom.com/wiki/Guest_Battle_Royale
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2022-01-27
+    ended: 2022-01-27

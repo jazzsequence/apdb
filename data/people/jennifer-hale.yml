@@ -1,0 +1,20 @@
+id: jennifer-hale
+canonical_name: Jennifer Hale
+sort_name: Hale, Jennifer
+aliases:
+  - id: default
+    name: Jennifer Hale
+    alias_type: legal
+credits:
+  - show: critical-role-one-shot-kobolds-catacombs-and-dragons-oh
+    season: 1
+    role: guest player
+    character: Aerwin Whiteclaw
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Kobolds,_Catacombs_and_Dragons_(Oh_My!)
+        note: "Critical Role One-Shot: Kobolds, Catacombs and Dragons (Oh My!) cast, via
+          the criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

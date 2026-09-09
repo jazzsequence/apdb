@@ -23,6 +23,17 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: critical-trolls-for-extra-life
+    season: 1
+    role: player
+    character: Quaalude Methaqualone
+    alias: default
+    year: "2015"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Trolls_for_Extra_Life
+        note: Critical Trolls for Extra Life cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/f/fe/Orion_Acaba.jpg/revision/latest/scale-to-width-down/400?cb=20220130104139
   licence: fair use

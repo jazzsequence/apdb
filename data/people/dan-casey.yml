@@ -34,3 +34,16 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: critical-trolls-for-extra-life
+    season: 1
+    role: guest player
+    character: Salty Pete
+    alias: default
+    year: "2015"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Trolls_for_Extra_Life
+        note: Critical Trolls for Extra Life cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

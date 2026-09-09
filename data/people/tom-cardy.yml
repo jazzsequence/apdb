@@ -1,0 +1,34 @@
+id: tom-cardy
+canonical_name: Tom Cardy
+sort_name: Cardy, Tom
+aliases:
+  - id: default
+    name: Tom Cardy
+    alias_type: legal
+credits:
+  - show: tag-team-at-the-teeth-beyond-the-shroud
+    season: 1
+    role: guest player
+    character: Ethel Rivergold
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tag_Team_at_the_Teeth_–_Beyond_the_Shroud
+        note: Tag Team at the Teeth – Beyond the Shroud cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: tag-team-at-the-teeth-the-misty-ascent
+    season: 1
+    role: guest player
+    character: Ethel Rivergold
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tag_Team_at_the_Teeth_–_The_Misty_Ascent
+        note: Tag Team at the Teeth – The Misty Ascent cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

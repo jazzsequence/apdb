@@ -17,6 +17,18 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Call_of_Cthulhu:_Shadow_of_the_Crystal_Palace
         note: "Call of Cthulhu: Shadow of the Crystal Palace cast, via the
           criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: to-the-poop-goblins-a-critical-role-pathfinder-one-shot
+    season: 1
+    role: guest player
+    character: Browntooth
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/To_the_Poop!_Goblins:_A_Critical_Role_Pathfinder_One-Shot
+        note: "To the Poop! Goblins: A Critical Role Pathfinder One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
 wikidata_qid: Q356541
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Phil.lamarr.2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original

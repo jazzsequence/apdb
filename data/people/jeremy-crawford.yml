@@ -53,7 +53,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=onH65amYMPI
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 1\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The
+          Descent, Part 1\"."
   - show: d-d-live-2020
     season: 1
     episode: WWE Superstars Game
@@ -63,7 +64,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=Fbjw9h0lK3k
-        note: "Cast per the production's own description of \"WWE Superstars Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "WWE Superstars Game - D&D
+          Live 2020".
   - show: what-we-do-in-the-shadow-cursed-lands
     season: 1
     role: GM/DM
@@ -72,7 +74,21 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=imf5VIk_zmQ
-        note: "Cast per the production's own description of \"Baldur's Gate 3 Cast Play D&D Live | With Astarion, Karlach, Wyll and Lae'zel\"."
+        note: Cast per the production's own description of "Baldur's Gate 3 Cast Play
+          D&D Live | With Astarion, Karlach, Wyll and Lae'zel".
+  - show: oaths-and-ash-indianapolis-live-show-2025
+    season: 1
+    role: guest player
+    character: Astarodith
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Oaths_&_Ash_–_Indianapolis_Live_Show_2025
+        note: Oaths & Ash – Indianapolis Live Show 2025 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/7/73/Dnd_stream_jeremy.png/revision/latest?cb=20220409055847
   licence: fair use

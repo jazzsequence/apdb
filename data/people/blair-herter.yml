@@ -1,0 +1,20 @@
+id: blair-herter
+canonical_name: Blair Herter
+sort_name: Herter, Blair
+aliases:
+  - id: default
+    name: Blair Herter
+    alias_type: legal
+credits:
+  - show: crash-pandas-too-trashed-too-curious
+    season: 1
+    role: guest player
+    character: Albert
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Crash_Pandas:_Too_Trashed,_Too_Curious
+        note: "Crash Pandas: Too Trashed, Too Curious cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

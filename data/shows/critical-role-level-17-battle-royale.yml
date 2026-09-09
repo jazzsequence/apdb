@@ -1,0 +1,15 @@
+id: critical-role-level-17-battle-royale
+title: Critical Role – Level 17 Battle Royale!
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  website: https://criticalrole.fandom.com/wiki/Critical_Role_–_Level_17_Battle_Royale!
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2017-05-25
+    ended: 2017-05-25

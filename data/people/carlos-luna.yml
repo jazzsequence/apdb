@@ -43,6 +43,16 @@ credits:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Rivals_of_Waterdeep
         note: Season-by-season DM table per Wikipedia.
+  - show: diablo-one-shot
+    season: 1
+    role: player
+    character: Laslo (necromancer)
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Diablo_One_Shot
+        note: Diablo One Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/f/f2/PCCheese.png/revision/latest/scale-to-width-down/400?cb=20200813044324
   licence: fair use

@@ -874,3 +874,114 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Total_Party_Kill:_Chicago_Live_2025
         note: "Total Party Kill: Chicago Live 2025 cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA."
+  - show: critical-role-qanda-and-battle-royale
+    season: 1
+    role: player
+    character: Himself and the Dungeon Master
+    alias: default
+    year: "2016"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_Q&A_and_Battle_Royale!
+        note: Critical Role Q&A and Battle Royale! cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: critical-role-qanda-and-battle-royale-take-ii
+    season: 1
+    role: player
+    character: Himself and the Dungeon Master
+    alias: default
+    year: "2016"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_Q&A_and_Battle_Royale:_Take_II
+        note: "Critical Role Q&A and Battle Royale: Take II cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-level-17-battle-royale
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_–_Level_17_Battle_Royale!
+        note: Critical Role – Level 17 Battle Royale! cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: critical-trolls-for-extra-life
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2015"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Trolls_for_Extra_Life
+        note: Critical Trolls for Extra Life cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: diablo-one-shot
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Diablo_One_Shot
+        note: Diablo One Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: dignity-an-adventure-with-stephen-colbert
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Dignity:_An_Adventure_with_Stephen_Colbert
+        note: "Dignity: An Adventure with Stephen Colbert cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: oaths-and-ash-indianapolis-live-show-2025
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Oaths_&_Ash_–_Indianapolis_Live_Show_2025
+        note: Oaths & Ash – Indianapolis Live Show 2025 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: tag-team-at-the-teeth-beyond-the-shroud
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tag_Team_at_the_Teeth_–_Beyond_the_Shroud
+        note: Tag Team at the Teeth – Beyond the Shroud cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: tag-team-at-the-teeth-the-misty-ascent
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tag_Team_at_the_Teeth_–_The_Misty_Ascent
+        note: Tag Team at the Teeth – The Misty Ascent cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: the-mighty-nein-reunited-part-2-ukotoa-unleashed
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_Reunited_Part_2_-_Uk'otoa_Unleashed
+        note: The Mighty Nein Reunited Part 2 - Uk'otoa Unleashed cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: vox-machina-vs-mighty-nein
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Vox_Machina_vs._Mighty_Nein
+        note: Vox Machina vs. Mighty Nein cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

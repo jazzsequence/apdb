@@ -1,0 +1,20 @@
+id: erica-luttrell
+canonical_name: Erica Luttrell
+sort_name: Luttrell, Erica
+aliases:
+  - id: default
+    name: Erica Luttrell
+    alias_type: legal
+credits:
+  - show: liams-one-shot-the-song-of-the-lorelei
+    season: 1
+    role: guest player
+    character: Aurra Lorelei
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Liam's_One_Shot:_The_Song_of_the_Lorelei
+        note: "Liam's One Shot: The Song of the Lorelei cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

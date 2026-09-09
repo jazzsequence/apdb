@@ -47,8 +47,8 @@ credits:
     sources:
       - tier: reference
         url: https://x.com/wizards_dnd/status/1283449269886672897
-        note: "Official D&D account announcing the season 1 cast and DM of \"Nights
-          of Eveningstar\"."
+        note: Official D&D account announcing the season 1 cast and DM of "Nights of
+          Eveningstar".
   - show: d-d-live-2019-the-descent
     season: 1
     episode: Part 4
@@ -58,4 +58,15 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The
+          Descent, Part 4\"."
+  - show: diablo-one-shot
+    season: 1
+    role: player
+    character: Indra (wizard)
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Diablo_One_Shot
+        note: Diablo One Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

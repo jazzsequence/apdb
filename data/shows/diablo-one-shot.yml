@@ -1,0 +1,15 @@
+id: diablo-one-shot
+title: Diablo One Shot
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  website: https://criticalrole.fandom.com/wiki/Diablo_One_Shot
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2021-02-20
+    ended: 2021-02-20

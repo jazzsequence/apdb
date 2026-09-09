@@ -162,3 +162,52 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Tiny_Tina's_Wonderlands_One-Shot
         note: Tiny Tina's Wonderlands One-Shot cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA.
+  - show: bells-hells-and-the-maelstrom-kingdom
+    season: 1
+    role: guest player
+    character: Dorian Storm
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Bells_Hells_&_the_Maelstrom_Kingdom
+        note: Bells Hells & the Maelstrom Kingdom cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: freaky-thursday-a-bells-hells-charity-one-shot
+    season: 1
+    role: guest player
+    character: Dorian Storm
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Freaky_Thursday:_A_Bells_Hells_Charity_One_Shot
+        note: "Freaky Thursday: A Bells Hells Charity One Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: oaths-and-ash-indianapolis-live-show-2025
+    season: 1
+    role: guest player
+    character: Dorian Storm
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Oaths_&_Ash_–_Indianapolis_Live_Show_2025
+        note: Oaths & Ash – Indianapolis Live Show 2025 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: total-party-kill-chicago-live-2025
+    season: 1
+    role: guest player
+    character: Malvolio Contreras
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Total_Party_Kill:_Chicago_Live_2025
+        note: "Total Party Kill: Chicago Live 2025 cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

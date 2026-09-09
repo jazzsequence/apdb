@@ -1,0 +1,32 @@
+id: daniel-sloss
+canonical_name: Daniel Sloss
+sort_name: Sloss, Daniel
+aliases:
+  - id: default
+    name: Daniel Sloss
+    alias_type: legal
+credits:
+  - show: darktow-edinburgh-live-show-2026
+    season: 1
+    role: guest player
+    character: Wyatt Maranoss
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Darktow_-_Edinburgh_Live_Show_2026
+        note: Darktow - Edinburgh Live Show 2026 cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: the-mighty-nein-reunion-echoes-of-the-solstice
+    season: 1
+    role: guest player
+    character: Rab "Aggy" Agg
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_Reunion:_Echoes_of_the_Solstice
+        note: "The Mighty Nein Reunion: Echoes of the Solstice cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

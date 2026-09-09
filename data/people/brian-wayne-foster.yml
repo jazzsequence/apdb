@@ -74,6 +74,18 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Trinket's_Honey_Heist
         note: Trinket's Honey Heist cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: critical-role-bar-room-blitz
+    season: 1
+    role: guest player
+    character: Kingston LaForge
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role:_Bar_Room_Blitz
+        note: "Critical Role: Bar Room Blitz cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/c/c5/Brian_W._Foster.jpg/revision/latest/scale-to-width-down/320?cb=20220112130125
   licence: fair use

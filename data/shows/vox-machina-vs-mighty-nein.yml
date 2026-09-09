@@ -1,0 +1,15 @@
+id: vox-machina-vs-mighty-nein
+title: Vox Machina vs. Mighty Nein
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  website: https://criticalrole.fandom.com/wiki/Vox_Machina_vs._Mighty_Nein
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2021-06-18
+    ended: 2021-06-18

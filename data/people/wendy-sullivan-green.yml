@@ -1,0 +1,20 @@
+id: wendy-sullivan-green
+canonical_name: Wendy Sullivan Green
+sort_name: Green, Wendy Sullivan
+aliases:
+  - id: default
+    name: Wendy Sullivan Green
+    alias_type: legal
+credits:
+  - show: critical-role-qanda-and-battle-royale
+    season: 1
+    role: guest player
+    alias: default
+    year: "2016"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_Q&A_and_Battle_Royale!
+        note: Critical Role Q&A and Battle Royale! cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.

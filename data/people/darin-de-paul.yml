@@ -51,6 +51,53 @@ credits:
       - tier: reference
         url: https://geekandsundry.com/sagas-of-sundry-madness-premieres-today-with-a-new-trailer/
         note: Cast per Geek & Sundry.
+  - show: critical-role-one-shot-shadow-of-war-part-1
+    season: 1
+    role: guest player
+    character: Mozuu the Chosen
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Shadow_of_War_–_Part_1
+        note: "Critical Role One-Shot: Shadow of War – Part 1 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: critical-role-one-shot-shadow-of-war-part-2
+    season: 1
+    role: guest player
+    character: Mozuu the Chosen
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Shadow_of_War_–_Part_2
+        note: "Critical Role One-Shot: Shadow of War – Part 2 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: doom-eternal-one-shot
+    season: 1
+    role: guest player
+    character: Dr. Samuel Hayden
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Doom_Eternal_One-Shot
+        note: Doom Eternal One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: guest-battle-royale
+    season: 1
+    role: player
+    character: Sprigg (Campaign One)
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Guest_Battle_Royale
+        note: Guest Battle Royale cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/a/a9/Cqd1s71UsAEZC78.jpg/revision/latest/scale-to-width-down/267?cb=20220131133216
   licence: fair use

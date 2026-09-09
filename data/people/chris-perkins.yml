@@ -59,7 +59,8 @@ credits:
     sources:
       - tier: community
         url: https://acquisitionsincorporated.fandom.com/wiki/Acquisitions_Incorporated%3A_Season_Four
-        note: '"Acquisitions Incorporated: Season Four" cast, via the acquisitionsincorporated.fandom.com infobox. CC-BY-SA.'
+        note: '"Acquisitions Incorporated: Season Four" cast, via the
+          acquisitionsincorporated.fandom.com infobox. CC-BY-SA.'
   - show: critical-role
     season: 2
     role: guest player
@@ -204,7 +205,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=JqLwCAt7Gbc
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 4\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The
+          Descent, Part 4\"."
   - show: d-d-live-2020
     season: 1
     episode: Red Nose Day Game
@@ -214,7 +216,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=YmQO8axrQ5M
-        note: "Cast per the production's own description of \"Red Nose Day Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "Red Nose Day Game - D&D Live
+          2020".
   - show: d-d-live-2020
     season: 1
     episode: Lost Odyssey Heroes
@@ -224,7 +227,21 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=egS_67zD0T8
-        note: "Cast per the production's own description of \"Lost Odyssey Heroes - D&D Live 2020\"."
+        note: Cast per the production's own description of "Lost Odyssey Heroes - D&D
+          Live 2020".
+  - show: oaths-and-ash-indianapolis-live-show-2025
+    season: 1
+    role: guest player
+    character: Malphazu
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Oaths_&_Ash_–_Indianapolis_Live_Show_2025
+        note: Oaths & Ash – Indianapolis Live Show 2025 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/6/62/Stream_dca_chrisperkins.png/revision/latest?cb=20220409060020
   licence: fair use

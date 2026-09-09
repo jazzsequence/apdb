@@ -95,3 +95,39 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Tiny_Tina's_Wonderlands_One-Shot
         note: Tiny Tina's Wonderlands One-Shot cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA.
+  - show: critical-role-extra-the-return-of-liam
+    season: 1
+    role: guest player
+    character: Dren
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_Extra_–_The_Return_of_Liam!
+        note: Critical Role Extra – The Return of Liam! cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: critical-role-bar-room-blitz
+    season: 1
+    role: guest player
+    character: Clothesline
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role:_Bar_Room_Blitz
+        note: "Critical Role: Bar Room Blitz cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
+  - show: to-the-poop-goblins-a-critical-role-pathfinder-one-shot
+    season: 1
+    role: guest player
+    character: Piglet
+    alias: default
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/To_the_Poop!_Goblins:_A_Critical_Role_Pathfinder_One-Shot
+        note: "To the Poop! Goblins: A Critical Role Pathfinder One-Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+    note: Guest on this one-shot; it is a single episode, so there is no episode
+      locator to give.
