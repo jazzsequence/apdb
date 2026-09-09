@@ -20,8 +20,8 @@ credits:
     note: One-shot in which the Baldur's Gate 3 voice cast played their own
       characters.
     alias: default
-  - show: critical-role-specials
-    season: 4
+  - show: age-of-umbra-sallowlands
+    season: 1
     role: player
     alias: default
     sources:

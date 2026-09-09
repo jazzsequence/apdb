@@ -6,8 +6,8 @@ aliases:
     name: Matt Roen
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 8
+  - show: moonward
+    season: 1
     role: player
     character: Dusty Rivers
     alias: default
@@ -15,8 +15,8 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Moonward
         note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-  - show: critical-role-specials
-    season: 9
+  - show: unend
+    season: 1
     role: player
     alias: default
     sources:

@@ -7,16 +7,16 @@ aliases:
     name: Vinnie Singh
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 3
+  - show: age-of-umbra
+    season: 1
     role: producer
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
         note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 6
+  - show: wildemount-wildlings
+    season: 1
     role: producer
     alias: default
     sources:

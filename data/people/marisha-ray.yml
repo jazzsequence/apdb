@@ -181,7 +181,7 @@ credits:
         tier: community
       - *a1
       - *a2
-  - show: critical-role-specials
+  - show: undeadwood
     season: 1
     role: player
     alias: default
@@ -189,16 +189,16 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/UnDeadwood
         note: UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 3
+  - show: age-of-umbra
+    season: 1
     role: player
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
         note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 6
+  - show: wildemount-wildlings
+    season: 1
     role: player
     alias: default
     sources:
@@ -206,8 +206,8 @@ credits:
         note: Wildemount Wildlings cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 8
+  - show: moonward
+    season: 1
     role: player
     alias: default
     sources:
@@ -231,7 +231,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=gyKvnUZiX1M
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 3\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The
+          Descent, Part 3\"."
   - show: nerd-poker
     role: guest player
     alias: default
@@ -239,9 +240,9 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Nerd_Poker
-        note: Cast, dungeon-master history and format per Wikipedia's article on
-          the show. Season not established — the article names who has been on
-          the show without saying which of the four seasons each appears in.
+        note: Cast, dungeon-master history and format per Wikipedia's article on the
+          show. Season not established — the article names who has been on the
+          show without saying which of the four seasons each appears in.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/2/2e/C4_Marisha.jpg/revision/latest/scale-to-width-down/400?cb=20251001205749
   licence: fair use

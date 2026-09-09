@@ -209,8 +209,8 @@ credits:
       - *a4
       - *a5
       - *a6
-  - show: critical-role-specials
-    season: 3
+  - show: age-of-umbra
+    season: 1
     role: player
     alias: default
     sources:
@@ -239,4 +239,5 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=onH65amYMPI
-        note: "Cast per the production's own description of \"D&D Live 2019: The Descent, Part 1\"."
+        note: "Cast per the production's own description of \"D&D Live 2019: The
+          Descent, Part 1\"."

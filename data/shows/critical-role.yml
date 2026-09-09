@@ -61,9 +61,15 @@ seasons:
         original, and links back to the source. Removed on request by the rights
         holder — see POLICY.md.
   - ordinal: 4
-    title: Campaign Four
+    title: "Campaign 4: Aramán"
     game: dnd-5e-2024
     started: 2025-10
+    description: Set in Aramán, beyond Exandria, and run west-marches style across
+      three rotating tables — the Soldiers, the Seekers and the Schemers — rather
+      than one standing party. Critical Role's own site titles it simply
+      "Campaign 4"; Aramán is the setting, and the name the campaign is generally
+      known by, which is why it sits here where the other campaigns carry their
+      party name.
     links:
       website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi
     image:

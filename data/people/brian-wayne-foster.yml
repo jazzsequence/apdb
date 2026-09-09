@@ -10,12 +10,12 @@ aliases:
     alias_type: legal
     note: Credited under this name on some sources; merged from `brian-w-foster`.
 credits:
-  - show: critical-role-specials
+  - show: undeadwood
     season: 1
     role: GM/DM
     note: Co-GMed with Ivan Van Norman — created and produced the show together,
-      "who also served as the game's GM," per Pinnacle Entertainment Group's
-      own coverage.
+      "who also served as the game's GM," per Pinnacle Entertainment Group's own
+      coverage.
     alias: default
     sources:
       - tier: reference
@@ -23,15 +23,15 @@ credits:
         note: Pinnacle Entertainment Group's own announcement naming both as GM.
       - tier: community
         url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-  - show: critical-role-specials
+        note: UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: undeadwood
     season: 1
     role: producer
     alias: default
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
   - show: critical-role
     role: player
     note: IMDb credits this at series level; which of this show's seasons it covers

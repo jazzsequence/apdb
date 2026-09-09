@@ -23,8 +23,8 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/89180-dimension-20/cast
         note: Cast for "Dimension 20" per TMDB.
-  - show: critical-role-specials
-    season: 5
+  - show: the-re-slayer-s-take
+    season: 1
     role: player
     alias: default
     sources:
@@ -32,8 +32,8 @@ credits:
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 7
+  - show: thresher
+    season: 1
     role: GM/DM
     note: Credited "| GM" in the show's own cast infobox.
     alias: default

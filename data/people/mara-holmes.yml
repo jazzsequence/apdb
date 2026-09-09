@@ -123,8 +123,8 @@ credits:
         url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
         note: Warhammer Fantasy Roleplay cast, via the high-rollers-dnd.fandom.com
           infobox. CC-BY-SA.
-  - show: critical-role-specials
-    season: 7
+  - show: thresher
+    season: 1
     role: player
     sources:
       - url: https://criticalrole.fandom.com/wiki/Thresher
@@ -147,9 +147,9 @@ credits:
     sources:
       - tier: reference
         url: https://x.com/wizards_dnd/status/1283449269886672897
-        note: "Official D&D account naming @sherlock_hulmes as DM for season 1 of
-          \"Nights of Eveningstar\" — the name credited before her March 2026
-          legal name change."
+        note: Official D&D account naming @sherlock_hulmes as DM for season 1 of "Nights
+          of Eveningstar" — the name credited before her March 2026 legal name
+          change.
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/d/da/Altheya_50_DM_Mara.png/revision/latest/scale-to-width-down/400?cb=20250212065303
   licence: fair use

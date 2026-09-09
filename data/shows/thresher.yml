@@ -1,0 +1,23 @@
+id: thresher
+title: Thresher
+channels:
+  - critical-role
+format: hybrid
+status: unknown
+description: Standalone limited series from Critical Role Productions, outside
+  the numbered campaigns.
+links:
+  website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQxxFfPnoUlhkSDXdvZq82Zl
+seasons:
+  - ordinal: 1
+    game: illuminated-worlds
+image:
+  url: https://critrole.com/wp-content/uploads/2025/04/chicago_break_card_thresher_teaser_no_copy-1024x576.jpg
+  licence: fair use
+  attribution: Thresher key art, © its producers. Via critrole.com.
+  source: https://critrole.com/thresher/
+  depicts: Key art for Thresher
+  rationale: Low-resolution thumbnail used solely to identify this show in an
+    index of its credits. Non-commercial, does not substitute for the original,
+    and links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

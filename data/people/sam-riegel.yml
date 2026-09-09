@@ -112,16 +112,16 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
-  - show: critical-role-specials
-    season: 3
+  - show: age-of-umbra
+    season: 1
     role: player
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
         note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 5
+  - show: the-re-slayer-s-take
+    season: 1
     role: guest player
     alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
@@ -130,8 +130,8 @@ credits:
         note: The Re-Slayer's Take cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 6
+  - show: wildemount-wildlings
+    season: 1
     role: GM/DM
     note: Credited "| GM" in the show's own cast infobox.
     alias: default

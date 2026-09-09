@@ -138,16 +138,16 @@ credits:
       - *a1
       - *a2
       - *a3
-  - show: critical-role-specials
-    season: 3
+  - show: age-of-umbra
+    season: 1
     role: player
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
         note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 4
+  - show: age-of-umbra-sallowlands
+    season: 1
     role: player
     alias: default
     sources:
@@ -155,8 +155,8 @@ credits:
         note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: critical-role-specials
-    season: 5
+  - show: the-re-slayer-s-take
+    season: 1
     role: guest player
     note: Listed as a guest player for this season; specific episodes not identified.
     alias: default

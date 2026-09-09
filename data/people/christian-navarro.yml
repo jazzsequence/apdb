@@ -55,8 +55,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=eNCyccZS9sA
-        note: Cast per the production's own description of "Dungeon Masters |
-          Campaign 2 PREMIERE, Episode 1 & 2".
+        note: Cast per the production's own description of "Dungeon Masters | Campaign 2
+          PREMIERE, Episode 1 & 2".
   - show: shadowrun-excommunication
     season: 1
     role: player
@@ -68,8 +68,8 @@ credits:
         note: "Cast per the production's own description of \"Session Zero LIVE from
           SDCC | Shadowrun: Excommunication | Shadowrun RPG 2023 |
           RealmSmith\"."
-  - show: critical-role-specials
-    season: 5
+  - show: the-re-slayer-s-take
+    season: 1
     role: guest player
     alias: default
     note: Listed as a guest player for this season; specific episodes not identified.

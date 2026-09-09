@@ -478,8 +478,8 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
-  - show: critical-role-specials
-    season: 6
+  - show: wildemount-wildlings
+    season: 1
     role: player
     alias: default
     sources:
@@ -504,8 +504,8 @@ credits:
       - url: https://dimension20.fandom.com/wiki/On_a_Bus
         note: On A Bus cast, via the dimension20.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 7
+  - show: thresher
+    season: 1
     role: player
     alias: default
     sources:

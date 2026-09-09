@@ -48,8 +48,8 @@ credits:
         url: https://www.imdb.com/title/tt14829636/fullcredits/
         note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
           datasets.
-  - show: critical-role-specials
-    season: 6
+  - show: wildemount-wildlings
+    season: 1
     role: producer
     alias: default
     sources:

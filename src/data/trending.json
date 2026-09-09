@@ -1,51 +1,49 @@
 {
-  "generatedAt": "2026-09-06T05:00:44.009Z",
+  "generatedAt": "2026-09-09T04:24:27.017Z",
   "method": "Ranked by average views-per-day-since-published across each campaign's most recent 15 videos (or fewer, on a shorter playlist — campaigns under 3 videos are excluded as too thin to rank fairly), not raw average views. A video's lifetime view count is divided by its age in days, so old evergreen content keeps degrading the longer it sits, and a campaign whose \"recent\" videos are actually years old (a short, complete series has no newer tail to replace them) no longer outranks a campaign that just posted something people are watching right now. The \"avg views\" figure shown to readers is informational only; ranking is by the per-day rate. Limited to campaigns with a YouTube playlist link — a campaign missing from this list may simply have no playlist recorded yet, not low viewership.",
-  "eligibleCampaigns": 179,
-  "totalShows": 356,
+  "eligibleCampaigns": 187,
+  "totalShows": 381,
   "campaigns": [
+    {
+      "key": "critical-role#4",
+      "showId": "critical-role",
+      "seasonOrdinal": 4,
+      "label": "Critical Role — Campaign 4: Aramán",
+      "avgViews": 685027,
+      "viewsPerDay": 24525,
+      "sampled": 14
+    },
     {
       "key": "dnd-dungeon-masters#2",
       "showId": "dnd-dungeon-masters",
       "seasonOrdinal": 2,
       "label": "Dungeon Masters — Campaign 2: Arcana Unleashed",
-      "avgViews": 546146,
-      "viewsPerDay": 23065,
+      "avgViews": 548001,
+      "viewsPerDay": 19409,
       "sampled": 8
-    },
-    {
-      "key": "critical-role#4",
-      "showId": "critical-role",
-      "seasonOrdinal": 4,
-      "label": "Critical Role — Campaign Four",
-      "avgViews": 730453,
-      "viewsPerDay": 12487,
-      "sampled": 15
     },
     {
       "key": "uprooted-dimwits-of-the-dimwood",
       "showId": "uprooted-dimwits-of-the-dimwood",
       "label": "Uprooted: Dimwits of the Dimwood",
-      "avgViews": 344254,
-      "viewsPerDay": 5219,
+      "avgViews": 349429,
+      "viewsPerDay": 3898,
       "sampled": 15
     },
     {
-      "key": "critical-role-specials#3",
-      "showId": "critical-role-specials",
-      "seasonOrdinal": 3,
-      "label": "Critical Role Specials & One-Shots — Age of Umbra",
-      "avgViews": 407462,
-      "viewsPerDay": 3129,
+      "key": "age-of-umbra-sallowlands",
+      "showId": "age-of-umbra-sallowlands",
+      "label": "Age of Umbra: Sallowlands",
+      "avgViews": 409615,
+      "viewsPerDay": 3002,
       "sampled": 15
     },
     {
-      "key": "critical-role-specials#4",
-      "showId": "critical-role-specials",
-      "seasonOrdinal": 4,
-      "label": "Critical Role Specials & One-Shots — Age of Umbra: Sallowlands",
-      "avgViews": 407462,
-      "viewsPerDay": 3129,
+      "key": "age-of-umbra",
+      "showId": "age-of-umbra",
+      "label": "Age of Umbra",
+      "avgViews": 409615,
+      "viewsPerDay": 3002,
       "sampled": 15
     },
     {
@@ -53,8 +51,8 @@
       "showId": "dnd-dungeon-masters",
       "seasonOrdinal": 1,
       "label": "Dungeon Masters — Campaign 1: Ravenloft",
-      "avgViews": 348370,
-      "viewsPerDay": 2921,
+      "avgViews": 349096,
+      "viewsPerDay": 2855,
       "sampled": 11
     },
     {
@@ -62,16 +60,16 @@
       "showId": "exandria-unlimited",
       "seasonOrdinal": 3,
       "label": "Exandria Unlimited — Exandria Unlimited: Calamity",
-      "avgViews": 3712595,
-      "viewsPerDay": 2400,
+      "avgViews": 3714812,
+      "viewsPerDay": 2397,
       "sampled": 5
     },
     {
       "key": "baldur-s-gate-3-cast-play-d-d",
       "showId": "baldur-s-gate-3-cast-play-d-d",
       "label": "Baldur's Gate 3 Cast Play D&D",
-      "avgViews": 2057366,
-      "viewsPerDay": 1908,
+      "avgViews": 2058460,
+      "viewsPerDay": 1904,
       "sampled": 8
     },
     {
@@ -79,34 +77,41 @@
       "showId": "critical-role",
       "seasonOrdinal": 3,
       "label": "Critical Role — Campaign 3: Bells Hells",
-      "avgViews": 916083,
-      "viewsPerDay": 1442,
+      "avgViews": 917089,
+      "viewsPerDay": 1436,
       "sampled": 15
-    },
-    {
-      "key": "critical-role-specials#6",
-      "showId": "critical-role-specials",
-      "seasonOrdinal": 6,
-      "label": "Critical Role Specials & One-Shots — Wildemount Wildlings (show)",
-      "avgViews": 684491,
-      "viewsPerDay": 1337,
-      "sampled": 3
     },
     {
       "key": "exandria-unlimited#5",
       "showId": "exandria-unlimited",
       "seasonOrdinal": 5,
       "label": "Exandria Unlimited — Exandria Unlimited: Divergence",
-      "avgViews": 745356,
-      "viewsPerDay": 1337,
+      "avgViews": 746000,
+      "viewsPerDay": 1331,
       "sampled": 4
+    },
+    {
+      "key": "realm-actual-play",
+      "showId": "realm-actual-play",
+      "label": "Realm: A D&D Actual Play",
+      "avgViews": 17250,
+      "viewsPerDay": 1331,
+      "sampled": 15
+    },
+    {
+      "key": "wildemount-wildlings",
+      "showId": "wildemount-wildlings",
+      "label": "Wildemount Wildlings",
+      "avgViews": 685338,
+      "viewsPerDay": 1331,
+      "sampled": 3
     },
     {
       "key": "uproot-a-rama",
       "showId": "uproot-a-rama",
       "label": "Uproot-a-rama",
-      "avgViews": 199575,
-      "viewsPerDay": 1276,
+      "avgViews": 201051,
+      "viewsPerDay": 1261,
       "sampled": 6
     },
     {
@@ -114,8 +119,8 @@
       "showId": "critical-role",
       "seasonOrdinal": 2,
       "label": "Critical Role — Campaign 2: The Mighty Nein",
-      "avgViews": 1970921,
-      "viewsPerDay": 1108,
+      "avgViews": 1972006,
+      "viewsPerDay": 1107,
       "sampled": 15
     },
     {
@@ -123,8 +128,8 @@
       "showId": "critical-role",
       "seasonOrdinal": 1,
       "label": "Critical Role — Campaign 1: Vox Machina",
-      "avgViews": 2436653,
-      "viewsPerDay": 791,
+      "avgViews": 2437325,
+      "viewsPerDay": 790,
       "sampled": 15
     },
     {
@@ -132,16 +137,8 @@
       "showId": "stardust-rhapsody",
       "seasonOrdinal": 3,
       "label": "Stardust Rhapsody — Stardust Rhapsody: Anthem",
-      "avgViews": 110253,
-      "viewsPerDay": 664,
-      "sampled": 15
-    },
-    {
-      "key": "icebound",
-      "showId": "icebound",
-      "label": "Icebound",
-      "avgViews": 51877,
-      "viewsPerDay": 578,
+      "avgViews": 111423,
+      "viewsPerDay": 643,
       "sampled": 15
     },
     {
@@ -149,66 +146,65 @@
       "showId": "dimension-20",
       "seasonOrdinal": 10,
       "label": "Dimension 20 — Fantasy High: Sophomore Year",
-      "avgViews": 492447,
-      "viewsPerDay": 487,
+      "avgViews": 493095,
+      "viewsPerDay": 486,
+      "sampled": 15
+    },
+    {
+      "key": "icebound",
+      "showId": "icebound",
+      "label": "Icebound",
+      "avgViews": 52248,
+      "viewsPerDay": 469,
       "sampled": 15
     },
     {
       "key": "celebrid-d",
       "showId": "celebrid-d",
       "label": "CelebriD&D",
-      "avgViews": 1523123,
-      "viewsPerDay": 466,
+      "avgViews": 1523412,
+      "viewsPerDay": 465,
       "sampled": 6
     },
     {
       "key": "once-upon-a-starlight",
       "showId": "once-upon-a-starlight",
       "label": "Once Upon A Starlight",
-      "avgViews": 67985,
-      "viewsPerDay": 465,
+      "avgViews": 68483,
+      "viewsPerDay": 459,
       "sampled": 11
     },
     {
       "key": "once-upon-a-ghostlight",
       "showId": "once-upon-a-ghostlight",
       "label": "Once Upon a Ghostlight",
-      "avgViews": 156050,
-      "viewsPerDay": 449,
+      "avgViews": 156582,
+      "viewsPerDay": 446,
       "sampled": 10
     },
     {
       "key": "once-upon-a-witchlight",
       "showId": "once-upon-a-witchlight",
       "label": "Once Upon a Witchlight",
-      "avgViews": 146324,
-      "viewsPerDay": 443,
+      "avgViews": 146997,
+      "viewsPerDay": 441,
       "sampled": 15
     },
     {
       "key": "waltz-for-eternity",
       "showId": "waltz-for-eternity",
       "label": "Waltz for Eternity",
-      "avgViews": 54192,
-      "viewsPerDay": 391,
+      "avgViews": 54687,
+      "viewsPerDay": 386,
       "sampled": 7
     },
     {
       "key": "voidbound",
       "showId": "voidbound",
       "label": "Voidbound",
-      "avgViews": 45001,
-      "viewsPerDay": 348,
+      "avgViews": 45438,
+      "viewsPerDay": 343,
       "sampled": 4
-    },
-    {
-      "key": "stardust-rhapsody#1",
-      "showId": "stardust-rhapsody",
-      "seasonOrdinal": 1,
-      "label": "Stardust Rhapsody — Stardust Rhapsody: Overture",
-      "avgViews": 314748,
-      "viewsPerDay": 313,
-      "sampled": 15
     }
   ]
 }

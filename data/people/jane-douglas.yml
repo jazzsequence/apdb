@@ -6,8 +6,8 @@ aliases:
     name: Jane Douglas
     alias_type: legal
 credits:
-  - show: critical-role-specials
-    season: 7
+  - show: thresher
+    season: 1
     role: player
     alias: default
     sources:

@@ -59,16 +59,16 @@ credits:
           CC-BY-SA.
         tier: community
       - *a1
-  - show: critical-role-specials
-    season: 3
+  - show: age-of-umbra
+    season: 1
     role: producer
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
         note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 4
+  - show: age-of-umbra-sallowlands
+    season: 1
     role: producer
     alias: default
     sources:
@@ -76,16 +76,16 @@ credits:
         note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: critical-role-specials
-    season: 8
+  - show: moonward
+    season: 1
     role: producer
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Moonward
         note: Moonward cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 9
+  - show: unend
+    season: 1
     role: producer
     alias: default
     sources:

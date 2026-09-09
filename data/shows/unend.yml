@@ -1,0 +1,20 @@
+id: unend
+title: Unend
+channels:
+  - critical-role
+format: hybrid
+status: unknown
+description: Standalone game from Critical Role Productions, outside the numbered campaigns.
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+image:
+  url: https://critrole.com/wp-content/uploads/2024/10/UNEND_trailer_thumbnail_rev2-1024x576.jpg
+  licence: fair use
+  attribution: Unend key art, © its producers. Via critrole.com.
+  source: https://critrole.com/qtvideo/unend-official-series-trailer/
+  depicts: Key art for Unend
+  rationale: Low-resolution thumbnail used solely to identify this show in an
+    index of its credits. Non-commercial, does not substitute for the original,
+    and links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

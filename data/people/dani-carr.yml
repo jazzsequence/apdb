@@ -16,8 +16,8 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
-  - show: critical-role-specials
-    season: 5
+  - show: the-re-slayer-s-take
+    season: 1
     role: guest player
     note: Listed as a guest player for this season; specific episodes not identified.
     alias: default

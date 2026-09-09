@@ -21,8 +21,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=xS5D-xI5f0w
-        note: Cast per the episode's own description for "Always Look A Gift Horse
-          in the Mouth | DesiQuest Winter Special Episode 1."
+        note: Cast per the episode's own description for "Always Look A Gift Horse in
+          the Mouth | DesiQuest Winter Special Episode 1."
   - show: desiquest
     season: 1
     role: player
@@ -162,7 +162,8 @@ credits:
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/Circle_of_the_Vassal_and_the_Veil
-        note: "Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of the Vassal and the Veil cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
         tier: community
       - tier: reference
         url: https://www.imdb.com/title/tt27715026/fullcredits/
@@ -174,11 +175,11 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/candela-obscura
         note: Cast for "Candela Obscura" per TheTVDB.
-  - show: critical-role-specials
+  - show: undeadwood
     season: 1
     role: player
     alias: default
     sources:
       - url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community

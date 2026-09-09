@@ -14,8 +14,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=xS5D-xI5f0w
-        note: Cast per the episode's own description for "Always Look A Gift Horse
-          in the Mouth | DesiQuest Winter Special Episode 1."
+        note: Cast per the episode's own description for "Always Look A Gift Horse in
+          the Mouth | DesiQuest Winter Special Episode 1."
   - show: desiquest
     season: 1
     role: GM/DM
@@ -113,10 +113,10 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=eNCyccZS9sA
-        note: Cast per the production's own description of "Dungeon Masters |
-          Campaign 2 PREMIERE, Episode 1 & 2".
-  - show: critical-role-specials
-    season: 5
+        note: Cast per the production's own description of "Dungeon Masters | Campaign 2
+          PREMIERE, Episode 1 & 2".
+  - show: the-re-slayer-s-take
+    season: 1
     role: player
     alias: default
     sources:
@@ -132,8 +132,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=KtLcWpD16Uo
-        note: "Cast per the production's own description of \"Battle for Beyond:
-          Episode 1 | D&D Beyond\"."
+        note: "Cast per the production's own description of \"Battle for Beyond: Episode
+          1 | D&D Beyond\"."
       - tier: reference
         url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
         note: D&D Beyond's own announcement post, naming the DM and each player's

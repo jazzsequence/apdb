@@ -23,12 +23,12 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/L.A._by_Night
-  - show: critical-role-specials
+  - show: undeadwood
     season: 1
     role: GM/DM
     note: Co-GMed with Brian W. Foster — created and produced the show together,
-      "who also served as the game's GM," per Pinnacle Entertainment Group's
-      own coverage.
+      "who also served as the game's GM," per Pinnacle Entertainment Group's own
+      coverage.
     alias: default
     sources:
       - tier: reference
@@ -36,15 +36,15 @@ credits:
         note: Pinnacle Entertainment Group's own announcement naming both as GM.
       - tier: community
         url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
-  - show: critical-role-specials
+        note: UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: undeadwood
     season: 1
     role: producer
     alias: default
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/UnDeadwood
-        note: "UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
   - show: sagas-of-sundry-goblin-mode
     season: 1
     role: GM/DM
@@ -64,16 +64,16 @@ credits:
   - show: sagas-of-sundry-dread
     role: GM/DM
     season: 1
-    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all,
-      which bundles several distinct one-shots (Dread, Madness, Goblin Mode)
-      under one playlist. Retargeted — Van Norman DMed both Dread and
-      Madness (see below), per each show's own description.
+    note: IMDb had this filed under the generic "sagas-of-sundry" catch-all, which
+      bundles several distinct one-shots (Dread, Madness, Goblin Mode) under one
+      playlist. Retargeted — Van Norman DMed both Dread and Madness (see below),
+      per each show's own description.
     alias: default
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PL7atuZxmT954X1GShT_jOY98YgS04FA3B
-        note: "The show's own description: \"Gather around our campfire as Ivan
-          Van Norman leads...\""
+        note: "The show's own description: \"Gather around our campfire as Ivan Van
+          Norman leads...\""
       - tier: reference
         url: https://www.imdb.com/title/tt7553424/fullcredits/
         note: IMDb full cast and crew for "Sagas of Sundry" (2017), via the official
@@ -91,8 +91,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/playlist?list=PL7atuZxmT955p1uySG2OpFPZ30I3wnIef
-        note: "The show's own description: \"...an original macabre tale hosted by
-          Ivan Van Norman...\""
+        note: "The show's own description: \"...an original macabre tale hosted by Ivan
+          Van Norman...\""
   - show: sagas-of-sundry
     role: GM/DM
     season: 1
@@ -102,8 +102,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=qqGDrhAXq-I
-        note: Cast per the show's own YouTube video description for "DREAD |
-          Sagas of Sundry - Dread | Episode 0."
+        note: Cast per the show's own YouTube video description for "DREAD | Sagas of
+          Sundry - Dread | Episode 0."
   - show: sagas-of-sundry
     role: writer
     season: 1

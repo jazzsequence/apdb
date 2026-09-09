@@ -314,7 +314,7 @@ credits:
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
           datasets.
-  - show: critical-role-specials
+  - show: undeadwood
     season: 1
     role: player
     alias: default
@@ -322,8 +322,8 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/UnDeadwood
         note: UnDeadwood cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 3
+  - show: age-of-umbra
+    season: 1
     role: GM/DM
     note: Credited "| GM" in the show's own cast infobox.
     alias: default
@@ -331,8 +331,8 @@ credits:
       - url: https://criticalrole.fandom.com/wiki/Age_of_Umbra
         note: Age of Umbra cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
         tier: community
-  - show: critical-role-specials
-    season: 4
+  - show: age-of-umbra-sallowlands
+    season: 1
     role: GM/DM
     note: Credited "| GM" in the show's own cast infobox.
     alias: default
@@ -341,8 +341,8 @@ credits:
         note: "Age of Umbra: Sallowlands cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-  - show: critical-role-specials
-    season: 5
+  - show: the-re-slayer-s-take
+    season: 1
     role: guest player
     alias: default
     note: Listed as a guest player for this season; specific episodes not identified.
@@ -404,6 +404,6 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Nerd_Poker
-        note: Cast, dungeon-master history and format per Wikipedia's article on
-          the show. Season not established — the article names who has been on
-          the show without saying which of the four seasons each appears in.
+        note: Cast, dungeon-master history and format per Wikipedia's article on the
+          show. Season not established — the article names who has been on the
+          show without saying which of the four seasons each appears in.

@@ -1,0 +1,22 @@
+id: moonward
+title: Moonward
+channels:
+  - critical-role
+format: hybrid
+status: unknown
+description: Standalone game from Critical Role Productions, outside the numbered campaigns.
+links:
+  website: https://www.youtube.com/playlist?list=PL1tiwbzkOjQyc1EIjrUxdFaIlXq7QqVnV
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+image:
+  url: https://critrole.com/wp-content/uploads/2024/08/moonward_teaser_thumbnail_firstlook-1-1024x576.jpg
+  licence: fair use
+  attribution: Moonward key art by Lyadrielle, © its producers. Via critrole.com.
+  source: https://critrole.com/qtvideo/moonward-official-trailer/
+  depicts: Key art for Moonward
+  rationale: Low-resolution thumbnail used solely to identify this show in an
+    index of its credits. Non-commercial, does not substitute for the original,
+    and links back to the source. Removed on request by the rights holder — see
+    POLICY.md.
