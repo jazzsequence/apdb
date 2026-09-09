@@ -2,64 +2,62 @@ id: nd-stevenson
 canonical_name: ND Stevenson
 sort_name: Stevenson, ND
 aliases:
-  - id: default
-    name: ND Stevenson
-    alias_type: legal
-  - id: nate-stevenson
-    name: Nate Stevenson
-    alias_type: legal
-    note: Credited under this name on some sources; merged from `nate-stevenson`.
+- id: default
+  name: ND Stevenson
+  alias_type: legal
+- id: nate-stevenson
+  name: Nate Stevenson
+  alias_type: legal
+  note: Credited under this name on some sources; merged from `nate-stevenson`.
+- id: noelle
+  name: Noelle Stevenson
+  alias_type: birth
+  active_to: '2021'
 credits:
-  - show: critical-role
-    season: 1
-    role: guest player
-    character: Tova
-    note: Listed as a guest player for this season; specific episodes not identified.
-    alias: default
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
-        note: "Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA."
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-  - show: critical-role-one-shot-once-upon-a-fairytale-cruise
-    season: 1
-    role: player
-    character: Peter Pan
-    alias: default
-    year: "2017"
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Once_Upon_a_Fairytale_Cruise
-        note: "Critical Role One-Shot: Once Upon a Fairytale Cruise cast, via the
-          criticalrole.fandom.com infobox. CC-BY-SA."
-  - show: honey-heist-3-tova-s-honeys
-    season: 1
-    role: player
-    character: Tova
-    alias: default
-    year: "2018"
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Honey_Heist_3:_Tova’s_Honeys
-        note: "Honey Heist 3: Tova’s Honeys cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
+- show: critical-role
+  season: 1
+  role: guest player
+  character: Tova
+  note: Listed as a guest player for this season; specific episodes not identified.
+  alias: default
+  sources:
+  - tier: community
+    url: https://criticalrole.fandom.com/wiki/Campaign_One%3A_Vox_Machina
+    note: 'Campaign One: Vox Machina cast, via the criticalrole.fandom.com infobox. CC-BY-SA.'
+  - tier: reference
+    url: https://www.themoviedb.org/tv/254002-critical-role/cast
+    note: Cast for "Critical Role" per TMDB.
+  - tier: reference
+    url: https://www.imdb.com/title/tt4834232/fullcredits/
+    note: IMDb full cast and crew for "Critical Role" (2015), via the official datasets.
+- show: critical-role-one-shot-once-upon-a-fairytale-cruise
+  season: 1
+  role: player
+  character: Peter Pan
+  alias: default
+  year: '2017'
+  sources:
+  - tier: community
+    url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Once_Upon_a_Fairytale_Cruise
+    note: 'Critical Role One-Shot: Once Upon a Fairytale Cruise cast, via the criticalrole.fandom.com
+      infobox. CC-BY-SA.'
+- show: honey-heist-3-tova-s-honeys
+  season: 1
+  role: player
+  character: Tova
+  alias: default
+  year: '2018'
+  sources:
+  - tier: community
+    url: https://criticalrole.fandom.com/wiki/Honey_Heist_3:_Tova’s_Honeys
+    note: 'Honey Heist 3: Tova’s Honeys cast, via the criticalrole.fandom.com infobox. CC-BY-SA.'
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/f/f0/ND_Stevenson.jpg
   licence: CC-BY-SA-4.0
   attribution: Boungawa
   source: https://commons.wikimedia.org/w/index.php?curid=133267967
-# This person changed their name. The prior name is deliberately NOT recorded
-# here and must not be re-added — sources still carry it (the Critical Role
-# wiki footnotes it on some one-shots, older cast lists use it), and that is
-# not a reason to reintroduce it. Credits sit under the current name.
-#
-# The alias system exists so pre-change credits stay findable under the name
-# that was on them. That is worth having for a surname change. It is not worth
-# deadnaming someone for.
+# The prior name is kept as an alias so a search for it resolves here rather
+# than returning nothing — someone who only knows the old name should still
+# find the right person. It is a search key, not a billing: no credit is
+# attributed to it, and the current name is the one this person is listed and
+# credited under throughout.

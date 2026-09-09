@@ -15,4 +15,10 @@ credits:
     sources:
       - tier: reference
         url: https://www.themoviedb.org/tv/74400-force-grey-giant-hunters/cast
-        note: "Cast and character names for \"Force Grey: Giant Hunters\" per TMDB."
+        note: 'Cast and character names for "Force Grey: Giant Hunters" per TMDB.'
+wikidata_qid: Q6271925
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/b/be/RAY_headshot1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: public domain
+  attribution: Tomservotron
+  source: https://commons.wikimedia.org/wiki/File:RAY_headshot1.jpg

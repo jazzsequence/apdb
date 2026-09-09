@@ -16,3 +16,8 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt13210470/
         note: IMDb series cast listing.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/8/8f/Museum_of_World_War_II_Natick_Massachusetts_2015._British_POW_Franz_Josef_Escape_Attempt_Colditz_Castle_Oflag_IV-C_Forged_rifle_insignia_Michael_Sinclair.jpg
+  licence: CC-BY-2.0
+  attribution: leewrightonflickr
+  source: https://commons.wikimedia.org/w/index.php?curid=101805442

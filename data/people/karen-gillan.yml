@@ -12,8 +12,15 @@ credits:
     role: player
     alias: default
     year: "2020"
-    note: "Billed in the description as \"Karen Gillen\"."
+    note: Billed in the description as "Karen Gillen".
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=egS_67zD0T8
-        note: "Cast per the production's own description of \"Lost Odyssey Heroes - D&D Live 2020\"."
+        note: Cast per the production's own description of "Lost Odyssey Heroes - D&D
+          Live 2020".
+wikidata_qid: Q231237
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/b/b6/Karen_Gillan_%2853197567618%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-2.0
+  attribution: Pedro Heshike for Galaxy Con
+  source: https://commons.wikimedia.org/wiki/File:Karen_Gillan_(53197567618).jpg

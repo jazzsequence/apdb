@@ -13,6 +13,12 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Nerd_Poker
-        note: Cast, dungeon-master history and format per Wikipedia's article on
-          the show. Season not established — the article names who has been on
-          the show without saying which of the four seasons each appears in.
+        note: Cast, dungeon-master history and format per Wikipedia's article on the
+          show. Season not established — the article names who has been on the
+          show without saying which of the four seasons each appears in.
+wikidata_qid: Q2059493
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/6/67/Paul_F._Tompkins_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-2.0
+  attribution: Joel Mandelkorn
+  source: https://commons.wikimedia.org/wiki/File:Paul_F._Tompkins_(cropped).jpg

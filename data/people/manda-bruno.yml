@@ -10,11 +10,15 @@ credits:
     season: 4
     role: player
     character: Chelsea Northwood
-    note: Also credited as the season's artist ("local Orlando artist"), per
-      the show's own cast page; no separate illustrator role exists in this
-      schema.
+    note: Also credited as the season's artist ("local Orlando artist"), per the
+      show's own cast page; no separate illustrator role exists in this schema.
     alias: default
     sources:
       - tier: official
         url: https://www.cthulhumystery.com/howling-house-meet-the-cast
         note: Cast per the show's own Meet the Cast page.
+image:
+  url: https://live.staticflickr.com/65535/52362870525_f50f67f36a_b.jpg
+  licence: CC0
+  attribution: Hillbraith
+  source: https://www.flickr.com/photos/57458501@N00/52362870525

@@ -14,8 +14,12 @@ credits:
     sources:
       - tier: reference
         url: https://comicbook.com/gaming/news/dungeons-dragons-black-dice-society/
-        note: "Contemporary press coverage naming the cast of \"The Black Dice
-          Society\"."
+        note: Contemporary press coverage naming the cast of "The Black Dice Society".
       - tier: community
         url: https://black-dice-society.fandom.com/wiki/Cast
         note: Cast page on the show's own wiki. CC-BY-SA.
+image:
+  url: https://live.staticflickr.com/3397/5833637852_a823021e31_b.jpg
+  licence: CC-BY-2.0
+  attribution: Hollywood_PR
+  source: https://www.flickr.com/photos/54731024@N05/5833637852

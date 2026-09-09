@@ -14,6 +14,11 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Nerd_Poker
-        note: Cast, dungeon-master history and format per Wikipedia's article on
-          the show. Season not established — the article names who has been on
-          the show without saying which of the four seasons each appears in.
+        note: Cast, dungeon-master history and format per Wikipedia's article on the
+          show. Season not established — the article names who has been on the
+          show without saying which of the four seasons each appears in.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/d/db/Pilcher_Monument%2C_Sark_-_geograph.ci_-_100.jpg
+  licence: CC-BY-SA-2.0
+  attribution: John Rostron
+  source: https://commons.wikimedia.org/w/index.php?curid=10297913

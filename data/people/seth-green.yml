@@ -12,8 +12,15 @@ credits:
     role: player
     alias: default
     year: "2021"
-    note: "Named by one source only; the other D&D Live 2021 write-up consulted does not cover this table."
+    note: Named by one source only; the other D&D Live 2021 write-up consulted does
+      not cover this table.
     sources:
       - tier: reference
         url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
         note: Screen Rant's report on the D&D Live 2021 game announcements.
+wikidata_qid: Q186757
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Seth_Green_at_San_Diego_Comic_Con_2026-3_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-4.0
+  attribution: Kevin Paul
+  source: https://commons.wikimedia.org/wiki/File:Seth_Green_at_San_Diego_Comic_Con_2026-3_(cropped).jpg

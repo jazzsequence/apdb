@@ -2,172 +2,163 @@ id: mara-holmes
 canonical_name: Mara Holmes
 sort_name: Holmes, Mara
 pronouns: she/her
-bio: Founding member and principal dungeon master of High Rollers, which she
-  started at the Yogscast in 2016.
+bio: Founding member and principal dungeon master of High Rollers, which she started at the
+  Yogscast in 2016.
 links: {}
 aliases:
-  - id: holmes
-    name: Mara Holmes
-    alias_type: legal
+- id: holmes
+  name: Mara Holmes
+  alias_type: legal
+- id: hulmes
+  name: Mark "Sherlock" Hulmes
+  alias_type: legal
+  active_to: 2026-03
 credits:
-  - show: critical-role
-    season: 2
-    role: guest player
-    character: Calianna Mordsson
-    note: Listed as a guest player for this season; specific episodes not identified.
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
-        note: "Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com
-          infobox. CC-BY-SA."
-        tier: community
-      - tier: reference
-        url: https://www.imdb.com/title/tt4834232/fullcredits/
-        note: IMDb full cast and crew for "Critical Role" (2015), via the official
-          datasets.
-      - tier: reference
-        url: https://www.themoviedb.org/tv/254002-critical-role/cast
-        note: Cast for "Critical Role" per TMDB.
-  - show: baldur-s-gate-3-cast-play-d-d
-    season: 1
-    role: GM/DM
-    note: One-shot in which the Baldur's Gate 3 voice cast played their own
-      characters.
-    sources:
-      - tier: reference
-        url: https://www.gamesradar.com/larian-gets-the-baldurs-gate-3-cast-to-role-play-their-own-characters-in-the-ultimate-dandd-session/
-        note: Names the host and every voice actor with the character they reprised.
-      - tier: reference
-        url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
-        note: Independent report of the same one-shot, confirming her as GM.
-  - show: high-rollers-dnd
-    season: 1
-    role: GM/DM
-    alias: holmes
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Aerois_(Campaign)
-        note: Aerois (Campaign) cast, via the highrollers.fandom.com infobox. CC-BY-SA.
-        tier: community
-      - url: https://www.youtube.com/watch?v=KE-8q08L11k
-        note: "Cast per the production's own description of \"High Rollers: Aerois #147
-          | The Best Defense\"."
-        tier: official
-  - show: high-rollers-dnd
-    season: 2
-    role: GM/DM
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Lightfall_(Campaign)
-        note: Lightfall (Campaign) cast, via the highrollers.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: high-rollers-dnd
-    season: 3
-    role: GM/DM
-    alias: holmes
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Uncharted_Territory
-        note: Uncharted Territory cast, via the highrollers.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-      - url: https://www.youtube.com/watch?v=Vrx5Tuu4xnM
-        note: "Cast per the production's own description of \"A World of Stories |
-          Altheya: The Dragon Empire #1\"."
-        tier: official
-  - show: high-rollers-dnd
-    season: 4
-    role: GM/DM
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Dead_Reckoning
-        note: Dead Reckoning cast, via the highrollers.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: high-rollers-dnd
-    season: 5
-    role: GM/DM
-    sources:
-      - url: https://highrollers.fandom.com/wiki/A_Rogue's_Gambit
-        note: A Rogue's Gambit cast, via the highrollers.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: high-rollers-dnd
-    season: 6
-    role: GM/DM
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Lightfall's_Descent
-        note: Lightfall's Descent cast, via the highrollers.fandom.com infobox.
-          CC-BY-SA.
-        tier: community
-  - show: high-rollers-dnd
-    season: 7
-    role: GM/DM
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Curse_of_Strahd
-        note: Curse of Strahd cast, via the highrollers.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: high-rollers-dnd
-    season: 11
-    role: GM/DM
-    sources:
-      - url: https://highrollers.fandom.com/wiki/Altheya%3A_The_Dragon_Empire
-        note: "Altheya: The Dragon Empire cast, via the highrollers.fandom.com infobox.
-          CC-BY-SA."
-        tier: community
-  - show: warhammer-fantasy-roleplay
-    season: 1
-    role: GM/DM
-    sources:
-      - tier: community
-        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
-        note: Warhammer Fantasy Roleplay cast, via the high-rollers-dnd.fandom.com
-          infobox. CC-BY-SA.
-  - show: thresher
-    season: 1
-    role: player
-    sources:
-      - url: https://criticalrole.fandom.com/wiki/Thresher
-        note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
-        tier: community
-  - show: high-rollers-dnd
-    season: 12
-    role: GM/DM
-    alias: holmes
-    sources:
-      - tier: community
-        url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
-        note: "High Rollers Presents: Warhammer Fantasy Roleplay cast/DM, via the
-          high-rollers-dnd.fandom.com infobox and character table. CC-BY-SA."
-  - show: nights-of-eveningstar
-    season: 1
-    role: GM/DM
-    alias: holmes
-    year: "2020"
-    sources:
-      - tier: reference
-        url: https://x.com/wizards_dnd/status/1283449269886672897
-        note: Official D&D account naming her as DM for season 1 of "Nights of
-          Eveningstar", under the name she was credited by at the time.
-  - show: tails-of-equestria-one-shot
-    season: 1
-    role: GM/DM
-    alias: holmes
-    year: "2019"
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Tails_of_Equestria_One-Shot
-        note: Tails of Equestria One-Shot cast, via the criticalrole.fandom.com infobox.
-          CC-BY-SA.
+- show: critical-role
+  season: 2
+  role: guest player
+  character: Calianna Mordsson
+  note: Listed as a guest player for this season; specific episodes not identified.
+  sources:
+  - url: https://criticalrole.fandom.com/wiki/Campaign_Two%3A_The_Mighty_Nein
+    note: 'Campaign Two: The Mighty Nein cast, via the criticalrole.fandom.com infobox. CC-BY-SA.'
+    tier: community
+  - tier: reference
+    url: https://www.imdb.com/title/tt4834232/fullcredits/
+    note: IMDb full cast and crew for "Critical Role" (2015), via the official datasets.
+  - tier: reference
+    url: https://www.themoviedb.org/tv/254002-critical-role/cast
+    note: Cast for "Critical Role" per TMDB.
+- show: baldur-s-gate-3-cast-play-d-d
+  season: 1
+  role: GM/DM
+  note: One-shot in which the Baldur's Gate 3 voice cast played their own characters.
+  sources:
+  - tier: reference
+    url: https://www.gamesradar.com/larian-gets-the-baldurs-gate-3-cast-to-role-play-their-own-characters-in-the-ultimate-dandd-session/
+    note: Names the host and every voice actor with the character they reprised.
+  - tier: reference
+    url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
+    note: Independent report of the same one-shot, confirming her as GM.
+- show: high-rollers-dnd
+  season: 1
+  role: GM/DM
+  alias: holmes
+  sources:
+  - url: https://highrollers.fandom.com/wiki/Aerois_(Campaign)
+    note: Aerois (Campaign) cast, via the highrollers.fandom.com infobox. CC-BY-SA.
+    tier: community
+  - url: https://www.youtube.com/watch?v=KE-8q08L11k
+    note: 'Cast per the production''s own description of "High Rollers: Aerois #147 | The
+      Best Defense".'
+    tier: official
+- show: high-rollers-dnd
+  season: 2
+  role: GM/DM
+  sources:
+  - url: https://highrollers.fandom.com/wiki/Lightfall_(Campaign)
+    note: Lightfall (Campaign) cast, via the highrollers.fandom.com infobox. CC-BY-SA.
+    tier: community
+- show: high-rollers-dnd
+  season: 3
+  role: GM/DM
+  alias: holmes
+  sources:
+  - url: https://highrollers.fandom.com/wiki/Uncharted_Territory
+    note: Uncharted Territory cast, via the highrollers.fandom.com infobox. CC-BY-SA.
+    tier: community
+  - url: https://www.youtube.com/watch?v=Vrx5Tuu4xnM
+    note: 'Cast per the production''s own description of "A World of Stories | Altheya: The
+      Dragon Empire #1".'
+    tier: official
+- show: high-rollers-dnd
+  season: 4
+  role: GM/DM
+  sources:
+  - url: https://highrollers.fandom.com/wiki/Dead_Reckoning
+    note: Dead Reckoning cast, via the highrollers.fandom.com infobox. CC-BY-SA.
+    tier: community
+- show: high-rollers-dnd
+  season: 5
+  role: GM/DM
+  sources:
+  - url: https://highrollers.fandom.com/wiki/A_Rogue's_Gambit
+    note: A Rogue's Gambit cast, via the highrollers.fandom.com infobox. CC-BY-SA.
+    tier: community
+- show: high-rollers-dnd
+  season: 6
+  role: GM/DM
+  sources:
+  - url: https://highrollers.fandom.com/wiki/Lightfall's_Descent
+    note: Lightfall's Descent cast, via the highrollers.fandom.com infobox. CC-BY-SA.
+    tier: community
+- show: high-rollers-dnd
+  season: 7
+  role: GM/DM
+  sources:
+  - url: https://highrollers.fandom.com/wiki/Curse_of_Strahd
+    note: Curse of Strahd cast, via the highrollers.fandom.com infobox. CC-BY-SA.
+    tier: community
+- show: high-rollers-dnd
+  season: 11
+  role: GM/DM
+  sources:
+  - url: https://highrollers.fandom.com/wiki/Altheya%3A_The_Dragon_Empire
+    note: 'Altheya: The Dragon Empire cast, via the highrollers.fandom.com infobox. CC-BY-SA.'
+    tier: community
+- show: warhammer-fantasy-roleplay
+  season: 1
+  role: GM/DM
+  sources:
+  - tier: community
+    url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+    note: Warhammer Fantasy Roleplay cast, via the high-rollers-dnd.fandom.com infobox. CC-BY-SA.
+- show: thresher
+  season: 1
+  role: player
+  sources:
+  - url: https://criticalrole.fandom.com/wiki/Thresher
+    note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+    tier: community
+- show: high-rollers-dnd
+  season: 12
+  role: GM/DM
+  alias: holmes
+  sources:
+  - tier: community
+    url: https://high-rollers-dnd.fandom.com/wiki/Warhammer_Fantasy_Roleplay
+    note: 'High Rollers Presents: Warhammer Fantasy Roleplay cast/DM, via the high-rollers-dnd.fandom.com
+      infobox and character table. CC-BY-SA.'
+- show: nights-of-eveningstar
+  season: 1
+  role: GM/DM
+  alias: holmes
+  year: '2020'
+  sources:
+  - tier: reference
+    url: https://x.com/wizards_dnd/status/1283449269886672897
+    note: Official D&D account naming her as DM for season 1 of "Nights of Eveningstar", under
+      the name she was credited by at the time.
+- show: tails-of-equestria-one-shot
+  season: 1
+  role: GM/DM
+  alias: holmes
+  year: '2019'
+  sources:
+  - tier: community
+    url: https://criticalrole.fandom.com/wiki/Tails_of_Equestria_One-Shot
+    note: Tails of Equestria One-Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/d/da/Altheya_50_DM_Mara.png/revision/latest/scale-to-width-down/400?cb=20250212065303
   licence: fair use
   attribution: Portrait of Mara Holmes, © its owner. Via highrollers.fandom.com.
   source: https://high-rollers-dnd.fandom.com/wiki/Mara_Holmes
   depicts: Mara Holmes
-  rationale: Low-resolution thumbnail used solely to identify this person in an
-    index of their credits. Non-commercial, does not substitute for the
-    original, and links back to the source. Removed on request by the rights
-    holder — see POLICY.md.
-# This person changed their name. The prior name is deliberately NOT recorded
-# here and must not be re-added — sources still carry it (the Critical Role
-# wiki footnotes it on some one-shots, older cast lists use it), and that is
-# not a reason to reintroduce it. Credits sit under the current name.
-#
-# The alias system exists so pre-change credits stay findable under the name
-# that was on them. That is worth having for a surname change. It is not worth
-# deadnaming someone for.
+  rationale: Low-resolution thumbnail used solely to identify this person in an index of their
+    credits. Non-commercial, does not substitute for the original, and links back to the source.
+    Removed on request by the rights holder — see POLICY.md.
+# The prior name is kept as an alias so a search for it resolves here rather
+# than returning nothing — someone who only knows the old name should still
+# find the right person. It is a search key, not a billing: no credit is
+# attributed to it, and the current name is the one this person is listed and
+# credited under throughout.

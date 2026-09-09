@@ -9,12 +9,18 @@ credits:
   - show: the-absalom-files-a-starfinder-actual-play
     season: 1
     role: player
-    note: One of RPGeeks' four core members; which of them GMs this specific
-      show is not stated anywhere found (they split GMing duties across
-      different shows).
+    note: One of RPGeeks' four core members; which of them GMs this specific show is
+      not stated anywhere found (they split GMing duties across different
+      shows).
     alias: default
     sources:
       - tier: reference
         url: https://www.keengamer.com/articles/features/interviews/science-rpgs-and-adventure-the-rpgeeks-and-what-theyve-got-in-store-for-us-in-2024/
-        note: Interview naming the four RPGeeks and The Absalom Files as one of
-          their shows.
+        note: Interview naming the four RPGeeks and The Absalom Files as one of their
+          shows.
+wikidata_qid: Q2082072
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Simon_Clark_at_World_Horror_Convention_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-3.0
+  attribution: Nihonjoe
+  source: https://commons.wikimedia.org/wiki/File:Simon_Clark_at_World_Horror_Convention_2008.jpg

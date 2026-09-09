@@ -15,7 +15,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=_gnSPB6Zi4c
-        note: "Cast per the production's own description of \"Comedians Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "Comedians Game - D&D Live
+          2020".
   - show: d-d-live-2021
     season: 1
     episode: "Lost Odyssey: Last Light"
@@ -29,3 +30,9 @@ credits:
       - tier: reference
         url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
         note: Screen Rant's report on the D&D Live 2021 game announcements.
+wikidata_qid: Q3423441
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/1/13/Reggie_Watts_at_PopTech_2011_%28a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-SA-2.0
+  attribution: PopTech
+  source: https://commons.wikimedia.org/wiki/File:Reggie_Watts_at_PopTech_2011_(a).jpg

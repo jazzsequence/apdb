@@ -2,26 +2,33 @@ id: lee-knox-ostertag
 canonical_name: Lee Knox Ostertag
 sort_name: Ostertag, Lee Knox
 aliases:
-  - id: default
-    name: Lee Knox Ostertag
-    alias_type: legal
+- id: default
+  name: Lee Knox Ostertag
+  alias_type: legal
+- id: molly
+  name: Molly Ostertag
+  alias_type: birth
+  active_to: '2025'
 credits:
-  - show: critical-role-one-shot-once-upon-a-fairytale-cruise
-    season: 1
-    role: player
-    character: Wendy Darling
-    alias: default
-    year: "2017"
-    sources:
-      - tier: community
-        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Once_Upon_a_Fairytale_Cruise
-        note: "Critical Role One-Shot: Once Upon a Fairytale Cruise cast, via the
-          criticalrole.fandom.com infobox. CC-BY-SA."
-# This person changed their name. The prior name is deliberately NOT recorded
-# here and must not be re-added — sources still carry it (the Critical Role
-# wiki footnotes it on some one-shots, older cast lists use it), and that is
-# not a reason to reintroduce it. Credits sit under the current name.
-#
-# The alias system exists so pre-change credits stay findable under the name
-# that was on them. That is worth having for a surname change. It is not worth
-# deadnaming someone for.
+- show: critical-role-one-shot-once-upon-a-fairytale-cruise
+  season: 1
+  role: player
+  character: Wendy Darling
+  alias: default
+  year: '2017'
+  sources:
+  - tier: community
+    url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Once_Upon_a_Fairytale_Cruise
+    note: 'Critical Role One-Shot: Once Upon a Fairytale Cruise cast, via the criticalrole.fandom.com
+      infobox. CC-BY-SA.'
+wikidata_qid: Q59167711
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/4/4c/Molly_Ostertag_%282017%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-4.0
+  attribution: Luigi Novi
+  source: https://commons.wikimedia.org/wiki/File:Molly_Ostertag_(2017).jpg
+# The prior name is kept as an alias so a search for it resolves here rather
+# than returning nothing — someone who only knows the old name should still
+# find the right person. It is a search key, not a billing: no credit is
+# attributed to it, and the current name is the one this person is listed and
+# credited under throughout.

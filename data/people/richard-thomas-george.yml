@@ -8,8 +8,8 @@ aliases:
   - id: smokebadger
     name: Smokebadger
     alias_type: handle
-    note: Blog handle for the "Old Men Play Runequest" blog, of which this show
-      is a spinoff; the blog's own posts identify Smokebadger as GM, and the
+    note: Blog handle for the "Old Men Play Runequest" blog, of which this show is a
+      spinoff; the blog's own posts identify Smokebadger as GM, and the
       archive.org uploader for this specific show's episodes is credited as
       Richard Thomas George.
 credits:
@@ -24,3 +24,8 @@ credits:
       - tier: official
         url: https://archive.org/details/omgsep03
         note: Archive.org item, crediting the uploader as Richard Thomas George.
+image:
+  url: https://live.staticflickr.com/3453/3798646208_5ee138069d.jpg
+  licence: public domain
+  attribution: lisby1
+  source: https://www.flickr.com/photos/60861613@N00/3798646208

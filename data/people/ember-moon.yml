@@ -15,7 +15,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=Fbjw9h0lK3k
-        note: "Cast per the production's own description of \"WWE Superstars Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "WWE Superstars Game - D&D
+          Live 2020".
   - show: d-d-live-2021
     season: 1
     episode: Chaos Carnival
@@ -29,3 +30,8 @@ credits:
       - tier: reference
         url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
         note: Screen Rant's report on the D&D Live 2021 game announcements.
+image:
+  url: https://live.staticflickr.com/315/31681209025_3de13d9057.jpg
+  licence: public domain
+  attribution: sabrebiade
+  source: https://www.flickr.com/photos/45646111@N00/31681209025
