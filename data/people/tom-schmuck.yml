@@ -1,0 +1,27 @@
+id: tom-schmuck
+canonical_name: Tom Schmuck
+sort_name: Schmuck, Tom
+aliases:
+  - id: default
+    name: Tom Schmuck
+    alias_type: legal
+credits:
+  - show: the-chain-of-acheron
+    season: 1
+    role: player
+    character: Boots
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Boots
+        note: Boots's player, per the character's own page, via the mcdm.fandom.com
+          wiki. CC-BY-SA.
+  - show: into-the-bowels-of-vallenguard
+    season: 1
+    role: player
+    character: Dagmar Briarthorn
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Into_the_Bowels_of_Vallenguard_(Stream)
+        note: Cast, via the mcdm.fandom.com wiki. CC-BY-SA.

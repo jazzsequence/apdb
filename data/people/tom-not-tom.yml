@@ -1,0 +1,21 @@
+id: tom-not-tom
+canonical_name: Tom
+sort_name: Tom
+aliases:
+- id: default
+  name: Tom
+  alias_type: handle
+credits:
+- show: the-chain-of-acheron
+  season: 1
+  role: player
+  character: Copper
+  alias: default
+  sources:
+  - tier: community
+    url: https://mcdm.fandom.com/wiki/Copper
+    note: Copper's player, per the character's own page, via the mcdm.fandom.com wiki. CC-BY-SA.
+# The MCDM wiki titles his page "Tom" and states outright that he is not to be
+# confused with Tom Schmuck, who also plays on The Chain. He goes by @tom_not_tom.
+# A separate person again from `tom`, who is credited by first name on The
+# Kingdom Sleeps — the duplicate-name warning on these is correct, not a defect.

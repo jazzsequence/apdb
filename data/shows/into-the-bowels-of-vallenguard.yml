@@ -1,0 +1,14 @@
+id: into-the-bowels-of-vallenguard
+title: Into the Bowels of Vallenguard
+channels:
+  - mcdm
+format: stream
+status: completed
+description: Three-episode D&D one-shot run by Phil Robb, set in Sanctuary
+  rather than Orden where The Chain of Acheron takes place.
+links:
+  website: https://www.youtube.com/playlist?list=PLTsnSjGlraRP7Ueri1F8D1FmrqjKOUp2S
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 3

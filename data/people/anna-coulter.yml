@@ -1,0 +1,18 @@
+id: anna-coulter
+canonical_name: Anna Coulter
+sort_name: Coulter, Anna
+aliases:
+  - id: default
+    name: Anna Coulter
+    alias_type: legal
+credits:
+  - show: the-chain-of-acheron
+    season: 1
+    role: player
+    character: Judge
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Judge
+        note: Judge's player, per the character's own page, via the mcdm.fandom.com
+          wiki. CC-BY-SA.

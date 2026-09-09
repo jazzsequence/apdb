@@ -1,0 +1,17 @@
+id: justin-cherry
+canonical_name: Justin Cherry
+sort_name: Cherry, Justin
+aliases:
+  - id: default
+    name: Justin Cherry
+    alias_type: legal
+credits:
+  - show: into-the-bowels-of-vallenguard
+    season: 1
+    role: player
+    character: Helldust Bonebraid
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Into_the_Bowels_of_Vallenguard_(Stream)
+        note: Cast, via the mcdm.fandom.com wiki. CC-BY-SA.

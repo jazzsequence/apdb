@@ -1,0 +1,27 @@
+id: lars-bakke
+canonical_name: Lars Bakke
+sort_name: Bakke, Lars
+aliases:
+  - id: default
+    name: Lars Bakke
+    alias_type: legal
+credits:
+  - show: the-chain-of-acheron
+    season: 1
+    role: player
+    character: King
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/King
+        note: King's player, per the character's own page, via the mcdm.fandom.com wiki.
+          CC-BY-SA.
+  - show: into-the-bowels-of-vallenguard
+    season: 1
+    role: player
+    character: Ragne Stoneheart
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Into_the_Bowels_of_Vallenguard_(Stream)
+        note: Cast, via the mcdm.fandom.com wiki. CC-BY-SA.

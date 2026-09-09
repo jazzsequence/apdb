@@ -1,0 +1,14 @@
+id: mcdm-presents-the-delian-tomb
+title: "MCDM Presents: The Delian Tomb"
+channels:
+  - mcdm
+format: stream
+status: completed
+description: Draw Steel playthrough of the Delian Tomb, the starter dungeon Matt
+  Colville designed for Running the Game.
+links:
+  website: https://www.youtube.com/playlist?list=PLTsnSjGlraRPrx1aqDINX4JHJ871QrfJC
+seasons:
+  - ordinal: 1
+    game: draw-steel
+    episode_count: 8

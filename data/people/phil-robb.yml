@@ -1,0 +1,26 @@
+id: phil-robb
+canonical_name: Phil Robb
+sort_name: Robb, Phil
+aliases:
+  - id: default
+    name: Phil Robb
+    alias_type: legal
+credits:
+  - show: the-chain-of-acheron
+    season: 1
+    role: player
+    character: Slim
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Slim
+        note: Slim's player, per the character's own page, via the mcdm.fandom.com wiki.
+          CC-BY-SA.
+  - show: into-the-bowels-of-vallenguard
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Into_the_Bowels_of_Vallenguard_(Stream)
+        note: Cast, via the mcdm.fandom.com wiki. CC-BY-SA.

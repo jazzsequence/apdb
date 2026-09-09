@@ -15,6 +15,15 @@ credits:
       - tier: reference
         url: https://mcdm.fandom.com/wiki/The_Chain_of_Acheron
         note: The show's own wiki names Matt Colville as DM.
+  - show: into-the-bowels-of-vallenguard
+    season: 1
+    role: player
+    character: Morag Quicklime
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Into_the_Bowels_of_Vallenguard_(Stream)
+        note: Cast, via the mcdm.fandom.com wiki. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/mdcm/images/c/cc/Matthew_Colville.jpg/revision/latest/scale-to-width-down/400?cb=20190416023549
   licence: fair use

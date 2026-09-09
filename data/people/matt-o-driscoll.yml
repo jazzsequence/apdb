@@ -1,0 +1,27 @@
+id: matt-o-driscoll
+canonical_name: Matt O'Driscoll
+sort_name: O'Driscoll, Matt
+aliases:
+  - id: default
+    name: Matt O'Driscoll
+    alias_type: legal
+credits:
+  - show: the-chain-of-acheron
+    season: 1
+    role: player
+    character: Leech
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Leech
+        note: Leech's player, per the character's own page, via the mcdm.fandom.com
+          wiki. CC-BY-SA.
+  - show: into-the-bowels-of-vallenguard
+    season: 1
+    role: player
+    character: Yeastnor Broomaster
+    alias: default
+    sources:
+      - tier: community
+        url: https://mcdm.fandom.com/wiki/Into_the_Bowels_of_Vallenguard_(Stream)
+        note: Cast, via the mcdm.fandom.com wiki. CC-BY-SA.
