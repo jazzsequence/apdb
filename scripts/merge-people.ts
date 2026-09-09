@@ -17,6 +17,7 @@ import { readdir, readFile, writeFile, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
+import { upsertCredit } from '../src/lib/credits.js';
 
 const args = process.argv.slice(2);
 const AUTO = args.includes('--auto');
@@ -48,26 +49,39 @@ async function merge(fromId: string, intoId: string): Promise<number> {
     into.aliases.push({ ...a, id: aliasId(a.name) });
   }
 
-  // Carry credits across, dropping ones the survivor already has. An alias id
-  // from the old record will not exist on the new one, so drop it rather than
-  // leave a dangling reference for the integrity check to trip over.
-  const keyOf = (c: any) => `${c.show}|${c.season ?? ''}|${c.role}|${c.episode ?? ''}`;
-  const have = new Set((into.credits ?? []).map(keyOf));
+  // Carry credits across through the same merge every importer uses.
+  //
+  // This used to drop any credit whose show/season/role the survivor already
+  // had, which threw the evidence away: merging Nick Gilman into Nicholas
+  // Gilman discarded a TheTVDB citation for a Shield of Tomorrow credit IMDb
+  // had also recorded, leaving the survivor single-sourced on a fact two
+  // catalogues independently attest. Two records of one person are the same
+  // situation credits.ts already describes — "a credit that already exists is
+  // not a duplicate to discard, it is a second source for the same fact" — so
+  // the sources are unioned rather than the credit skipped.
+  //
+  // An alias id from the old record will not exist on the new one, so drop it
+  // rather than leave a dangling reference for the integrity check to trip on.
   let moved = 0;
+  let corroborated = 0;
   for (const c of from.credits ?? []) {
-    if (have.has(keyOf(c))) continue;
     const copy = { ...c };
     if (copy.alias && !into.aliases.some((a: any) => a.id === copy.alias)) delete copy.alias;
-    (into.credits ??= []).push(copy);
-    moved++;
+    const result = upsertCredit(into.credits ?? [], copy);
+    into.credits = result.credits;
+    if (result.outcome === 'added') moved++;
+    else if (result.outcome === 'corroborated') corroborated++;
   }
 
   if (!DRY) {
     await writeFile(join(peopleDir, `${intoId}.yml`), stringify(into), 'utf8');
     await unlink(join(peopleDir, `${fromId}.yml`));
   }
-  console.log(`${fromId} → ${intoId}  (${moved} credit(s) moved, ${from.credits?.length ?? 0} total)`);
-  return moved;
+  console.log(
+    `${fromId} → ${intoId}  (${moved} credit(s) moved, ${corroborated} corroborated, ` +
+      `${from.credits?.length ?? 0} total)`,
+  );
+  return moved + corroborated;
 }
 
 /** The audit's rule, repeated here so --auto and the audit never disagree. */

@@ -5,6 +5,10 @@ aliases:
   - id: default
     name: Nicholas Gilman
     alias_type: legal
+  - id: nick-gilman
+    name: Nick Gilman
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `nick-gilman`.
 credits:
   - show: tempting-fate
     role: player
@@ -30,6 +34,11 @@ credits:
         url: https://www.imdb.com/title/tt7142196/fullcredits/
         note: IMDb full cast and crew for "Shield of Tomorrow" (2017), via the official
           datasets.
+      - tier: reference
+        url: https://thetvdb.com/series/shield-of-tomorrow
+        note: Cast for "Shield of Tomorrow" per TheTVDB, which bills him "Nick
+          Gilman" — the spelling that was filed here as a separate person until
+          the two records were merged.
   - show: tempting-fate
     role: GM/DM
     season: 1
