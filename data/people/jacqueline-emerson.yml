@@ -9,11 +9,34 @@ credits:
   - show: critical-role-specials
     season: 7
     role: player
+    character: Emily Wodsworth
     alias: default
+    year: "2025"
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Thresher
         note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Jacqueline_Emerson
+        note: Names the character — "played the lead role of Emily Wodsworth" — where
+          the show's own wiki lists her under Starring with no character.
+  - show: critical-role-specials
+    season: 7
+    role: writer
+    alias: default
+    year: "2025"
+    note: Co-created Thresher with writing partner Matt Linton and wrote its
+      underwater setting. Separate from her playing credit on the same season.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Jacqueline_Emerson
+        note: '"Emerson co-created the actual play limited series Thresher with
+          writing partner Matt Linton for Critical Role, for which she also wrote
+          the underwater setting and played the lead role of Emily Wodsworth."'
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Thresher
+        note: The show''s own wiki infobox credits "Matt Linton and Jacqueline
+          Emerson" as creator. CC-BY-SA.
 wikidata_qid: Q266109
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/f/fa/Jacqueline_Emerson_August_15%2C_2013_%28cropped%29.jpg
