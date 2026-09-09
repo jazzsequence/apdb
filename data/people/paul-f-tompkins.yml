@@ -1,0 +1,18 @@
+id: paul-f-tompkins
+canonical_name: Paul F. Tompkins
+sort_name: Tompkins, Paul F.
+aliases:
+  - id: default
+    name: Paul F. Tompkins
+    alias_type: legal
+credits:
+  - show: nerd-poker
+    role: guest player
+    alias: default
+    note: Guest on bonus episodes; the source does not identify which.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Nerd_Poker
+        note: Cast, dungeon-master history and format per Wikipedia's article on
+          the show. Season not established — the article names who has been on
+          the show without saying which of the four seasons each appears in.

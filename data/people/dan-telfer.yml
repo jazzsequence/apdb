@@ -1,0 +1,20 @@
+id: dan-telfer
+canonical_name: Dan Telfer
+sort_name: Telfer, Dan
+aliases:
+  - id: default
+    name: Dan Telfer
+    alias_type: legal
+credits:
+  - show: nerd-poker
+    role: GM/DM
+    alias: default
+    note: Co-host who took over dungeon master duties after Blaine Capatch. Credited
+      here for the DM role only — the source does not separate which episodes he
+      played in versus ran.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Nerd_Poker
+        note: Cast, dungeon-master history and format per Wikipedia's article on
+          the show. Season not established — the article names who has been on
+          the show without saying which of the four seasons each appears in.

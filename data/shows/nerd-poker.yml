@@ -1,0 +1,40 @@
+id: nerd-poker
+title: Nerd Poker
+sort_title: Nerd Poker
+channels:
+  - nerd-poker
+format: podcast
+status: ongoing
+description: Comedian Brian Posehn and friends play Dungeons & Dragons. Started
+  on the Earwolf network in 2012 under a plain episode format, left to go
+  independent, and relaunched in 2017 divided into seasons. The dungeon master's
+  chair has changed hands over the show's run, and the system moved through
+  several editions before settling on 5th.
+links:
+  website: http://www.nerdpokerpod.com
+  podcast: https://rss.libsyn.com/shows/98150/destinations/510364.xml
+# The four numbered seasons are the independent era only. The Earwolf run
+# (2012-2017) used a plain episode format with no seasons, and its systems were
+# 2nd edition, then 4th, then 2nd again — so it is recorded in the description
+# rather than invented as a season here, and credits from that era are filed at
+# show level. Episode counts are the ones the source states; the feed is at 478
+# episodes overall, which spans both eras and the bonus material.
+seasons:
+  - ordinal: 1
+    title: Season 1
+    game: dnd-5e
+    episode_count: 42
+  - ordinal: 2
+    title: Season 2
+    game: dnd-5e
+    episode_count: 47
+  - ordinal: 3
+    title: Season 3
+    game: dnd-5e
+    episode_count: 85
+  - ordinal: 4
+    title: Season 4
+    game: dnd-5e
+    episode_count: 58
+    description: Episode count as stated by the source while the season was
+      still running; the show is ongoing.

@@ -397,3 +397,13 @@ credits:
         url: https://www.imdb.com/title/tt4834232/fullcredits/
         note: IMDb full cast and crew for "Critical Role" (2015), via the official
           datasets.
+  - show: nerd-poker
+    role: guest player
+    alias: default
+    note: Guest on bonus episodes; the source does not identify which.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Nerd_Poker
+        note: Cast, dungeon-master history and format per Wikipedia's article on
+          the show. Season not established — the article names who has been on
+          the show without saying which of the four seasons each appears in.

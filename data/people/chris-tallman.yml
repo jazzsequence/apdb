@@ -1,0 +1,18 @@
+id: chris-tallman
+canonical_name: Chris Tallman
+sort_name: Tallman, Chris
+aliases:
+  - id: default
+    name: Chris Tallman
+    alias_type: legal
+credits:
+  - show: nerd-poker
+    role: player
+    alias: default
+    note: Co-host.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Nerd_Poker
+        note: Cast, dungeon-master history and format per Wikipedia's article on
+          the show. Season not established — the article names who has been on
+          the show without saying which of the four seasons each appears in.

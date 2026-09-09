@@ -1,0 +1,19 @@
+id: mr-sark
+canonical_name: Mr. Sark
+sort_name: Sark, Mr.
+aliases:
+  - id: default
+    name: Mr. Sark
+    alias_type: handle
+credits:
+  - show: nerd-poker
+    role: GM/DM
+    alias: default
+    note: The show's original dungeon master, carrying the role over from the home
+      game the podcast grew out of. Later left the show and returned as a guest.
+    sources:
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Nerd_Poker
+        note: Cast, dungeon-master history and format per Wikipedia's article on
+          the show. Season not established — the article names who has been on
+          the show without saying which of the four seasons each appears in.
