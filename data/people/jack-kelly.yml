@@ -5,14 +5,15 @@ aliases:
   - id: default
     name: Jack Kelly
     alias_type: legal
+  - id: jackson-kelly
+    name: Jackson Kelly
+    alias_type: legal
+    note: Credited under this name on some sources; merged from `jackson-kelly`.
 credits:
   - show: masks
     season: 1
     role: player
     character: Buckshot
-    note: Distinguished from Jackson Kelly (The Realms of Rothaen), a separate
-      Saving Throw Show guest cast member with a similar name; the wiki lists
-      them as two distinct people and no source ties them together.
     alias: default
     sources:
       - tier: community
@@ -21,9 +22,34 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt9196702/fullcredits/
         note: IMDb full cast and crew for "Masks" (2016), via the official datasets.
-wikidata_qid: Q1253621
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/2/28/Jack_Kelly_1957.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
-  licence: public domain
-  attribution: ABC Television
-  source: https://commons.wikimedia.org/wiki/File:Jack_Kelly_1957.JPG
+  - show: the-realms-of-rothaen
+    season: 1
+    episode: Episode 1
+    role: player
+    character: Durga
+    alias: jackson-kelly
+    note: Billed as "Jackson Kelly" on this show.
+    sources:
+      - tier: community
+        url: https://savingthrowshow.fandom.com/wiki/The_Realms_of_Rothaen
+        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com infobox,
+          broken out per episode since each has its own DM and largely separate
+          cast. CC-BY-SA.
+# Merged from `jackson-kelly`, on the balance of evidence rather than a source
+# that states it: the Saving Throw wiki bills "Jack Kelly" as Buckshot on Masks
+# and "Jackson Kelly" as Durga on The Realms of Rothaen, same network, and Jack
+# is the ordinary diminutive of Jackson. Two people of that name on one small
+# podcast network, neither with a page anywhere, is the less likely reading.
+#
+# Searched and found nothing either way: no person page on the wiki for either
+# spelling, no handles on the show pages, and the only "Jackson Kelly" findable
+# elsewhere is a film and television actor with no actual-play credits.
+#
+# Note that a shared show is NOT required to suspect this. One person credited
+# under two names on two different shows is the alias gap this project exists
+# to close, so "different shows" is the expected shape of the problem, not an
+# argument against it.
+#
+# Also removed here: wikidata_qid Q1253621 and a 1957 ABC publicity photograph,
+# both belonging to Jack Kelly the American actor and politician, 1927-1992,
+# who died well before either of these shows existed.

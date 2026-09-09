@@ -13,9 +13,13 @@ seasons:
     episode_count: 13
     started: 2016-04-10
     ended: 2016-05-01
+# The image was pointed at episode 12's archive item, whose thumbnail endpoint
+# returns a persistent 504 while the same endpoint serves every other episode
+# of this show — a broken item, not an outage. Repointed at episode 1, which is
+# the more sensible cover art anyway. Same creator, same public domain mark.
 image:
-  url: https://archive.org/services/img/CurseOfStrahdLivePlay12
+  url: https://archive.org/services/img/CurseOfStrahdLivePlay1
   licence: public domain
   attribution: A Gamer and Son, public domain. Via the Internet Archive.
-  source: https://archive.org/details/CurseOfStrahdLivePlay12
+  source: https://archive.org/details/CurseOfStrahdLivePlay1
   depicts: Cover art for Curse Of Strahd Live Play
