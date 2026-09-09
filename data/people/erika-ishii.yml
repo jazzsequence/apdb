@@ -199,3 +199,16 @@ credits:
         url: https://www.dndbeyond.com/posts/1099-join-the-battle-for-beyond-a-6-part-dungeons
         note: D&D Beyond's own announcement post, naming the DM and each player's
           character.
+  - show: the-adventure-zone
+    season: 5
+    role: player
+    character: Louise "Lulu" Kagiyama
+    alias: default
+    note: Joined for the second season of Dust; she is not in the campaign's
+      original player list, which is why the show-level infobox does not name
+      her.
+    sources:
+      - tier: community
+        url: https://theadventurezone.fandom.com/wiki/Louise_%22Lulu%22_Kagiyama
+        note: The character page names its player — "a player character in Season 2
+          of Dust, played by Erika Ishii". CC-BY-SA.
