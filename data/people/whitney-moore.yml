@@ -39,6 +39,16 @@ credits:
           episode description (\"The Fall of Thjazi Fang\", ep. 1). Playlist:
           Critical Role: Campaign 4."
     character: Tyranny
+  - show: avowed-one-shot
+    season: 1
+    role: player
+    character: Minette
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Avowed_One-Shot
+        note: Avowed One-Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
 wikidata_qid: Q7996725
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Whitney_Moore_%28cropped%29.jpg

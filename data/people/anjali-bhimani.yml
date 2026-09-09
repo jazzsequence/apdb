@@ -194,3 +194,13 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Doom_Eternal_One-Shot
         note: Doom Eternal One-Shot cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: avowed-one-shot
+    season: 1
+    role: player
+    character: Ylva Ilende
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Avowed_One-Shot
+        note: Avowed One-Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.

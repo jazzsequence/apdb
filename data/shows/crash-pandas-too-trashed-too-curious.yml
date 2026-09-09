@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Crash_Pandas:_Too_Trashed,_Too_Curious
+  website: https://criticalrole.fandom.com/wiki/Crash_Pandas:_Too_Trashed,_Too_Curious
 seasons:
   - ordinal: 1
     game: crash-pandas
     episode_count: 1
     started: 2018-09-21
     ended: 2018-09-21
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/e/ed/Crash_Pandas_Too_Trashed%2C_Too_Curious.jpg/revision/latest/scale-to-width-down/400?cb=20180924170519
+  licence: fair use
+  attribution: "Crash Pandas: Too Trashed, Too Curious series art, © its
+    producers. Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Crash_Pandas_Too_Trashed,_Too_Curious.jpg
+  depicts: "Series art for Crash Pandas: Too Trashed, Too Curious"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

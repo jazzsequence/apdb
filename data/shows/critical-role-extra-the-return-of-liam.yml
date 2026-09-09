@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_Extra_–_The_Return_of_Liam!
+  website: https://criticalrole.fandom.com/wiki/Critical_Role_Extra_–_The_Return_of_Liam!
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2016-09-01
     ended: 2016-09-01
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/a/a3/Critical_Role_Extra_%E2%80%93_The_Return_of_Liam%21.png/revision/latest/scale-to-width-down/400?cb=20220410094842
+  licence: fair use
+  attribution: Critical Role Extra – The Return of Liam! series art, © its
+    producers. Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Critical_Role_Extra_%E2%80%93_The_Return_of_Liam!.png
+  depicts: Series art for Critical Role Extra – The Return of Liam!
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

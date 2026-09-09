@@ -6,7 +6,7 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Stephen_Colbert's_D&D_Adventure_with_Matthew_Mercer
+  website: https://criticalrole.fandom.com/wiki/Stephen_Colbert's_D&D_Adventure_with_Matthew_Mercer
 seasons:
   - ordinal: 1
     game: dnd-5e

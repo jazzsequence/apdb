@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Shadow_of_War_–_Part_2
+  website: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Shadow_of_War_–_Part_2
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2017-10-09
     ended: 2017-10-09
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/a/a6/Critical_Role_One_Shot_Shadow_of_War_Part_2.png/revision/latest?cb=20180313095410
+  licence: fair use
+  attribution: "Critical Role One-Shot: Shadow of War – Part 2 series art, © its
+    producers. Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Critical_Role_One_Shot_Shadow_of_War_Part_2.png
+  depicts: "Series art for Critical Role One-Shot: Shadow of War – Part 2"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

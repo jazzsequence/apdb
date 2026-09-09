@@ -6,10 +6,19 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Feast_of_Legends
+  website: https://criticalrole.fandom.com/wiki/Feast_of_Legends
 seasons:
   - ordinal: 1
     game: feast-of-legends
     episode_count: 1
     started: 2019-10-03
     ended: 2019-10-03
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/c/cd/Feast_of_Legends.jpg/revision/latest/scale-to-width-down/400?cb=20191117135939
+  licence: fair use
+  attribution: Feast of Legends series art, © its producers. Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Feast_of_Legends.jpg
+  depicts: Series art for Feast of Legends
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

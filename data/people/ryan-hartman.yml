@@ -10,10 +10,10 @@ credits:
     season: 1
     role: player
     character: Donaar Blit'zen
-    note: Recurring player for all four seasons; TheTVDB and the show's own
-      wiki credit him at series level without a per-season breakdown.
+    note: Recurring player for all four seasons; TheTVDB and the show's own wiki
+      credit him at series level without a per-season breakdown.
     alias: default
-    sources: &cteam_rh_sources
+    sources: &a1
       - tier: reference
         url: https://thetvdb.com/series/acquisitions-incorporated-the-c-team
         note: Main cast list per TheTVDB.
@@ -24,23 +24,34 @@ credits:
     season: 2
     role: player
     character: Donaar Blit'zen
-    note: Recurring player for all four seasons; TheTVDB and the show's own
-      wiki credit him at series level without a per-season breakdown.
+    note: Recurring player for all four seasons; TheTVDB and the show's own wiki
+      credit him at series level without a per-season breakdown.
     alias: default
-    sources: *cteam_rh_sources
+    sources: *a1
   - show: acquisitions-incorporated-the-c-team
     season: 3
     role: player
     character: Donaar Blit'zen
-    note: Recurring player for all four seasons; TheTVDB and the show's own
-      wiki credit him at series level without a per-season breakdown.
+    note: Recurring player for all four seasons; TheTVDB and the show's own wiki
+      credit him at series level without a per-season breakdown.
     alias: default
-    sources: *cteam_rh_sources
+    sources: *a1
   - show: acquisitions-incorporated-the-c-team
     season: 4
     role: player
     character: Donaar Blit'zen
-    note: Recurring player for all four seasons; TheTVDB and the show's own
-      wiki credit him at series level without a per-season breakdown.
+    note: Recurring player for all four seasons; TheTVDB and the show's own wiki
+      credit him at series level without a per-season breakdown.
     alias: default
-    sources: *cteam_rh_sources
+    sources: *a1
+image:
+  url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/7/7f/Dnd_stream_ryan.png/revision/latest?cb=20220409024817
+  licence: fair use
+  attribution: Portrait of Ryan Hartman, © its owner. Via
+    acquisitionsincorporated.fandom.com.
+  source: https://acquisitionsincorporated.fandom.com/wiki/Ryan_Hartman
+  depicts: Ryan Hartman
+  rationale: Low-resolution thumbnail used solely to identify this person in an
+    index of their credits. Non-commercial, does not substitute for the
+    original, and links back to the source. Removed on request by the rights
+    holder — see POLICY.md.

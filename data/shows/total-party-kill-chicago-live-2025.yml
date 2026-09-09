@@ -1,0 +1,15 @@
+id: total-party-kill-chicago-live-2025
+title: "Total Party Kill: Chicago Live 2025"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Total_Party_Kill:_Chicago_Live_2025
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2025-04-24
+    ended: 2025-04-24

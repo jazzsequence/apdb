@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Epic_Level_Battle_Royale
+  website: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Epic_Level_Battle_Royale
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2017-12-07
     ended: 2017-12-07
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/b/b4/Critical_Role_One-Shot_Epic_Level_Battle_Royale.png/revision/latest/scale-to-width-down/400?cb=20231107124610
+  licence: fair use
+  attribution: "Critical Role One-Shot: Epic Level Battle Royale series art, © its
+    producers. Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Critical_Role_One-Shot_Epic_Level_Battle_Royale.png
+  depicts: "Series art for Critical Role One-Shot: Epic Level Battle Royale"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

@@ -1,0 +1,19 @@
+id: evan-michael-lee
+canonical_name: Evan Michael Lee
+sort_name: Lee, Evan Michael
+aliases:
+  - id: default
+    name: Evan Michael Lee
+    alias_type: legal
+credits:
+  - show: the-elder-scrolls-online-one-shot
+    season: 1
+    role: player
+    character: Errox
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online_One-Shot
+        note: The Elder Scrolls Online One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.

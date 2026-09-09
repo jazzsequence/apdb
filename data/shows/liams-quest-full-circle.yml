@@ -6,7 +6,7 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Liam's_Quest:_Full_Circle
+  website: https://criticalrole.fandom.com/wiki/Liam's_Quest:_Full_Circle
 seasons:
   - ordinal: 1
     game: dnd-5e

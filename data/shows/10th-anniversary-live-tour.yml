@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/10th_Anniversary_Live_Tour
+  website: https://criticalrole.fandom.com/wiki/10th_Anniversary_Live_Tour
 seasons:
   - ordinal: 1
     game:
       - daggerheart
       - dnd-5e
     episode_count: 1
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/f/f8/CR10_-_logo.jpg/revision/latest/scale-to-width-down/400?cb=20250704081026
+  licence: fair use
+  attribution: 10th Anniversary Live Tour series art, © its producers. Via
+    criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:CR10_-_logo.jpg
+  depicts: Series art for 10th Anniversary Live Tour
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role:_Grog's_One-Shot
+  website: https://criticalrole.fandom.com/wiki/Critical_Role:_Grog's_One-Shot
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2017-11-02
     ended: 2017-11-02
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/5/5b/Critical_Role_Grog%27s_One_Shot.jpg/revision/latest?cb=20180313111248
+  licence: fair use
+  attribution: "Critical Role: Grog's One-Shot series art, © its producers. Via
+    criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Critical_Role_Grog%27s_One_Shot.jpg
+  depicts: "Series art for Critical Role: Grog's One-Shot"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

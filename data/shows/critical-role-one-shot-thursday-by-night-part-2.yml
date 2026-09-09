@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Thursday_by_Night_–_Part_2
+  website: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Thursday_by_Night_–_Part_2
 seasons:
   - ordinal: 1
     game: vampire-the-masquerade-20th
     episode_count: 1
     started: 2017-10-26
     ended: 2017-10-26
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/8/81/Critical_Role_One_Shot_Thursday_by_Night_Part_2.jpg/revision/latest/scale-to-width-down/400?cb=20180313105117
+  licence: fair use
+  attribution: "Critical Role One-Shot: Thursday by Night – Part 2 series art, ©
+    its producers. Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Critical_Role_One_Shot_Thursday_by_Night_Part_2.jpg
+  depicts: "Series art for Critical Role One-Shot: Thursday by Night – Part 2"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

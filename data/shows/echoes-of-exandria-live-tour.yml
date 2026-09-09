@@ -6,8 +6,18 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Echoes_of_Exandria_Live_Tour
+  website: https://criticalrole.fandom.com/wiki/Echoes_of_Exandria_Live_Tour
 seasons:
   - ordinal: 1
     game: daggerheart
     episode_count: 1
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/8/89/2026_Live_Show_Tour_banner.jpg/revision/latest/scale-to-width-down/400?cb=20250716124242
+  licence: fair use
+  attribution: Echoes of Exandria Live Tour series art, © its producers. Via
+    criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:2026_Live_Show_Tour_banner.jpg
+  depicts: Series art for Echoes of Exandria Live Tour
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

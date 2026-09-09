@@ -15,7 +15,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=Fbjw9h0lK3k
-        note: "Cast per the production's own description of \"WWE Superstars Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "WWE Superstars Game - D&D
+          Live 2020".
   - show: d-d-live-2021
     season: 1
     episode: Chaos Carnival
@@ -29,3 +30,9 @@ credits:
       - tier: reference
         url: https://screenrant.com/dungeons-dragons-live-2021-patton-oswalt-drlupo/
         note: Screen Rant's report on the D&D Live 2021 game announcements.
+wikidata_qid: Q3080281
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Tyler_Breeze_WM31Axxess.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-SA-2.0
+  attribution: Miguel Discart from Bruxelles, Belgique
+  source: https://commons.wikimedia.org/wiki/File:Tyler_Breeze_WM31Axxess.jpg

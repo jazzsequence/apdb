@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Deadlands_One-Shot_for_MDA_Charity!
+  website: https://criticalrole.fandom.com/wiki/Deadlands_One-Shot_for_MDA_Charity!
 seasons:
   - ordinal: 1
     game: deadlands
     episode_count: 1
     started: 2016-06-25
     ended: 2016-06-25
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/f/fe/058aDeadlandsOneshot.jpg/revision/latest/scale-to-width-down/400?cb=20160928035700
+  licence: fair use
+  attribution: Deadlands One-Shot for MDA Charity! series art, © its producers.
+    Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:058aDeadlandsOneshot.jpg
+  depicts: Series art for Deadlands One-Shot for MDA Charity!
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

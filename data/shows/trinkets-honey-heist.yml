@@ -6,7 +6,7 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Trinket's_Honey_Heist
+  website: https://criticalrole.fandom.com/wiki/Trinket's_Honey_Heist
 seasons:
   - ordinal: 1
     game: honey-heist

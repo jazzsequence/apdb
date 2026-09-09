@@ -6,7 +6,7 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/The_Nautilus_Ark:_A_Johnson_Corp_Odyssey
+  website: https://criticalrole.fandom.com/wiki/The_Nautilus_Ark:_A_Johnson_Corp_Odyssey
 seasons:
   - ordinal: 1
     game: homebrewed-system

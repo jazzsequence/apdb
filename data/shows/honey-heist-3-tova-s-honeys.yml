@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Honey_Heist_3:_Tova’s_Honeys
+  website: https://criticalrole.fandom.com/wiki/Honey_Heist_3:_Tova’s_Honeys
 seasons:
   - ordinal: 1
     game: honey-heist
     episode_count: 1
     started: 2018-11-23
     ended: 2018-11-23
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/e/ef/Honey_Heist_3.jpg/revision/latest/scale-to-width-down/400?cb=20181213131212
+  licence: fair use
+  attribution: "Honey Heist 3: Tova’s Honeys series art, © its producers. Via
+    criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Honey_Heist_3.jpg
+  depicts: "Series art for Honey Heist 3: Tova’s Honeys"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

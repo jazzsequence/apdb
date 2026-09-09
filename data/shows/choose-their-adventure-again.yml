@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Choose_Their_Adventure...Again!
+  website: https://criticalrole.fandom.com/wiki/Choose_Their_Adventure...Again!
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2023-11-28
     ended: 2023-11-28
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/e/e8/Special_81.jpg/revision/latest/scale-to-width-down/400?cb=20231129033330
+  licence: fair use
+  attribution: Choose Their Adventure...Again! series art, © its producers. Via
+    criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Special_81.jpg
+  depicts: Series art for Choose Their Adventure...Again!
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

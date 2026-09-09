@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Call_of_Cthulhu:_Shadow_of_the_Crystal_Palace
+  website: https://criticalrole.fandom.com/wiki/Call_of_Cthulhu:_Shadow_of_the_Crystal_Palace
 seasons:
   - ordinal: 1
     game: call-of-cthulhu
     episode_count: 1
     started: 2019-07-29
     ended: 2019-07-29
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/9/92/CallofCthulhu.jpg/revision/latest/scale-to-width-down/400?cb=20190805115714
+  licence: fair use
+  attribution: "Call of Cthulhu: Shadow of the Crystal Palace series art, © its
+    producers. Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:CallofCthulhu.jpg
+  depicts: "Series art for Call of Cthulhu: Shadow of the Crystal Palace"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

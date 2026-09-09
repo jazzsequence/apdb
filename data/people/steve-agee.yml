@@ -13,6 +13,12 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Nerd_Poker
-        note: Cast, dungeon-master history and format per Wikipedia's article on
-          the show. Season not established — the article names who has been on
-          the show without saying which of the four seasons each appears in.
+        note: Cast, dungeon-master history and format per Wikipedia's article on the
+          show. Season not established — the article names who has been on the
+          show without saying which of the four seasons each appears in.
+wikidata_qid: Q7611767
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/d/d3/Steve_Agee_by_Gage_Skidmore_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-SA-3.0
+  attribution: Gage Skidmore
+  source: https://commons.wikimedia.org/wiki/File:Steve_Agee_by_Gage_Skidmore_3.jpg

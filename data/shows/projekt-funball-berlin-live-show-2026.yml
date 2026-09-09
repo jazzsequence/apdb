@@ -1,0 +1,15 @@
+id: projekt-funball-berlin-live-show-2026
+title: PROJEKT Funball - Berlin Live Show 2026
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/PROJEKT_Funball_-_Berlin_Live_Show_2026
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 1
+    started: 2026-07-14
+    ended: 2026-07-14

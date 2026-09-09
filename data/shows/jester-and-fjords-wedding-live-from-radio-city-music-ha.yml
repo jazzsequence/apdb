@@ -6,7 +6,7 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Jester_and_Fjord's_Wedding_-_Live_from_Radio_City_Music_Hall
+  website: https://criticalrole.fandom.com/wiki/Jester_and_Fjord's_Wedding_-_Live_from_Radio_City_Music_Hall
 seasons:
   - ordinal: 1
     game:
@@ -15,3 +15,13 @@ seasons:
     episode_count: 1
     started: 2025-11-05
     ended: 2025-11-05
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/e/ea/Episode_Sx103.png/revision/latest/scale-to-width-down/400?cb=20251122172547
+  licence: fair use
+  attribution: Jester and Fjord's Wedding - Live from Radio City Music Hall series
+    art, © its producers. Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Episode_Sx103.png
+  depicts: Series art for Jester and Fjord's Wedding - Live from Radio City Music Hall
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

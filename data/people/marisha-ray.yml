@@ -594,6 +594,60 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Nautilus_Ark:_A_Johnson_Corp_Odyssey
         note: "The Nautilus Ark: A Johnson Corp Odyssey cast, via the
           criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: avowed-one-shot
+    season: 1
+    role: player
+    character: Sabel
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Avowed_One-Shot
+        note: Avowed One-Shot cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: darktow-edinburgh-live-show-2026
+    season: 1
+    role: player
+    character: Beauregard Lionett
+    alias: default
+    year: "2026"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Darktow_-_Edinburgh_Live_Show_2026
+        note: Darktow - Edinburgh Live Show 2026 cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
+  - show: freaky-thursday-a-bells-hells-charity-one-shot
+    season: 1
+    role: player
+    character: Laudna
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Freaky_Thursday:_A_Bells_Hells_Charity_One_Shot
+        note: "Freaky Thursday: A Bells Hells Charity One Shot cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: projekt-funball-berlin-live-show-2026
+    season: 1
+    role: player
+    character: Beauregard Lionett
+    alias: default
+    year: "2026"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/PROJEKT_Funball_-_Berlin_Live_Show_2026
+        note: PROJEKT Funball - Berlin Live Show 2026 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: total-party-kill-chicago-live-2025
+    season: 1
+    role: player
+    character: Beauregard Lionett
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Total_Party_Kill:_Chicago_Live_2025
+        note: "Total Party Kill: Chicago Live 2025 cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/2/2e/C4_Marisha.jpg/revision/latest/scale-to-width-down/400?cb=20251001205749
   licence: fair use

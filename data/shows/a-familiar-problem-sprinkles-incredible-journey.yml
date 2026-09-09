@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/A_Familiar_Problem:_Sprinkle's_Incredible_Journey
+  website: https://criticalrole.fandom.com/wiki/A_Familiar_Problem:_Sprinkle's_Incredible_Journey
 seasons:
   - ordinal: 1
     game: a-familiar-problem
     episode_count: 1
     started: 2022-06-23
     ended: 2022-06-23
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/2/2d/A_Familiar_Problem_thumbnail.jpg/revision/latest/scale-to-width-down/400?cb=20220627200416
+  licence: fair use
+  attribution: "A Familiar Problem: Sprinkle's Incredible Journey series art, ©
+    its producers. Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:A_Familiar_Problem_thumbnail.jpg
+  depicts: "Series art for A Familiar Problem: Sprinkle's Incredible Journey"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

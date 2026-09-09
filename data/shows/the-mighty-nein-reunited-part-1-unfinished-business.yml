@@ -6,7 +6,7 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_Reunited_Part_1_-_Unfinished_Business
+  website: https://criticalrole.fandom.com/wiki/The_Mighty_Nein_Reunited_Part_1_-_Unfinished_Business
 seasons:
   - ordinal: 1
     game: dnd-5e

@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role:_Bar_Room_Blitz
+  website: https://criticalrole.fandom.com/wiki/Critical_Role:_Bar_Room_Blitz
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2017-08-31
     ended: 2017-08-31
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/d/dc/Cover.jpg/revision/latest/scale-to-width-down/400?cb=20170906053818
+  licence: fair use
+  attribution: "Critical Role: Bar Room Blitz series art, © its producers. Via
+    criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Cover.jpg
+  depicts: "Series art for Critical Role: Bar Room Blitz"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_and_the_Club_of_Misfits
+  website: https://criticalrole.fandom.com/wiki/Critical_Role_and_the_Club_of_Misfits
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2018-10-25
     ended: 2018-10-25
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/5/56/Critical_Role_and_the_Club_of_Misfits.jpg/revision/latest/scale-to-width-down/400?cb=20181029203334
+  licence: fair use
+  attribution: Critical Role and the Club of Misfits series art, © its producers.
+    Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Critical_Role_and_the_Club_of_Misfits.jpg
+  depicts: Series art for Critical Role and the Club of Misfits
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

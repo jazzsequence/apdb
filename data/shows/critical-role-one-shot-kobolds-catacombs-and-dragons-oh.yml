@@ -6,10 +6,21 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Kobolds,_Catacombs_and_Dragons_(Oh_My!)
+  website: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Kobolds,_Catacombs_and_Dragons_(Oh_My!)
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2017-11-30
     ended: 2017-11-30
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/a/a9/Critical_Role_One_Shot_Kobolds_Catacombs_and_Dragons_%28Oh_My%21%29.jpg/revision/latest/scale-to-width-down/400?cb=20231107123326
+  licence: fair use
+  attribution: "Critical Role One-Shot: Kobolds, Catacombs and Dragons (Oh My!)
+    series art, © its producers. Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Critical_Role_One_Shot_Kobolds_Catacombs_and_Dragons_(Oh_My!).jpg
+  depicts: "Series art for Critical Role One-Shot: Kobolds, Catacombs and Dragons
+    (Oh My!)"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

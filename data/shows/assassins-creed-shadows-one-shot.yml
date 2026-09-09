@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Assassin's_Creed_Shadows_One-Shot
+  website: https://criticalrole.fandom.com/wiki/Assassin's_Creed_Shadows_One-Shot
 seasons:
   - ordinal: 1
     game: homebrewed-system
     episode_count: 1
     started: 2025-01-14
     ended: 2025-01-14
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/f/fa/Assassins_Creed.jpg/revision/latest/scale-to-width-down/400?cb=20250115031329
+  licence: fair use
+  attribution: Assassin's Creed Shadows One-Shot series art, © its producers. Via
+    criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Assassins_Creed.jpg
+  depicts: Series art for Assassin's Creed Shadows One-Shot
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

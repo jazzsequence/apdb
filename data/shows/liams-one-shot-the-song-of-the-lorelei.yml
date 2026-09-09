@@ -6,7 +6,7 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Liam's_One_Shot:_The_Song_of_the_Lorelei
+  website: https://criticalrole.fandom.com/wiki/Liam's_One_Shot:_The_Song_of_the_Lorelei
 seasons:
   - ordinal: 1
     game: dnd-5e

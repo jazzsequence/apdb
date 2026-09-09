@@ -158,6 +158,17 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Doom_Eternal_One-Shot
         note: Doom Eternal One-Shot cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: the-elder-scrolls-online-one-shot
+    season: 1
+    role: player
+    character: Amiri
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online_One-Shot
+        note: The Elder Scrolls Online One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/f/f8/Dnd_stream_jasmine.png/revision/latest?cb=20220409060329
   licence: fair use

@@ -107,6 +107,17 @@ credits:
       - tier: community
         url: https://project-ghostlight-private-nightmares.fandom.com/wiki/Characters
         note: Series wiki character list. CC-BY-SA.
+  - show: the-elder-scrolls-online-one-shot
+    season: 1
+    role: player
+    character: Talador
+    alias: default
+    year: "2025"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online_One-Shot
+        note: The Elder Scrolls Online One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/0/05/C4_Luis.jpg/revision/latest/scale-to-width-down/400?cb=20251001205749
   licence: fair use

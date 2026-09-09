@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Elden_Ring_One-Shot:_O_Ye_of_Little_Faith
+  website: https://criticalrole.fandom.com/wiki/Elden_Ring_One-Shot:_O_Ye_of_Little_Faith
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2022-03-01
     ended: 2022-03-01
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/8/8c/Elden_Ring_Thumbnail.jpg/revision/latest/scale-to-width-down/400?cb=20220303185600
+  licence: fair use
+  attribution: "Elden Ring One-Shot: O Ye of Little Faith series art, © its
+    producers. Via criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Elden_Ring_Thumbnail.jpg
+  depicts: "Series art for Elden Ring One-Shot: O Ye of Little Faith"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Bells_Hells_&_the_Maelstrom_Kingdom
+  website: https://criticalrole.fandom.com/wiki/Bells_Hells_&_the_Maelstrom_Kingdom
 seasons:
   - ordinal: 1
     game: daggerheart
     episode_count: 1
     started: 2026-05-29
     ended: 2026-05-29
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/d/d9/Maelstrom_Kingdom_thumbnail.jpg/revision/latest/scale-to-width-down/400?cb=20260623222009
+  licence: fair use
+  attribution: Bells Hells & the Maelstrom Kingdom series art, © its producers.
+    Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:Maelstrom_Kingdom_thumbnail.jpg
+  depicts: Series art for Bells Hells & the Maelstrom Kingdom
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

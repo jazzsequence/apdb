@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Honey_Heist_2:_Electric_Beargaloo
+  website: https://criticalrole.fandom.com/wiki/Honey_Heist_2:_Electric_Beargaloo
 seasons:
   - ordinal: 1
     game: honey-heist
     episode_count: 1
     started: 2018-08-10
     ended: 2018-08-10
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/d/d1/Honey_Heist_2-Electric_Beargaloo.jpg/revision/latest/scale-to-width-down/400?cb=20180825222110
+  licence: fair use
+  attribution: "Honey Heist 2: Electric Beargaloo series art, © its producers. Via
+    criticalrole.fandom.com."
+  source: https://criticalrole.fandom.com/wiki/File:Honey_Heist_2-Electric_Beargaloo.jpg
+  depicts: "Series art for Honey Heist 2: Electric Beargaloo"
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.

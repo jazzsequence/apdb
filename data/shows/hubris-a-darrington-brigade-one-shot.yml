@@ -6,10 +6,20 @@ format: hybrid
 status: completed
 description: Standalone Critical Role one-shot.
 links:
-  wikipedia: https://criticalrole.fandom.com/wiki/Hubris!_A_Darrington_Brigade_One-Shot
+  website: https://criticalrole.fandom.com/wiki/Hubris!_A_Darrington_Brigade_One-Shot
 seasons:
   - ordinal: 1
     game: dnd-5e
     episode_count: 1
     started: 2026-04-23
     ended: 2026-04-23
+image:
+  url: https://static.wikia.nocookie.net/criticalrole/images/8/8f/The_Darrington_Brigade_2026_-_Aviv_Or.jpg/revision/latest/scale-to-width-down/400?cb=20260426194821
+  licence: fair use
+  attribution: Hubris! A Darrington Brigade One-Shot series art, © its producers.
+    Via criticalrole.fandom.com.
+  source: https://criticalrole.fandom.com/wiki/File:The_Darrington_Brigade_2026_-_Aviv_Or.jpg
+  depicts: Series art for Hubris! A Darrington Brigade One-Shot
+  rationale: Low-resolution image used solely to identify the show in an index of
+    its credits. Non-commercial, does not substitute for the original, and links
+    back to the source. Removed on request by the rights holder — see POLICY.md.
