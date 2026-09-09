@@ -27,3 +27,8 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt13210470/
         note: IMDb series cast listing.
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/d/d0/FIRST_Championship_Detroit_2019_%E2%80%93_Deejay_Knight_2.jpg
+  licence: CC-BY-SA-4.0
+  attribution: Stilfehler
+  source: https://commons.wikimedia.org/w/index.php?curid=78760406

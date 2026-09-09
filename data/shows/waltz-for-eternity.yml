@@ -4,9 +4,19 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'System per source: D&D 5th Edition. Legends of Avantris campaign.'
+description: "System per source: D&D 5th Edition. Legends of Avantris campaign."
 seasons:
   - ordinal: 1
     game: dnd-5e
 links:
   website: https://www.youtube.com/playlist?list=PLZsrxxME7K30hIkaDuNgqXSx2tdnFVZ_E
+image:
+  url: https://i.ytimg.com/vi/7uObBxt6b0Y/hqdefault.jpg
+  licence: fair use
+  attribution: Waltz for Eternity series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLZsrxxME7K30hIkaDuNgqXSx2tdnFVZ_E
+  depicts: Series art for Waltz for Eternity
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

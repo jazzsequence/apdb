@@ -9,12 +9,6 @@ aliases:
   - id: holmes
     name: Mara Holmes
     alias_type: legal
-    active_from: 2026-03
-  - id: hulmes
-    name: Mark "Sherlock" Hulmes
-    alias_type: legal
-    active_to: 2026-03
-    note: The name on credits before March 2026.
 credits:
   - show: critical-role
     season: 2
@@ -44,11 +38,11 @@ credits:
         note: Names the host and every voice actor with the character they reprised.
       - tier: reference
         url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
-        note: Independent report of the same one-shot, confirming Mark Hulmes as GM.
+        note: Independent report of the same one-shot, confirming her as GM.
   - show: high-rollers-dnd
     season: 1
     role: GM/DM
-    alias: hulmes
+    alias: holmes
     sources:
       - url: https://highrollers.fandom.com/wiki/Aerois_(Campaign)
         note: Aerois (Campaign) cast, via the highrollers.fandom.com infobox. CC-BY-SA.
@@ -68,7 +62,7 @@ credits:
   - show: high-rollers-dnd
     season: 3
     role: GM/DM
-    alias: hulmes
+    alias: holmes
     sources:
       - url: https://highrollers.fandom.com/wiki/Uncharted_Territory
         note: Uncharted Territory cast, via the highrollers.fandom.com infobox.
@@ -142,14 +136,23 @@ credits:
   - show: nights-of-eveningstar
     season: 1
     role: GM/DM
-    alias: hulmes
+    alias: holmes
     year: "2020"
     sources:
       - tier: reference
         url: https://x.com/wizards_dnd/status/1283449269886672897
-        note: Official D&D account naming @sherlock_hulmes as DM for season 1 of "Nights
-          of Eveningstar" — the name credited before her March 2026 legal name
-          change.
+        note: Official D&D account naming her as DM for season 1 of "Nights of
+          Eveningstar", under the name she was credited by at the time.
+  - show: tails-of-equestria-one-shot
+    season: 1
+    role: GM/DM
+    alias: holmes
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tails_of_Equestria_One-Shot
+        note: Tails of Equestria One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/d/da/Altheya_50_DM_Mara.png/revision/latest/scale-to-width-down/400?cb=20250212065303
   licence: fair use
@@ -160,3 +163,11 @@ image:
     index of their credits. Non-commercial, does not substitute for the
     original, and links back to the source. Removed on request by the rights
     holder — see POLICY.md.
+# This person changed their name. The prior name is deliberately NOT recorded
+# here and must not be re-added — sources still carry it (the Critical Role
+# wiki footnotes it on some one-shots, older cast lists use it), and that is
+# not a reason to reintroduce it. Credits sit under the current name.
+#
+# The alias system exists so pre-change credits stay findable under the name
+# that was on them. That is worth having for a surname change. It is not worth
+# deadnaming someone for.

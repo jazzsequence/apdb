@@ -1,0 +1,15 @@
+id: crash-pandas-too-trashed-too-curious
+title: "Crash Pandas: Too Trashed, Too Curious"
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Crash_Pandas:_Too_Trashed,_Too_Curious
+seasons:
+  - ordinal: 1
+    game: crash-pandas
+    episode_count: 1
+    started: 2018-09-21
+    ended: 2018-09-21

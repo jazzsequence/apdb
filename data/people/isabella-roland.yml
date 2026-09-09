@@ -58,6 +58,17 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/89180-dimension-20/cast
         note: Cast for "Dimension 20" per TMDB.
+  - show: a-familiar-problem-sprinkles-incredible-journey
+    season: 1
+    role: player
+    character: Joanne
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/A_Familiar_Problem:_Sprinkle's_Incredible_Journey
+        note: "A Familiar Problem: Sprinkle's Incredible Journey cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/7/73/PCIzzyOstentatia.png/revision/latest/scale-to-width-down/400?cb=20210729002936
   licence: fair use

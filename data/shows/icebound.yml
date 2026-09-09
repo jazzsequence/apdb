@@ -4,10 +4,20 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'System per source: D&D 5th Edition. Survival campaign set on the icy tundra
-  of Drakkar.'
+description: "System per source: D&D 5th Edition. Survival campaign set on the
+  icy tundra of Drakkar."
 seasons:
   - ordinal: 1
     game: dnd-5e
 links:
   website: https://www.youtube.com/playlist?list=PLZsrxxME7K31eCeJXDyxVF2yRQW_bf5T5
+image:
+  url: https://i.ytimg.com/vi/cQer66-T8pc/hqdefault.jpg
+  licence: fair use
+  attribution: Icebound series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLZsrxxME7K31eCeJXDyxVF2yRQW_bf5T5
+  depicts: Series art for Icebound
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

@@ -26,7 +26,7 @@ credits:
         note: Names the host and every voice actor with the character they reprised.
       - tier: reference
         url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
-        note: Independent report of the same one-shot, confirming Mark Hulmes as GM.
+        note: Independent report of the same one-shot, confirming the GM.
     character: Karlach
     note: One-shot in which the Baldur's Gate 3 voice cast played their own
       characters.
@@ -45,8 +45,8 @@ credits:
           \"Baldur's Gate: From Hags to Liches.\""
       - tier: reference
         url: https://www.mtgfestivals.com/global/en-us/magiccon-news/your-guide-to-dand-at-magiccon-and-the-full-star-studded-cast-of-dand-live.html
-        note: Independent guide corroborating the DM and full player cast for the
-          same session.
+        note: Independent guide corroborating the DM and full player cast for the same
+          session.
   - show: what-we-do-in-the-shadow-cursed-lands
     season: 1
     role: player
@@ -56,7 +56,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=imf5VIk_zmQ
-        note: "Cast per the production's own description of \"Baldur's Gate 3 Cast Play D&D Live | With Astarion, Karlach, Wyll and Lae'zel\"."
+        note: Cast per the production's own description of "Baldur's Gate 3 Cast Play
+          D&D Live | With Astarion, Karlach, Wyll and Lae'zel".
 wikidata_qid: Q7408632
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Samantha_B%C3%A9art%2C_September_2023.jpg

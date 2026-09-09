@@ -4,12 +4,22 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'System per source: D&D 5th Edition. Lovecraftian pirate campaign tonally
-  inspired by Wizards of the Coast''s Ghosts of Saltmarsh module and Sea of Thieves. Several
-  player characters are reimagined versions of ones from the group''s earlier,
-  no-longer-canon Ghosts of Saltmarsh campaign.'
+description: "System per source: D&D 5th Edition. Lovecraftian pirate campaign
+  tonally inspired by Wizards of the Coast's Ghosts of Saltmarsh module and Sea
+  of Thieves. Several player characters are reimagined versions of ones from the
+  group's earlier, no-longer-canon Ghosts of Saltmarsh campaign."
 seasons:
   - ordinal: 1
     game: dnd-5e
 links:
   website: https://www.youtube.com/playlist?list=PLZsrxxME7K31AQqn5ZIFZc85TNF_Wo-dQ
+image:
+  url: https://i.ytimg.com/vi/dSY34pE-6I0/hqdefault.jpg
+  licence: fair use
+  attribution: Shroud Over Saltmarsh series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLZsrxxME7K31AQqn5ZIFZc85TNF_Wo-dQ
+  depicts: Series art for Shroud Over Saltmarsh
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

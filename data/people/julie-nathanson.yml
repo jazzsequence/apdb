@@ -1,0 +1,19 @@
+id: julie-nathanson
+canonical_name: Julie Nathanson
+sort_name: Nathanson, Julie
+aliases:
+  - id: default
+    name: Julie Nathanson
+    alias_type: legal
+credits:
+  - show: tails-of-equestria-one-shot
+    season: 1
+    role: player
+    character: Countess Pi
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tails_of_Equestria_One-Shot
+        note: Tails of Equestria One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.

@@ -4,11 +4,22 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'System per source: D&D 5th Edition. Non-canon mini-campaign continuing directly
-  from the group''s Crooked Moon one-shot, using alternate versions of the Once Upon a Witchlight
-  cast in the Crooked Moon D&D 5e supplement''s Druskenvald.'
+description: "System per source: D&D 5th Edition. Non-canon mini-campaign
+  continuing directly from the group's Crooked Moon one-shot, using alternate
+  versions of the Once Upon a Witchlight cast in the Crooked Moon D&D 5e
+  supplement's Druskenvald."
 seasons:
   - ordinal: 1
     game: dnd-5e
 links:
   website: https://www.youtube.com/playlist?list=PLZsrxxME7K32kz4bSTdlCiSCxhtRLiTdV
+image:
+  url: https://i.ytimg.com/vi/A7DzA1NXobw/hqdefault.jpg
+  licence: fair use
+  attribution: Once Upon a Ghostlight series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLZsrxxME7K32kz4bSTdlCiSCxhtRLiTdV
+  depicts: Series art for Once Upon a Ghostlight
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

@@ -2,7 +2,7 @@ id: high-rollers-dnd
 title: High Rollers DnD
 format: stream
 status: ongoing
-description: Long-form D&D campaigns GMed by Mark Hulmes.
+description: Long-form D&D campaigns GMed by Mara Holmes.
 channels:
   - yogscast
 links:
@@ -42,8 +42,8 @@ seasons:
     title: Warhammer Fantasy Roleplay
     game: warhammer-frp
     started: 2023-02-15
-    description: A "High Rollers Presents" mini-campaign trying a new system —
-      the Enemy Within campaign, starting with Enemy in Shadows.
+    description: A "High Rollers Presents" mini-campaign trying a new system — the
+      Enemy Within campaign, starting with Enemy in Shadows.
 image:
   url: https://static.wikia.nocookie.net/high-rollers-dnd/images/d/d3/Aerois_Logo.png/revision/latest/scale-to-width-down/400?cb=20201207040906
   licence: fair use

@@ -4,11 +4,22 @@ channels:
   - avantris
 format: video
 status: completed
-description: 'System per source: D&D 5th Edition. Neon Odyssey (Legends of Avantris'' own
-  D&D 5.5-edition space-opera supplement line) mini-campaign reimagining the Once Upon a Witchlight
-  cast; separate canon from Once Upon a Witchlight.'
+description: "System per source: D&D 5th Edition. Neon Odyssey (Legends of
+  Avantris' own D&D 5.5-edition space-opera supplement line) mini-campaign
+  reimagining the Once Upon a Witchlight cast; separate canon from Once Upon a
+  Witchlight."
 seasons:
   - ordinal: 1
     game: dnd-5e
 links:
   website: https://www.youtube.com/playlist?list=PLZsrxxME7K30Gs1MTlu9jLBWcUZQhN2H3
+image:
+  url: https://i.ytimg.com/vi/5A3aEhhBhYA/hqdefault.jpg
+  licence: fair use
+  attribution: Once Upon A Starlight series art, © its producers. Via YouTube.
+  source: https://www.youtube.com/playlist?list=PLZsrxxME7K30Gs1MTlu9jLBWcUZQhN2H3
+  depicts: Series art for Once Upon A Starlight
+  rationale: Low-resolution thumbnail used solely to identify the show in an index
+    of its credits. Non-commercial, does not substitute for the original, and
+    links back to the source. Removed on request by the rights holder — see
+    POLICY.md.

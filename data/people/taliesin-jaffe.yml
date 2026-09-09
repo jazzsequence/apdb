@@ -565,3 +565,45 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Trinket's_Honey_Heist
         note: Trinket's Honey Heist cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: critical-role-one-shot-thursday-by-night
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Thursday_by_Night
+        note: "Critical Role One-Shot: Thursday by Night cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-one-shot-thursday-by-night-part-2
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Thursday_by_Night_–_Part_2
+        note: "Critical Role One-Shot: Thursday by Night – Part 2 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: the-elder-scrolls-online-blackwood-part-ii-a-faulty-fou
+    season: 1
+    role: player
+    character: Mallory Klaxton
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online:_Blackwood_-_Part_II:_A_Faulty_Foundation
+        note: "The Elder Scrolls Online: Blackwood - Part II: A Faulty Foundation cast,
+          via the criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: the-nautilus-ark-a-johnson-corp-odyssey
+    season: 1
+    role: player
+    character: Dr. Ramsey Wiser
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Nautilus_Ark:_A_Johnson_Corp_Odyssey
+        note: "The Nautilus Ark: A Johnson Corp Odyssey cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."

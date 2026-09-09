@@ -1,0 +1,15 @@
+id: tiny-tinas-wonderlands-one-shot
+title: Tiny Tina's Wonderlands One-Shot
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Tiny_Tina's_Wonderlands_One-Shot
+seasons:
+  - ordinal: 1
+    game: bunkers-and-badasses
+    episode_count: 1
+    started: 2022-03-28
+    ended: 2022-03-28

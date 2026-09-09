@@ -12,8 +12,17 @@ credits:
     role: player
     alias: default
     year: "2020"
-    note: "The description names all six participants but does not state who ran the game, so no GM is credited for it here."
+    note: The description names all six participants but does not state who ran the
+      game, so no GM is credited for it here.
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=h86STkplb0s
-        note: "Cast per the production's own description of \"Deborah's Game - D&D Live 2020\"."
+        note: Cast per the production's own description of "Deborah's Game - D&D Live
+          2020".
+wikidata_qid: Q152773
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/d/da/Fan_Expo_Canada_2015_-_Pointer_%2821040909143%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-2.0
+  attribution: "Original: Jeff Hitchcock from Vancouver, BC, Canada Derivative
+    work: Danyele"
+  source: https://commons.wikimedia.org/wiki/File:Fan_Expo_Canada_2015_-_Pointer_(21040909143)_(cropped).jpg

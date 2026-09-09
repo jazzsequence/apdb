@@ -59,6 +59,17 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Thresher
         note: Thresher cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: mortal-kombat-1-one-shot-sindel-vs-the-realms
+    season: 1
+    role: player
+    character: Rain
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Mortal_Kombat_1_One-Shot:_Sindel_vs._The_Realms
+        note: "Mortal Kombat 1 One-Shot: Sindel vs. The Realms cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/0/05/Noshir_Dalal_in_Thresher.jpg/revision/latest/scale-to-width-down/400?cb=20250417204649
   licence: fair use

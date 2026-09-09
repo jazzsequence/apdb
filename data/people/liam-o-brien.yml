@@ -570,6 +570,71 @@ credits:
         url: https://criticalrole.fandom.com/wiki/Trinket's_Honey_Heist
         note: Trinket's Honey Heist cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: crash-pandas-too-trashed-too-curious
+    season: 1
+    role: player
+    character: Ringo
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Crash_Pandas:_Too_Trashed,_Too_Curious
+        note: "Crash Pandas: Too Trashed, Too Curious cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-one-shot-thursday-by-night
+    season: 1
+    role: player
+    character: Liam O'Brien
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Thursday_by_Night
+        note: "Critical Role One-Shot: Thursday by Night cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-one-shot-thursday-by-night-part-2
+    season: 1
+    role: player
+    character: Liam O'Brien
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Thursday_by_Night_–_Part_2
+        note: "Critical Role One-Shot: Thursday by Night – Part 2 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: feast-of-legends
+    season: 1
+    role: player
+    character: Snax
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Feast_of_Legends
+        note: Feast of Legends cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: tails-of-equestria-one-shot
+    season: 1
+    role: player
+    character: Tomeytine
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tails_of_Equestria_One-Shot
+        note: Tails of Equestria One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: the-nautilus-ark-a-johnson-corp-odyssey
+    season: 1
+    role: player
+    character: Forrest Coreman
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Nautilus_Ark:_A_Johnson_Corp_Odyssey
+        note: "The Nautilus Ark: A Johnson Corp Odyssey cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/d/d2/C4_Liam.jpg/revision/latest/scale-to-width-down/400?cb=20251001205749
   licence: fair use

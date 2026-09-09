@@ -27,8 +27,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=eNCyccZS9sA
-        note: Cast per the production's own description of "Dungeon Masters |
-          Campaign 2 PREMIERE, Episode 1 & 2".
+        note: Cast per the production's own description of "Dungeon Masters | Campaign 2
+          PREMIERE, Episode 1 & 2".
   - show: an-astarion-and-karlach-adventure-love-is-a-legendary-a
     season: 1
     role: player
@@ -49,7 +49,7 @@ credits:
         note: Names the host and every voice actor with the character they reprised.
       - tier: reference
         url: https://gamerant.com/baldurs-gate-3-voice-actors-dungeons-and-dragons-high-rollers/
-        note: Independent report of the same one-shot, confirming Mark Hulmes as GM.
+        note: Independent report of the same one-shot, confirming the GM.
     character: Astarion
     note: One-shot in which the Baldur's Gate 3 voice cast played their own
       characters.
@@ -68,8 +68,8 @@ credits:
           \"Baldur's Gate: From Hags to Liches.\""
       - tier: reference
         url: https://www.mtgfestivals.com/global/en-us/magiccon-news/your-guide-to-dand-at-magiccon-and-the-full-star-studded-cast-of-dand-live.html
-        note: Independent guide corroborating the DM and full player cast for the
-          same session.
+        note: Independent guide corroborating the DM and full player cast for the same
+          session.
   - show: what-we-do-in-the-shadow-cursed-lands
     season: 1
     role: player
@@ -79,7 +79,8 @@ credits:
     sources:
       - tier: official
         url: https://www.youtube.com/watch?v=imf5VIk_zmQ
-        note: "Cast per the production's own description of \"Baldur's Gate 3 Cast Play D&D Live | With Astarion, Karlach, Wyll and Lae'zel\"."
+        note: Cast per the production's own description of "Baldur's Gate 3 Cast Play
+          D&D Live | With Astarion, Karlach, Wyll and Lae'zel".
 wikidata_qid: Q5673372
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/2/23/Neil_Newbon_by_Gage_Skidmore.jpg

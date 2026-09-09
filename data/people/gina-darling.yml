@@ -13,7 +13,8 @@ credits:
     sources:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Circle_of_Tide_and_Bone
-        note: "Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox. CC-BY-SA."
+        note: Circle of Tide and Bone cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
       - tier: reference
         url: https://www.imdb.com/title/tt27715026/fullcredits/
         note: IMDb full cast and crew for "Candela Obscura" (2023), via the official
@@ -21,6 +22,17 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254015-candela-obscura/cast
         note: Cast for "Candela Obscura" per TMDB.
+  - show: mortal-kombat-1-one-shot-sindel-vs-the-realms
+    season: 1
+    role: player
+    character: Kitana
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Mortal_Kombat_1_One-Shot:_Sindel_vs._The_Realms
+        note: "Mortal Kombat 1 One-Shot: Sindel vs. The Realms cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/2/23/Gina_Darling.png/revision/latest/scale-to-width-down/388?cb=20230921124342
   licence: fair use

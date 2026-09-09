@@ -14,8 +14,8 @@ credits:
     sources:
       - tier: reference
         url: https://www.themoviedb.org/tv/74400-force-grey-giant-hunters/cast
-        note: "Cast for \"Force Grey: Giant Hunters\" per TMDB; character not listed
-          there."
+        note: 'Cast for "Force Grey: Giant Hunters" per TMDB; character not listed
+          there.'
   - show: force-grey-lost-city-of-omu
     season: 1
     role: player
@@ -24,8 +24,8 @@ credits:
     sources:
       - tier: reference
         url: https://www.imdb.com/title/tt22090648/fullcredits
-        note: "IMDb full cast and crew for \"Force Grey: Lost City of Omu\" episode
-          1, via the official datasets. Character not confirmed here."
+        note: 'IMDb full cast and crew for "Force Grey: Lost City of Omu" episode 1, via
+          the official datasets. Character not confirmed here.'
   - show: nerd-poker
     role: player
     alias: default
@@ -33,6 +33,12 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Nerd_Poker
-        note: Cast, dungeon-master history and format per Wikipedia's article on
-          the show. Season not established — the article names who has been on
-          the show without saying which of the four seasons each appears in.
+        note: Cast, dungeon-master history and format per Wikipedia's article on the
+          show. Season not established — the article names who has been on the
+          show without saying which of the four seasons each appears in.
+wikidata_qid: Q912938
+image:
+  url: https://upload.wikimedia.org/wikipedia/commons/1/17/Brian_Posehn_at_San_Diego_Comic_Con_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+  licence: CC-BY-4.0
+  attribution: Kevin Paul
+  source: https://commons.wikimedia.org/wiki/File:Brian_Posehn_at_San_Diego_Comic_Con_2026.jpg

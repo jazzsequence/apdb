@@ -465,3 +465,80 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Search_For_Grog
         note: The Search For Grog cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: a-familiar-problem-sprinkles-incredible-journey
+    season: 1
+    role: player
+    character: Sprinkle
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/A_Familiar_Problem:_Sprinkle's_Incredible_Journey
+        note: "A Familiar Problem: Sprinkle's Incredible Journey cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: crash-pandas-too-trashed-too-curious
+    season: 1
+    role: player
+    character: Goober
+    alias: default
+    year: "2018"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Crash_Pandas:_Too_Trashed,_Too_Curious
+        note: "Crash Pandas: Too Trashed, Too Curious cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-one-shot-thursday-by-night
+    season: 1
+    role: player
+    character: Travis Willingham
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Thursday_by_Night
+        note: "Critical Role One-Shot: Thursday by Night cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: critical-role-one-shot-thursday-by-night-part-2
+    season: 1
+    role: player
+    character: Travis Willingham
+    alias: default
+    year: "2017"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Critical_Role_One-Shot:_Thursday_by_Night_–_Part_2
+        note: "Critical Role One-Shot: Thursday by Night – Part 2 cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: mortal-kombat-1-one-shot-sindel-vs-the-realms
+    season: 1
+    role: player
+    character: Raiden
+    alias: default
+    year: "2023"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Mortal_Kombat_1_One-Shot:_Sindel_vs._The_Realms
+        note: "Mortal Kombat 1 One-Shot: Sindel vs. The Realms cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: the-nautilus-ark-a-johnson-corp-odyssey
+    season: 1
+    role: player
+    character: Gunnery Sergeant Cameron Garrett
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Nautilus_Ark:_A_Johnson_Corp_Odyssey
+        note: "The Nautilus Ark: A Johnson Corp Odyssey cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: tiny-tinas-wonderlands-one-shot
+    season: 1
+    role: player
+    character: Dewey D. Duty
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tiny_Tina's_Wonderlands_One-Shot
+        note: Tiny Tina's Wonderlands One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.

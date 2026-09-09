@@ -30,6 +30,17 @@ credits:
         url: https://www.imdb.com/title/tt7394666/fullcredits/
         note: IMDb full cast and crew for "Tempting Fate" (2017), via the official
           datasets.
+  - show: tails-of-equestria-one-shot
+    season: 1
+    role: player
+    character: Trixie Gadgets
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tails_of_Equestria_One-Shot
+        note: Tails of Equestria One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/7/7a/MarkeiaMcCarty.png/revision/latest/scale-to-width-down/400?cb=20230602030557
   licence: fair use

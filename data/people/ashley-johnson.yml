@@ -389,3 +389,35 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Search_For_Grog
         note: The Search For Grog cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
+  - show: tails-of-equestria-one-shot
+    season: 1
+    role: player
+    character: Peaches Silversong
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tails_of_Equestria_One-Shot
+        note: Tails of Equestria One-Shot cast, via the criticalrole.fandom.com infobox.
+          CC-BY-SA.
+  - show: the-nautilus-ark-a-johnson-corp-odyssey
+    season: 1
+    role: GM/DM
+    alias: default
+    year: "2021"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/The_Nautilus_Ark:_A_Johnson_Corp_Odyssey
+        note: "The Nautilus Ark: A Johnson Corp Odyssey cast, via the
+          criticalrole.fandom.com infobox. CC-BY-SA."
+  - show: tiny-tinas-wonderlands-one-shot
+    season: 1
+    role: player
+    character: Ramsey Finnigan
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tiny_Tina's_Wonderlands_One-Shot
+        note: Tiny Tina's Wonderlands One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.

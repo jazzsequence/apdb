@@ -1,0 +1,15 @@
+id: feast-of-legends
+title: Feast of Legends
+channels:
+  - critical-role
+format: hybrid
+status: completed
+description: Standalone Critical Role one-shot.
+links:
+  wikipedia: https://criticalrole.fandom.com/wiki/Feast_of_Legends
+seasons:
+  - ordinal: 1
+    game: feast-of-legends
+    episode_count: 1
+    started: 2019-10-03
+    ended: 2019-10-03

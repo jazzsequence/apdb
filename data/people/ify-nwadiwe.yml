@@ -88,6 +88,27 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+  - show: feast-of-legends
+    season: 1
+    role: player
+    character: Hogg Wyld
+    alias: default
+    year: "2019"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Feast_of_Legends
+        note: Feast of Legends cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: tiny-tinas-wonderlands-one-shot
+    season: 1
+    role: player
+    character: Metta Hardly
+    alias: default
+    year: "2022"
+    sources:
+      - tier: community
+        url: https://criticalrole.fandom.com/wiki/Tiny_Tina's_Wonderlands_One-Shot
+        note: Tiny Tina's Wonderlands One-Shot cast, via the criticalrole.fandom.com
+          infobox. CC-BY-SA.
 image:
   url: https://static.wikia.nocookie.net/fantasy-high/images/f/f2/Ify_Nwadiwe_as_Markus_St._Vincent.png/revision/latest/scale-to-width-down/400?cb=20200627193230
   licence: fair use
