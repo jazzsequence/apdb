@@ -1,0 +1,23 @@
+id: old-men
+title: Old Men
+channels:
+  - richard-thomas-george
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Savage Worlds. Uploader licence:
+  https://creativecommons.org/licenses/by-nc-nd/4.0/."
+links:
+  website: https://archive.org/details/httpsarchive.orgdetailsomprep16
+seasons:
+  - ordinal: 1
+    game: savage-worlds-deluxe
+    episode_count: 10
+    started: 2018-01-01
+    ended: 2020-03-18
+image:
+  url: https://archive.org/services/img/httpsarchive.orgdetailsomprep16
+  licence: CC-BY-NC-ND-4.0
+  attribution: Richard Thomas George, CC-BY-NC-ND-4.0. Via the Internet Archive.
+  source: https://archive.org/details/httpsarchive.orgdetailsomprep16
+  depicts: Cover art for Old Men

@@ -14,3 +14,11 @@ credits:
         note: Cast stated in the item's own description on the Internet Archive.
     season: 1
     alias: default
+  - show: canon-fodder-podcasts
+    role: player
+    sources:
+      - tier: official
+        url: https://archive.org/details/CFDEpisode39EpilogueDreamsOfPastAndFuture
+        note: Cast stated in the item's own description on the Internet Archive.
+    season: 1
+    alias: default
