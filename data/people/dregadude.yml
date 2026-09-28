@@ -13,9 +13,16 @@ credits:
     sources:
       - tier: official
         url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
-        note: "Show description credits Drega as DM and editor for the full
-          series."
+        note: Show description credits Drega as DM and editor for the full series.
       - tier: official
         url: https://archive.org/details/TdcEp31
-        note: Also independently stated in the item's own description on the
-          Internet Archive (Episode 31).
+        note: Also independently stated in the item's own description on the Internet
+          Archive (Episode 31).
+  - show: dregadude
+    role: GM/DM
+    sources:
+      - tier: official
+        url: https://archive.org/details/ep-66
+        note: Cast stated in the item's own description on the Internet Archive.
+    season: 1
+    alias: default

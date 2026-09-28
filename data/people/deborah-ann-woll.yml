@@ -31,6 +31,12 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Deborah_Ann_Woll
+        note: "Wikipedia's article on Deborah Ann Woll: \"Woll starred in the second
+          season of Force Grey: Lost City of Omu (2017), a Dungeons & Dragons
+          (D&D) web series which focused on the Tomb of Annihilation storyline,
+          and appeared as a guest player in Critical Role second \""
   - show: relics-and-rarities
     role: GM/DM
     season: 1

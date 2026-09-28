@@ -180,16 +180,16 @@ credits:
     sources:
       - url: https://en.wikipedia.org/wiki/Aabria_Iyengar
         tier: reference
-      - &a3
+      - &a4
         tier: reference
         url: https://www.imdb.com/title/tt14829636/fullcredits/
         note: IMDb full cast and crew for "Exandria Unlimited" (2021), via the official
           datasets.
-      - &a4
+      - &a5
         tier: reference
         url: https://www.themoviedb.org/tv/254066-exandria-unlimited/cast
         note: Cast for "Exandria Unlimited" per TMDB.
-      - &a5
+      - &a6
         tier: reference
         url: https://thetvdb.com/series/exandria-unlimited
         note: Cast for "Exandria Unlimited" per TheTVDB.
@@ -233,6 +233,13 @@ credits:
         tier: community
       - *a1
       - *a2
+      - &a3
+        tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: "Wikipedia's article on Aabria Iyengar: \"In 2021, Iyengar was the DM for
+          two actual play anthology web series – Misfits and Magic, the tenth
+          season of Dimension 20, and the first season of Exandria Unlimited, a
+          spin-off of Critical Role.\""
   - show: dimension-20
     season: 26
     role: GM/DM
@@ -243,6 +250,7 @@ credits:
         tier: community
       - *a1
       - *a2
+      - *a3
   - show: exandria-unlimited
     season: 2
     role: GM/DM
@@ -251,9 +259,9 @@ credits:
         note: "Exandria Unlimited: Kymal cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA."
         tier: community
-      - *a3
       - *a4
       - *a5
+      - *a6
   - show: exandria-unlimited
     season: 4
     role: GM/DM
@@ -262,9 +270,9 @@ credits:
         note: Exandria Unlimited Prime cast, via the criticalrole.fandom.com infobox.
           CC-BY-SA.
         tier: community
-      - *a3
       - *a4
       - *a5
+      - *a6
   - show: the-adventure-zone
     season: 14
     role: GM/DM
@@ -273,6 +281,11 @@ credits:
         note: "Mini-series: Zone of Adventure cast, via the theadventurezone.fandom.com
           infobox. CC-BY-SA."
         tier: community
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: "Wikipedia's article on Aabria Iyengar: \"Iyengar also performed as a
+          guest DM on The Adventure Zone, with the McElroy Brothers as players,
+          in 2021.\""
   - show: candela-obscura
     season: 3
     role: GM/DM
@@ -378,7 +391,7 @@ credits:
       - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         note: Wikipedia says player; the show's own wiki says GM.
         tier: community
-      - &a6
+      - &a7
         tier: reference
         url: https://www.imdb.com/title/tt18883950/fullcredits/
         note: IMDb full cast and crew for "Pirates of Salt Bay" (2019), via the official
@@ -391,7 +404,7 @@ credits:
     sources:
       - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         tier: community
-      - *a6
+      - *a7
   - show: pirates-of-salt-bay
     season: 3
     role: GM/DM
@@ -400,7 +413,7 @@ credits:
     sources:
       - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         tier: community
-      - *a6
+      - *a7
   - show: pirates-of-salt-bay
     season: 4
     role: GM/DM
@@ -409,7 +422,7 @@ credits:
     sources:
       - url: https://savingthrowshow.fandom.com/wiki/Pirates_of_Salt_Bay
         tier: community
-      - *a6
+      - *a7
   - show: dimension-20
     season: 29
     role: player
@@ -545,6 +558,10 @@ credits:
       - tier: reference
         url: https://www.themoviedb.org/tv/254002-critical-role/cast
         note: Cast for "Critical Role" per TMDB.
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Aabria_Iyengar
+        note: "Wikipedia's article on Aabria Iyengar: \"She also joined the main cast of
+          Critical Role as a player in the fourth campaign.\""
   - show: ny-by-night
     role: player
     character: Margot "Fuego" Walker

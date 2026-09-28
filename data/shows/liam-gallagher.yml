@@ -1,0 +1,21 @@
+id: liam-gallagher
+title: Liam Gallagher
+channels:
+  - liam-gallagher
+format: podcast
+status: unknown
+description: "Preserved on the Internet Archive. System per the uploader's own
+  tags: Dungeons & Dragons. Uploader licence:
+  http://creativecommons.org/licenses/by-nc-sa/3.0/."
+links:
+  website: https://archive.org/details/ShatteredSea0007-DeathandDying
+seasons:
+  - ordinal: 1
+    game: dnd-5e
+    episode_count: 4
+image:
+  url: https://archive.org/services/img/ShatteredSea0007-DeathandDying
+  licence: CC-BY-NC-SA-3.0
+  attribution: Liam Gallagher, CC-BY-NC-SA-3.0. Via the Internet Archive.
+  source: https://archive.org/details/ShatteredSea0007-DeathandDying
+  depicts: Cover art for Liam Gallagher

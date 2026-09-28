@@ -19,8 +19,8 @@ credits:
     sources:
       - tier: official
         url: https://podcasts.apple.com/us/podcast/the-djekian-crusaders/id1296624881
-        note: "Show description names the core party. Vincent Paladino: scofflaw
-          tabaxi gunslinger, played by Sand."
+        note: "Show description names the core party. Vincent Paladino: scofflaw tabaxi
+          gunslinger, played by Sand."
   - show: the-djekian-crusaders
     role: player
     character: Pepper
@@ -30,6 +30,14 @@ credits:
     sources:
       - tier: official
         url: https://archive.org/details/TdcEp31
-        note: 'Episode 31''s own cast list: "@sandstriker (sand) - Pepper, Kenku
-          Rogue." A guest character for this one episode, distinct from
-          Sand''s usual Vincent Paladino.'
+        note: "Episode 31's own cast list: \"@sandstriker (sand) - Pepper, Kenku
+          Rogue.\" A guest character for this one episode, distinct from Sand's
+          usual Vincent Paladino."
+  - show: dregadude
+    role: player
+    sources:
+      - tier: official
+        url: https://archive.org/details/ep-66
+        note: Cast stated in the item's own description on the Internet Archive.
+    season: 1
+    character: Prince Avery
