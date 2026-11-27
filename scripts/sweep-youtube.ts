@@ -20,7 +20,9 @@ import { dirname, join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { creditsFromDescription, playlistVideos } from '../src/lib/sources/youtube.js';
-import { fetchAllImages } from '../src/lib/images.js';
+import { fetchSeriesArt } from '../src/lib/images.js';
+import { knownCatalogue } from '../src/lib/known.js';
+import { titleKey } from '../src/lib/sources/imdb.js';
 
 const API = 'https://www.googleapis.com/youtube/v3';
 const args = process.argv.slice(2);
@@ -242,9 +244,13 @@ async function main() {
     (await readdir(join(DATA_ROOT, 'games'))).map((f) => f.replace('.yml', '')),
   );
   const unknownSystem: string[] = [];
+  const known = await knownCatalogue();
   let newChannels = 0;
   let newShows = 0;
   const castable: string[] = [];
+  const held: string[] = [];
+  /** Videos in playlists accepted this run: "All Episodes" lists repeat them. */
+  const taken = new Set<string>();
 
   for (const ch of kept) {
     let playlists: any[] = [];
@@ -265,8 +271,9 @@ async function main() {
 
     if (campaigns.length === 0) continue;
 
-    const channelId = slugify(ch.title);
-    if (!channelId) continue;
+    const slug = slugify(ch.title);
+    if (!slug) continue;
+    const channelId = known.channelId(slug, ch.title, ch.id) ?? slug;
 
     console.log(`${ch.title}  (${ch.subs.toLocaleString()} subs) — ${campaigns.length} series`);
     if (dryRun) {
@@ -274,35 +281,36 @@ async function main() {
       continue;
     }
 
-    if (!existingChannels.has(channelId)) {
-      await writeFile(
-        join(DATA_ROOT, 'channels', `${channelId}.yml`),
-        stringify({
-          id: channelId,
-          name: ch.title,
-          type: ch.subs > 200_000 ? 'network' : 'indie studio',
-          ...(ch.desc ? { description: ch.desc.slice(0, 280) } : {}),
-          links: { youtube: `https://www.youtube.com/channel/${ch.id}` },
-        }),
-        'utf8',
-      );
-      existingChannels.add(channelId);
-      newChannels += 1;
-    }
-
     for (const c of campaigns) {
       const id = slugify(c.title);
       if (!id || existingShows.has(id)) continue;
+      if (known.playlists.has(c.id.toLowerCase()) || known.titles.has(titleKey(c.title.replace(/\s*\|.*$/, '')))) continue;
+
+      const label = `${ch.title}: ${c.title.slice(0, 50)}`;
+      // A channel we already hold shows for most often adds a season, which a
+      // playlist title cannot tell us. Leave that to a person.
+      if (known.channelHasShows(channelId)) {
+        held.push(`${label} — channel "${channelId}" already has a show`);
+        continue;
+      }
 
       let cast: ReturnType<typeof creditsFromDescription> = [];
+      let videos: Awaited<ReturnType<typeof playlistVideos>> = [];
       try {
-        for (const v of await playlistVideos(c.id, 2)) {
+        videos = await playlistVideos(c.id, 50);
+        for (const v of videos.slice(0, 2)) {
           const found = creditsFromDescription(v.description);
           if (found.length > cast.length) cast = found;
         }
       } catch {
         // private/empty playlist
       }
+
+      // A system in a title also matches video games and rules videos. A cast
+      // in the descriptions is the evidence that people played it.
+      if (cast.length < 2) { held.push(`${label} — no cast in the descriptions`); continue; }
+      const overlap = videos.filter((v) => taken.has(v.id)).length;
+      if (overlap > videos.length / 2) continue;
 
       // Only catalogue a show whose system the title actually states.
       const game = systemFor(c.title) ?? systemFor(ch.title);
@@ -312,6 +320,23 @@ async function main() {
         existingGames.add(game.id);
       }
 
+      if (!existingChannels.has(channelId)) {
+        await writeFile(
+          join(DATA_ROOT, 'channels', `${channelId}.yml`),
+          stringify({
+            id: channelId,
+            name: ch.title,
+            type: ch.subs > 200_000 ? 'network' : 'indie studio',
+            ...(ch.desc ? { description: ch.desc.slice(0, 280) } : {}),
+            links: { youtube: `https://www.youtube.com/channel/${ch.id}` },
+          }),
+          'utf8',
+        );
+        existingChannels.add(channelId);
+        newChannels += 1;
+      }
+
+      for (const v of videos) taken.add(v.id);
       await writeFile(
         join(DATA_ROOT, 'shows', `${id}.yml`),
         stringify({
@@ -328,12 +353,12 @@ async function main() {
       );
       existingShows.add(id);
       newShows += 1;
-      if (cast.length > 1) castable.push(`${id}  ${c.id}  (${cast.length} cast)`);
+      castable.push(`${id}  ${c.id}  (${cast.length} cast)`);
     }
   }
 
   if (!dryRun) {
-    await fetchAllImages();
+    await fetchSeriesArt();
     console.log(`\n${newChannels} channels, ${newShows} shows added.`);
     if (castable.length) {
       console.log(`\n${castable.length} have a readable cast — import with --youtube --playlist:`);
@@ -349,6 +374,10 @@ async function main() {
         await writeFile(out, castable.map((c) => c.replace(/\s+\(\d+ cast\)$/, '').replace(/\s+/g, '\t')).join('\n') + '\n', 'utf8');
         console.log(`\n   full list -> ${out}`);
       }
+    }
+    if (held.length) {
+      console.log(`\n${held.length} series held for review:`);
+      for (const h of held) console.log(`   ${h}`);
     }
     if (unknownSystem.length) {
       console.log(`\n${unknownSystem.length} series skipped — title states no system, so none was assumed:`);

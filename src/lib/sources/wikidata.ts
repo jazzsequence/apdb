@@ -10,6 +10,7 @@
  * the indie long tail — the entire point of this project — is not in it.
  */
 import type { Alias } from '../schema.js';
+import { politeFetch } from './http.js';
 
 const ENTITY_DATA = 'https://www.wikidata.org/wiki/Special:EntityData';
 const API = 'https://www.wikidata.org/w/api.php';
@@ -37,7 +38,7 @@ interface SearchHit {
 }
 
 async function getJson(url: string): Promise<any> {
-  const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' } });
+  const response = await politeFetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' } });
   if (!response.ok) {
     throw new Error(`${response.status} ${response.statusText} for ${url}`);
   }
@@ -286,7 +287,7 @@ export async function fetchWorks(qid: string): Promise<WikidataWork[]> {
     }
     LIMIT 200`;
 
-  const response = await fetch(`${SPARQL}?query=${encodeURIComponent(query)}`, {
+  const response = await politeFetch(`${SPARQL}?query=${encodeURIComponent(query)}`, {
     headers: { 'User-Agent': USER_AGENT, Accept: 'application/sparql-results+json' },
   });
   if (!response.ok) {

@@ -17,10 +17,11 @@
  * are added; existing bio, links, credits and alias ids are never overwritten.
  * Curated data always wins over imported data.
  */
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import { stringify } from 'yaml';
+import { parse as parseYaml, stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
+import { upsertCredit } from '../src/lib/credits.js';
 import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
 import {
   discoverCampaignPages,
@@ -530,23 +531,48 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
 
   const { dataset } = await loadDataset();
   const byId = new Map(dataset.people.map((p) => [p.id, p]));
+  // Match on every name a person is known by, not only the slug: filing a
+  // credit by slug alone splits one person into two records.
+  const byName = new Map<string, Set<Person>>();
+  for (const p of dataset.people) {
+    for (const n of [p.canonical_name, ...p.aliases.map((a) => a.name)]) {
+      const k = n.toLowerCase();
+      byName.set(k, (byName.get(k) ?? new Set()).add(p));
+    }
+  }
   const dir = apply ? join(DATA_ROOT, 'people') : STAGING;
   await mkdir(dir, { recursive: true });
 
-  let written = 0;
+  // One person can appear twice (two roles), so build records before writing.
+  const records = new Map<string, Person>();
   for (const v of found.values()) {
     const name = v.name;
-    const proper = v.title && name;
-    const id = slugify(name);
-    const existing = byId.get(id);
+    const matches = [...(byName.get(name.toLowerCase()) ?? [])];
+    if (matches.length > 1) {
+      console.log(`    skipped "${name}" — more than one person goes by that name`);
+      continue;
+    }
+    const existing = matches[0] ?? byId.get(slugify(name));
+    const id = existing?.id ?? slugify(name);
+    // Edit the file as written, not the loaded copy, so a rewrite changes only
+    // what this import adds.
+    const base: Person =
+      records.get(id) ??
+      (existing
+        ? (parseYaml(await readFile(join(DATA_ROOT, 'people', `${id}.yml`), 'utf8')) as Person)
+        : {
+        id,
+        canonical_name: name,
+        sort_name: sortName(name),
+        aliases: [{ id: 'default', name, alias_type: name.includes(' ') ? 'legal' : 'handle' }],
+        credits: [],
+      } as unknown as Person);
     const credit = {
       show: showId,
       ...(season !== undefined ? { season } : {}),
       role: v.role as CreditRole,
       ...(v.character ? { character: v.character } : {}),
-      ...(!existing || existing.aliases.length === 1
-        ? { alias: existing ? existing.aliases[0]!.id : 'default' }
-        : {}),
+      ...(base.aliases.length === 1 ? { alias: base.aliases[0]!.id } : {}),
       sources: [
         {
           tier: 'official' as const,
@@ -555,23 +581,18 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
         },
       ],
     };
-    if (existing?.credits.some((c) => c.show === showId && c.season === season && c.role === v.role)) {
-      continue;
-    }
-    const record = existing
-      ? { ...existing, credits: [...existing.credits, credit] }
-      : {
-          id,
-          canonical_name: name,
-          sort_name: sortName(name),
-          aliases: [{ id: 'default', name, alias_type: 'legal' }],
-          credits: [credit],
-        };
-    const parsed = Person.safeParse(record);
-    if (!parsed.success) continue;
+    const result = upsertCredit((base.credits ?? []) as Person['credits'], credit as Person['credits'][number], {
+      explicitRole: true,
+    });
+    if (result.outcome === 'already-cited') continue;
+    records.set(id, { ...base, credits: result.credits } as Person);
+  }
+
+  let written = 0;
+  for (const [id, record] of records) {
+    if (!Person.safeParse(record).success) continue;
     await writeFile(join(dir, `${id}.yml`), stringify(record), 'utf8');
     written += 1;
-    void proper;
   }
   console.log(`\n${written} file(s) written.\n`);
 }

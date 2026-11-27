@@ -7,7 +7,7 @@
  *
  * Two sources, two licences, deliberately kept apart:
  *
- *  - Portraits: Wikimedia Commons, and only under a licence that genuinely
+ *  - Portraits: Wikimedia Commons (see also fan wikis below), and only under a licence that genuinely
  *    permits reuse. Anything else is skipped.
  *  - Series art: the show's own YouTube playlist thumbnail, under the fair-use
  *    claim in POLICY.md — thumbnail scale, one per show, attributed, linked
@@ -17,59 +17,7 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
 import { DATA_ROOT } from './load.js';
-import { searchPeople, wikidataImage } from './sources/wikidata.js';
-
-/**
- * Openverse indexes freely-licensed images across Flickr, Commons and others,
- * keyless. It is the fallback for the many indie performers who have no
- * Wikidata entry at all — Commons alone covers about a quarter of them.
- *
- * The licence comes back machine-readable, so only genuinely reusable ones are
- * taken, and the title must actually contain the person's name: a search for a
- * name returns *something* regardless, and an unrelated photo of a stranger is
- * worse than no photo.
- */
-const OPENVERSE_LICENCES: Record<string, string> = {
-  'cc0-1.0': 'CC0',
-  'pdm-1.0': 'public domain',
-  'by-2.0': 'CC-BY-2.0',
-  'by-3.0': 'CC-BY-3.0',
-  'by-4.0': 'CC-BY-4.0',
-  'by-sa-2.0': 'CC-BY-SA-2.0',
-  'by-sa-3.0': 'CC-BY-SA-3.0',
-  'by-sa-4.0': 'CC-BY-SA-4.0',
-};
-
-async function openverseImage(name: string) {
-  const q = new URLSearchParams({
-    q: name,
-    license: 'cc0,pdm,by,by-sa',
-    page_size: '5',
-    mature: 'false',
-  });
-  const r = await fetch(`https://api.openverse.org/v1/images/?${q}`, {
-    headers: { 'User-Agent': 'ActualPlayDatabase/0.1 (community actual-play credit index)' },
-  });
-  if (!r.ok) return undefined;
-  const data: any = await r.json();
-
-  const surname = name.split(/\s+/).slice(-1)[0]!.toLowerCase();
-  for (const hit of data.results ?? []) {
-    const licence = OPENVERSE_LICENCES[`${hit.license}-${hit.license_version}`];
-    if (!licence) continue;
-    // Must plausibly depict this person, not merely match a search.
-    const title = String(hit.title ?? '').toLowerCase();
-    if (!title.includes(name.toLowerCase()) && !title.includes(surname)) continue;
-    if (!hit.url) continue;
-    return {
-      url: hit.url as string,
-      licence,
-      attribution: String(hit.creator ?? 'Unknown').slice(0, 80),
-      source: String(hit.foreign_landing_url ?? hit.url),
-    };
-  }
-  return undefined;
-}
+import { wikidataImage } from './sources/wikidata.js';
 
 /** Portraits for every person that has none. Safe to re-run. */
 export async function fetchPortraits(quiet = false): Promise<number> {
@@ -79,19 +27,13 @@ export async function fetchPortraits(quiet = false): Promise<number> {
     const person = parse(await readFile(path, 'utf8'));
     if (person.image) continue;
 
+    // Only a curated QID. Resolving by name gave an actual-play GM the photo
+    // of a singer who shares it.
+    if (!person.wikidata_qid) continue;
+
     try {
-      let qid: string | undefined = person.wikidata_qid;
-      if (!qid) {
-        const hits = await searchPeople(person.canonical_name, 1);
-        // Exact label match only — a fuzzy one once put a gymnast's photo on
-        // Matthew Mercer.
-        if (hits[0] && hits[0].label.toLowerCase() === person.canonical_name.toLowerCase()) {
-          qid = hits[0].id;
-        }
-      }
-      const image = qid ? await wikidataImage(qid) : await openverseImage(person.canonical_name);
+      const image = await wikidataImage(person.wikidata_qid);
       if (!image) continue;
-      if (qid) person.wikidata_qid = qid;
 
       person.image = image;
       await writeFile(path, stringify(person), 'utf8');
@@ -243,13 +185,14 @@ const CC_URL_LICENCES: [RegExp, string][] = [
   [/licenses\/by\/3/i, 'CC-BY-3.0'],
 ];
 
-export async function fetchArchiveArt(): Promise<number> {
+export async function fetchArchiveArt(only?: Set<string>): Promise<number> {
   let added = 0;
 
   for (const file of (await readdir(join(DATA_ROOT, 'shows'))).filter((f) => f.endsWith('.yml'))) {
     const path = join(DATA_ROOT, 'shows', file);
     const show = parse(await readFile(path, 'utf8'));
     if (show.image) continue;
+    if (only && !only.has(show.id)) continue;
 
     const identifier = String(show.links?.website ?? '').match(
       /archive\.org\/details\/([^/?#]+)/,
@@ -312,7 +255,7 @@ export async function fetchAllImages(): Promise<void> {
 /**
  * Portraits from the fan wikis that already document these people.
  *
- * The free-licence sources — Wikidata and Openverse — cover about a fifth of
+ * The free-licence source, Wikidata, covers only a small part of
  * this database, and essentially none of the indie long tail that is the whole
  * point of the project. Skid Maher has 42 credits and no Wikidata entry; nor
  * do most of the Glass Cannon, Avantris and Saving Throw casts.
@@ -333,12 +276,12 @@ const UA_WIKI =
 async function wikiPageImage(
   host: string,
   title: string,
-): Promise<{ url: string; page: string; title: string } | undefined> {
+): Promise<{ url: string; page: string; file: string } | undefined> {
   const q = new URLSearchParams({
     action: 'query',
     prop: 'pageimages|info',
     inprop: 'url',
-    piprop: 'thumbnail',
+    piprop: 'thumbnail|name',
     pithumbsize: '400',
     titles: title,
     redirects: '1',
@@ -354,10 +297,24 @@ async function wikiPageImage(
     const data = await r.json();
     const page = data?.query?.pages?.[0];
     if (!page || page.missing || !page.thumbnail?.source) return undefined;
-    return { url: page.thumbnail.source, page: page.fullurl, title: page.title };
+    return { url: page.thumbnail.source, page: page.fullurl, file: String(page.pageimage ?? '') };
   } catch {
     return undefined;
   }
+}
+
+/**
+ * A page's lead image is often character art. Only a file named after the
+ * person is taken as a picture of them.
+ */
+export function fileNamesPerson(file: string, names: string[]): boolean {
+  const norm = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const words = new Set(norm(file).split(/[^a-z0-9]+/));
+  const joined = norm(file).replace(/[^a-z0-9]+/g, '');
+  return names.some((name) => {
+    const parts = norm(name).split(/[^a-z0-9]+/).filter(Boolean);
+    return parts.some((p) => p.length >= 3 && words.has(p)) || (parts.length > 1 && joined.includes(parts.join('')));
+  });
 }
 
 /** Wikis this person's own credits cite, most-cited first. */
@@ -400,6 +357,7 @@ export async function fetchWikiPortraits(quiet = false): Promise<number> {
       for (const name of [...new Set(names)]) {
         found = await wikiPageImage(h, name);
         await new Promise((r) => setTimeout(r, 120));
+        if (found && !fileNamesPerson(found.file, allNames)) found = undefined;
         if (found) { host = h; break outer; }
       }
     }

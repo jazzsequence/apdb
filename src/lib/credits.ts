@@ -15,7 +15,7 @@
  * carrying exactly one source, and the corroborated count sat at 8, not
  * because the facts were unsupported but because the support was binned.
  */
-import type { Credit, Source } from './schema.js';
+import { CreditRole, PartialDate, type Credit, type Source } from './schema.js';
 
 export interface UpsertResult {
   /** 'added' — new credit. 'corroborated' — existing credit gained a source. */
@@ -187,10 +187,17 @@ function isBareParticipation(incoming: Partial<Credit>, existing: Partial<Credit
   );
 }
 
-export function upsertCredit(existing: Credit[], incoming: Credit): UpsertResult {
+export function upsertCredit(
+  existing: Credit[],
+  incoming: Credit,
+  /** `explicitRole`: the source states the role, so "player" means player. */
+  options: { explicitRole?: boolean } = {},
+): UpsertResult {
   // A catalogue saying "they were in this" does not contradict a source saying
   // what they did. It corroborates it.
-  const moreSpecific = existing.find((c) => isBareParticipation(incoming, c));
+  const moreSpecific = options.explicitRole
+    ? undefined
+    : existing.find((c) => isBareParticipation(incoming, c));
   if (moreSpecific) {
     const fresh = incoming.sources.filter((s) => !alreadyCited(moreSpecific, s));
     if (fresh.length === 0) return { outcome: 'already-cited', credits: existing };
@@ -247,4 +254,56 @@ export function upsertCredit(existing: Credit[], incoming: Credit): UpsertResult
     outcome: 'corroborated',
     credits: existing.map((c) => (c === match ? merged : c)),
   };
+}
+
+/**
+ * A role a source actually stated, in this project's vocabulary.
+ *
+ * A filmography "role" cell is as often a character name or "Herself" as it is
+ * a job. Those state no role, and writing them through fails validation.
+ */
+export function statedRole(value: string | undefined): CreditRole | undefined {
+  const v = (value ?? '').trim();
+  const known = CreditRole.options.find((r) => r.toLowerCase() === v.toLowerCase());
+  if (known) return known;
+  if (/^(dungeon ?master|game ?master|dm|gm|storyteller|keeper)$/i.test(v)) return 'GM/DM';
+  return undefined;
+}
+
+/** The first year of "2019–present" or "2019–2021", if it is a usable date. */
+export function startYear(value: string | undefined): string | undefined {
+  const first = value?.match(/\d{4}/)?.[0];
+  return first && PartialDate.safeParse(first).success ? first : undefined;
+}
+
+/**
+ * Why a claim from a prose reference must not be merged automatically.
+ *
+ * `upsertCredit` spreads a season-less credit across every season it could
+ * cover. That suits a catalogue listing a series cast; a sentence about one
+ * season then appears to corroborate all of them.
+ */
+export function ambiguousClaim(
+  existing: Credit[],
+  incoming: Pick<Credit, 'show' | 'season' | 'role'>,
+  seasonCount: number,
+): 'season-unstated' | 'role-conflict' | undefined {
+  const onShow = existing.filter((c) => c.show === incoming.show);
+  if (incoming.season === undefined && seasonCount > 1 && onShow.some((c) => c.season !== undefined)) {
+    return 'season-unstated';
+  }
+  const inScope = onShow.filter(
+    (c) => incoming.season === undefined || c.season === undefined || c.season === incoming.season,
+  );
+  if (inScope.length > 0 && !inScope.some((c) => sameKindOfRole(c.role, incoming.role))) {
+    return 'role-conflict';
+  }
+  return undefined;
+}
+
+/** A quotation cut at a word boundary, and marked as cut. */
+export function excerpt(text: string, max = 300): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[\s,;:–—-]+$/, '')} …`;
 }

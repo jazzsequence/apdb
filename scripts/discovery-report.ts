@@ -107,7 +107,8 @@ if (personJson && existsSync(personJson)) {
 
   lines.push('## Person-first sweep', '');
   lines.push(
-    `${plural(reports.length, 'person', 'people')} read. **${plural(byShow.size, 'show')}** with no record here ` +
+    `${plural(reports.length - errors.length, 'person', 'people')} read, **${errors.length} lookups failed**` +
+      `${errors.length ? ', so the totals below are incomplete' : ''}. **${plural(byShow.size, 'show')}** with no record here ` +
       `(named by ${plural(missingShows.length, 'credit')}), **${plural(missingCredits.length, 'missing credit')}** ` +
       `on shows we already have, ${unclear.length} unclear, ${excluded} excluded as not actual play.`,
     '',
@@ -164,7 +165,7 @@ for (const spec of flags('log')) {
   if (!body) continue;
   lines.push(`## ${label}`, '');
   lines.push(
-    '<details><summary>Raw output — these passes do not dedupe against the catalogue, so diff before believing</summary>',
+    '<details><summary>Raw output, including what each pass held back for a person to decide</summary>',
     '',
     '```',
     body.slice(-20000),
@@ -194,8 +195,7 @@ if (dedupeLog && existsSync(dedupeLog)) {
     lines.push('## Duplicate credits — folded', '');
     lines.push(
       `**${folded}** credit(s) across **${people}** people described an appearance already ` +
-        'recorded by another credit on the same person. They have been folded, and that ' +
-        'is the data change in this pull request.',
+        'recorded by another credit on the same person. They have been folded.',
       '',
       '`dedupe` merges only credits it can show describe the same fact, and unions their ' +
         'sources rather than discarding either — so this files no credit and adds no ' +
@@ -216,10 +216,8 @@ lines.push('---', '');
 lines.push(
   'Filed by the weekly `discovery.yml` job.',
   '',
-  'The only data change in the pull request carrying this report is the duplicate',
-  'fold described above. The candidates are not filed: reviewing them means picking',
-  'the ones worth having, finding a source closer to the fact than the one that',
-  'surfaced them, and filing those as a separate change.',
+  'Candidates listed here are not necessarily filed. The `data/` diff on the pull',
+  'request is the record of what changed.',
   '',
 );
 

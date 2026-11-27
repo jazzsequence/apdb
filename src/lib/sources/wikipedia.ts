@@ -30,6 +30,8 @@
  * to check against something closer to the fact.
  */
 
+import { politeFetch } from './http.js';
+
 const API = 'https://en.wikipedia.org/w/api.php';
 
 const USER_AGENT =
@@ -63,7 +65,7 @@ export interface WikipediaPerson {
 
 async function api(params: Record<string, string>): Promise<any> {
   const query = new URLSearchParams({ format: 'json', formatversion: '2', origin: '*', ...params });
-  const response = await fetch(`${API}?${query}`, {
+  const response = await politeFetch(`${API}?${query}`, {
     headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
   });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText} from ${API}`);
@@ -89,6 +91,7 @@ function stripMarkup(text: string): string {
     .replace(/<!--[\s\S]*?-->/g, '')
     .replace(/\{\{\s*(?:sfn|efn|cite[^}]*|r|ref)[^{}]*\}\}/gi, '')
     .replace(/<[^>]+>/g, '')
+    .replace(/''(?='s\b)/g, '')
     .replace(/'''?/g, '')
     .trim();
 }

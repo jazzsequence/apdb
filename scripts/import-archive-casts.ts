@@ -15,7 +15,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
-import { DATA_ROOT } from '../src/lib/load.js';
+import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
 import { castFromArchiveDescription } from '../src/lib/sources/archive-cast.js';
 import { upsertCredit } from '../src/lib/credits.js';
 
@@ -42,12 +42,19 @@ for (const f of (await readdir(join(DATA_ROOT, 'people'))).filter((f) => f.endsW
 }
 
 const targets: { id: string; title: string; identifier: string; seasons: number }[] = [];
+const { dataset } = await loadDataset();
 for (const f of (await readdir(join(DATA_ROOT, 'shows'))).filter((f) => f.endsWith('.yml'))) {
   const s = parse(await readFile(join(DATA_ROOT, 'shows', f), 'utf8'));
   if (only && s.id !== only) continue;
   if (!only && showsWithCredits.has(s.id)) continue;
   const identifier = String(s.links?.website ?? '').match(/archive\.org\/details\/([^/?#]+)/)?.[1];
   if (!identifier) continue;
+  // A credit-less record beside another show on the same channel is often a
+  // second copy of it, and a cast filed there never corroborates the original.
+  if (!only && dataset.shows.some((o) => o.id !== s.id && o.channels.some((c) => s.channels.includes(c)))) {
+    console.log(`  held: ${s.id} — shares a channel with another show (--only ${s.id} to import)`);
+    continue;
+  }
   targets.push({ id: s.id, title: s.title, identifier: decodeURIComponent(identifier), seasons: (s.seasons ?? []).length });
 }
 

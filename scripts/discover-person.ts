@@ -39,8 +39,8 @@ import { fetchPerson, fetchWorks } from '../src/lib/sources/wikidata.js';
 import { fetchPersonWorks, fetchWorkFacts, parseWorks, type WikiWork } from '../src/lib/sources/wikipedia.js';
 import { classify, type Verdict } from '../src/lib/sources/actual-play.js';
 import { assertCleared } from '../src/lib/sources/registry.js';
-import { upsertCredit } from '../src/lib/credits.js';
-import type { Credit, Person, Show } from '../src/lib/schema.js';
+import { ambiguousClaim, excerpt, startYear, statedRole, upsertCredit } from '../src/lib/credits.js';
+import { Person as PersonSchema, type Credit, type Person, type Show } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
 const has = (n: string) => args.includes(`--${n}`);
@@ -358,6 +358,7 @@ if (!has('apply')) {
   let corroborated = 0;
   let skippedNoRole = 0;
   let skippedNoShow = 0;
+  let skippedAmbiguous = 0;
 
   for (const report of reports) {
     const target = targets.find((t) => t.person.id === report.person);
@@ -371,26 +372,31 @@ if (!has('apply')) {
     for (const candidate of report.candidates) {
       if (candidate.verdict !== 'actual-play') continue;
       if (!candidate.show) { skippedNoShow++; continue; }
-      if (!candidate.role) { skippedNoRole++; continue; }
+      const role = statedRole(candidate.role);
+      if (!role) { skippedNoRole++; continue; }
+      const seasonCount = shows.find((s) => s.id === candidate.show)?.seasons?.length ?? 0;
+      const claim = { show: candidate.show, season: candidate.season, role };
+      if (ambiguousClaim(credits, claim, seasonCount)) { skippedAmbiguous++; continue; }
+      const year = startYear(candidate.year);
 
       const incoming = {
         show: candidate.show,
         ...(candidate.season !== undefined ? { season: candidate.season } : {}),
-        role: candidate.role,
+        role,
         ...(candidate.character ? { character: candidate.character } : {}),
-        ...(candidate.year ? { year: candidate.year } : {}),
+        ...(year ? { year } : {}),
         sources: [
           {
             tier: 'reference' as const,
             url: report.wikipedia,
             note:
               `Wikipedia's article on ${record.canonical_name}` +
-              (candidate.evidence ? `: "${candidate.evidence.slice(0, 220)}"` : '.'),
+              (candidate.evidence ? `: "${excerpt(candidate.evidence)}"` : '.'),
           },
         ],
       } as Credit;
 
-      const result = upsertCredit(credits, incoming);
+      const result = upsertCredit(credits, incoming, { explicitRole: true });
       if (result.outcome === 'already-cited') continue;
       credits = result.credits;
       touched = true;
@@ -399,6 +405,11 @@ if (!has('apply')) {
 
     if (touched) {
       record.credits = credits;
+      const parsed = PersonSchema.safeParse(record);
+      if (!parsed.success) {
+        console.error(`  ✗ ${report.person} would not validate, left unchanged: ${parsed.error.issues[0]?.message}`);
+        continue;
+      }
       await writeFile(path, stringify(record), 'utf8');
     }
   }
@@ -406,7 +417,8 @@ if (!has('apply')) {
   console.log(
     `\n${added} credit(s) added, ${corroborated} existing credit(s) gained Wikipedia as a ` +
       `second source.\n${skippedNoShow} skipped — no show record here; ` +
-      `${skippedNoRole} skipped — the sentence states no role.`,
+      `${skippedNoRole} skipped — the source states no role; ` +
+      `${skippedAmbiguous} skipped — season unstated or role conflicts with what we hold.`,
   );
   console.log('Run `npm run validate` before committing.\n');
 }
