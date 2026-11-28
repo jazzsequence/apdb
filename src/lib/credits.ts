@@ -162,6 +162,9 @@ function alreadyCited(credit: Credit, source: Source): boolean {
  * name, an episode locator — are filled in, but never overwritten: the first
  * importer to record something specific keeps it.
  */
+/** Catalogues with a single cast category, which cannot express "GM". */
+const CATALOGUE_URL = /^https?:\/\/([\w-]+\.)*(imdb\.com|themoviedb\.org|thetvdb\.com)\//i;
+
 /**
  * Is this incoming credit merely "they were involved", against an existing
  * credit that says what they actually did?
@@ -177,7 +180,11 @@ function alreadyCited(credit: Credit, source: Source): boolean {
  * and plays The Announcer in it — names a character, and keeps both credits.
  */
 function isBareParticipation(incoming: Partial<Credit>, existing: Partial<Credit>): boolean {
+  // Judged from the sources, so the distinction survives `dedupe`: a "player"
+  // from anywhere but a catalogue is a statement about what they did.
   return (
+    (incoming.sources ?? []).length > 0 &&
+    incoming.sources!.every((s) => CATALOGUE_URL.test(s.url ?? '')) &&
     incoming.show === existing.show &&
     (incoming.season ?? null) === (existing.season ?? null) &&
     (incoming.episode ?? null) === (existing.episode ?? null) &&
@@ -300,6 +307,9 @@ export function ambiguousClaim(
   }
   return undefined;
 }
+
+/** The note the schema requires of a guest credit that names no episode. */
+export const GUEST_NOTE = 'Listed as a guest; the source does not identify specific episodes.';
 
 /** A quotation cut at a word boundary, and marked as cut. */
 export function excerpt(text: string, max = 300): string {

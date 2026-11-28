@@ -21,7 +21,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { parse as parseYaml, stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
-import { upsertCredit } from '../src/lib/credits.js';
+import { GUEST_NOTE, upsertCredit } from '../src/lib/credits.js';
 import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
 import {
   discoverCampaignPages,
@@ -34,7 +34,7 @@ import {
   MissingKeyError,
   playlistVideos,
 } from '../src/lib/sources/youtube.js';
-import { Person, type CreditRole, type Show } from '../src/lib/schema.js';
+import { Credit, Person, type CreditRole, type Show } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
 const flag = (name: string): string | undefined => {
@@ -543,16 +543,35 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   const dir = apply ? join(DATA_ROOT, 'people') : STAGING;
   await mkdir(dir, { recursive: true });
 
+  // Shows that make a first name or handle recognisable: this one, and any
+  // other on the same channel.
+  const channels = new Set(dataset.shows.find((s) => s.id === showId)?.channels ?? []);
+  const related = new Set([
+    showId,
+    ...dataset.shows.filter((s) => s.channels.some((c) => channels.has(c))).map((s) => s.id),
+  ]);
+
   // One person can appear twice (two roles), so build records before writing.
   const records = new Map<string, Person>();
   for (const v of found.values()) {
     const name = v.name;
-    const matches = [...(byName.get(name.toLowerCase()) ?? [])];
+    const oneWord = !name.trim().includes(' ');
+    let matches = [...(byName.get(name.toLowerCase()) ?? [])];
+    const slugged = byId.get(slugify(name));
+    if (oneWord) {
+      if (slugged && !matches.includes(slugged)) matches.push(slugged);
+      const known = matches.filter((p) => p.credits.some((c) => related.has(c.show)));
+      if (matches.length > 0 && known.length === 0) {
+        console.log(`    held "${name}" — someone goes by that name, but not on this show or channel`);
+        continue;
+      }
+      matches = known;
+    }
     if (matches.length > 1) {
       console.log(`    skipped "${name}" — more than one person goes by that name`);
       continue;
     }
-    const existing = matches[0] ?? byId.get(slugify(name));
+    const existing = matches[0] ?? slugged;
     const id = existing?.id ?? slugify(name);
     // Edit the file as written, not the loaded copy, so a rewrite changes only
     // what this import adds.
@@ -573,6 +592,7 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
       role: v.role as CreditRole,
       ...(v.character ? { character: v.character } : {}),
       ...(base.aliases.length === 1 ? { alias: base.aliases[0]!.id } : {}),
+      ...(v.role.startsWith('guest') ? { note: GUEST_NOTE } : {}),
       sources: [
         {
           tier: 'official' as const,
@@ -581,6 +601,11 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
         },
       ],
     };
+    const checked = Credit.safeParse(credit);
+    if (!checked.success) {
+      console.log(`    held "${name}" — ${checked.error.issues[0]?.message}`);
+      continue;
+    }
     const result = upsertCredit((base.credits ?? []) as Person['credits'], credit as Person['credits'][number], {
       explicitRole: true,
     });
@@ -590,7 +615,11 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
 
   let written = 0;
   for (const [id, record] of records) {
-    if (!Person.safeParse(record).success) continue;
+    const parsed = Person.safeParse(record);
+    if (!parsed.success) {
+      console.log(`    held "${record.canonical_name}" — ${parsed.error.issues[0]?.message}`);
+      continue;
+    }
     await writeFile(join(dir, `${id}.yml`), stringify(record), 'utf8');
     written += 1;
   }

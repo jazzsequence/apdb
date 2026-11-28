@@ -305,15 +305,18 @@ async function wikiPageImage(
 
 /**
  * A page's lead image is often character art. Only a file named after the
- * person is taken as a picture of them.
+ * person is taken as a picture of them: every part of a name, or the whole of
+ * a one-word one. One shared word ("the", a first name) proves nothing.
  */
 export function fileNamesPerson(file: string, names: string[]): boolean {
   const norm = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  const words = new Set(norm(file).split(/[^a-z0-9]+/));
-  const joined = norm(file).replace(/[^a-z0-9]+/g, '');
+  const split = (v: string) => norm(v).split(/[^a-z0-9]+/).filter(Boolean);
+  const words = new Set(split(file));
+  const joined = split(file).join('');
   return names.some((name) => {
-    const parts = norm(name).split(/[^a-z0-9]+/).filter(Boolean);
-    return parts.some((p) => p.length >= 3 && words.has(p)) || (parts.length > 1 && joined.includes(parts.join('')));
+    const parts = split(name);
+    if (parts.length === 0) return false;
+    return parts.every((p) => words.has(p)) || (parts.length > 1 && joined.includes(parts.join('')));
   });
 }
 

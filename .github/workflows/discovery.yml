@@ -137,6 +137,13 @@ jobs:
               || echo "    failed, continuing"
           done < out/castable.tsv
 
+      # Art and portraits for whatever the imports above created. Writes one
+      # file at a time, so running out of time keeps what it already fetched.
+      - name: Fetch missing images
+        continue-on-error: true
+        timeout-minutes: 15
+        run: npm run fetch:images > out/images.log 2>&1
+
       - name: YouTube — report channels not yet catalogued
         continue-on-error: true
         if: env.YOUTUBE_API_KEY != ''
@@ -173,6 +180,9 @@ jobs:
             --log "YouTube channels not yet catalogued:out/youtube.log" \
             --log "YouTube series imported or held:out/youtube-shows.log" \
             --log "Internet Archive series held:out/archive.log" \
+            --log "Internet Archive casts:out/archive-casts.log" \
+            --log "YouTube casts:out/youtube-casts.log" \
+            --log "Person sweep:out/person.log" \
             --dedupe out/dedupe.log \
             --out reports/discovery-latest.md
 

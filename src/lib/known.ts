@@ -8,6 +8,10 @@
 import { loadDataset } from './load.js';
 import { titleKey } from './sources/imdb.js';
 
+/** "Season 1" or "Campaign Two" names no particular show. */
+const GENERIC_TITLE =
+  /^((season|campaign|series|chapter|arc|part|book|volume) (\d+|[ivx]+|one|two|three|four|five|six|seven|eight|nine|ten)|one shots?)$/;
+
 export async function knownCatalogue() {
   const { dataset } = await loadDataset();
   const text = JSON.stringify([dataset.shows, dataset.people]);
@@ -16,7 +20,12 @@ export async function knownCatalogue() {
     archiveItems: capture(/archive\.org\/details\/([^"\\/?# ]+)/g),
     playlists: capture(/[?&]list=([\w-]+)/g),
     titles: new Set(
-      dataset.shows.flatMap((s) => [s.title, ...s.seasons.map((x) => x.title ?? '')]).filter(Boolean).map(titleKey),
+      [
+        ...dataset.shows.map((s) => titleKey(s.title)),
+        ...dataset.shows
+          .flatMap((s) => s.seasons.map((x) => titleKey(x.title ?? '')))
+          .filter((t) => t && !GENERIC_TITLE.test(t)),
+      ],
     ),
     /** The existing channel with this id, name or YouTube channel id. */
     channelId(id: string, name: string, youtubeId?: string): string | undefined {

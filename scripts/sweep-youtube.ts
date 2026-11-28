@@ -283,10 +283,13 @@ async function main() {
 
     for (const c of campaigns) {
       const id = slugify(c.title);
-      if (!id || existingShows.has(id)) continue;
-      if (known.playlists.has(c.id.toLowerCase()) || known.titles.has(titleKey(c.title.replace(/\s*\|.*$/, '')))) continue;
-
+      // Already catalogued under this very playlist: nothing to report.
+      if (!id || known.playlists.has(c.id.toLowerCase())) continue;
       const label = `${ch.title}: ${c.title.slice(0, 50)}`;
+      if (existingShows.has(id) || known.titles.has(titleKey(c.title.replace(/\s*\|.*$/, '')))) {
+        held.push(`${label} — a show or season already has this title`);
+        continue;
+      }
       // A channel we already hold shows for most often adds a season, which a
       // playlist title cannot tell us. Leave that to a person.
       if (known.channelHasShows(channelId)) {
@@ -302,15 +305,20 @@ async function main() {
           const found = creditsFromDescription(v.description);
           if (found.length > cast.length) cast = found;
         }
-      } catch {
-        // private/empty playlist
+      } catch (e) {
+        // A private playlist, or an exhausted quota: not the same as no cast.
+        held.push(`${label} — could not read the playlist: ${(e as Error).message.slice(0, 80)}`);
+        continue;
       }
 
       // A system in a title also matches video games and rules videos. A cast
       // in the descriptions is the evidence that people played it.
       if (cast.length < 2) { held.push(`${label} — no cast in the descriptions`); continue; }
       const overlap = videos.filter((v) => taken.has(v.id)).length;
-      if (overlap > videos.length / 2) continue;
+      if (overlap > videos.length / 2) {
+        held.push(`${label} — mostly repeats a playlist imported in this run`);
+        continue;
+      }
 
       // Only catalogue a show whose system the title actually states.
       const game = systemFor(c.title) ?? systemFor(ch.title);

@@ -37,6 +37,7 @@ interface Candidate {
   verdict: 'actual-play' | 'excluded' | 'unclear';
   reasons: string[];
   status: 'missing-show' | 'missing-credit' | 'have-it';
+  applied?: boolean;
   show?: string;
   season?: number;
 }
@@ -54,11 +55,11 @@ const today = new Date().toISOString().slice(0, 10);
 
 lines.push(`# Discovery sweep — ${today}`, '');
 lines.push(
-  'Automated reconnaissance. **Nothing here is data yet.** Every candidate below',
-  'came from a reference work or a wiki, which makes it `reference` or `community`',
-  'tier at best, and Wikipedia in particular is wrong about this project’s subject',
-  'often enough to be worth naming (POLICY.md). Check each one against something',
-  'closer to the fact before filing it.',
+  'Automated run. Credits that needed no guessing are already in the `data/` diff.',
+  'What is listed below was **not filed**. It came from a reference work or a wiki,',
+  'which makes it `reference` or `community` tier at best, and Wikipedia is wrong',
+  'about this project’s subject often enough to be worth naming (POLICY.md). Check',
+  'each one against something closer to the fact before filing it.',
   '',
 );
 
@@ -78,11 +79,13 @@ if (personJson && existsSync(personJson)) {
   const unclear: Array<{ person: string; c: Candidate }> = [];
   const errors: PersonReport[] = [];
   let excluded = 0;
+  let filed = 0;
 
   for (const report of reports) {
     if (report.error) errors.push(report);
     for (const candidate of report.candidates ?? []) {
-      if (candidate.verdict === 'excluded') excluded++;
+      if (candidate.applied) filed++;
+      else if (candidate.verdict === 'excluded') excluded++;
       else if (candidate.status === 'missing-show' && candidate.verdict === 'actual-play') {
         missingShows.push({ person: report.person, c: candidate });
       } else if (candidate.status === 'missing-credit' && candidate.verdict === 'actual-play') {
@@ -110,7 +113,8 @@ if (personJson && existsSync(personJson)) {
     `${plural(reports.length - errors.length, 'person', 'people')} read, **${errors.length} lookups failed**` +
       `${errors.length ? ', so the totals below are incomplete' : ''}. **${plural(byShow.size, 'show')}** with no record here ` +
       `(named by ${plural(missingShows.length, 'credit')}), **${plural(missingCredits.length, 'missing credit')}** ` +
-      `on shows we already have, ${unclear.length} unclear, ${excluded} excluded as not actual play.`,
+      `on shows we already have, ${unclear.length} unclear, ${excluded} excluded as not actual play. ` +
+      `${plural(filed, 'candidate')} filed and not listed here.`,
     '',
   );
 

@@ -39,8 +39,8 @@ import { fetchPerson, fetchWorks } from '../src/lib/sources/wikidata.js';
 import { fetchPersonWorks, fetchWorkFacts, parseWorks, type WikiWork } from '../src/lib/sources/wikipedia.js';
 import { classify, type Verdict } from '../src/lib/sources/actual-play.js';
 import { assertCleared } from '../src/lib/sources/registry.js';
-import { ambiguousClaim, excerpt, startYear, statedRole, upsertCredit } from '../src/lib/credits.js';
-import { Person as PersonSchema, type Credit, type Person, type Show } from '../src/lib/schema.js';
+import { ambiguousClaim, excerpt, GUEST_NOTE, startYear, statedRole, upsertCredit } from '../src/lib/credits.js';
+import { Credit as CreditSchema, Person as PersonSchema, type Credit, type Person, type Show } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
 const has = (n: string) => args.includes(`--${n}`);
@@ -180,6 +180,8 @@ interface Candidate {
   reasons: string[];
   /** Catalogue state: what we already have for this work, if anything. */
   status: 'missing-show' | 'missing-credit' | 'have-it';
+  /** Set once `--apply` has written this candidate into data/. */
+  applied?: boolean;
   show?: string;
   season?: number;
 }
@@ -359,6 +361,8 @@ if (!has('apply')) {
   let skippedNoRole = 0;
   let skippedNoShow = 0;
   let skippedAmbiguous = 0;
+  /** Printed at the end, so the tail of the log carries what needs a person. */
+  const heldBack: string[] = [];
 
   for (const report of reports) {
     const target = targets.find((t) => t.person.id === report.person);
@@ -367,7 +371,8 @@ if (!has('apply')) {
     const path = join(DATA_ROOT, 'people', `${report.person}.yml`);
     const record = parse(await readFile(path, 'utf8'));
     let credits: Credit[] = record.credits ?? [];
-    let touched = false;
+    // Counted only once the file is written.
+    const filed: Array<{ candidate: Candidate; outcome: 'added' | 'corroborated' }> = [];
 
     for (const candidate of report.candidates) {
       if (candidate.verdict !== 'actual-play') continue;
@@ -376,7 +381,12 @@ if (!has('apply')) {
       if (!role) { skippedNoRole++; continue; }
       const seasonCount = shows.find((s) => s.id === candidate.show)?.seasons?.length ?? 0;
       const claim = { show: candidate.show, season: candidate.season, role };
-      if (ambiguousClaim(credits, claim, seasonCount)) { skippedAmbiguous++; continue; }
+      const ambiguity = ambiguousClaim(credits, claim, seasonCount);
+      if (ambiguity) {
+        skippedAmbiguous++;
+        heldBack.push(`${report.person}: ${candidate.show} as ${role} — ${ambiguity}`);
+        continue;
+      }
       const year = startYear(candidate.year);
 
       const incoming = {
@@ -385,6 +395,7 @@ if (!has('apply')) {
         role,
         ...(candidate.character ? { character: candidate.character } : {}),
         ...(year ? { year } : {}),
+        ...(role.startsWith('guest') ? { note: GUEST_NOTE } : {}),
         sources: [
           {
             tier: 'reference' as const,
@@ -396,14 +407,20 @@ if (!has('apply')) {
         ],
       } as Credit;
 
+      // One bad credit must not cost the person their good ones.
+      const checked = CreditSchema.safeParse(incoming);
+      if (!checked.success) {
+        heldBack.push(`${report.person}: ${candidate.show} — ${checked.error.issues[0]?.message}`);
+        continue;
+      }
+
       const result = upsertCredit(credits, incoming, { explicitRole: true });
       if (result.outcome === 'already-cited') continue;
       credits = result.credits;
-      touched = true;
-      result.outcome === 'added' ? added++ : corroborated++;
+      filed.push({ candidate, outcome: result.outcome });
     }
 
-    if (touched) {
+    if (filed.length > 0) {
       record.credits = credits;
       const parsed = PersonSchema.safeParse(record);
       if (!parsed.success) {
@@ -411,6 +428,10 @@ if (!has('apply')) {
         continue;
       }
       await writeFile(path, stringify(record), 'utf8');
+      for (const { candidate, outcome } of filed) {
+        candidate.applied = true;
+        outcome === 'added' ? added++ : corroborated++;
+      }
     }
   }
 
@@ -420,6 +441,10 @@ if (!has('apply')) {
       `${skippedNoRole} skipped — the source states no role; ` +
       `${skippedAmbiguous} skipped — season unstated or role conflicts with what we hold.`,
   );
+  if (heldBack.length > 0) {
+    console.log(`\n${heldBack.length} claim(s) held for review:`);
+    for (const h of heldBack) console.log(`   ${h}`);
+  }
   console.log('Run `npm run validate` before committing.\n');
 }
 
