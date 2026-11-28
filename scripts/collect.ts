@@ -17,10 +17,13 @@
  * are added; existing bio, links, credits and alias ids are never overwritten.
  * Curated data always wins over imported data.
  */
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import { stringify } from 'yaml';
+import { parse as parseYaml, stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
+import { GUEST_NOTE, upsertCredit } from '../src/lib/credits.js';
+import { personMatcher } from '../src/lib/match-person.js';
+import { failed } from '../src/lib/failures.js';
 import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
 import {
   discoverCampaignPages,
@@ -29,11 +32,11 @@ import {
 } from '../src/lib/sources/mediawiki.js';
 import { fetchPerson, searchPeople, type WikidataPerson } from '../src/lib/sources/wikidata.js';
 import {
-  creditsFromDescription,
+  parseCast,
   MissingKeyError,
   playlistVideos,
 } from '../src/lib/sources/youtube.js';
-import { Person, type CreditRole, type Show } from '../src/lib/schema.js';
+import { Credit, Person, type CreditRole, type Show } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
 const flag = (name: string): string | undefined => {
@@ -91,6 +94,8 @@ function toPersonRecord(imported: WikidataPerson, existing?: Person): Record<str
       ? { bio: existing?.bio ?? imported.description }
       : {}),
     wikidata_qid: imported.qid,
+    ...(existing?.image ? { image: existing.image } : {}),
+    ...(existing?.no_auto_image ? { no_auto_image: true } : {}),
     links: {
       ...(imported.wikipedia ? { wikipedia: imported.wikipedia } : {}),
       ...(imported.website ? { website: imported.website } : {}),
@@ -499,9 +504,12 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   // Keep the name as written; the key is lowercased only for deduping, and
   // reading the name back out of it produced "mark \"sherlock\" hulmes".
   const found = new Map<string, { name: string; role: string; character?: string; url: string; title: string }>();
+  const held = new Set<string>();
   let withCredits = 0;
   for (const video of videos) {
-    const credits = creditsFromDescription(video.description);
+    const cast = parseCast(video.description);
+    for (const line of cast.held) held.add(line);
+    const credits = cast.credits;
     if (credits.length > 0) withCredits += 1;
     for (const credit of credits) {
       const k = `${credit.name.toLowerCase()}|${credit.role}`;
@@ -518,6 +526,9 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   }
 
   console.log(`${withCredits}/${videos.length} descriptions carried a cast line.`);
+  for (const line of held) {
+    console.log(`    held "${line.slice(0, 90)}" — cannot tell the performer from the character`);
+  }
   console.log(`\n  would import ${found.size} credit(s):\n`);
   for (const v of found.values()) {
     console.log(`    ${v.role.padEnd(13)} ${v.name}${v.character ? `  as ${v.character}` : ''}`);
@@ -529,49 +540,75 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   }
 
   const { dataset } = await loadDataset();
-  const byId = new Map(dataset.people.map((p) => [p.id, p]));
+  const matcher = personMatcher(dataset.people, dataset.shows);
   const dir = apply ? join(DATA_ROOT, 'people') : STAGING;
   await mkdir(dir, { recursive: true });
 
-  let written = 0;
+  // One person can appear twice (two roles), so build records before writing.
+  const records = new Map<string, Person>();
   for (const v of found.values()) {
-    const name = v.name;
-    const proper = v.title && name;
-    const id = slugify(name);
-    const existing = byId.get(id);
-    const credit = {
-      show: showId,
-      ...(season !== undefined ? { season } : {}),
-      role: v.role as CreditRole,
-      ...(v.character ? { character: v.character } : {}),
-      ...(!existing || existing.aliases.length === 1
-        ? { alias: existing ? existing.aliases[0]!.id : 'default' }
-        : {}),
-      sources: [
-        {
-          tier: 'official' as const,
-          url: v.url,
-          note: `Cast per the production's own description of "${v.title}".`,
-        },
-      ],
-    };
-    if (existing?.credits.some((c) => c.show === showId && c.season === season && c.role === v.role)) {
-      continue;
-    }
-    const record = existing
-      ? { ...existing, credits: [...existing.credits, credit] }
-      : {
+    try {
+      const name = v.name;
+      const match = matcher.match(name, slugify(name), showId);
+      if (match.kind === 'held') {
+        console.log(`    held "${name}" — ${match.reason}`);
+        continue;
+      }
+      const existing = match.kind === 'existing' ? match.person : undefined;
+      const id = existing?.id ?? slugify(name);
+      // Edit the file as written, not the loaded copy, so a rewrite changes only
+      // what this import adds.
+      const base: Person =
+        records.get(id) ??
+        (existing
+          ? (parseYaml(await readFile(join(DATA_ROOT, 'people', `${id}.yml`), 'utf8')) as Person)
+          : {
           id,
           canonical_name: name,
           sort_name: sortName(name),
-          aliases: [{ id: 'default', name, alias_type: 'legal' }],
-          credits: [credit],
-        };
+          aliases: [{ id: 'default', name, alias_type: name.includes(' ') ? 'legal' : 'handle' }],
+          credits: [],
+        } as unknown as Person);
+      const credit = {
+        show: showId,
+        ...(season !== undefined ? { season } : {}),
+        role: v.role as CreditRole,
+        ...(v.character ? { character: v.character } : {}),
+        ...(base.aliases.length === 1 ? { alias: base.aliases[0]!.id } : {}),
+        ...(v.role.startsWith('guest') ? { note: GUEST_NOTE } : {}),
+        sources: [
+          {
+            tier: 'official' as const,
+            url: v.url,
+            note: `Cast per the production's own description of "${v.title}".`,
+          },
+        ],
+      };
+      const checked = Credit.safeParse(credit);
+      if (!checked.success) {
+        console.log(`    held "${name}" — ${checked.error.issues[0]?.message}`);
+        continue;
+      }
+      const result = upsertCredit((base.credits ?? []) as Person['credits'], credit as Person['credits'][number], {
+        explicitRole: true,
+      });
+      if (result.outcome === 'already-cited') continue;
+      records.set(id, { ...base, credits: result.credits } as Person);
+    } catch (error) {
+      // One failure costs this item, not the ones after it.
+      failed(`    held "${v.name}" — ${(error as Error).message}`);
+    }
+  }
+
+  let written = 0;
+  for (const [id, record] of records) {
     const parsed = Person.safeParse(record);
-    if (!parsed.success) continue;
+    if (!parsed.success) {
+      console.log(`    held "${record.canonical_name}" — ${parsed.error.issues[0]?.message}`);
+      continue;
+    }
     await writeFile(join(dir, `${id}.yml`), stringify(record), 'utf8');
     written += 1;
-    void proper;
   }
   console.log(`\n${written} file(s) written.\n`);
 }

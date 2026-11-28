@@ -240,11 +240,18 @@ So portraits are taken in this order:
 1. **Wikidata and Wikimedia Commons**, under a licence that genuinely permits
    reuse. A stated licence is stronger provenance than a claim, so this is
    always tried first.
-2. **Openverse**, same test.
-3. **The fan wiki that person's own credits already cite**, under the same
+2. **The fan wiki that person's own credits already cite**, under the same
    fair-use claim this policy already makes for show art, and under the same
    constraints: thumbnail scale, one image per person, attributed, linked back,
    used solely to identify the subject, removed on request.
+
+A rejected portrait is removed and the record marked `no_auto_image: true`, so
+the next run does not fetch it again.
+
+Neither source is searched by name alone. Wikidata is consulted only through a
+QID already on the person's record. A wiki image is only taken when its filename
+is the person's name, apart from numbers and words such as "portrait", because a
+page's lead image is often character art.
 
 A person is only ever looked up on a wiki their own credits cite, so a name is
 never resolved against a wiki with nothing to do with them. A one-word name is

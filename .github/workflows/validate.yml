@@ -30,6 +30,10 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      # The rules the importers use to decide what to file.
+      - name: Test
+        run: npm test
+
       # Schema (types, required fields, enums) + referential integrity
       # (every show/season/channel/game/alias id resolves) + id uniqueness
       # and slug format + duplicate-person heuristic.

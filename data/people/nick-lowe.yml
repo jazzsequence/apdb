@@ -1,13 +1,8 @@
 id: nick-lowe
 canonical_name: Nick Lowe
 sort_name: Lowe, Nick
-wikidata_qid: Q962095
+wikidata_qid: Q12061388
 links: {}
-image:
-  url: https://upload.wikimedia.org/wikipedia/commons/7/72/Nick_Lowe_at_Knuckleheads_Saloon.png
-  licence: CC-BY-SA-3.0
-  attribution: K8 fan
-  source: https://commons.wikimedia.org/wiki/File:Nick_Lowe_at_Knuckleheads_Saloon.png
 aliases:
   - id: default
     name: Nick Lowe

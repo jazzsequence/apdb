@@ -30,6 +30,9 @@
  * to check against something closer to the fact.
  */
 
+import { realCharacter } from '../credits.js';
+import { politeFetch } from './http.js';
+
 const API = 'https://en.wikipedia.org/w/api.php';
 
 const USER_AGENT =
@@ -63,7 +66,7 @@ export interface WikipediaPerson {
 
 async function api(params: Record<string, string>): Promise<any> {
   const query = new URLSearchParams({ format: 'json', formatversion: '2', origin: '*', ...params });
-  const response = await fetch(`${API}?${query}`, {
+  const response = await politeFetch(`${API}?${query}`, {
     headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
   });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText} from ${API}`);
@@ -89,6 +92,7 @@ function stripMarkup(text: string): string {
     .replace(/<!--[\s\S]*?-->/g, '')
     .replace(/\{\{\s*(?:sfn|efn|cite[^}]*|r|ref)[^{}]*\}\}/gi, '')
     .replace(/<[^>]+>/g, '')
+    .replace(/''(?='s\b)/g, '')
     .replace(/'''?/g, '')
     .trim();
 }
@@ -409,11 +413,13 @@ function roleFromSentence(sentence: string): string | undefined {
 }
 
 /** "playing as Margot "Fuego" Walker" / "acting as Laura Bennett". */
-function characterFromSentence(sentence: string): string | undefined {
+export function characterFromSentence(sentence: string): string | undefined {
+  // "played X" is as often a game or a show as a character, so playing needs
+  // "as". Only "portrayed" names a character on its own.
   const match = sentence.match(
-    /\b(?:playing|played|plays|portraying|portrayed|acting|appearing)\s+(?:as\s+)?([A-Z][^.,;:]{1,60}?)(?=[.,;:]|\s+(?:in|on|for|before|since|during|and)\b)/,
+    /\b(?:(?:playing|played|plays|acting|appearing)\s+as\s+|(?:portraying|portrayed)\s+(?:as\s+)?)([A-Z][^.,;:]{1,60}?)(?=[.,;:]|\s+(?:in|on|for|before|since|during|and)\b)/,
   );
-  const value = match?.[1]?.trim();
+  const value = realCharacter(match?.[1]);
   if (!value || /^(a|an|the|as|herself|himself|themselves)\b/i.test(value)) return undefined;
   return value;
 }

@@ -12,7 +12,10 @@
 import { readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { stringify } from 'yaml';
-import { fetchAllImages } from '../src/lib/images.js';
+import { fetchArchiveArt } from '../src/lib/images.js';
+import { knownCatalogue } from '../src/lib/known.js';
+import { newUploads } from '../src/lib/archive-uploads.js';
+import { failed } from '../src/lib/failures.js';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { groupIntoSeries, searchActualPlay, type ArchiveSeries } from '../src/lib/sources/archive.js';
 
@@ -31,7 +34,7 @@ const SYSTEMS: [RegExp, { id: string; name: string; edition: string; publisher: 
   [/call of cthulhu/i, { id: 'call-of-cthulhu', name: 'Call of Cthulhu', edition: '7th Edition', publisher: 'Chaosium' }],
   [/pathfinder/i, { id: 'pathfinder-1e', name: 'Pathfinder', edition: '1st Edition', publisher: 'Paizo' }],
   [/savage worlds/i, { id: 'savage-worlds-deluxe', name: 'Savage Worlds', edition: 'Deluxe Edition', publisher: 'Pinnacle Entertainment Group' }],
-  [/fate/i, { id: 'fate-core', name: 'Fate', edition: 'Core', publisher: 'Evil Hat Productions' }],
+  [/\bfate\b/i, { id: 'fate-core', name: 'Fate', edition: 'Core', publisher: 'Evil Hat Productions' }],
   [/gurps/i, { id: 'gurps', name: 'GURPS', edition: '4th Edition', publisher: 'Steve Jackson Games' }],
   [/vampire|masquerade/i, { id: 'vampire-the-masquerade-v5', name: 'Vampire: The Masquerade', edition: '5th Edition', publisher: 'Renegade Game Studios' }],
   [/traveller/i, { id: 'traveller', name: 'Traveller', edition: 'Mongoose 2nd Edition', publisher: 'Mongoose Publishing' }],
@@ -61,7 +64,15 @@ async function main() {
   const minEpisodes = Number.parseInt(flag('min-episodes') ?? '4', 10);
 
   // Archive caps rows per request; two pages is plenty for this subject.
-  const items = [...(await searchActualPlay(500, 1)), ...(await searchActualPlay(500, 2))];
+  // Both pages or nothing: a series split across them would be written with a
+  // wrong episode count and dates, and later runs would not correct it.
+  const pages = await Promise.allSettled([searchActualPlay(500, 1), searchActualPlay(500, 2)]);
+  const broken = pages.flatMap((p) => (p.status === 'rejected' ? [String(p.reason?.message ?? p.reason)] : []));
+  if (broken.length) {
+    failed(`\nArchive search failed, so no shows were imported: ${broken.join('; ')}\n`);
+    return;
+  }
+  const items = pages.flatMap((p) => (p.status === 'fulfilled' ? p.value : []));
   const series = groupIntoSeries(items, minEpisodes);
 
   console.log(`\n${items.length} archived episodes -> ${series.length} series (>= ${minEpisodes} episodes).\n`);
@@ -76,83 +87,118 @@ async function main() {
     (await readdir(join(DATA_ROOT, 'games'))).map((f) => f.replace('.yml', '')),
   );
 
-  let newShows = 0;
+  const known = await knownCatalogue();
+  const archiveDates = known.archiveDates;
+  const added = new Set<string>();
+  const held: string[] = [];
   let newChannels = 0;
   const noSystem: string[] = [];
 
   for (const s of series) {
-    const game = systemFor(s);
-    if (!game) {
-      noSystem.push(`${s.creator}: ${s.title.slice(0, 44)} (${s.items.length} eps)`);
-      continue;
-    }
+    try {
+      const game = systemFor(s);
+      if (!game) {
+        noSystem.push(`${s.creator}: ${s.title.slice(0, 44)} (${s.items.length} eps)`);
+        continue;
+      }
 
-    const showId = slugify(s.title);
-    const channelId = slugify(s.creator);
-    if (!showId || !channelId) continue;
+      const showId = slugify(s.title);
+      const slug = slugify(s.creator);
+      if (!showId || !slug) continue;
+      const channelId = known.channelId(slug, s.creator) ?? slug;
 
-    if (has('dry-run')) {
-      console.log(
-        `  ${String(s.items.length).padStart(4)} eps  ${s.title.slice(0, 42).padEnd(42)} ${game.name.slice(0, 22).padEnd(22)} ${s.creator.slice(0, 24)}`,
-      );
-      continue;
-    }
+      const label = `${s.creator}: ${s.title.slice(0, 44)}`;
+      if (s.items.some((i) => known.archiveItems.has(i.identifier.toLowerCase()))) {
+        // Uploads are grouped by creator, so a second campaign arrives in the
+        // same group as the one we hold.
+        const fresh = newUploads(s.items, archiveDates);
+        if (fresh > 0) held.push(`${label} — ${fresh} upload(s) newer than what is catalogued`);
+        continue;
+      }
+      if (existingShows.has(showId)) {
+        held.push(`${label} — a show with the id "${showId}" already exists`);
+        continue;
+      }
+      // Uploads are grouped by creator, so a creator we already hold shows for
+      // cannot be told apart from those shows by title alone.
+      if (known.channelHasShows(channelId)) {
+        held.push(`${label} — channel "${channelId}" already has a show`);
+        continue;
+      }
+      if (!s.items.every((i) => systemFor({ ...s, title: i.title, subjects: i.subjects })?.id === game.id)) {
+        held.push(`${label} — episodes do not all name ${game.name}; may be several series`);
+        continue;
+      }
 
-    if (!existingGames.has(game.id)) {
-      await writeFile(join(DATA_ROOT, 'games', `${game.id}.yml`), stringify(game), 'utf8');
-      existingGames.add(game.id);
-    }
+      if (has('dry-run')) {
+        console.log(
+          `  ${String(s.items.length).padStart(4)} eps  ${s.title.slice(0, 42).padEnd(42)} ${game.name.slice(0, 22).padEnd(22)} ${s.creator.slice(0, 24)}`,
+        );
+        continue;
+      }
 
-    if (!existingChannels.has(channelId)) {
+      if (!existingGames.has(game.id)) {
+        await writeFile(join(DATA_ROOT, 'games', `${game.id}.yml`), stringify(game), 'utf8');
+        existingGames.add(game.id);
+      }
+
+      if (!existingChannels.has(channelId)) {
+        await writeFile(
+          join(DATA_ROOT, 'channels', `${channelId}.yml`),
+          stringify({
+            id: channelId,
+            name: s.creator.slice(0, 80),
+            type: 'indie studio',
+            description: 'Independent producer; episodes preserved on the Internet Archive.',
+            links: { website: `https://archive.org/search?query=creator%3A%22${encodeURIComponent(s.creator)}%22` },
+          }),
+          'utf8',
+        );
+        existingChannels.add(channelId);
+        newChannels += 1;
+      }
+
       await writeFile(
-        join(DATA_ROOT, 'channels', `${channelId}.yml`),
+        join(DATA_ROOT, 'shows', `${showId}.yml`),
         stringify({
-          id: channelId,
-          name: s.creator.slice(0, 80),
-          type: 'indie studio',
-          description: 'Independent producer; episodes preserved on the Internet Archive.',
-          links: { website: `https://archive.org/search?query=creator%3A%22${encodeURIComponent(s.creator)}%22` },
+          id: showId,
+          title: s.title.slice(0, 80),
+          channels: [channelId],
+          format: 'podcast',
+          status: 'unknown',
+          description:
+            `Preserved on the Internet Archive. System per the uploader's own tags: ${game.name}.` +
+            (s.licenseUrl ? ` Uploader licence: ${s.licenseUrl}.` : ''),
+          links: { website: `https://archive.org/details/${s.items[0]!.identifier}` },
+          seasons: [
+            {
+              ordinal: 1,
+              game: game.id,
+              episode_count: s.items.length,
+              ...(s.earliest ? { started: s.earliest } : {}),
+              ...(s.latest && s.latest !== s.earliest ? { ended: s.latest } : {}),
+            },
+          ],
         }),
         'utf8',
       );
-      existingChannels.add(channelId);
-      newChannels += 1;
+      existingShows.add(showId);
+      added.add(showId);
+      console.log(`  + ${s.title.slice(0, 42).padEnd(42)} ${game.name.slice(0, 20).padEnd(20)} ${s.items.length} eps`);
+    } catch (error) {
+      // One failure costs this item, not the ones after it.
+      failed(`  ✗ ${s.creator}: ${(error as Error).message}`);
     }
-
-    if (existingShows.has(showId)) continue;
-
-    await writeFile(
-      join(DATA_ROOT, 'shows', `${showId}.yml`),
-      stringify({
-        id: showId,
-        title: s.title.slice(0, 80),
-        channels: [channelId],
-        format: 'podcast',
-        status: 'unknown',
-        description:
-          `Preserved on the Internet Archive. System per the uploader's own tags: ${game.name}.` +
-          (s.licenseUrl ? ` Uploader licence: ${s.licenseUrl}.` : ''),
-        links: { website: `https://archive.org/details/${s.items[0]!.identifier}` },
-        seasons: [
-          {
-            ordinal: 1,
-            game: game.id,
-            episode_count: s.items.length,
-            ...(s.earliest ? { started: s.earliest } : {}),
-            ...(s.latest && s.latest !== s.earliest ? { ended: s.latest } : {}),
-          },
-        ],
-      }),
-      'utf8',
-    );
-    existingShows.add(showId);
-    newShows += 1;
-    console.log(`  + ${s.title.slice(0, 42).padEnd(42)} ${game.name.slice(0, 20).padEnd(20)} ${s.items.length} eps`);
   }
 
   if (!has('dry-run')) {
-    await fetchAllImages();
-    console.log(`\n${newChannels} channel(s), ${newShows} show(s) added from the Internet Archive.`);
+    await fetchArchiveArt(added);
+    console.log(`\n${newChannels} channel(s), ${added.size} show(s) added from the Internet Archive.`);
+  }
+
+  if (held.length) {
+    console.log(`\n${held.length} series held for review:`);
+    for (const h of held) console.log(`   ${h}`);
   }
 
   if (noSystem.length) {

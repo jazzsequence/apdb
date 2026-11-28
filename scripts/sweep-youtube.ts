@@ -15,14 +15,20 @@
  *   npm run sweep:youtube -- --dry-run
  *   npm run sweep:youtube -- --min-subs 5000
  */
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { appendFile, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
-import { creditsFromDescription, playlistVideos } from '../src/lib/sources/youtube.js';
-import { fetchAllImages } from '../src/lib/images.js';
+import { playlistVideos, type YouTubeVideo } from '../src/lib/sources/youtube.js';
+import { AGGREGATE_TITLE, selectSeries } from '../src/lib/youtube-series.js';
+import { fetchSeriesArt } from '../src/lib/images.js';
+import { knownCatalogue } from '../src/lib/known.js';
+import { failed } from '../src/lib/failures.js';
+import { titleKey } from '../src/lib/sources/imdb.js';
 
 const API = 'https://www.googleapis.com/youtube/v3';
+/** One quota unit buys 50. */
+const MAX_VIDEOS = 2000;
 const args = process.argv.slice(2);
 const flag = (n: string) => {
   const i = args.indexOf(`--${n}`);
@@ -208,7 +214,7 @@ async function main() {
       const d = await api('search', { part: 'snippet', q, type: 'channel', maxResults: '8' });
       for (const i of d.items ?? []) channels.set(i.snippet.channelId, i.snippet.channelTitle);
     } catch (e) {
-      console.error(`  search failed for "${q}": ${(e as Error).message}`);
+      failed(`  search failed for "${q}": ${(e as Error).message}`);
     }
   }
   console.log(`\n${channels.size} candidate channels from ${QUERIES.length} searches.`);
@@ -217,15 +223,19 @@ async function main() {
   const ids = [...channels.keys()];
   const kept: { id: string; title: string; subs: number; desc: string }[] = [];
   for (let i = 0; i < ids.length; i += 50) {
-    const d = await api('channels', {
-      part: 'snippet,statistics',
-      id: ids.slice(i, i + 50).join(','),
-    });
-    for (const c of d.items ?? []) {
-      const subs = Number.parseInt(c.statistics?.subscriberCount ?? '0', 10);
-      if (subs >= minSubs) {
-        kept.push({ id: c.id, title: c.snippet.title, subs, desc: c.snippet.description ?? '' });
+    try {
+      const d = await api('channels', {
+        part: 'snippet,statistics',
+        id: ids.slice(i, i + 50).join(','),
+      });
+      for (const c of d.items ?? []) {
+        const subs = Number.parseInt(c.statistics?.subscriberCount ?? '0', 10);
+        if (subs >= minSubs) {
+          kept.push({ id: c.id, title: c.snippet.title, subs, desc: c.snippet.description ?? '' });
+        }
       }
+    } catch (e) {
+      failed(`  channel batch failed: ${(e as Error).message}`);
     }
   }
   kept.sort((a, b) => b.subs - a.subs);
@@ -242,113 +252,174 @@ async function main() {
     (await readdir(join(DATA_ROOT, 'games'))).map((f) => f.replace('.yml', '')),
   );
   const unknownSystem: string[] = [];
+  const known = await knownCatalogue();
   let newChannels = 0;
   let newShows = 0;
   const castable: string[] = [];
+  const held: string[] = [];
+  /** Every video in every playlist read this run. */
+  const seen = new Set<string>();
+  const castableOut = dryRun ? undefined : flag('castable-out');
+  if (castableOut) {
+    await mkdir(dirname(castableOut), { recursive: true });
+    // Shows an earlier run catalogued without managing to import a cast.
+    const retry = known.awaitingCast();
+    await writeFile(castableOut, retry.map((r) => `${r.show}\t${r.playlist}\n`).join(''), 'utf8');
+    if (retry.length) console.log(`${retry.length} catalogued show(s) still await a cast; queued again.`);
+  }
 
   for (const ch of kept) {
-    let playlists: any[] = [];
     try {
-      const d = await api('playlists', {
-        part: 'snippet,contentDetails',
-        channelId: ch.id,
-        maxResults: '50',
-      });
-      playlists = d.items ?? [];
-    } catch {
-      continue;
-    }
-
-    const campaigns = playlists
-      .map((p) => ({ id: p.id, title: p.snippet.title as string, count: p.contentDetails.itemCount as number }))
-      .filter((p) => p.count >= 4 && CAMPAIGN_LIKE.test(p.title) && !NOISE.test(p.title));
-
-    if (campaigns.length === 0) continue;
-
-    const channelId = slugify(ch.title);
-    if (!channelId) continue;
-
-    console.log(`${ch.title}  (${ch.subs.toLocaleString()} subs) — ${campaigns.length} series`);
-    if (dryRun) {
-      for (const c of campaigns.slice(0, 5)) console.log(`     ${String(c.count).padStart(4)}  ${c.title.slice(0, 60)}`);
-      continue;
-    }
-
-    if (!existingChannels.has(channelId)) {
-      await writeFile(
-        join(DATA_ROOT, 'channels', `${channelId}.yml`),
-        stringify({
-          id: channelId,
-          name: ch.title,
-          type: ch.subs > 200_000 ? 'network' : 'indie studio',
-          ...(ch.desc ? { description: ch.desc.slice(0, 280) } : {}),
-          links: { youtube: `https://www.youtube.com/channel/${ch.id}` },
-        }),
-        'utf8',
-      );
-      existingChannels.add(channelId);
-      newChannels += 1;
-    }
-
-    for (const c of campaigns) {
-      const id = slugify(c.title);
-      if (!id || existingShows.has(id)) continue;
-
-      let cast: ReturnType<typeof creditsFromDescription> = [];
+      let playlists: any[] = [];
       try {
-        for (const v of await playlistVideos(c.id, 2)) {
-          const found = creditsFromDescription(v.description);
-          if (found.length > cast.length) cast = found;
+        const d = await api('playlists', {
+          part: 'snippet,contentDetails',
+          channelId: ch.id,
+          maxResults: '50',
+        });
+        playlists = d.items ?? [];
+      } catch (error) {
+        failed(`  playlists unreadable for ${ch.title}: ${(error as Error).message}`);
+        continue;
+      }
+
+      const campaigns = playlists
+        .map((p) => ({ id: p.id, title: p.snippet.title as string, count: p.contentDetails.itemCount as number }))
+        .filter((p) => p.count >= 4 && CAMPAIGN_LIKE.test(p.title) && !NOISE.test(p.title));
+
+      if (campaigns.length === 0) continue;
+
+      const slug = slugify(ch.title);
+      if (!slug) continue;
+      const channelId = known.channelId(slug, ch.title, ch.id) ?? slug;
+
+      console.log(`${ch.title}  (${ch.subs.toLocaleString()} subs) — ${campaigns.length} series`);
+      if (dryRun) {
+        for (const c of campaigns.slice(0, 5)) console.log(`     ${String(c.count).padStart(4)}  ${c.title.slice(0, 60)}`);
+        continue;
+      }
+
+      const read: Array<(typeof campaigns)[number] & {
+        show: string; label: string; videos: YouTubeVideo[]; blocked?: string;
+      }> = [];
+      let unread = false;
+
+      for (const c of campaigns) {
+        const id = slugify(c.title);
+        // Already catalogued under this very playlist: nothing to report.
+        if (!id || known.playlists.has(c.id.toLowerCase())) continue;
+        const label = `${ch.title}: ${c.title.slice(0, 50)}`;
+        // A channel we already hold shows for most often adds a season, which a
+        // playlist title cannot tell us. Leave that to a person.
+        if (known.channelHasShows(channelId)) {
+          held.push(`${label} — channel "${channelId}" already has a show`);
+          continue;
         }
-      } catch {
-        // private/empty playlist
+        if (AGGREGATE_TITLE.test(c.title)) {
+          held.push(`${label} — gathers other playlists`);
+          continue;
+        }
+        // A playlist with a taken title is still read: one that gathers it up
+        // must be recognised as repeating it.
+        const taken = existingShows.has(id) || known.titles.has(titleKey(c.title.replace(/\s*\|.*$/, '')));
+        try {
+          // The whole list. Comparing only the first page misses a gathering of
+          // long campaigns.
+          const videos = await playlistVideos(c.id, MAX_VIDEOS);
+          read.push({
+            ...c, show: id, label, videos,
+            ...(taken ? { blocked: 'a show or season already has this title' } : {}),
+          });
+        } catch (e) {
+          // A private playlist, or an exhausted quota: not the same as no cast.
+          held.push(`${label} — could not read the playlist: ${(e as Error).message.slice(0, 80)}`);
+          failed(`  playlist unreadable: ${label}`);
+          unread = true;
+        }
       }
 
-      // Only catalogue a show whose system the title actually states.
-      const game = systemFor(c.title) ?? systemFor(ch.title);
-      if (!game) { unknownSystem.push(`${ch.title}: ${c.title.slice(0, 50)}`); continue; }
-      if (!existingGames.has(game.id)) {
-        await writeFile(join(DATA_ROOT, 'games', `${game.id}.yml`), stringify(game), 'utf8');
-        existingGames.add(game.id);
+      // Without every playlist a repeat cannot be ruled out. Next week retries.
+      if (unread) {
+        for (const c of read) held.push(`${c.label} — another playlist on this channel could not be read`);
+        continue;
       }
 
-      await writeFile(
-        join(DATA_ROOT, 'shows', `${id}.yml`),
-        stringify({
-          id,
-          title: c.title.replace(/\s*\|.*$/, '').trim().slice(0, 80),
-          channels: [channelId],
-          format: 'video',
-          status: 'unknown',
-          description: `System per source: ${game.name} ${game.edition} (per the series title).`,
-          links: { website: `https://www.youtube.com/playlist?list=${c.id}` },
-          seasons: [{ ordinal: 1, game: game.id, episode_count: c.count }],
-        }),
-        'utf8',
-      );
-      existingShows.add(id);
-      newShows += 1;
-      if (cast.length > 1) castable.push(`${id}  ${c.id}  (${cast.length} cast)`);
+      const selected = selectSeries(read, seen);
+      for (const h of selected.held) held.push(`${h.playlist.label} — ${h.reason}`);
+
+      for (const c of selected.series) {
+        const { show: id, label } = c;
+        // Two playlists can reduce to one id; the first accepted keeps it.
+        if (existingShows.has(id)) {
+          held.push(`${label} — a show or season already has this title`);
+          continue;
+        }
+
+        // Only catalogue a show whose system the title actually states.
+        const game = systemFor(c.title) ?? systemFor(ch.title);
+        if (!game) { unknownSystem.push(`${ch.title}: ${c.title.slice(0, 50)}`); continue; }
+        if (!existingGames.has(game.id)) {
+          await writeFile(join(DATA_ROOT, 'games', `${game.id}.yml`), stringify(game), 'utf8');
+          existingGames.add(game.id);
+        }
+
+        if (!existingChannels.has(channelId)) {
+          await writeFile(
+            join(DATA_ROOT, 'channels', `${channelId}.yml`),
+            stringify({
+              id: channelId,
+              name: ch.title,
+              type: ch.subs > 200_000 ? 'network' : 'indie studio',
+              ...(ch.desc ? { description: ch.desc.slice(0, 280) } : {}),
+              links: { youtube: `https://www.youtube.com/channel/${ch.id}` },
+            }),
+            'utf8',
+          );
+          existingChannels.add(channelId);
+          newChannels += 1;
+        }
+
+        await writeFile(
+          join(DATA_ROOT, 'shows', `${id}.yml`),
+          stringify({
+            id,
+            title: c.title.replace(/\s*\|.*$/, '').trim().slice(0, 80),
+            channels: [channelId],
+            format: 'video',
+            status: 'unknown',
+            description: `System per source: ${game.name} ${game.edition} (per the series title).`,
+            links: { website: `https://www.youtube.com/playlist?list=${c.id}` },
+            seasons: [{ ordinal: 1, game: game.id, episode_count: c.count }],
+          }),
+          'utf8',
+        );
+        existingShows.add(id);
+        newShows += 1;
+        castable.push(`${id}  ${c.id}  (${c.cast} cast)`);
+        // Written as each show is, so a later failure or a step timeout cannot
+        // leave shows that no cast import hears about. The workflow reads this
+        // file: the console list below is truncated.
+        if (castableOut) await appendFile(castableOut, `${id}\t${c.id}\n`, 'utf8');
+      }
+    } catch (error) {
+      // One failure costs this item, not the ones after it.
+      failed(`  ✗ ${ch.title}: ${(error as Error).message}`);
     }
   }
 
   if (!dryRun) {
-    await fetchAllImages();
+    await fetchSeriesArt();
     console.log(`\n${newChannels} channels, ${newShows} shows added.`);
     if (castable.length) {
       console.log(`\n${castable.length} have a readable cast — import with --youtube --playlist:`);
       for (const c of castable.slice(0, 25)) console.log(`   ${c}`);
       if (castable.length > 25) console.log(`   … and ${castable.length - 25} more`);
 
-      // The console list is truncated for readability, so anything automating
-      // the follow-up import has to read this file rather than scrape stdout —
-      // scraping would silently import the first 25 and drop the rest.
-      const out = flag('castable-out');
-      if (out) {
-        await mkdir(dirname(out), { recursive: true });
-        await writeFile(out, castable.map((c) => c.replace(/\s+\(\d+ cast\)$/, '').replace(/\s+/g, '\t')).join('\n') + '\n', 'utf8');
-        console.log(`\n   full list -> ${out}`);
-      }
+      if (castableOut) console.log(`\n   full list -> ${castableOut}`);
+    }
+    if (held.length) {
+      console.log(`\n${held.length} series held for review:`);
+      for (const h of held) console.log(`   ${h}`);
     }
     if (unknownSystem.length) {
       console.log(`\n${unknownSystem.length} series skipped — title states no system, so none was assumed:`);

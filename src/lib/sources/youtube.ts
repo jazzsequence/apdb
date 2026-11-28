@@ -135,8 +135,11 @@ const ROLE_LABELS: [RegExp, CreditRole][] = [
   [/^(?:music by|composer)s?\b/i, 'composer'],
 ];
 
+/** "(Played by …)" puts the character first, so the usual reading inverts it. */
+const PLAYED_BY = /^\s*played by\b/i;
+
 /** "Emily Axford as Fig Faeth" / "Emily Axford (Fig Faeth)" -> both parts. */
-function splitPerson(chunk: string): { name: string; character?: string } | undefined {
+function splitPerson(chunk: string, held: Set<string>): { name: string; character?: string } | undefined {
   const text = chunk.replace(/^[\s\-–—*•]+|[\s.,;]+$/g, '').trim();
   if (!text || text.length > 80) return undefined;
 
@@ -144,6 +147,10 @@ function splitPerson(chunk: string): { name: string; character?: string } | unde
   if (asMatch) return { name: asMatch[1]!.trim(), character: asMatch[2]!.trim() };
 
   const parenMatch = text.match(/^(.+?)\s*\(([^)]+)\)$/);
+  if (parenMatch && PLAYED_BY.test(parenMatch[2]!)) {
+    held.add(text);
+    return undefined;
+  }
   if (parenMatch) return { name: parenMatch[1]!.trim(), character: parenMatch[2]!.trim() };
 
   // A bare name: two to four capitalised words. Anything else is prose.
@@ -152,19 +159,18 @@ function splitPerson(chunk: string): { name: string; character?: string } | unde
 }
 
 /**
- * Some productions write the cast character-first, one per line, with a link:
+ * Cast rows written under a GM line, with or without a link:
  *
  *   DM: Mark "Sherlock" Hulmes - https://twitter.com/sherlock_hulmes
  *   Daisy: Katie Morrison - https://twitter.com/LittleNommer
- *   Rowan: Chris Trott - https://twitter.com/trottimus
  *
- * That is the reverse of every other source here, and the trailing URL means a
- * naive "skip lines with links" rule discards the entire cast. The DM line is
- * the anchor: once seen, subsequent "Label: Name" lines are character: performer.
+ * That one is character first; others use the same shape the other way round.
+ * Nothing in the line says which, so the rows are held. The GM lines say who is
+ * who by themselves and are returned when there are rows under them.
  */
-function characterFirstBlock(description: string): YouTubeCredit[] {
-  const credits: YouTubeCredit[] = [];
-  let seenGm = false;
+function holdRowsUnderGm(description: string, held: Set<string>): YouTubeCredit[] {
+  const gms: YouTubeCredit[] = [];
+  let rows = 0;
 
   for (const rawLine of description.split(/\r?\n/)) {
     // Drop a trailing link so the name is readable, but keep the line.
@@ -174,23 +180,19 @@ function characterFirstBlock(description: string): YouTubeCredit[] {
     const gm = line.match(/^(?:DM|GM|Dungeon Master|Game Master)\s*[:\-]\s*(.+)$/i);
     if (gm) {
       const name = gm[1]!.trim();
-      if (looksLikeName(name)) { credits.push({ name, role: 'GM/DM', line: rawLine.trim() }); seenGm = true; }
+      if (looksLikeName(name)) gms.push({ name, role: 'GM/DM', line: rawLine.trim() });
       continue;
     }
-
-    if (!seenGm) continue;
+    if (gms.length === 0) continue;
 
     const row = line.match(/^([^:]{2,40}):\s*(.+)$/);
-    if (!row) continue;
-    const character = row[1]!.trim();
-    const name = row[2]!.trim();
-    // A performer name, not a timestamp or a sentence.
-    if (!looksLikeName(name)) continue;
-    if (/^\d/.test(character)) continue;
-    credits.push({ name, role: 'player', character, line: rawLine.trim() });
+    // A name on the right, and not a timestamp.
+    if (row && looksLikeName(row[2]!.trim()) && !/^\d/.test(row[1]!.trim())) {
+      held.add(rawLine.trim());
+      rows++;
+    }
   }
-
-  return credits.length > 1 ? credits : [];
+  return rows > 0 ? gms : [];
 }
 
 /**
@@ -219,10 +221,12 @@ const SOCIAL_LINE =
  * function returned nothing for it, because it stopped at the first blank line
  * and required "X as Y".
  */
-function headedBlock(description: string): YouTubeCredit[] {
+function headedBlock(description: string, held: Set<string>): YouTubeCredit[] {
   const lines = description.split(/\r?\n/).map((l) => l.trim());
   const credits: YouTubeCredit[] = [];
 
+  // Held rows still show that this was a cast block.
+  let heldRows = 0;
   const CAST_HEAD = /^(cast|starring|players?|featuring|the (cast|party))\s*:?\s*$/i;
   const GM_HEAD = /^(game\s?master|gamemaster|dungeon\s?master|storyteller|keeper|gm|dm)\s*:?\s*$/i;
 
@@ -253,6 +257,10 @@ function headedBlock(description: string): YouTubeCredit[] {
       // combined "Name (Character)" segment.
       const noLink = line.replace(/\s*https?:\/\/\S+\s*$/i, '').trim();
       const paren = noLink.match(/^(.+?)\s*\(([^)]+)\)\s*:?\s*$/);
+      if (paren && PLAYED_BY.test(paren[2]!)) {
+        held.add(line);
+        continue;
+      }
       if (paren && looksLikeName(paren[1]!.trim())) {
         const name = paren[1]!.trim();
         const character = paren[2]!.trim();
@@ -264,20 +272,29 @@ function headedBlock(description: string): YouTubeCredit[] {
       }
 
       // "Angela - Reaper", "Angela as Reaper", "Angela: Reaper"
-      const m = line.match(/^(.+?)\s*(?:\s-\s|\s[–—]\s|\sas\s|:)\s*(.+)$/i);
+      const m = line.match(/^(.+?)\s*(\s-\s|\s[–—]\s|\sas\s|:)\s*(.+)$/i);
       if (!m) { misses++; continue; }
 
       const name = m[1]!.replace(/^[\s\-–—*•]+/, '').trim();
-      const character = m[2]!.split(/,\s*(?:an?\b|the\b)/i)[0]!.trim();
+      const character = m[3]!.split(/,\s*(?:an?\b|the\b)/i)[0]!.trim();
       if (!looksLikeName(name)) { misses++; continue; }
 
       const isGm = /^(the\s+)?(dungeon master|game master|gamemaster|dm|gm|storyteller|keeper)$/i.test(character);
-      credits.push(
-        isGm ? { name, role: 'GM/DM', line } : { name, role: 'player', character, line },
-      );
+      if (isGm) {
+        credits.push({ name, role: 'GM/DM', line });
+        continue;
+      }
+      // Only "as" says who is who. "Reaper: Angela" is written as often as
+      // "Angela: Reaper", and guessing files characters as people.
+      if (m[2]!.trim().toLowerCase() !== 'as') {
+        held.add(line);
+        heldRows++;
+        continue;
+      }
+      credits.push({ name, role: 'player', character, line });
     }
   }
-  return credits.length > 1 ? credits : [];
+  return credits.length + heldRows > 1 ? credits : [];
 }
 
 /**
@@ -378,16 +395,43 @@ function playersBlock(description: string): YouTubeCredit[] {
   return credits.length > 1 ? credits : [];
 }
 
+export interface Cast {
+  credits: YouTubeCredit[];
+  /** Cast-shaped lines nothing was filed from, for a person to read. */
+  held: string[];
+}
+
+/** Pronouns beside a name are not part of it, and not a character. */
+const PRONOUNS = /[ \t]*\((?:(?:she|he|they|it|xe|ze|fae|any)\s*\/[^)]*|any pronouns)\)/gi;
+
+export function parseCast(description: string): Cast {
+  const held = new Set<string>();
+  const credits = readCast(description.replace(PRONOUNS, ''), held);
+  return { credits, held: [...held] };
+}
+
 export function creditsFromDescription(description: string): YouTubeCredit[] {
-  const players = keepOnlyNames(playersBlock(description));
+  return parseCast(description).credits;
+}
+
+function readCast(description: string, held: Set<string>): YouTubeCredit[] {
+  const players = keepOnlyNames(playersBlock(description).filter((c) => {
+    if (!PLAYED_BY.test(c.character ?? '')) return true;
+    held.add(c.line);
+    return false;
+  }));
   if (players.length > 1) return players;
 
-  const headed = keepOnlyNames(headedBlock(description));
-  if (headed.length > 1) return headed;
+  const headed = keepOnlyNames(headedBlock(description, held));
+  if (headed.length > 0) return headed;
 
-  const characterFirst = keepOnlyNames(characterFirstBlock(description));
-  if (characterFirst.length > 1) return characterFirst;
+  const underGm = keepOnlyNames(holdRowsUnderGm(description, held));
+  if (underGm.length > 0) return underGm;
+  return labelledLines(description, held);
+}
 
+/** Lines that open with the role: "DM: Chris Perkins", "Starring …". */
+function labelledLines(description: string, held: Set<string>): YouTubeCredit[] {
   const credits: YouTubeCredit[] = [];
 
   for (const rawLine of description.split(/\r?\n/)) {
@@ -401,7 +445,7 @@ export function creditsFromDescription(description: string): YouTubeCredit[] {
       if (!after) break;
 
       for (const chunk of after.split(/,|\band\b|\|/i)) {
-        const person = splitPerson(chunk);
+        const person = splitPerson(chunk, held);
         if (person) credits.push({ ...person, role, line });
       }
       break;

@@ -18,6 +18,7 @@
  *   npm run discover:person -- --limit 25
  *   npm run discover:person -- --all --json out/person-sweep.json
  *   npm run discover:person -- --all --apply          # file what needs no guessing
+ *   npm run discover:person -- --all --max-minutes 40 # stop early, keep what was read
  *   npm run discover:person -- --fixture article.wikitext   # parser only, offline
  *
  * Reports by default. `--apply` files the subset that can be filed without
@@ -39,8 +40,10 @@ import { fetchPerson, fetchWorks } from '../src/lib/sources/wikidata.js';
 import { fetchPersonWorks, fetchWorkFacts, parseWorks, type WikiWork } from '../src/lib/sources/wikipedia.js';
 import { classify, type Verdict } from '../src/lib/sources/actual-play.js';
 import { assertCleared } from '../src/lib/sources/registry.js';
-import { upsertCredit } from '../src/lib/credits.js';
-import type { Credit, Person, Show } from '../src/lib/schema.js';
+import { rotateForWeek } from '../src/lib/rotation.js';
+import { failed } from '../src/lib/failures.js';
+import { ambiguousClaim, excerpt, GUEST_NOTE, startYear, statedRole, upsertCredit } from '../src/lib/credits.js';
+import { Credit as CreditSchema, Person as PersonSchema, type Credit, type Person, type Show } from '../src/lib/schema.js';
 
 const args = process.argv.slice(2);
 const has = (n: string) => args.includes(`--${n}`);
@@ -153,6 +156,19 @@ if (targets.length === 0) {
   process.exit(1);
 }
 
+// Nothing is written until the loop ends, so a run killed from outside loses
+// everything. Stopping here instead keeps what has been read so far.
+const maxMinutes = Number(flag('max-minutes') ?? Infinity);
+if (!(maxMinutes > 0)) {
+  console.error('--max-minutes needs a number above zero.');
+  process.exit(1);
+}
+if (Number.isFinite(maxMinutes) && !flag('limit') && !wanted) {
+  targets.sort((a, b) => a.person.id.localeCompare(b.person.id));
+  const week = Math.floor(Date.now() / (7 * 86_400_000));
+  targets.splice(0, targets.length, ...rotateForWeek(targets, week));
+}
+
 const limit = Number(flag('limit') ?? (has('all') || wanted ? targets.length : 25));
 const queue = targets.slice(0, limit);
 
@@ -180,6 +196,8 @@ interface Candidate {
   reasons: string[];
   /** Catalogue state: what we already have for this work, if anything. */
   status: 'missing-show' | 'missing-credit' | 'have-it';
+  /** Set once `--apply` has written this candidate into data/. */
+  applied?: boolean;
   show?: string;
   season?: number;
 }
@@ -199,7 +217,10 @@ function alreadyCredited(credits: Credit[], showId: string, season?: number): bo
 
 const reports: PersonReport[] = [];
 
+const deadline = Date.now() + maxMinutes * 60_000;
+
 for (const target of queue) {
+  if (Date.now() >= deadline) break;
   const report: PersonReport = {
     person: target.person.id,
     wikipedia: target.wikipedia,
@@ -358,62 +379,114 @@ if (!has('apply')) {
   let corroborated = 0;
   let skippedNoRole = 0;
   let skippedNoShow = 0;
+  let skippedAmbiguous = 0;
+  /** Printed at the end, so the tail of the log carries what needs a person. */
+  const heldBack: string[] = [];
 
   for (const report of reports) {
-    const target = targets.find((t) => t.person.id === report.person);
-    if (!target || !report.wikipedia) continue;
+    try {
+      const target = targets.find((t) => t.person.id === report.person);
+      if (!target || !report.wikipedia) continue;
 
-    const path = join(DATA_ROOT, 'people', `${report.person}.yml`);
-    const record = parse(await readFile(path, 'utf8'));
-    let credits: Credit[] = record.credits ?? [];
-    let touched = false;
+      const path = join(DATA_ROOT, 'people', `${report.person}.yml`);
+      const record = parse(await readFile(path, 'utf8'));
+      let credits: Credit[] = record.credits ?? [];
+      // Counted only once the file is written.
+      const filed: Array<{ candidate: Candidate; outcome: 'added' | 'corroborated' | 'already-cited' }> = [];
 
-    for (const candidate of report.candidates) {
-      if (candidate.verdict !== 'actual-play') continue;
-      if (!candidate.show) { skippedNoShow++; continue; }
-      if (!candidate.role) { skippedNoRole++; continue; }
+      for (const candidate of report.candidates) {
+        if (candidate.verdict !== 'actual-play') continue;
+        if (!candidate.show) { skippedNoShow++; continue; }
+        const role = statedRole(candidate.role);
+        if (!role) { skippedNoRole++; continue; }
+        const seasonCount = shows.find((s) => s.id === candidate.show)?.seasons?.length ?? 0;
+        const claim = { show: candidate.show, season: candidate.season, role };
+        const ambiguity = ambiguousClaim(credits, claim, seasonCount);
+        if (ambiguity) {
+          skippedAmbiguous++;
+          heldBack.push(`${report.person}: ${candidate.show} as ${role} — ${ambiguity}`);
+          continue;
+        }
+        const year = startYear(candidate.year);
 
-      const incoming = {
-        show: candidate.show,
-        ...(candidate.season !== undefined ? { season: candidate.season } : {}),
-        role: candidate.role,
-        ...(candidate.character ? { character: candidate.character } : {}),
-        ...(candidate.year ? { year: candidate.year } : {}),
-        sources: [
-          {
-            tier: 'reference' as const,
-            url: report.wikipedia,
-            note:
-              `Wikipedia's article on ${record.canonical_name}` +
-              (candidate.evidence ? `: "${candidate.evidence.slice(0, 220)}"` : '.'),
-          },
-        ],
-      } as Credit;
+        const incoming = {
+          show: candidate.show,
+          ...(candidate.season !== undefined ? { season: candidate.season } : {}),
+          role,
+          ...(candidate.character ? { character: candidate.character } : {}),
+          ...(year ? { year } : {}),
+          ...(role.startsWith('guest') ? { note: GUEST_NOTE } : {}),
+          sources: [
+            {
+              tier: 'reference' as const,
+              url: report.wikipedia,
+              note:
+                `Wikipedia's article on ${record.canonical_name}` +
+                (candidate.evidence ? `: "${excerpt(candidate.evidence)}"` : '.'),
+            },
+          ],
+        } as Credit;
 
-      const result = upsertCredit(credits, incoming);
-      if (result.outcome === 'already-cited') continue;
-      credits = result.credits;
-      touched = true;
-      result.outcome === 'added' ? added++ : corroborated++;
-    }
+        // One bad credit must not cost the person their good ones.
+        const checked = CreditSchema.safeParse(incoming);
+        if (!checked.success) {
+          heldBack.push(`${report.person}: ${candidate.show} — ${checked.error.issues[0]?.message}`);
+          continue;
+        }
 
-    if (touched) {
-      record.credits = credits;
-      await writeFile(path, stringify(record), 'utf8');
+        const result = upsertCredit(credits, incoming, { explicitRole: true });
+        credits = result.credits;
+        filed.push({ candidate, outcome: result.outcome });
+      }
+
+      if (filed.every((f) => f.outcome === 'already-cited')) {
+        // Nothing to write, but none of these is missing either.
+        for (const { candidate } of filed) candidate.applied = true;
+      } else {
+        record.credits = credits;
+        const parsed = PersonSchema.safeParse(record);
+        if (!parsed.success) {
+          failed(`  ✗ ${report.person} would not validate, left unchanged: ${parsed.error.issues[0]?.message}`);
+          continue;
+        }
+        await writeFile(path, stringify(record), 'utf8');
+        for (const { candidate, outcome } of filed) {
+          candidate.applied = true;
+          if (outcome === 'added') added++;
+          if (outcome === 'corroborated') corroborated++;
+        }
+      }
+    } catch (error) {
+      // One unreadable record costs that person, not everyone after them.
+      failed(`  ✗ ${report.person}: ${(error as Error).message}`);
     }
   }
 
   console.log(
     `\n${added} credit(s) added, ${corroborated} existing credit(s) gained Wikipedia as a ` +
       `second source.\n${skippedNoShow} skipped — no show record here; ` +
-      `${skippedNoRole} skipped — the sentence states no role.`,
+      `${skippedNoRole} skipped — the source states no role; ` +
+      `${skippedAmbiguous} skipped — season unstated or role conflicts with what we hold.`,
   );
+  if (heldBack.length > 0) {
+    console.log(`\n${heldBack.length} claim(s) held for review:`);
+    for (const h of heldBack) console.log(`   ${h}`);
+  }
   console.log('Run `npm run validate` before committing.\n');
+}
+
+const lookups = reports.filter((r) => r.error).length;
+if (lookups > 0) failed(`${lookups} of ${reports.length} lookups failed.`);
+
+// Last, so it is not lost above the per-person output.
+const unswept = queue.length - reports.length;
+if (unswept > 0) {
+  console.log(`Time budget of ${maxMinutes} minute(s) reached: ${unswept} of ${queue.length} people were not swept.\n`);
 }
 
 const jsonPath = flag('json');
 if (jsonPath) {
   await mkdir(dirname(jsonPath), { recursive: true });
-  await writeFile(jsonPath, `${JSON.stringify({ generated: new Date().toISOString(), reports }, null, 2)}\n`);
+  await writeFile(jsonPath, `${JSON.stringify({ generated: new Date().toISOString(), unswept, reports }, null, 2)}\n`);
   console.log(`Wrote ${jsonPath}\n`);
 }

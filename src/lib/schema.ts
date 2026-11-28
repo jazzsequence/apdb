@@ -449,6 +449,8 @@ export const Person = z
       .optional(),
     links: Links,
     image: Image.optional(),
+    /** A portrait was rejected: automatic image passes must not add another. */
+    no_auto_image: z.boolean().optional(),
     aliases: z.array(Alias).min(1, 'every person needs at least one alias — the name they are credited under'),
     credits: z.array(Credit).default([]),
   })

@@ -37,6 +37,7 @@ interface Candidate {
   verdict: 'actual-play' | 'excluded' | 'unclear';
   reasons: string[];
   status: 'missing-show' | 'missing-credit' | 'have-it';
+  applied?: boolean;
   show?: string;
   season?: number;
 }
@@ -54,11 +55,11 @@ const today = new Date().toISOString().slice(0, 10);
 
 lines.push(`# Discovery sweep — ${today}`, '');
 lines.push(
-  'Automated reconnaissance. **Nothing here is data yet.** Every candidate below',
-  'came from a reference work or a wiki, which makes it `reference` or `community`',
-  'tier at best, and Wikipedia in particular is wrong about this project’s subject',
-  'often enough to be worth naming (POLICY.md). Check each one against something',
-  'closer to the fact before filing it.',
+  'Automated run. Credits that needed no guessing are already in the `data/` diff.',
+  'What is listed below was **not filed**. It came from a reference work or a wiki,',
+  'which makes it `reference` or `community` tier at best, and Wikipedia is wrong',
+  'about this project’s subject often enough to be worth naming (POLICY.md). Check',
+  'each one against something closer to the fact before filing it.',
   '',
 );
 
@@ -70,19 +71,39 @@ const wikipediaUrl = (link: string) =>
 // Person-first
 // ---------------------------------------------------------------------------
 const personJson = flag('person');
+// A sweep killed mid-write leaves half a file. The rest of the report still
+// has to be written.
+let sweep: { reports: PersonReport[]; unswept?: number } | undefined;
 if (personJson && existsSync(personJson)) {
-  const { reports } = JSON.parse(await readFile(personJson, 'utf8')) as { reports: PersonReport[] };
+  try {
+    sweep = JSON.parse(await readFile(personJson, 'utf8'));
+  } catch (error) {
+    lines.push('## Person-first sweep', '', `Its results could not be read: ${(error as Error).message}`, '');
+  }
+}
+if (sweep) {
+  const { reports, unswept = 0 } = sweep;
+  // The sweep marks candidates before its data is checked. If that data was
+  // thrown away, none of them were filed.
+  const log = flag('discarded');
+  const lost = Boolean(log && existsSync(log) && /^person sweep: output discarded/m.test(await readFile(log, 'utf8')));
+  if (lost) {
+    lines.push('**The person sweep\u2019s data was discarded, so none of its candidates were filed.**', '');
+    for (const r of reports) for (const c of r.candidates ?? []) delete c.applied;
+  }
 
   const missingShows: Array<{ person: string; c: Candidate }> = [];
   const missingCredits: Array<{ person: string; c: Candidate }> = [];
   const unclear: Array<{ person: string; c: Candidate }> = [];
   const errors: PersonReport[] = [];
   let excluded = 0;
+  let filed = 0;
 
   for (const report of reports) {
     if (report.error) errors.push(report);
     for (const candidate of report.candidates ?? []) {
-      if (candidate.verdict === 'excluded') excluded++;
+      if (candidate.applied) filed++;
+      else if (candidate.verdict === 'excluded') excluded++;
       else if (candidate.status === 'missing-show' && candidate.verdict === 'actual-play') {
         missingShows.push({ person: report.person, c: candidate });
       } else if (candidate.status === 'missing-credit' && candidate.verdict === 'actual-play') {
@@ -107,9 +128,12 @@ if (personJson && existsSync(personJson)) {
 
   lines.push('## Person-first sweep', '');
   lines.push(
-    `${plural(reports.length, 'person', 'people')} read. **${plural(byShow.size, 'show')}** with no record here ` +
+    `${plural(reports.length - errors.length, 'person', 'people')} read, **${errors.length} lookups failed**` +
+      `${unswept ? `, **${unswept} not swept** before the time limit` : ''}` +
+      `${errors.length || unswept ? ', so the totals below are incomplete' : ''}. **${plural(byShow.size, 'show')}** with no record here ` +
       `(named by ${plural(missingShows.length, 'credit')}), **${plural(missingCredits.length, 'missing credit')}** ` +
-      `on shows we already have, ${unclear.length} unclear, ${excluded} excluded as not actual play.`,
+      `on shows we already have, ${unclear.length} unclear, ${excluded} excluded as not actual play. ` +
+      `${plural(filed, 'candidate')} filed and not listed here.`,
     '',
   );
 
@@ -164,7 +188,7 @@ for (const spec of flags('log')) {
   if (!body) continue;
   lines.push(`## ${label}`, '');
   lines.push(
-    '<details><summary>Raw output — these passes do not dedupe against the catalogue, so diff before believing</summary>',
+    '<details><summary>Raw output, including what each pass held back for a person to decide</summary>',
     '',
     '```',
     body.slice(-20000),
@@ -194,8 +218,7 @@ if (dedupeLog && existsSync(dedupeLog)) {
     lines.push('## Duplicate credits — folded', '');
     lines.push(
       `**${folded}** credit(s) across **${people}** people described an appearance already ` +
-        'recorded by another credit on the same person. They have been folded, and that ' +
-        'is the data change in this pull request.',
+        'recorded by another credit on the same person. They have been folded.',
       '',
       '`dedupe` merges only credits it can show describe the same fact, and unions their ' +
         'sources rather than discarding either — so this files no credit and adds no ' +
@@ -216,10 +239,8 @@ lines.push('---', '');
 lines.push(
   'Filed by the weekly `discovery.yml` job.',
   '',
-  'The only data change in the pull request carrying this report is the duplicate',
-  'fold described above. The candidates are not filed: reviewing them means picking',
-  'the ones worth having, finding a source closer to the fact than the one that',
-  'surfaced them, and filing those as a separate change.',
+  'Candidates listed here are not necessarily filed. The `data/` diff on the pull',
+  'request is the record of what changed.',
   '',
 );
 
