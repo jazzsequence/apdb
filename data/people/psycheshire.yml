@@ -1,0 +1,16 @@
+id: psycheshire
+canonical_name: PsycheShire
+sort_name: PsycheShire
+aliases:
+  - id: default
+    name: PsycheShire
+    alias_type: handle
+credits:
+  - show: cainite-chronicles
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=5m7TsCufi1k
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle I - Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."

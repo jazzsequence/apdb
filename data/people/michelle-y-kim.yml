@@ -1,0 +1,16 @@
+id: michelle-y-kim
+canonical_name: Michelle Y. Kim
+sort_name: Kim, Michelle Y.
+aliases:
+  - id: default
+    name: Michelle Y. Kim
+    alias_type: legal
+credits:
+  - show: cainite-chronicles
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=9boveB4xz9M
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle III Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."

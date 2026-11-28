@@ -1,0 +1,17 @@
+# Billed only as "Chase"; the description links blkcoffeechase.bsky.social. No full name found.
+id: chase
+canonical_name: Chase
+sort_name: Chase
+aliases:
+  - id: default
+    name: Chase
+    alias_type: handle
+credits:
+  - show: cainite-chronicles
+    season: 4
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=sEEMF9hDxDY
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle IV Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."

@@ -1,0 +1,95 @@
+id: jd-gunderson
+canonical_name: JD Gunderson
+sort_name: Gunderson, JD
+aliases:
+  - id: default
+    name: JD Gunderson
+    alias_type: legal
+  - id: jd
+    name: JD
+    alias_type: stage
+  - id: storyteller-jd
+    name: Storyteller JD
+    alias_type: stage
+credits:
+  - show: cainite-chronicles
+    season: 1
+    role: GM/DM
+    alias: storyteller-jd
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=5m7TsCufi1k
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle I - Act I\". The list gives no roles."
+      - tier: reference
+        url: https://bsky.app/profile/jdgunderson.bsky.social
+        note: "JD Gunderson's own profile, linked from the Chronicle IV and V descriptions, says they tell vampire stories as Storyteller for Cainite Chronicles. It does not list which chronicles."
+      - tier: community
+        url: https://github.com/jazzsequence/apdb/issues/40
+        note: "Reported in issue #40: game master, credited on screen as \"Storyteller JD\"."
+  - show: cainite-chronicles
+    season: 2
+    role: GM/DM
+    alias: storyteller-jd
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=vWQYkM7aIz4
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle II - Act I\". The list gives no roles."
+      - tier: reference
+        url: https://bsky.app/profile/jdgunderson.bsky.social
+        note: "JD Gunderson's own profile, linked from the Chronicle IV and V descriptions, says they tell vampire stories as Storyteller for Cainite Chronicles. It does not list which chronicles."
+      - tier: community
+        url: https://github.com/jazzsequence/apdb/issues/40
+        note: "Reported in issue #40: game master, credited on screen as \"Storyteller JD\"."
+  - show: cainite-chronicles
+    season: 3
+    role: GM/DM
+    alias: storyteller-jd
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=9boveB4xz9M
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle III Act I\". The list gives no roles."
+      - tier: reference
+        url: https://bsky.app/profile/jdgunderson.bsky.social
+        note: "JD Gunderson's own profile, linked from the Chronicle IV and V descriptions, says they tell vampire stories as Storyteller for Cainite Chronicles. It does not list which chronicles."
+      - tier: community
+        url: https://github.com/jazzsequence/apdb/issues/40
+        note: "Reported in issue #40: game master, credited on screen as \"Storyteller JD\"."
+  - show: cainite-chronicles
+    season: 4
+    role: GM/DM
+    alias: storyteller-jd
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=sEEMF9hDxDY
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle IV Act I\". The list gives no roles."
+      - tier: reference
+        url: https://bsky.app/profile/jdgunderson.bsky.social
+        note: "JD Gunderson's own profile, linked from the Chronicle IV and V descriptions, says they tell vampire stories as Storyteller for Cainite Chronicles. It does not list which chronicles."
+      - tier: community
+        url: https://github.com/jazzsequence/apdb/issues/40
+        note: "Reported in issue #40: game master, credited on screen as \"Storyteller JD\"."
+  - show: cainite-chronicles
+    season: 5
+    role: GM/DM
+    alias: storyteller-jd
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=iPleqEVlYSE
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle V Act I\". The list gives no roles."
+      - tier: reference
+        url: https://bsky.app/profile/jdgunderson.bsky.social
+        note: "JD Gunderson's own profile, linked from the Chronicle IV and V descriptions, says they tell vampire stories as Storyteller for Cainite Chronicles. It does not list which chronicles."
+      - tier: community
+        url: https://github.com/jazzsequence/apdb/issues/40
+        note: "Reported in issue #40: game master, credited on screen as \"Storyteller JD\"."
+  - show: cainite-chronicles
+    season: 6
+    role: GM/DM
+    alias: storyteller-jd
+    sources:
+      - tier: official
+        url: https://www.youtube.com/channel/UC14ohOJWPboVbOhXq9GMWhQ
+        note: "Issue #40 cites the production's channel for this season. No sixth chronicle was visible there when checked."
+      - tier: community
+        url: https://github.com/jazzsequence/apdb/issues/40
+        note: "Reported in issue #40: game master, credited on screen as \"Storyteller JD\"."

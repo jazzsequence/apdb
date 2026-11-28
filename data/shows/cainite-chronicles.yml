@@ -1,0 +1,45 @@
+id: cainite-chronicles
+title: Cainite Chronicles
+channels:
+  - cainite-chronicles-productions
+format: video
+status: ongoing
+description: "Short Vampire: The Masquerade stories set across history. Proceeds go to No Kid Hungry."
+links:
+  youtube: https://www.youtube.com/channel/UC14ohOJWPboVbOhXq9GMWhQ
+seasons:
+  - ordinal: 1
+    title: Chronicle I
+    game: vampire-the-masquerade-v5
+    episode_count: 3
+    links:
+      website: https://www.youtube.com/playlist?list=PL1EU-Qgg8oREeVvNMxzypiPl09SeFO2de
+  - ordinal: 2
+    title: Chronicle II
+    game: vampire-the-masquerade-v5
+    episode_count: 3
+    links:
+      website: https://www.youtube.com/playlist?list=PL1EU-Qgg8oRFNbXpyk9Ewr8NTGgSpq9Qi
+  - ordinal: 3
+    title: Chronicle III
+    game: vampire-the-masquerade-v5
+    episode_count: 5
+    description: "Includes the Vampire: The Masquerade Bloodhunt one-shot."
+    links:
+      website: https://www.youtube.com/playlist?list=PL1EU-Qgg8oRHNguIl1rKbYaungzhEUagK
+  - ordinal: 4
+    title: Chronicle IV
+    game: vampire-the-masquerade-v5
+    episode_count: 4
+    links:
+      website: https://www.youtube.com/playlist?list=PL1EU-Qgg8oREo4VxgzJmn-XPvedytvq6n
+  - ordinal: 5
+    title: Chronicle V
+    game: vampire-the-masquerade-v5
+    episode_count: 4
+    links:
+      website: https://www.youtube.com/playlist?list=PLFH3-H45O2eU
+  # Reported in issue #40. No sixth chronicle was on the YouTube channel when
+  # this was filed, so it has no title, playlist or episode count.
+  - ordinal: 6
+    game: vampire-the-masquerade-v5

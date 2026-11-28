@@ -1,0 +1,28 @@
+# Billed "Ari" in Chronicle IV, where the description links the name to aureliacrane.bsky.social.
+id: aurelia-crane
+canonical_name: Aurelia Crane
+sort_name: Crane, Aurelia
+aliases:
+  - id: default
+    name: Aurelia Crane
+    alias_type: legal
+  - id: ari
+    name: Ari
+    alias_type: stage
+credits:
+  - show: cainite-chronicles
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=vWQYkM7aIz4
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle II - Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."
+  - show: cainite-chronicles
+    season: 4
+    role: player
+    alias: ari
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=sEEMF9hDxDY
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle IV Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."

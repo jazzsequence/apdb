@@ -1,0 +1,24 @@
+id: cieje-laraek
+canonical_name: Cieje Laraek
+sort_name: Laraek, Cieje
+aliases:
+  - id: default
+    name: Cieje Laraek
+    alias_type: legal
+credits:
+  - show: cainite-chronicles
+    season: 1
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=5m7TsCufi1k
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle I - Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."
+  - show: cainite-chronicles
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=iPleqEVlYSE
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle V Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."
