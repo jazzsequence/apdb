@@ -18,6 +18,7 @@ import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { upsertCredit } from '../src/lib/credits.js';
+import { mergePortrait } from '../src/lib/merge-portrait.js';
 
 const args = process.argv.slice(2);
 const AUTO = args.includes('--auto');
@@ -48,6 +49,8 @@ async function merge(fromId: string, intoId: string): Promise<number> {
     if (into.aliases.some((x: any) => x.name.toLowerCase() === a.name.toLowerCase())) continue;
     into.aliases.push({ ...a, id: aliasId(a.name) });
   }
+
+  mergePortrait(into, from);
 
   // Carry credits across through the same merge every importer uses.
   //

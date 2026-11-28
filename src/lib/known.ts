@@ -18,6 +18,17 @@ export async function knownCatalogue() {
   const capture = (re: RegExp) => new Set([...text.matchAll(re)].map((m) => m[1]!.toLowerCase()));
   return {
     archiveItems: capture(/archive\.org\/details\/([^"\\/?# ]+)/g),
+    /** Each of those, with the latest date recorded for a show linking to it. */
+    get archiveDates(): Map<string, string | undefined> {
+      const dates = new Map<string, string | undefined>([...this.archiveItems].map((i) => [i, undefined]));
+      for (const show of dataset.shows) {
+        const item = String(show.links?.website ?? '').match(/archive\.org\/details\/([^/?#]+)/)?.[1]?.toLowerCase();
+        if (!item) continue;
+        const latest = show.seasons.map((s) => s.ended ?? s.started).filter(Boolean).sort().pop();
+        dates.set(item, [dates.get(item), latest].filter(Boolean).sort().pop());
+      }
+      return dates;
+    },
     playlists: capture(/[?&]list=([\w-]+)/g),
     titles: new Set(
       [

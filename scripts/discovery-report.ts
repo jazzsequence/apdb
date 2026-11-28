@@ -71,11 +71,18 @@ const wikipediaUrl = (link: string) =>
 // Person-first
 // ---------------------------------------------------------------------------
 const personJson = flag('person');
+// A sweep killed mid-write leaves half a file. The rest of the report still
+// has to be written.
+let sweep: { reports: PersonReport[]; unswept?: number } | undefined;
 if (personJson && existsSync(personJson)) {
-  const { reports, unswept = 0 } = JSON.parse(await readFile(personJson, 'utf8')) as {
-    reports: PersonReport[];
-    unswept?: number;
-  };
+  try {
+    sweep = JSON.parse(await readFile(personJson, 'utf8'));
+  } catch (error) {
+    lines.push('## Person-first sweep', '', `Its results could not be read: ${(error as Error).message}`, '');
+  }
+}
+if (sweep) {
+  const { reports, unswept = 0 } = sweep;
 
   const missingShows: Array<{ person: string; c: Candidate }> = [];
   const missingCredits: Array<{ person: string; c: Candidate }> = [];

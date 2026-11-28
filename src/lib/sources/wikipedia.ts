@@ -30,6 +30,7 @@
  * to check against something closer to the fact.
  */
 
+import { realCharacter } from '../credits.js';
 import { politeFetch } from './http.js';
 
 const API = 'https://en.wikipedia.org/w/api.php';
@@ -412,11 +413,13 @@ function roleFromSentence(sentence: string): string | undefined {
 }
 
 /** "playing as Margot "Fuego" Walker" / "acting as Laura Bennett". */
-function characterFromSentence(sentence: string): string | undefined {
+export function characterFromSentence(sentence: string): string | undefined {
+  // "played X" is as often a game or a show as a character, so playing needs
+  // "as". Only "portrayed" names a character on its own.
   const match = sentence.match(
-    /\b(?:playing|played|plays|portraying|portrayed|acting|appearing)\s+(?:as\s+)?([A-Z][^.,;:]{1,60}?)(?=[.,;:]|\s+(?:in|on|for|before|since|during|and)\b)/,
+    /\b(?:(?:playing|played|plays|acting|appearing)\s+as\s+|(?:portraying|portrayed)\s+(?:as\s+)?)([A-Z][^.,;:]{1,60}?)(?=[.,;:]|\s+(?:in|on|for|before|since|during|and)\b)/,
   );
-  const value = match?.[1]?.trim();
+  const value = realCharacter(match?.[1]);
   if (!value || /^(a|an|the|as|herself|himself|themselves)\b/i.test(value)) return undefined;
   return value;
 }

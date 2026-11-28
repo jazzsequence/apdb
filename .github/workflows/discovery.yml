@@ -75,6 +75,18 @@ jobs:
 
       - run: mkdir -p out
 
+      # A broken rule does not stop the sweep, but it marks the run failed.
+      - name: Test the importers
+        id: tests
+        continue-on-error: true
+        run: npm test
+
+      # The baseline, so the report can say what this run introduced.
+      - name: Audit before importing
+        id: audit_before
+        continue-on-error: true
+        run: scripts/audit-snapshot.sh out/audit-before.md
+
       # Each pass is allowed to fail on its own. One rate-limited source should
       # cost its own section of the report, not the whole week's sweep.
       # --apply, but a strictly additive one. Wikipedia may add a credit the
@@ -85,36 +97,53 @@ jobs:
       # or create a person. Anything whose show or role does not resolve is
       # left in the report rather than guessed at.
       - name: Person-first sweep (Wikipedia + Wikidata)
+        id: person
         continue-on-error: true
         # The script stops itself first and keeps its results; the step limit
         # is only for a request that hangs.
         timeout-minutes: 50
         run: |
+          set -o pipefail
           npm run discover:person -- \
             ${{ inputs.people && format('--limit {0}', inputs.people) || '--all' }} \
             --max-minutes 40 --apply --json out/person-sweep.json | tee out/person.log
+
+      - name: Keep or discard — person sweep
+        run: scripts/checkpoint.sh "person sweep"
 
       # Imports, not dry runs. These write shows, channels and credits into
       # data/, and every record they write carries the source it came from —
       # archive.org item metadata, or the production's own video description.
       - name: Internet Archive — import shows
+        id: archive
         continue-on-error: true
         timeout-minutes: 20
         run: npm run import:archive > out/archive.log 2>&1
 
+      - name: Keep or discard — Internet Archive shows
+        run: scripts/checkpoint.sh "Internet Archive shows"
+
       # Casts from the uploader's own item description: `official` tier.
       - name: Internet Archive — import casts
+        id: archive_casts
         continue-on-error: true
         timeout-minutes: 20
         run: npm run import:archive-casts > out/archive-casts.log 2>&1
 
+      - name: Keep or discard — Internet Archive casts
+        run: scripts/checkpoint.sh "Internet Archive casts"
+
       # No key, no pass — and no keyless fallback, because scraping around
       # YouTube's API breaches their terms (see the source registry).
       - name: YouTube — import shows
+        id: youtube_shows
         continue-on-error: true
         timeout-minutes: 25
         if: env.YOUTUBE_API_KEY != ''
         run: npm run sweep:youtube -- --castable-out out/castable.tsv > out/youtube-shows.log 2>&1
+
+      - name: Keep or discard — YouTube shows
+        run: scripts/checkpoint.sh "YouTube shows"
 
       # sweep:youtube catalogues a show but leaves its cast alone. It writes
       # every playlist whose descriptions are readable to a TSV — read that
@@ -124,6 +153,7 @@ jobs:
       # episode is the strongest cast source there is, which is why they land as
       # `official` tier rather than `community`.
       - name: YouTube — import casts for the shows it just found
+        id: youtube_casts
         continue-on-error: true
         timeout-minutes: 25
         if: env.YOUTUBE_API_KEY != ''
@@ -139,17 +169,28 @@ jobs:
             # One bad playlist must not abandon the rest of the queue.
             npm run collect -- --youtube --playlist "$playlist" \
               --show "$show" --season 1 --apply >> out/youtube-casts.log 2>&1 \
-              || echo "    failed, continuing"
+              || echo "YouTube cast import failed for $show." | tee -a out/discarded.log
+            # Per playlist, so one bad cast does not discard the others.
+            scripts/checkpoint.sh "YouTube cast for $show"
           done < out/castable.tsv
+
+      # Covers a step stopped by its time limit partway through a playlist.
+      - name: Keep or discard — YouTube casts
+        run: scripts/checkpoint.sh "YouTube casts"
 
       # Art and portraits for whatever the imports above created. Writes one
       # file at a time, so running out of time keeps what it already fetched.
       - name: Fetch missing images
+        id: images
         continue-on-error: true
         timeout-minutes: 15
         run: npm run fetch:images > out/images.log 2>&1
 
+      - name: Keep or discard — images
+        run: scripts/checkpoint.sh "images"
+
       - name: YouTube — report channels not yet catalogued
+        id: youtube_channels
         continue-on-error: true
         timeout-minutes: 10
         if: env.YOUTUBE_API_KEY != ''
@@ -161,15 +202,23 @@ jobs:
       # stay invisible until someone opens a particular person's page —
       # fourteen CelebriD&D people sat double-credited for months.
       #
-      # Not continue-on-error: this is the data change the PR exists to carry,
-      # so a failure here should fail the run rather than quietly open a PR
-      # that folds nothing.
+      # A failed fold is discarded like any other step: the imports still reach
+      # the pull request, and the run is marked failed at the end.
       - name: Fold duplicate credits
-        run: npm run dedupe | tee out/dedupe.log
+        id: fold
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          npm run dedupe | tee out/dedupe.log
+
+      - name: Keep or discard — duplicate fold
+        run: scripts/checkpoint.sh "duplicate fold"
 
       # The safety net that replaces validate.yml, which will not run on this
       # PR. Schema, referential integrity, id uniqueness — the same gate every
-      # human PR passes. If this fails, nothing is pushed.
+      # human PR passes. Each step's output was already checked on its own, so
+      # this fails only if the checked-out data was invalid to begin with, and
+      # then nothing may be pushed.
       - name: Validate the folded data
         run: npm run validate
 
@@ -177,12 +226,29 @@ jobs:
       # find something, the merge rule is not converging and the fold above is
       # not trustworthy.
       - name: Confirm the fold converged
+        id: converged
+        continue-on-error: true
         run: npm run dedupe -- --check
 
+      # Heuristic checks that validation does not make. The catalogue carries
+      # known findings, so only new ones are listed, and they do not fail the
+      # run: they are for whoever reviews the pull request.
+      - name: Audit the result
+        id: audit
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          scripts/audit-snapshot.sh out/audit-after.md
+          npm run -s audit:new -- out/audit-before.md out/audit-after.md | tee out/audit.log
+
       - name: Build the report
+        id: report
+        continue-on-error: true
         run: |
           npm run report:discovery -- \
             --person out/person-sweep.json \
+            --log "Discarded or failed:out/discarded.log" \
+            --log "Audit findings new in this run:out/audit.log" \
             --log "YouTube channels not yet catalogued:out/youtube.log" \
             --log "YouTube series imported or held:out/youtube-shows.log" \
             --log "Internet Archive series held:out/archive.log" \
@@ -233,7 +299,9 @@ jobs:
       # readable artifact. Ninety days of retention is longer than a candidate
       # queue stays interesting.
       - name: Upload the raw sweep
+        id: upload
         if: always()
+        continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: discovery-sweep-${{ github.run_id }}
@@ -279,7 +347,9 @@ jobs:
           # disturbing them.
           git checkout -B "$BRANCH"
 
-          git add data/ reports/
+          git add data/
+          # Absent if the report step failed on a first run.
+          if [ -d reports ]; then git add reports/; fi
           if git diff --cached --quiet; then
             echo "Nothing to push — no duplicates to fold and the report is unchanged."
             exit 0
@@ -299,8 +369,8 @@ jobs:
           the Internet Archive passes, and the production's own video description for
           the YouTube ones, which is why those credits are official tier.
 
-          Validated inside the run — schema, referential integrity and a second dedupe
-          pass — because a PR opened with GITHUB_TOKEN does not trigger validate.yml.
+          Validated inside the run, because a PR opened with GITHUB_TOKEN does not
+          trigger validate.yml.
 
           Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           git push --force-with-lease origin "$BRANCH"
@@ -334,7 +404,8 @@ jobs:
           **Check every portrait.** They are fetched automatically, some under a
           fair-use claim, and a matching name or ID does not prove the photo is of
           the right person. To reject one, delete its `image` block and set
-          `no_auto_image: true`.
+          `no_auto_image: true` on this branch, and merge before the next run.
+          If the person already exists on `main`, make the edit there as well.
 
           Every record carries the source it was built from, on the record itself:
 
@@ -349,17 +420,22 @@ jobs:
 
           > **`validate.yml` does not run on this PR** — a PR opened with `GITHUB_TOKEN`
           > does not trigger other workflows. The job validated its own output instead:
-          > schema, referential integrity, id uniqueness and a second dedupe pass. It
-          > refuses to push if any of that fails, so this is the only gate the change
-          > gets.
+          > schema, referential integrity and id uniqueness, after each import step.
+          > A step whose output failed was discarded on its own. This is the only
+          > gate the change gets.
+
+          Check the run for failed steps, and "Discarded or failed" in the report:
+          the PR carries whatever succeeded. "Audit findings new in this run" lists
+          records worth a second look.
 
           `reports/discovery-latest.md` is attached for the leads that could **not** be
           imported automatically — anything whose show, season or role could not be
           resolved from a source without guessing. It is reference material, not a
           to-do list you are expected to work through.
 
-          The branch is rebuilt from `main` and force-pushed every run, so push fixes to
-          `main` rather than onto this branch.
+          The branch is rebuilt from `main` and force-pushed every run (Mondays, or
+          by hand), which discards anything pushed here and not yet merged. Fixes
+          to records already on `main` belong on `main`.
 
           🤖 Generated with [Claude Code](https://claude.com/claude-code)
           BODY
@@ -376,3 +452,20 @@ jobs:
             echo "  ${{ github.server_url }}/${{ github.repository }}/compare/$BRANCH?expand=1"
             exit 1
           fi
+
+      # Last, so it cannot stop anything. A step that failed quietly every week
+      # is how an importer stays broken unnoticed.
+      - name: Flag failed or discarded work
+        if: always()
+        env:
+          STEPS: ${{ toJSON(steps) }}
+        run: |
+          failed=$(echo "$STEPS" | jq -r 'to_entries[] | select(.value.outcome == "failure") | .key')
+          if [ -n "$failed" ]; then
+            echo "::error::Failed steps: $(echo $failed)"
+          fi
+          if [ -s out/discarded.log ]; then
+            cat out/discarded.log
+            echo "::error::Some output was discarded or failed. Anything that succeeded was kept."
+          fi
+          [ -z "$failed" ] && [ ! -s out/discarded.log ]

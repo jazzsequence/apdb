@@ -7,6 +7,6 @@
       "@lib/*": ["src/lib/*"]
     }
   },
-  "include": ["src/**/*", "scripts/**/*"],
+  "include": ["src/**/*", "scripts/**/*", "tests/**/*"],
   "exclude": ["dist", "node_modules"]
 }

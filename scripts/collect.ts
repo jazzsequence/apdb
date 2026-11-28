@@ -540,52 +540,57 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   // One person can appear twice (two roles), so build records before writing.
   const records = new Map<string, Person>();
   for (const v of found.values()) {
-    const name = v.name;
-    const match = matcher.match(name, slugify(name), showId);
-    if (match.kind === 'held') {
-      console.log(`    held "${name}" — ${match.reason}`);
-      continue;
+    try {
+      const name = v.name;
+      const match = matcher.match(name, slugify(name), showId);
+      if (match.kind === 'held') {
+        console.log(`    held "${name}" — ${match.reason}`);
+        continue;
+      }
+      const existing = match.kind === 'existing' ? match.person : undefined;
+      const id = existing?.id ?? slugify(name);
+      // Edit the file as written, not the loaded copy, so a rewrite changes only
+      // what this import adds.
+      const base: Person =
+        records.get(id) ??
+        (existing
+          ? (parseYaml(await readFile(join(DATA_ROOT, 'people', `${id}.yml`), 'utf8')) as Person)
+          : {
+          id,
+          canonical_name: name,
+          sort_name: sortName(name),
+          aliases: [{ id: 'default', name, alias_type: name.includes(' ') ? 'legal' : 'handle' }],
+          credits: [],
+        } as unknown as Person);
+      const credit = {
+        show: showId,
+        ...(season !== undefined ? { season } : {}),
+        role: v.role as CreditRole,
+        ...(v.character ? { character: v.character } : {}),
+        ...(base.aliases.length === 1 ? { alias: base.aliases[0]!.id } : {}),
+        ...(v.role.startsWith('guest') ? { note: GUEST_NOTE } : {}),
+        sources: [
+          {
+            tier: 'official' as const,
+            url: v.url,
+            note: `Cast per the production's own description of "${v.title}".`,
+          },
+        ],
+      };
+      const checked = Credit.safeParse(credit);
+      if (!checked.success) {
+        console.log(`    held "${name}" — ${checked.error.issues[0]?.message}`);
+        continue;
+      }
+      const result = upsertCredit((base.credits ?? []) as Person['credits'], credit as Person['credits'][number], {
+        explicitRole: true,
+      });
+      if (result.outcome === 'already-cited') continue;
+      records.set(id, { ...base, credits: result.credits } as Person);
+    } catch (error) {
+      // One failure costs this item, not the ones after it.
+      console.error(`    held "${v.name}" — ${(error as Error).message}`);
     }
-    const existing = match.kind === 'existing' ? match.person : undefined;
-    const id = existing?.id ?? slugify(name);
-    // Edit the file as written, not the loaded copy, so a rewrite changes only
-    // what this import adds.
-    const base: Person =
-      records.get(id) ??
-      (existing
-        ? (parseYaml(await readFile(join(DATA_ROOT, 'people', `${id}.yml`), 'utf8')) as Person)
-        : {
-        id,
-        canonical_name: name,
-        sort_name: sortName(name),
-        aliases: [{ id: 'default', name, alias_type: name.includes(' ') ? 'legal' : 'handle' }],
-        credits: [],
-      } as unknown as Person);
-    const credit = {
-      show: showId,
-      ...(season !== undefined ? { season } : {}),
-      role: v.role as CreditRole,
-      ...(v.character ? { character: v.character } : {}),
-      ...(base.aliases.length === 1 ? { alias: base.aliases[0]!.id } : {}),
-      ...(v.role.startsWith('guest') ? { note: GUEST_NOTE } : {}),
-      sources: [
-        {
-          tier: 'official' as const,
-          url: v.url,
-          note: `Cast per the production's own description of "${v.title}".`,
-        },
-      ],
-    };
-    const checked = Credit.safeParse(credit);
-    if (!checked.success) {
-      console.log(`    held "${name}" — ${checked.error.issues[0]?.message}`);
-      continue;
-    }
-    const result = upsertCredit((base.credits ?? []) as Person['credits'], credit as Person['credits'][number], {
-      explicitRole: true,
-    });
-    if (result.outcome === 'already-cited') continue;
-    records.set(id, { ...base, credits: result.credits } as Person);
   }
 
   let written = 0;

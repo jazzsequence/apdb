@@ -249,8 +249,9 @@ A rejected portrait is removed and the record marked `no_auto_image: true`, so
 the next run does not fetch it again.
 
 Neither source is searched by name alone. Wikidata is consulted only through a
-QID already on the person's record, and a wiki image is only taken when its file
-is named after the person (a one-word name must be the whole filename), because a page's lead image is often character art.
+QID already on the person's record. A wiki image is only taken when its filename
+is the person's name, apart from numbers and words such as "portrait", because a
+page's lead image is often character art.
 
 A person is only ever looked up on a wiki their own credits cite, so a name is
 never resolved against a wiki with nothing to do with them. A one-word name is

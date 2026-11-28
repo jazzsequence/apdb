@@ -251,7 +251,10 @@ export function upsertCredit(
   const merged: Credit = {
     ...match,
     character: match.character ?? incoming.character,
-    note: match.note ?? incoming.note,
+    // A guest's note says nothing true about a regular or GM credit.
+    note:
+      match.note ??
+      (incoming.note === GUEST_NOTE && !match.role.startsWith('guest') ? undefined : incoming.note),
     sources: [...match.sources, ...newSources],
   };
   if (merged.character === undefined) delete (merged as Partial<Credit>).character;

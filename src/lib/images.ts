@@ -65,9 +65,16 @@ export async function fetchSeriesArt(): Promise<number> {
   for (let i = 0; i < wanted.length; i += 50) {
     const batch = wanted.slice(i, i + 50);
     const q = new URLSearchParams({ part: 'snippet', id: batch.map((b) => b.playlistId).join(','), key });
-    const r = await fetch(`https://www.googleapis.com/youtube/v3/playlists?${q}`);
-    if (!r.ok) break;
-    const data: any = await r.json();
+    // Art is optional: a dropped connection skips the batch, not the run.
+    let data: any;
+    try {
+      const r = await fetch(`https://www.googleapis.com/youtube/v3/playlists?${q}`);
+      if (!r.ok) throw new Error(`YouTube ${r.status}`);
+      data = await r.json();
+    } catch (error) {
+      console.error(`  series art request failed: ${(error as Error).message}`);
+      continue;
+    }
 
     const thumbs = new Map<string, string>();
     for (const item of data.items ?? []) {
@@ -303,26 +310,22 @@ async function wikiPageImage(
   }
 }
 
+/** Words a filename may add to a name without changing whose picture it is. */
+const PORTRAIT_WORDS = new Set(['portrait', 'headshot', 'photo', 'profile', 'cropped', 'crop', 'avatar', 'pfp']);
+
 /**
  * A page's lead image is often character art. Only a file named after the
- * person is taken as a picture of them: every part of a full name, or a
- * filename that is nothing but a one-word one. One shared word ("the", a first
- * name) proves nothing.
+ * person is taken as a picture of them: the name and nothing else, apart from
+ * numbers and a few words like "portrait". Anything more may be a group shot, a
+ * logo, a character or another person whose name contains this one.
  */
 export function fileNamesPerson(file: string, names: string[]): boolean {
   const norm = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const split = (v: string) => norm(v).split(/[^a-z0-9]+/).filter(Boolean);
-  const stem = split(file.replace(/\.[a-z0-9]{2,4}$/i, ''));
-  const words = new Set(stem);
-  const joined = stem.join('');
-  // "Skid_2.png" is still a file named Skid.
-  const bare = stem.filter((w) => !/^\d+$/.test(w)).join('');
-  return names.some((name) => {
-    const parts = split(name);
-    if (parts.length === 0) return false;
-    if (parts.length === 1) return bare === parts[0];
-    return parts.every((p) => words.has(p)) || joined.includes(parts.join(''));
-  });
+  const bare = split(file.replace(/\.[a-z0-9]{2,4}$/i, ''))
+    .filter((w) => !/^\d+$/.test(w) && !PORTRAIT_WORDS.has(w))
+    .join('');
+  return bare !== '' && names.some((name) => split(name).join('') === bare);
 }
 
 /** Wikis this person's own credits cite, most-cited first. */

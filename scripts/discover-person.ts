@@ -40,6 +40,7 @@ import { fetchPerson, fetchWorks } from '../src/lib/sources/wikidata.js';
 import { fetchPersonWorks, fetchWorkFacts, parseWorks, type WikiWork } from '../src/lib/sources/wikipedia.js';
 import { classify, type Verdict } from '../src/lib/sources/actual-play.js';
 import { assertCleared } from '../src/lib/sources/registry.js';
+import { rotateForWeek } from '../src/lib/rotation.js';
 import { ambiguousClaim, excerpt, GUEST_NOTE, startYear, statedRole, upsertCredit } from '../src/lib/credits.js';
 import { Credit as CreditSchema, Person as PersonSchema, type Credit, type Person, type Show } from '../src/lib/schema.js';
 
@@ -161,12 +162,10 @@ if (!(maxMinutes > 0)) {
   console.error('--max-minutes needs a number above zero.');
   process.exit(1);
 }
-// A run that stops on time reads only the front of the queue, so each week
-// starts a quarter further along. Covering a quarter per run reaches everyone.
 if (Number.isFinite(maxMinutes) && !flag('limit') && !wanted) {
   targets.sort((a, b) => a.person.id.localeCompare(b.person.id));
   const week = Math.floor(Date.now() / (7 * 86_400_000));
-  targets.push(...targets.splice(0, (week % 4) * Math.ceil(targets.length / 4)));
+  targets.splice(0, targets.length, ...rotateForWeek(targets, week));
 }
 
 const limit = Number(flag('limit') ?? (has('all') || wanted ? targets.length : 25));
@@ -384,73 +383,78 @@ if (!has('apply')) {
   const heldBack: string[] = [];
 
   for (const report of reports) {
-    const target = targets.find((t) => t.person.id === report.person);
-    if (!target || !report.wikipedia) continue;
+    try {
+      const target = targets.find((t) => t.person.id === report.person);
+      if (!target || !report.wikipedia) continue;
 
-    const path = join(DATA_ROOT, 'people', `${report.person}.yml`);
-    const record = parse(await readFile(path, 'utf8'));
-    let credits: Credit[] = record.credits ?? [];
-    // Counted only once the file is written.
-    const filed: Array<{ candidate: Candidate; outcome: 'added' | 'corroborated' }> = [];
+      const path = join(DATA_ROOT, 'people', `${report.person}.yml`);
+      const record = parse(await readFile(path, 'utf8'));
+      let credits: Credit[] = record.credits ?? [];
+      // Counted only once the file is written.
+      const filed: Array<{ candidate: Candidate; outcome: 'added' | 'corroborated' }> = [];
 
-    for (const candidate of report.candidates) {
-      if (candidate.verdict !== 'actual-play') continue;
-      if (!candidate.show) { skippedNoShow++; continue; }
-      const role = statedRole(candidate.role);
-      if (!role) { skippedNoRole++; continue; }
-      const seasonCount = shows.find((s) => s.id === candidate.show)?.seasons?.length ?? 0;
-      const claim = { show: candidate.show, season: candidate.season, role };
-      const ambiguity = ambiguousClaim(credits, claim, seasonCount);
-      if (ambiguity) {
-        skippedAmbiguous++;
-        heldBack.push(`${report.person}: ${candidate.show} as ${role} — ${ambiguity}`);
-        continue;
+      for (const candidate of report.candidates) {
+        if (candidate.verdict !== 'actual-play') continue;
+        if (!candidate.show) { skippedNoShow++; continue; }
+        const role = statedRole(candidate.role);
+        if (!role) { skippedNoRole++; continue; }
+        const seasonCount = shows.find((s) => s.id === candidate.show)?.seasons?.length ?? 0;
+        const claim = { show: candidate.show, season: candidate.season, role };
+        const ambiguity = ambiguousClaim(credits, claim, seasonCount);
+        if (ambiguity) {
+          skippedAmbiguous++;
+          heldBack.push(`${report.person}: ${candidate.show} as ${role} — ${ambiguity}`);
+          continue;
+        }
+        const year = startYear(candidate.year);
+
+        const incoming = {
+          show: candidate.show,
+          ...(candidate.season !== undefined ? { season: candidate.season } : {}),
+          role,
+          ...(candidate.character ? { character: candidate.character } : {}),
+          ...(year ? { year } : {}),
+          ...(role.startsWith('guest') ? { note: GUEST_NOTE } : {}),
+          sources: [
+            {
+              tier: 'reference' as const,
+              url: report.wikipedia,
+              note:
+                `Wikipedia's article on ${record.canonical_name}` +
+                (candidate.evidence ? `: "${excerpt(candidate.evidence)}"` : '.'),
+            },
+          ],
+        } as Credit;
+
+        // One bad credit must not cost the person their good ones.
+        const checked = CreditSchema.safeParse(incoming);
+        if (!checked.success) {
+          heldBack.push(`${report.person}: ${candidate.show} — ${checked.error.issues[0]?.message}`);
+          continue;
+        }
+
+        const result = upsertCredit(credits, incoming, { explicitRole: true });
+        if (result.outcome === 'already-cited') continue;
+        credits = result.credits;
+        filed.push({ candidate, outcome: result.outcome });
       }
-      const year = startYear(candidate.year);
 
-      const incoming = {
-        show: candidate.show,
-        ...(candidate.season !== undefined ? { season: candidate.season } : {}),
-        role,
-        ...(candidate.character ? { character: candidate.character } : {}),
-        ...(year ? { year } : {}),
-        ...(role.startsWith('guest') ? { note: GUEST_NOTE } : {}),
-        sources: [
-          {
-            tier: 'reference' as const,
-            url: report.wikipedia,
-            note:
-              `Wikipedia's article on ${record.canonical_name}` +
-              (candidate.evidence ? `: "${excerpt(candidate.evidence)}"` : '.'),
-          },
-        ],
-      } as Credit;
-
-      // One bad credit must not cost the person their good ones.
-      const checked = CreditSchema.safeParse(incoming);
-      if (!checked.success) {
-        heldBack.push(`${report.person}: ${candidate.show} — ${checked.error.issues[0]?.message}`);
-        continue;
+      if (filed.length > 0) {
+        record.credits = credits;
+        const parsed = PersonSchema.safeParse(record);
+        if (!parsed.success) {
+          console.error(`  ✗ ${report.person} would not validate, left unchanged: ${parsed.error.issues[0]?.message}`);
+          continue;
+        }
+        await writeFile(path, stringify(record), 'utf8');
+        for (const { candidate, outcome } of filed) {
+          candidate.applied = true;
+          outcome === 'added' ? added++ : corroborated++;
+        }
       }
-
-      const result = upsertCredit(credits, incoming, { explicitRole: true });
-      if (result.outcome === 'already-cited') continue;
-      credits = result.credits;
-      filed.push({ candidate, outcome: result.outcome });
-    }
-
-    if (filed.length > 0) {
-      record.credits = credits;
-      const parsed = PersonSchema.safeParse(record);
-      if (!parsed.success) {
-        console.error(`  ✗ ${report.person} would not validate, left unchanged: ${parsed.error.issues[0]?.message}`);
-        continue;
-      }
-      await writeFile(path, stringify(record), 'utf8');
-      for (const { candidate, outcome } of filed) {
-        candidate.applied = true;
-        outcome === 'added' ? added++ : corroborated++;
-      }
+    } catch (error) {
+      // One unreadable record costs that person, not everyone after them.
+      console.error(`  ✗ ${report.person}: ${(error as Error).message}`);
     }
   }
 

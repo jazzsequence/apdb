@@ -32,7 +32,9 @@ def get(base, **params):
         except urllib.error.HTTPError as error:
             if error.code != 429 or attempt == 4:
                 raise
-            time.sleep(min(int(error.headers.get('Retry-After') or 30), 60))
+            wait = error.headers.get('Retry-After') or ''
+            # The header may be a date rather than a number of seconds.
+            time.sleep(min(int(wait) if wait.isdigit() else 30, 60))
 
 
 def clean(value):
@@ -117,5 +119,6 @@ for person in sys.argv[1:]:
         print('  same name on Wikidata:')
         for hit in hits.get('search', []):
             print(f"    {hit['id']}: {hit.get('description')}")
-    except (OSError, urllib.error.URLError, KeyError, AttributeError) as error:
+    # ValueError covers a reply that is not JSON.
+    except (OSError, KeyError, AttributeError, IndexError, ValueError) as error:
         print(f'  lookup failed: {error}')

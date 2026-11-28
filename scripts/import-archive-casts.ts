@@ -58,69 +58,74 @@ console.log(`\n${targets.length} credit-less show(s) link to an Internet Archive
 let filled = 0, added = 0, corroborated = 0, created = 0, none = 0;
 
 for (const t of targets) {
-  let desc = '';
   try {
-    const r = await fetch(`https://archive.org/metadata/${t.identifier}`, {
-      headers: { 'User-Agent': UA },
-      signal: AbortSignal.timeout(15000),
-    });
-    if (!r.ok) { none++; continue; }
-    const data = await r.json();
-    const raw = data?.metadata?.description ?? '';
-    const html = Array.isArray(raw) ? raw[0] : raw;
-    desc = String(html)
-      .replace(/<br\s*\/?>|<\/p>|<\/div>/gi, '\n')
-      .replace(/<[^>]+>/g, '')
-      .replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ');
-  } catch {
-    none++;
-    continue;
-  }
-
-  const cast = castFromArchiveDescription(desc);
-  if (cast.length < 2) { none++; continue; }
-
-  filled++;
-  console.log(`✓ ${t.title.slice(0, 44).padEnd(44)} ${cast.length} name(s)`);
-  if (DRY) {
-    for (const c of cast) console.log(`      ${c.role.padEnd(9)} ${c.name}${c.character ? ` as ${c.character}` : ''}`);
-    continue;
-  }
-
-  const source = {
-    tier: 'official' as const,
-    url: `https://archive.org/details/${t.identifier}`,
-    note: "Cast stated in the item's own description on the Internet Archive.",
-  };
-  for (const c of cast) {
-    if (!slug(c.name)) continue;
-    const match = matcher.match(c.name, slug(c.name), t.id);
-    if (match.kind === 'held') {
-      console.log(`    held "${c.name}" — ${match.reason}`);
+    let desc = '';
+    try {
+      const r = await fetch(`https://archive.org/metadata/${t.identifier}`, {
+        headers: { 'User-Agent': UA },
+        signal: AbortSignal.timeout(15000),
+      });
+      if (!r.ok) { none++; continue; }
+      const data = await r.json();
+      const raw = data?.metadata?.description ?? '';
+      const html = Array.isArray(raw) ? raw[0] : raw;
+      desc = String(html)
+        .replace(/<br\s*\/?>|<\/p>|<\/div>/gi, '\n')
+        .replace(/<[^>]+>/g, '')
+        .replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ');
+    } catch {
+      none++;
       continue;
     }
-    const id = match.kind === 'existing' ? match.person.id : match.id;
-    const path = join(DATA_ROOT, 'people', `${id}.yml`);
-    let person: any;
-    try { person = parse(await readFile(path, 'utf8')); }
-    catch {
-      person = { id, canonical_name: c.name, sort_name: c.name.includes(' ') ? sortName(c.name) : c.name,
-        aliases: [{ id: 'default', name: c.name, alias_type: c.name.includes(' ') ? 'legal' : 'handle' }], credits: [] };
-      created++;
-    }
-    const credit: any = { show: t.id, role: c.role, sources: [source] };
-    if (t.seasons === 1) credit.season = 1;
-    if (c.character) credit.character = c.character;
-    if (person.aliases?.length === 1) credit.alias = person.aliases[0].id;
 
-    const result = upsertCredit(person.credits ??= [], credit);
-    if (result.outcome === 'already-cited') continue;
-    person.credits = result.credits;
-    await writeFile(path, stringify(person), 'utf8');
-    result.outcome === 'corroborated' ? corroborated++ : added++;
-    matcher.add(person);
+    const cast = castFromArchiveDescription(desc);
+    if (cast.length < 2) { none++; continue; }
+
+    filled++;
+    console.log(`✓ ${t.title.slice(0, 44).padEnd(44)} ${cast.length} name(s)`);
+    if (DRY) {
+      for (const c of cast) console.log(`      ${c.role.padEnd(9)} ${c.name}${c.character ? ` as ${c.character}` : ''}`);
+      continue;
+    }
+
+    const source = {
+      tier: 'official' as const,
+      url: `https://archive.org/details/${t.identifier}`,
+      note: "Cast stated in the item's own description on the Internet Archive.",
+    };
+    for (const c of cast) {
+      if (!slug(c.name)) continue;
+      const match = matcher.match(c.name, slug(c.name), t.id);
+      if (match.kind === 'held') {
+        console.log(`    held "${c.name}" — ${match.reason}`);
+        continue;
+      }
+      const id = match.kind === 'existing' ? match.person.id : match.id;
+      const path = join(DATA_ROOT, 'people', `${id}.yml`);
+      let person: any;
+      try { person = parse(await readFile(path, 'utf8')); }
+      catch {
+        person = { id, canonical_name: c.name, sort_name: c.name.includes(' ') ? sortName(c.name) : c.name,
+          aliases: [{ id: 'default', name: c.name, alias_type: c.name.includes(' ') ? 'legal' : 'handle' }], credits: [] };
+        created++;
+      }
+      const credit: any = { show: t.id, role: c.role, sources: [source] };
+      if (t.seasons === 1) credit.season = 1;
+      if (c.character) credit.character = c.character;
+      if (person.aliases?.length === 1) credit.alias = person.aliases[0].id;
+
+      const result = upsertCredit(person.credits ??= [], credit);
+      if (result.outcome === 'already-cited') continue;
+      person.credits = result.credits;
+      await writeFile(path, stringify(person), 'utf8');
+      result.outcome === 'corroborated' ? corroborated++ : added++;
+      matcher.add(person);
+    }
+    await new Promise((r) => setTimeout(r, 150));
+  } catch (error) {
+    // One failure costs this item, not the ones after it.
+    console.error(`  ✗ ${t.id}: ${(error as Error).message}`);
   }
-  await new Promise((r) => setTimeout(r, 150));
 }
 
 console.log(`\n${filled} show(s) had a cast in their item description, ${none} did not.`);

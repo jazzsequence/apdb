@@ -98,10 +98,14 @@ async function main() {
     const queries = flag('query') ? [flag('query')!] : QUERIES;
     const seen = new Set<string>();
     for (const q of queries) {
-      for (const c of await findChannels(q)) {
-        if (seen.has(c.id)) continue;
-        seen.add(c.id);
-        channels.push(c);
+      try {
+        for (const c of await findChannels(q)) {
+          if (seen.has(c.id)) continue;
+          seen.add(c.id);
+          channels.push(c);
+        }
+      } catch (error) {
+        console.error(`  search failed for "${q}": ${(error as Error).message}`);
       }
     }
   }
