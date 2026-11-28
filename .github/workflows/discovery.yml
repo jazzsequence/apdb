@@ -189,6 +189,7 @@ jobs:
             --log "Internet Archive casts:out/archive-casts.log" \
             --log "YouTube casts:out/youtube-casts.log" \
             --log "Person sweep:out/person.log" \
+            --log "Images fetched:out/images.log" \
             --dedupe out/dedupe.log \
             --out reports/discovery-latest.md
 
@@ -211,12 +212,17 @@ jobs:
           # Credits are lines, not files: an existing person gaining a credit
           # shows up as a modified file, not an added one.
           CREDITS=$(git diff --cached -U0 -- data/people | grep -c '^+  - show:' || true)
+          PORTRAITS=$(git diff --cached -U0 -- data/people | grep -c '^+image:' || true)
+          ART=$(git diff --cached -U0 -- data/shows | grep -c '^+image:' || true)
+          echo "portraits=$PORTRAITS" >> "$GITHUB_OUTPUT"
+          echo "art=$ART"             >> "$GITHUB_OUTPUT"
           echo "shows=$SHOWS"       >> "$GITHUB_OUTPUT"
           echo "channels=$CHANNELS" >> "$GITHUB_OUTPUT"
           echo "people=$PEOPLE"     >> "$GITHUB_OUTPUT"
           echo "credits=$CREDITS"   >> "$GITHUB_OUTPUT"
           echo "touched=$TOUCHED"   >> "$GITHUB_OUTPUT"
           echo "Added: $SHOWS show(s), $CHANNELS channel(s), $PEOPLE person file(s), $CREDITS credit(s)."
+          echo "Images: $PORTRAITS portrait(s), $ART show image(s)."
           echo "$TOUCHED file(s) under data/ changed."
 
       # The raw sweep, as a build artifact rather than a commit.
@@ -285,7 +291,8 @@ jobs:
           Automated run of .github/workflows/discovery.yml.
 
           Added: ${{ steps.added.outputs.shows }} show(s), ${{ steps.added.outputs.channels }} channel(s),
-          ${{ steps.added.outputs.people }} new person file(s), ${{ steps.added.outputs.credits }} credit(s).
+          ${{ steps.added.outputs.people }} new person file(s), ${{ steps.added.outputs.credits }} credit(s),
+          ${{ steps.added.outputs.portraits }} portrait(s), ${{ steps.added.outputs.art }} show image(s).
           Also folded ${FOLDED:-0} duplicate credit(s).
 
           Every record carries the source it came from: archive.org item metadata for
@@ -321,6 +328,13 @@ jobs:
           | Channels | ${{ steps.added.outputs.channels }} |
           | New people | ${{ steps.added.outputs.people }} |
           | Credits | ${{ steps.added.outputs.credits }} |
+          | Portraits | ${{ steps.added.outputs.portraits }} |
+          | Show images | ${{ steps.added.outputs.art }} |
+
+          **Check every portrait.** They are fetched automatically, some under a
+          fair-use claim, and a matching name or ID does not prove the photo is of
+          the right person. To reject one, delete its `image` block and set
+          `no_auto_image: true`.
 
           Every record carries the source it was built from, on the record itself:
 

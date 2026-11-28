@@ -108,9 +108,10 @@ for person in sys.argv[1:]:
         if qid:
             entity(qid)
         source = field(block, r'^  source: (\S+)')
+        url = field(block, r'^  url: (\S+)')
         if source:
             caption(source)
-            print(f"  open: {field(block, r'^  url: (\S+)')}")
+            print(f'  open: {url}')
         hits = get('https://www.wikidata.org/w/api.php', action='wbsearchentities',
                    search=name, language='en', type='item', limit=10, format='json')
         print('  same name on Wikidata:')

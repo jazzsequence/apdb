@@ -25,7 +25,7 @@ export async function fetchPortraits(quiet = false): Promise<number> {
   for (const file of (await readdir(join(DATA_ROOT, 'people'))).filter((f) => f.endsWith('.yml'))) {
     const path = join(DATA_ROOT, 'people', file);
     const person = parse(await readFile(path, 'utf8'));
-    if (person.image) continue;
+    if (person.image || person.no_auto_image) continue;
 
     // Only a curated QID. Resolving by name gave an actual-play GM the photo
     // of a singer who shares it.
@@ -305,18 +305,23 @@ async function wikiPageImage(
 
 /**
  * A page's lead image is often character art. Only a file named after the
- * person is taken as a picture of them: every part of a name, or the whole of
- * a one-word one. One shared word ("the", a first name) proves nothing.
+ * person is taken as a picture of them: every part of a full name, or a
+ * filename that is nothing but a one-word one. One shared word ("the", a first
+ * name) proves nothing.
  */
 export function fileNamesPerson(file: string, names: string[]): boolean {
   const norm = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const split = (v: string) => norm(v).split(/[^a-z0-9]+/).filter(Boolean);
-  const words = new Set(split(file));
-  const joined = split(file).join('');
+  const stem = split(file.replace(/\.[a-z0-9]{2,4}$/i, ''));
+  const words = new Set(stem);
+  const joined = stem.join('');
+  // "Skid_2.png" is still a file named Skid.
+  const bare = stem.filter((w) => !/^\d+$/.test(w)).join('');
   return names.some((name) => {
     const parts = split(name);
     if (parts.length === 0) return false;
-    return parts.every((p) => words.has(p)) || (parts.length > 1 && joined.includes(parts.join('')));
+    if (parts.length === 1) return bare === parts[0];
+    return parts.every((p) => words.has(p)) || joined.includes(parts.join(''));
   });
 }
 
@@ -339,7 +344,7 @@ export async function fetchWikiPortraits(quiet = false): Promise<number> {
   for (const file of (await readdir(join(DATA_ROOT, 'people'))).filter((f) => f.endsWith('.yml'))) {
     const path = join(DATA_ROOT, 'people', file);
     const person = parse(await readFile(path, 'utf8'));
-    if (person.image) continue;
+    if (person.image || person.no_auto_image) continue;
 
     // A one-word name is normally too ambiguous to resolve against a page
     // title — but not when every credit this person has points at a single
@@ -360,7 +365,7 @@ export async function fetchWikiPortraits(quiet = false): Promise<number> {
       for (const name of [...new Set(names)]) {
         found = await wikiPageImage(h, name);
         await new Promise((r) => setTimeout(r, 120));
-        if (found && !fileNamesPerson(found.file, allNames)) found = undefined;
+        if (found && !fileNamesPerson(found.file, names)) found = undefined;
         if (found) { host = h; break outer; }
       }
     }

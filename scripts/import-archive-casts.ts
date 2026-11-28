@@ -18,6 +18,7 @@ import { parse, stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
 import { castFromArchiveDescription } from '../src/lib/sources/archive-cast.js';
 import { upsertCredit } from '../src/lib/credits.js';
+import { personMatcher } from '../src/lib/match-person.js';
 
 const UA = 'ActualPlayDatabase/0.1 (community actual-play credit index; contact via repository issues)';
 const args = process.argv.slice(2);
@@ -28,13 +29,6 @@ const slug = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCa
   .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 55).replace(/-+$/, '');
 const sortName = (n: string) => { const p = n.trim().split(/\s+/); if (p.length < 2) return n; const l = p.pop()!; return `${l}, ${p.join(' ')}`; };
 
-const personByName = new Map<string, string>();
-for (const f of (await readdir(join(DATA_ROOT, 'people'))).filter((f) => f.endsWith('.yml'))) {
-  const p = parse(await readFile(join(DATA_ROOT, 'people', f), 'utf8'));
-  for (const a of p.aliases ?? []) personByName.set(a.name.toLowerCase(), p.id);
-  personByName.set(p.canonical_name.toLowerCase(), p.id);
-}
-
 const showsWithCredits = new Set<string>();
 for (const f of (await readdir(join(DATA_ROOT, 'people'))).filter((f) => f.endsWith('.yml'))) {
   const p = parse(await readFile(join(DATA_ROOT, 'people', f), 'utf8'));
@@ -43,6 +37,7 @@ for (const f of (await readdir(join(DATA_ROOT, 'people'))).filter((f) => f.endsW
 
 const targets: { id: string; title: string; identifier: string; seasons: number }[] = [];
 const { dataset } = await loadDataset();
+const matcher = personMatcher(dataset.people, dataset.shows);
 for (const f of (await readdir(join(DATA_ROOT, 'shows'))).filter((f) => f.endsWith('.yml'))) {
   const s = parse(await readFile(join(DATA_ROOT, 'shows', f), 'utf8'));
   if (only && s.id !== only) continue;
@@ -98,8 +93,13 @@ for (const t of targets) {
     note: "Cast stated in the item's own description on the Internet Archive.",
   };
   for (const c of cast) {
-    const id = personByName.get(c.name.toLowerCase()) ?? slug(c.name);
-    if (!id) continue;
+    if (!slug(c.name)) continue;
+    const match = matcher.match(c.name, slug(c.name), t.id);
+    if (match.kind === 'held') {
+      console.log(`    held "${c.name}" — ${match.reason}`);
+      continue;
+    }
+    const id = match.kind === 'existing' ? match.person.id : match.id;
     const path = join(DATA_ROOT, 'people', `${id}.yml`);
     let person: any;
     try { person = parse(await readFile(path, 'utf8')); }
@@ -118,7 +118,7 @@ for (const t of targets) {
     person.credits = result.credits;
     await writeFile(path, stringify(person), 'utf8');
     result.outcome === 'corroborated' ? corroborated++ : added++;
-    personByName.set(c.name.toLowerCase(), id);
+    matcher.add(person);
   }
   await new Promise((r) => setTimeout(r, 150));
 }

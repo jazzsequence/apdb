@@ -154,14 +154,6 @@ function alreadyCited(credit: Credit, source: Source): boolean {
   });
 }
 
-/**
- * Merge a credit into a person's existing credits.
- *
- * Where the fact is already recorded, the new source is appended rather than
- * the credit being skipped. Fields the existing record lacks — a character
- * name, an episode locator — are filled in, but never overwritten: the first
- * importer to record something specific keeps it.
- */
 /** Catalogues with a single cast category, which cannot express "GM". */
 const CATALOGUE_URL = /^https?:\/\/([\w-]+\.)*(imdb\.com|themoviedb\.org|thetvdb\.com)\//i;
 
@@ -194,6 +186,14 @@ function isBareParticipation(incoming: Partial<Credit>, existing: Partial<Credit
   );
 }
 
+/**
+ * Merge a credit into a person's existing credits.
+ *
+ * Where the fact is already recorded, the new source is appended rather than
+ * the credit being skipped. Fields the existing record lacks — a character
+ * name, an episode locator — are filled in, but never overwritten: the first
+ * importer to record something specific keeps it.
+ */
 export function upsertCredit(
   existing: Credit[],
   incoming: Credit,

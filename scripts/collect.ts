@@ -22,6 +22,7 @@ import { dirname, join } from 'node:path';
 import { parse as parseYaml, stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
 import { GUEST_NOTE, upsertCredit } from '../src/lib/credits.js';
+import { personMatcher } from '../src/lib/match-person.js';
 import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
 import {
   discoverCampaignPages,
@@ -92,6 +93,8 @@ function toPersonRecord(imported: WikidataPerson, existing?: Person): Record<str
       ? { bio: existing?.bio ?? imported.description }
       : {}),
     wikidata_qid: imported.qid,
+    ...(existing?.image ? { image: existing.image } : {}),
+    ...(existing?.no_auto_image ? { no_auto_image: true } : {}),
     links: {
       ...(imported.wikipedia ? { wikipedia: imported.wikipedia } : {}),
       ...(imported.website ? { website: imported.website } : {}),
@@ -530,48 +533,20 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   }
 
   const { dataset } = await loadDataset();
-  const byId = new Map(dataset.people.map((p) => [p.id, p]));
-  // Match on every name a person is known by, not only the slug: filing a
-  // credit by slug alone splits one person into two records.
-  const byName = new Map<string, Set<Person>>();
-  for (const p of dataset.people) {
-    for (const n of [p.canonical_name, ...p.aliases.map((a) => a.name)]) {
-      const k = n.toLowerCase();
-      byName.set(k, (byName.get(k) ?? new Set()).add(p));
-    }
-  }
+  const matcher = personMatcher(dataset.people, dataset.shows);
   const dir = apply ? join(DATA_ROOT, 'people') : STAGING;
   await mkdir(dir, { recursive: true });
-
-  // Shows that make a first name or handle recognisable: this one, and any
-  // other on the same channel.
-  const channels = new Set(dataset.shows.find((s) => s.id === showId)?.channels ?? []);
-  const related = new Set([
-    showId,
-    ...dataset.shows.filter((s) => s.channels.some((c) => channels.has(c))).map((s) => s.id),
-  ]);
 
   // One person can appear twice (two roles), so build records before writing.
   const records = new Map<string, Person>();
   for (const v of found.values()) {
     const name = v.name;
-    const oneWord = !name.trim().includes(' ');
-    let matches = [...(byName.get(name.toLowerCase()) ?? [])];
-    const slugged = byId.get(slugify(name));
-    if (oneWord) {
-      if (slugged && !matches.includes(slugged)) matches.push(slugged);
-      const known = matches.filter((p) => p.credits.some((c) => related.has(c.show)));
-      if (matches.length > 0 && known.length === 0) {
-        console.log(`    held "${name}" — someone goes by that name, but not on this show or channel`);
-        continue;
-      }
-      matches = known;
-    }
-    if (matches.length > 1) {
-      console.log(`    skipped "${name}" — more than one person goes by that name`);
+    const match = matcher.match(name, slugify(name), showId);
+    if (match.kind === 'held') {
+      console.log(`    held "${name}" — ${match.reason}`);
       continue;
     }
-    const existing = matches[0] ?? slugged;
+    const existing = match.kind === 'existing' ? match.person : undefined;
     const id = existing?.id ?? slugify(name);
     // Edit the file as written, not the loaded copy, so a rewrite changes only
     // what this import adds.

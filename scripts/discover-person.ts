@@ -154,6 +154,21 @@ if (targets.length === 0) {
   process.exit(1);
 }
 
+// Nothing is written until the loop ends, so a run killed from outside loses
+// everything. Stopping here instead keeps what has been read so far.
+const maxMinutes = Number(flag('max-minutes') ?? Infinity);
+if (!(maxMinutes > 0)) {
+  console.error('--max-minutes needs a number above zero.');
+  process.exit(1);
+}
+// A run that stops on time reads only the front of the queue, so each week
+// starts a quarter further along. Covering a quarter per run reaches everyone.
+if (Number.isFinite(maxMinutes) && !flag('limit') && !wanted) {
+  targets.sort((a, b) => a.person.id.localeCompare(b.person.id));
+  const week = Math.floor(Date.now() / (7 * 86_400_000));
+  targets.push(...targets.splice(0, (week % 4) * Math.ceil(targets.length / 4)));
+}
+
 const limit = Number(flag('limit') ?? (has('all') || wanted ? targets.length : 25));
 const queue = targets.slice(0, limit);
 
@@ -202,13 +217,6 @@ function alreadyCredited(credits: Credit[], showId: string, season?: number): bo
 
 const reports: PersonReport[] = [];
 
-// Nothing is written until the loop ends, so a run killed from outside loses
-// everything. Stopping here instead keeps what has been read so far.
-const maxMinutes = Number(flag('max-minutes') ?? Infinity);
-if (!(maxMinutes > 0)) {
-  console.error('--max-minutes needs a number above zero.');
-  process.exit(1);
-}
 const deadline = Date.now() + maxMinutes * 60_000;
 
 for (const target of queue) {
@@ -468,6 +476,6 @@ if (unswept > 0) {
 const jsonPath = flag('json');
 if (jsonPath) {
   await mkdir(dirname(jsonPath), { recursive: true });
-  await writeFile(jsonPath, `${JSON.stringify({ generated: new Date().toISOString(), reports }, null, 2)}\n`);
+  await writeFile(jsonPath, `${JSON.stringify({ generated: new Date().toISOString(), unswept, reports }, null, 2)}\n`);
   console.log(`Wrote ${jsonPath}\n`);
 }

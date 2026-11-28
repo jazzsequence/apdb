@@ -96,7 +96,9 @@ async function main() {
     const channelId = known.channelId(slug, s.creator) ?? slug;
 
     const label = `${s.creator}: ${s.title.slice(0, 44)}`;
-    if (existingShows.has(showId) || s.items.some((i) => known.archiveItems.has(i.identifier.toLowerCase()))) {
+    if (s.items.some((i) => known.archiveItems.has(i.identifier.toLowerCase()))) continue;
+    if (existingShows.has(showId)) {
+      held.push(`${label} — a show with the id "${showId}" already exists`);
       continue;
     }
     // Uploads are grouped by creator, so a creator we already hold shows for

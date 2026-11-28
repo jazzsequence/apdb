@@ -72,7 +72,10 @@ const wikipediaUrl = (link: string) =>
 // ---------------------------------------------------------------------------
 const personJson = flag('person');
 if (personJson && existsSync(personJson)) {
-  const { reports } = JSON.parse(await readFile(personJson, 'utf8')) as { reports: PersonReport[] };
+  const { reports, unswept = 0 } = JSON.parse(await readFile(personJson, 'utf8')) as {
+    reports: PersonReport[];
+    unswept?: number;
+  };
 
   const missingShows: Array<{ person: string; c: Candidate }> = [];
   const missingCredits: Array<{ person: string; c: Candidate }> = [];
@@ -111,7 +114,8 @@ if (personJson && existsSync(personJson)) {
   lines.push('## Person-first sweep', '');
   lines.push(
     `${plural(reports.length - errors.length, 'person', 'people')} read, **${errors.length} lookups failed**` +
-      `${errors.length ? ', so the totals below are incomplete' : ''}. **${plural(byShow.size, 'show')}** with no record here ` +
+      `${unswept ? `, **${unswept} not swept** before the time limit` : ''}` +
+      `${errors.length || unswept ? ', so the totals below are incomplete' : ''}. **${plural(byShow.size, 'show')}** with no record here ` +
       `(named by ${plural(missingShows.length, 'credit')}), **${plural(missingCredits.length, 'missing credit')}** ` +
       `on shows we already have, ${unclear.length} unclear, ${excluded} excluded as not actual play. ` +
       `${plural(filed, 'candidate')} filed and not listed here.`,
