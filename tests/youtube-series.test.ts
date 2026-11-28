@@ -14,6 +14,11 @@ test('a table listed only in a later episode counts', () => {
   assert.ok(tableSize([video('1', 'Welcome!'), video('2', 'A prologue.'), video('3', TABLE)]) >= 2);
 });
 
+test('a table beyond the episodes the import reads does not make a series', () => {
+  const late = [...run('i', 50, 'Welcome!'), ...run('t', 5)];
+  assert.deepEqual(selectSeries([{ name: 'Late', videos: late }], new Set()).series, []);
+});
+
 test('crew, one person, or one name twice is not a table', () => {
   assert.equal(tableSize([video('1', CREW)]), 0);
   assert.equal(tableSize([video('1', 'DM: Ann Lee')]), 1);

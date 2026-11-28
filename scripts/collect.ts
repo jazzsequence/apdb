@@ -32,7 +32,6 @@ import {
 } from '../src/lib/sources/mediawiki.js';
 import { fetchPerson, searchPeople, type WikidataPerson } from '../src/lib/sources/wikidata.js';
 import {
-  knownPerformers,
   parseCast,
   MissingKeyError,
   playlistVideos,
@@ -505,12 +504,11 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   // Keep the name as written; the key is lowercased only for deduping, and
   // reading the name back out of it produced "mark \"sherlock\" hulmes".
   const found = new Map<string, { name: string; role: string; character?: string; url: string; title: string }>();
-  const isPerson = knownPerformers((await loadDataset()).dataset.people);
-  const unresolved = new Set<string>();
+  const held = new Set<string>();
   let withCredits = 0;
   for (const video of videos) {
-    const cast = parseCast(video.description, { isPerson });
-    for (const line of cast.unresolved) unresolved.add(line);
+    const cast = parseCast(video.description);
+    for (const line of cast.held) held.add(line);
     const credits = cast.credits;
     if (credits.length > 0) withCredits += 1;
     for (const credit of credits) {
@@ -528,7 +526,7 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   }
 
   console.log(`${withCredits}/${videos.length} descriptions carried a cast line.`);
-  for (const line of unresolved) {
+  for (const line of held) {
     console.log(`    held "${line.slice(0, 90)}" — cannot tell the performer from the character`);
   }
   console.log(`\n  would import ${found.size} credit(s):\n`);

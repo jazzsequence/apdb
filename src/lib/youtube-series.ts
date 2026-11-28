@@ -1,7 +1,7 @@
 /**
  * Choosing which of a channel's playlists are series worth cataloguing.
  */
-import { creditsFromDescription, type CastOptions, type YouTubeVideo } from './sources/youtube.js';
+import { creditsFromDescription, type YouTubeVideo } from './sources/youtube.js';
 
 /** "All Episodes" gathers other series; it is not one. */
 export const AGGREGATE_TITLE =
@@ -14,19 +14,22 @@ export const AGGREGATE_TITLE =
  * anything, played or not. Every video is read, because a campaign often opens
  * on an introduction that lists nobody.
  */
-export function tableSize(videos: YouTubeVideo[], options: CastOptions = {}): number {
+export function tableSize(videos: YouTubeVideo[]): number {
   return Math.max(
     0,
     ...videos.map(
       (v) =>
         new Set(
-          creditsFromDescription(v.description, options)
+          creditsFromDescription(v.description)
             .filter((c) => /GM|player/.test(c.role))
             .map((c) => c.name.toLowerCase()),
         ).size,
     ),
   );
 }
+
+/** The cast import reads this many episodes, so the gate may count no more. */
+export const CAST_EPISODES = 50;
 
 export interface ReadPlaylist {
   videos: YouTubeVideo[];
@@ -45,8 +48,6 @@ export interface ReadPlaylist {
 export function selectSeries<T extends ReadPlaylist>(
   playlists: T[],
   seen: Set<string>,
-  /** Must be what the cast import is given, or a show can land with no cast. */
-  options: CastOptions = {},
 ): { series: Array<T & { cast: number }>; held: Array<{ playlist: T; reason: string }> } {
   const series: Array<T & { cast: number }> = [];
   const held: Array<{ playlist: T; reason: string }> = [];
@@ -55,7 +56,7 @@ export function selectSeries<T extends ReadPlaylist>(
     const repeats = playlist.videos.filter((v) => seen.has(v.id)).length > playlist.videos.length / 2;
     for (const v of playlist.videos) seen.add(v.id);
 
-    const cast = tableSize(playlist.videos, options);
+    const cast = tableSize(playlist.videos.slice(0, CAST_EPISODES));
     if (playlist.blocked) held.push({ playlist, reason: playlist.blocked });
     else if (repeats) held.push({ playlist, reason: 'mostly repeats other playlists' });
     // A system in a title also matches video games and rules videos. A table

@@ -46,7 +46,6 @@ export async function knownCatalogue() {
       return dates;
     },
     playlists: capture(/[?&]list=([\w-]+)/g),
-    people: dataset.people,
     /** Shows the YouTube sweep wrote that still have nobody credited. */
     awaitingCast: () => showsAwaitingCast(dataset),
     titles: new Set(

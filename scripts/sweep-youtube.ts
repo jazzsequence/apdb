@@ -19,7 +19,7 @@ import { appendFile, mkdir, readdir, readFile, writeFile } from 'node:fs/promise
 import { dirname, join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
-import { knownPerformers, playlistVideos, type YouTubeVideo } from '../src/lib/sources/youtube.js';
+import { playlistVideos, type YouTubeVideo } from '../src/lib/sources/youtube.js';
 import { AGGREGATE_TITLE, selectSeries } from '../src/lib/youtube-series.js';
 import { fetchSeriesArt } from '../src/lib/images.js';
 import { knownCatalogue } from '../src/lib/known.js';
@@ -253,7 +253,6 @@ async function main() {
   );
   const unknownSystem: string[] = [];
   const known = await knownCatalogue();
-  const isPerson = knownPerformers(known.people);
   let newChannels = 0;
   let newShows = 0;
   const castable: string[] = [];
@@ -345,7 +344,7 @@ async function main() {
         continue;
       }
 
-      const selected = selectSeries(read, seen, { isPerson });
+      const selected = selectSeries(read, seen);
       for (const h of selected.held) held.push(`${h.playlist.label} — ${h.reason}`);
 
       for (const c of selected.series) {
