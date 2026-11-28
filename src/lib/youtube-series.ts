@@ -1,7 +1,7 @@
 /**
  * Choosing which of a channel's playlists are series worth cataloguing.
  */
-import { creditsFromDescription, type YouTubeVideo } from './sources/youtube.js';
+import { creditsFromDescription, type CastOptions, type YouTubeVideo } from './sources/youtube.js';
 
 /** "All Episodes" gathers other series; it is not one. */
 export const AGGREGATE_TITLE =
@@ -14,13 +14,13 @@ export const AGGREGATE_TITLE =
  * anything, played or not. Every video is read, because a campaign often opens
  * on an introduction that lists nobody.
  */
-export function tableSize(videos: YouTubeVideo[]): number {
+export function tableSize(videos: YouTubeVideo[], options: CastOptions = {}): number {
   return Math.max(
     0,
     ...videos.map(
       (v) =>
         new Set(
-          creditsFromDescription(v.description)
+          creditsFromDescription(v.description, options)
             .filter((c) => /GM|player/.test(c.role))
             .map((c) => c.name.toLowerCase()),
         ).size,
@@ -45,6 +45,8 @@ export interface ReadPlaylist {
 export function selectSeries<T extends ReadPlaylist>(
   playlists: T[],
   seen: Set<string>,
+  /** Must be what the cast import is given, or a show can land with no cast. */
+  options: CastOptions = {},
 ): { series: Array<T & { cast: number }>; held: Array<{ playlist: T; reason: string }> } {
   const series: Array<T & { cast: number }> = [];
   const held: Array<{ playlist: T; reason: string }> = [];
@@ -53,12 +55,12 @@ export function selectSeries<T extends ReadPlaylist>(
     const repeats = playlist.videos.filter((v) => seen.has(v.id)).length > playlist.videos.length / 2;
     for (const v of playlist.videos) seen.add(v.id);
 
-    const cast = tableSize(playlist.videos);
+    const cast = tableSize(playlist.videos, options);
     if (playlist.blocked) held.push({ playlist, reason: playlist.blocked });
     else if (repeats) held.push({ playlist, reason: 'mostly repeats other playlists' });
     // A system in a title also matches video games and rules videos. A table
     // in the descriptions is the evidence that people played it.
-    else if (cast < 2) held.push({ playlist, reason: 'no players or game master in the descriptions' });
+    else if (cast < 2) held.push({ playlist, reason: 'no readable table of players and game master in the descriptions' });
     else series.push({ ...playlist, cast });
   }
   return { series, held };

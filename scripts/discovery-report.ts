@@ -83,6 +83,14 @@ if (personJson && existsSync(personJson)) {
 }
 if (sweep) {
   const { reports, unswept = 0 } = sweep;
+  // The sweep marks candidates before its data is checked. If that data was
+  // thrown away, none of them were filed.
+  const log = flag('discarded');
+  const lost = Boolean(log && existsSync(log) && /^person sweep: output discarded/m.test(await readFile(log, 'utf8')));
+  if (lost) {
+    lines.push('**The person sweep\u2019s data was discarded, so none of its candidates were filed.**', '');
+    for (const r of reports) for (const c of r.candidates ?? []) delete c.applied;
+  }
 
   const missingShows: Array<{ person: string; c: Candidate }> = [];
   const missingCredits: Array<{ person: string; c: Candidate }> = [];

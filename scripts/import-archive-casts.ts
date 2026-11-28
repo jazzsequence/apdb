@@ -19,6 +19,7 @@ import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
 import { castFromArchiveDescription } from '../src/lib/sources/archive-cast.js';
 import { upsertCredit } from '../src/lib/credits.js';
 import { personMatcher } from '../src/lib/match-person.js';
+import { failed } from '../src/lib/failures.js';
 
 const UA = 'ActualPlayDatabase/0.1 (community actual-play credit index; contact via repository issues)';
 const args = process.argv.slice(2);
@@ -65,7 +66,7 @@ for (const t of targets) {
         headers: { 'User-Agent': UA },
         signal: AbortSignal.timeout(15000),
       });
-      if (!r.ok) { none++; continue; }
+      if (!r.ok) { failed(`  ✗ ${t.id}: archive.org ${r.status}`); continue; }
       const data = await r.json();
       const raw = data?.metadata?.description ?? '';
       const html = Array.isArray(raw) ? raw[0] : raw;
@@ -73,8 +74,8 @@ for (const t of targets) {
         .replace(/<br\s*\/?>|<\/p>|<\/div>/gi, '\n')
         .replace(/<[^>]+>/g, '')
         .replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ');
-    } catch {
-      none++;
+    } catch (error) {
+      failed(`  ✗ ${t.id}: ${(error as Error).message}`);
       continue;
     }
 
@@ -124,7 +125,7 @@ for (const t of targets) {
     await new Promise((r) => setTimeout(r, 150));
   } catch (error) {
     // One failure costs this item, not the ones after it.
-    console.error(`  ✗ ${t.id}: ${(error as Error).message}`);
+    failed(`  ✗ ${t.id}: ${(error as Error).message}`);
   }
 }
 

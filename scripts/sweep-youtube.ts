@@ -19,10 +19,11 @@ import { appendFile, mkdir, readdir, readFile, writeFile } from 'node:fs/promise
 import { dirname, join } from 'node:path';
 import { stringify } from 'yaml';
 import { DATA_ROOT } from '../src/lib/load.js';
-import { playlistVideos, type YouTubeVideo } from '../src/lib/sources/youtube.js';
+import { knownPerformers, playlistVideos, type YouTubeVideo } from '../src/lib/sources/youtube.js';
 import { AGGREGATE_TITLE, selectSeries } from '../src/lib/youtube-series.js';
 import { fetchSeriesArt } from '../src/lib/images.js';
 import { knownCatalogue } from '../src/lib/known.js';
+import { failed } from '../src/lib/failures.js';
 import { titleKey } from '../src/lib/sources/imdb.js';
 
 const API = 'https://www.googleapis.com/youtube/v3';
@@ -213,7 +214,7 @@ async function main() {
       const d = await api('search', { part: 'snippet', q, type: 'channel', maxResults: '8' });
       for (const i of d.items ?? []) channels.set(i.snippet.channelId, i.snippet.channelTitle);
     } catch (e) {
-      console.error(`  search failed for "${q}": ${(e as Error).message}`);
+      failed(`  search failed for "${q}": ${(e as Error).message}`);
     }
   }
   console.log(`\n${channels.size} candidate channels from ${QUERIES.length} searches.`);
@@ -234,7 +235,7 @@ async function main() {
         }
       }
     } catch (e) {
-      console.error(`  channel batch failed: ${(e as Error).message}`);
+      failed(`  channel batch failed: ${(e as Error).message}`);
     }
   }
   kept.sort((a, b) => b.subs - a.subs);
@@ -252,6 +253,7 @@ async function main() {
   );
   const unknownSystem: string[] = [];
   const known = await knownCatalogue();
+  const isPerson = knownPerformers(known.people);
   let newChannels = 0;
   let newShows = 0;
   const castable: string[] = [];
@@ -261,7 +263,10 @@ async function main() {
   const castableOut = dryRun ? undefined : flag('castable-out');
   if (castableOut) {
     await mkdir(dirname(castableOut), { recursive: true });
-    await writeFile(castableOut, '', 'utf8');
+    // Shows an earlier run catalogued without managing to import a cast.
+    const retry = known.awaitingCast();
+    await writeFile(castableOut, retry.map((r) => `${r.show}\t${r.playlist}\n`).join(''), 'utf8');
+    if (retry.length) console.log(`${retry.length} catalogued show(s) still await a cast; queued again.`);
   }
 
   for (const ch of kept) {
@@ -274,7 +279,8 @@ async function main() {
           maxResults: '50',
         });
         playlists = d.items ?? [];
-      } catch {
+      } catch (error) {
+        failed(`  playlists unreadable for ${ch.title}: ${(error as Error).message}`);
         continue;
       }
 
@@ -328,6 +334,7 @@ async function main() {
         } catch (e) {
           // A private playlist, or an exhausted quota: not the same as no cast.
           held.push(`${label} — could not read the playlist: ${(e as Error).message.slice(0, 80)}`);
+          failed(`  playlist unreadable: ${label}`);
           unread = true;
         }
       }
@@ -338,7 +345,7 @@ async function main() {
         continue;
       }
 
-      const selected = selectSeries(read, seen);
+      const selected = selectSeries(read, seen, { isPerson });
       for (const h of selected.held) held.push(`${h.playlist.label} — ${h.reason}`);
 
       for (const c of selected.series) {
@@ -397,7 +404,7 @@ async function main() {
       }
     } catch (error) {
       // One failure costs this item, not the ones after it.
-      console.error(`  ✗ ${ch.title}: ${(error as Error).message}`);
+      failed(`  ✗ ${ch.title}: ${(error as Error).message}`);
     }
   }
 

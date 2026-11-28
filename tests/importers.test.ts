@@ -34,14 +34,17 @@ test('uploads that cannot be dated against the catalogue are reported', () => {
   assert.equal(newUploads([item('ep1'), item('ep2', '2020-12-31')], new Map([['ep1', '2020']])), 0);
 });
 
-test('a failed art request does not throw', async () => {
+test('a failed art request does not throw, and marks the run failed', async () => {
   const { fetch: real } = globalThis;
   const key = process.env.YOUTUBE_API_KEY;
   process.env.YOUTUBE_API_KEY = 'test';
   globalThis.fetch = async () => { throw new TypeError('fetch failed'); };
   try {
     assert.equal(await fetchSeriesArt(), 0);
+    assert.equal(process.exitCode, 1);
   } finally {
+    // That exit code is the thing under test, not this run's result.
+    process.exitCode = 0;
     globalThis.fetch = real;
     if (key === undefined) delete process.env.YOUTUBE_API_KEY;
     else process.env.YOUTUBE_API_KEY = key;

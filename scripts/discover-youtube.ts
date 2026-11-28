@@ -16,6 +16,7 @@
  *   npm run discover:youtube -- --query "call of cthulhu actual play"
  */
 import { creditsFromDescription, MissingKeyError, playlistVideos } from '../src/lib/sources/youtube.js';
+import { failed } from '../src/lib/failures.js';
 
 const API = 'https://www.googleapis.com/youtube/v3';
 
@@ -105,7 +106,7 @@ async function main() {
           channels.push(c);
         }
       } catch (error) {
-        console.error(`  search failed for "${q}": ${(error as Error).message}`);
+        failed(`  search failed for "${q}": ${(error as Error).message}`);
       }
     }
   }
@@ -116,7 +117,8 @@ async function main() {
     let playlists: { id: string; title: string; count: number }[];
     try {
       playlists = await channelPlaylists(channel.id);
-    } catch {
+    } catch (error) {
+      failed(`  playlists unreadable for ${channel.title}: ${(error as Error).message}`);
       continue;
     }
 
@@ -133,7 +135,8 @@ async function main() {
       let cast;
       try {
         cast = await sampleCast(playlist.id);
-      } catch {
+      } catch (error) {
+        failed(`  playlist unreadable: ${playlist.title}: ${(error as Error).message}`);
         continue;
       }
       const readable = cast ? `${cast.credits.length} credits readable` : 'no cast in descriptions';

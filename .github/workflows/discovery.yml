@@ -168,7 +168,7 @@ jobs:
             echo "--- $show <- $playlist"
             # One bad playlist must not abandon the rest of the queue.
             npm run collect -- --youtube --playlist "$playlist" \
-              --show "$show" --season 1 --apply >> out/youtube-casts.log 2>&1 \
+              --show "$show" --season 1 --limit 2000 --apply >> out/youtube-casts.log 2>&1 \
               || echo "YouTube cast import failed for $show." | tee -a out/discarded.log
             # Per playlist, so one bad cast does not discard the others.
             scripts/checkpoint.sh "YouTube cast for $show"
@@ -247,6 +247,7 @@ jobs:
         run: |
           npm run report:discovery -- \
             --person out/person-sweep.json \
+            --discarded out/discarded.log \
             --log "Discarded or failed:out/discarded.log" \
             --log "Audit findings new in this run:out/audit.log" \
             --log "YouTube channels not yet catalogued:out/youtube.log" \

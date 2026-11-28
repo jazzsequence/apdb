@@ -12,6 +12,22 @@ import { titleKey } from './sources/imdb.js';
 const GENERIC_TITLE =
   /^((season|campaign|series|chapter|arc|part|book|volume) (\d+|[ivx]+|one|two|three|four|five|six|seven|eight|nine|ten)|one shots?)$/;
 
+/**
+ * Only single-season shows carrying the sweep's own description: the follow-up
+ * import files a cast under season 1, which is wrong for anything else.
+ */
+export function showsAwaitingCast(dataset: {
+  shows: Array<{ id: string; description?: string; links?: { website?: string }; seasons: unknown[] }>;
+  people: Array<{ credits: Array<{ show: string }> }>;
+}): Array<{ show: string; playlist: string }> {
+  const credited = new Set(dataset.people.flatMap((p) => p.credits.map((c) => c.show)));
+  return dataset.shows.flatMap((s) => {
+    const playlist = s.links?.website?.match(/youtube\.com\/playlist\?list=([\w-]+)/)?.[1];
+    const swept = s.description?.endsWith('(per the series title).');
+    return playlist && swept && s.seasons.length === 1 && !credited.has(s.id) ? [{ show: s.id, playlist }] : [];
+  });
+}
+
 export async function knownCatalogue() {
   const { dataset } = await loadDataset();
   const text = JSON.stringify([dataset.shows, dataset.people]);
@@ -30,6 +46,9 @@ export async function knownCatalogue() {
       return dates;
     },
     playlists: capture(/[?&]list=([\w-]+)/g),
+    people: dataset.people,
+    /** Shows the YouTube sweep wrote that still have nobody credited. */
+    awaitingCast: () => showsAwaitingCast(dataset),
     titles: new Set(
       [
         ...dataset.shows.map((s) => titleKey(s.title)),

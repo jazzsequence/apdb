@@ -41,6 +41,7 @@ import { fetchPersonWorks, fetchWorkFacts, parseWorks, type WikiWork } from '../
 import { classify, type Verdict } from '../src/lib/sources/actual-play.js';
 import { assertCleared } from '../src/lib/sources/registry.js';
 import { rotateForWeek } from '../src/lib/rotation.js';
+import { failed } from '../src/lib/failures.js';
 import { ambiguousClaim, excerpt, GUEST_NOTE, startYear, statedRole, upsertCredit } from '../src/lib/credits.js';
 import { Credit as CreditSchema, Person as PersonSchema, type Credit, type Person, type Show } from '../src/lib/schema.js';
 
@@ -391,7 +392,7 @@ if (!has('apply')) {
       const record = parse(await readFile(path, 'utf8'));
       let credits: Credit[] = record.credits ?? [];
       // Counted only once the file is written.
-      const filed: Array<{ candidate: Candidate; outcome: 'added' | 'corroborated' }> = [];
+      const filed: Array<{ candidate: Candidate; outcome: 'added' | 'corroborated' | 'already-cited' }> = [];
 
       for (const candidate of report.candidates) {
         if (candidate.verdict !== 'actual-play') continue;
@@ -434,27 +435,30 @@ if (!has('apply')) {
         }
 
         const result = upsertCredit(credits, incoming, { explicitRole: true });
-        if (result.outcome === 'already-cited') continue;
         credits = result.credits;
         filed.push({ candidate, outcome: result.outcome });
       }
 
-      if (filed.length > 0) {
+      if (filed.every((f) => f.outcome === 'already-cited')) {
+        // Nothing to write, but none of these is missing either.
+        for (const { candidate } of filed) candidate.applied = true;
+      } else {
         record.credits = credits;
         const parsed = PersonSchema.safeParse(record);
         if (!parsed.success) {
-          console.error(`  ✗ ${report.person} would not validate, left unchanged: ${parsed.error.issues[0]?.message}`);
+          failed(`  ✗ ${report.person} would not validate, left unchanged: ${parsed.error.issues[0]?.message}`);
           continue;
         }
         await writeFile(path, stringify(record), 'utf8');
         for (const { candidate, outcome } of filed) {
           candidate.applied = true;
-          outcome === 'added' ? added++ : corroborated++;
+          if (outcome === 'added') added++;
+          if (outcome === 'corroborated') corroborated++;
         }
       }
     } catch (error) {
       // One unreadable record costs that person, not everyone after them.
-      console.error(`  ✗ ${report.person}: ${(error as Error).message}`);
+      failed(`  ✗ ${report.person}: ${(error as Error).message}`);
     }
   }
 
@@ -470,6 +474,9 @@ if (!has('apply')) {
   }
   console.log('Run `npm run validate` before committing.\n');
 }
+
+const lookups = reports.filter((r) => r.error).length;
+if (lookups > 0) failed(`${lookups} of ${reports.length} lookups failed.`);
 
 // Last, so it is not lost above the per-person output.
 const unswept = queue.length - reports.length;

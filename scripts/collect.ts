@@ -23,6 +23,7 @@ import { parse as parseYaml, stringify } from 'yaml';
 import { DATA_ROOT, loadDataset } from '../src/lib/load.js';
 import { GUEST_NOTE, upsertCredit } from '../src/lib/credits.js';
 import { personMatcher } from '../src/lib/match-person.js';
+import { failed } from '../src/lib/failures.js';
 import { assertCleared, SOURCES } from '../src/lib/sources/registry.js';
 import {
   discoverCampaignPages,
@@ -31,7 +32,8 @@ import {
 } from '../src/lib/sources/mediawiki.js';
 import { fetchPerson, searchPeople, type WikidataPerson } from '../src/lib/sources/wikidata.js';
 import {
-  creditsFromDescription,
+  knownPerformers,
+  parseCast,
   MissingKeyError,
   playlistVideos,
 } from '../src/lib/sources/youtube.js';
@@ -503,9 +505,13 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   // Keep the name as written; the key is lowercased only for deduping, and
   // reading the name back out of it produced "mark \"sherlock\" hulmes".
   const found = new Map<string, { name: string; role: string; character?: string; url: string; title: string }>();
+  const isPerson = knownPerformers((await loadDataset()).dataset.people);
+  const unresolved = new Set<string>();
   let withCredits = 0;
   for (const video of videos) {
-    const credits = creditsFromDescription(video.description);
+    const cast = parseCast(video.description, { isPerson });
+    for (const line of cast.unresolved) unresolved.add(line);
+    const credits = cast.credits;
     if (credits.length > 0) withCredits += 1;
     for (const credit of credits) {
       const k = `${credit.name.toLowerCase()}|${credit.role}`;
@@ -522,6 +528,9 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
   }
 
   console.log(`${withCredits}/${videos.length} descriptions carried a cast line.`);
+  for (const line of unresolved) {
+    console.log(`    held "${line.slice(0, 90)}" — cannot tell the performer from the character`);
+  }
   console.log(`\n  would import ${found.size} credit(s):\n`);
   for (const v of found.values()) {
     console.log(`    ${v.role.padEnd(13)} ${v.name}${v.character ? `  as ${v.character}` : ''}`);
@@ -589,7 +598,7 @@ async function collectFromYouTube(apply: boolean): Promise<void> {
       records.set(id, { ...base, credits: result.credits } as Person);
     } catch (error) {
       // One failure costs this item, not the ones after it.
-      console.error(`    held "${v.name}" — ${(error as Error).message}`);
+      failed(`    held "${v.name}" — ${(error as Error).message}`);
     }
   }
 

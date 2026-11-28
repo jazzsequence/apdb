@@ -13,6 +13,7 @@
  *    claim in POLICY.md — thumbnail scale, one per show, attributed, linked
  *    back, identification only.
  */
+import { failed } from './failures.js';
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
@@ -72,7 +73,7 @@ export async function fetchSeriesArt(): Promise<number> {
       if (!r.ok) throw new Error(`YouTube ${r.status}`);
       data = await r.json();
     } catch (error) {
-      console.error(`  series art request failed: ${(error as Error).message}`);
+      failed(`  series art request failed: ${(error as Error).message}`);
       continue;
     }
 

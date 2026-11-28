@@ -129,7 +129,10 @@ const ROLE_LABELS: [RegExp, CreditRole][] = [
   [/^(?:dungeon master|game master|dm|gm)\b/i, 'GM/DM'],
   [/^(?:guest (?:dm|gm|dungeon master|game master))\b/i, 'guest GM'],
   [/^(?:guest (?:player|star))s?\b/i, 'guest player'],
-  [/^(?:starring|cast|players|featuring|with)\b/i, 'player'],
+  [/^(?:starring|cast(?: members)?|players)\b/i, 'player'],
+  // "With a back-alley brawl…" opens a synopsis, so those two need a colon or
+  // a list of names: "Featuring Ivan Van Norman, Amy Vorpahl".
+  [/^(?:[Ff]eaturing|FEATURING|[Ww]ith|WITH)(?=\s*:|(?:\s+\p{Lu}[\p{L}'.-]*){2,4}\s*,)/u, 'player'],
   [/^(?:produced by|producer)s?\b/i, 'producer'],
   [/^(?:edited by|editor)s?\b/i, 'editor'],
   [/^(?:music by|composer)s?\b/i, 'composer'],
@@ -151,20 +154,111 @@ function splitPerson(chunk: string): { name: string; character?: string } | unde
   return { name: text };
 }
 
+const GM_WORDS = /^((the|your|our)\s+)?(dungeon master|game ?master|dm|gm|storyteller|keeper)(\s+of\s+.+)?$/i;
+
+/** Words that mark a line as a crew credit, whichever side they sit on. */
+const CREW =
+  /\b(producers?|production|writer|written|director|editor|edit(ed|ing)?|audio|sound|music|theme|intro|outro|song|art|artist|artwork|maps?|camera|photograph\w*|designer|design|scenic|dressers?|intern|operator|mixer|hair|make-?up|dp|graphics|animat\w+|thumbnails?|logo|sponsor\w*|composer|shoot|lighting|props|costumes?|manager|assistant|coordinator|thanks)\b/i;
+
+const PROMO = /^(pre-?order|order|buy|get|shop|watch|listen|follow|join|subscribe|support|download|check|grab|visit|sponsored)\b/i;
+
+/** A cast line of the shape "A: B" or "A - B", which does not say who is who. */
+interface Pair {
+  left: string;
+  right: string;
+  /** Only the right side carried a trailing class description. */
+  describedRight: boolean;
+  line: string;
+}
+
+export interface CastOptions {
+  /** Is this a performer we already know? Used to tell which side is which. */
+  isPerson?: (name: string) => boolean;
+}
+
+export interface Cast {
+  credits: YouTubeCredit[];
+  /** Lines naming a performer and a character in an order nothing settles. */
+  unresolved: string[];
+}
+
 /**
- * Some productions write the cast character-first, one per line, with a link:
+ * Match performers by full name. A first name or handle coincides with a
+ * character name too easily to settle anything.
+ */
+export function knownPerformers(
+  people: Array<{ canonical_name: string; aliases: Array<{ name: string }> }>,
+): (name: string) => boolean {
+  const known = new Set(
+    people
+      .flatMap((p) => [p.canonical_name, ...p.aliases.map((a) => a.name)])
+      .filter((n) => nameKey(n).includes(' '))
+      .map(nameKey),
+  );
+  return (name) => known.has(nameKey(name));
+}
+
+function toPair(rawLeft: string, rawRight: string, line: string): Pair | undefined {
+  const left = rawLeft.replace(/^[\s\-–—*•]+/, '').trim();
+  const [right = '', ...described] = rawRight.split(/,\s*(?=(?:an?|the)\b)/i);
+  // "Pre-order the book: The Horrors Within: …" is an advert, not a cast line.
+  if (PROMO.test(left) || right.includes(':')) return undefined;
+  if (CREW.test(left) || CREW.test(right)) return undefined;
+  return { left, right: right.trim(), describedRight: described.length > 0, line };
+}
+
+/**
+ * Decide which side of each pair is the performer.
+ *
+ * One description writes its whole cast one way round, so the evidence on any
+ * line settles all of them: a performer we know, or a class description, which
+ * follows a character. With no evidence, or evidence both ways, nothing is
+ * filed: a wrong guess invents people out of characters.
+ */
+function resolvePairs(pairs: Pair[], options: CastOptions): Cast {
+  const known = options.isPerson ?? (() => false);
+  let leftFirst = 0;
+  let rightFirst = 0;
+  for (const p of pairs) {
+    const [l, r] = [known(p.left), known(p.right)];
+    if (l && !r) leftFirst++;
+    if (r && !l) rightFirst++;
+    // "Christian Navarro as Eloin, a Ranger" puts the character after.
+    if (p.describedRight && !r) leftFirst++;
+  }
+  if ((leftFirst > 0) === (rightFirst > 0)) {
+    return { credits: [], unresolved: pairs.map((p) => p.line) };
+  }
+  return {
+    credits: pairs.map((p) => {
+      const [name, character] = leftFirst ? [p.left, p.right] : [p.right, p.left];
+      return { name, character, role: 'player' as const, line: p.line };
+    }),
+    unresolved: [],
+  };
+}
+
+/** A "GM: X" or "X - GM" line says who is who by itself. */
+function gmFromPair(left: string, right: string, line: string): YouTubeCredit | undefined {
+  if (GM_WORDS.test(left)) return { name: right, role: 'GM/DM', line };
+  if (GM_WORDS.test(right)) return { name: left, role: 'GM/DM', line };
+  return undefined;
+}
+
+/**
+ * Some productions write the cast one per line under the GM, with a link:
  *
  *   DM: Mark "Sherlock" Hulmes - https://twitter.com/sherlock_hulmes
  *   Daisy: Katie Morrison - https://twitter.com/LittleNommer
  *   Rowan: Chris Trott - https://twitter.com/trottimus
  *
- * That is the reverse of every other source here, and the trailing URL means a
- * naive "skip lines with links" rule discards the entire cast. The DM line is
- * the anchor: once seen, subsequent "Label: Name" lines are character: performer.
+ * That one is character-first, but others use the same shape the other way
+ * round, so the order is settled by `resolvePairs`, not by the layout. The GM
+ * line is the anchor: only lines after it are read.
  */
-function characterFirstBlock(description: string): YouTubeCredit[] {
-  const credits: YouTubeCredit[] = [];
-  let seenGm = false;
+function gmAnchoredBlock(description: string, options: CastOptions): Cast {
+  const gms: YouTubeCredit[] = [];
+  const pairs: Pair[] = [];
 
   for (const rawLine of description.split(/\r?\n/)) {
     // Drop a trailing link so the name is readable, but keep the line.
@@ -174,23 +268,21 @@ function characterFirstBlock(description: string): YouTubeCredit[] {
     const gm = line.match(/^(?:DM|GM|Dungeon Master|Game Master)\s*[:\-]\s*(.+)$/i);
     if (gm) {
       const name = gm[1]!.trim();
-      if (looksLikeName(name)) { credits.push({ name, role: 'GM/DM', line: rawLine.trim() }); seenGm = true; }
+      if (looksLikeName(name)) gms.push({ name, role: 'GM/DM', line: rawLine.trim() });
       continue;
     }
-
-    if (!seenGm) continue;
+    if (gms.length === 0) continue;
 
     const row = line.match(/^([^:]{2,40}):\s*(.+)$/);
-    if (!row) continue;
-    const character = row[1]!.trim();
-    const name = row[2]!.trim();
-    // A performer name, not a timestamp or a sentence.
-    if (!looksLikeName(name)) continue;
-    if (/^\d/.test(character)) continue;
-    credits.push({ name, role: 'player', character, line: rawLine.trim() });
+    // A name on at least one side, and not a timestamp.
+    if (!row || /^\d/.test(row[1]!.trim())) continue;
+    const pair = toPair(row[1]!, row[2]!.trim(), rawLine.trim());
+    if (pair && looksLikeName(pair.left) && looksLikeName(pair.right)) pairs.push(pair);
   }
 
-  return credits.length > 1 ? credits : [];
+  if (pairs.length === 0) return { credits: [], unresolved: [] };
+  const cast = resolvePairs(pairs, options);
+  return { credits: [...gms, ...cast.credits], unresolved: cast.unresolved };
 }
 
 /**
@@ -219,9 +311,10 @@ const SOCIAL_LINE =
  * function returned nothing for it, because it stopped at the first blank line
  * and required "X as Y".
  */
-function headedBlock(description: string): YouTubeCredit[] {
+function headedBlock(description: string, options: CastOptions): Cast {
   const lines = description.split(/\r?\n/).map((l) => l.trim());
   const credits: YouTubeCredit[] = [];
+  const pairs: Pair[] = [];
 
   const CAST_HEAD = /^(cast|starring|players?|featuring|the (cast|party))\s*:?\s*$/i;
   const GM_HEAD = /^(game\s?master|gamemaster|dungeon\s?master|storyteller|keeper|gm|dm)\s*:?\s*$/i;
@@ -263,21 +356,33 @@ function headedBlock(description: string): YouTubeCredit[] {
         continue;
       }
 
-      // "Angela - Reaper", "Angela as Reaper", "Angela: Reaper"
-      const m = line.match(/^(.+?)\s*(?:\s-\s|\s[–—]\s|\sas\s|:)\s*(.+)$/i);
+      // "Angela as Reaper" says who is who.
+      const as = line.match(/^(.+?)\s+as\s+(.+)$/i);
+      if (as) {
+        const name = as[1]!.replace(/^[\s\-–—*•]+/, '').trim();
+        const character = as[2]!.split(/,\s*(?:an?\b|the\b)/i)[0]!.trim();
+        if (!looksLikeName(name)) { misses++; continue; }
+        credits.push(
+          GM_WORDS.test(as[2]!.split(',')[0]!.trim())
+            ? { name, role: 'GM/DM', line }
+            : { name, role: 'player', character, line },
+        );
+        continue;
+      }
+
+      // "Angela - Reaper" and "Reaper: Angela" are both written.
+      const m = noLink.match(/^(.+?)\s*(?:\s-\s|\s[–—]\s|:)\s*(.+)$/);
       if (!m) { misses++; continue; }
-
-      const name = m[1]!.replace(/^[\s\-–—*•]+/, '').trim();
-      const character = m[2]!.split(/,\s*(?:an?\b|the\b)/i)[0]!.trim();
-      if (!looksLikeName(name)) { misses++; continue; }
-
-      const isGm = /^(the\s+)?(dungeon master|game master|gamemaster|dm|gm|storyteller|keeper)$/i.test(character);
-      credits.push(
-        isGm ? { name, role: 'GM/DM', line } : { name, role: 'player', character, line },
-      );
+      const left = m[1]!.replace(/^[\s\-–—*•]+/, '').trim();
+      const gm = gmFromPair(left, m[2]!.trim(), line);
+      if (gm) { credits.push(gm); continue; }
+      const pair = toPair(left, m[2]!.trim(), line);
+      if (!pair || !(looksLikeName(pair.left) || looksLikeName(pair.right))) { misses++; continue; }
+      pairs.push(pair);
     }
   }
-  return credits.length > 1 ? credits : [];
+  const cast = pairs.length ? resolvePairs(pairs, options) : { credits: [], unresolved: [] };
+  return { credits: [...credits, ...cast.credits], unresolved: cast.unresolved };
 }
 
 /**
@@ -378,16 +483,41 @@ function playersBlock(description: string): YouTubeCredit[] {
   return credits.length > 1 ? credits : [];
 }
 
-export function creditsFromDescription(description: string): YouTubeCredit[] {
+/** Pronouns beside a name are not part of it, and not a character. */
+const PRONOUNS = /[ \t]*\((?:(?:she|he|they|it|xe|ze|fae|any)\s*\/[^)]*|any pronouns)\)/gi;
+
+/** "Iryna (Played by Milo Mannion)" states the order outright. */
+const PLAYED_BY = /^[ \t\-–—*•]*(.+?)\s*\(\s*played by\s+([^)]+?)\s*\)[ \t]*$/gim;
+
+function normalise(description: string): string {
+  return description
+    .replace(PRONOUNS, '')
+    .replace(PLAYED_BY, (_, character: string, name: string) => `${name} as ${character.split(/\s+[-–—]\s+/)[0]}`);
+}
+
+export function parseCast(raw: string, options: CastOptions = {}): Cast {
+  const description = normalise(raw);
+
   const players = keepOnlyNames(playersBlock(description));
-  if (players.length > 1) return players;
+  if (players.length > 1) return { credits: players, unresolved: [] };
 
-  const headed = keepOnlyNames(headedBlock(description));
-  if (headed.length > 1) return headed;
+  for (const block of [headedBlock, gmAnchoredBlock]) {
+    const found = block(description, options);
+    const credits = keepOnlyNames(found.credits);
+    // Unsettled lines end the search: a looser parser would only guess them.
+    if (credits.length > 1 || found.unresolved.length > 0) {
+      return { credits, unresolved: found.unresolved };
+    }
+  }
+  return { credits: labelledLines(description), unresolved: [] };
+}
 
-  const characterFirst = keepOnlyNames(characterFirstBlock(description));
-  if (characterFirst.length > 1) return characterFirst;
+export function creditsFromDescription(description: string, options: CastOptions = {}): YouTubeCredit[] {
+  return parseCast(description, options).credits;
+}
 
+/** Lines that open with the role: "DM: Chris Perkins", "Starring …". */
+function labelledLines(description: string): YouTubeCredit[] {
   const credits: YouTubeCredit[] = [];
 
   for (const rawLine of description.split(/\r?\n/)) {

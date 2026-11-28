@@ -15,6 +15,7 @@ import { stringify } from 'yaml';
 import { fetchArchiveArt } from '../src/lib/images.js';
 import { knownCatalogue } from '../src/lib/known.js';
 import { newUploads } from '../src/lib/archive-uploads.js';
+import { failed } from '../src/lib/failures.js';
 import { DATA_ROOT } from '../src/lib/load.js';
 import { groupIntoSeries, searchActualPlay, type ArchiveSeries } from '../src/lib/sources/archive.js';
 
@@ -63,12 +64,15 @@ async function main() {
   const minEpisodes = Number.parseInt(flag('min-episodes') ?? '4', 10);
 
   // Archive caps rows per request; two pages is plenty for this subject.
-  const page = (n: number) =>
-    searchActualPlay(500, n).catch((error: unknown) => {
-      console.error(`  search page ${n} failed: ${(error as Error).message}`);
-      return [];
-    });
-  const items = [...(await page(1)), ...(await page(2))];
+  // Both pages or nothing: a series split across them would be written with a
+  // wrong episode count and dates, and later runs would not correct it.
+  const pages = await Promise.allSettled([searchActualPlay(500, 1), searchActualPlay(500, 2)]);
+  const broken = pages.flatMap((p) => (p.status === 'rejected' ? [String(p.reason?.message ?? p.reason)] : []));
+  if (broken.length) {
+    failed(`\nArchive search failed, so no shows were imported: ${broken.join('; ')}\n`);
+    return;
+  }
+  const items = pages.flatMap((p) => (p.status === 'fulfilled' ? p.value : []));
   const series = groupIntoSeries(items, minEpisodes);
 
   console.log(`\n${items.length} archived episodes -> ${series.length} series (>= ${minEpisodes} episodes).\n`);
@@ -183,7 +187,7 @@ async function main() {
       console.log(`  + ${s.title.slice(0, 42).padEnd(42)} ${game.name.slice(0, 20).padEnd(20)} ${s.items.length} eps`);
     } catch (error) {
       // One failure costs this item, not the ones after it.
-      console.error(`  ✗ ${s.creator}: ${(error as Error).message}`);
+      failed(`  ✗ ${s.creator}: ${(error as Error).message}`);
     }
   }
 
