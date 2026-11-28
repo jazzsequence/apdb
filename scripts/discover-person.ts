@@ -18,6 +18,7 @@
  *   npm run discover:person -- --limit 25
  *   npm run discover:person -- --all --json out/person-sweep.json
  *   npm run discover:person -- --all --apply          # file what needs no guessing
+ *   npm run discover:person -- --all --max-minutes 40 # stop early, keep what was read
  *   npm run discover:person -- --fixture article.wikitext   # parser only, offline
  *
  * Reports by default. `--apply` files the subset that can be filed without
@@ -201,7 +202,17 @@ function alreadyCredited(credits: Credit[], showId: string, season?: number): bo
 
 const reports: PersonReport[] = [];
 
+// Nothing is written until the loop ends, so a run killed from outside loses
+// everything. Stopping here instead keeps what has been read so far.
+const maxMinutes = Number(flag('max-minutes') ?? Infinity);
+if (!(maxMinutes > 0)) {
+  console.error('--max-minutes needs a number above zero.');
+  process.exit(1);
+}
+const deadline = Date.now() + maxMinutes * 60_000;
+
 for (const target of queue) {
+  if (Date.now() >= deadline) break;
   const report: PersonReport = {
     person: target.person.id,
     wikipedia: target.wikipedia,
@@ -446,6 +457,12 @@ if (!has('apply')) {
     for (const h of heldBack) console.log(`   ${h}`);
   }
   console.log('Run `npm run validate` before committing.\n');
+}
+
+// Last, so it is not lost above the per-person output.
+const unswept = queue.length - reports.length;
+if (unswept > 0) {
+  console.log(`Time budget of ${maxMinutes} minute(s) reached: ${unswept} of ${queue.length} people were not swept.\n`);
 }
 
 const jsonPath = flag('json');
