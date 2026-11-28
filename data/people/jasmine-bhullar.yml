@@ -169,6 +169,15 @@ credits:
         url: https://criticalrole.fandom.com/wiki/The_Elder_Scrolls_Online_One-Shot
         note: The Elder Scrolls Online One-Shot cast, via the criticalrole.fandom.com
           infobox. CC-BY-SA.
+  - show: dungeon-masters-ravenloft-d-d-campaign
+    season: 1
+    role: GM/DM
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=vttEhAP4YSg
+        note: Cast per the production's own description of "Dungeon Masters | Campaign
+          1, Episode 1 | Mists Of Ravenloft | Official D&D Actual Play Series".
 image:
   url: https://static.wikia.nocookie.net/acquisitionsincorporated/images/f/f8/Dnd_stream_jasmine.png/revision/latest?cb=20220409060329
   licence: fair use

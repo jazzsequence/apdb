@@ -107,6 +107,13 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/worlds-beyond-number
         note: Cast for "Worlds Beyond Number" per TheTVDB.
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Brennan_Lee_Mulligan
+        note: "Wikipedia's article on Brennan Lee Mulligan: \"He is the creator and
+          regular gamemaster for Dropout's actual play series Dimension 20 as
+          well as the dungeon master for the first campaign of the creator-owned
+          actual play podcast Worlds Beyond Number and the fourth campaign of
+          the actual play web series Critical Role.\""
   - show: exandria-unlimited
     season: 3
     role: guest GM
@@ -447,6 +454,11 @@ credits:
         tier: community
       - *a4
       - *a5
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Brennan_Lee_Mulligan
+        note: "Wikipedia's article on Brennan Lee Mulligan: \"Mulligan was then the
+          Dungeon Master for Exandria Unlimited: Divergence which premiered on
+          February 13, 2025.\""
   - show: critical-role
     season: 3
     role: guest player

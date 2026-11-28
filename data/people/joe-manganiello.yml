@@ -80,9 +80,14 @@ credits:
     sources:
       - tier: reference
         url: https://en.wikipedia.org/wiki/Nerd_Poker
-        note: Cast, dungeon-master history and format per Wikipedia's article on
-          the show. Season not established — the article names who has been on
-          the show without saying which of the four seasons each appears in.
+        note: Cast, dungeon-master history and format per Wikipedia's article on the
+          show. Season not established — the article names who has been on the
+          show without saying which of the four seasons each appears in.
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Joe_Manganiello
+        note: "Wikipedia's article on Joe Manganiello: \"He has appeared in episodes of
+          The Big Bang Theory, Nerd Poker, CelebriD&D, Critical Role and the web
+          series Force Grey playing the game.\""
 wikidata_qid: Q470005
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Joe_Manganiello_July_2015.jpg

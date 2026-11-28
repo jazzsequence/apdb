@@ -70,6 +70,16 @@ credits:
         url: https://www.youtube.com/watch?v=imf5VIk_zmQ
         note: Cast per the production's own description of "Baldur's Gate 3 Cast Play
           D&D Live | With Astarion, Karlach, Wyll and Lae'zel".
+  - show: dungeon-masters-ravenloft-d-d-campaign
+    season: 1
+    role: player
+    character: Zora Thornska
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=vttEhAP4YSg
+        note: Cast per the production's own description of "Dungeon Masters | Campaign
+          1, Episode 1 | Mists Of Ravenloft | Official D&D Actual Play Series".
 wikidata_qid: Q125133053
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Stuttgart_2024_-_ComicCon_-_Devora_Wilde_-_by-RaBoe_002.jpg

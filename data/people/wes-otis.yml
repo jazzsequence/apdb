@@ -23,9 +23,9 @@ credits:
     sources:
       - tier: community
         url: https://savingthrowshow.fandom.com/wiki/The_Realms_of_Rothaen
-        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com
-          infobox, broken out per episode since each has its own DM and
-          largely separate cast. CC-BY-SA.
+        note: The Realms of Rothaen cast, via the savingthrowshow.fandom.com infobox,
+          broken out per episode since each has its own DM and largely separate
+          cast. CC-BY-SA.
   - show: black-bag-vikings
     role: GM/DM
     season: 1
@@ -90,3 +90,13 @@ credits:
       - tier: reference
         url: https://www.imdb.com/title/tt8236012/fullcredits/
         note: IMDb full cast and crew for "Black Bag" (2016), via the official datasets.
+image:
+  url: https://static.wikia.nocookie.net/savingthrowshow/images/a/a8/Wesotis.jpg/revision/latest?cb=20200307213722
+  licence: fair use
+  attribution: Portrait of Wes Otis, © its owner. Via savingthrowshow.fandom.com.
+  source: https://savingthrowshow.fandom.com/wiki/Wes_Otis
+  depicts: Wes Otis
+  rationale: Low-resolution thumbnail used solely to identify this person in an
+    index of their credits. Non-commercial, does not substitute for the
+    original, and links back to the source. Removed on request by the rights
+    holder — see POLICY.md.
