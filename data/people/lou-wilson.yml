@@ -180,6 +180,11 @@ credits:
       - tier: reference
         url: https://thetvdb.com/series/exandria-unlimited
         note: Cast for "Exandria Unlimited" per TheTVDB.
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Lou_Wilson
+        note: "Wikipedia's article on Lou Wilson: \"In 2022, he was a cast member of the
+          actual play series Exandria Unlimited: Calamity, a spin-off of the web
+          series Critical Role.\""
   - show: dimension-20
     season: 25
     role: player

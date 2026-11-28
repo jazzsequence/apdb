@@ -14,8 +14,8 @@ credits:
     sources:
       - tier: community
         url: https://glasscannonnetwork.fandom.com/wiki/Blood_of_the_Wild
-        note: Blood of the Wild cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA.
+        note: Blood of the Wild cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
   - show: blood-of-the-wild
     season: 3
     role: player
@@ -23,8 +23,8 @@ credits:
     sources:
       - tier: community
         url: https://glasscannonnetwork.fandom.com/wiki/Blood_of_the_Wild
-        note: Blood of the Wild cast, via the glasscannonnetwork.fandom.com
-          infobox. CC-BY-SA.
+        note: Blood of the Wild cast, via the glasscannonnetwork.fandom.com infobox.
+          CC-BY-SA.
   - show: glass-cannon-labs
     season: 1
     episode: EP32
@@ -79,3 +79,13 @@ credits:
         url: https://the-glass-cannon-network.fandom.com/wiki/Blood_of_the_Wild
         note: Blood of the Wild cast, via the the-glass-cannon-network.fandom.com
           infobox. CC-BY-SA.
+image:
+  url: https://static.wikia.nocookie.net/the-glass-cannon-network/images/0/0a/MaryLou.jpg/revision/latest?cb=20230104164609
+  licence: fair use
+  attribution: Portrait of Mary Lou, © its owner. Via glasscannonnetwork.fandom.com.
+  source: https://glasscannonnetwork.fandom.com/wiki/Mary_Lou
+  depicts: Mary Lou
+  rationale: Low-resolution thumbnail used solely to identify this person in an
+    index of their credits. Non-commercial, does not substitute for the
+    original, and links back to the source. Removed on request by the rights
+    holder — see POLICY.md.

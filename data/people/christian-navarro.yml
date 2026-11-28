@@ -88,6 +88,16 @@ credits:
       - tier: community
         url: https://criticalrole.fandom.com/wiki/Generation_Nord
         note: Generation Nord cast, via the criticalrole.fandom.com infobox. CC-BY-SA.
+  - show: dungeon-masters-ravenloft-d-d-campaign
+    season: 1
+    role: player
+    character: Eloin Emberleaf
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=vttEhAP4YSg
+        note: Cast per the production's own description of "Dungeon Masters | Campaign
+          1, Episode 1 | Mists Of Ravenloft | Official D&D Actual Play Series".
 image:
   url: https://static.wikia.nocookie.net/criticalrole/images/7/72/Christian_Navarro.png/revision/latest/scale-to-width-down/400?cb=20220725155906
   licence: fair use

@@ -62,6 +62,11 @@ credits:
         tier: reference
         url: https://thetvdb.com/series/exandria-unlimited
         note: Cast for "Exandria Unlimited" per TheTVDB.
+      - tier: reference
+        url: https://en.wikipedia.org/wiki/Matthew_Mercer
+        note: "Wikipedia's article on Matthew Mercer: \"From June to August 2021, Mercer
+          appeared on Exandria Unlimited, a spinoff of Critical Role, as a
+          player.\""
   - show: dimension-20
     season: 8
     role: player
