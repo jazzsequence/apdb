@@ -1,0 +1,16 @@
+id: mikyla-jolie
+canonical_name: Mikyla Jolie
+sort_name: Jolie, Mikyla
+aliases:
+  - id: default
+    name: Mikyla Jolie
+    alias_type: legal
+credits:
+  - show: cainite-chronicles
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=vWQYkM7aIz4
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle II - Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."

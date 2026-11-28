@@ -1,0 +1,24 @@
+id: reclaimjoey
+canonical_name: ReclaimJoey
+sort_name: ReclaimJoey
+aliases:
+  - id: default
+    name: ReclaimJoey
+    alias_type: handle
+credits:
+  - show: cainite-chronicles
+    season: 3
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=9boveB4xz9M
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle III Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."
+  - show: cainite-chronicles
+    season: 5
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=iPleqEVlYSE
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle V Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."

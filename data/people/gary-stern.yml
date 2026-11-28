@@ -1,0 +1,28 @@
+# Billed "Gary" in Chronicle IV, where the description links the name to gary-stern.bsky.social.
+id: gary-stern
+canonical_name: Gary Stern
+sort_name: Stern, Gary
+aliases:
+  - id: default
+    name: Gary Stern
+    alias_type: legal
+  - id: gary
+    name: Gary
+    alias_type: stage
+credits:
+  - show: cainite-chronicles
+    season: 2
+    role: player
+    alias: default
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=vWQYkM7aIz4
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle II - Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."
+  - show: cainite-chronicles
+    season: 4
+    role: player
+    alias: gary
+    sources:
+      - tier: official
+        url: https://www.youtube.com/watch?v=sEEMF9hDxDY
+        note: "Named in the \"Cast\" list of the production's own description of \"Chronicle IV Act I\". The list gives no roles; filed as a player because JD Gunderson is the Storyteller."
